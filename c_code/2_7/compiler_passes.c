@@ -536,15 +536,15 @@ N_NIMCALL(void, closeparsers_219056)(Tparsers219035* p);
 N_NIMCALL(void, idsynchronizationpoint_190453)(NI idrange);
 N_NIMCALL(Tnode191813*, loadinitsection_234077)(Trodreader234030* r);
 N_NIMCALL(NI, sonslen_194403)(Tnode191813* n);
-static NIM_CONST TY192031 TMP4117 = {
+static NIM_CONST TY192031 TMP4118 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4118, "sons", 4);
-STRING_LITERAL(TMP4134, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP4135, "-", 1);
-STRING_LITERAL(TMP4136, "stdinfile", 9);
+STRING_LITERAL(TMP4119, "sons", 4);
+STRING_LITERAL(TMP4135, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP4136, "-", 1);
+STRING_LITERAL(TMP4137, "stdinfile", 9);
 extern TFrame* frameptr_17042;
 TY242064 gimportmodule_242068;
 TY242069 gincludefile_242073;
@@ -643,7 +643,7 @@ N_NIMCALL(NIM_BOOL, astneeded_242093)(Tsym191843* s) {
 		LOC3 = LOC4;
 		if (!(LOC3)) goto LA8;
 		nimln(76, "passes.nim");
-		if (((TMP4117[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4118));
+		if (((TMP4118[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4119));
 		if ((NU)(((NI) 2)) >= (NU)((*(*s).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC3 = ((*(*(*s).ast).kindU.S6.sons->data[((NI) 2)]).kind == ((NU8) 1));
 		LA8: ;
@@ -690,14 +690,14 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 }
 
 N_NIMCALL(void, registerpass_242190)(Tpass242017 p) {
-	NI TMP4119;
+	NI TMP4120;
 	nimfr("registerPass", "passes.nim")
 	nimln(96, "passes.nim");
 	if ((NU)(gpasseslen_242176) > (NU)(9)) raiseIndexError();
 	gpasses_242175[(gpasseslen_242176)- 0] = p;
 	nimln(97, "passes.nim");
-	TMP4119 = addInt(gpasseslen_242176, ((NI) 1));
-	gpasseslen_242176 = (NI)(TMP4119);
+	TMP4120 = addInt(gpasseslen_242176, ((NI) 1));
+	gpasseslen_242176 = (NI)(TMP4120);
 	popFrame();
 }
 
@@ -738,7 +738,7 @@ N_NIMCALL(void, carrypasses_242231)(Tnode191813* nodes, Tsym191843* module, Tpas
 			nimln(1690, "system.nim");
 			while (1) {
 				Tpassdata242019 LOC4;
-				NI TMP4120;
+				NI TMP4121;
 				if (!(i_242277 < passesLen0)) goto LA3;
 				nimln(1691, "system.nim");
 				if ((NU)(i_242277) >= (NU)(passesLen0)) raiseIndexError();
@@ -749,8 +749,8 @@ N_NIMCALL(void, carrypasses_242231)(Tnode191813* nodes, Tsym191843* module, Tpas
 				passdata.Field0 = LOC4.Field0;
 				passdata.Field1 = LOC4.Field1;
 				nimln(1692, "system.nim");
-				TMP4120 = addInt(i_242277, ((NI) 1));
-				i_242277 = (NI)(TMP4120);
+				TMP4121 = addInt(i_242277, ((NI) 1));
+				i_242277 = (NI)(TMP4121);
 			} LA3: ;
 		}
 	}
@@ -782,19 +782,19 @@ N_NIMCALL(void, openpasses_242293)(Tpasscontext242005** a, Tsym191843* module) {
 	{
 		NI i_242310;
 		NI HEX3Atmp_242319;
-		NI TMP4121;
+		NI TMP4122;
 		NI res_242322;
 		i_242310 = 0;
 		HEX3Atmp_242319 = 0;
 		nimln(112, "passes.nim");
-		TMP4121 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242319 = (NI)(TMP4121);
+		TMP4122 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242319 = (NI)(TMP4122);
 		nimln(1598, "system.nim");
 		res_242322 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4122;
+				NI TMP4123;
 				if (!(res_242322 <= HEX3Atmp_242319)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242310 = res_242322;
@@ -816,8 +816,8 @@ N_NIMCALL(void, openpasses_242293)(Tpasscontext242005** a, Tsym191843* module) {
 				}
 				LA4: ;
 				nimln(1614, "system.nim");
-				TMP4122 = addInt(res_242322, ((NI) 1));
-				res_242322 = (NI)(TMP4122);
+				TMP4123 = addInt(res_242322, ((NI) 1));
+				res_242322 = (NI)(TMP4123);
 			} LA3: ;
 		}
 	}
@@ -829,19 +829,19 @@ N_NIMCALL(void, openpassescached_242342)(Tpasscontext242005** a, Tsym191843* mod
 	{
 		NI i_242360;
 		NI HEX3Atmp_242381;
-		NI TMP4123;
+		NI TMP4124;
 		NI res_242384;
 		i_242360 = 0;
 		HEX3Atmp_242381 = 0;
 		nimln(118, "passes.nim");
-		TMP4123 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242381 = (NI)(TMP4123);
+		TMP4124 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242381 = (NI)(TMP4124);
 		nimln(1598, "system.nim");
 		res_242384 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4124;
+				NI TMP4125;
 				if (!(res_242384 <= HEX3Atmp_242381)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242360 = res_242384;
@@ -872,8 +872,8 @@ N_NIMCALL(void, openpassescached_242342)(Tpasscontext242005** a, Tsym191843* mod
 				}
 				LA4: ;
 				nimln(1614, "system.nim");
-				TMP4124 = addInt(res_242384, ((NI) 1));
-				res_242384 = (NI)(TMP4124);
+				TMP4125 = addInt(res_242384, ((NI) 1));
+				res_242384 = (NI)(TMP4125);
 			} LA3: ;
 		}
 	}
@@ -888,19 +888,19 @@ N_NIMCALL(void, closepasses_242404)(Tpasscontext242005** a) {
 	{
 		NI i_242421;
 		NI HEX3Atmp_242431;
-		NI TMP4125;
+		NI TMP4126;
 		NI res_242434;
 		i_242421 = 0;
 		HEX3Atmp_242431 = 0;
 		nimln(128, "passes.nim");
-		TMP4125 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242431 = (NI)(TMP4125);
+		TMP4126 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242431 = (NI)(TMP4126);
 		nimln(1598, "system.nim");
 		res_242434 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4126;
+				NI TMP4127;
 				if (!(res_242434 <= HEX3Atmp_242431)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242421 = res_242434;
@@ -917,8 +917,8 @@ N_NIMCALL(void, closepasses_242404)(Tpasscontext242005** a) {
 				if ((NU)(i_242421) > (NU)(9)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[(i_242421)- 0]), NIM_NIL);
 				nimln(1614, "system.nim");
-				TMP4126 = addInt(res_242434, ((NI) 1));
-				res_242434 = (NI)(TMP4126);
+				TMP4127 = addInt(res_242434, ((NI) 1));
+				res_242434 = (NI)(TMP4127);
 			} LA3: ;
 		}
 	}
@@ -935,19 +935,19 @@ N_NIMCALL(NIM_BOOL, processtoplevelstmt_242454)(Tnode191813* n, Tpasscontext2420
 	{
 		NI i_242473;
 		NI HEX3Atmp_242490;
-		NI TMP4127;
+		NI TMP4128;
 		NI res_242493;
 		i_242473 = 0;
 		HEX3Atmp_242490 = 0;
 		nimln(135, "passes.nim");
-		TMP4127 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242490 = (NI)(TMP4127);
+		TMP4128 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242490 = (NI)(TMP4128);
 		nimln(1598, "system.nim");
 		res_242493 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4128;
+				NI TMP4129;
 				if (!(res_242493 <= HEX3Atmp_242490)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242473 = res_242493;
@@ -969,8 +969,8 @@ N_NIMCALL(NIM_BOOL, processtoplevelstmt_242454)(Tnode191813* n, Tpasscontext2420
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP4128 = addInt(res_242493, ((NI) 1));
-				res_242493 = (NI)(TMP4128);
+				TMP4129 = addInt(res_242493, ((NI) 1));
+				res_242493 = (NI)(TMP4129);
 			} LA3: ;
 		}
 	}
@@ -989,19 +989,19 @@ N_NIMCALL(void, processtoplevelstmtcached_242513)(Tnode191813* n, Tpasscontext24
 	{
 		NI i_242531;
 		NI HEX3Atmp_242540;
-		NI TMP4129;
+		NI TMP4130;
 		NI res_242543;
 		i_242531 = 0;
 		HEX3Atmp_242540 = 0;
 		nimln(144, "passes.nim");
-		TMP4129 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242540 = (NI)(TMP4129);
+		TMP4130 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242540 = (NI)(TMP4130);
 		nimln(1598, "system.nim");
 		res_242543 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4130;
+				NI TMP4131;
 				if (!(res_242543 <= HEX3Atmp_242540)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242531 = res_242543;
@@ -1015,8 +1015,8 @@ N_NIMCALL(void, processtoplevelstmtcached_242513)(Tnode191813* n, Tpasscontext24
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP4130 = addInt(res_242543, ((NI) 1));
-				res_242543 = (NI)(TMP4130);
+				TMP4131 = addInt(res_242543, ((NI) 1));
+				res_242543 = (NI)(TMP4131);
 			} LA3: ;
 		}
 	}
@@ -1031,19 +1031,19 @@ N_NIMCALL(void, closepassescached_242563)(Tpasscontext242005** a) {
 	{
 		NI i_242580;
 		NI HEX3Atmp_242597;
-		NI TMP4131;
+		NI TMP4132;
 		NI res_242600;
 		i_242580 = 0;
 		HEX3Atmp_242597 = 0;
 		nimln(149, "passes.nim");
-		TMP4131 = subInt(gpasseslen_242176, ((NI) 1));
-		HEX3Atmp_242597 = (NI)(TMP4131);
+		TMP4132 = subInt(gpasseslen_242176, ((NI) 1));
+		HEX3Atmp_242597 = (NI)(TMP4132);
 		nimln(1598, "system.nim");
 		res_242600 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4132;
+				NI TMP4133;
 				if (!(res_242600 <= HEX3Atmp_242597)) goto LA3;
 				nimln(1600, "system.nim");
 				i_242580 = res_242600;
@@ -1068,8 +1068,8 @@ N_NIMCALL(void, closepassescached_242563)(Tpasscontext242005** a) {
 				if ((NU)(i_242580) > (NU)(9)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[(i_242580)- 0]), NIM_NIL);
 				nimln(1614, "system.nim");
-				TMP4132 = addInt(res_242600, ((NI) 1));
-				res_242600 = (NI)(TMP4132);
+				TMP4133 = addInt(res_242600, ((NI) 1));
+				res_242600 = (NI)(TMP4133);
 			} LA3: ;
 		}
 	}
@@ -1092,7 +1092,7 @@ N_NIMCALL(void, processimplicits_242621)(TY13606* implicits, NU8 nodekind, Tpass
 			while (1) {
 				Tnode191813* importstmt;
 				Tnode191813* str;
-				NI TMP4133;
+				NI TMP4134;
 				if (!(i_242644 < L_242646)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_242644) >= (NU)(implicits->Sup.len)) raiseIndexError();
@@ -1115,12 +1115,12 @@ N_NIMCALL(void, processimplicits_242621)(TY13606* implicits, NU8 nodekind, Tpass
 				}
 				LA7: ;
 				nimln(3088, "system.nim");
-				TMP4133 = addInt(i_242644, ((NI) 1));
-				i_242644 = (NI)(TMP4133);
+				TMP4134 = addInt(i_242644, ((NI) 1));
+				i_242644 = (NI)(TMP4134);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((implicits ? implicits->Sup.len : 0) == L_242646))) goto LA11;
-					failedassertimpl_87017(((NimStringDesc*) &TMP4134));
+					failedassertimpl_87017(((NimStringDesc*) &TMP4135));
 				}
 				LA11: ;
 			} LA3: ;
@@ -1226,10 +1226,10 @@ N_NIMCALL(void, processmodule_242056)(Tsym191843* module, Tllstream178204* strea
 			nimln(173, "passes.nim");
 			{
 				NimStringDesc* LOC13;
-				if (!eqStrings((*(*module).name).s, ((NimStringDesc*) &TMP4135))) goto LA11;
+				if (!eqStrings((*(*module).name).s, ((NimStringDesc*) &TMP4136))) goto LA11;
 				nimln(174, "passes.nim");
 				LOC13 = 0;
-				LOC13 = (*(*module).name).s; (*(*module).name).s = copyStringRC1(((NimStringDesc*) &TMP4136));
+				LOC13 = (*(*module).name).s; (*(*module).name).s = copyStringRC1(((NimStringDesc*) &TMP4137));
 				if (LOC13) nimGCunrefNoCycle(LOC13);
 				nimln(175, "passes.nim");
 				s = llstreamopen_178238(stdin);
@@ -1322,31 +1322,31 @@ N_NIMCALL(void, processmodule_242056)(Tsym191843* module, Tllstream178204* strea
 			NI i_242766;
 			NI HEX3Atmp_242777;
 			NI LOC43;
-			NI TMP4137;
+			NI TMP4138;
 			NI res_242780;
 			i_242766 = 0;
 			HEX3Atmp_242777 = 0;
 			nimln(207, "passes.nim");
 			LOC43 = 0;
 			LOC43 = sonslen_194403(n);
-			TMP4137 = subInt(LOC43, ((NI) 1));
-			HEX3Atmp_242777 = (NI)(TMP4137);
+			TMP4138 = subInt(LOC43, ((NI) 1));
+			HEX3Atmp_242777 = (NI)(TMP4138);
 			nimln(1598, "system.nim");
 			res_242780 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4138;
+					NI TMP4139;
 					if (!(res_242780 <= HEX3Atmp_242777)) goto LA45;
 					nimln(1600, "system.nim");
 					i_242766 = res_242780;
 					nimln(207, "passes.nim");
-					if (((TMP4117[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4118));
+					if (((TMP4118[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4119));
 					if ((NU)(i_242766) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					processtoplevelstmtcached_242513((*n).kindU.S6.sons->data[i_242766], a);
 					nimln(1614, "system.nim");
-					TMP4138 = addInt(res_242780, ((NI) 1));
-					res_242780 = (NI)(TMP4138);
+					TMP4139 = addInt(res_242780, ((NI) 1));
+					res_242780 = (NI)(TMP4139);
 				} LA45: ;
 			}
 		}
@@ -1363,32 +1363,32 @@ NIM_EXTERNC N_NOINLINE(void, compiler_passesInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_passesDatInit)(void) {
-static TNimNode* TMP6331[2];
-static TNimNode TMP4033[4];
+static TNimNode* TMP6332[2];
+static TNimNode TMP4034[4];
 NTI242005.size = sizeof(Tpasscontext242005);
 NTI242005.kind = 17;
 NTI242005.base = (&NTI3411);
 NTI242005.flags = 1;
-TMP4033[0].kind = 1;
-TMP4033[0].offset = offsetof(Tpasscontext242005, fromcache);
-TMP4033[0].typ = (&NTI138);
-TMP4033[0].name = "fromCache";
-NTI242005.node = &TMP4033[0];
+TMP4034[0].kind = 1;
+TMP4034[0].offset = offsetof(Tpasscontext242005, fromcache);
+TMP4034[0].typ = (&NTI138);
+TMP4034[0].name = "fromCache";
+NTI242005.node = &TMP4034[0];
 NTI242019.size = sizeof(Tpassdata242019);
 NTI242019.kind = 18;
 NTI242019.base = 0;
 NTI242019.flags = 2;
-TMP6331[0] = &TMP4033[2];
-TMP4033[2].kind = 1;
-TMP4033[2].offset = offsetof(Tpassdata242019, Field0);
-TMP4033[2].typ = (&NTI191805);
-TMP4033[2].name = "Field0";
-TMP6331[1] = &TMP4033[3];
-TMP4033[3].kind = 1;
-TMP4033[3].offset = offsetof(Tpassdata242019, Field1);
-TMP4033[3].typ = (&NTI191805);
-TMP4033[3].name = "Field1";
-TMP4033[1].len = 2; TMP4033[1].kind = 2; TMP4033[1].sons = &TMP6331[0];
-NTI242019.node = &TMP4033[1];
+TMP6332[0] = &TMP4034[2];
+TMP4034[2].kind = 1;
+TMP4034[2].offset = offsetof(Tpassdata242019, Field0);
+TMP4034[2].typ = (&NTI191805);
+TMP4034[2].name = "Field0";
+TMP6332[1] = &TMP4034[3];
+TMP4034[3].kind = 1;
+TMP4034[3].offset = offsetof(Tpassdata242019, Field1);
+TMP4034[3].typ = (&NTI191805);
+TMP4034[3].name = "Field1";
+TMP4034[1].len = 2; TMP4034[1].kind = 2; TMP4034[1].sons = &TMP6332[0];
+NTI242019.node = &TMP4034[1];
 }
 

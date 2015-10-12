@@ -188,11 +188,11 @@ N_NIMCALL_PTR(void, ClPrc) (NimStringDesc* output, void* ClEnv);
 void* ClEnv;
 } TY163054;
 typedef NimStringDesc* TY145201[1];
-typedef N_CLOSURE_PTR(void, TMP1213) (NimStringDesc* output);
+typedef N_CLOSURE_PTR(void, TMP1214) (NimStringDesc* output);
 struct  Esuggestdone162346  {
   Exception Sup;
 };
-typedef N_CLOSURE_PTR(void, TMP1224) (NimStringDesc* output);
+typedef N_CLOSURE_PTR(void, TMP1225) (NimStringDesc* output);
 typedef NimStringDesc* TY163825[4];
 struct  Slice164076  {
 NU16 a;
@@ -206,7 +206,7 @@ typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning, void* ClEnv);
 void* ClEnv;
 } TY160023;
-typedef N_CLOSURE_PTR(void, TMP1283) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning, void* ClEnv);
+typedef N_CLOSURE_PTR(void, TMP1284) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning, void* ClEnv);
 struct  Ropeobj160009  {
   TNimObject Sup;
 Ropeobj160009* left;
@@ -282,7 +282,7 @@ N_NIMCALL(void, inittable_162368)(NI initialsize, Table162376* Result);
 N_NOINLINE(void, chckNil)(void* p);
 N_NIMCALL(void, genericReset)(void* dest, TNimType* mt);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP1183)(void* p, NI op);
+N_NIMCALL(void, TMP1184)(void* p, NI op);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46946*, usrtocell_50446)(void* usr);
 static N_INLINE(void, nimFrame)(TFrame* s);
@@ -349,12 +349,12 @@ N_NIMCALL(NI32, fileinfoidx_162853)(NimStringDesc* filename);
 N_NIMCALL(Tlineinfo162338, newlineinfo_162866)(NI32 fileinfoidx, NI line, NI col);
 static N_INLINE(Tlineinfo162338, newlineinfo_162878)(NimStringDesc* filename, NI line, NI col);
 N_NOINLINE(void, raiserecoverableerror_162966)(NimStringDesc* msg);
-N_NIMCALL(void, TMP1209)(void* p, NI op);
+N_NIMCALL(void, TMP1210)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
 N_NIMCALL(Tlineinfo162338, unknownlineinfo_163024)(void);
-N_NIMCALL(void, TMP1211)(void* p, NI op);
+N_NIMCALL(void, TMP1212)(void* p, NI op);
 N_NIMCALL(void, suggestwriteln_163066)(NimStringDesc* s);
 static N_INLINE(void, writeln_154205)(FILE* f, NimStringDesc** x, NI xLen0);
 N_NIMCALL(void, write_13657)(FILE* f, NimStringDesc* s);
@@ -362,7 +362,7 @@ N_NIMCALL(void, msgquit_163104)(NI8 x);
 N_NIMCALL(void, msgquit_163113)(NimStringDesc* x);
 N_NIMCALL(void, quit_86377)(NimStringDesc* errormsg, NI errorcode);
 N_NIMCALL(void, suggestquit_163122)(void);
-N_NIMCALL(void, TMP1214)(void* p, NI op);
+N_NIMCALL(void, TMP1215)(void* p, NI op);
 N_NIMCALL(NI, getinfocontextlen_163153)(void);
 N_NIMCALL(void, setinfocontextlen_163170)(NI L);
 N_NIMCALL(TGenericSeq*, setLengthSeq)(TGenericSeq* seq, NI elemsize, NI newlen);
@@ -424,299 +424,298 @@ N_NIMCALL(NIM_BOOL, isObj)(TNimType* obj, TNimType* subclass);
 static N_INLINE(Exception*, getCurrentException)(void);
 N_NIMCALL(Ropeobj160009*, quotedfilename_164354)(Tlineinfo162338 i);
 N_NIMCALL(void, HEX3Aanonymous_164371)(NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
-STRING_LITERAL(TMP857, "unknown error", 13);
-STRING_LITERAL(TMP858, "illformed AST: $1", 17);
-STRING_LITERAL(TMP859, "internal error: $1", 18);
-STRING_LITERAL(TMP860, "cannot open \'$1\'", 16);
-STRING_LITERAL(TMP861, "$1", 2);
-STRING_LITERAL(TMP862, "\'$1\' compiler does not support C++", 34);
-STRING_LITERAL(TMP863, "string literal expected", 23);
-STRING_LITERAL(TMP864, "integer literal expected", 24);
-STRING_LITERAL(TMP865, "invalid character constant", 26);
-STRING_LITERAL(TMP866, "closing \"\"\" expected, but end of file reached", 45);
-STRING_LITERAL(TMP867, "closing \" expected", 18);
-STRING_LITERAL(TMP868, "tabulators are not allowed", 26);
-STRING_LITERAL(TMP869, "invalid token: $1", 17);
-STRING_LITERAL(TMP870, "line too long", 13);
-STRING_LITERAL(TMP871, "$1 is not a valid number", 24);
-STRING_LITERAL(TMP872, "number $1 out of valid range", 28);
-STRING_LITERAL(TMP873, "\\n not allowed in character literal", 35);
-STRING_LITERAL(TMP874, "closing \']\' expected, but end of file reached", 45);
-STRING_LITERAL(TMP875, "missing final \' for character literal", 37);
-STRING_LITERAL(TMP876, "identifier expected, but found \'$1\'", 35);
-STRING_LITERAL(TMP877, "newline expected, but found \'$1\'", 32);
-STRING_LITERAL(TMP878, "invalid module name: \'$1\'", 25);
-STRING_LITERAL(TMP879, "operator expected, but found \'$1\'", 33);
-STRING_LITERAL(TMP880, "\'$1\' expected", 13);
-STRING_LITERAL(TMP881, "string after \'include\' expected", 31);
-STRING_LITERAL(TMP882, "recursive dependency: \'$1\'", 26);
-STRING_LITERAL(TMP883, "\'on\' or \'off\' expected", 22);
-STRING_LITERAL(TMP884, "\'none\', \'speed\' or \'size\' expected", 34);
-STRING_LITERAL(TMP885, "invalid pragma", 14);
-STRING_LITERAL(TMP886, "unknown pragma: \'$1\'", 20);
-STRING_LITERAL(TMP887, "invalid directive: \'$1\'", 23);
-STRING_LITERAL(TMP888, "\'pop\' without a \'push\' pragma", 29);
-STRING_LITERAL(TMP889, "empty asm statement", 19);
-STRING_LITERAL(TMP890, "invalid indentation", 19);
-STRING_LITERAL(TMP891, "exception expected", 18);
-STRING_LITERAL(TMP892, "exception already handled", 25);
-STRING_LITERAL(TMP893, "\'yield\' only allowed in an iterator", 35);
-STRING_LITERAL(TMP894, "\'yield\' cannot be used within \'try\' in a non-inlined iterator", 61);
-STRING_LITERAL(TMP895, "invalid number of \'yield\' expressions", 37);
-STRING_LITERAL(TMP896, "current routine cannot return an expression", 43);
-STRING_LITERAL(TMP897, "redefinition of \'$1\'", 20);
-STRING_LITERAL(TMP898, "statement not allowed after \'return\', \'break\', \'raise\' or \'cont"
+STRING_LITERAL(TMP858, "unknown error", 13);
+STRING_LITERAL(TMP859, "illformed AST: $1", 17);
+STRING_LITERAL(TMP860, "internal error: $1", 18);
+STRING_LITERAL(TMP861, "cannot open \'$1\'", 16);
+STRING_LITERAL(TMP862, "$1", 2);
+STRING_LITERAL(TMP863, "\'$1\' compiler does not support C++", 34);
+STRING_LITERAL(TMP864, "string literal expected", 23);
+STRING_LITERAL(TMP865, "integer literal expected", 24);
+STRING_LITERAL(TMP866, "invalid character constant", 26);
+STRING_LITERAL(TMP867, "closing \"\"\" expected, but end of file reached", 45);
+STRING_LITERAL(TMP868, "closing \" expected", 18);
+STRING_LITERAL(TMP869, "tabulators are not allowed", 26);
+STRING_LITERAL(TMP870, "invalid token: $1", 17);
+STRING_LITERAL(TMP871, "line too long", 13);
+STRING_LITERAL(TMP872, "$1 is not a valid number", 24);
+STRING_LITERAL(TMP873, "number $1 out of valid range", 28);
+STRING_LITERAL(TMP874, "\\n not allowed in character literal", 35);
+STRING_LITERAL(TMP875, "closing \']\' expected, but end of file reached", 45);
+STRING_LITERAL(TMP876, "missing final \' for character literal", 37);
+STRING_LITERAL(TMP877, "identifier expected, but found \'$1\'", 35);
+STRING_LITERAL(TMP878, "newline expected, but found \'$1\'", 32);
+STRING_LITERAL(TMP879, "invalid module name: \'$1\'", 25);
+STRING_LITERAL(TMP880, "operator expected, but found \'$1\'", 33);
+STRING_LITERAL(TMP881, "\'$1\' expected", 13);
+STRING_LITERAL(TMP882, "string after \'include\' expected", 31);
+STRING_LITERAL(TMP883, "recursive dependency: \'$1\'", 26);
+STRING_LITERAL(TMP884, "\'on\' or \'off\' expected", 22);
+STRING_LITERAL(TMP885, "\'none\', \'speed\' or \'size\' expected", 34);
+STRING_LITERAL(TMP886, "invalid pragma", 14);
+STRING_LITERAL(TMP887, "unknown pragma: \'$1\'", 20);
+STRING_LITERAL(TMP888, "invalid directive: \'$1\'", 23);
+STRING_LITERAL(TMP889, "\'pop\' without a \'push\' pragma", 29);
+STRING_LITERAL(TMP890, "empty asm statement", 19);
+STRING_LITERAL(TMP891, "invalid indentation", 19);
+STRING_LITERAL(TMP892, "exception expected", 18);
+STRING_LITERAL(TMP893, "exception already handled", 25);
+STRING_LITERAL(TMP894, "\'yield\' only allowed in an iterator", 35);
+STRING_LITERAL(TMP895, "\'yield\' cannot be used within \'try\' in a non-inlined iterator", 61);
+STRING_LITERAL(TMP896, "invalid number of \'yield\' expressions", 37);
+STRING_LITERAL(TMP897, "current routine cannot return an expression", 43);
+STRING_LITERAL(TMP898, "redefinition of \'$1\'", 20);
+STRING_LITERAL(TMP899, "statement not allowed after \'return\', \'break\', \'raise\' or \'cont"
 "inue\'", 68);
-STRING_LITERAL(TMP899, "statement expected", 18);
-STRING_LITERAL(TMP900, "\'$1\' is no label", 16);
-STRING_LITERAL(TMP901, "invalid command line option: \'$1\'", 33);
-STRING_LITERAL(TMP902, "argument for command line option expected: \'$1\'", 47);
-STRING_LITERAL(TMP903, "invalid argument for command line option: \'$1\'", 46);
-STRING_LITERAL(TMP904, "invalid variable substitution in \'$1\'", 37);
-STRING_LITERAL(TMP905, "unknown variable: \'$1\'", 22);
-STRING_LITERAL(TMP906, "unknown C compiler: \'$1\'", 24);
-STRING_LITERAL(TMP907, "\'on\' or \'off\' expected, but \'$1\' found", 38);
-STRING_LITERAL(TMP908, "\'none\', \'boehm\' or \'refc\' expected, but \'$1\' found", 50);
-STRING_LITERAL(TMP909, "\'none\', \'speed\' or \'size\' expected, but \'$1\' found", 50);
-STRING_LITERAL(TMP910, "\'gui\', \'console\' or \'lib\' expected, but \'$1\' found", 50);
-STRING_LITERAL(TMP911, "unknown OS: \'$1\'", 16);
-STRING_LITERAL(TMP912, "unknown CPU: \'$1\'", 17);
-STRING_LITERAL(TMP913, "\'c\', \'c++\' or \'yaml\' expected, but \'$1\' found", 45);
-STRING_LITERAL(TMP914, "arguments can only be given if the \'--run\' option is selected", 61);
-STRING_LITERAL(TMP915, "multiple assignment is not allowed", 34);
-STRING_LITERAL(TMP916, "\':\' or \'=\' expected, but found \'$1\'", 35);
-STRING_LITERAL(TMP917, "expression expected, but found \'$1\'", 35);
-STRING_LITERAL(TMP918, "undeclared identifier: \'$1\'", 27);
-STRING_LITERAL(TMP919, "ambiguous identifier: \'$1\' -- use a qualifier", 45);
-STRING_LITERAL(TMP920, "type expected", 13);
-STRING_LITERAL(TMP921, "system module needs \'$1\'", 24);
-STRING_LITERAL(TMP922, "execution of an external program failed", 39);
-STRING_LITERAL(TMP923, "overloaded \'$1\' leads to ambiguous calls", 40);
-STRING_LITERAL(TMP924, "invalid argument for \'$1\'", 25);
-STRING_LITERAL(TMP925, "statement has no effect", 23);
-STRING_LITERAL(TMP926, "\'$1\' expects a type or value", 28);
-STRING_LITERAL(TMP927, "\'$1\' expects an array type", 26);
-STRING_LITERAL(TMP928, "\'$1\' cannot be instantiated because its body has not been compi"
+STRING_LITERAL(TMP900, "statement expected", 18);
+STRING_LITERAL(TMP901, "\'$1\' is no label", 16);
+STRING_LITERAL(TMP902, "invalid command line option: \'$1\'", 33);
+STRING_LITERAL(TMP903, "argument for command line option expected: \'$1\'", 47);
+STRING_LITERAL(TMP904, "invalid argument for command line option: \'$1\'", 46);
+STRING_LITERAL(TMP905, "invalid variable substitution in \'$1\'", 37);
+STRING_LITERAL(TMP906, "unknown variable: \'$1\'", 22);
+STRING_LITERAL(TMP907, "unknown C compiler: \'$1\'", 24);
+STRING_LITERAL(TMP908, "\'on\' or \'off\' expected, but \'$1\' found", 38);
+STRING_LITERAL(TMP909, "\'none\', \'boehm\' or \'refc\' expected, but \'$1\' found", 50);
+STRING_LITERAL(TMP910, "\'none\', \'speed\' or \'size\' expected, but \'$1\' found", 50);
+STRING_LITERAL(TMP911, "\'gui\', \'console\' or \'lib\' expected, but \'$1\' found", 50);
+STRING_LITERAL(TMP912, "unknown OS: \'$1\'", 16);
+STRING_LITERAL(TMP913, "unknown CPU: \'$1\'", 17);
+STRING_LITERAL(TMP914, "\'c\', \'c++\' or \'yaml\' expected, but \'$1\' found", 45);
+STRING_LITERAL(TMP915, "arguments can only be given if the \'--run\' option is selected", 61);
+STRING_LITERAL(TMP916, "multiple assignment is not allowed", 34);
+STRING_LITERAL(TMP917, "\':\' or \'=\' expected, but found \'$1\'", 35);
+STRING_LITERAL(TMP918, "expression expected, but found \'$1\'", 35);
+STRING_LITERAL(TMP919, "undeclared identifier: \'$1\'", 27);
+STRING_LITERAL(TMP920, "ambiguous identifier: \'$1\' -- use a qualifier", 45);
+STRING_LITERAL(TMP921, "type expected", 13);
+STRING_LITERAL(TMP922, "system module needs \'$1\'", 24);
+STRING_LITERAL(TMP923, "execution of an external program failed", 39);
+STRING_LITERAL(TMP924, "overloaded \'$1\' leads to ambiguous calls", 40);
+STRING_LITERAL(TMP925, "invalid argument for \'$1\'", 25);
+STRING_LITERAL(TMP926, "statement has no effect", 23);
+STRING_LITERAL(TMP927, "\'$1\' expects a type or value", 28);
+STRING_LITERAL(TMP928, "\'$1\' expects an array type", 26);
+STRING_LITERAL(TMP929, "\'$1\' cannot be instantiated because its body has not been compi"
 "led yet", 70);
-STRING_LITERAL(TMP929, "expression \'$1\' ambiguous in this context", 41);
-STRING_LITERAL(TMP930, "division by zero", 16);
-STRING_LITERAL(TMP931, "ordinal type expected", 21);
-STRING_LITERAL(TMP932, "ordinal or float type expected", 30);
-STRING_LITERAL(TMP933, "over- or underflow", 18);
-STRING_LITERAL(TMP934, "cannot evalutate \'$1\' because type is not defined completely", 60);
-STRING_LITERAL(TMP935, "\'chr\' expects an int in the range 0..255", 40);
-STRING_LITERAL(TMP936, "\'dynlib\' requires \'exportc\'", 27);
-STRING_LITERAL(TMP937, "undeclared field: \'$1\'", 22);
-STRING_LITERAL(TMP938, "attempt to access a nil address", 31);
-STRING_LITERAL(TMP939, "index out of bounds", 19);
-STRING_LITERAL(TMP940, "index types do not match", 24);
-STRING_LITERAL(TMP941, "\'[]\' operator invalid for this type", 35);
-STRING_LITERAL(TMP942, "value out of set bounds", 23);
-STRING_LITERAL(TMP943, "field initialized twice: \'$1\'", 29);
-STRING_LITERAL(TMP944, "field \'$1\' not initialized", 26);
-STRING_LITERAL(TMP945, "expression \'$1\' cannot be called", 32);
-STRING_LITERAL(TMP946, "expression has no type", 22);
-STRING_LITERAL(TMP947, "expression \'$1\' has no type (or is ambiguous)", 45);
-STRING_LITERAL(TMP948, "\'cast\' not allowed in safe mode", 31);
-STRING_LITERAL(TMP949, "expression cannot be casted to $1", 33);
-STRING_LITERAL(TMP950, "\',\' or \')\' expected", 19);
-STRING_LITERAL(TMP951, "\'{\' or \'(\' expected", 19);
-STRING_LITERAL(TMP952, "section (\'type\', \'proc\', etc.) expected", 39);
-STRING_LITERAL(TMP953, "range expected", 14);
-STRING_LITERAL(TMP954, "\'magic\' only allowed in system module", 37);
-STRING_LITERAL(TMP955, "power of two expected", 21);
-STRING_LITERAL(TMP956, "string literal may not be empty", 31);
-STRING_LITERAL(TMP957, "calling convention expected", 27);
-STRING_LITERAL(TMP958, "a proc can only have one calling convention", 43);
-STRING_LITERAL(TMP959, "symbol must be imported if \'lib\' pragma is used", 47);
-STRING_LITERAL(TMP960, "expression must be of type \'bool\'", 33);
-STRING_LITERAL(TMP961, "constant expression expected", 28);
-STRING_LITERAL(TMP962, "duplicate case label", 20);
-STRING_LITERAL(TMP963, "range is empty", 14);
-STRING_LITERAL(TMP964, "selector must be of an ordinal type, float or string", 52);
-STRING_LITERAL(TMP965, "selector must be of an ordinal type", 35);
-STRING_LITERAL(TMP966, "ord($1) must not be negative", 28);
-STRING_LITERAL(TMP967, "len($1) must be less than 32768", 31);
-STRING_LITERAL(TMP968, "wrong number of variables", 25);
-STRING_LITERAL(TMP969, "only a \'ref object\' can be raised", 33);
-STRING_LITERAL(TMP970, "\'break\' only allowed in loop construct", 38);
-STRING_LITERAL(TMP971, "type \'$1\' has unknown size", 26);
-STRING_LITERAL(TMP972, "a constant can only be initialized with a constant expression", 61);
-STRING_LITERAL(TMP973, "a constant needs a value", 24);
-STRING_LITERAL(TMP974, "the result type cannot be on open array", 39);
-STRING_LITERAL(TMP975, "computing the type\'s size produced an overflow", 46);
-STRING_LITERAL(TMP976, "set is too large", 16);
-STRING_LITERAL(TMP977, "base type of a set must be an ordinal", 37);
-STRING_LITERAL(TMP978, "inheritance only works with non-final objects", 45);
-STRING_LITERAL(TMP979, "inheritance only works with an enum", 35);
-STRING_LITERAL(TMP980, "illegal recursion in type \'$1\'", 30);
-STRING_LITERAL(TMP981, "cannot instantiate: \'$1\'", 24);
-STRING_LITERAL(TMP982, "expression has no address", 25);
-STRING_LITERAL(TMP983, "address of \'$1\' may not escape its stack frame", 46);
-STRING_LITERAL(TMP984, "for a \'var\' type a variable needs to be passed", 46);
-STRING_LITERAL(TMP985, "type mismatch", 13);
-STRING_LITERAL(TMP986, "type mismatch: got (", 20);
-STRING_LITERAL(TMP987, "but expected one of: ", 21);
-STRING_LITERAL(TMP988, "but expected \'$1\'", 17);
-STRING_LITERAL(TMP989, "ambiguous call; both $1 and $2 match for: $3", 44);
-STRING_LITERAL(TMP990, "wrong number of arguments", 25);
-STRING_LITERAL(TMP991, "\'$1\' cannot be passed to a procvar", 34);
-STRING_LITERAL(TMP992, "$1 cannot be declared in parameter declaration", 46);
-STRING_LITERAL(TMP993, "pragmas are only allowed in the header of a proc", 48);
-STRING_LITERAL(TMP994, "implementation of \'$1\' is not allowed", 37);
-STRING_LITERAL(TMP995, "implementation of \'$1\' expected", 31);
-STRING_LITERAL(TMP996, "no symbol to borrow from found", 30);
-STRING_LITERAL(TMP997, "value of type \'$1\' has to be discarded", 38);
-STRING_LITERAL(TMP998, "statement returns no value that can be discarded", 48);
-STRING_LITERAL(TMP999, "conversion from $1 to $2 is invalid", 35);
-STRING_LITERAL(TMP1000, "cannot bind parameter \'$1\' twice", 32);
-STRING_LITERAL(TMP1001, "invalid order in array constructor", 34);
-STRING_LITERAL(TMP1002, "invalid order in enum \'$1\'", 26);
-STRING_LITERAL(TMP1003, "enum \'$1\' has holes", 19);
-STRING_LITERAL(TMP1004, "\'except\' or \'finally\' expected", 30);
-STRING_LITERAL(TMP1005, "after catch all \'except\' or \'finally\' no section may follow", 59);
-STRING_LITERAL(TMP1006, "option expected, but found \'$1\'", 31);
-STRING_LITERAL(TMP1007, "\'$1\' is not a label", 19);
-STRING_LITERAL(TMP1008, "not all cases are covered", 25);
-STRING_LITERAL(TMP1009, "unknown substitution variable: \'$1\'", 35);
-STRING_LITERAL(TMP1010, "complex statement requires indentation", 38);
-STRING_LITERAL(TMP1011, "\'$1\' is not callable", 20);
-STRING_LITERAL(TMP1012, "no pragmas allowed for $1", 25);
-STRING_LITERAL(TMP1013, "no generic parameters allowed for $1", 36);
-STRING_LITERAL(TMP1014, "invalid param kind: \'$1\'", 24);
-STRING_LITERAL(TMP1015, "default argument invalid", 24);
-STRING_LITERAL(TMP1016, "named parameter has to be an identifier", 39);
-STRING_LITERAL(TMP1017, "no return type allowed for $1", 29);
-STRING_LITERAL(TMP1018, "a type conversion needs exactly one argument", 44);
-STRING_LITERAL(TMP1019, "invalid pragma: $1", 18);
-STRING_LITERAL(TMP1020, "$1 not allowed here", 19);
-STRING_LITERAL(TMP1021, "invalid control flow: $1", 24);
-STRING_LITERAL(TMP1022, "invalid type: \'$1\'", 18);
-STRING_LITERAL(TMP1023, "\'[]\' needs a pointer or reference type", 38);
-STRING_LITERAL(TMP1024, "invalid expression", 18);
-STRING_LITERAL(TMP1025, "invalid expression: \'$1\'", 24);
-STRING_LITERAL(TMP1026, "enum has no value \'$1\'", 22);
-STRING_LITERAL(TMP1027, "named expression expected", 25);
-STRING_LITERAL(TMP1028, "named expression not allowed here", 33);
-STRING_LITERAL(TMP1029, "\'$1\' expects one type parameter", 31);
-STRING_LITERAL(TMP1030, "array expects two type parameters", 33);
-STRING_LITERAL(TMP1031, "invalid visibility: \'$1\'", 24);
-STRING_LITERAL(TMP1032, "initialization not allowed here", 31);
-STRING_LITERAL(TMP1033, "\'$1\' cannot be assigned to", 26);
-STRING_LITERAL(TMP1034, "iterators can only be defined at the module\'s top level", 55);
-STRING_LITERAL(TMP1035, "$1 needs a return type", 22);
-STRING_LITERAL(TMP1036, "no return type declared", 23);
-STRING_LITERAL(TMP1037, "invalid command: \'$1\'", 21);
-STRING_LITERAL(TMP1038, "\'$1\' is only allowed at top level", 33);
-STRING_LITERAL(TMP1039, "\'$1\' needs a parameter that has an object type", 46);
-STRING_LITERAL(TMP1040, "template/macro instantiation too nested", 39);
-STRING_LITERAL(TMP1041, "template/generic instantiation from here", 40);
-STRING_LITERAL(TMP1042, "invalid index value for tuple subscript", 39);
-STRING_LITERAL(TMP1043, "command expects a filename argument", 35);
-STRING_LITERAL(TMP1044, "please, specify a main module in the project configuration file", 63);
-STRING_LITERAL(TMP1045, "\'$1\' is not a concrete type.", 28);
-STRING_LITERAL(TMP1046, "invalid section start", 21);
-STRING_LITERAL(TMP1047, "grid table is not implemented", 29);
-STRING_LITERAL(TMP1048, "general parse error", 19);
-STRING_LITERAL(TMP1049, "new section expected", 20);
-STRING_LITERAL(TMP1050, "whitespace expected, got \'$1\'", 29);
-STRING_LITERAL(TMP1051, "\'$1\' is no valid index file", 27);
-STRING_LITERAL(TMP1052, "cannot render reStructuredText element \'$1\'", 43);
-STRING_LITERAL(TMP1053, "type \'var var\' is not allowed", 29);
-STRING_LITERAL(TMP1054, "instantiate \'$1\' explicitly", 27);
-STRING_LITERAL(TMP1055, "only a call operator can be a delegator", 39);
-STRING_LITERAL(TMP1056, "\'$1\' is not a variable, constant or a proc name", 47);
-STRING_LITERAL(TMP1057, "the macro body cannot be compiled, because the parameter \'$1\' h"
+STRING_LITERAL(TMP930, "expression \'$1\' ambiguous in this context", 41);
+STRING_LITERAL(TMP931, "division by zero", 16);
+STRING_LITERAL(TMP932, "ordinal type expected", 21);
+STRING_LITERAL(TMP933, "ordinal or float type expected", 30);
+STRING_LITERAL(TMP934, "over- or underflow", 18);
+STRING_LITERAL(TMP935, "cannot evalutate \'$1\' because type is not defined completely", 60);
+STRING_LITERAL(TMP936, "\'chr\' expects an int in the range 0..255", 40);
+STRING_LITERAL(TMP937, "\'dynlib\' requires \'exportc\'", 27);
+STRING_LITERAL(TMP938, "undeclared field: \'$1\'", 22);
+STRING_LITERAL(TMP939, "attempt to access a nil address", 31);
+STRING_LITERAL(TMP940, "index out of bounds", 19);
+STRING_LITERAL(TMP941, "index types do not match", 24);
+STRING_LITERAL(TMP942, "\'[]\' operator invalid for this type", 35);
+STRING_LITERAL(TMP943, "value out of set bounds", 23);
+STRING_LITERAL(TMP944, "field initialized twice: \'$1\'", 29);
+STRING_LITERAL(TMP945, "field \'$1\' not initialized", 26);
+STRING_LITERAL(TMP946, "expression \'$1\' cannot be called", 32);
+STRING_LITERAL(TMP947, "expression has no type", 22);
+STRING_LITERAL(TMP948, "expression \'$1\' has no type (or is ambiguous)", 45);
+STRING_LITERAL(TMP949, "\'cast\' not allowed in safe mode", 31);
+STRING_LITERAL(TMP950, "expression cannot be casted to $1", 33);
+STRING_LITERAL(TMP951, "\',\' or \')\' expected", 19);
+STRING_LITERAL(TMP952, "\'{\' or \'(\' expected", 19);
+STRING_LITERAL(TMP953, "section (\'type\', \'proc\', etc.) expected", 39);
+STRING_LITERAL(TMP954, "range expected", 14);
+STRING_LITERAL(TMP955, "\'magic\' only allowed in system module", 37);
+STRING_LITERAL(TMP956, "power of two expected", 21);
+STRING_LITERAL(TMP957, "string literal may not be empty", 31);
+STRING_LITERAL(TMP958, "calling convention expected", 27);
+STRING_LITERAL(TMP959, "a proc can only have one calling convention", 43);
+STRING_LITERAL(TMP960, "symbol must be imported if \'lib\' pragma is used", 47);
+STRING_LITERAL(TMP961, "expression must be of type \'bool\'", 33);
+STRING_LITERAL(TMP962, "constant expression expected", 28);
+STRING_LITERAL(TMP963, "duplicate case label", 20);
+STRING_LITERAL(TMP964, "range is empty", 14);
+STRING_LITERAL(TMP965, "selector must be of an ordinal type, float or string", 52);
+STRING_LITERAL(TMP966, "selector must be of an ordinal type", 35);
+STRING_LITERAL(TMP967, "ord($1) must not be negative", 28);
+STRING_LITERAL(TMP968, "len($1) must be less than 32768", 31);
+STRING_LITERAL(TMP969, "wrong number of variables", 25);
+STRING_LITERAL(TMP970, "only a \'ref object\' can be raised", 33);
+STRING_LITERAL(TMP971, "\'break\' only allowed in loop construct", 38);
+STRING_LITERAL(TMP972, "type \'$1\' has unknown size", 26);
+STRING_LITERAL(TMP973, "a constant can only be initialized with a constant expression", 61);
+STRING_LITERAL(TMP974, "a constant needs a value", 24);
+STRING_LITERAL(TMP975, "the result type cannot be on open array", 39);
+STRING_LITERAL(TMP976, "computing the type\'s size produced an overflow", 46);
+STRING_LITERAL(TMP977, "set is too large", 16);
+STRING_LITERAL(TMP978, "base type of a set must be an ordinal", 37);
+STRING_LITERAL(TMP979, "inheritance only works with non-final objects", 45);
+STRING_LITERAL(TMP980, "inheritance only works with an enum", 35);
+STRING_LITERAL(TMP981, "illegal recursion in type \'$1\'", 30);
+STRING_LITERAL(TMP982, "cannot instantiate: \'$1\'", 24);
+STRING_LITERAL(TMP983, "expression has no address", 25);
+STRING_LITERAL(TMP984, "address of \'$1\' may not escape its stack frame", 46);
+STRING_LITERAL(TMP985, "for a \'var\' type a variable needs to be passed", 46);
+STRING_LITERAL(TMP986, "type mismatch", 13);
+STRING_LITERAL(TMP987, "type mismatch: got (", 20);
+STRING_LITERAL(TMP988, "but expected one of: ", 21);
+STRING_LITERAL(TMP989, "but expected \'$1\'", 17);
+STRING_LITERAL(TMP990, "ambiguous call; both $1 and $2 match for: $3", 44);
+STRING_LITERAL(TMP991, "wrong number of arguments", 25);
+STRING_LITERAL(TMP992, "\'$1\' cannot be passed to a procvar", 34);
+STRING_LITERAL(TMP993, "$1 cannot be declared in parameter declaration", 46);
+STRING_LITERAL(TMP994, "pragmas are only allowed in the header of a proc", 48);
+STRING_LITERAL(TMP995, "implementation of \'$1\' is not allowed", 37);
+STRING_LITERAL(TMP996, "implementation of \'$1\' expected", 31);
+STRING_LITERAL(TMP997, "no symbol to borrow from found", 30);
+STRING_LITERAL(TMP998, "value of type \'$1\' has to be discarded", 38);
+STRING_LITERAL(TMP999, "statement returns no value that can be discarded", 48);
+STRING_LITERAL(TMP1000, "conversion from $1 to $2 is invalid", 35);
+STRING_LITERAL(TMP1001, "cannot bind parameter \'$1\' twice", 32);
+STRING_LITERAL(TMP1002, "invalid order in array constructor", 34);
+STRING_LITERAL(TMP1003, "invalid order in enum \'$1\'", 26);
+STRING_LITERAL(TMP1004, "enum \'$1\' has holes", 19);
+STRING_LITERAL(TMP1005, "\'except\' or \'finally\' expected", 30);
+STRING_LITERAL(TMP1006, "after catch all \'except\' or \'finally\' no section may follow", 59);
+STRING_LITERAL(TMP1007, "option expected, but found \'$1\'", 31);
+STRING_LITERAL(TMP1008, "\'$1\' is not a label", 19);
+STRING_LITERAL(TMP1009, "not all cases are covered", 25);
+STRING_LITERAL(TMP1010, "unknown substitution variable: \'$1\'", 35);
+STRING_LITERAL(TMP1011, "complex statement requires indentation", 38);
+STRING_LITERAL(TMP1012, "\'$1\' is not callable", 20);
+STRING_LITERAL(TMP1013, "no pragmas allowed for $1", 25);
+STRING_LITERAL(TMP1014, "no generic parameters allowed for $1", 36);
+STRING_LITERAL(TMP1015, "invalid param kind: \'$1\'", 24);
+STRING_LITERAL(TMP1016, "default argument invalid", 24);
+STRING_LITERAL(TMP1017, "named parameter has to be an identifier", 39);
+STRING_LITERAL(TMP1018, "no return type allowed for $1", 29);
+STRING_LITERAL(TMP1019, "a type conversion needs exactly one argument", 44);
+STRING_LITERAL(TMP1020, "invalid pragma: $1", 18);
+STRING_LITERAL(TMP1021, "$1 not allowed here", 19);
+STRING_LITERAL(TMP1022, "invalid control flow: $1", 24);
+STRING_LITERAL(TMP1023, "invalid type: \'$1\'", 18);
+STRING_LITERAL(TMP1024, "\'[]\' needs a pointer or reference type", 38);
+STRING_LITERAL(TMP1025, "invalid expression", 18);
+STRING_LITERAL(TMP1026, "invalid expression: \'$1\'", 24);
+STRING_LITERAL(TMP1027, "enum has no value \'$1\'", 22);
+STRING_LITERAL(TMP1028, "named expression expected", 25);
+STRING_LITERAL(TMP1029, "named expression not allowed here", 33);
+STRING_LITERAL(TMP1030, "\'$1\' expects one type parameter", 31);
+STRING_LITERAL(TMP1031, "array expects two type parameters", 33);
+STRING_LITERAL(TMP1032, "invalid visibility: \'$1\'", 24);
+STRING_LITERAL(TMP1033, "initialization not allowed here", 31);
+STRING_LITERAL(TMP1034, "\'$1\' cannot be assigned to", 26);
+STRING_LITERAL(TMP1035, "iterators can only be defined at the module\'s top level", 55);
+STRING_LITERAL(TMP1036, "$1 needs a return type", 22);
+STRING_LITERAL(TMP1037, "no return type declared", 23);
+STRING_LITERAL(TMP1038, "invalid command: \'$1\'", 21);
+STRING_LITERAL(TMP1039, "\'$1\' is only allowed at top level", 33);
+STRING_LITERAL(TMP1040, "\'$1\' needs a parameter that has an object type", 46);
+STRING_LITERAL(TMP1041, "template/macro instantiation too nested", 39);
+STRING_LITERAL(TMP1042, "template/generic instantiation from here", 40);
+STRING_LITERAL(TMP1043, "invalid index value for tuple subscript", 39);
+STRING_LITERAL(TMP1044, "command expects a filename argument", 35);
+STRING_LITERAL(TMP1045, "please, specify a main module in the project configuration file", 63);
+STRING_LITERAL(TMP1046, "\'$1\' is not a concrete type.", 28);
+STRING_LITERAL(TMP1047, "invalid section start", 21);
+STRING_LITERAL(TMP1048, "grid table is not implemented", 29);
+STRING_LITERAL(TMP1049, "general parse error", 19);
+STRING_LITERAL(TMP1050, "new section expected", 20);
+STRING_LITERAL(TMP1051, "whitespace expected, got \'$1\'", 29);
+STRING_LITERAL(TMP1052, "\'$1\' is no valid index file", 27);
+STRING_LITERAL(TMP1053, "cannot render reStructuredText element \'$1\'", 43);
+STRING_LITERAL(TMP1054, "type \'var var\' is not allowed", 29);
+STRING_LITERAL(TMP1055, "instantiate \'$1\' explicitly", 27);
+STRING_LITERAL(TMP1056, "only a call operator can be a delegator", 39);
+STRING_LITERAL(TMP1057, "\'$1\' is not a variable, constant or a proc name", 47);
+STRING_LITERAL(TMP1058, "the macro body cannot be compiled, because the parameter \'$1\' h"
 "as a generic type", 80);
-STRING_LITERAL(TMP1058, "Destructor signature is too specific. A destructor must be asso"
+STRING_LITERAL(TMP1059, "Destructor signature is too specific. A destructor must be asso"
 "ciated will all instantiations of a generic type", 111);
-STRING_LITERAL(TMP1059, "inline iterators can be used as parameters only for templates, "
+STRING_LITERAL(TMP1060, "inline iterators can be used as parameters only for templates, "
 "macros and other inline iterators", 96);
-STRING_LITERAL(TMP1060, "\'$1\' expects two arguments", 26);
-STRING_LITERAL(TMP1061, "\'$1\' expects object types", 25);
-STRING_LITERAL(TMP1062, "\'$1\' can never be of this subtype", 33);
-STRING_LITERAL(TMP1063, "interpretation requires too many iterations", 43);
-STRING_LITERAL(TMP1064, "cannot evaluate \'$1\'", 20);
-STRING_LITERAL(TMP1065, "field \'$1\' cannot be found", 26);
-STRING_LITERAL(TMP1066, "invalid conversion from type \'$1\'", 33);
-STRING_LITERAL(TMP1067, "assertion failed", 16);
-STRING_LITERAL(TMP1068, "cannot generate code for \'$1\'", 29);
-STRING_LITERAL(TMP1069, "$1 requires one parameter", 25);
-STRING_LITERAL(TMP1070, "unhandled exception: $1", 23);
-STRING_LITERAL(TMP1071, "macro returned a cyclic abstract syntax tree", 44);
-STRING_LITERAL(TMP1072, "\'$1\' is no macro or template", 28);
-STRING_LITERAL(TMP1073, "\'$1\' can have side effects", 26);
-STRING_LITERAL(TMP1074, "iterator within for loop context expected", 41);
-STRING_LITERAL(TMP1075, "\'let\' symbol requires an initialization", 39);
-STRING_LITERAL(TMP1076, "a thread var cannot be initialized explicitly", 45);
-STRING_LITERAL(TMP1077, "usage of \'$1\' is a user-defined error", 37);
-STRING_LITERAL(TMP1078, "illegal capture \'$1\'", 20);
-STRING_LITERAL(TMP1079, "\'$1\' cannot have \'closure\' calling convention", 45);
-STRING_LITERAL(TMP1080, "\'$1\' can only be used in compile-time context", 45);
-STRING_LITERAL(TMP1081, "cannot infer the type of the $1", 31);
-STRING_LITERAL(TMP1082, "cannot infer the return type of the proc", 40);
-STRING_LITERAL(TMP1083, "A nested proc can have generic parameters only when it is used "
+STRING_LITERAL(TMP1061, "\'$1\' expects two arguments", 26);
+STRING_LITERAL(TMP1062, "\'$1\' expects object types", 25);
+STRING_LITERAL(TMP1063, "\'$1\' can never be of this subtype", 33);
+STRING_LITERAL(TMP1064, "interpretation requires too many iterations", 43);
+STRING_LITERAL(TMP1065, "cannot evaluate \'$1\'", 20);
+STRING_LITERAL(TMP1066, "field \'$1\' cannot be found", 26);
+STRING_LITERAL(TMP1067, "invalid conversion from type \'$1\'", 33);
+STRING_LITERAL(TMP1068, "assertion failed", 16);
+STRING_LITERAL(TMP1069, "cannot generate code for \'$1\'", 29);
+STRING_LITERAL(TMP1070, "$1 requires one parameter", 25);
+STRING_LITERAL(TMP1071, "unhandled exception: $1", 23);
+STRING_LITERAL(TMP1072, "macro returned a cyclic abstract syntax tree", 44);
+STRING_LITERAL(TMP1073, "\'$1\' is no macro or template", 28);
+STRING_LITERAL(TMP1074, "\'$1\' can have side effects", 26);
+STRING_LITERAL(TMP1075, "iterator within for loop context expected", 41);
+STRING_LITERAL(TMP1076, "\'let\' symbol requires an initialization", 39);
+STRING_LITERAL(TMP1077, "a thread var cannot be initialized explicitly", 45);
+STRING_LITERAL(TMP1078, "usage of \'$1\' is a user-defined error", 37);
+STRING_LITERAL(TMP1079, "illegal capture \'$1\'", 20);
+STRING_LITERAL(TMP1080, "\'$1\' cannot have \'closure\' calling convention", 45);
+STRING_LITERAL(TMP1081, "\'$1\' can only be used in compile-time context", 45);
+STRING_LITERAL(TMP1082, "cannot infer the type of the $1", 31);
+STRING_LITERAL(TMP1083, "cannot infer the return type of the proc", 40);
+STRING_LITERAL(TMP1084, "A nested proc can have generic parameters only when it is used "
 "as an operand to another routine and the types of the generic pa"
 "ramers can be inferred from the expected signature.", 178);
-STRING_LITERAL(TMP1084, "The current compiler \'$1\' doesn\'t support the requested compila"
+STRING_LITERAL(TMP1085, "The current compiler \'$1\' doesn\'t support the requested compila"
 "tion target", 74);
-STRING_LITERAL(TMP1085, "cannot open \'$1\' [CannotOpenFile]", 33);
-STRING_LITERAL(TMP1086, "octal escape sequences do not exist; leading zero is ignored [O"
+STRING_LITERAL(TMP1086, "cannot open \'$1\' [CannotOpenFile]", 33);
+STRING_LITERAL(TMP1087, "octal escape sequences do not exist; leading zero is ignored [O"
 "ctalEscape]", 74);
-STRING_LITERAL(TMP1087, "\'$1\' is never read [XIsNeverRead]", 33);
-STRING_LITERAL(TMP1088, "\'$1\' might not have been initialized [XmightNotBeenInit]", 56);
-STRING_LITERAL(TMP1089, "$1 is deprecated [Deprecated]", 29);
-STRING_LITERAL(TMP1090, "config file \'$1\' is deprecated [ConfigDeprecated]", 49);
-STRING_LITERAL(TMP1091, "\'l\' should not be used as an identifier; may look like \'1\' (one"
+STRING_LITERAL(TMP1088, "\'$1\' is never read [XIsNeverRead]", 33);
+STRING_LITERAL(TMP1089, "\'$1\' might not have been initialized [XmightNotBeenInit]", 56);
+STRING_LITERAL(TMP1090, "$1 is deprecated [Deprecated]", 29);
+STRING_LITERAL(TMP1091, "config file \'$1\' is deprecated [ConfigDeprecated]", 49);
+STRING_LITERAL(TMP1092, "\'l\' should not be used as an identifier; may look like \'1\' (one"
 ") [SmallLshouldNotBeUsed]", 88);
-STRING_LITERAL(TMP1092, "unknown magic \'$1\' might crash the compiler [UnknownMagic]", 58);
-STRING_LITERAL(TMP1093, "redefinition of label \'$1\' [RedefinitionOfLabel]", 48);
-STRING_LITERAL(TMP1094, "unknown substitution \'$1\' [UnknownSubstitutionX]", 48);
-STRING_LITERAL(TMP1095, "language \'$1\' not supported [LanguageXNotSupported]", 51);
-STRING_LITERAL(TMP1096, "field \'$1\' not supported [FieldXNotSupported]", 45);
-STRING_LITERAL(TMP1097, "comment \'$1\' ignored [CommentXIgnored]", 38);
-STRING_LITERAL(TMP1098, "\'nil\' statement is deprecated; use an empty \'discard\' statement"
+STRING_LITERAL(TMP1093, "unknown magic \'$1\' might crash the compiler [UnknownMagic]", 58);
+STRING_LITERAL(TMP1094, "redefinition of label \'$1\' [RedefinitionOfLabel]", 48);
+STRING_LITERAL(TMP1095, "unknown substitution \'$1\' [UnknownSubstitutionX]", 48);
+STRING_LITERAL(TMP1096, "language \'$1\' not supported [LanguageXNotSupported]", 51);
+STRING_LITERAL(TMP1097, "field \'$1\' not supported [FieldXNotSupported]", 45);
+STRING_LITERAL(TMP1098, "comment \'$1\' ignored [CommentXIgnored]", 38);
+STRING_LITERAL(TMP1099, "\'nil\' statement is deprecated; use an empty \'discard\' statement"
 " instead [NilStmt]", 81);
-STRING_LITERAL(TMP1099, "\'$1\' has no type. Typeless parameters are deprecated; only allo"
+STRING_LITERAL(TMP1100, "\'$1\' has no type. Typeless parameters are deprecated; only allo"
 "wed for \'template\' [TypelessParam]", 97);
-STRING_LITERAL(TMP1100, "possible inconsistency of thread local heaps [DifferentHeaps]", 61);
-STRING_LITERAL(TMP1101, "write to foreign heap [WriteToForeignHeap]", 42);
-STRING_LITERAL(TMP1102, "unsafe code: \'$1\' [UnsafeCode]", 30);
-STRING_LITERAL(TMP1103, "each identifier is a tuple [EachIdentIsTuple]", 45);
-STRING_LITERAL(TMP1104, "shadowed identifier: \'$1\' [ShadowIdent]", 39);
-STRING_LITERAL(TMP1105, "Cannot prove that \'$1\' is initialized. This will become a compi"
+STRING_LITERAL(TMP1101, "possible inconsistency of thread local heaps [DifferentHeaps]", 61);
+STRING_LITERAL(TMP1102, "write to foreign heap [WriteToForeignHeap]", 42);
+STRING_LITERAL(TMP1103, "unsafe code: \'$1\' [UnsafeCode]", 30);
+STRING_LITERAL(TMP1104, "each identifier is a tuple [EachIdentIsTuple]", 45);
+STRING_LITERAL(TMP1105, "shadowed identifier: \'$1\' [ShadowIdent]", 39);
+STRING_LITERAL(TMP1106, "Cannot prove that \'$1\' is initialized. This will become a compi"
 "le time error in the future. [ProveInit]", 103);
-STRING_LITERAL(TMP1106, "cannot prove that field \'$1\' is accessible [ProveField]", 55);
-STRING_LITERAL(TMP1107, "cannot prove index \'$1\' is valid [ProveIndex]", 45);
-STRING_LITERAL(TMP1108, "not GC-safe: \'$1\' [GcUnsafe]", 28);
-STRING_LITERAL(TMP1109, "\'$1\' might not have been initialized [Uninit]", 45);
-STRING_LITERAL(TMP1110, "\'$1\' uses GC\'ed memory [GcMem]", 30);
-STRING_LITERAL(TMP1111, "usage of a type with a destructor in a non destructible context"
+STRING_LITERAL(TMP1107, "cannot prove that field \'$1\' is accessible [ProveField]", 55);
+STRING_LITERAL(TMP1108, "cannot prove index \'$1\' is valid [ProveIndex]", 45);
+STRING_LITERAL(TMP1109, "not GC-safe: \'$1\' [GcUnsafe]", 28);
+STRING_LITERAL(TMP1110, "\'$1\' might not have been initialized [Uninit]", 45);
+STRING_LITERAL(TMP1111, "\'$1\' uses GC\'ed memory [GcMem]", 30);
+STRING_LITERAL(TMP1112, "usage of a type with a destructor in a non destructible context"
 ". This will become a compile time error in the future. [Destruct"
 "or]", 130);
-STRING_LITERAL(TMP1112, "$1 [LockLevel]", 14);
-STRING_LITERAL(TMP1113, "Special variable \'result\' is shadowed. [ResultShadowed]", 55);
-STRING_LITERAL(TMP1114, "$1 [User]", 9);
-STRING_LITERAL(TMP1115, "operation successful [Success]", 30);
-STRING_LITERAL(TMP1116, "operation successful ($# lines compiled; $# sec total; $#; $#) "
+STRING_LITERAL(TMP1113, "$1 [LockLevel]", 14);
+STRING_LITERAL(TMP1114, "Special variable \'result\' is shadowed. [ResultShadowed]", 55);
+STRING_LITERAL(TMP1115, "$1 [User]", 9);
+STRING_LITERAL(TMP1116, "operation successful [Success]", 30);
+STRING_LITERAL(TMP1117, "operation successful ($# lines compiled; $# sec total; $#; $#) "
 "[SuccessX]", 73);
-STRING_LITERAL(TMP1117, "line too long [LineTooLong]", 27);
-STRING_LITERAL(TMP1118, "\'$1\' is declared but not used [XDeclaredButNotUsed]", 51);
-STRING_LITERAL(TMP1119, "conversion to base object is not needed [ConvToBaseNotNeeded]", 61);
-STRING_LITERAL(TMP1120, "conversion from $1 to itself is pointless [ConvFromXtoItselfNot"
+STRING_LITERAL(TMP1118, "line too long [LineTooLong]", 27);
+STRING_LITERAL(TMP1119, "\'$1\' is declared but not used [XDeclaredButNotUsed]", 51);
+STRING_LITERAL(TMP1120, "conversion to base object is not needed [ConvToBaseNotNeeded]", 61);
+STRING_LITERAL(TMP1121, "conversion from $1 to itself is pointless [ConvFromXtoItselfNot"
 "Needed]", 70);
-STRING_LITERAL(TMP1121, "expression evaluates always to \'$1\' [ExprAlwaysX]", 49);
-STRING_LITERAL(TMP1122, "quit() called [QuitCalled]", 26);
-STRING_LITERAL(TMP1123, "$1 [Processing]", 15);
-STRING_LITERAL(TMP1124, "generated code listing: [CodeBegin]", 35);
-STRING_LITERAL(TMP1125, "end of listing [CodeEnd]", 24);
-STRING_LITERAL(TMP1126, "used config file \'$1\' [Conf]", 28);
-STRING_LITERAL(TMP1127, "added path: \'$1\' [Path]", 23);
-STRING_LITERAL(TMP1128, "condition is always true: \'$1\' [CondTrue]", 41);
-STRING_LITERAL(TMP1129, "name should be: \'$1\' [Name]", 27);
-STRING_LITERAL(TMP1130, "$1 [Pattern]", 12);
-NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP857),
-((NimStringDesc*) &TMP858),
+STRING_LITERAL(TMP1122, "expression evaluates always to \'$1\' [ExprAlwaysX]", 49);
+STRING_LITERAL(TMP1123, "quit() called [QuitCalled]", 26);
+STRING_LITERAL(TMP1124, "$1 [Processing]", 15);
+STRING_LITERAL(TMP1125, "generated code listing: [CodeBegin]", 35);
+STRING_LITERAL(TMP1126, "end of listing [CodeEnd]", 24);
+STRING_LITERAL(TMP1127, "used config file \'$1\' [Conf]", 28);
+STRING_LITERAL(TMP1128, "added path: \'$1\' [Path]", 23);
+STRING_LITERAL(TMP1129, "condition is always true: \'$1\' [CondTrue]", 41);
+STRING_LITERAL(TMP1130, "name should be: \'$1\' [Name]", 27);
+STRING_LITERAL(TMP1131, "$1 [Pattern]", 12);
+NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP858),
 ((NimStringDesc*) &TMP859),
 ((NimStringDesc*) &TMP860),
 ((NimStringDesc*) &TMP861),
@@ -903,8 +902,8 @@ NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP857),
 ((NimStringDesc*) &TMP1042),
 ((NimStringDesc*) &TMP1043),
 ((NimStringDesc*) &TMP1044),
-((NimStringDesc*) &TMP880),
 ((NimStringDesc*) &TMP1045),
+((NimStringDesc*) &TMP881),
 ((NimStringDesc*) &TMP1046),
 ((NimStringDesc*) &TMP1047),
 ((NimStringDesc*) &TMP1048),
@@ -944,8 +943,8 @@ NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP857),
 ((NimStringDesc*) &TMP1082),
 ((NimStringDesc*) &TMP1083),
 ((NimStringDesc*) &TMP1084),
-((NimStringDesc*) &TMP861),
 ((NimStringDesc*) &TMP1085),
+((NimStringDesc*) &TMP862),
 ((NimStringDesc*) &TMP1086),
 ((NimStringDesc*) &TMP1087),
 ((NimStringDesc*) &TMP1088),
@@ -969,8 +968,8 @@ NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP857),
 ((NimStringDesc*) &TMP1106),
 ((NimStringDesc*) &TMP1107),
 ((NimStringDesc*) &TMP1108),
-((NimStringDesc*) &TMP861),
 ((NimStringDesc*) &TMP1109),
+((NimStringDesc*) &TMP862),
 ((NimStringDesc*) &TMP1110),
 ((NimStringDesc*) &TMP1111),
 ((NimStringDesc*) &TMP1112),
@@ -992,41 +991,41 @@ NIM_CONST TY162288 Msgkindtostr_162287 = {((NimStringDesc*) &TMP857),
 ((NimStringDesc*) &TMP1128),
 ((NimStringDesc*) &TMP1129),
 ((NimStringDesc*) &TMP1130),
-((NimStringDesc*) &TMP1114)}
+((NimStringDesc*) &TMP1131),
+((NimStringDesc*) &TMP1115)}
 ;
-STRING_LITERAL(TMP1131, "CannotOpenFile", 14);
-STRING_LITERAL(TMP1132, "OctalEscape", 11);
-STRING_LITERAL(TMP1133, "XIsNeverRead", 12);
-STRING_LITERAL(TMP1134, "XmightNotBeenInit", 17);
-STRING_LITERAL(TMP1135, "Deprecated", 10);
-STRING_LITERAL(TMP1136, "ConfigDeprecated", 16);
-STRING_LITERAL(TMP1137, "SmallLshouldNotBeUsed", 21);
-STRING_LITERAL(TMP1138, "UnknownMagic", 12);
-STRING_LITERAL(TMP1139, "RedefinitionOfLabel", 19);
-STRING_LITERAL(TMP1140, "UnknownSubstitutionX", 20);
-STRING_LITERAL(TMP1141, "LanguageXNotSupported", 21);
-STRING_LITERAL(TMP1142, "FieldXNotSupported", 18);
-STRING_LITERAL(TMP1143, "CommentXIgnored", 15);
-STRING_LITERAL(TMP1144, "NilStmt", 7);
-STRING_LITERAL(TMP1145, "TypelessParam", 13);
-STRING_LITERAL(TMP1146, "DifferentHeaps", 14);
-STRING_LITERAL(TMP1147, "WriteToForeignHeap", 18);
-STRING_LITERAL(TMP1148, "UnsafeCode", 10);
-STRING_LITERAL(TMP1149, "EachIdentIsTuple", 16);
-STRING_LITERAL(TMP1150, "ShadowIdent", 11);
-STRING_LITERAL(TMP1151, "ProveInit", 9);
-STRING_LITERAL(TMP1152, "ProveField", 10);
-STRING_LITERAL(TMP1153, "ProveIndex", 10);
-STRING_LITERAL(TMP1154, "GcUnsafe", 8);
-STRING_LITERAL(TMP1155, "GcUnsafe2", 9);
-STRING_LITERAL(TMP1156, "Uninit", 6);
-STRING_LITERAL(TMP1157, "GcMem", 5);
-STRING_LITERAL(TMP1158, "Destructor", 10);
-STRING_LITERAL(TMP1159, "LockLevel", 9);
-STRING_LITERAL(TMP1160, "ResultShadowed", 14);
-STRING_LITERAL(TMP1161, "User", 4);
-NIM_CONST TY162297 Warningstostr_162296 = {((NimStringDesc*) &TMP1131),
-((NimStringDesc*) &TMP1132),
+STRING_LITERAL(TMP1132, "CannotOpenFile", 14);
+STRING_LITERAL(TMP1133, "OctalEscape", 11);
+STRING_LITERAL(TMP1134, "XIsNeverRead", 12);
+STRING_LITERAL(TMP1135, "XmightNotBeenInit", 17);
+STRING_LITERAL(TMP1136, "Deprecated", 10);
+STRING_LITERAL(TMP1137, "ConfigDeprecated", 16);
+STRING_LITERAL(TMP1138, "SmallLshouldNotBeUsed", 21);
+STRING_LITERAL(TMP1139, "UnknownMagic", 12);
+STRING_LITERAL(TMP1140, "RedefinitionOfLabel", 19);
+STRING_LITERAL(TMP1141, "UnknownSubstitutionX", 20);
+STRING_LITERAL(TMP1142, "LanguageXNotSupported", 21);
+STRING_LITERAL(TMP1143, "FieldXNotSupported", 18);
+STRING_LITERAL(TMP1144, "CommentXIgnored", 15);
+STRING_LITERAL(TMP1145, "NilStmt", 7);
+STRING_LITERAL(TMP1146, "TypelessParam", 13);
+STRING_LITERAL(TMP1147, "DifferentHeaps", 14);
+STRING_LITERAL(TMP1148, "WriteToForeignHeap", 18);
+STRING_LITERAL(TMP1149, "UnsafeCode", 10);
+STRING_LITERAL(TMP1150, "EachIdentIsTuple", 16);
+STRING_LITERAL(TMP1151, "ShadowIdent", 11);
+STRING_LITERAL(TMP1152, "ProveInit", 9);
+STRING_LITERAL(TMP1153, "ProveField", 10);
+STRING_LITERAL(TMP1154, "ProveIndex", 10);
+STRING_LITERAL(TMP1155, "GcUnsafe", 8);
+STRING_LITERAL(TMP1156, "GcUnsafe2", 9);
+STRING_LITERAL(TMP1157, "Uninit", 6);
+STRING_LITERAL(TMP1158, "GcMem", 5);
+STRING_LITERAL(TMP1159, "Destructor", 10);
+STRING_LITERAL(TMP1160, "LockLevel", 9);
+STRING_LITERAL(TMP1161, "ResultShadowed", 14);
+STRING_LITERAL(TMP1162, "User", 4);
+NIM_CONST TY162297 Warningstostr_162296 = {((NimStringDesc*) &TMP1132),
 ((NimStringDesc*) &TMP1133),
 ((NimStringDesc*) &TMP1134),
 ((NimStringDesc*) &TMP1135),
@@ -1055,26 +1054,26 @@ NIM_CONST TY162297 Warningstostr_162296 = {((NimStringDesc*) &TMP1131),
 ((NimStringDesc*) &TMP1158),
 ((NimStringDesc*) &TMP1159),
 ((NimStringDesc*) &TMP1160),
-((NimStringDesc*) &TMP1161)}
+((NimStringDesc*) &TMP1161),
+((NimStringDesc*) &TMP1162)}
 ;
-STRING_LITERAL(TMP1162, "Success", 7);
-STRING_LITERAL(TMP1163, "SuccessX", 8);
-STRING_LITERAL(TMP1164, "LineTooLong", 11);
-STRING_LITERAL(TMP1165, "XDeclaredButNotUsed", 19);
-STRING_LITERAL(TMP1166, "ConvToBaseNotNeeded", 19);
-STRING_LITERAL(TMP1167, "ConvFromXtoItselfNotNeeded", 26);
-STRING_LITERAL(TMP1168, "ExprAlwaysX", 11);
-STRING_LITERAL(TMP1169, "QuitCalled", 10);
-STRING_LITERAL(TMP1170, "Processing", 10);
-STRING_LITERAL(TMP1171, "CodeBegin", 9);
-STRING_LITERAL(TMP1172, "CodeEnd", 7);
-STRING_LITERAL(TMP1173, "Conf", 4);
-STRING_LITERAL(TMP1174, "Path", 4);
-STRING_LITERAL(TMP1175, "CondTrue", 8);
-STRING_LITERAL(TMP1176, "Name", 4);
-STRING_LITERAL(TMP1177, "Pattern", 7);
-NIM_CONST TY162302 Hintstostr_162301 = {((NimStringDesc*) &TMP1162),
-((NimStringDesc*) &TMP1163),
+STRING_LITERAL(TMP1163, "Success", 7);
+STRING_LITERAL(TMP1164, "SuccessX", 8);
+STRING_LITERAL(TMP1165, "LineTooLong", 11);
+STRING_LITERAL(TMP1166, "XDeclaredButNotUsed", 19);
+STRING_LITERAL(TMP1167, "ConvToBaseNotNeeded", 19);
+STRING_LITERAL(TMP1168, "ConvFromXtoItselfNotNeeded", 26);
+STRING_LITERAL(TMP1169, "ExprAlwaysX", 11);
+STRING_LITERAL(TMP1170, "QuitCalled", 10);
+STRING_LITERAL(TMP1171, "Processing", 10);
+STRING_LITERAL(TMP1172, "CodeBegin", 9);
+STRING_LITERAL(TMP1173, "CodeEnd", 7);
+STRING_LITERAL(TMP1174, "Conf", 4);
+STRING_LITERAL(TMP1175, "Path", 4);
+STRING_LITERAL(TMP1176, "CondTrue", 8);
+STRING_LITERAL(TMP1177, "Name", 4);
+STRING_LITERAL(TMP1178, "Pattern", 7);
+NIM_CONST TY162302 Hintstostr_162301 = {((NimStringDesc*) &TMP1163),
 ((NimStringDesc*) &TMP1164),
 ((NimStringDesc*) &TMP1165),
 ((NimStringDesc*) &TMP1166),
@@ -1089,39 +1088,40 @@ NIM_CONST TY162302 Hintstostr_162301 = {((NimStringDesc*) &TMP1162),
 ((NimStringDesc*) &TMP1175),
 ((NimStringDesc*) &TMP1176),
 ((NimStringDesc*) &TMP1177),
-((NimStringDesc*) &TMP1161)}
+((NimStringDesc*) &TMP1178),
+((NimStringDesc*) &TMP1162)}
 ;
-STRING_LITERAL(TMP1189, "\"", 1);
-STRING_LITERAL(TMP1195, "", 0);
-STRING_LITERAL(TMP1207, "command line", 12);
-STRING_LITERAL(TMP1208, "compilation artifact", 20);
-STRING_LITERAL(TMP1212, "\012", 1);
-STRING_LITERAL(TMP1215, "suggest done", 12);
-STRING_LITERAL(TMP1218, "???", 3);
-STRING_LITERAL(TMP1219, "0 <= fileIdx ", 13);
-STRING_LITERAL(TMP1220, ":", 1);
-STRING_LITERAL(TMP1221, "(", 1);
-STRING_LITERAL(TMP1222, ",", 1);
-STRING_LITERAL(TMP1223, ")", 1);
-STRING_LITERAL(TMP1252, "No stack traceback available\012To create a stacktrace, rerun comp"
+STRING_LITERAL(TMP1190, "\"", 1);
+STRING_LITERAL(TMP1196, "", 0);
+STRING_LITERAL(TMP1208, "command line", 12);
+STRING_LITERAL(TMP1209, "compilation artifact", 20);
+STRING_LITERAL(TMP1213, "\012", 1);
+STRING_LITERAL(TMP1216, "suggest done", 12);
+STRING_LITERAL(TMP1219, "???", 3);
+STRING_LITERAL(TMP1220, "0 <= fileIdx ", 13);
+STRING_LITERAL(TMP1221, ":", 1);
+STRING_LITERAL(TMP1222, "(", 1);
+STRING_LITERAL(TMP1223, ",", 1);
+STRING_LITERAL(TMP1224, ")", 1);
+STRING_LITERAL(TMP1253, "No stack traceback available\012To create a stacktrace, rerun comp"
 "ilation with ./koch temp ", 88);
-STRING_LITERAL(TMP1253, " <file>", 7);
-STRING_LITERAL(TMP1256, "$1($2, $3) Info: $4", 19);
-STRING_LITERAL(TMP1259, "Error: $1", 9);
-STRING_LITERAL(TMP1260, "Warning: $1", 11);
-STRING_LITERAL(TMP1262, "Hint: $1", 8);
-STRING_LITERAL(TMP1265, "  ", 2);
-STRING_LITERAL(TMP1266, "$1($2, $3) Warning: $4", 22);
-STRING_LITERAL(TMP1267, "$1($2, $3) Hint: $4", 19);
-STRING_LITERAL(TMP1268, "$1($2, $3) Error: $4", 20);
-STRING_LITERAL(TMP1279, "compiler/msgs.nim", 17);
-NIM_CONST TY146211 TMP1278 = {((NimStringDesc*) &TMP1279),
+STRING_LITERAL(TMP1254, " <file>", 7);
+STRING_LITERAL(TMP1257, "$1($2, $3) Info: $4", 19);
+STRING_LITERAL(TMP1260, "Error: $1", 9);
+STRING_LITERAL(TMP1261, "Warning: $1", 11);
+STRING_LITERAL(TMP1263, "Hint: $1", 8);
+STRING_LITERAL(TMP1266, "  ", 2);
+STRING_LITERAL(TMP1267, "$1($2, $3) Warning: $4", 22);
+STRING_LITERAL(TMP1268, "$1($2, $3) Hint: $4", 19);
+STRING_LITERAL(TMP1269, "$1($2, $3) Error: $4", 20);
+STRING_LITERAL(TMP1280, "compiler/msgs.nim", 17);
+NIM_CONST TY146211 TMP1279 = {((NimStringDesc*) &TMP1280),
 ((NI) 868)}
 ;
-NIM_CONST TY146211 TMP1281 = {((NimStringDesc*) &TMP1279),
+NIM_CONST TY146211 TMP1282 = {((NimStringDesc*) &TMP1280),
 ((NI) 875)}
 ;
-STRING_LITERAL(TMP1282, "ropes: invalid format string: ", 30);
+STRING_LITERAL(TMP1283, "ropes: invalid format string: ", 30);
 Table162376 filenametoindextbl_162414;
 extern TNimType NTI162376; /* Table */
 TY162415* fileinfos_162432;
@@ -1170,7 +1170,7 @@ extern TY160023 errorhandler_160028;
 TNimType NTI162005; /* TMsgKind */
 TNimType NTI162332; /* TNoteKind */
 TNimType NTI162334; /* TNoteKinds */
-N_NIMCALL(void, TMP1183)(void* p, NI op) {
+N_NIMCALL(void, TMP1184)(void* p, NI op) {
 	TY162415* a;
 	NI LOC1;
 	a = (TY162415*)p;
@@ -1384,45 +1384,45 @@ static N_INLINE(NI, modInt)(NI a, NI b) {
 N_NIMCALL(Ropeobj160009*, makecstring_162449)(NimStringDesc* s) {
 	Ropeobj160009* result;
 	NimStringDesc* res;
-	NI TMP1188;
+	NI TMP1189;
 	Ropeobj160009* LOC9;
 	nimfr("makeCString", "msgs.nim")
 	result = 0;
 	nimln(499, "msgs.nim");
 	result = NIM_NIL;
 	nimln(500, "msgs.nim");
-	TMP1188 = addInt(((NI) (((NF)(((double) ((s ? s->Sup.len : 0)))) * (NF)(1.1000000000000001e+00)))), ((NI) 1));
-	res = rawNewString(((NI)chckRange((NI)(TMP1188), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1189 = addInt(((NI) (((NF)(((double) ((s ? s->Sup.len : 0)))) * (NF)(1.1000000000000001e+00)))), ((NI) 1));
+	res = rawNewString(((NI)chckRange((NI)(TMP1189), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(501, "msgs.nim");
 	res = resizeString(res, 1);
-appendString(res, ((NimStringDesc*) &TMP1189));
+appendString(res, ((NimStringDesc*) &TMP1190));
 	{
 		NI i_162468;
 		NI HEX3Atmp_162473;
-		NI TMP1190;
+		NI TMP1191;
 		NI res_162476;
 		i_162468 = 0;
 		HEX3Atmp_162473 = 0;
 		nimln(502, "msgs.nim");
-		TMP1190 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_162473 = (NI)(TMP1190);
+		TMP1191 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_162473 = (NI)(TMP1191);
 		nimln(1598, "system.nim");
 		res_162476 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NimStringDesc* LOC8;
-				NI TMP1193;
+				NI TMP1194;
 				if (!(res_162476 <= HEX3Atmp_162473)) goto LA3;
 				nimln(1600, "system.nim");
 				i_162468 = res_162476;
 				nimln(503, "msgs.nim");
 				{
-					NI TMP1191;
 					NI TMP1192;
-					TMP1191 = addInt(i_162468, ((NI) 1));
-					TMP1192 = modInt((NI)(TMP1191), ((NI) 64));
-					if (!(((NI) ((NI)(TMP1192))) == ((NI) 0))) goto LA6;
+					NI TMP1193;
+					TMP1192 = addInt(i_162468, ((NI) 1));
+					TMP1193 = modInt((NI)(TMP1192), ((NI) 64));
+					if (!(((NI) ((NI)(TMP1193))) == ((NI) 0))) goto LA6;
 					nimln(504, "msgs.nim");
 					res = addChar(res, 34);
 					nimln(505, "msgs.nim");
@@ -1439,8 +1439,8 @@ appendString(res, tnl_158626);
 				res = resizeString(res, LOC8->Sup.len + 0);
 appendString(res, LOC8);
 				nimln(1614, "system.nim");
-				TMP1193 = addInt(res_162476, ((NI) 1));
-				res_162476 = (NI)(TMP1193);
+				TMP1194 = addInt(res_162476, ((NI) 1));
+				res_162476 = (NI)(TMP1194);
 			} LA3: ;
 		}
 	}
@@ -1464,7 +1464,7 @@ N_NIMCALL(void, newfileinfo_162495)(NimStringDesc* fullpath, NimStringDesc* proj
 	nimln(517, "msgs.nim");
 	filename = nosextractFilename(projpath);
 	nimln(518, "msgs.nim");
-	unsureAsgnRef((void**) (&(*Result).shortname), noschangeFileExt(filename, ((NimStringDesc*) &TMP1195)));
+	unsureAsgnRef((void**) (&(*Result).shortname), noschangeFileExt(filename, ((NimStringDesc*) &TMP1196)));
 	nimln(519, "msgs.nim");
 	unsureAsgnRef((void**) (&(*Result).quotedname), makecstring_162449(filename));
 	nimln(520, "msgs.nim");
@@ -1531,12 +1531,12 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 
 static N_INLINE(NI, nexttry_155420)(NI h, NI maxhash) {
 	NI result;
-	NI TMP1197;
+	NI TMP1198;
 	nimfr("nextTry", "tables.nim")
 	result = 0;
 	nimln(141, "tables.nim");
-	TMP1197 = addInt(h, ((NI) 1));
-	result = (NI)((NI)(TMP1197) & maxhash);
+	TMP1198 = addInt(h, ((NI) 1));
+	result = (NI)((NI)(TMP1198) & maxhash);
 	popFrame();
 	return result;
 }
@@ -1544,7 +1544,7 @@ static N_INLINE(NI, nexttry_155420)(NI h, NI maxhash) {
 static N_INLINE(NI, rawget_162555)(Table162376 t, NimStringDesc* key, NI* hc) {
 	NI result;
 	NI h;
-	NI TMP1198;
+	NI TMP1199;
 	nimfr("rawGet", "tables.nim")
 {	result = 0;
 	nimln(156, "tables.nim");
@@ -1587,8 +1587,8 @@ static N_INLINE(NI, rawget_162555)(Table162376 t, NimStringDesc* key, NI* hc) {
 		} LA6: ;
 	}
 	nimln(153, "tables.nim");
-	TMP1198 = subInt(((NI) -1), h);
-	result = (NI)(TMP1198);
+	TMP1199 = subInt(((NI) -1), h);
+	result = (NI)(TMP1199);
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1597,7 +1597,7 @@ static N_INLINE(NI, rawget_162555)(Table162376 t, NimStringDesc* key, NI* hc) {
 static N_INLINE(NI, rawgetknownhc_162726)(Table162376 t, NimStringDesc* key, NI hc) {
 	NI result;
 	NI h;
-	NI TMP1205;
+	NI TMP1206;
 	nimfr("rawGetKnownHC", "tables.nim")
 {	result = 0;
 	nimln(144, "tables.nim");
@@ -1631,8 +1631,8 @@ static N_INLINE(NI, rawgetknownhc_162726)(Table162376 t, NimStringDesc* key, NI 
 		} LA2: ;
 	}
 	nimln(153, "tables.nim");
-	TMP1205 = subInt(((NI) -1), h);
-	result = (NI)(TMP1205);
+	TMP1206 = subInt(((NI) -1), h);
+	result = (NI)(TMP1206);
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1764,16 +1764,16 @@ N_NIMCALL(NI32, fileinfoidx_162533)(NimStringDesc* filename, NIM_BOOL* isknownfi
 	NI32 result;
 	NimStringDesc* volatile canon;
 	NIM_BOOL pseudopath;
-	TSafePoint TMP1206;
+	TSafePoint TMP1207;
 	nimfr("fileInfoIdx", "msgs.nim")
 	result = 0;
 	canon = 0;
 	nimln(526, "msgs.nim");
 	pseudopath = NIM_FALSE;
 	nimln(528, "msgs.nim");
-	pushSafePoint(&TMP1206);
-	TMP1206.status = _setjmp(TMP1206.context);
-	if (TMP1206.status == 0) {
+	pushSafePoint(&TMP1207);
+	TMP1207.status = _setjmp(TMP1207.context);
+	if (TMP1207.status == 0) {
 		nimln(529, "msgs.nim");
 		canon = canonicalizepath_153374(filename);
 		nimln(530, "msgs.nim");
@@ -1784,7 +1784,7 @@ N_NIMCALL(NI32, fileinfoidx_162533)(NimStringDesc* filename, NIM_BOOL* isknownfi
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		{
-			TMP1206.status = 0;
+			TMP1207.status = 0;
 			nimln(532, "msgs.nim");
 			canon = copyString(filename);
 			nimln(535, "msgs.nim");
@@ -1792,7 +1792,7 @@ N_NIMCALL(NI32, fileinfoidx_162533)(NimStringDesc* filename, NIM_BOOL* isknownfi
 			popCurrentException();
 		}
 	}
-	if (TMP1206.status != 0) reraiseException();
+	if (TMP1207.status != 0) reraiseException();
 	nimln(537, "msgs.nim");
 	{
 		NIM_BOOL LOC6;
@@ -1874,7 +1874,7 @@ static N_INLINE(Tlineinfo162338, newlineinfo_162878)(NimStringDesc* filename, NI
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP1209)(void* p, NI op) {
+N_NIMCALL(void, TMP1210)(void* p, NI op) {
 	Erecoverableerror162344* a;
 	a = (Erecoverableerror162344*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.parent, op);
@@ -1912,7 +1912,7 @@ N_NIMCALL(Tlineinfo162338, unknownlineinfo_163024)(void) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP1211)(void* p, NI op) {
+N_NIMCALL(void, TMP1212)(void* p, NI op) {
 	TY163033* a;
 	NI LOC1;
 	a = (TY163033*)p;
@@ -1943,7 +1943,7 @@ static N_INLINE(void, writeln_154205)(FILE* f, NimStringDesc** x, NI xLen0) {
 		}
 	}
 	nimln(213, "sysio.nim");
-	write_13657(f, ((NimStringDesc*) &TMP1212));
+	write_13657(f, ((NimStringDesc*) &TMP1213));
 	popFrame();
 }
 
@@ -1964,7 +1964,7 @@ N_NIMCALL(void, suggestwriteln_163066)(NimStringDesc* s) {
 		LA7: ;
 		{
 			nimln(593, "msgs.nim");
-			writelnhook_163057.ClEnv? writelnhook_163057.ClPrc(s, writelnhook_163057.ClEnv):((TMP1213)(writelnhook_163057.ClPrc))(s);
+			writelnhook_163057.ClEnv? writelnhook_163057.ClPrc(s, writelnhook_163057.ClEnv):((TMP1214)(writelnhook_163057.ClPrc))(s);
 		}
 		LA5: ;
 	}
@@ -1985,7 +1985,7 @@ N_NIMCALL(void, msgquit_163113)(NimStringDesc* x) {
 	quit_86377(x, ((NI) 1));
 	popFrame();
 }
-N_NIMCALL(void, TMP1214)(void* p, NI op) {
+N_NIMCALL(void, TMP1215)(void* p, NI op) {
 	Esuggestdone162346* a;
 	a = (Esuggestdone162346*)p;
 	nimGCvisit((void*)(*a).Sup.parent, op);
@@ -2003,7 +2003,7 @@ N_NIMCALL(void, suggestquit_163122)(void) {
 	(*e_163126).Sup.Sup.m_type = (&NTI162346);
 	nimln(2266, "system.nim");
 	LOC1 = 0;
-	LOC1 = (*e_163126).Sup.message; (*e_163126).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1215));
+	LOC1 = (*e_163126).Sup.message; (*e_163126).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1216));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(599, "msgs.nim");
 	raiseException((Exception*)e_163126, "ESuggestDone");
@@ -2038,11 +2038,11 @@ N_NIMCALL(void, pushinfocontext_163189)(Tlineinfo162338 info) {
 }
 
 N_NIMCALL(void, popinfocontext_163208)(void) {
-	NI TMP1216;
+	NI TMP1217;
 	nimfr("popInfoContext", "msgs.nim")
 	nimln(619, "msgs.nim");
-	TMP1216 = subInt((msgcontext_163050 ? msgcontext_163050->Sup.len : 0), ((NI) 1));
-	msgcontext_163050 = (TY163033*) setLengthSeq(&(msgcontext_163050)->Sup, sizeof(Tlineinfo162338), ((NI)chckRange((NI)(TMP1216), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1217 = subInt((msgcontext_163050 ? msgcontext_163050->Sup.len : 0), ((NI) 1));
+	msgcontext_163050 = (TY163033*) setLengthSeq(&(msgcontext_163050)->Sup, sizeof(Tlineinfo162338), ((NI)chckRange((NI)(TMP1217), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	popFrame();
 }
 
@@ -2056,10 +2056,10 @@ N_NIMCALL(Tlineinfo162338, getinfocontext_163234)(NI index) {
 	L = (msgcontext_163050 ? msgcontext_163050->Sup.len : 0);
 	nimln(623, "msgs.nim");
 	{
-		NI TMP1217;
+		NI TMP1218;
 		if (!(index < ((NI) 0))) goto LA3;
-		TMP1217 = addInt(L, index);
-		i = (NI)(TMP1217);
+		TMP1218 = addInt(L, index);
+		i = (NI)(TMP1218);
 	}
 	goto LA1;
 	LA3: ;
@@ -2091,7 +2091,7 @@ N_NIMCALL(NimStringDesc*, tofilename_163263)(NI32 fileidx) {
 	nimln(628, "msgs.nim");
 	{
 		if (!(fileidx < ((NI32) 0))) goto LA3;
-		result = copyString(((NimStringDesc*) &TMP1218));
+		result = copyString(((NimStringDesc*) &TMP1219));
 	}
 	goto LA1;
 	LA3: ;
@@ -2112,7 +2112,7 @@ N_NIMCALL(NimStringDesc*, tofullpath_163273)(NI32 fileidx) {
 	nimln(632, "msgs.nim");
 	{
 		if (!(fileidx < ((NI32) 0))) goto LA3;
-		result = copyString(((NimStringDesc*) &TMP1218));
+		result = copyString(((NimStringDesc*) &TMP1219));
 	}
 	goto LA1;
 	LA3: ;
@@ -2132,7 +2132,7 @@ N_NIMCALL(void, setdirtyfile_163283)(NI32 fileidx, NimStringDesc* filename) {
 	nimln(636, "msgs.nim");
 	{
 		if (!!((((NI32) 0) <= fileidx))) goto LA3;
-		failedassertimpl_87217(((NimStringDesc*) &TMP1219));
+		failedassertimpl_87217(((NimStringDesc*) &TMP1220));
 	}
 	LA3: ;
 	nimln(637, "msgs.nim");
@@ -2151,7 +2151,7 @@ N_NIMCALL(NimStringDesc*, tofullpathconsiderdirty_163407)(NI32 fileidx) {
 	{
 		if (!(fileidx < ((NI32) 0))) goto LA3;
 		nimln(641, "msgs.nim");
-		result = copyString(((NimStringDesc*) &TMP1218));
+		result = copyString(((NimStringDesc*) &TMP1219));
 	}
 	goto LA1;
 	LA3: ;
@@ -2183,7 +2183,7 @@ N_NIMCALL(NimStringDesc*, tomsgfilename_163429)(Tlineinfo162338 info) {
 	{
 		if (!(info.fileindex < ((NI32) 0))) goto LA3;
 		nimln(655, "msgs.nim");
-		result = copyString(((NimStringDesc*) &TMP1218));
+		result = copyString(((NimStringDesc*) &TMP1219));
 	}
 	goto LA1;
 	LA3: ;
@@ -2240,7 +2240,7 @@ static N_INLINE(NimStringDesc*, tofileline_163459)(Tlineinfo162338 info) {
 	LOC3 = nimIntToStr(((NI) (info.line)));
 	LOC1 = rawNewString(LOC2->Sup.len + LOC3->Sup.len + 1);
 appendString(LOC1, LOC2);
-appendString(LOC1, ((NimStringDesc*) &TMP1220));
+appendString(LOC1, ((NimStringDesc*) &TMP1221));
 appendString(LOC1, LOC3);
 	result = LOC1;
 	popFrame();
@@ -2265,11 +2265,11 @@ static N_INLINE(NimStringDesc*, tofilelinecol_163469)(Tlineinfo162338 info) {
 	LOC4 = nimIntToStr(((NI) (info.col)));
 	LOC1 = rawNewString(LOC2->Sup.len + LOC3->Sup.len + LOC4->Sup.len + 3);
 appendString(LOC1, LOC2);
-appendString(LOC1, ((NimStringDesc*) &TMP1221));
-appendString(LOC1, LOC3);
 appendString(LOC1, ((NimStringDesc*) &TMP1222));
-appendString(LOC1, LOC4);
+appendString(LOC1, LOC3);
 appendString(LOC1, ((NimStringDesc*) &TMP1223));
+appendString(LOC1, LOC4);
+appendString(LOC1, ((NimStringDesc*) &TMP1224));
 	result = LOC1;
 	popFrame();
 	return result;
@@ -2318,7 +2318,7 @@ N_NIMCALL(void, msgwriteln_163536)(NimStringDesc* s) {
 	{
 		if (!!(writelnhook_163057.ClPrc == 0)) goto LA3;
 		nimln(691, "msgs.nim");
-		writelnhook_163057.ClEnv? writelnhook_163057.ClPrc(s, writelnhook_163057.ClEnv):((TMP1224)(writelnhook_163057.ClPrc))(s);
+		writelnhook_163057.ClEnv? writelnhook_163057.ClPrc(s, writelnhook_163057.ClEnv):((TMP1225)(writelnhook_163057.ClPrc))(s);
 	}
 	goto LA1;
 	LA3: ;
@@ -2359,7 +2359,7 @@ N_NIMCALL(NimStringDesc*, coordtostr_163606)(NI coord) {
 	nimln(698, "msgs.nim");
 	{
 		if (!(coord == ((NI) -1))) goto LA3;
-		result = copyString(((NimStringDesc*) &TMP1218));
+		result = copyString(((NimStringDesc*) &TMP1219));
 	}
 	goto LA1;
 	LA3: ;
@@ -2443,9 +2443,9 @@ N_NIMCALL(void, handleerror_163647)(NU16 msg, NU8 eh, NimStringDesc* s) {
 				nimln(717, "msgs.nim");
 				LOC22 = 0;
 				LOC22 = rawNewString(command_153239->Sup.len + 95);
-appendString(LOC22, ((NimStringDesc*) &TMP1252));
-appendString(LOC22, command_153239);
 appendString(LOC22, ((NimStringDesc*) &TMP1253));
+appendString(LOC22, command_153239);
+appendString(LOC22, ((NimStringDesc*) &TMP1254));
 				msgwriteln_163536(LOC22);
 			}
 			LA15: ;
@@ -2458,7 +2458,7 @@ appendString(LOC22, ((NimStringDesc*) &TMP1253));
 	nimln(722, "msgs.nim");
 	{
 		NIM_BOOL LOC25;
-		NI TMP1254;
+		NI TMP1255;
 		LOC25 = 0;
 		LOC25 = (((NU16) 0) <= msg);
 		if (!(LOC25)) goto LA26;
@@ -2466,8 +2466,8 @@ appendString(LOC22, ((NimStringDesc*) &TMP1253));
 		LA26: ;
 		if (!LOC25) goto LA27;
 		nimln(723, "msgs.nim");
-		TMP1254 = addInt(gerrorcounter_163012, ((NI) 1));
-		gerrorcounter_163012 = (NI)(TMP1254);
+		TMP1255 = addInt(gerrorcounter_163012, ((NI) 1));
+		gerrorcounter_163012 = (NI)(TMP1255);
 		nimln(724, "msgs.nim");
 		gexitcode_153129 = ((NI8) 1);
 		nimln(725, "msgs.nim");
@@ -2507,9 +2507,9 @@ appendString(LOC22, ((NimStringDesc*) &TMP1253));
 					nimln(717, "msgs.nim");
 					LOC48 = 0;
 					LOC48 = rawNewString(command_153239->Sup.len + 95);
-appendString(LOC48, ((NimStringDesc*) &TMP1252));
-appendString(LOC48, command_153239);
 appendString(LOC48, ((NimStringDesc*) &TMP1253));
+appendString(LOC48, command_153239);
+appendString(LOC48, ((NimStringDesc*) &TMP1254));
 					msgwriteln_163536(LOC48);
 				}
 				LA41: ;
@@ -2563,9 +2563,9 @@ appendString(LOC48, ((NimStringDesc*) &TMP1253));
 					nimln(717, "msgs.nim");
 					LOC69 = 0;
 					LOC69 = rawNewString(command_153239->Sup.len + 95);
-appendString(LOC69, ((NimStringDesc*) &TMP1252));
-appendString(LOC69, command_153239);
 appendString(LOC69, ((NimStringDesc*) &TMP1253));
+appendString(LOC69, command_153239);
+appendString(LOC69, ((NimStringDesc*) &TMP1254));
 					msgwriteln_163536(LOC69);
 				}
 				LA62: ;
@@ -2614,19 +2614,19 @@ N_NIMCALL(void, writecontext_163800)(Tlineinfo162338 lastinfo) {
 	{
 		NI i_163824;
 		NI HEX3Atmp_163828;
-		NI TMP1255;
+		NI TMP1256;
 		NI res_163831;
 		i_163824 = 0;
 		HEX3Atmp_163828 = 0;
 		nimln(737, "msgs.nim");
-		TMP1255 = subInt((msgcontext_163050 ? msgcontext_163050->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_163828 = (NI)(TMP1255);
+		TMP1256 = subInt((msgcontext_163050 ? msgcontext_163050->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_163828 = (NI)(TMP1256);
 		nimln(1598, "system.nim");
 		res_163831 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP1258;
+				NI TMP1259;
 				if (!(res_163831 <= HEX3Atmp_163828)) goto LA3;
 				nimln(1600, "system.nim");
 				i_163824 = res_163831;
@@ -2636,7 +2636,7 @@ N_NIMCALL(void, writecontext_163800)(Tlineinfo162338 lastinfo) {
 					NIM_BOOL LOC7;
 					NIM_BOOL LOC9;
 					TY163825 LOC12;
-					NI TMP1257;
+					NI TMP1258;
 					NimStringDesc* LOC13;
 					LOC6 = 0;
 					if ((NU)(i_163824) >= (NU)(msgcontext_163050->Sup.len)) raiseIndexError();
@@ -2659,13 +2659,13 @@ N_NIMCALL(void, writecontext_163800)(Tlineinfo162338 lastinfo) {
 					LOC12[1] = coordtostr_163606(((NI) (msgcontext_163050->data[i_163824].line)));
 					nimln(741, "msgs.nim");
 					if ((NU)(i_163824) >= (NU)(msgcontext_163050->Sup.len)) raiseIndexError();
-					TMP1257 = addInt(msgcontext_163050->data[i_163824].col, ((NI16) 1));
-					if (TMP1257 < -32768 || TMP1257 > 32767) raiseOverflow();
-					LOC12[2] = coordtostr_163606(((NI) ((NI16)(TMP1257))));
+					TMP1258 = addInt(msgcontext_163050->data[i_163824].col, ((NI16) 1));
+					if (TMP1258 < -32768 || TMP1258 > 32767) raiseOverflow();
+					LOC12[2] = coordtostr_163606(((NI) ((NI16)(TMP1258))));
 					nimln(742, "msgs.nim");
-					LOC12[3] = getmessagestr_163626(((NU16) 184), ((NimStringDesc*) &TMP1195));
+					LOC12[3] = getmessagestr_163626(((NU16) 184), ((NimStringDesc*) &TMP1196));
 					LOC13 = 0;
-					LOC13 = nsuFormatOpenArray(((NimStringDesc*) &TMP1256), LOC12, 4);
+					LOC13 = nsuFormatOpenArray(((NimStringDesc*) &TMP1257), LOC12, 4);
 					msgwriteln_163536(LOC13);
 				}
 				LA10: ;
@@ -2673,8 +2673,8 @@ N_NIMCALL(void, writecontext_163800)(Tlineinfo162338 lastinfo) {
 				if ((NU)(i_163824) >= (NU)(msgcontext_163050->Sup.len)) raiseIndexError();
 				info = msgcontext_163050->data[i_163824];
 				nimln(1614, "system.nim");
-				TMP1258 = addInt(res_163831, ((NI) 1));
-				res_163831 = (NI)(TMP1258);
+				TMP1259 = addInt(res_163831, ((NI) 1));
+				res_163831 = (NI)(TMP1259);
 			} LA3: ;
 		}
 	}
@@ -2719,13 +2719,13 @@ N_NIMCALL(void, rawmessage_163888)(NU16 msg, NimStringDesc** args, NI argsLen0) 
 		LOC2 = unknownlineinfo_163024();
 		writecontext_163800(LOC2);
 		nimln(753, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1259));
+		frmt = copyString(((NimStringDesc*) &TMP1260));
 	}
 	break;
 	case ((NU16) 230) ... ((NU16) 260):
 	{
 		Tlineinfo162338 LOC12;
-		NI TMP1261;
+		NI TMP1262;
 		nimln(755, "msgs.nim");
 		{
 			if (!!(((goptions_153126 &(1<<((((NU8) 11))&31)))!=0))) goto LA6;
@@ -2742,15 +2742,15 @@ N_NIMCALL(void, rawmessage_163888)(NU16 msg, NimStringDesc** args, NI argsLen0) 
 		LOC12 = unknownlineinfo_163024();
 		writecontext_163800(LOC12);
 		nimln(758, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1260));
+		frmt = copyString(((NimStringDesc*) &TMP1261));
 		nimln(759, "msgs.nim");
-		TMP1261 = addInt(gwarncounter_163014, ((NI) 1));
-		gwarncounter_163014 = (NI)(TMP1261);
+		TMP1262 = addInt(gwarncounter_163014, ((NI) 1));
+		gwarncounter_163014 = (NI)(TMP1262);
 	}
 	break;
 	case ((NU16) 261) ... ((NU16) 277):
 	{
-		NI TMP1263;
+		NI TMP1264;
 		nimln(761, "msgs.nim");
 		{
 			if (!!(((goptions_153126 &(1<<((((NU8) 12))&31)))!=0))) goto LA16;
@@ -2764,10 +2764,10 @@ N_NIMCALL(void, rawmessage_163888)(NU16 msg, NimStringDesc** args, NI argsLen0) 
 		}
 		LA20: ;
 		nimln(763, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1262));
+		frmt = copyString(((NimStringDesc*) &TMP1263));
 		nimln(764, "msgs.nim");
-		TMP1263 = addInt(ghintcounter_163013, ((NI) 1));
-		ghintcounter_163013 = (NI)(TMP1263);
+		TMP1264 = addInt(ghintcounter_163013, ((NI) 1));
+		ghintcounter_163013 = (NI)(TMP1264);
 	}
 	break;
 	}
@@ -2817,7 +2817,7 @@ N_NIMCALL(void, writesurroundingsrc_163972)(Tlineinfo162338 info) {
 	LOC3 = 0;
 	LOC3 = HEX24_161131(LOC2);
 	LOC1 = rawNewString(LOC3->Sup.len + 2);
-appendString(LOC1, ((NimStringDesc*) &TMP1265));
+appendString(LOC1, ((NimStringDesc*) &TMP1266));
 appendString(LOC1, LOC3);
 	msgwriteln_163536(LOC1);
 	nimln(776, "msgs.nim");
@@ -2825,7 +2825,7 @@ appendString(LOC1, LOC3);
 	LOC5 = 0;
 	LOC5 = nsuRepeatChar(32, ((NI)chckRange(info.col, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	LOC4 = rawNewString(LOC5->Sup.len + 3);
-appendString(LOC4, ((NimStringDesc*) &TMP1265));
+appendString(LOC4, ((NimStringDesc*) &TMP1266));
 appendString(LOC4, LOC5);
 appendChar(LOC4, 94);
 	msgwriteln_163536(LOC4);
@@ -2836,24 +2836,24 @@ N_NIMCALL(NimStringDesc*, formatmsg_163982)(Tlineinfo162338 info, NU16 msg, NimS
 	NimStringDesc* result;
 	NimStringDesc* frmt;
 	TY163825 LOC4;
-	NI TMP1269;
+	NI TMP1270;
 	nimfr("formatMsg", "msgs.nim")
 	result = 0;
 	nimln(779, "msgs.nim");
 	switch (msg) {
 	case ((NU16) 230) ... ((NU16) 260):
 	{
-		frmt = copyString(((NimStringDesc*) &TMP1266));
+		frmt = copyString(((NimStringDesc*) &TMP1267));
 	}
 	break;
 	case ((NU16) 261) ... ((NU16) 277):
 	{
-		frmt = copyString(((NimStringDesc*) &TMP1267));
+		frmt = copyString(((NimStringDesc*) &TMP1268));
 	}
 	break;
 	default:
 	{
-		frmt = copyString(((NimStringDesc*) &TMP1268));
+		frmt = copyString(((NimStringDesc*) &TMP1269));
 	}
 	break;
 	}
@@ -2862,9 +2862,9 @@ N_NIMCALL(NimStringDesc*, formatmsg_163982)(Tlineinfo162338 info, NU16 msg, NimS
 	LOC4[0] = tomsgfilename_163429(info);
 	LOC4[1] = coordtostr_163606(((NI) (info.line)));
 	nimln(784, "msgs.nim");
-	TMP1269 = addInt(info.col, ((NI16) 1));
-	if (TMP1269 < -32768 || TMP1269 > 32767) raiseOverflow();
-	LOC4[2] = coordtostr_163606(((NI) ((NI16)(TMP1269))));
+	TMP1270 = addInt(info.col, ((NI16) 1));
+	if (TMP1270 < -32768 || TMP1270 > 32767) raiseOverflow();
+	LOC4[2] = coordtostr_163606(((NI) ((NI16)(TMP1270))));
 	LOC4[3] = getmessagestr_163626(msg, arg);
 	result = nsuFormatOpenArray(frmt, LOC4, 4);
 	popFrame();
@@ -2904,7 +2904,7 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 	NIM_BOOL ignoremsg;
 	NimStringDesc* s;
 	TY163825 LOC12;
-	NI TMP1272;
+	NI TMP1273;
 	nimfr("liMessage", "msgs.nim")
 	frmt = 0;
 	nimln(789, "msgs.nim");
@@ -2916,7 +2916,7 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 		nimln(792, "msgs.nim");
 		writecontext_163800(info);
 		nimln(793, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1268));
+		frmt = copyString(((NimStringDesc*) &TMP1269));
 		nimln(797, "msgs.nim");
 		lasterror_163051 = info;
 	}
@@ -2924,7 +2924,7 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 	case ((NU16) 230) ... ((NU16) 260):
 	{
 		NIM_BOOL LOC3;
-		NI TMP1270;
+		NI TMP1271;
 		nimln(799, "msgs.nim");
 		LOC3 = 0;
 		LOC3 = !(((goptions_153126 &(1<<((((NU8) 11))&31)))!=0));
@@ -2939,16 +2939,16 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 		}
 		LA7: ;
 		nimln(801, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1266));
+		frmt = copyString(((NimStringDesc*) &TMP1267));
 		nimln(802, "msgs.nim");
-		TMP1270 = addInt(gwarncounter_163014, ((NI) 1));
-		gwarncounter_163014 = (NI)(TMP1270);
+		TMP1271 = addInt(gwarncounter_163014, ((NI) 1));
+		gwarncounter_163014 = (NI)(TMP1271);
 	}
 	break;
 	case ((NU16) 261) ... ((NU16) 277):
 	{
 		NIM_BOOL LOC10;
-		NI TMP1271;
+		NI TMP1272;
 		nimln(804, "msgs.nim");
 		LOC10 = 0;
 		LOC10 = !(((goptions_153126 &(1<<((((NU8) 12))&31)))!=0));
@@ -2957,10 +2957,10 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 		LA11: ;
 		ignoremsg = LOC10;
 		nimln(805, "msgs.nim");
-		frmt = copyString(((NimStringDesc*) &TMP1267));
+		frmt = copyString(((NimStringDesc*) &TMP1268));
 		nimln(806, "msgs.nim");
-		TMP1271 = addInt(ghintcounter_163013, ((NI) 1));
-		ghintcounter_163013 = (NI)(TMP1271);
+		TMP1272 = addInt(ghintcounter_163013, ((NI) 1));
+		ghintcounter_163013 = (NI)(TMP1272);
 	}
 	break;
 	}
@@ -2969,9 +2969,9 @@ N_NIMCALL(void, limessage_163997)(Tlineinfo162338 info, NU16 msg, NimStringDesc*
 	LOC12[0] = tomsgfilename_163429(info);
 	LOC12[1] = coordtostr_163606(((NI) (info.line)));
 	nimln(811, "msgs.nim");
-	TMP1272 = addInt(info.col, ((NI16) 1));
-	if (TMP1272 < -32768 || TMP1272 > 32767) raiseOverflow();
-	LOC12[2] = coordtostr_163606(((NI) ((NI16)(TMP1272))));
+	TMP1273 = addInt(info.col, ((NI16) 1));
+	if (TMP1273 < -32768 || TMP1273 > 32767) raiseOverflow();
+	LOC12[2] = coordtostr_163606(((NI) ((NI16)(TMP1273))));
 	LOC12[3] = getmessagestr_163626(msg, arg);
 	s = nsuFormatOpenArray(frmt, LOC12, 4);
 	nimln(812, "msgs.nim");
@@ -3155,7 +3155,7 @@ static N_INLINE(Exception*, getCurrentException)(void) {
 
 N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 	Ropeobj160009* result;
-	NI TMP1280;
+	NI TMP1281;
 	nimfr("sourceLine", "msgs.nim")
 {	result = 0;
 	nimln(860, "msgs.nim");
@@ -3168,7 +3168,7 @@ N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 	nimln(862, "msgs.nim");
 	{
 		NIM_BOOL LOC7;
-		TSafePoint TMP1277;
+		TSafePoint TMP1278;
 		LOC7 = 0;
 		LOC7 = !(((gglobaloptions_153128 &(1<<((((NU8) 27))&31)))!=0));
 		if (!(LOC7)) goto LA8;
@@ -3177,9 +3177,9 @@ N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 		LA8: ;
 		if (!LOC7) goto LA9;
 		nimln(863, "msgs.nim");
-		pushSafePoint(&TMP1277);
-		TMP1277.status = _setjmp(TMP1277.context);
-		if (TMP1277.status == 0) {
+		pushSafePoint(&TMP1278);
+		TMP1278.status = _setjmp(TMP1278.context);
+		if (TMP1278.status == 0) {
 			{
 				NimStringDesc* line_164296;
 				NimStringDesc* HEX3Atmp_164332;
@@ -3215,11 +3215,11 @@ N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 			popSafePoint();
 			setFrame((TFrame*)&FR);
 			if (isObj(getCurrentException()->Sup.m_type, (&NTI3431))) {
-				TMP1277.status = 0;
+				TMP1278.status = 0;
 				popCurrentException();
 			}
 		}
-		if (TMP1277.status != 0) reraiseException();
+		if (TMP1278.status != 0) reraiseException();
 	}
 	LA9: ;
 	nimln(854, "msgs.nim");
@@ -3229,7 +3229,7 @@ N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 		if (!!((((NI) (i.fileindex)) < (fileinfos_162432 ? fileinfos_162432->Sup.len : 0)))) goto LA20;
 		nimln(854, "msgs.nim");
 		LOC22 = 0;
-		LOC22 = HEX24_164306(TMP1278);
+		LOC22 = HEX24_164306(TMP1279);
 		internalerror_164218(LOC22);
 	}
 	LA20: ;
@@ -3243,10 +3243,10 @@ N_NIMCALL(Ropeobj160009*, sourceline_162988)(Tlineinfo162338 i) {
 	LA25: ;
 	nimln(872, "msgs.nim");
 	if ((NU)(i.fileindex) >= (NU)(fileinfos_162432->Sup.len)) raiseIndexError();
-	TMP1280 = subInt(i.line, ((NI16) 1));
-	if (TMP1280 < -32768 || TMP1280 > 32767) raiseOverflow();
-	if ((NU)((NI16)(TMP1280)) >= (NU)(fileinfos_162432->data[i.fileindex].lines->Sup.len)) raiseIndexError();
-	result = fileinfos_162432->data[i.fileindex].lines->data[(NI16)(TMP1280)];
+	TMP1281 = subInt(i.line, ((NI16) 1));
+	if (TMP1281 < -32768 || TMP1281 > 32767) raiseOverflow();
+	if ((NU)((NI16)(TMP1281)) >= (NU)(fileinfos_162432->data[i.fileindex].lines->Sup.len)) raiseIndexError();
+	result = fileinfos_162432->data[i.fileindex].lines->data[(NI16)(TMP1281)];
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -3263,7 +3263,7 @@ N_NIMCALL(Ropeobj160009*, quotedfilename_164354)(Tlineinfo162338 i) {
 		if (!!((((NI32) 0) <= i.fileindex))) goto LA3;
 		nimln(854, "msgs.nim");
 		LOC5 = 0;
-		LOC5 = HEX24_164306(TMP1281);
+		LOC5 = HEX24_164306(TMP1282);
 		internalerror_164218(LOC5);
 	}
 	LA3: ;
@@ -3284,7 +3284,7 @@ N_NIMCALL(void, HEX3Aanonymous_164371)(NU8 err, NimStringDesc* msg, NIM_BOOL use
 		nimln(881, "msgs.nim");
 		LOC2 = 0;
 		LOC2 = rawNewString(msg->Sup.len + 30);
-appendString(LOC2, ((NimStringDesc*) &TMP1282));
+appendString(LOC2, ((NimStringDesc*) &TMP1283));
 appendString(LOC2, msg);
 		internalerror_164218(LOC2);
 	}
@@ -3324,14 +3324,14 @@ NIM_EXTERNC N_NOINLINE(void, compiler_msgsInit)(void) {
 	fileinfos_162432 = (TY162415*) newSeqRC1((&NTI162415), 0);
 	nimln(558, "msgs.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
-	newfileinfo_162495(((NimStringDesc*) &TMP1195), ((NimStringDesc*) &TMP1207), (&LOC1));
+	newfileinfo_162495(((NimStringDesc*) &TMP1196), ((NimStringDesc*) &TMP1208), (&LOC1));
 	fileinfos_162432 = (TY162415*) incrSeq(&(fileinfos_162432)->Sup, sizeof(Tfileinfo162336));
 	genericAssign((void*)(&fileinfos_162432->data[fileinfos_162432->Sup.len-1]), (void*)(&LOC1), (&NTI162336));
 	nimln(559, "msgs.nim");
 	gcmdlineinfo_162921 = newlineinfo_162866(((NI32) 0), ((NI) 1), ((NI) 1));
 	nimln(561, "msgs.nim");
 	memset((void*)(&LOC2), 0, sizeof(LOC2));
-	newfileinfo_162495(((NimStringDesc*) &TMP1195), ((NimStringDesc*) &TMP1208), (&LOC2));
+	newfileinfo_162495(((NimStringDesc*) &TMP1196), ((NimStringDesc*) &TMP1209), (&LOC2));
 	fileinfos_162432 = (TY162415*) incrSeq(&(fileinfos_162432)->Sup, sizeof(Tfileinfo162336));
 	genericAssign((void*)(&fileinfos_162432->data[fileinfos_162432->Sup.len-1]), (void*)(&LOC2), (&NTI162336));
 	nimln(562, "msgs.nim");
@@ -3355,18 +3355,18 @@ NIM_EXTERNC N_NOINLINE(void, compiler_msgsInit)(void) {
 	erroroutputs_163053 = 3;
 	nimln(878, "msgs.nim");
 	memset((void*)(&LOC3), 0, sizeof(LOC3));
-	LOC3.ClPrc = ((TMP1283) (HEX3Aanonymous_164371)); LOC3.ClEnv = NIM_NIL;
+	LOC3.ClPrc = ((TMP1284) (HEX3Aanonymous_164371)); LOC3.ClEnv = NIM_NIL;
 	asgnRef((void**) (&errorhandler_160028.ClEnv), LOC3.ClEnv);
 	errorhandler_160028.ClPrc = LOC3.ClPrc;
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_msgsDatInit)(void) {
-static TNimNode* TMP1182[6];
-static TNimNode* TMP1210[3];
-static TNimNode* TMP4188[278];
-NI TMP4190;
-static char* NIM_CONST TMP4189[278] = {
+static TNimNode* TMP1183[6];
+static TNimNode* TMP1211[3];
+static TNimNode* TMP4189[278];
+NI TMP4191;
+static char* NIM_CONST TMP4190[278] = {
 "errUnknown", 
 "errIllFormedAstX", 
 "errInternal", 
@@ -3650,43 +3650,43 @@ NTI162336.size = sizeof(Tfileinfo162336);
 NTI162336.kind = 18;
 NTI162336.base = 0;
 NTI162336.flags = 2;
-TMP1182[0] = &TMP458[1];
+TMP1183[0] = &TMP458[1];
 TMP458[1].kind = 1;
 TMP458[1].offset = offsetof(Tfileinfo162336, fullpath);
 TMP458[1].typ = (&NTI149);
 TMP458[1].name = "fullPath";
-TMP1182[1] = &TMP458[2];
+TMP1183[1] = &TMP458[2];
 TMP458[2].kind = 1;
 TMP458[2].offset = offsetof(Tfileinfo162336, projpath);
 TMP458[2].typ = (&NTI149);
 TMP458[2].name = "projPath";
-TMP1182[2] = &TMP458[3];
+TMP1183[2] = &TMP458[3];
 TMP458[3].kind = 1;
 TMP458[3].offset = offsetof(Tfileinfo162336, shortname);
 TMP458[3].typ = (&NTI149);
 TMP458[3].name = "shortName";
-TMP1182[3] = &TMP458[4];
+TMP1183[3] = &TMP458[4];
 TMP458[4].kind = 1;
 TMP458[4].offset = offsetof(Tfileinfo162336, quotedname);
 TMP458[4].typ = (&NTI160007);
 TMP458[4].name = "quotedName";
-TMP1182[4] = &TMP458[5];
+TMP1183[4] = &TMP458[5];
 TMP458[5].kind = 1;
 TMP458[5].offset = offsetof(Tfileinfo162336, lines);
 TMP458[5].typ = (&NTI160599);
 TMP458[5].name = "lines";
-TMP1182[5] = &TMP458[6];
+TMP1183[5] = &TMP458[6];
 TMP458[6].kind = 1;
 TMP458[6].offset = offsetof(Tfileinfo162336, dirtyfile);
 TMP458[6].typ = (&NTI149);
 TMP458[6].name = "dirtyfile";
-TMP458[0].len = 6; TMP458[0].kind = 2; TMP458[0].sons = &TMP1182[0];
+TMP458[0].len = 6; TMP458[0].kind = 2; TMP458[0].sons = &TMP1183[0];
 NTI162336.node = &TMP458[0];
 NTI162415.size = sizeof(TY162415*);
 NTI162415.kind = 24;
 NTI162415.base = (&NTI162336);
 NTI162415.flags = 2;
-NTI162415.marker = TMP1183;
+NTI162415.marker = TMP1184;
 NTI162344.size = sizeof(Erecoverableerror162344);
 NTI162344.kind = 17;
 NTI162344.base = (&NTI3449);
@@ -3695,33 +3695,33 @@ NTI162344.node = &TMP458[7];
 NTI162972.size = sizeof(Erecoverableerror162344*);
 NTI162972.kind = 22;
 NTI162972.base = (&NTI162344);
-NTI162972.marker = TMP1209;
+NTI162972.marker = TMP1210;
 NTI162338.size = sizeof(Tlineinfo162338);
 NTI162338.kind = 18;
 NTI162338.base = 0;
 NTI162338.flags = 3;
-TMP1210[0] = &TMP458[9];
+TMP1211[0] = &TMP458[9];
 TMP458[9].kind = 1;
 TMP458[9].offset = offsetof(Tlineinfo162338, line);
 TMP458[9].typ = (&NTI112);
 TMP458[9].name = "line";
-TMP1210[1] = &TMP458[10];
+TMP1211[1] = &TMP458[10];
 TMP458[10].kind = 1;
 TMP458[10].offset = offsetof(Tlineinfo162338, col);
 TMP458[10].typ = (&NTI112);
 TMP458[10].name = "col";
-TMP1210[2] = &TMP458[11];
+TMP1211[2] = &TMP458[11];
 TMP458[11].kind = 1;
 TMP458[11].offset = offsetof(Tlineinfo162338, fileindex);
 TMP458[11].typ = (&NTI114);
 TMP458[11].name = "fileIndex";
-TMP458[8].len = 3; TMP458[8].kind = 2; TMP458[8].sons = &TMP1210[0];
+TMP458[8].len = 3; TMP458[8].kind = 2; TMP458[8].sons = &TMP1211[0];
 NTI162338.node = &TMP458[8];
 NTI163033.size = sizeof(TY163033*);
 NTI163033.kind = 24;
 NTI163033.base = (&NTI162338);
 NTI163033.flags = 2;
-NTI163033.marker = TMP1211;
+NTI163033.marker = TMP1212;
 NTI162346.size = sizeof(Esuggestdone162346);
 NTI162346.kind = 17;
 NTI162346.base = (&NTI3427);
@@ -3730,18 +3730,18 @@ NTI162346.node = &TMP458[12];
 NTI163127.size = sizeof(Esuggestdone162346*);
 NTI163127.kind = 22;
 NTI163127.base = (&NTI162346);
-NTI163127.marker = TMP1214;
+NTI163127.marker = TMP1215;
 NTI162005.size = sizeof(NU16);
 NTI162005.kind = 14;
 NTI162005.base = 0;
 NTI162005.flags = 3;
-for (TMP4190 = 0; TMP4190 < 278; TMP4190++) {
-TMP458[TMP4190+13].kind = 1;
-TMP458[TMP4190+13].offset = TMP4190;
-TMP458[TMP4190+13].name = TMP4189[TMP4190];
-TMP4188[TMP4190] = &TMP458[TMP4190+13];
+for (TMP4191 = 0; TMP4191 < 278; TMP4191++) {
+TMP458[TMP4191+13].kind = 1;
+TMP458[TMP4191+13].offset = TMP4191;
+TMP458[TMP4191+13].name = TMP4190[TMP4191];
+TMP4189[TMP4191] = &TMP458[TMP4191+13];
 }
-TMP458[291].len = 278; TMP458[291].kind = 2; TMP458[291].sons = &TMP4188[0];
+TMP458[291].len = 278; TMP458[291].kind = 2; TMP458[291].sons = &TMP4189[0];
 NTI162005.node = &TMP458[291];
 NTI162332.size = sizeof(NU16);
 NTI162332.kind = 20;

@@ -247,29 +247,29 @@ N_NIMCALL(NimStringDesc*, nsuInsertSep)(NimStringDesc* s, NIM_CHAR sep, NI digit
 STRING_LITERAL(TMP287, "invalid integer: ", 17);
 STRING_LITERAL(TMP571, "len(a) == L string modified while iterating over it", 51);
 STRING_LITERAL(TMP574, "", 0);
-STRING_LITERAL(TMP1240, "invalid format string", 21);
-STRING_LITERAL(TMP1532, "\\x", 2);
-STRING_LITERAL(TMP1534, "0123456789ABCDEF", 16);
-STRING_LITERAL(TMP1536, "\\\\", 2);
-STRING_LITERAL(TMP1537, "\\\'", 2);
-STRING_LITERAL(TMP1538, "\\\"", 2);
-static NIM_CONST TY77659 TMP1837 = {
+STRING_LITERAL(TMP1241, "invalid format string", 21);
+STRING_LITERAL(TMP1533, "\\x", 2);
+STRING_LITERAL(TMP1535, "0123456789ABCDEF", 16);
+STRING_LITERAL(TMP1537, "\\\\", 2);
+STRING_LITERAL(TMP1538, "\\\'", 2);
+STRING_LITERAL(TMP1539, "\\\"", 2);
+static NIM_CONST TY77659 TMP1838 = {
 0x00, 0x02, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP1985, "not (\'\\0\' == sep) ", 18);
-STRING_LITERAL(TMP2360, "invalid float: ", 15);
-STRING_LITERAL(TMP3049, "0 < len ", 8);
+STRING_LITERAL(TMP1986, "not (\'\\0\' == sep) ", 18);
+STRING_LITERAL(TMP2361, "invalid float: ", 15);
+STRING_LITERAL(TMP3050, "0 < len ", 8);
 NIM_CONST TY100665 floatformattochar_100664 = {103,
 102,
 101}
 ;
-STRING_LITERAL(TMP10779, "GB", 2);
-STRING_LITERAL(TMP10780, "MB", 2);
-STRING_LITERAL(TMP10781, "KB", 2);
-STRING_LITERAL(TMP10782, "B", 1);
+STRING_LITERAL(TMP10780, "GB", 2);
+STRING_LITERAL(TMP10781, "MB", 2);
+STRING_LITERAL(TMP10782, "KB", 2);
+STRING_LITERAL(TMP10783, "B", 1);
 extern TFrame* frameptr_17042;
 extern TNimType NTI22801; /* ref ValueError */
 extern TNimType NTI3449; /* ValueError */
@@ -1164,13 +1164,13 @@ N_NIMCALL(NimStringDesc*, nsuJoinSep)(NimStringDesc** a, NI aLen0, NimStringDesc
 	nimln(742, "strutils.nim");
 	{
 		NI L;
-		NI TMP641;
 		NI TMP642;
+		NI TMP643;
 		if (!(((NI) 0) < aLen0)) goto LA3;
 		nimln(743, "strutils.nim");
-		TMP641 = subInt(aLen0, ((NI) 1));
-		TMP642 = mulInt((sep ? sep->Sup.len : 0), (NI)(TMP641));
-		L = (NI)(TMP642);
+		TMP642 = subInt(aLen0, ((NI) 1));
+		TMP643 = mulInt((sep ? sep->Sup.len : 0), (NI)(TMP642));
+		L = (NI)(TMP643);
 		{
 			NI i_98575;
 			NI HEX3Atmp_98597;
@@ -1184,18 +1184,18 @@ N_NIMCALL(NimStringDesc*, nsuJoinSep)(NimStringDesc** a, NI aLen0, NimStringDesc
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP643;
 					NI TMP644;
+					NI TMP645;
 					if (!(res_98600 <= HEX3Atmp_98597)) goto LA7;
 					nimln(1600, "system.nim");
 					i_98575 = res_98600;
 					nimln(744, "strutils.nim");
 					if ((NU)(i_98575) >= (NU)(aLen0)) raiseIndexError();
-					TMP643 = addInt(L, (a[i_98575] ? a[i_98575]->Sup.len : 0));
-					L = (NI)(TMP643);
+					TMP644 = addInt(L, (a[i_98575] ? a[i_98575]->Sup.len : 0));
+					L = (NI)(TMP644);
 					nimln(1619, "system.nim");
-					TMP644 = addInt(res_98600, ((NI) 1));
-					res_98600 = (NI)(TMP644);
+					TMP645 = addInt(res_98600, ((NI) 1));
+					res_98600 = (NI)(TMP645);
 				} LA7: ;
 			}
 		}
@@ -1218,7 +1218,7 @@ appendString(result, a[((NI) 0)]);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP645;
+					NI TMP646;
 					if (!(res_98608 <= HEX3Atmp_98605)) goto LA10;
 					nimln(1600, "system.nim");
 					i_98595 = res_98608;
@@ -1230,8 +1230,8 @@ appendString(result, sep);
 					result = resizeString(result, a[i_98595]->Sup.len + 0);
 appendString(result, a[i_98595]);
 					nimln(1619, "system.nim");
-					TMP645 = addInt(res_98608, ((NI) 1));
-					res_98608 = (NI)(TMP645);
+					TMP646 = addInt(res_98608, ((NI) 1));
+					res_98608 = (NI)(TMP646);
 				} LA10: ;
 			}
 		}
@@ -1304,24 +1304,24 @@ N_NIMCALL(NimStringDesc*, nsuToOctal)(NIM_CHAR c) {
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP1197;
 				NI TMP1198;
 				NI TMP1199;
 				NI TMP1200;
+				NI TMP1201;
 				if (!(((NI) 0) <= res_96556)) goto LA3;
 				nimln(1588, "system.nim");
 				i_96541 = res_96556;
 				nimln(197, "strutils.nim");
 				if ((NU)(i_96541) > (NU)(result->Sup.len)) raiseIndexError();
-				TMP1197 = modInt(((NI) (val)), ((NI) 8));
-				TMP1198 = addInt(((NI) ((NI)(TMP1197))), ((NI) 48));
-				result->data[i_96541] = ((NIM_CHAR) (((NI) ((NI)(TMP1198)))));
+				TMP1198 = modInt(((NI) (val)), ((NI) 8));
+				TMP1199 = addInt(((NI) ((NI)(TMP1198))), ((NI) 48));
+				result->data[i_96541] = ((NIM_CHAR) (((NI) ((NI)(TMP1199)))));
 				nimln(198, "strutils.nim");
-				TMP1199 = divInt(((NI) (val)), ((NI) 8));
-				val = ((NI) ((NI)(TMP1199)));
+				TMP1200 = divInt(((NI) (val)), ((NI) 8));
+				val = ((NI) ((NI)(TMP1200)));
 				nimln(1589, "system.nim");
-				TMP1200 = subInt(res_96556, ((NI) 1));
-				res_96556 = (NI)(TMP1200);
+				TMP1201 = subInt(res_96556, ((NI) 1));
+				res_96556 = (NI)(TMP1201);
 			} LA3: ;
 		}
 	}
@@ -1385,7 +1385,7 @@ N_NOINLINE(void, invalidformatstring_100761)(void) {
 	(*e_100765).Sup.Sup.m_type = (&NTI3449);
 	nimln(2266, "system.nim");
 	LOC1 = 0;
-	LOC1 = (*e_100765).Sup.message; (*e_100765).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1240));
+	LOC1 = (*e_100765).Sup.message; (*e_100765).Sup.message = copyStringRC1(((NimStringDesc*) &TMP1241));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(1289, "strutils.nim");
 	raiseException((Exception*)e_100765, "ValueError");
@@ -1402,7 +1402,7 @@ N_NIMCALL(NI, findnormalized_100732)(NimStringDesc* x, NimStringDesc** inarray, 
 	{
 		nimln(1282, "strutils.nim");
 		while (1) {
-			NI TMP1254;
+			NI TMP1255;
 			if (!(i < (inarrayLen0-1))) goto LA2;
 			nimln(1283, "strutils.nim");
 			{
@@ -1416,8 +1416,8 @@ N_NIMCALL(NI, findnormalized_100732)(NimStringDesc* x, NimStringDesc** inarray, 
 			}
 			LA6: ;
 			nimln(1284, "strutils.nim");
-			TMP1254 = addInt(i, ((NI) 2));
-			i = (NI)(TMP1254);
+			TMP1255 = addInt(i, ((NI) 2));
+			i = (NI)(TMP1255);
 		} LA2: ;
 	}
 	nimln(1286, "strutils.nim");
@@ -1442,17 +1442,17 @@ N_NIMCALL(void, nsuAddf)(NimStringDesc** s, NimStringDesc* formatstr, NimStringD
 			if (!(i < (formatstr ? formatstr->Sup.len : 0))) goto LA2;
 			nimln(1298, "strutils.nim");
 			{
-				NI TMP1239;
+				NI TMP1240;
 				if ((NU)(i) > (NU)(formatstr->Sup.len)) raiseIndexError();
 				if (!((NU8)(formatstr->data[i]) == (NU8)(36))) goto LA5;
 				nimln(1299, "strutils.nim");
-				TMP1239 = addInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP1239)) > (NU)(formatstr->Sup.len)) raiseIndexError();
-				switch (((NU8)(formatstr->data[(NI)(TMP1239)]))) {
+				TMP1240 = addInt(i, ((NI) 1));
+				if ((NU)((NI)(TMP1240)) > (NU)(formatstr->Sup.len)) raiseIndexError();
+				switch (((NU8)(formatstr->data[(NI)(TMP1240)]))) {
 				case 35:
 				{
-					NI TMP1241;
 					NI TMP1242;
+					NI TMP1243;
 					nimln(1302, "strutils.nim");
 					{
 						if (!((NU64)((aLen0-1)) < (NU64)(num))) goto LA10;
@@ -1464,79 +1464,79 @@ N_NIMCALL(void, nsuAddf)(NimStringDesc** s, NimStringDesc* formatstr, NimStringD
 					(*s) = resizeString((*s), a[num]->Sup.len + 0);
 appendString((*s), a[num]);
 					nimln(1304, "strutils.nim");
-					TMP1241 = addInt(i, ((NI) 2));
-					i = (NI)(TMP1241);
+					TMP1242 = addInt(i, ((NI) 2));
+					i = (NI)(TMP1242);
 					nimln(1305, "strutils.nim");
-					TMP1242 = addInt(num, ((NI) 1));
-					num = (NI)(TMP1242);
+					TMP1243 = addInt(num, ((NI) 1));
+					num = (NI)(TMP1243);
 				}
 				break;
 				case 36:
 				{
-					NI TMP1243;
+					NI TMP1244;
 					nimln(1307, "strutils.nim");
 					(*s) = addChar((*s), 36);
 					nimln(1308, "strutils.nim");
-					TMP1243 = addInt(i, ((NI) 2));
-					i = (NI)(TMP1243);
+					TMP1244 = addInt(i, ((NI) 2));
+					i = (NI)(TMP1244);
 				}
 				break;
 				case 49 ... 57:
 				case 45:
 				{
 					NI j;
-					NI TMP1244;
+					NI TMP1245;
 					NIM_BOOL negative;
 					NI idx;
 					nimln(1310, "strutils.nim");
 					j = ((NI) 0);
 					nimln(1311, "strutils.nim");
-					TMP1244 = addInt(i, ((NI) 1));
-					i = (NI)(TMP1244);
+					TMP1245 = addInt(i, ((NI) 1));
+					i = (NI)(TMP1245);
 					nimln(1312, "strutils.nim");
 					if ((NU)(i) > (NU)(formatstr->Sup.len)) raiseIndexError();
 					negative = ((NU8)(formatstr->data[i]) == (NU8)(45));
 					nimln(1313, "strutils.nim");
 					{
-						NI TMP1245;
+						NI TMP1246;
 						if (!negative) goto LA16;
-						TMP1245 = addInt(i, ((NI) 1));
-						i = (NI)(TMP1245);
+						TMP1246 = addInt(i, ((NI) 1));
+						i = (NI)(TMP1246);
 					}
 					LA16: ;
 					{
 						nimln(1314, "strutils.nim");
 						while (1) {
-							NI TMP1246;
 							NI TMP1247;
 							NI TMP1248;
 							NI TMP1249;
+							NI TMP1250;
 							if ((NU)(i) > (NU)(formatstr->Sup.len)) raiseIndexError();
 							if (!(((NU8)(formatstr->data[i])) >= ((NU8)(48)) && ((NU8)(formatstr->data[i])) <= ((NU8)(57)))) goto LA19;
 							nimln(1315, "strutils.nim");
-							TMP1246 = mulInt(j, ((NI) 10));
+							TMP1247 = mulInt(j, ((NI) 10));
 							if ((NU)(i) > (NU)(formatstr->Sup.len)) raiseIndexError();
-							TMP1247 = addInt((NI)(TMP1246), ((NI) (((NU8)(formatstr->data[i])))));
-							TMP1248 = subInt((NI)(TMP1247), ((NI) 48));
-							j = (NI)(TMP1248);
+							TMP1248 = addInt((NI)(TMP1247), ((NI) (((NU8)(formatstr->data[i])))));
+							TMP1249 = subInt((NI)(TMP1248), ((NI) 48));
+							j = (NI)(TMP1249);
 							nimln(1316, "strutils.nim");
-							TMP1249 = addInt(i, ((NI) 1));
-							i = (NI)(TMP1249);
+							TMP1250 = addInt(i, ((NI) 1));
+							i = (NI)(TMP1250);
 						} LA19: ;
 					}
 					nimln(1317, "strutils.nim");
 					{
-						NI TMP1250;
+						NI TMP1251;
 						if (!!(negative)) goto LA22;
-						TMP1250 = subInt(j, ((NI) 1));
-						idx = (NI)(TMP1250);
+						TMP1251 = subInt(j, ((NI) 1));
+						idx = (NI)(TMP1251);
 					}
 					goto LA20;
 					LA22: ;
 					{
-						NI TMP1251;
-						TMP1251 = subInt(aLen0, j);
-						idx = (NI)(TMP1251);
+						NI TMP1252;
+						TMP1252 = subInt(aLen0, j);
+						idx = (NI)(TMP1252);
 					}
 					LA20: ;
 					nimln(1318, "strutils.nim");
@@ -1554,45 +1554,45 @@ appendString((*s), a[idx]);
 				case 123:
 				{
 					NI j;
-					NI TMP1252;
+					NI TMP1253;
 					NI x;
-					NI TMP1255;
 					NI TMP1256;
+					NI TMP1257;
 					NimStringDesc* LOC32;
-					NI TMP1258;
+					NI TMP1259;
 					nimln(1321, "strutils.nim");
-					TMP1252 = addInt(i, ((NI) 1));
-					j = (NI)(TMP1252);
+					TMP1253 = addInt(i, ((NI) 1));
+					j = (NI)(TMP1253);
 					{
 						nimln(1322, "strutils.nim");
 						while (1) {
-							NI TMP1253;
+							NI TMP1254;
 							if ((NU)(j) > (NU)(formatstr->Sup.len)) raiseIndexError();
 							if (!!((((NU8)(formatstr->data[j])) == ((NU8)(0)) || ((NU8)(formatstr->data[j])) == ((NU8)(125))))) goto LA31;
-							TMP1253 = addInt(j, ((NI) 1));
-							j = (NI)(TMP1253);
+							TMP1254 = addInt(j, ((NI) 1));
+							j = (NI)(TMP1254);
 						} LA31: ;
 					}
 					nimln(1323, "strutils.nim");
-					TMP1255 = addInt(i, ((NI) 2));
-					TMP1256 = subInt(j, ((NI) 1));
+					TMP1256 = addInt(i, ((NI) 2));
+					TMP1257 = subInt(j, ((NI) 1));
 					LOC32 = 0;
-					LOC32 = copyStrLast(formatstr, (NI)(TMP1255), (NI)(TMP1256));
+					LOC32 = copyStrLast(formatstr, (NI)(TMP1256), (NI)(TMP1257));
 					x = findnormalized_100732(LOC32, a, aLen0);
 					nimln(1324, "strutils.nim");
 					{
 						NIM_BOOL LOC35;
-						NI TMP1257;
+						NI TMP1258;
 						LOC35 = 0;
 						LOC35 = (((NI) 0) <= x);
 						if (!(LOC35)) goto LA36;
 						LOC35 = (x < (aLen0-1));
 						LA36: ;
 						if (!LOC35) goto LA37;
-						TMP1257 = addInt(x, ((NI) 1));
-						if ((NU)((NI)(TMP1257)) >= (NU)(aLen0)) raiseIndexError();
-						(*s) = resizeString((*s), a[(NI)(TMP1257)]->Sup.len + 0);
-appendString((*s), a[(NI)(TMP1257)]);
+						TMP1258 = addInt(x, ((NI) 1));
+						if ((NU)((NI)(TMP1258)) >= (NU)(aLen0)) raiseIndexError();
+						(*s) = resizeString((*s), a[(NI)(TMP1258)]->Sup.len + 0);
+appendString((*s), a[(NI)(TMP1258)]);
 					}
 					goto LA33;
 					LA37: ;
@@ -1602,8 +1602,8 @@ appendString((*s), a[(NI)(TMP1257)]);
 					}
 					LA33: ;
 					nimln(1326, "strutils.nim");
-					TMP1258 = addInt(j, ((NI) 1));
-					i = (NI)(TMP1258);
+					TMP1259 = addInt(j, ((NI) 1));
+					i = (NI)(TMP1259);
 				}
 				break;
 				case 97 ... 122:
@@ -1612,44 +1612,44 @@ appendString((*s), a[(NI)(TMP1257)]);
 				case 95:
 				{
 					NI j;
-					NI TMP1259;
+					NI TMP1260;
 					NI x;
-					NI TMP1261;
 					NI TMP1262;
+					NI TMP1263;
 					NimStringDesc* LOC43;
 					nimln(1328, "strutils.nim");
-					TMP1259 = addInt(i, ((NI) 1));
-					j = (NI)(TMP1259);
+					TMP1260 = addInt(i, ((NI) 1));
+					j = (NI)(TMP1260);
 					{
 						nimln(1329, "strutils.nim");
 						while (1) {
-							NI TMP1260;
+							NI TMP1261;
 							if ((NU)(j) > (NU)(formatstr->Sup.len)) raiseIndexError();
 							if (!(((NU8)(formatstr->data[j])) >= ((NU8)(97)) && ((NU8)(formatstr->data[j])) <= ((NU8)(122)) || ((NU8)(formatstr->data[j])) >= ((NU8)(65)) && ((NU8)(formatstr->data[j])) <= ((NU8)(90)) || ((NU8)(formatstr->data[j])) >= ((NU8)(48)) && ((NU8)(formatstr->data[j])) <= ((NU8)(57)) || ((NU8)(formatstr->data[j])) >= ((NU8)(128)) && ((NU8)(formatstr->data[j])) <= ((NU8)(255)) || ((NU8)(formatstr->data[j])) == ((NU8)(95)))) goto LA42;
-							TMP1260 = addInt(j, ((NI) 1));
-							j = (NI)(TMP1260);
+							TMP1261 = addInt(j, ((NI) 1));
+							j = (NI)(TMP1261);
 						} LA42: ;
 					}
 					nimln(1330, "strutils.nim");
-					TMP1261 = addInt(i, ((NI) 1));
-					TMP1262 = subInt(j, ((NI) 1));
+					TMP1262 = addInt(i, ((NI) 1));
+					TMP1263 = subInt(j, ((NI) 1));
 					LOC43 = 0;
-					LOC43 = copyStrLast(formatstr, (NI)(TMP1261), (NI)(TMP1262));
+					LOC43 = copyStrLast(formatstr, (NI)(TMP1262), (NI)(TMP1263));
 					x = findnormalized_100732(LOC43, a, aLen0);
 					nimln(1331, "strutils.nim");
 					{
 						NIM_BOOL LOC46;
-						NI TMP1263;
+						NI TMP1264;
 						LOC46 = 0;
 						LOC46 = (((NI) 0) <= x);
 						if (!(LOC46)) goto LA47;
 						LOC46 = (x < (aLen0-1));
 						LA47: ;
 						if (!LOC46) goto LA48;
-						TMP1263 = addInt(x, ((NI) 1));
-						if ((NU)((NI)(TMP1263)) >= (NU)(aLen0)) raiseIndexError();
-						(*s) = resizeString((*s), a[(NI)(TMP1263)]->Sup.len + 0);
-appendString((*s), a[(NI)(TMP1263)]);
+						TMP1264 = addInt(x, ((NI) 1));
+						if ((NU)((NI)(TMP1264)) >= (NU)(aLen0)) raiseIndexError();
+						(*s) = resizeString((*s), a[(NI)(TMP1264)]->Sup.len + 0);
+appendString((*s), a[(NI)(TMP1264)]);
 					}
 					goto LA44;
 					LA48: ;
@@ -1673,13 +1673,13 @@ appendString((*s), a[(NI)(TMP1263)]);
 			goto LA3;
 			LA5: ;
 			{
-				NI TMP1264;
+				NI TMP1265;
 				nimln(1337, "strutils.nim");
 				if ((NU)(i) > (NU)(formatstr->Sup.len)) raiseIndexError();
 				(*s) = addChar((*s), formatstr->data[i]);
 				nimln(1338, "strutils.nim");
-				TMP1264 = addInt(i, ((NI) 1));
-				i = (NI)(TMP1264);
+				TMP1265 = addInt(i, ((NI) 1));
+				i = (NI)(TMP1265);
 			}
 			LA3: ;
 		} LA2: ;
@@ -1689,12 +1689,12 @@ appendString((*s), a[(NI)(TMP1263)]);
 
 N_NIMCALL(NimStringDesc*, nsuFormatOpenArray)(NimStringDesc* formatstr, NimStringDesc** a, NI aLen0) {
 	NimStringDesc* result;
-	NI TMP1238;
+	NI TMP1239;
 	nimfr("%", "strutils.nim")
 	result = 0;
 	nimln(1382, "strutils.nim");
-	TMP1238 = addInt((formatstr ? formatstr->Sup.len : 0), (NI)((NU64)(aLen0) << (NU64)(((NI) 4))));
-	result = rawNewString(((NI)chckRange((NI)(TMP1238), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1239 = addInt((formatstr ? formatstr->Sup.len : 0), (NI)((NU64)(aLen0) << (NU64)(((NI) 4))));
+	result = rawNewString(((NI)chckRange((NI)(TMP1239), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(1383, "strutils.nim");
 	nsuAddf((&result), formatstr, a, aLen0);
 	popFrame();
@@ -1703,13 +1703,13 @@ N_NIMCALL(NimStringDesc*, nsuFormatOpenArray)(NimStringDesc* formatstr, NimStrin
 
 N_NIMCALL(NimStringDesc*, nsuFormatSingleElem)(NimStringDesc* formatstr, NimStringDesc* a) {
 	NimStringDesc* result;
-	NI TMP1277;
+	NI TMP1278;
 	TY146201 LOC1;
 	nimfr("%", "strutils.nim")
 	result = 0;
 	nimln(1388, "strutils.nim");
-	TMP1277 = addInt((formatstr ? formatstr->Sup.len : 0), (a ? a->Sup.len : 0));
-	result = rawNewString(((NI)chckRange((NI)(TMP1277), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1278 = addInt((formatstr ? formatstr->Sup.len : 0), (a ? a->Sup.len : 0));
+	result = rawNewString(((NI)chckRange((NI)(TMP1278), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(1389, "strutils.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	LOC1[0] = copyString(a);
@@ -1730,41 +1730,41 @@ N_NIMCALL(NimStringDesc*, nsuNormalize)(NimStringDesc* s) {
 	{
 		NI i_96226;
 		NI HEX3Atmp_96284;
-		NI TMP1323;
+		NI TMP1324;
 		NI res_96287;
 		i_96226 = 0;
 		HEX3Atmp_96284 = 0;
 		nimln(123, "strutils.nim");
-		TMP1323 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_96284 = (NI)(TMP1323);
+		TMP1324 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_96284 = (NI)(TMP1324);
 		nimln(1598, "system.nim");
 		res_96287 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP1327;
+				NI TMP1328;
 				if (!(res_96287 <= HEX3Atmp_96284)) goto LA3;
 				nimln(1600, "system.nim");
 				i_96226 = res_96287;
 				nimln(124, "strutils.nim");
 				{
-					NI TMP1324;
 					NI TMP1325;
+					NI TMP1326;
 					if ((NU)(i_96226) > (NU)(s->Sup.len)) raiseIndexError();
 					if (!(((NU8)(s->data[i_96226])) >= ((NU8)(65)) && ((NU8)(s->data[i_96226])) <= ((NU8)(90)))) goto LA6;
 					nimln(125, "strutils.nim");
 					if ((NU)(j) > (NU)(result->Sup.len)) raiseIndexError();
 					if ((NU)(i_96226) > (NU)(s->Sup.len)) raiseIndexError();
-					TMP1324 = addInt(((NI) (((NU8)(s->data[i_96226])))), ((NI) 32));
-					result->data[j] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP1324), ((NI) 0), ((NI) 255)))));
+					TMP1325 = addInt(((NI) (((NU8)(s->data[i_96226])))), ((NI) 32));
+					result->data[j] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP1325), ((NI) 0), ((NI) 255)))));
 					nimln(126, "strutils.nim");
-					TMP1325 = addInt(j, ((NI) 1));
-					j = (NI)(TMP1325);
+					TMP1326 = addInt(j, ((NI) 1));
+					j = (NI)(TMP1326);
 				}
 				goto LA4;
 				LA6: ;
 				{
-					NI TMP1326;
+					NI TMP1327;
 					nimln(127, "strutils.nim");
 					if ((NU)(i_96226) > (NU)(s->Sup.len)) raiseIndexError();
 					if (!!(((NU8)(s->data[i_96226]) == (NU8)(95)))) goto LA9;
@@ -1773,15 +1773,15 @@ N_NIMCALL(NimStringDesc*, nsuNormalize)(NimStringDesc* s) {
 					if ((NU)(i_96226) > (NU)(s->Sup.len)) raiseIndexError();
 					result->data[j] = s->data[i_96226];
 					nimln(129, "strutils.nim");
-					TMP1326 = addInt(j, ((NI) 1));
-					j = (NI)(TMP1326);
+					TMP1327 = addInt(j, ((NI) 1));
+					j = (NI)(TMP1327);
 				}
 				goto LA4;
 				LA9: ;
 				LA4: ;
 				nimln(1619, "system.nim");
-				TMP1327 = addInt(res_96287, ((NI) 1));
-				res_96287 = (NI)(TMP1327);
+				TMP1328 = addInt(res_96287, ((NI) 1));
+				res_96287 = (NI)(TMP1328);
 			} LA3: ;
 		}
 	}
@@ -1818,18 +1818,18 @@ N_NIMCALL(NimStringDesc*, nsuJoin)(NimStringDesc** a, NI aLen0) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP1487;
 					NI TMP1488;
+					NI TMP1489;
 					if (!(res_98684 <= HEX3Atmp_98681)) goto LA7;
 					nimln(1600, "system.nim");
 					i_98659 = res_98684;
 					nimln(758, "strutils.nim");
 					if ((NU)(i_98659) >= (NU)(aLen0)) raiseIndexError();
-					TMP1487 = addInt(L, (a[i_98659] ? a[i_98659]->Sup.len : 0));
-					L = (NI)(TMP1487);
+					TMP1488 = addInt(L, (a[i_98659] ? a[i_98659]->Sup.len : 0));
+					L = (NI)(TMP1488);
 					nimln(1619, "system.nim");
-					TMP1488 = addInt(res_98684, ((NI) 1));
-					res_98684 = (NI)(TMP1488);
+					TMP1489 = addInt(res_98684, ((NI) 1));
+					res_98684 = (NI)(TMP1489);
 				} LA7: ;
 			}
 		}
@@ -1848,7 +1848,7 @@ N_NIMCALL(NimStringDesc*, nsuJoin)(NimStringDesc** a, NI aLen0) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP1489;
+					NI TMP1490;
 					if (!(res_98692 <= HEX3Atmp_98689)) goto LA10;
 					nimln(1600, "system.nim");
 					i_98679 = res_98692;
@@ -1857,8 +1857,8 @@ N_NIMCALL(NimStringDesc*, nsuJoin)(NimStringDesc** a, NI aLen0) {
 					result = resizeString(result, a[i_98679]->Sup.len + 0);
 appendString(result, a[i_98679]);
 					nimln(1619, "system.nim");
-					TMP1489 = addInt(res_98692, ((NI) 1));
-					res_98692 = (NI)(TMP1489);
+					TMP1490 = addInt(res_98692, ((NI) 1));
+					res_98692 = (NI)(TMP1490);
 				} LA10: ;
 			}
 		}
@@ -1886,26 +1886,26 @@ N_NIMCALL(NimStringDesc*, nsuToHex)(NI64 x, NI len) {
 	{
 		NI j_97423;
 		NI HEX3Atmp_97426;
-		NI TMP1533;
+		NI TMP1534;
 		NI res_97429;
 		j_97423 = 0;
 		HEX3Atmp_97426 = 0;
 		nimln(400, "strutils.nim");
-		TMP1533 = subInt(((NI) (len)), ((NI) 1));
-		HEX3Atmp_97426 = (NI)(TMP1533);
+		TMP1534 = subInt(((NI) (len)), ((NI) 1));
+		HEX3Atmp_97426 = (NI)(TMP1534);
 		nimln(1586, "system.nim");
 		res_97429 = ((NI) (HEX3Atmp_97426));
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP1535;
+				NI TMP1536;
 				if (!(((NI) 0) <= res_97429)) goto LA3;
 				nimln(1588, "system.nim");
 				j_97423 = ((NI)chckRange(res_97429, ((NI) 0), ((NI) IL64(9223372036854775806))));
 				nimln(401, "strutils.nim");
 				if ((NU)(j_97423) > (NU)(result->Sup.len)) raiseIndexError();
-				if ((NU)((NI64)(n & IL64(15))) > (NU)(((NimStringDesc*) &TMP1534)->Sup.len)) raiseIndexError();
-				result->data[j_97423] = ((NimStringDesc*) &TMP1534)->data[(NI64)(n & IL64(15))];
+				if ((NU)((NI64)(n & IL64(15))) > (NU)(((NimStringDesc*) &TMP1535)->Sup.len)) raiseIndexError();
+				result->data[j_97423] = ((NimStringDesc*) &TMP1535)->data[(NI64)(n & IL64(15))];
 				nimln(402, "strutils.nim");
 				n = (NI64)((NU64)(n) >> (NU64)(IL64(4)));
 				nimln(404, "strutils.nim");
@@ -1921,8 +1921,8 @@ N_NIMCALL(NimStringDesc*, nsuToHex)(NI64 x, NI len) {
 				}
 				LA8: ;
 				nimln(1589, "system.nim");
-				TMP1535 = subInt(res_97429, ((NI) 1));
-				res_97429 = (NI)(TMP1535);
+				TMP1536 = subInt(res_97429, ((NI) 1));
+				res_97429 = (NI)(TMP1536);
 			} LA3: ;
 		}
 	}
@@ -1932,12 +1932,12 @@ N_NIMCALL(NimStringDesc*, nsuToHex)(NI64 x, NI len) {
 
 N_NIMCALL(NimStringDesc*, nsuEscape)(NimStringDesc* s, NimStringDesc* prefix, NimStringDesc* suffix) {
 	NimStringDesc* result;
-	NI TMP1531;
+	NI TMP1532;
 	nimfr("escape", "strutils.nim")
 	result = 0;
 	nimln(1044, "strutils.nim");
-	TMP1531 = addInt((s ? s->Sup.len : 0), (NI)((NU64)((s ? s->Sup.len : 0)) >> (NU64)(((NI) 2))));
-	result = rawNewString(((NI)chckRange((NI)(TMP1531), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP1532 = addInt((s ? s->Sup.len : 0), (NI)((NU64)((s ? s->Sup.len : 0)) >> (NU64)(((NI) 2))));
+	result = rawNewString(((NI)chckRange((NI)(TMP1532), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(1045, "strutils.nim");
 	result = resizeString(result, prefix->Sup.len + 0);
 appendString(result, prefix);
@@ -1953,7 +1953,7 @@ appendString(result, prefix);
 		{
 			nimln(3104, "system.nim");
 			while (1) {
-				NI TMP1539;
+				NI TMP1540;
 				if (!(i_100144 < L_100146)) goto LA3;
 				nimln(3105, "system.nim");
 				if ((NU)(i_100144) > (NU)(s->Sup.len)) raiseIndexError();
@@ -1966,7 +1966,7 @@ appendString(result, prefix);
 					NimStringDesc* LOC5;
 					nimln(1049, "strutils.nim");
 					result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1532));
+appendString(result, ((NimStringDesc*) &TMP1533));
 					nimln(1050, "strutils.nim");
 					LOC5 = 0;
 					LOC5 = nsuToHex(((NI64) (((NU8)(c_100132)))), ((NI) 2));
@@ -1978,21 +1978,21 @@ appendString(result, LOC5);
 				{
 					nimln(1051, "strutils.nim");
 					result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1536));
+appendString(result, ((NimStringDesc*) &TMP1537));
 				}
 				break;
 				case 39:
 				{
 					nimln(1052, "strutils.nim");
 					result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1537));
+appendString(result, ((NimStringDesc*) &TMP1538));
 				}
 				break;
 				case 34:
 				{
 					nimln(1053, "strutils.nim");
 					result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1538));
+appendString(result, ((NimStringDesc*) &TMP1539));
 				}
 				break;
 				default:
@@ -2003,8 +2003,8 @@ appendString(result, ((NimStringDesc*) &TMP1538));
 				break;
 				}
 				nimln(3106, "system.nim");
-				TMP1539 = addInt(i_100144, ((NI) 1));
-				i_100144 = (NI)(TMP1539);
+				TMP1540 = addInt(i_100144, ((NI) 1));
+				i_100144 = (NI)(TMP1540);
 				nimln(3107, "system.nim");
 				{
 					if (!!(((s ? s->Sup.len : 0) == L_100146))) goto LA12;
@@ -2025,35 +2025,35 @@ N_NIMCALL(NIM_BOOL, nsuEndsWith)(NimStringDesc* s, NimStringDesc* suffix) {
 	NIM_BOOL result;
 	NI i;
 	NI j;
-	NI TMP1820;
+	NI TMP1821;
 	nimfr("endsWith", "strutils.nim")
 {	result = 0;
 	nimln(678, "strutils.nim");
 	i = ((NI) 0);
 	nimln(679, "strutils.nim");
-	TMP1820 = subInt((s ? s->Sup.len : 0), (suffix ? suffix->Sup.len : 0));
-	j = (NI)(TMP1820);
+	TMP1821 = subInt((s ? s->Sup.len : 0), (suffix ? suffix->Sup.len : 0));
+	j = (NI)(TMP1821);
 	{
 		nimln(680, "strutils.nim");
 		while (1) {
-			NI TMP1821;
-			NI TMP1823;
-			TMP1821 = addInt(i, j);
-			if (!((NU64)((NI)(TMP1821)) < (NU64)((s ? s->Sup.len : 0)))) goto LA2;
+			NI TMP1822;
+			NI TMP1824;
+			TMP1822 = addInt(i, j);
+			if (!((NU64)((NI)(TMP1822)) < (NU64)((s ? s->Sup.len : 0)))) goto LA2;
 			nimln(681, "strutils.nim");
 			{
-				NI TMP1822;
-				TMP1822 = addInt(i, j);
-				if ((NU)((NI)(TMP1822)) > (NU)(s->Sup.len)) raiseIndexError();
+				NI TMP1823;
+				TMP1823 = addInt(i, j);
+				if ((NU)((NI)(TMP1823)) > (NU)(s->Sup.len)) raiseIndexError();
 				if ((NU)(i) > (NU)(suffix->Sup.len)) raiseIndexError();
-				if (!!(((NU8)(s->data[(NI)(TMP1822)]) == (NU8)(suffix->data[i])))) goto LA5;
+				if (!!(((NU8)(s->data[(NI)(TMP1823)]) == (NU8)(suffix->data[i])))) goto LA5;
 				result = NIM_FALSE;
 				goto BeforeRet;
 			}
 			LA5: ;
 			nimln(682, "strutils.nim");
-			TMP1823 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1823);
+			TMP1824 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1824);
 		} LA2: ;
 	}
 	nimln(683, "strutils.nim");
@@ -2080,7 +2080,7 @@ N_NIMCALL(NimStringDesc*, quoteifcontainswhite_99340)(NimStringDesc* s) {
 		NimStringDesc* LOC8;
 		LOC3 = 0;
 		LOC4 = 0;
-		LOC4 = nsuFindCharSet(s, TMP1837, ((NI) 0));
+		LOC4 = nsuFindCharSet(s, TMP1838, ((NI) 0));
 		LOC3 = (((NI) 0) <= LOC4);
 		if (!(LOC3)) goto LA5;
 		if ((NU)(((NI) 0)) > (NU)(s->Sup.len)) raiseIndexError();
@@ -2110,25 +2110,25 @@ N_NIMCALL(NimStringDesc*, nsuStrip)(NimStringDesc* s, NIM_BOOL leading, NIM_BOOL
 	NimStringDesc* result;
 	NI first;
 	NI last;
-	NI TMP1856;
+	NI TMP1857;
 	nimfr("strip", "strutils.nim")
 	result = 0;
 	nimln(181, "strutils.nim");
 	first = ((NI) 0);
 	nimln(182, "strutils.nim");
-	TMP1856 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-	last = (NI)(TMP1856);
+	TMP1857 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+	last = (NI)(TMP1857);
 	nimln(183, "strutils.nim");
 	{
 		if (!leading) goto LA3;
 		{
 			nimln(184, "strutils.nim");
 			while (1) {
-				NI TMP1857;
+				NI TMP1858;
 				if ((NU)(first) > (NU)(s->Sup.len)) raiseIndexError();
 				if (!(((NU8)(s->data[first])) == ((NU8)(32)) || ((NU8)(s->data[first])) == ((NU8)(9)) || ((NU8)(s->data[first])) == ((NU8)(11)) || ((NU8)(s->data[first])) == ((NU8)(13)) || ((NU8)(s->data[first])) == ((NU8)(10)) || ((NU8)(s->data[first])) == ((NU8)(12)))) goto LA6;
-				TMP1857 = addInt(first, ((NI) 1));
-				first = (NI)(TMP1857);
+				TMP1858 = addInt(first, ((NI) 1));
+				first = (NI)(TMP1858);
 			} LA6: ;
 		}
 	}
@@ -2140,7 +2140,7 @@ N_NIMCALL(NimStringDesc*, nsuStrip)(NimStringDesc* s, NIM_BOOL leading, NIM_BOOL
 			nimln(186, "strutils.nim");
 			while (1) {
 				NIM_BOOL LOC13;
-				NI TMP1858;
+				NI TMP1859;
 				LOC13 = 0;
 				LOC13 = (((NI) 0) <= last);
 				if (!(LOC13)) goto LA14;
@@ -2148,8 +2148,8 @@ N_NIMCALL(NimStringDesc*, nsuStrip)(NimStringDesc* s, NIM_BOOL leading, NIM_BOOL
 				LOC13 = (((NU8)(s->data[last])) == ((NU8)(32)) || ((NU8)(s->data[last])) == ((NU8)(9)) || ((NU8)(s->data[last])) == ((NU8)(11)) || ((NU8)(s->data[last])) == ((NU8)(13)) || ((NU8)(s->data[last])) == ((NU8)(10)) || ((NU8)(s->data[last])) == ((NU8)(12)));
 				LA14: ;
 				if (!LOC13) goto LA12;
-				TMP1858 = subInt(last, ((NI) 1));
-				last = (NI)(TMP1858);
+				TMP1859 = subInt(last, ((NI) 1));
+				last = (NI)(TMP1859);
 			} LA12: ;
 		}
 	}
@@ -2190,7 +2190,7 @@ N_NIMCALL(TY13606*, nsuSplitChar)(NimStringDesc* s, NIM_CHAR sep) {
 		nimln(280, "strutils.nim");
 		{
 			if (!!(!(((NU8)(0) == (NU8)(sep))))) goto LA4;
-			failedassertimpl_87017(((NimStringDesc*) &TMP1985));
+			failedassertimpl_87017(((NimStringDesc*) &TMP1986));
 		}
 		LA4: ;
 		nimln(281, "strutils.nim");
@@ -2200,9 +2200,9 @@ N_NIMCALL(TY13606*, nsuSplitChar)(NimStringDesc* s, NIM_CHAR sep) {
 				nimln(283, "strutils.nim");
 				while (1) {
 					NI first_97191;
-					NI TMP1987;
-					NimStringDesc* LOC16;
 					NI TMP1988;
+					NimStringDesc* LOC16;
+					NI TMP1989;
 					if (!(last_97189 <= (s ? s->Sup.len : 0))) goto LA11;
 					nimln(284, "strutils.nim");
 					first_97191 = last_97189;
@@ -2210,7 +2210,7 @@ N_NIMCALL(TY13606*, nsuSplitChar)(NimStringDesc* s, NIM_CHAR sep) {
 						nimln(285, "strutils.nim");
 						while (1) {
 							NIM_BOOL LOC14;
-							NI TMP1986;
+							NI TMP1987;
 							LOC14 = 0;
 							LOC14 = (last_97189 < (s ? s->Sup.len : 0));
 							if (!(LOC14)) goto LA15;
@@ -2218,21 +2218,21 @@ N_NIMCALL(TY13606*, nsuSplitChar)(NimStringDesc* s, NIM_CHAR sep) {
 							LOC14 = !(((NU8)(s->data[last_97189]) == (NU8)(sep)));
 							LA15: ;
 							if (!LOC14) goto LA13;
-							TMP1986 = addInt(last_97189, ((NI) 1));
-							last_97189 = (NI)(TMP1986);
+							TMP1987 = addInt(last_97189, ((NI) 1));
+							last_97189 = (NI)(TMP1987);
 						} LA13: ;
 					}
 					nimln(286, "strutils.nim");
-					TMP1987 = subInt(last_97189, ((NI) 1));
-					x_97158 = copyStrLast(s, first_97191, (NI)(TMP1987));
+					TMP1988 = subInt(last_97189, ((NI) 1));
+					x_97158 = copyStrLast(s, first_97191, (NI)(TMP1988));
 					nimln(2158, "system.nim");
 					result = (TY13606*) incrSeq(&(result)->Sup, sizeof(NimStringDesc*));
 					LOC16 = 0;
 					LOC16 = result->data[result->Sup.len-1]; result->data[result->Sup.len-1] = copyStringRC1(x_97158);
 					if (LOC16) nimGCunrefNoCycle(LOC16);
 					nimln(287, "strutils.nim");
-					TMP1988 = addInt(last_97189, ((NI) 1));
-					last_97189 = (NI)(TMP1988);
+					TMP1989 = addInt(last_97189, ((NI) 1));
+					last_97189 = (NI)(TMP1989);
 				} LA11: ;
 			}
 		}
@@ -2268,7 +2268,7 @@ N_NIMCALL(NF, nsuParseFloat)(NimStringDesc* s) {
 		nimln(443, "strutils.nim");
 		LOC7 = 0;
 		LOC7 = rawNewString(s->Sup.len + 15);
-appendString(LOC7, ((NimStringDesc*) &TMP2360));
+appendString(LOC7, ((NimStringDesc*) &TMP2361));
 appendString(LOC7, s);
 		asgnRefNoCycle((void**) (&(*e_97544).Sup.message), LOC7);
 		raiseException((Exception*)e_97544, "ValueError");
@@ -2347,7 +2347,7 @@ N_NIMCALL(NimStringDesc*, nsuToBin)(NI64 x, NI len) {
 	nimln(1004, "strutils.nim");
 	{
 		if (!!((((NI) 0) < ((NI) (len))))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP3049));
+		failedassertimpl_87017(((NimStringDesc*) &TMP3050));
 	}
 	LA3: ;
 	nimln(1005, "strutils.nim");
@@ -2355,36 +2355,36 @@ N_NIMCALL(NimStringDesc*, nsuToBin)(NI64 x, NI len) {
 	{
 		NI j_100013;
 		NI HEX3Atmp_100026;
-		NI TMP3050;
+		NI TMP3051;
 		NI res_100029;
 		j_100013 = 0;
 		HEX3Atmp_100026 = 0;
 		nimln(1006, "strutils.nim");
-		TMP3050 = subInt(((NI) (len)), ((NI) 1));
-		HEX3Atmp_100026 = (NI)(TMP3050);
+		TMP3051 = subInt(((NI) (len)), ((NI) 1));
+		HEX3Atmp_100026 = (NI)(TMP3051);
 		nimln(1586, "system.nim");
 		res_100029 = ((NI) (HEX3Atmp_100026));
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP3051;
-				NI64 TMP3052;
-				NI TMP3053;
+				NI TMP3052;
+				NI64 TMP3053;
+				NI TMP3054;
 				if (!(((NI) 0) <= res_100029)) goto LA7;
 				nimln(1588, "system.nim");
 				j_100013 = ((NI)chckRange(res_100029, ((NI) 0), ((NI) IL64(9223372036854775806))));
 				nimln(1007, "strutils.nim");
 				if ((NU)(j_100013) > (NU)(result->Sup.len)) raiseIndexError();
-				TMP3051 = addInt(((NI) ((NI64)((NU64)((NI64)(x & mask)) >> (NU64)(shift)))), ((NI) 48));
-				result->data[j_100013] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP3051), ((NI) 0), ((NI) 255)))));
+				TMP3052 = addInt(((NI) ((NI64)((NU64)((NI64)(x & mask)) >> (NU64)(shift)))), ((NI) 48));
+				result->data[j_100013] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP3052), ((NI) 0), ((NI) 255)))));
 				nimln(1008, "strutils.nim");
-				TMP3052 = addInt64(shift, IL64(1));
-				shift = (NI64)(TMP3052);
+				TMP3053 = addInt64(shift, IL64(1));
+				shift = (NI64)(TMP3053);
 				nimln(1009, "strutils.nim");
 				mask = (NI64)((NU64)(mask) << (NU64)(IL64(1)));
 				nimln(1589, "system.nim");
-				TMP3053 = subInt(res_100029, ((NI) 1));
-				res_100029 = (NI)(TMP3053);
+				TMP3054 = subInt(res_100029, ((NI) 1));
+				res_100029 = (NI)(TMP3054);
 			} LA7: ;
 		}
 	}
@@ -2405,7 +2405,7 @@ N_NIMCALL(NimStringDesc*, nsuToOct)(NI64 x, NI len) {
 	nimln(988, "strutils.nim");
 	{
 		if (!!((((NI) 0) < ((NI) (len))))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP3049));
+		failedassertimpl_87017(((NimStringDesc*) &TMP3050));
 	}
 	LA3: ;
 	nimln(989, "strutils.nim");
@@ -2413,36 +2413,36 @@ N_NIMCALL(NimStringDesc*, nsuToOct)(NI64 x, NI len) {
 	{
 		NI j_99813;
 		NI HEX3Atmp_99826;
-		NI TMP3056;
+		NI TMP3057;
 		NI res_99829;
 		j_99813 = 0;
 		HEX3Atmp_99826 = 0;
 		nimln(990, "strutils.nim");
-		TMP3056 = subInt(((NI) (len)), ((NI) 1));
-		HEX3Atmp_99826 = (NI)(TMP3056);
+		TMP3057 = subInt(((NI) (len)), ((NI) 1));
+		HEX3Atmp_99826 = (NI)(TMP3057);
 		nimln(1586, "system.nim");
 		res_99829 = ((NI) (HEX3Atmp_99826));
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP3057;
-				NI64 TMP3058;
-				NI TMP3059;
+				NI TMP3058;
+				NI64 TMP3059;
+				NI TMP3060;
 				if (!(((NI) 0) <= res_99829)) goto LA7;
 				nimln(1588, "system.nim");
 				j_99813 = ((NI)chckRange(res_99829, ((NI) 0), ((NI) IL64(9223372036854775806))));
 				nimln(991, "strutils.nim");
 				if ((NU)(j_99813) > (NU)(result->Sup.len)) raiseIndexError();
-				TMP3057 = addInt(((NI) ((NI64)((NU64)((NI64)(x & mask)) >> (NU64)(shift)))), ((NI) 48));
-				result->data[j_99813] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP3057), ((NI) 0), ((NI) 255)))));
+				TMP3058 = addInt(((NI) ((NI64)((NU64)((NI64)(x & mask)) >> (NU64)(shift)))), ((NI) 48));
+				result->data[j_99813] = ((NIM_CHAR) (((NI)chckRange((NI)(TMP3058), ((NI) 0), ((NI) 255)))));
 				nimln(992, "strutils.nim");
-				TMP3058 = addInt64(shift, IL64(3));
-				shift = (NI64)(TMP3058);
+				TMP3059 = addInt64(shift, IL64(3));
+				shift = (NI64)(TMP3059);
 				nimln(993, "strutils.nim");
 				mask = (NI64)((NU64)(mask) << (NU64)(IL64(3)));
 				nimln(1589, "system.nim");
-				TMP3059 = subInt(res_99829, ((NI) 1));
-				res_99829 = (NI)(TMP3059);
+				TMP3060 = subInt(res_99829, ((NI) 1));
+				res_99829 = (NI)(TMP3060);
 			} LA7: ;
 		}
 	}
@@ -2460,7 +2460,7 @@ N_NIMCALL(NIM_BOOL, nsuContinuesWith)(NimStringDesc* s, NimStringDesc* substr, N
 	{
 		nimln(691, "strutils.nim");
 		while (1) {
-			NI TMP5291;
+			NI TMP5292;
 			nimln(692, "strutils.nim");
 			{
 				if ((NU)(i) > (NU)(substr->Sup.len)) raiseIndexError();
@@ -2471,18 +2471,18 @@ N_NIMCALL(NIM_BOOL, nsuContinuesWith)(NimStringDesc* s, NimStringDesc* substr, N
 			LA5: ;
 			nimln(693, "strutils.nim");
 			{
-				NI TMP5290;
-				TMP5290 = addInt(i, ((NI) (start)));
-				if ((NU)((NI)(TMP5290)) > (NU)(s->Sup.len)) raiseIndexError();
+				NI TMP5291;
+				TMP5291 = addInt(i, ((NI) (start)));
+				if ((NU)((NI)(TMP5291)) > (NU)(s->Sup.len)) raiseIndexError();
 				if ((NU)(i) > (NU)(substr->Sup.len)) raiseIndexError();
-				if (!!(((NU8)(s->data[(NI)(TMP5290)]) == (NU8)(substr->data[i])))) goto LA9;
+				if (!!(((NU8)(s->data[(NI)(TMP5291)]) == (NU8)(substr->data[i])))) goto LA9;
 				result = NIM_FALSE;
 				goto BeforeRet;
 			}
 			LA9: ;
 			nimln(694, "strutils.nim");
-			TMP5291 = addInt(i, ((NI) 1));
-			i = (NI)(TMP5291);
+			TMP5292 = addInt(i, ((NI) 1));
+			i = (NI)(TMP5292);
 		}
 	}
 	}BeforeRet: ;
@@ -2492,12 +2492,12 @@ N_NIMCALL(NIM_BOOL, nsuContinuesWith)(NimStringDesc* s, NimStringDesc* substr, N
 
 N_NIMCALL(NimStringDesc*, nsuRepeatStr)(NimStringDesc* s, NI n) {
 	NimStringDesc* result;
-	NI TMP5941;
+	NI TMP5942;
 	nimfr("repeat", "strutils.nim")
 	result = 0;
 	nimln(523, "strutils.nim");
-	TMP5941 = mulInt(((NI) (n)), (s ? s->Sup.len : 0));
-	result = rawNewString(((NI)chckRange((NI)(TMP5941), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP5942 = mulInt(((NI) (n)), (s ? s->Sup.len : 0));
+	result = rawNewString(((NI)chckRange((NI)(TMP5942), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	{
 		NI i_98023;
 		NI res_98027;
@@ -2507,7 +2507,7 @@ N_NIMCALL(NimStringDesc*, nsuRepeatStr)(NimStringDesc* s, NI n) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP5942;
+				NI TMP5943;
 				if (!(res_98027 <= ((NI) (n)))) goto LA3;
 				nimln(1600, "system.nim");
 				i_98023 = ((NI)chckRange(res_98027, ((NI) 0), ((NI) IL64(9223372036854775807))));
@@ -2515,8 +2515,8 @@ N_NIMCALL(NimStringDesc*, nsuRepeatStr)(NimStringDesc* s, NI n) {
 				result = resizeString(result, s->Sup.len + 0);
 appendString(result, s);
 				nimln(1619, "system.nim");
-				TMP5942 = addInt(res_98027, ((NI) 1));
-				res_98027 = (NI)(TMP5942);
+				TMP5943 = addInt(res_98027, ((NI) 1));
+				res_98027 = (NI)(TMP5943);
 			} LA3: ;
 		}
 	}
@@ -2527,36 +2527,36 @@ appendString(result, s);
 N_NIMCALL(void, nsuDelete)(NimStringDesc** s, NI first, NI last) {
 	NI i;
 	NI j;
-	NI TMP6053;
-	NI newlen;
 	NI TMP6054;
+	NI newlen;
 	NI TMP6055;
+	NI TMP6056;
 	nimfr("delete", "strutils.nim")
 	nimln(952, "strutils.nim");
 	i = first;
 	nimln(953, "strutils.nim");
-	TMP6053 = addInt(last, ((NI) 1));
-	j = (NI)(TMP6053);
+	TMP6054 = addInt(last, ((NI) 1));
+	j = (NI)(TMP6054);
 	nimln(954, "strutils.nim");
-	TMP6054 = subInt(((*s) ? (*s)->Sup.len : 0), j);
-	TMP6055 = addInt((NI)(TMP6054), i);
-	newlen = (NI)(TMP6055);
+	TMP6055 = subInt(((*s) ? (*s)->Sup.len : 0), j);
+	TMP6056 = addInt((NI)(TMP6055), i);
+	newlen = (NI)(TMP6056);
 	{
 		nimln(955, "strutils.nim");
 		while (1) {
-			NI TMP6056;
 			NI TMP6057;
+			NI TMP6058;
 			if (!(i < newlen)) goto LA2;
 			nimln(956, "strutils.nim");
 			if ((NU)(i) > (NU)((*s)->Sup.len)) raiseIndexError();
 			if ((NU)(j) > (NU)((*s)->Sup.len)) raiseIndexError();
 			(*s)->data[i] = (*s)->data[j];
 			nimln(957, "strutils.nim");
-			TMP6056 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6056);
+			TMP6057 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6057);
 			nimln(958, "strutils.nim");
-			TMP6057 = addInt(j, ((NI) 1));
-			j = (NI)(TMP6057);
+			TMP6058 = addInt(j, ((NI) 1));
+			j = (NI)(TMP6058);
 		} LA2: ;
 	}
 	nimln(959, "strutils.nim");
@@ -2574,36 +2574,36 @@ N_NIMCALL(NI, nsuCountLines)(NimStringDesc* s) {
 	{
 		nimln(360, "strutils.nim");
 		while (1) {
-			NI TMP6120;
+			NI TMP6121;
 			if (!(i < (s ? s->Sup.len : 0))) goto LA2;
 			nimln(361, "strutils.nim");
 			if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 			switch (((NU8)(s->data[i]))) {
 			case 13:
 			{
-				NI TMP6118;
+				NI TMP6119;
 				nimln(363, "strutils.nim");
 				{
-					NI TMP6116;
 					NI TMP6117;
-					TMP6116 = addInt(i, ((NI) 1));
-					if ((NU)((NI)(TMP6116)) > (NU)(s->Sup.len)) raiseIndexError();
-					if (!((NU8)(s->data[(NI)(TMP6116)]) == (NU8)(10))) goto LA6;
+					NI TMP6118;
 					TMP6117 = addInt(i, ((NI) 1));
-					i = (NI)(TMP6117);
+					if ((NU)((NI)(TMP6117)) > (NU)(s->Sup.len)) raiseIndexError();
+					if (!((NU8)(s->data[(NI)(TMP6117)]) == (NU8)(10))) goto LA6;
+					TMP6118 = addInt(i, ((NI) 1));
+					i = (NI)(TMP6118);
 				}
 				LA6: ;
 				nimln(364, "strutils.nim");
-				TMP6118 = addInt(result, ((NI) 1));
-				result = (NI)(TMP6118);
+				TMP6119 = addInt(result, ((NI) 1));
+				result = (NI)(TMP6119);
 			}
 			break;
 			case 10:
 			{
-				NI TMP6119;
+				NI TMP6120;
 				nimln(365, "strutils.nim");
-				TMP6119 = addInt(result, ((NI) 1));
-				result = (NI)(TMP6119);
+				TMP6120 = addInt(result, ((NI) 1));
+				result = (NI)(TMP6120);
 			}
 			break;
 			default:
@@ -2612,8 +2612,8 @@ N_NIMCALL(NI, nsuCountLines)(NimStringDesc* s) {
 			break;
 			}
 			nimln(367, "strutils.nim");
-			TMP6120 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6120);
+			TMP6121 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6121);
 		} LA2: ;
 	}
 	popFrame();
@@ -2674,56 +2674,56 @@ N_NIMCALL(NimStringDesc*, nsuformatFloat)(NF f, NU8 format, NI precision) {
 N_NIMCALL(NimStringDesc*, nsuInsertSep)(NimStringDesc* s, NIM_CHAR sep, NI digits) {
 	NimStringDesc* result;
 	NI L;
-	NI TMP10770;
 	NI TMP10771;
 	NI TMP10772;
-	NI j;
 	NI TMP10773;
+	NI j;
+	NI TMP10774;
 	nimfr("insertSep", "strutils.nim")
 	result = 0;
 	nimln(1018, "strutils.nim");
-	TMP10770 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-	TMP10771 = divInt((NI)(TMP10770), digits);
-	TMP10772 = addInt((NI)(TMP10771), (s ? s->Sup.len : 0));
-	L = (NI)(TMP10772);
+	TMP10771 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+	TMP10772 = divInt((NI)(TMP10771), digits);
+	TMP10773 = addInt((NI)(TMP10772), (s ? s->Sup.len : 0));
+	L = (NI)(TMP10773);
 	nimln(1019, "strutils.nim");
 	result = mnewString(((NI)chckRange(L, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(1020, "strutils.nim");
 	j = ((NI) 0);
 	nimln(1021, "strutils.nim");
-	TMP10773 = subInt(L, ((NI) 1));
-	L = (NI)(TMP10773);
+	TMP10774 = subInt(L, ((NI) 1));
+	L = (NI)(TMP10774);
 	{
 		NI i_100075;
 		NI HEX3Atmp_100104;
-		NI TMP10774;
+		NI TMP10775;
 		NI res_100107;
 		i_100075 = 0;
 		HEX3Atmp_100104 = 0;
 		nimln(1022, "strutils.nim");
-		TMP10774 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_100104 = (NI)(TMP10774);
+		TMP10775 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_100104 = (NI)(TMP10775);
 		nimln(1586, "system.nim");
 		res_100107 = HEX3Atmp_100104;
 		{
 			nimln(1587, "system.nim");
 			while (1) {
-				NI TMP10776;
 				NI TMP10777;
 				NI TMP10778;
+				NI TMP10779;
 				if (!(((NI) 0) <= res_100107)) goto LA3;
 				nimln(1588, "system.nim");
 				i_100075 = res_100107;
 				nimln(1023, "strutils.nim");
 				{
-					NI TMP10775;
+					NI TMP10776;
 					if (!(j == digits)) goto LA6;
 					nimln(1024, "strutils.nim");
 					if ((NU)(L) > (NU)(result->Sup.len)) raiseIndexError();
 					result->data[L] = sep;
 					nimln(1025, "strutils.nim");
-					TMP10775 = subInt(L, ((NI) 1));
-					L = (NI)(TMP10775);
+					TMP10776 = subInt(L, ((NI) 1));
+					L = (NI)(TMP10776);
 					nimln(1026, "strutils.nim");
 					j = ((NI) 0);
 				}
@@ -2733,14 +2733,14 @@ N_NIMCALL(NimStringDesc*, nsuInsertSep)(NimStringDesc* s, NIM_CHAR sep, NI digit
 				if ((NU)(i_100075) > (NU)(s->Sup.len)) raiseIndexError();
 				result->data[L] = s->data[i_100075];
 				nimln(1028, "strutils.nim");
-				TMP10776 = addInt(j, ((NI) 1));
-				j = (NI)(TMP10776);
+				TMP10777 = addInt(j, ((NI) 1));
+				j = (NI)(TMP10777);
 				nimln(1029, "strutils.nim");
-				TMP10777 = subInt(L, ((NI) 1));
-				L = (NI)(TMP10777);
+				TMP10778 = subInt(L, ((NI) 1));
+				L = (NI)(TMP10778);
 				nimln(1589, "system.nim");
-				TMP10778 = subInt(res_100107, ((NI) 1));
-				res_100107 = (NI)(TMP10778);
+				TMP10779 = subInt(res_100107, ((NI) 1));
+				res_100107 = (NI)(TMP10779);
 			} LA3: ;
 		}
 	}
@@ -2784,7 +2784,7 @@ N_NIMCALL(NimStringDesc*, formatsize_100698)(NI64 bytes, NIM_CHAR decimalsep) {
 appendString(LOC5, LOC7);
 appendChar(LOC5, decimalsep);
 appendString(LOC5, LOC8);
-appendString(LOC5, ((NimStringDesc*) &TMP10779));
+appendString(LOC5, ((NimStringDesc*) &TMP10780));
 		result = LOC5;
 	}
 	goto LA1;
@@ -2812,7 +2812,7 @@ appendString(LOC5, ((NimStringDesc*) &TMP10779));
 appendString(LOC12, LOC14);
 appendChar(LOC12, decimalsep);
 appendString(LOC12, LOC15);
-appendString(LOC12, ((NimStringDesc*) &TMP10780));
+appendString(LOC12, ((NimStringDesc*) &TMP10781));
 		result = LOC12;
 	}
 	goto LA1;
@@ -2840,7 +2840,7 @@ appendString(LOC12, ((NimStringDesc*) &TMP10780));
 appendString(LOC19, LOC21);
 appendChar(LOC19, decimalsep);
 appendString(LOC19, LOC22);
-appendString(LOC19, ((NimStringDesc*) &TMP10781));
+appendString(LOC19, ((NimStringDesc*) &TMP10782));
 		result = LOC19;
 	}
 	goto LA1;
@@ -2857,7 +2857,7 @@ appendString(LOC19, ((NimStringDesc*) &TMP10781));
 		LOC26 = nsuInsertSep(LOC25, 95, ((NI) 3));
 		LOC24 = rawNewString(LOC26->Sup.len + 1);
 appendString(LOC24, LOC26);
-appendString(LOC24, ((NimStringDesc*) &TMP10782));
+appendString(LOC24, ((NimStringDesc*) &TMP10783));
 		result = LOC24;
 	}
 	LA1: ;

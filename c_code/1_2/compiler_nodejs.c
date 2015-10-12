@@ -18,8 +18,8 @@ N_NIMCALL(NimStringDesc*, findexe_130417)(NimStringDesc* exe);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-STRING_LITERAL(TMP10776, "nodejs", 6);
-STRING_LITERAL(TMP10777, "node", 4);
+STRING_LITERAL(TMP10777, "nodejs", 6);
+STRING_LITERAL(TMP10778, "node", 4);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -54,12 +54,12 @@ N_NIMCALL(NimStringDesc*, findnodejs_529009)(void) {
 	nimfr("findNodeJs", "nodejs.nim")
 	result = 0;
 	nimln(4, "nodejs.nim");
-	result = findexe_130417(((NimStringDesc*) &TMP10776));
+	result = findexe_130417(((NimStringDesc*) &TMP10777));
 	nimln(5, "nodejs.nim");
 	{
 		if (!((result) && (result)->Sup.len == 0)) goto LA3;
 		nimln(6, "nodejs.nim");
-		result = findexe_130417(((NimStringDesc*) &TMP10777));
+		result = findexe_130417(((NimStringDesc*) &TMP10778));
 	}
 	LA3: ;
 	popFrame();

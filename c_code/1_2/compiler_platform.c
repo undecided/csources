@@ -201,58 +201,57 @@ N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NIMCALL(NU8, nametocpu_161617)(NimStringDesc* name);
-STRING_LITERAL(TMP718, "DOS", 3);
-STRING_LITERAL(TMP719, "..", 2);
-STRING_LITERAL(TMP720, "$1.dll", 6);
-STRING_LITERAL(TMP721, "/", 1);
-STRING_LITERAL(TMP722, ".obj", 4);
-STRING_LITERAL(TMP723, "\015\012", 2);
-STRING_LITERAL(TMP724, ";", 1);
-STRING_LITERAL(TMP725, "\\", 1);
-STRING_LITERAL(TMP726, ".bat", 4);
-STRING_LITERAL(TMP727, ".", 1);
-STRING_LITERAL(TMP728, ".exe", 4);
-STRING_LITERAL(TMP729, "Windows", 7);
-STRING_LITERAL(TMP730, "OS2", 3);
-STRING_LITERAL(TMP731, "Linux", 5);
-STRING_LITERAL(TMP732, "lib$1.so", 8);
-STRING_LITERAL(TMP733, ".o", 2);
-STRING_LITERAL(TMP734, "\012", 1);
-STRING_LITERAL(TMP735, ":", 1);
-STRING_LITERAL(TMP736, ".sh", 3);
-STRING_LITERAL(TMP737, "", 0);
-STRING_LITERAL(TMP738, "MorphOS", 7);
-STRING_LITERAL(TMP739, "SkyOS", 5);
-STRING_LITERAL(TMP740, "Solaris", 7);
-STRING_LITERAL(TMP741, "Irix", 4);
-STRING_LITERAL(TMP742, "NetBSD", 6);
-STRING_LITERAL(TMP743, "FreeBSD", 7);
-STRING_LITERAL(TMP744, "OpenBSD", 7);
-STRING_LITERAL(TMP745, "AIX", 3);
-STRING_LITERAL(TMP746, "PalmOS", 6);
-STRING_LITERAL(TMP747, "QNX", 3);
-STRING_LITERAL(TMP748, "Amiga", 5);
-STRING_LITERAL(TMP749, "$1.library", 10);
-STRING_LITERAL(TMP750, "Atari", 5);
-STRING_LITERAL(TMP751, ".tpp", 4);
-STRING_LITERAL(TMP752, "Netware", 7);
-STRING_LITERAL(TMP753, "$1.nlm", 6);
-STRING_LITERAL(TMP754, ".nlm", 4);
-STRING_LITERAL(TMP755, "MacOS", 5);
-STRING_LITERAL(TMP756, "::", 2);
-STRING_LITERAL(TMP757, "$1Lib", 5);
-STRING_LITERAL(TMP758, "\015", 1);
-STRING_LITERAL(TMP759, ",", 1);
-STRING_LITERAL(TMP760, "MacOSX", 6);
-STRING_LITERAL(TMP761, "lib$1.dylib", 11);
-STRING_LITERAL(TMP762, "Haiku", 5);
-STRING_LITERAL(TMP763, "VxWorks", 7);
-STRING_LITERAL(TMP764, ".vxe", 4);
-STRING_LITERAL(TMP765, "JS", 2);
-STRING_LITERAL(TMP766, "NimrodVM", 8);
-STRING_LITERAL(TMP767, "Standalone", 10);
-NIM_CONST TY161071 Os_161070 = {{((NimStringDesc*) &TMP718),
-((NimStringDesc*) &TMP719),
+STRING_LITERAL(TMP719, "DOS", 3);
+STRING_LITERAL(TMP720, "..", 2);
+STRING_LITERAL(TMP721, "$1.dll", 6);
+STRING_LITERAL(TMP722, "/", 1);
+STRING_LITERAL(TMP723, ".obj", 4);
+STRING_LITERAL(TMP724, "\015\012", 2);
+STRING_LITERAL(TMP725, ";", 1);
+STRING_LITERAL(TMP726, "\\", 1);
+STRING_LITERAL(TMP727, ".bat", 4);
+STRING_LITERAL(TMP728, ".", 1);
+STRING_LITERAL(TMP729, ".exe", 4);
+STRING_LITERAL(TMP730, "Windows", 7);
+STRING_LITERAL(TMP731, "OS2", 3);
+STRING_LITERAL(TMP732, "Linux", 5);
+STRING_LITERAL(TMP733, "lib$1.so", 8);
+STRING_LITERAL(TMP734, ".o", 2);
+STRING_LITERAL(TMP735, "\012", 1);
+STRING_LITERAL(TMP736, ":", 1);
+STRING_LITERAL(TMP737, ".sh", 3);
+STRING_LITERAL(TMP738, "", 0);
+STRING_LITERAL(TMP739, "MorphOS", 7);
+STRING_LITERAL(TMP740, "SkyOS", 5);
+STRING_LITERAL(TMP741, "Solaris", 7);
+STRING_LITERAL(TMP742, "Irix", 4);
+STRING_LITERAL(TMP743, "NetBSD", 6);
+STRING_LITERAL(TMP744, "FreeBSD", 7);
+STRING_LITERAL(TMP745, "OpenBSD", 7);
+STRING_LITERAL(TMP746, "AIX", 3);
+STRING_LITERAL(TMP747, "PalmOS", 6);
+STRING_LITERAL(TMP748, "QNX", 3);
+STRING_LITERAL(TMP749, "Amiga", 5);
+STRING_LITERAL(TMP750, "$1.library", 10);
+STRING_LITERAL(TMP751, "Atari", 5);
+STRING_LITERAL(TMP752, ".tpp", 4);
+STRING_LITERAL(TMP753, "Netware", 7);
+STRING_LITERAL(TMP754, "$1.nlm", 6);
+STRING_LITERAL(TMP755, ".nlm", 4);
+STRING_LITERAL(TMP756, "MacOS", 5);
+STRING_LITERAL(TMP757, "::", 2);
+STRING_LITERAL(TMP758, "$1Lib", 5);
+STRING_LITERAL(TMP759, "\015", 1);
+STRING_LITERAL(TMP760, ",", 1);
+STRING_LITERAL(TMP761, "MacOSX", 6);
+STRING_LITERAL(TMP762, "lib$1.dylib", 11);
+STRING_LITERAL(TMP763, "Haiku", 5);
+STRING_LITERAL(TMP764, "VxWorks", 7);
+STRING_LITERAL(TMP765, ".vxe", 4);
+STRING_LITERAL(TMP766, "JS", 2);
+STRING_LITERAL(TMP767, "NimrodVM", 8);
+STRING_LITERAL(TMP768, "Standalone", 10);
+NIM_CONST TY161071 Os_161070 = {{((NimStringDesc*) &TMP719),
 ((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP722),
@@ -262,25 +261,11 @@ NIM_CONST TY161071 Os_161070 = {{((NimStringDesc*) &TMP718),
 ((NimStringDesc*) &TMP726),
 ((NimStringDesc*) &TMP727),
 ((NimStringDesc*) &TMP728),
-((NimStringDesc*) &TMP727),
-2}
-,
-{((NimStringDesc*) &TMP729),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP720),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP722),
-((NimStringDesc*) &TMP723),
-((NimStringDesc*) &TMP724),
-((NimStringDesc*) &TMP725),
-((NimStringDesc*) &TMP726),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP729),
 ((NimStringDesc*) &TMP728),
-((NimStringDesc*) &TMP727),
 2}
 ,
 {((NimStringDesc*) &TMP730),
-((NimStringDesc*) &TMP719),
 ((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP722),
@@ -290,370 +275,379 @@ NIM_CONST TY161071 Os_161070 = {{((NimStringDesc*) &TMP718),
 ((NimStringDesc*) &TMP726),
 ((NimStringDesc*) &TMP727),
 ((NimStringDesc*) &TMP728),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP729),
+((NimStringDesc*) &TMP728),
 2}
 ,
 {((NimStringDesc*) &TMP731),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP733),
-((NimStringDesc*) &TMP734),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP723),
+((NimStringDesc*) &TMP724),
+((NimStringDesc*) &TMP725),
+((NimStringDesc*) &TMP726),
 ((NimStringDesc*) &TMP727),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
-5}
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP729),
+((NimStringDesc*) &TMP728),
+2}
 ,
-{((NimStringDesc*) &TMP738),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+{((NimStringDesc*) &TMP732),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP739),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP740),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP741),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP742),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP743),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP744),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP745),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
 {((NimStringDesc*) &TMP746),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
-1}
-,
-{((NimStringDesc*) &TMP747),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP733),
-((NimStringDesc*) &TMP734),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 5}
 ,
-{((NimStringDesc*) &TMP748),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP749),
-((NimStringDesc*) &TMP721),
+{((NimStringDesc*) &TMP747),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 1}
 ,
-{((NimStringDesc*) &TMP750),
-((NimStringDesc*) &TMP719),
+{((NimStringDesc*) &TMP748),
+((NimStringDesc*) &TMP720),
+((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP734),
+((NimStringDesc*) &TMP735),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP737),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
+5}
+,
+{((NimStringDesc*) &TMP749),
+((NimStringDesc*) &TMP720),
+((NimStringDesc*) &TMP750),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP734),
+((NimStringDesc*) &TMP735),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP737),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
+1}
+,
+{((NimStringDesc*) &TMP751),
 ((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
-((NimStringDesc*) &TMP751),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP752),
+((NimStringDesc*) &TMP728),
 1}
 ,
-{((NimStringDesc*) &TMP752),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP753),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP723),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+{((NimStringDesc*) &TMP753),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP754),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP724),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP737),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP755),
+((NimStringDesc*) &TMP728),
 2}
 ,
-{((NimStringDesc*) &TMP755),
-((NimStringDesc*) &TMP756),
+{((NimStringDesc*) &TMP756),
 ((NimStringDesc*) &TMP757),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP733),
 ((NimStringDesc*) &TMP758),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP759),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP760),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 2}
 ,
-{((NimStringDesc*) &TMP760),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP761),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP733),
+{((NimStringDesc*) &TMP761),
+((NimStringDesc*) &TMP720),
+((NimStringDesc*) &TMP762),
+((NimStringDesc*) &TMP736),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
-13}
-,
-{((NimStringDesc*) &TMP762),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP733),
-((NimStringDesc*) &TMP734),
-((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
-((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 13}
 ,
 {((NimStringDesc*) &TMP763),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
-((NimStringDesc*) &TMP734),
-((NimStringDesc*) &TMP724),
-((NimStringDesc*) &TMP725),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
-((NimStringDesc*) &TMP764),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP734),
+((NimStringDesc*) &TMP735),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP737),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 13}
 ,
-{((NimStringDesc*) &TMP765),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+{((NimStringDesc*) &TMP764),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
-((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP725),
+((NimStringDesc*) &TMP726),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
-0}
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP765),
+((NimStringDesc*) &TMP728),
+13}
 ,
 {((NimStringDesc*) &TMP766),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 0}
 ,
 {((NimStringDesc*) &TMP767),
-((NimStringDesc*) &TMP719),
-((NimStringDesc*) &TMP732),
-((NimStringDesc*) &TMP721),
+((NimStringDesc*) &TMP720),
 ((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP734),
 ((NimStringDesc*) &TMP735),
-((NimStringDesc*) &TMP721),
 ((NimStringDesc*) &TMP736),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP722),
 ((NimStringDesc*) &TMP737),
-((NimStringDesc*) &TMP727),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
+0}
+,
+{((NimStringDesc*) &TMP768),
+((NimStringDesc*) &TMP720),
+((NimStringDesc*) &TMP733),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP734),
+((NimStringDesc*) &TMP735),
+((NimStringDesc*) &TMP736),
+((NimStringDesc*) &TMP722),
+((NimStringDesc*) &TMP737),
+((NimStringDesc*) &TMP728),
+((NimStringDesc*) &TMP738),
+((NimStringDesc*) &TMP728),
 0}
 }
 ;
-STRING_LITERAL(TMP768, "littleEndian", 12);
-STRING_LITERAL(TMP769, "bigEndian", 9);
-NIM_CONST TY161491 Endiantostr_161490 = {((NimStringDesc*) &TMP768),
-((NimStringDesc*) &TMP769)}
+STRING_LITERAL(TMP769, "littleEndian", 12);
+STRING_LITERAL(TMP770, "bigEndian", 9);
+NIM_CONST TY161491 Endiantostr_161490 = {((NimStringDesc*) &TMP769),
+((NimStringDesc*) &TMP770)}
 ;
-STRING_LITERAL(TMP770, "i386", 4);
-STRING_LITERAL(TMP771, "m68k", 4);
-STRING_LITERAL(TMP772, "alpha", 5);
-STRING_LITERAL(TMP773, "powerpc", 7);
-STRING_LITERAL(TMP774, "powerpc64", 9);
-STRING_LITERAL(TMP775, "sparc", 5);
-STRING_LITERAL(TMP776, "vm", 2);
-STRING_LITERAL(TMP777, "ia64", 4);
-STRING_LITERAL(TMP778, "amd64", 5);
-STRING_LITERAL(TMP779, "mips", 4);
-STRING_LITERAL(TMP780, "arm", 3);
-STRING_LITERAL(TMP781, "js", 2);
-STRING_LITERAL(TMP782, "nimrodvm", 8);
-STRING_LITERAL(TMP783, "avr", 3);
-NIM_CONST TY161497 Cpu_161496 = {{((NimStringDesc*) &TMP770),
+STRING_LITERAL(TMP771, "i386", 4);
+STRING_LITERAL(TMP772, "m68k", 4);
+STRING_LITERAL(TMP773, "alpha", 5);
+STRING_LITERAL(TMP774, "powerpc", 7);
+STRING_LITERAL(TMP775, "powerpc64", 9);
+STRING_LITERAL(TMP776, "sparc", 5);
+STRING_LITERAL(TMP777, "vm", 2);
+STRING_LITERAL(TMP778, "ia64", 4);
+STRING_LITERAL(TMP779, "amd64", 5);
+STRING_LITERAL(TMP780, "mips", 4);
+STRING_LITERAL(TMP781, "arm", 3);
+STRING_LITERAL(TMP782, "js", 2);
+STRING_LITERAL(TMP783, "nimrodvm", 8);
+STRING_LITERAL(TMP784, "avr", 3);
+NIM_CONST TY161497 Cpu_161496 = {{((NimStringDesc*) &TMP771),
 ((NI) 32),
 ((NU8) 0),
-((NI) 64),
-((NI) 32)}
-,
-{((NimStringDesc*) &TMP771),
-((NI) 32),
-((NU8) 1),
 ((NI) 64),
 ((NI) 32)}
 ,
 {((NimStringDesc*) &TMP772),
+((NI) 32),
+((NU8) 1),
+((NI) 64),
+((NI) 32)}
+,
+{((NimStringDesc*) &TMP773),
 ((NI) 64),
 ((NU8) 0),
 ((NI) 64),
 ((NI) 64)}
 ,
-{((NimStringDesc*) &TMP773),
+{((NimStringDesc*) &TMP774),
 ((NI) 32),
 ((NU8) 1),
 ((NI) 64),
 ((NI) 32)}
 ,
-{((NimStringDesc*) &TMP774),
+{((NimStringDesc*) &TMP775),
 ((NI) 64),
 ((NU8) 1),
 ((NI) 64),
 ((NI) 64)}
-,
-{((NimStringDesc*) &TMP775),
-((NI) 32),
-((NU8) 1),
-((NI) 64),
-((NI) 32)}
 ,
 {((NimStringDesc*) &TMP776),
 ((NI) 32),
-((NU8) 0),
+((NU8) 1),
 ((NI) 64),
 ((NI) 32)}
 ,
 {((NimStringDesc*) &TMP777),
-((NI) 64),
+((NI) 32),
 ((NU8) 0),
 ((NI) 64),
-((NI) 64)}
+((NI) 32)}
 ,
 {((NimStringDesc*) &TMP778),
 ((NI) 64),
@@ -662,20 +656,20 @@ NIM_CONST TY161497 Cpu_161496 = {{((NimStringDesc*) &TMP770),
 ((NI) 64)}
 ,
 {((NimStringDesc*) &TMP779),
-((NI) 32),
-((NU8) 1),
 ((NI) 64),
-((NI) 32)}
+((NU8) 0),
+((NI) 64),
+((NI) 64)}
 ,
 {((NimStringDesc*) &TMP780),
 ((NI) 32),
-((NU8) 0),
+((NU8) 1),
 ((NI) 64),
 ((NI) 32)}
 ,
 {((NimStringDesc*) &TMP781),
 ((NI) 32),
-((NU8) 1),
+((NU8) 0),
 ((NI) 64),
 ((NI) 32)}
 ,
@@ -686,15 +680,21 @@ NIM_CONST TY161497 Cpu_161496 = {{((NimStringDesc*) &TMP770),
 ((NI) 32)}
 ,
 {((NimStringDesc*) &TMP783),
+((NI) 32),
+((NU8) 1),
+((NI) 64),
+((NI) 32)}
+,
+{((NimStringDesc*) &TMP784),
 ((NI) 16),
 ((NU8) 0),
 ((NI) 32),
 ((NI) 16)}
 }
 ;
-STRING_LITERAL(TMP784, "not (c == cpuNone) ", 19);
-STRING_LITERAL(TMP785, "not (o == osNone) ", 18);
-STRING_LITERAL(TMP791, "windows", 7);
+STRING_LITERAL(TMP785, "not (c == cpuNone) ", 19);
+STRING_LITERAL(TMP786, "not (o == osNone) ", 18);
+STRING_LITERAL(TMP792, "windows", 7);
 NU8 targetcpu_161600;
 NU8 hostcpu_161601;
 NU8 targetos_161602;
@@ -794,21 +794,21 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 }
 
 N_NIMCALL(void, settarget_161634)(NU8 o, NU8 c) {
-	NI TMP786;
 	NI TMP787;
 	NI TMP788;
+	NI TMP789;
 	NimStringDesc* LOC9;
 	nimfr("setTarget", "platform.nim")
 	nimln(202, "platform.nim");
 	{
 		if (!!(!((c == ((NU8) 0))))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP784));
+		failedassertimpl_88817(((NimStringDesc*) &TMP785));
 	}
 	LA3: ;
 	nimln(203, "platform.nim");
 	{
 		if (!!(!((o == ((NU8) 0))))) goto LA7;
-		failedassertimpl_88817(((NimStringDesc*) &TMP785));
+		failedassertimpl_88817(((NimStringDesc*) &TMP786));
 	}
 	LA7: ;
 	nimln(205, "platform.nim");
@@ -817,16 +817,16 @@ N_NIMCALL(void, settarget_161634)(NU8 o, NU8 c) {
 	targetos_161602 = o;
 	nimln(207, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP786 = divInt(Cpu_161496[(c)- 1].Field1, ((NI) 8));
-	intsize_161623 = (NI)(TMP786);
+	TMP787 = divInt(Cpu_161496[(c)- 1].Field1, ((NI) 8));
+	intsize_161623 = (NI)(TMP787);
 	nimln(208, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP787 = divInt(Cpu_161496[(c)- 1].Field3, ((NI) 8));
-	floatsize_161624 = (NI)(TMP787);
+	TMP788 = divInt(Cpu_161496[(c)- 1].Field3, ((NI) 8));
+	floatsize_161624 = (NI)(TMP788);
 	nimln(209, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP788 = divInt(Cpu_161496[(c)- 1].Field4, ((NI) 8));
-	ptrsize_161625 = (NI)(TMP788);
+	TMP789 = divInt(Cpu_161496[(c)- 1].Field4, ((NI) 8));
+	ptrsize_161625 = (NI)(TMP789);
 	nimln(210, "platform.nim");
 	if (o < 1 || o > 24) raiseIndexError();
 	LOC9 = 0;
@@ -892,7 +892,7 @@ N_NIMCALL(NU8, nametoos_161611)(NimStringDesc* name) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP789;
+				NI TMP790;
 				if (!(res_162228 <= ((NI) 24))) goto LA3;
 				nimln(1600, "system.nim");
 				i_162223 = ((NU8)chckRange(res_162228, ((NU8) 0), ((NU8) 24)));
@@ -909,8 +909,8 @@ N_NIMCALL(NU8, nametoos_161611)(NimStringDesc* name) {
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP789 = addInt(res_162228, ((NI) 1));
-				res_162228 = (NI)(TMP789);
+				TMP790 = addInt(res_162228, ((NI) 1));
+				res_162228 = (NI)(TMP790);
 			} LA3: ;
 		}
 	}
@@ -934,7 +934,7 @@ N_NIMCALL(NU8, nametocpu_161617)(NimStringDesc* name) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP790;
+				NI TMP791;
 				if (!(res_162428 <= ((NI) 14))) goto LA3;
 				nimln(1600, "system.nim");
 				i_162423 = ((NU8)chckRange(res_162428, ((NU8) 0), ((NU8) 14)));
@@ -951,8 +951,8 @@ N_NIMCALL(NU8, nametocpu_161617)(NimStringDesc* name) {
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP790 = addInt(res_162428, ((NI) 1));
-				res_162428 = (NI)(TMP790);
+				TMP791 = addInt(res_162428, ((NI) 1));
+				res_162428 = (NI)(TMP791);
 			} LA3: ;
 		}
 	}
@@ -965,9 +965,9 @@ N_NIMCALL(NU8, nametocpu_161617)(NimStringDesc* name) {
 NIM_EXTERNC N_NOINLINE(void, compiler_platformInit)(void) {
 	nimfr("platform", "platform.nim")
 	nimln(224, "platform.nim");
-	hostcpu_161601 = nametocpu_161617(((NimStringDesc*) &TMP778));
+	hostcpu_161601 = nametocpu_161617(((NimStringDesc*) &TMP779));
 	nimln(225, "platform.nim");
-	hostos_161603 = nametoos_161611(((NimStringDesc*) &TMP791));
+	hostos_161603 = nametoos_161611(((NimStringDesc*) &TMP792));
 	nimln(227, "platform.nim");
 	settarget_161634(hostos_161603, hostcpu_161601);
 	popFrame();

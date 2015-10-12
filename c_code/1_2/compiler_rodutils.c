@@ -54,13 +54,13 @@ N_NIMCALL(NI, mulInt)(NI a, NI b);
 N_NIMCALL(NI64, decodevbiggestint_200512)(NCSTRING s, NI* pos);
 N_NIMCALL(NI64, mulInt64)(NI64 a, NI64 b);
 static N_INLINE(NI64, subInt64)(NI64 a, NI64 b);
-STRING_LITERAL(TMP2681, "NAN", 3);
-STRING_LITERAL(TMP2682, "0.0", 3);
-STRING_LITERAL(TMP2683, "INF", 3);
-STRING_LITERAL(TMP2684, "-INF", 4);
-STRING_LITERAL(TMP2692, "", 0);
-STRING_LITERAL(TMP2700, "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 62);
-STRING_LITERAL(TMP2708, "contains({\'a\'..\'z\', \'A\'..\'Z\', \'0\'..\'9\', \'-\', \'\\x80\'..\'\\xFF\'}, s"
+STRING_LITERAL(TMP2682, "NAN", 3);
+STRING_LITERAL(TMP2683, "0.0", 3);
+STRING_LITERAL(TMP2684, "INF", 3);
+STRING_LITERAL(TMP2685, "-INF", 4);
+STRING_LITERAL(TMP2693, "", 0);
+STRING_LITERAL(TMP2701, "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 62);
+STRING_LITERAL(TMP2709, "contains({\'a\'..\'z\', \'A\'..\'Z\', \'0\'..\'9\', \'-\', \'\\x80\'..\'\\xFF\'}, s"
 "[i]) ", 68);
 extern TFrame* frameptr_17042;
 
@@ -99,7 +99,7 @@ N_NIMCALL(NimStringDesc*, tostrmaxprecision_200024)(NF f) {
 	{
 		if (!!((f == f))) goto LA3;
 		nimln(17, "rodutils.nim");
-		result = copyString(((NimStringDesc*) &TMP2681));
+		result = copyString(((NimStringDesc*) &TMP2682));
 	}
 	goto LA1;
 	LA3: ;
@@ -107,7 +107,7 @@ N_NIMCALL(NimStringDesc*, tostrmaxprecision_200024)(NF f) {
 		nimln(18, "rodutils.nim");
 		if (!(f == 0.0)) goto LA6;
 		nimln(19, "rodutils.nim");
-		result = copyString(((NimStringDesc*) &TMP2682));
+		result = copyString(((NimStringDesc*) &TMP2683));
 	}
 	goto LA1;
 	LA6: ;
@@ -117,13 +117,13 @@ N_NIMCALL(NimStringDesc*, tostrmaxprecision_200024)(NF f) {
 		nimln(21, "rodutils.nim");
 		{
 			if (!(0.0 < f)) goto LA13;
-			result = copyString(((NimStringDesc*) &TMP2683));
+			result = copyString(((NimStringDesc*) &TMP2684));
 		}
 		goto LA11;
 		LA13: ;
 		{
 			nimln(22, "rodutils.nim");
-			result = copyString(((NimStringDesc*) &TMP2684));
+			result = copyString(((NimStringDesc*) &TMP2685));
 		}
 		LA11: ;
 	}
@@ -198,19 +198,19 @@ N_NIMCALL(void, encodestr_200042)(NimStringDesc* s, NimStringDesc** result) {
 	{
 		NI i_200059;
 		NI HEX3Atmp_200069;
-		NI TMP2685;
+		NI TMP2686;
 		NI res_200072;
 		i_200059 = 0;
 		HEX3Atmp_200069 = 0;
 		nimln(29, "rodutils.nim");
-		TMP2685 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_200069 = (NI)(TMP2685);
+		TMP2686 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_200069 = (NI)(TMP2686);
 		nimln(1598, "system.nim");
 		res_200072 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2686;
+				NI TMP2687;
 				if (!(res_200072 <= HEX3Atmp_200069)) goto LA3;
 				nimln(1600, "system.nim");
 				i_200059 = res_200072;
@@ -245,8 +245,8 @@ appendString((*result), LOC6);
 				break;
 				}
 				nimln(1614, "system.nim");
-				TMP2686 = addInt(res_200072, ((NI) 1));
-				res_200072 = (NI)(TMP2686);
+				TMP2687 = addInt(res_200072, ((NI) 1));
+				res_200072 = (NI)(TMP2687);
 			} LA3: ;
 		}
 	}
@@ -259,30 +259,30 @@ N_NIMCALL(void, hexchar_200091)(NIM_CHAR c, NI* xi) {
 	switch (((NU8)(c))) {
 	case 48 ... 57:
 	{
-		NI TMP2687;
+		NI TMP2688;
 		nimln(36, "rodutils.nim");
-		TMP2687 = subInt(((NI) (((NU8)(c)))), ((NI) 48));
-		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2687))));
+		TMP2688 = subInt(((NI) (((NU8)(c)))), ((NI) 48));
+		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2688))));
 	}
 	break;
 	case 97 ... 102:
 	{
-		NI TMP2688;
 		NI TMP2689;
+		NI TMP2690;
 		nimln(37, "rodutils.nim");
-		TMP2688 = subInt(((NI) (((NU8)(c)))), ((NI) 97));
-		TMP2689 = addInt(((NI) ((NI)(TMP2688))), ((NI) 10));
-		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2689))));
+		TMP2689 = subInt(((NI) (((NU8)(c)))), ((NI) 97));
+		TMP2690 = addInt(((NI) ((NI)(TMP2689))), ((NI) 10));
+		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2690))));
 	}
 	break;
 	case 65 ... 70:
 	{
-		NI TMP2690;
 		NI TMP2691;
+		NI TMP2692;
 		nimln(38, "rodutils.nim");
-		TMP2690 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
-		TMP2691 = addInt(((NI) ((NI)(TMP2690))), ((NI) 10));
-		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2691))));
+		TMP2691 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
+		TMP2692 = addInt(((NI) ((NI)(TMP2691))), ((NI) 10));
+		(*xi) = (NI)((NI)((NU64)((*xi)) << (NU64)(((NI) 4))) | ((NI) ((NI)(TMP2692))));
 	}
 	break;
 	default:
@@ -325,7 +325,7 @@ N_NIMCALL(NimStringDesc*, decodestr_200157)(NCSTRING s, NI* pos) {
 	nimln(42, "rodutils.nim");
 	i = (*pos);
 	nimln(43, "rodutils.nim");
-	result = copyString(((NimStringDesc*) &TMP2692));
+	result = copyString(((NimStringDesc*) &TMP2693));
 	{
 		nimln(44, "rodutils.nim");
 		while (1) {
@@ -333,21 +333,21 @@ N_NIMCALL(NimStringDesc*, decodestr_200157)(NCSTRING s, NI* pos) {
 			switch (((NU8)(s[i]))) {
 			case 92:
 			{
-				NI TMP2693;
-				NI xi;
 				NI TMP2694;
+				NI xi;
 				NI TMP2695;
+				NI TMP2696;
 				nimln(47, "rodutils.nim");
-				TMP2693 = addInt(i, ((NI) 3));
-				i = (NI)(TMP2693);
+				TMP2694 = addInt(i, ((NI) 3));
+				i = (NI)(TMP2694);
 				nimln(48, "rodutils.nim");
 				xi = ((NI) 0);
 				nimln(49, "rodutils.nim");
-				TMP2694 = subInt(i, ((NI) 2));
-				hexchar_200091(s[(NI)(TMP2694)], (&xi));
-				nimln(50, "rodutils.nim");
-				TMP2695 = subInt(i, ((NI) 1));
+				TMP2695 = subInt(i, ((NI) 2));
 				hexchar_200091(s[(NI)(TMP2695)], (&xi));
+				nimln(50, "rodutils.nim");
+				TMP2696 = subInt(i, ((NI) 1));
+				hexchar_200091(s[(NI)(TMP2696)], (&xi));
 				nimln(51, "rodutils.nim");
 				result = addChar(result, ((NIM_CHAR) (((NI)chckRange(xi, ((NI) 0), ((NI) 255))))));
 			}
@@ -357,12 +357,12 @@ N_NIMCALL(NimStringDesc*, decodestr_200157)(NCSTRING s, NI* pos) {
 			case 48 ... 57:
 			case 95:
 			{
-				NI TMP2696;
+				NI TMP2697;
 				nimln(53, "rodutils.nim");
 				result = addChar(result, s[i]);
 				nimln(54, "rodutils.nim");
-				TMP2696 = addInt(i, ((NI) 1));
-				i = (NI)(TMP2696);
+				TMP2697 = addInt(i, ((NI) 1));
+				i = (NI)(TMP2697);
 			}
 			break;
 			default:
@@ -423,25 +423,25 @@ N_NIMCALL(void, encodevbiggestintaux_200230)(NI64 x, NimStringDesc** result) {
 	NIM_CHAR d_200236;
 	NI64 v_200238;
 	NI64 rem_200240;
-	NI64 TMP2697;
+	NI64 TMP2698;
 	NI idx_200242;
 	nimfr("encodeVBiggestIntAux", "rodutils.nim")
 	d_200236 = 0;
 	nimln(69, "rodutils.nim");
 	v_200238 = x;
 	nimln(70, "rodutils.nim");
-	TMP2697 = modInt64(v_200238, IL64(190));
-	rem_200240 = (NI64)(TMP2697);
+	TMP2698 = modInt64(v_200238, IL64(190));
+	rem_200240 = (NI64)(TMP2698);
 	nimln(71, "rodutils.nim");
 	{
-		NI64 TMP2698;
+		NI64 TMP2699;
 		if (!(((NI) (rem_200240)) < ((NI) 0))) goto LA3;
 		nimln(72, "rodutils.nim");
 		(*result) = addChar((*result), 45);
 		nimln(73, "rodutils.nim");
-		TMP2698 = divInt64(v_200238, IL64(190));
-		if ((NI64)(TMP2698) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
-		v_200238 = -((NI64)(TMP2698));
+		TMP2699 = divInt64(v_200238, IL64(190));
+		if ((NI64)(TMP2699) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
+		v_200238 = -((NI64)(TMP2699));
 		nimln(74, "rodutils.nim");
 		if (((NI64) (rem_200240)) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
 		rem_200240 = -(((NI64) (rem_200240)));
@@ -449,10 +449,10 @@ N_NIMCALL(void, encodevbiggestintaux_200230)(NI64 x, NimStringDesc** result) {
 	goto LA1;
 	LA3: ;
 	{
-		NI64 TMP2699;
+		NI64 TMP2700;
 		nimln(76, "rodutils.nim");
-		TMP2699 = divInt64(v_200238, IL64(190));
-		v_200238 = (NI64)(TMP2699);
+		TMP2700 = divInt64(v_200238, IL64(190));
+		v_200238 = (NI64)(TMP2700);
 	}
 	LA1: ;
 	nimln(77, "rodutils.nim");
@@ -460,18 +460,18 @@ N_NIMCALL(void, encodevbiggestintaux_200230)(NI64 x, NimStringDesc** result) {
 	nimln(78, "rodutils.nim");
 	{
 		if (!(idx_200242 < ((NI) 62))) goto LA8;
-		if ((NU)(idx_200242) > (NU)(((NimStringDesc*) &TMP2700)->Sup.len)) raiseIndexError();
-		d_200236 = ((NimStringDesc*) &TMP2700)->data[idx_200242];
+		if ((NU)(idx_200242) > (NU)(((NimStringDesc*) &TMP2701)->Sup.len)) raiseIndexError();
+		d_200236 = ((NimStringDesc*) &TMP2701)->data[idx_200242];
 	}
 	goto LA6;
 	LA8: ;
 	{
-		NI TMP2701;
 		NI TMP2702;
+		NI TMP2703;
 		nimln(79, "rodutils.nim");
-		TMP2701 = subInt(idx_200242, ((NI) 62));
-		TMP2702 = addInt((NI)(TMP2701), ((NI) 128));
-		d_200236 = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2702), ((NI) 0), ((NI) 255)))));
+		TMP2702 = subInt(idx_200242, ((NI) 62));
+		TMP2703 = addInt((NI)(TMP2702), ((NI) 128));
+		d_200236 = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2703), ((NI) 0), ((NI) 255)))));
 	}
 	LA6: ;
 	nimln(80, "rodutils.nim");
@@ -535,25 +535,25 @@ N_NIMCALL(void, encodevintaux_200269)(NI x, NimStringDesc** result) {
 	NIM_CHAR d_200275;
 	NI v_200277;
 	NI rem_200279;
-	NI TMP2703;
+	NI TMP2704;
 	NI idx_200281;
 	nimfr("encodeVIntAux", "rodutils.nim")
 	d_200275 = 0;
 	nimln(69, "rodutils.nim");
 	v_200277 = x;
 	nimln(70, "rodutils.nim");
-	TMP2703 = modInt(v_200277, ((NI) 190));
-	rem_200279 = (NI)(TMP2703);
+	TMP2704 = modInt(v_200277, ((NI) 190));
+	rem_200279 = (NI)(TMP2704);
 	nimln(71, "rodutils.nim");
 	{
-		NI TMP2704;
+		NI TMP2705;
 		if (!(((NI) (rem_200279)) < ((NI) 0))) goto LA3;
 		nimln(72, "rodutils.nim");
 		(*result) = addChar((*result), 45);
 		nimln(73, "rodutils.nim");
-		TMP2704 = divInt(v_200277, ((NI) 190));
-		if ((NI)(TMP2704) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
-		v_200277 = ((NI64)-((NI)(TMP2704)));
+		TMP2705 = divInt(v_200277, ((NI) 190));
+		if ((NI)(TMP2705) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
+		v_200277 = ((NI64)-((NI)(TMP2705)));
 		nimln(74, "rodutils.nim");
 		if (((NI) (rem_200279)) == (IL64(-9223372036854775807) - IL64(1))) raiseOverflow();
 		rem_200279 = ((NI64)-(((NI) (rem_200279))));
@@ -561,10 +561,10 @@ N_NIMCALL(void, encodevintaux_200269)(NI x, NimStringDesc** result) {
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP2705;
+		NI TMP2706;
 		nimln(76, "rodutils.nim");
-		TMP2705 = divInt(v_200277, ((NI) 190));
-		v_200277 = (NI)(TMP2705);
+		TMP2706 = divInt(v_200277, ((NI) 190));
+		v_200277 = (NI)(TMP2706);
 	}
 	LA1: ;
 	nimln(77, "rodutils.nim");
@@ -572,18 +572,18 @@ N_NIMCALL(void, encodevintaux_200269)(NI x, NimStringDesc** result) {
 	nimln(78, "rodutils.nim");
 	{
 		if (!(idx_200281 < ((NI) 62))) goto LA8;
-		if ((NU)(idx_200281) > (NU)(((NimStringDesc*) &TMP2700)->Sup.len)) raiseIndexError();
-		d_200275 = ((NimStringDesc*) &TMP2700)->data[idx_200281];
+		if ((NU)(idx_200281) > (NU)(((NimStringDesc*) &TMP2701)->Sup.len)) raiseIndexError();
+		d_200275 = ((NimStringDesc*) &TMP2701)->data[idx_200281];
 	}
 	goto LA6;
 	LA8: ;
 	{
-		NI TMP2706;
 		NI TMP2707;
+		NI TMP2708;
 		nimln(79, "rodutils.nim");
-		TMP2706 = subInt(idx_200281, ((NI) 62));
-		TMP2707 = addInt((NI)(TMP2706), ((NI) 128));
-		d_200275 = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2707), ((NI) 0), ((NI) 255)))));
+		TMP2707 = subInt(idx_200281, ((NI) 62));
+		TMP2708 = addInt((NI)(TMP2707), ((NI) 128));
+		d_200275 = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2708), ((NI) 0), ((NI) 255)))));
 	}
 	LA6: ;
 	nimln(80, "rodutils.nim");
@@ -608,7 +608,7 @@ N_NIMCALL(NI, decodevint_200351)(NCSTRING s, NI* pos) {
 	NI result;
 	NI i_200358;
 	NI sign_200360;
-	NI TMP2726;
+	NI TMP2727;
 	nimfr("decodeVInt", "rodutils.nim")
 	result = 0;
 	nimln(101, "rodutils.nim");
@@ -618,16 +618,16 @@ N_NIMCALL(NI, decodevint_200351)(NCSTRING s, NI* pos) {
 	nimln(103, "rodutils.nim");
 	{
 		if (!!((((NU8)(s[i_200358])) >= ((NU8)(97)) && ((NU8)(s[i_200358])) <= ((NU8)(122)) || ((NU8)(s[i_200358])) >= ((NU8)(65)) && ((NU8)(s[i_200358])) <= ((NU8)(90)) || ((NU8)(s[i_200358])) >= ((NU8)(48)) && ((NU8)(s[i_200358])) <= ((NU8)(57)) || ((NU8)(s[i_200358])) == ((NU8)(45)) || ((NU8)(s[i_200358])) >= ((NU8)(128)) && ((NU8)(s[i_200358])) <= ((NU8)(255))))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2708));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2709));
 	}
 	LA3: ;
 	nimln(104, "rodutils.nim");
 	{
-		NI TMP2709;
+		NI TMP2710;
 		if (!((NU8)(s[i_200358]) == (NU8)(45))) goto LA7;
 		nimln(105, "rodutils.nim");
-		TMP2709 = addInt(i_200358, ((NI) 1));
-		i_200358 = (NI)(TMP2709);
+		TMP2710 = addInt(i_200358, ((NI) 1));
+		i_200358 = (NI)(TMP2710);
 		nimln(106, "rodutils.nim");
 		sign_200360 = ((NI) 1);
 	}
@@ -637,61 +637,61 @@ N_NIMCALL(NI, decodevint_200351)(NCSTRING s, NI* pos) {
 	{
 		nimln(108, "rodutils.nim");
 		while (1) {
-			NI TMP2725;
+			NI TMP2726;
 			nimln(109, "rodutils.nim");
 			switch (((NU8)(s[i_200358]))) {
 			case 48 ... 57:
 			{
-				NI TMP2710;
 				NI TMP2711;
 				NI TMP2712;
+				NI TMP2713;
 				nimln(110, "rodutils.nim");
-				TMP2710 = mulInt(result, ((NI) 190));
-				TMP2711 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 48));
-				TMP2712 = subInt((NI)(TMP2710), ((NI) ((NI)(TMP2711))));
-				result = (NI)(TMP2712);
+				TMP2711 = mulInt(result, ((NI) 190));
+				TMP2712 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 48));
+				TMP2713 = subInt((NI)(TMP2711), ((NI) ((NI)(TMP2712))));
+				result = (NI)(TMP2713);
 			}
 			break;
 			case 97 ... 122:
 			{
-				NI TMP2713;
 				NI TMP2714;
 				NI TMP2715;
 				NI TMP2716;
+				NI TMP2717;
 				nimln(111, "rodutils.nim");
-				TMP2713 = mulInt(result, ((NI) 190));
-				TMP2714 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 97));
-				TMP2715 = addInt(((NI) ((NI)(TMP2714))), ((NI) 10));
-				TMP2716 = subInt((NI)(TMP2713), ((NI) ((NI)(TMP2715))));
-				result = (NI)(TMP2716);
+				TMP2714 = mulInt(result, ((NI) 190));
+				TMP2715 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 97));
+				TMP2716 = addInt(((NI) ((NI)(TMP2715))), ((NI) 10));
+				TMP2717 = subInt((NI)(TMP2714), ((NI) ((NI)(TMP2716))));
+				result = (NI)(TMP2717);
 			}
 			break;
 			case 65 ... 90:
 			{
-				NI TMP2717;
 				NI TMP2718;
 				NI TMP2719;
 				NI TMP2720;
+				NI TMP2721;
 				nimln(112, "rodutils.nim");
-				TMP2717 = mulInt(result, ((NI) 190));
-				TMP2718 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 65));
-				TMP2719 = addInt(((NI) ((NI)(TMP2718))), ((NI) 36));
-				TMP2720 = subInt((NI)(TMP2717), ((NI) ((NI)(TMP2719))));
-				result = (NI)(TMP2720);
+				TMP2718 = mulInt(result, ((NI) 190));
+				TMP2719 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 65));
+				TMP2720 = addInt(((NI) ((NI)(TMP2719))), ((NI) 36));
+				TMP2721 = subInt((NI)(TMP2718), ((NI) ((NI)(TMP2720))));
+				result = (NI)(TMP2721);
 			}
 			break;
 			case 128 ... 255:
 			{
-				NI TMP2721;
 				NI TMP2722;
 				NI TMP2723;
 				NI TMP2724;
+				NI TMP2725;
 				nimln(113, "rodutils.nim");
-				TMP2721 = mulInt(result, ((NI) 190));
-				TMP2722 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 128));
-				TMP2723 = addInt(((NI) ((NI)(TMP2722))), ((NI) 62));
-				TMP2724 = subInt((NI)(TMP2721), ((NI) ((NI)(TMP2723))));
-				result = (NI)(TMP2724);
+				TMP2722 = mulInt(result, ((NI) 190));
+				TMP2723 = subInt(((NI) (((NU8)(s[i_200358])))), ((NI) 128));
+				TMP2724 = addInt(((NI) ((NI)(TMP2723))), ((NI) 62));
+				TMP2725 = subInt((NI)(TMP2722), ((NI) ((NI)(TMP2724))));
+				result = (NI)(TMP2725);
 			}
 			break;
 			default:
@@ -702,13 +702,13 @@ N_NIMCALL(NI, decodevint_200351)(NCSTRING s, NI* pos) {
 			break;
 			}
 			nimln(115, "rodutils.nim");
-			TMP2725 = addInt(i_200358, ((NI) 1));
-			i_200358 = (NI)(TMP2725);
+			TMP2726 = addInt(i_200358, ((NI) 1));
+			i_200358 = (NI)(TMP2726);
 		}
 	} LA9: ;
 	nimln(116, "rodutils.nim");
-	TMP2726 = mulInt(result, sign_200360);
-	result = (NI)((NU64)((NI)(TMP2726)) - (NU64)(((NI) 5)));
+	TMP2727 = mulInt(result, sign_200360);
+	result = (NI)((NU64)((NI)(TMP2727)) - (NU64)(((NI) 5)));
 	nimln(117, "rodutils.nim");
 	(*pos) = i_200358;
 	popFrame();
@@ -739,7 +739,7 @@ N_NIMCALL(NI64, decodevbiggestint_200512)(NCSTRING s, NI* pos) {
 	NI64 result;
 	NI i_200519;
 	NI sign_200521;
-	NI64 TMP2744;
+	NI64 TMP2745;
 	nimfr("decodeVBiggestInt", "rodutils.nim")
 	result = 0;
 	nimln(101, "rodutils.nim");
@@ -749,16 +749,16 @@ N_NIMCALL(NI64, decodevbiggestint_200512)(NCSTRING s, NI* pos) {
 	nimln(103, "rodutils.nim");
 	{
 		if (!!((((NU8)(s[i_200519])) >= ((NU8)(97)) && ((NU8)(s[i_200519])) <= ((NU8)(122)) || ((NU8)(s[i_200519])) >= ((NU8)(65)) && ((NU8)(s[i_200519])) <= ((NU8)(90)) || ((NU8)(s[i_200519])) >= ((NU8)(48)) && ((NU8)(s[i_200519])) <= ((NU8)(57)) || ((NU8)(s[i_200519])) == ((NU8)(45)) || ((NU8)(s[i_200519])) >= ((NU8)(128)) && ((NU8)(s[i_200519])) <= ((NU8)(255))))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP2708));
+		failedassertimpl_88817(((NimStringDesc*) &TMP2709));
 	}
 	LA3: ;
 	nimln(104, "rodutils.nim");
 	{
-		NI TMP2727;
+		NI TMP2728;
 		if (!((NU8)(s[i_200519]) == (NU8)(45))) goto LA7;
 		nimln(105, "rodutils.nim");
-		TMP2727 = addInt(i_200519, ((NI) 1));
-		i_200519 = (NI)(TMP2727);
+		TMP2728 = addInt(i_200519, ((NI) 1));
+		i_200519 = (NI)(TMP2728);
 		nimln(106, "rodutils.nim");
 		sign_200521 = ((NI) 1);
 	}
@@ -768,61 +768,61 @@ N_NIMCALL(NI64, decodevbiggestint_200512)(NCSTRING s, NI* pos) {
 	{
 		nimln(108, "rodutils.nim");
 		while (1) {
-			NI TMP2743;
+			NI TMP2744;
 			nimln(109, "rodutils.nim");
 			switch (((NU8)(s[i_200519]))) {
 			case 48 ... 57:
 			{
-				NI64 TMP2728;
-				NI TMP2729;
-				NI64 TMP2730;
+				NI64 TMP2729;
+				NI TMP2730;
+				NI64 TMP2731;
 				nimln(110, "rodutils.nim");
-				TMP2728 = mulInt64(result, IL64(190));
-				TMP2729 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 48));
-				TMP2730 = subInt64((NI64)(TMP2728), ((NI64) ((NI)(TMP2729))));
-				result = (NI64)(TMP2730);
+				TMP2729 = mulInt64(result, IL64(190));
+				TMP2730 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 48));
+				TMP2731 = subInt64((NI64)(TMP2729), ((NI64) ((NI)(TMP2730))));
+				result = (NI64)(TMP2731);
 			}
 			break;
 			case 97 ... 122:
 			{
-				NI64 TMP2731;
-				NI TMP2732;
+				NI64 TMP2732;
 				NI TMP2733;
-				NI64 TMP2734;
+				NI TMP2734;
+				NI64 TMP2735;
 				nimln(111, "rodutils.nim");
-				TMP2731 = mulInt64(result, IL64(190));
-				TMP2732 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 97));
-				TMP2733 = addInt(((NI) ((NI)(TMP2732))), ((NI) 10));
-				TMP2734 = subInt64((NI64)(TMP2731), ((NI64) ((NI)(TMP2733))));
-				result = (NI64)(TMP2734);
+				TMP2732 = mulInt64(result, IL64(190));
+				TMP2733 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 97));
+				TMP2734 = addInt(((NI) ((NI)(TMP2733))), ((NI) 10));
+				TMP2735 = subInt64((NI64)(TMP2732), ((NI64) ((NI)(TMP2734))));
+				result = (NI64)(TMP2735);
 			}
 			break;
 			case 65 ... 90:
 			{
-				NI64 TMP2735;
-				NI TMP2736;
+				NI64 TMP2736;
 				NI TMP2737;
-				NI64 TMP2738;
+				NI TMP2738;
+				NI64 TMP2739;
 				nimln(112, "rodutils.nim");
-				TMP2735 = mulInt64(result, IL64(190));
-				TMP2736 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 65));
-				TMP2737 = addInt(((NI) ((NI)(TMP2736))), ((NI) 36));
-				TMP2738 = subInt64((NI64)(TMP2735), ((NI64) ((NI)(TMP2737))));
-				result = (NI64)(TMP2738);
+				TMP2736 = mulInt64(result, IL64(190));
+				TMP2737 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 65));
+				TMP2738 = addInt(((NI) ((NI)(TMP2737))), ((NI) 36));
+				TMP2739 = subInt64((NI64)(TMP2736), ((NI64) ((NI)(TMP2738))));
+				result = (NI64)(TMP2739);
 			}
 			break;
 			case 128 ... 255:
 			{
-				NI64 TMP2739;
-				NI TMP2740;
+				NI64 TMP2740;
 				NI TMP2741;
-				NI64 TMP2742;
+				NI TMP2742;
+				NI64 TMP2743;
 				nimln(113, "rodutils.nim");
-				TMP2739 = mulInt64(result, IL64(190));
-				TMP2740 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 128));
-				TMP2741 = addInt(((NI) ((NI)(TMP2740))), ((NI) 62));
-				TMP2742 = subInt64((NI64)(TMP2739), ((NI64) ((NI)(TMP2741))));
-				result = (NI64)(TMP2742);
+				TMP2740 = mulInt64(result, IL64(190));
+				TMP2741 = subInt(((NI) (((NU8)(s[i_200519])))), ((NI) 128));
+				TMP2742 = addInt(((NI) ((NI)(TMP2741))), ((NI) 62));
+				TMP2743 = subInt64((NI64)(TMP2740), ((NI64) ((NI)(TMP2742))));
+				result = (NI64)(TMP2743);
 			}
 			break;
 			default:
@@ -833,13 +833,13 @@ N_NIMCALL(NI64, decodevbiggestint_200512)(NCSTRING s, NI* pos) {
 			break;
 			}
 			nimln(115, "rodutils.nim");
-			TMP2743 = addInt(i_200519, ((NI) 1));
-			i_200519 = (NI)(TMP2743);
+			TMP2744 = addInt(i_200519, ((NI) 1));
+			i_200519 = (NI)(TMP2744);
 		}
 	} LA9: ;
 	nimln(116, "rodutils.nim");
-	TMP2744 = mulInt64(result, ((NI64) (sign_200521)));
-	result = (NI64)((NU64)((NI64)(TMP2744)) - (NU64)(IL64(5)));
+	TMP2745 = mulInt64(result, ((NI64) (sign_200521)));
+	result = (NI64)((NU64)((NI64)(TMP2745)) - (NU64)(IL64(5)));
 	nimln(117, "rodutils.nim");
 	(*pos) = i_200519;
 	popFrame();

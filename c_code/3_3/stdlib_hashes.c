@@ -494,7 +494,7 @@ N_NIMCALL(NI, hash_291014)(TY289742* x, NI xLen0) {
 			nimln(1690, "system.nim");
 			while (1) {
 				NI LOC4;
-				NI TMP4925;
+				NI TMP4926;
 				if (!(i_291076 < xLen0)) goto LA3;
 				nimln(1691, "system.nim");
 				if ((NU)(i_291076) >= (NU)(xLen0)) raiseIndexError();
@@ -505,8 +505,8 @@ N_NIMCALL(NI, hash_291014)(TY289742* x, NI xLen0) {
 				LOC4 = hash_291058(it_291056);
 				result = HEX21HEX26_131025(result, LOC4);
 				nimln(1692, "system.nim");
-				TMP4925 = addInt(i_291076, ((NI) 1));
-				i_291076 = (NI)(TMP4925);
+				TMP4926 = addInt(i_291076, ((NI) 1));
+				i_291076 = (NI)(TMP4926);
 			} LA3: ;
 		}
 	}
@@ -530,7 +530,7 @@ N_NIMCALL(NI, hash_290952)(Jsonnodeobj289726** x, NI xLen0) {
 			nimln(1690, "system.nim");
 			while (1) {
 				NI LOC4;
-				NI TMP4926;
+				NI TMP4927;
 				if (!(i_290998 < xLen0)) goto LA3;
 				nimln(1691, "system.nim");
 				if ((NU)(i_290998) >= (NU)(xLen0)) raiseIndexError();
@@ -540,8 +540,8 @@ N_NIMCALL(NI, hash_290952)(Jsonnodeobj289726** x, NI xLen0) {
 				LOC4 = hash_290945(it_290994);
 				result = HEX21HEX26_131025(result, LOC4);
 				nimln(1692, "system.nim");
-				TMP4926 = addInt(i_290998, ((NI) 1));
-				i_290998 = (NI)(TMP4926);
+				TMP4927 = addInt(i_290998, ((NI) 1));
+				i_290998 = (NI)(TMP4927);
 			} LA3: ;
 		}
 	}

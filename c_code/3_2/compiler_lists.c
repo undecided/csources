@@ -793,7 +793,7 @@ NIM_EXTERNC N_NOINLINE(void, compiler_listsInit)(void) {
 
 NIM_EXTERNC N_NOINLINE(void, compiler_listsDatInit)(void) {
 static TNimNode* TMP466[2];
-static TNimNode* TMP4197[3];
+static TNimNode* TMP4198[3];
 static TNimNode TMP462[8];
 NTI130022.size = sizeof(Tlistentry130022);
 NTI130022.kind = 17;
@@ -829,22 +829,22 @@ NTI130026.marker = TMP468;
 NTI130028.size = sizeof(Tlinkedlist130028);
 NTI130028.kind = 18;
 NTI130028.base = 0;
-TMP4197[0] = &TMP462[5];
+TMP4198[0] = &TMP462[5];
 TMP462[5].kind = 1;
 TMP462[5].offset = offsetof(Tlinkedlist130028, head);
 TMP462[5].typ = (&NTI130020);
 TMP462[5].name = "head";
-TMP4197[1] = &TMP462[6];
+TMP4198[1] = &TMP462[6];
 TMP462[6].kind = 1;
 TMP462[6].offset = offsetof(Tlinkedlist130028, tail);
 TMP462[6].typ = (&NTI130020);
 TMP462[6].name = "tail";
-TMP4197[2] = &TMP462[7];
+TMP4198[2] = &TMP462[7];
 TMP462[7].kind = 1;
 TMP462[7].offset = offsetof(Tlinkedlist130028, counter);
 TMP462[7].typ = (&NTI108);
 TMP462[7].name = "counter";
-TMP462[4].len = 3; TMP462[4].kind = 2; TMP462[4].sons = &TMP4197[0];
+TMP462[4].len = 3; TMP462[4].kind = 2; TMP462[4].sons = &TMP4198[0];
 NTI130028.node = &TMP462[4];
 }
 

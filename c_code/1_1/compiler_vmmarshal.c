@@ -498,79 +498,79 @@ N_NIMCALL(void, open_291090)(Jsonparser291013* my, Streamobj141027* input, NimSt
 N_NIMCALL(Stringstreamobj141554*, newstringstream_141671)(NimStringDesc* s);
 static N_INLINE(void, close_291115)(Jsonparser291013* my);
 N_NIMCALL(void, close_249050)(Baselexer249024* L);
-static NIM_CONST TY194031 TMP7524 = {
+static NIM_CONST TY194031 TMP7525 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP7525, "sons", 4);
-STRING_LITERAL(TMP7528, "getField(record case branch)", 28);
-static NIM_CONST TY194031 TMP7530 = {
+STRING_LITERAL(TMP7526, "sons", 4);
+STRING_LITERAL(TMP7529, "getField(record case branch)", 28);
+static NIM_CONST TY194031 TMP7531 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP7531, "sym", 3);
-STRING_LITERAL(TMP7533, "compiler/vmmarshal.nim", 22);
-NIM_CONST TY149210 TMP7532 = {((NimStringDesc*) &TMP7533),
+STRING_LITERAL(TMP7532, "sym", 3);
+STRING_LITERAL(TMP7534, "compiler/vmmarshal.nim", 22);
+NIM_CONST TY149210 TMP7533 = {((NimStringDesc*) &TMP7534),
 ((NI) 39)}
 ;
-STRING_LITERAL(TMP7535, ", ", 2);
-NIM_CONST TY149210 TMP7536 = {((NimStringDesc*) &TMP7533),
+STRING_LITERAL(TMP7536, ", ", 2);
+NIM_CONST TY149210 TMP7537 = {((NimStringDesc*) &TMP7534),
 ((NI) 45)}
 ;
-STRING_LITERAL(TMP7537, ": ", 2);
-STRING_LITERAL(TMP7539, "false ", 6);
-static NIM_CONST TY194031 TMP7540 = {
+STRING_LITERAL(TMP7538, ": ", 2);
+STRING_LITERAL(TMP7540, "false ", 6);
+static NIM_CONST TY194031 TMP7541 = {
 0xE0, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP7541, "intVal", 6);
-STRING_LITERAL(TMP7542, "null", 4);
-STRING_LITERAL(TMP7543, "[", 1);
-STRING_LITERAL(TMP7546, "]", 1);
-STRING_LITERAL(TMP7547, "{", 1);
-STRING_LITERAL(TMP7548, "\"Field", 6);
-STRING_LITERAL(TMP7549, "\": ", 3);
-STRING_LITERAL(TMP7551, "}", 1);
-static NIM_CONST TY194031 TMP7556 = {
+STRING_LITERAL(TMP7542, "intVal", 6);
+STRING_LITERAL(TMP7543, "null", 4);
+STRING_LITERAL(TMP7544, "[", 1);
+STRING_LITERAL(TMP7547, "]", 1);
+STRING_LITERAL(TMP7548, "{", 1);
+STRING_LITERAL(TMP7549, "\"Field", 6);
+STRING_LITERAL(TMP7550, "\": ", 3);
+STRING_LITERAL(TMP7552, "}", 1);
+static NIM_CONST TY194031 TMP7557 = {
 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP7557, "strVal", 6);
-static NIM_CONST TY194031 TMP7558 = {
+STRING_LITERAL(TMP7558, "strVal", 6);
+static NIM_CONST TY194031 TMP7559 = {
 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP7559, "floatVal", 8);
-STRING_LITERAL(TMP7560, "cannot marshal at compile-time ", 31);
-STRING_LITERAL(TMP7573, "\'true\' or \'false\' expected for a bool", 37);
-STRING_LITERAL(TMP7574, "contains({jsonInt, jsonFloat, jsonString}, my.kind) ", 52);
-STRING_LITERAL(TMP7575, "my.kind == jsonInt ", 19);
-STRING_LITERAL(TMP7576, "string of length 1 expected for a char", 38);
-STRING_LITERAL(TMP7578, "string expected for an enum", 27);
-STRING_LITERAL(TMP7579, "\'[\' expected for an array", 25);
-STRING_LITERAL(TMP7580, "\']\' end of array expected", 25);
-STRING_LITERAL(TMP7581, "", 0);
-STRING_LITERAL(TMP7582, "\'[\' expected for a seq", 22);
-STRING_LITERAL(TMP7583, "\'{\' expected for an object", 26);
-STRING_LITERAL(TMP7584, "string expected for a field name", 32);
-STRING_LITERAL(TMP7585, "too many fields to tuple type ", 30);
-STRING_LITERAL(TMP7587, "\'}\' end of object expected", 26);
-STRING_LITERAL(TMP7588, "unknown field for object of type ", 33);
-STRING_LITERAL(TMP7590, "\'[\' expected for a set", 22);
-STRING_LITERAL(TMP7591, "cannot load object with address ", 32);
-STRING_LITERAL(TMP7592, "index for ref type expected", 27);
-STRING_LITERAL(TMP7593, "\']\' end of ref-address pair expected", 36);
-STRING_LITERAL(TMP7594, "int for pointer type expected", 29);
-STRING_LITERAL(TMP7595, "string expected", 15);
-STRING_LITERAL(TMP7596, "int expected", 12);
-STRING_LITERAL(TMP7597, "my.kind == jsonFloat ", 21);
-STRING_LITERAL(TMP7598, "float expected", 14);
-STRING_LITERAL(TMP7599, "unknown file", 12);
+STRING_LITERAL(TMP7560, "floatVal", 8);
+STRING_LITERAL(TMP7561, "cannot marshal at compile-time ", 31);
+STRING_LITERAL(TMP7574, "\'true\' or \'false\' expected for a bool", 37);
+STRING_LITERAL(TMP7575, "contains({jsonInt, jsonFloat, jsonString}, my.kind) ", 52);
+STRING_LITERAL(TMP7576, "my.kind == jsonInt ", 19);
+STRING_LITERAL(TMP7577, "string of length 1 expected for a char", 38);
+STRING_LITERAL(TMP7579, "string expected for an enum", 27);
+STRING_LITERAL(TMP7580, "\'[\' expected for an array", 25);
+STRING_LITERAL(TMP7581, "\']\' end of array expected", 25);
+STRING_LITERAL(TMP7582, "", 0);
+STRING_LITERAL(TMP7583, "\'[\' expected for a seq", 22);
+STRING_LITERAL(TMP7584, "\'{\' expected for an object", 26);
+STRING_LITERAL(TMP7585, "string expected for a field name", 32);
+STRING_LITERAL(TMP7586, "too many fields to tuple type ", 30);
+STRING_LITERAL(TMP7588, "\'}\' end of object expected", 26);
+STRING_LITERAL(TMP7589, "unknown field for object of type ", 33);
+STRING_LITERAL(TMP7591, "\'[\' expected for a set", 22);
+STRING_LITERAL(TMP7592, "cannot load object with address ", 32);
+STRING_LITERAL(TMP7593, "index for ref type expected", 27);
+STRING_LITERAL(TMP7594, "\']\' end of ref-address pair expected", 36);
+STRING_LITERAL(TMP7595, "int for pointer type expected", 29);
+STRING_LITERAL(TMP7596, "string expected", 15);
+STRING_LITERAL(TMP7597, "int expected", 12);
+STRING_LITERAL(TMP7598, "my.kind == jsonFloat ", 21);
+STRING_LITERAL(TMP7599, "float expected", 14);
+STRING_LITERAL(TMP7600, "unknown file", 12);
 extern TFrame* frameptr_17042;
 extern TNimType NTI193807; /* TNodeSeq */
 extern Tgcheap48616 gch_48644;
@@ -665,26 +665,26 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 			NI i_384040;
 			NI HEX3Atmp_384098;
 			NI LOC3;
-			NI TMP7523;
+			NI TMP7524;
 			NI res_384101;
 			i_384040 = 0;
 			HEX3Atmp_384098 = 0;
 			nimln(20, "vmmarshal.nim");
 			LOC3 = 0;
 			LOC3 = sonslen_196403(n);
-			TMP7523 = subInt(LOC3, ((NI) 1));
-			HEX3Atmp_384098 = (NI)(TMP7523);
+			TMP7524 = subInt(LOC3, ((NI) 1));
+			HEX3Atmp_384098 = (NI)(TMP7524);
 			nimln(1598, "system.nim");
 			res_384101 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP7526;
+					NI TMP7527;
 					if (!(res_384101 <= HEX3Atmp_384098)) goto LA5;
 					nimln(1600, "system.nim");
 					i_384040 = res_384101;
 					nimln(21, "vmmarshal.nim");
-					if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+					if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 					if ((NU)(i_384040) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					result = getfield_384023((*n).kindU.S6.sons->data[i_384040], position);
 					nimln(22, "vmmarshal.nim");
@@ -694,8 +694,8 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 					}
 					LA8: ;
 					nimln(1614, "system.nim");
-					TMP7526 = addInt(res_384101, ((NI) 1));
-					res_384101 = (NI)(TMP7526);
+					TMP7527 = addInt(res_384101, ((NI) 1));
+					res_384101 = (NI)(TMP7527);
 				} LA5: ;
 			}
 		}
@@ -704,7 +704,7 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 	case ((NU8) 139):
 	{
 		nimln(24, "vmmarshal.nim");
-		if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+		if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		result = getfield_384023((*n).kindU.S6.sons->data[((NI) 0)], position);
 		nimln(25, "vmmarshal.nim");
@@ -717,26 +717,26 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 			NI i_384079;
 			NI HEX3Atmp_384106;
 			NI LOC16;
-			NI TMP7527;
+			NI TMP7528;
 			NI res_384109;
 			i_384079 = 0;
 			HEX3Atmp_384106 = 0;
 			nimln(26, "vmmarshal.nim");
 			LOC16 = 0;
 			LOC16 = sonslen_196403(n);
-			TMP7527 = subInt(LOC16, ((NI) 1));
-			HEX3Atmp_384106 = (NI)(TMP7527);
+			TMP7528 = subInt(LOC16, ((NI) 1));
+			HEX3Atmp_384106 = (NI)(TMP7528);
 			nimln(1598, "system.nim");
 			res_384109 = ((NI) 1);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP7529;
+					NI TMP7530;
 					if (!(res_384109 <= HEX3Atmp_384106)) goto LA18;
 					nimln(1600, "system.nim");
 					i_384079 = res_384109;
 					nimln(27, "vmmarshal.nim");
-					if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+					if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 					if ((NU)(i_384079) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					switch ((*(*n).kindU.S6.sons->data[i_384079]).kind) {
 					case ((NU8) 85):
@@ -744,7 +744,7 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 					{
 						Tnode193813* LOC20;
 						nimln(29, "vmmarshal.nim");
-						if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+						if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 						if ((NU)(i_384079) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						LOC20 = 0;
 						LOC20 = lastson_196431((*n).kindU.S6.sons->data[i_384079]);
@@ -760,13 +760,13 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 					default:
 					{
 						nimln(31, "vmmarshal.nim");
-						internalerror_167199((*n).info, ((NimStringDesc*) &TMP7528));
+						internalerror_167199((*n).info, ((NimStringDesc*) &TMP7529));
 					}
 					break;
 					}
 					nimln(1614, "system.nim");
-					TMP7529 = addInt(res_384109, ((NI) 1));
-					res_384109 = (NI)(TMP7529);
+					TMP7530 = addInt(res_384109, ((NI) 1));
+					res_384109 = (NI)(TMP7530);
 				} LA18: ;
 			}
 		}
@@ -776,9 +776,9 @@ N_NIMCALL(Tsym193843*, getfield_384023)(Tnode193813* n, NI position) {
 	{
 		nimln(33, "vmmarshal.nim");
 		{
-			if (!(((TMP7530[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+			if (!(((TMP7531[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 			if (!((*(*n).kindU.S4.sym).position == position)) goto LA29;
-			if (!(((TMP7530[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+			if (!(((TMP7531[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 			result = (*n).kindU.S4.sym;
 		}
 		LA29: ;
@@ -809,7 +809,7 @@ N_NIMCALL(void, storeobj_384148)(NimStringDesc** s, Ttype193849* typ, Tnode19381
 		if (!!(((*x).kind == ((NU8) 38) || (*x).kind == ((NU8) 37)))) goto LA3;
 		nimln(854, "msgs.nim");
 		LOC5 = 0;
-		LOC5 = HEX24_167306(TMP7532);
+		LOC5 = HEX24_167306(TMP7533);
 		internalerror_167218(LOC5);
 	}
 	LA3: ;
@@ -819,22 +819,22 @@ N_NIMCALL(void, storeobj_384148)(NimStringDesc** s, Ttype193849* typ, Tnode19381
 		NI i_384204;
 		NI HEX3Atmp_384255;
 		NI LOC7;
-		NI TMP7534;
+		NI TMP7535;
 		NI res_384258;
 		i_384204 = 0;
 		HEX3Atmp_384255 = 0;
 		nimln(41, "vmmarshal.nim");
 		LOC7 = 0;
 		LOC7 = sonslen_196403(x);
-		TMP7534 = subInt(LOC7, ((NI) 1));
-		HEX3Atmp_384255 = (NI)(TMP7534);
+		TMP7535 = subInt(LOC7, ((NI) 1));
+		HEX3Atmp_384255 = (NI)(TMP7535);
 		nimln(1598, "system.nim");
 		res_384258 = ((NI) (start));
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode193813* it;
-				NI TMP7538;
+				NI TMP7539;
 				if (!(res_384258 <= HEX3Atmp_384255)) goto LA9;
 				nimln(1600, "system.nim");
 				i_384204 = res_384258;
@@ -842,11 +842,11 @@ N_NIMCALL(void, storeobj_384148)(NimStringDesc** s, Ttype193849* typ, Tnode19381
 				{
 					if (!(((NI) (start)) < i_384204)) goto LA12;
 					(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 				}
 				LA12: ;
 				nimln(43, "vmmarshal.nim");
-				if (((TMP7524[(*x).kind/8] &(1<<((*x).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+				if (((TMP7525[(*x).kind/8] &(1<<((*x).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 				if ((NU)(i_384204) >= (NU)((*x).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*x).kindU.S6.sons->data[i_384204];
 				nimln(44, "vmmarshal.nim");
@@ -858,19 +858,19 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 					{
 						NimStringDesc* LOC22;
 						nimln(45, "vmmarshal.nim");
-						if (((TMP7524[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+						if (((TMP7525[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 						if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 						if (!!(((*(*it).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA20;
 						nimln(854, "msgs.nim");
 						LOC22 = 0;
-						LOC22 = HEX24_167306(TMP7536);
+						LOC22 = HEX24_167306(TMP7537);
 						internalerror_167218(LOC22);
 					}
 					LA20: ;
 					nimln(46, "vmmarshal.nim");
-					if (((TMP7524[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+					if (((TMP7525[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (!(((TMP7530[(*(*it).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*it).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+					if (!(((TMP7531[(*(*it).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*it).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 					field = (*(*it).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 					nimln(47, "vmmarshal.nim");
 					LOC23 = 0;
@@ -879,9 +879,9 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 appendString((*s), LOC23);
 					nimln(48, "vmmarshal.nim");
 					(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7537));
+appendString((*s), ((NimStringDesc*) &TMP7538));
 					nimln(49, "vmmarshal.nim");
-					if (((TMP7524[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+					if (((TMP7525[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 					if ((NU)(((NI) 1)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					storeany_384137(s, (*field).typ, (*it).kindU.S6.sons->data[((NI) 1)], stored);
 				}
@@ -901,7 +901,7 @@ appendString((*s), ((NimStringDesc*) &TMP7537));
 appendString((*s), LOC27);
 					nimln(53, "vmmarshal.nim");
 					(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7537));
+appendString((*s), ((NimStringDesc*) &TMP7538));
 					nimln(54, "vmmarshal.nim");
 					storeany_384137(s, (*field).typ, it, stored);
 				}
@@ -909,8 +909,8 @@ appendString((*s), ((NimStringDesc*) &TMP7537));
 				LA25: ;
 				LA14: ;
 				nimln(1614, "system.nim");
-				TMP7538 = addInt(res_384258, ((NI) 1));
-				res_384258 = (NI)(TMP7538);
+				TMP7539 = addInt(res_384258, ((NI) 1));
+				res_384258 = (NI)(TMP7539);
 			} LA9: ;
 		}
 	}
@@ -927,7 +927,7 @@ N_NIMCALL(Tnode193813*, skipcolon_384277)(Tnode193813* n) {
 	{
 		if (!((*n).kind == ((NU8) 34))) goto LA3;
 		nimln(59, "vmmarshal.nim");
-		if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+		if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		result = (*n).kindU.S6.sons->data[((NI) 1)];
 	}
@@ -942,7 +942,7 @@ static N_INLINE(NI, len_194097)(Tnode193813* n) {
 	result = 0;
 	nimln(934, "ast.nim");
 	{
-		if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+		if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 		if (!(*n).kindU.S6.sons == 0) goto LA3;
 		result = ((NI) 0);
 	}
@@ -950,7 +950,7 @@ static N_INLINE(NI, len_194097)(Tnode193813* n) {
 	LA3: ;
 	{
 		nimln(935, "ast.nim");
-		if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+		if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -963,7 +963,7 @@ static N_INLINE(Tnode193813*, HEX5BHEX5D_194244)(Tnode193813* n, NI i) {
 	nimfr("[]", "ast.nim")
 	result = 0;
 	nimln(948, "ast.nim");
-	if (((TMP7524[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+	if (((TMP7525[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 	if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	result = (*n).kindU.S6.sons->data[i];
 	popFrame();
@@ -999,7 +999,7 @@ N_NIMCALL(void, storeany_384137)(NimStringDesc** s, Ttype193849* t, Tnode193813*
 		nimln(63, "vmmarshal.nim");
 		{
 			if (!NIM_TRUE) goto LA4;
-			failedassertimpl_88817(((NimStringDesc*) &TMP7539));
+			failedassertimpl_88817(((NimStringDesc*) &TMP7540));
 		}
 		LA4: ;
 	}
@@ -1008,7 +1008,7 @@ N_NIMCALL(void, storeany_384137)(NimStringDesc** s, Ttype193849* t, Tnode193813*
 	{
 		NimStringDesc* LOC7;
 		nimln(64, "vmmarshal.nim");
-		if (!(((TMP7540[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
+		if (!(((TMP7541[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
 		LOC7 = 0;
 		LOC7 = nimBoolToStr(!(((*a).kindU.S1.intval == IL64(0))));
 		(*s) = resizeString((*s), LOC7->Sup.len + 0);
@@ -1019,7 +1019,7 @@ appendString((*s), LOC7);
 	{
 		NIM_CHAR ch;
 		nimln(66, "vmmarshal.nim");
-		if (!(((TMP7540[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
+		if (!(((TMP7541[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
 		ch = ((NIM_CHAR)chckRange64((*a).kindU.S1.intval, 0, 255));
 		nimln(67, "vmmarshal.nim");
 		{
@@ -1060,27 +1060,27 @@ appendString((*s), LOC16);
 			LA21: ;
 			if (!LOC20) goto LA22;
 			(*s) = resizeString((*s), 4);
-appendString((*s), ((NimStringDesc*) &TMP7542));
+appendString((*s), ((NimStringDesc*) &TMP7543));
 		}
 		goto LA18;
 		LA22: ;
 		{
 			nimln(74, "vmmarshal.nim");
 			(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7543));
+appendString((*s), ((NimStringDesc*) &TMP7544));
 			{
 				NI i_384433;
 				NI HEX3Atmp_384538;
 				NI LOC26;
-				NI TMP7544;
+				NI TMP7545;
 				NI res_384541;
 				i_384433 = 0;
 				HEX3Atmp_384538 = 0;
 				nimln(75, "vmmarshal.nim");
 				LOC26 = 0;
 				LOC26 = len_194097(a);
-				TMP7544 = subInt(LOC26, ((NI) 1));
-				HEX3Atmp_384538 = (NI)(TMP7544);
+				TMP7545 = subInt(LOC26, ((NI) 1));
+				HEX3Atmp_384538 = (NI)(TMP7545);
 				nimln(1598, "system.nim");
 				res_384541 = ((NI) 0);
 				{
@@ -1088,7 +1088,7 @@ appendString((*s), ((NimStringDesc*) &TMP7543));
 					while (1) {
 						Ttype193849* LOC33;
 						Tnode193813* LOC34;
-						NI TMP7545;
+						NI TMP7546;
 						if (!(res_384541 <= HEX3Atmp_384538)) goto LA28;
 						nimln(1600, "system.nim");
 						i_384433 = res_384541;
@@ -1096,7 +1096,7 @@ appendString((*s), ((NimStringDesc*) &TMP7543));
 						{
 							if (!(((NI) 0) < i_384433)) goto LA31;
 							(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 						}
 						LA31: ;
 						nimln(77, "vmmarshal.nim");
@@ -1106,14 +1106,14 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 						LOC34 = HEX5BHEX5D_194244(a, i_384433);
 						storeany_384137(s, LOC33, LOC34, stored);
 						nimln(1619, "system.nim");
-						TMP7545 = addInt(res_384541, ((NI) 1));
-						res_384541 = (NI)(TMP7545);
+						TMP7546 = addInt(res_384541, ((NI) 1));
+						res_384541 = (NI)(TMP7546);
 					} LA28: ;
 				}
 			}
 			nimln(78, "vmmarshal.nim");
 			(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7546));
+appendString((*s), ((NimStringDesc*) &TMP7547));
 		}
 		LA18: ;
 	}
@@ -1122,7 +1122,7 @@ appendString((*s), ((NimStringDesc*) &TMP7546));
 	{
 		nimln(80, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7547));
+appendString((*s), ((NimStringDesc*) &TMP7548));
 		{
 			NI i_384452;
 			NI HEX3Atmp_384546;
@@ -1143,7 +1143,7 @@ appendString((*s), ((NimStringDesc*) &TMP7547));
 					NimStringDesc* LOC45;
 					Tnode193813* LOC46;
 					Tnode193813* LOC47;
-					NI TMP7550;
+					NI TMP7551;
 					if (!(res_384549 <= HEX3Atmp_384546)) goto LA39;
 					nimln(1600, "system.nim");
 					i_384452 = res_384549;
@@ -1151,7 +1151,7 @@ appendString((*s), ((NimStringDesc*) &TMP7547));
 					{
 						if (!(((NI) 0) < i_384452)) goto LA42;
 						(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 					}
 					LA42: ;
 					nimln(83, "vmmarshal.nim");
@@ -1159,13 +1159,13 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 					LOC45 = 0;
 					LOC45 = nimIntToStr(i_384452);
 					LOC44 = rawNewString(LOC45->Sup.len + 6);
-appendString(LOC44, ((NimStringDesc*) &TMP7548));
+appendString(LOC44, ((NimStringDesc*) &TMP7549));
 appendString(LOC44, LOC45);
 					(*s) = resizeString((*s), LOC44->Sup.len + 0);
 appendString((*s), LOC44);
 					nimln(84, "vmmarshal.nim");
 					(*s) = resizeString((*s), 3);
-appendString((*s), ((NimStringDesc*) &TMP7549));
+appendString((*s), ((NimStringDesc*) &TMP7550));
 					nimln(85, "vmmarshal.nim");
 					if ((NU)(i_384452) >= (NU)((*t).sons->Sup.len)) raiseIndexError();
 					LOC46 = 0;
@@ -1174,33 +1174,33 @@ appendString((*s), ((NimStringDesc*) &TMP7549));
 					LOC47 = skipcolon_384277(LOC46);
 					storeany_384137(s, (*t).sons->data[i_384452], LOC47, stored);
 					nimln(1619, "system.nim");
-					TMP7550 = addInt(res_384549, ((NI) 1));
-					res_384549 = (NI)(TMP7550);
+					TMP7551 = addInt(res_384549, ((NI) 1));
+					res_384549 = (NI)(TMP7551);
 				} LA39: ;
 			}
 		}
 		nimln(86, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7551));
+appendString((*s), ((NimStringDesc*) &TMP7552));
 	}
 	break;
 	case ((NU8) 17):
 	{
 		nimln(88, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7547));
+appendString((*s), ((NimStringDesc*) &TMP7548));
 		nimln(89, "vmmarshal.nim");
 		storeobj_384148(s, t, a, stored);
 		nimln(90, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7551));
+appendString((*s), ((NimStringDesc*) &TMP7552));
 	}
 	break;
 	case ((NU8) 19):
 	{
 		nimln(92, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7543));
+appendString((*s), ((NimStringDesc*) &TMP7544));
 		{
 			NI i_384473;
 			NI HEX3Atmp_384555;
@@ -1217,7 +1217,7 @@ appendString((*s), ((NimStringDesc*) &TMP7543));
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP7554;
+					NI TMP7555;
 					if (!(res_384558 <= HEX3Atmp_384555)) goto LA53;
 					nimln(1600, "system.nim");
 					i_384473 = res_384558;
@@ -1225,7 +1225,7 @@ appendString((*s), ((NimStringDesc*) &TMP7543));
 					{
 						if (!(((NI) 0) < i_384473)) goto LA56;
 						(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 					}
 					LA56: ;
 					nimln(95, "vmmarshal.nim");
@@ -1251,30 +1251,30 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 						{
 							nimln(98, "vmmarshal.nim");
 							while (1) {
-								NI64 TMP7552;
+								NI64 TMP7553;
 								Tnode193813* LOC68;
 								Tnode193813* LOC69;
 								Ttype193849* LOC70;
-								NI64 TMP7553;
-								if (!(((TMP7540[(*x).kind/8] &(1<<((*x).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
-								TMP7552 = addInt64((*x).kindU.S1.intval, IL64(1));
+								NI64 TMP7554;
+								if (!(((TMP7541[(*x).kind/8] &(1<<((*x).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
+								TMP7553 = addInt64((*x).kindU.S1.intval, IL64(1));
 								LOC68 = 0;
 								LOC68 = HEX5BHEX5D_194244(a, i_384473);
 								LOC69 = 0;
 								LOC69 = HEX5BHEX5D_194244(LOC68, ((NI) 1));
-								if (!(((TMP7540[(*LOC69).kind/8] &(1<<((*LOC69).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
-								if (!((NI64)(TMP7552) <= (*LOC69).kindU.S1.intval)) goto LA67;
+								if (!(((TMP7541[(*LOC69).kind/8] &(1<<((*LOC69).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
+								if (!((NI64)(TMP7553) <= (*LOC69).kindU.S1.intval)) goto LA67;
 								nimln(99, "vmmarshal.nim");
 								(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 								nimln(100, "vmmarshal.nim");
 								LOC70 = 0;
 								LOC70 = lastson_196442(t);
 								storeany_384137(s, LOC70, x, stored);
 								nimln(101, "vmmarshal.nim");
-								if (!(((TMP7540[(*x).kind/8] &(1<<((*x).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
-								TMP7553 = addInt64((*x).kindU.S1.intval, ((NI) 1));
-								(*x).kindU.S1.intval = (NI64)(TMP7553);
+								if (!(((TMP7541[(*x).kind/8] &(1<<((*x).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
+								TMP7554 = addInt64((*x).kindU.S1.intval, ((NI) 1));
+								(*x).kindU.S1.intval = (NI64)(TMP7554);
 							} LA67: ;
 						}
 					}
@@ -1292,14 +1292,14 @@ appendString((*s), ((NimStringDesc*) &TMP7535));
 					}
 					LA58: ;
 					nimln(1619, "system.nim");
-					TMP7554 = addInt(res_384558, ((NI) 1));
-					res_384558 = (NI)(TMP7554);
+					TMP7555 = addInt(res_384558, ((NI) 1));
+					res_384558 = (NI)(TMP7555);
 				} LA53: ;
 			}
 		}
 		nimln(104, "vmmarshal.nim");
 		(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7546));
+appendString((*s), ((NimStringDesc*) &TMP7547));
 	}
 	break;
 	case ((NU8) 20):
@@ -1337,22 +1337,22 @@ appendString((*s), ((NimStringDesc*) &TMP7546));
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP7555;
+						NI TMP7556;
 						if (!(res_384571 <= HEX3Atmp_384569)) goto LA81;
 						nimln(1600, "system.nim");
 						i_384567 = res_384571;
 						nimln(1537, "ast.nim");
-						if (((TMP7524[(*HEX3Atmp_384563).kind/8] &(1<<((*HEX3Atmp_384563).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+						if (((TMP7525[(*HEX3Atmp_384563).kind/8] &(1<<((*HEX3Atmp_384563).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 						if ((NU)(i_384567) >= (NU)((*HEX3Atmp_384563).kindU.S6.sons->Sup.len)) raiseIndexError();
 						e_384496 = (*HEX3Atmp_384563).kindU.S6.sons->data[i_384567];
 						nimln(109, "vmmarshal.nim");
 						{
 							NimStringDesc* LOC86;
-							if (!(((TMP7530[(*e_384496).kind/8] &(1<<((*e_384496).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
-							if (!(((TMP7540[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
+							if (!(((TMP7531[(*e_384496).kind/8] &(1<<((*e_384496).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
+							if (!(((TMP7541[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
 							if (!(((NI64) ((*(*e_384496).kindU.S4.sym).position)) == (*a).kindU.S1.intval)) goto LA84;
 							nimln(110, "vmmarshal.nim");
-							if (!(((TMP7530[(*e_384496).kind/8] &(1<<((*e_384496).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+							if (!(((TMP7531[(*e_384496).kind/8] &(1<<((*e_384496).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 							LOC86 = 0;
 							LOC86 = escapejson_296295((*(*(*e_384496).kindU.S4.sym).name).s);
 							(*s) = resizeString((*s), LOC86->Sup.len + 0);
@@ -1362,8 +1362,8 @@ appendString((*s), LOC86);
 						}
 						LA84: ;
 						nimln(1619, "system.nim");
-						TMP7555 = addInt(res_384571, ((NI) 1));
-						res_384571 = (NI)(TMP7555);
+						TMP7556 = addInt(res_384571, ((NI) 1));
+						res_384571 = (NI)(TMP7556);
 					} LA81: ;
 				}
 			}
@@ -1386,7 +1386,7 @@ appendString((*s), LOC86);
 			LA91: ;
 			if (!LOC90) goto LA92;
 			(*s) = resizeString((*s), 4);
-appendString((*s), ((NimStringDesc*) &TMP7542));
+appendString((*s), ((NimStringDesc*) &TMP7543));
 		}
 		goto LA88;
 		LA92: ;
@@ -1417,7 +1417,7 @@ appendString((*s), LOC100);
 			Ttype193849* LOC104;
 			nimln(121, "vmmarshal.nim");
 			(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7543));
+appendString((*s), ((NimStringDesc*) &TMP7544));
 			nimln(122, "vmmarshal.nim");
 			LOC102 = 0;
 			LOC102 = ptrtoint_384012(x);
@@ -1427,14 +1427,14 @@ appendString((*s), ((NimStringDesc*) &TMP7543));
 appendString((*s), LOC103);
 			nimln(123, "vmmarshal.nim");
 			(*s) = resizeString((*s), 2);
-appendString((*s), ((NimStringDesc*) &TMP7535));
+appendString((*s), ((NimStringDesc*) &TMP7536));
 			nimln(124, "vmmarshal.nim");
 			LOC104 = 0;
 			LOC104 = lastson_196442(t);
 			storeany_384137(s, LOC104, a, stored);
 			nimln(125, "vmmarshal.nim");
 			(*s) = resizeString((*s), 1);
-appendString((*s), ((NimStringDesc*) &TMP7546));
+appendString((*s), ((NimStringDesc*) &TMP7547));
 		}
 		LA88: ;
 	}
@@ -1448,19 +1448,19 @@ appendString((*s), ((NimStringDesc*) &TMP7546));
 			LOC108 = 0;
 			LOC108 = ((*a).kind == ((NU8) 23));
 			if (LOC108) goto LA109;
-			if (!(((TMP7556[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7557));
+			if (!(((TMP7557[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7558));
 			LOC108 = (*a).kindU.S3.strval == 0;
 			LA109: ;
 			if (!LOC108) goto LA110;
 			(*s) = resizeString((*s), 4);
-appendString((*s), ((NimStringDesc*) &TMP7542));
+appendString((*s), ((NimStringDesc*) &TMP7543));
 		}
 		goto LA106;
 		LA110: ;
 		{
 			NimStringDesc* LOC113;
 			nimln(128, "vmmarshal.nim");
-			if (!(((TMP7556[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7557));
+			if (!(((TMP7557[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7558));
 			LOC113 = 0;
 			LOC113 = escapejson_296295((*a).kindU.S3.strval);
 			(*s) = resizeString((*s), LOC113->Sup.len + 0);
@@ -1474,7 +1474,7 @@ appendString((*s), LOC113);
 	{
 		NimStringDesc* LOC115;
 		nimln(129, "vmmarshal.nim");
-		if (!(((TMP7540[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7541));
+		if (!(((TMP7541[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7542));
 		LOC115 = 0;
 		LOC115 = nimInt64ToStr((*a).kindU.S1.intval);
 		(*s) = resizeString((*s), LOC115->Sup.len + 0);
@@ -1485,7 +1485,7 @@ appendString((*s), LOC115);
 	{
 		NimStringDesc* LOC117;
 		nimln(130, "vmmarshal.nim");
-		if (!(((TMP7558[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7559));
+		if (!(((TMP7559[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7560));
 		LOC117 = 0;
 		LOC117 = nimFloatToStr((*a).kindU.S2.floatval);
 		(*s) = resizeString((*s), LOC117->Sup.len + 0);
@@ -1501,7 +1501,7 @@ appendString((*s), LOC117);
 		LOC120 = 0;
 		LOC120 = typetostring_223032(t, ((NU8) 0));
 		LOC119 = rawNewString(LOC120->Sup.len + 31);
-appendString(LOC119, ((NimStringDesc*) &TMP7560));
+appendString(LOC119, ((NimStringDesc*) &TMP7561));
 appendString(LOC119, LOC120);
 		internalerror_167199((*a).info, LOC119);
 	}
@@ -1545,12 +1545,12 @@ static N_INLINE(NIM_BOOL, isfilled_158211)(NI hcode) {
 
 static N_INLINE(NI, nexttry_158420)(NI h, NI maxhash) {
 	NI result;
-	NI TMP7562;
+	NI TMP7563;
 	nimfr("nextTry", "tables.nim")
 	result = 0;
 	nimln(141, "tables.nim");
-	TMP7562 = addInt(h, ((NI) 1));
-	result = (NI)((NI)(TMP7562) & maxhash);
+	TMP7563 = addInt(h, ((NI) 1));
+	result = (NI)((NI)(TMP7563) & maxhash);
 	popFrame();
 	return result;
 }
@@ -1558,7 +1558,7 @@ static N_INLINE(NI, nexttry_158420)(NI h, NI maxhash) {
 static N_INLINE(NI, rawget_385110)(Table384650 t, NI64 key, NI* hc) {
 	NI result;
 	NI h;
-	NI TMP7563;
+	NI TMP7564;
 	nimfr("rawGet", "tables.nim")
 {	result = 0;
 	nimln(156, "tables.nim");
@@ -1601,8 +1601,8 @@ static N_INLINE(NI, rawget_385110)(Table384650 t, NI64 key, NI* hc) {
 		} LA6: ;
 	}
 	nimln(153, "tables.nim");
-	TMP7563 = subInt(((NI) -1), h);
-	result = (NI)(TMP7563);
+	TMP7564 = subInt(((NI) -1), h);
+	result = (NI)(TMP7564);
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1611,7 +1611,7 @@ static N_INLINE(NI, rawget_385110)(Table384650 t, NI64 key, NI* hc) {
 static N_INLINE(NI, rawgetknownhc_385252)(Table384650 t, NI64 key, NI hc) {
 	NI result;
 	NI h;
-	NI TMP7572;
+	NI TMP7573;
 	nimfr("rawGetKnownHC", "tables.nim")
 {	result = 0;
 	nimln(144, "tables.nim");
@@ -1645,8 +1645,8 @@ static N_INLINE(NI, rawgetknownhc_385252)(Table384650 t, NI64 key, NI hc) {
 		} LA2: ;
 	}
 	nimln(153, "tables.nim");
-	TMP7572 = subInt(((NI) -1), h);
-	result = (NI)(TMP7572);
+	TMP7573 = subInt(((NI) -1), h);
+	result = (NI)(TMP7573);
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1671,7 +1671,7 @@ static N_INLINE(NimStringDesc*, str_291125)(Jsonparser291013* my) {
 	nimln(157, "json.nim");
 	{
 		if (!!(((28 &(1<<(((*my).kind)&15)))!=0))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP7574));
+		failedassertimpl_88817(((NimStringDesc*) &TMP7575));
 	}
 	LA3: ;
 	nimln(158, "json.nim");
@@ -1689,7 +1689,7 @@ static N_INLINE(NI64, getint_291207)(Jsonparser291013* my) {
 	nimln(162, "json.nim");
 	{
 		if (!!(((*my).kind == ((NU8) 3)))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP7575));
+		failedassertimpl_88817(((NimStringDesc*) &TMP7576));
 	}
 	LA3: ;
 	nimln(163, "json.nim");
@@ -1837,7 +1837,7 @@ static N_INLINE(NF, getfloat_291407)(Jsonparser291013* my) {
 	nimln(167, "json.nim");
 	{
 		if (!!(((*my).kind == ((NU8) 4)))) goto LA3;
-		failedassertimpl_88817(((NimStringDesc*) &TMP7597));
+		failedassertimpl_88817(((NimStringDesc*) &TMP7598));
 	}
 	LA3: ;
 	nimln(168, "json.nim");
@@ -1859,7 +1859,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		nimln(141, "vmmarshal.nim");
 		{
 			if (!NIM_TRUE) goto LA4;
-			failedassertimpl_88817(((NimStringDesc*) &TMP7539));
+			failedassertimpl_88817(((NimStringDesc*) &TMP7540));
 		}
 		LA4: ;
 	}
@@ -1886,7 +1886,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		default:
 		{
 			nimln(146, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7573));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7574));
 		}
 		break;
 		}
@@ -1940,7 +1940,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		LA23: ;
 		LA12: ;
 		nimln(159, "vmmarshal.nim");
-		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7576));
+		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7577));
 	}
 	break;
 	case ((NU8) 14):
@@ -1974,23 +1974,23 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 					{
 						nimln(1599, "system.nim");
 						while (1) {
-							NI TMP7577;
+							NI TMP7578;
 							if (!(res_385407 <= HEX3Atmp_385405)) goto LA36;
 							nimln(1600, "system.nim");
 							i_385403 = res_385407;
 							nimln(1537, "ast.nim");
-							if (((TMP7524[(*HEX3Atmp_385399).kind/8] &(1<<((*HEX3Atmp_385399).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+							if (((TMP7525[(*HEX3Atmp_385399).kind/8] &(1<<((*HEX3Atmp_385399).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 							if ((NU)(i_385403) >= (NU)((*HEX3Atmp_385399).kindU.S6.sons->Sup.len)) raiseIndexError();
 							e_384837 = (*HEX3Atmp_385399).kindU.S6.sons->data[i_385403];
 							nimln(163, "vmmarshal.nim");
 							{
 								NimStringDesc* LOC39;
-								if (!(((TMP7530[(*e_384837).kind/8] &(1<<((*e_384837).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+								if (!(((TMP7531[(*e_384837).kind/8] &(1<<((*e_384837).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 								LOC39 = 0;
 								LOC39 = str_291125((&(*p)));
 								if (!eqStrings((*(*(*e_384837).kindU.S4.sym).name).s, LOC39)) goto LA40;
 								nimln(164, "vmmarshal.nim");
-								if (!(((TMP7530[(*e_384837).kind/8] &(1<<((*e_384837).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7531));
+								if (!(((TMP7531[(*e_384837).kind/8] &(1<<((*e_384837).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP7532));
 								result = newintnode_194608(((NU8) 6), ((NI64) ((*(*e_384837).kindU.S4.sym).position)));
 								nimln(165, "vmmarshal.nim");
 								next_292418(p);
@@ -1999,8 +1999,8 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 							}
 							LA40: ;
 							nimln(1619, "system.nim");
-							TMP7577 = addInt(res_385407, ((NI) 1));
-							res_385407 = (NI)(TMP7577);
+							TMP7578 = addInt(res_385407, ((NI) 1));
+							res_385407 = (NI)(TMP7578);
 						} LA36: ;
 					}
 				}
@@ -2008,7 +2008,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		}
 		LA30: ;
 		nimln(167, "vmmarshal.nim");
-		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7578));
+		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7579));
 	}
 	break;
 	case ((NU8) 16):
@@ -2019,7 +2019,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 			LOC45 = 0;
 			LOC45 = kind_291607((&(*p)));
 			if (!!((LOC45 == ((NU8) 10)))) goto LA46;
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7579));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7580));
 		}
 		LA46: ;
 		nimln(170, "vmmarshal.nim");
@@ -2064,7 +2064,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		LA59: ;
 		{
 			nimln(175, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7580));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7581));
 		}
 		LA56: ;
 	}
@@ -2128,7 +2128,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 			LA77: ;
 			{
 				nimln(187, "vmmarshal.nim");
-				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7581));
+				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7582));
 			}
 			LA74: ;
 		}
@@ -2136,7 +2136,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 		default:
 		{
 			nimln(189, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7582));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7583));
 		}
 		break;
 		}
@@ -2151,7 +2151,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 			LOC84 = 0;
 			LOC84 = kind_291607((&(*p)));
 			if (!!((LOC84 == ((NU8) 8)))) goto LA85;
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7583));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7584));
 		}
 		LA85: ;
 		nimln(192, "vmmarshal.nim");
@@ -2167,7 +2167,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 				NU8 LOC90;
 				NU8 LOC92;
 				Tnode193813* LOC105;
-				NI TMP7586;
+				NI TMP7587;
 				LOC89 = 0;
 				LOC90 = 0;
 				LOC90 = kind_291607((&(*p)));
@@ -2185,7 +2185,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 					LOC95 = kind_291607((&(*p)));
 					if (!!((LOC95 == ((NU8) 2)))) goto LA96;
 					nimln(197, "vmmarshal.nim");
-					raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7584));
+					raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7585));
 				}
 				LA96: ;
 				nimln(198, "vmmarshal.nim");
@@ -2203,7 +2203,7 @@ N_NIMCALL(Tnode193813*, loadany_384639)(Jsonparser291013* p, Ttype193849* t, Tab
 					LOC104 = 0;
 					LOC104 = typetostring_223032(t, ((NU8) 0));
 					LOC103 = rawNewString(LOC104->Sup.len + 30);
-appendString(LOC103, ((NimStringDesc*) &TMP7585));
+appendString(LOC103, ((NimStringDesc*) &TMP7586));
 appendString(LOC103, LOC104);
 					raiseparseerr_292758((&(*p)), LOC103);
 				}
@@ -2214,8 +2214,8 @@ appendString(LOC103, LOC104);
 				LOC105 = loadany_384639(p, (*t).sons->data[i], tab);
 				add_194164(result, LOC105);
 				nimln(202, "vmmarshal.nim");
-				TMP7586 = addInt(i, ((NI) 1));
-				i = (NI)(TMP7586);
+				TMP7587 = addInt(i, ((NI) 1));
+				i = (NI)(TMP7587);
 			} LA88: ;
 		}
 		nimln(203, "vmmarshal.nim");
@@ -2230,7 +2230,7 @@ appendString(LOC103, LOC104);
 		LA109: ;
 		{
 			nimln(204, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7587));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7588));
 		}
 		LA106: ;
 	}
@@ -2243,7 +2243,7 @@ appendString(LOC103, LOC104);
 			LOC115 = 0;
 			LOC115 = kind_291607((&(*p)));
 			if (!!((LOC115 == ((NU8) 8)))) goto LA116;
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7583));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7584));
 		}
 		LA116: ;
 		nimln(207, "vmmarshal.nim");
@@ -2251,7 +2251,7 @@ appendString(LOC103, LOC104);
 		nimln(208, "vmmarshal.nim");
 		result = newnode_194401(((NU8) 37));
 		nimln(209, "vmmarshal.nim");
-		if (((TMP7524[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+		if (((TMP7525[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 		if ((*result).kindU.S6.sons) nimGCunrefNoCycle((*result).kindU.S6.sons);
 		(*result).kindU.S6.sons = (Tnodeseq193807*) newSeqRC1((&NTI193807), 0);
 		{
@@ -2280,7 +2280,7 @@ appendString(LOC103, LOC104);
 					LOC126 = kind_291607((&(*p)));
 					if (!!((LOC126 == ((NU8) 2)))) goto LA127;
 					nimln(212, "vmmarshal.nim");
-					raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7584));
+					raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7585));
 				}
 				LA127: ;
 				nimln(213, "vmmarshal.nim");
@@ -2299,7 +2299,7 @@ appendString(LOC103, LOC104);
 					LOC136 = 0;
 					LOC136 = typetostring_223032(t, ((NU8) 0));
 					LOC135 = rawNewString(LOC136->Sup.len + 33);
-appendString(LOC135, ((NimStringDesc*) &TMP7588));
+appendString(LOC135, ((NimStringDesc*) &TMP7589));
 appendString(LOC135, LOC136);
 					raiseparseerr_292758((&(*p)), LOC135);
 				}
@@ -2308,17 +2308,17 @@ appendString(LOC135, LOC136);
 				next_292418(p);
 				nimln(217, "vmmarshal.nim");
 				{
-					NI TMP7589;
-					if (((TMP7524[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+					NI TMP7590;
+					if (((TMP7525[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 					if (!(((*result).kindU.S6.sons ? (*result).kindU.S6.sons->Sup.len : 0) <= (*field).position)) goto LA139;
 					nimln(218, "vmmarshal.nim");
-					if (((TMP7524[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
-					TMP7589 = addInt((*field).position, ((NI) 1));
-					(*result).kindU.S6.sons = (Tnodeseq193807*) setLengthSeq(&((*result).kindU.S6.sons)->Sup, sizeof(Tnode193813*), ((NI)chckRange((NI)(TMP7589), ((NI) 0), ((NI) 2147483647))));
+					if (((TMP7525[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
+					TMP7590 = addInt((*field).position, ((NI) 1));
+					(*result).kindU.S6.sons = (Tnodeseq193807*) setLengthSeq(&((*result).kindU.S6.sons)->Sup, sizeof(Tnode193813*), ((NI)chckRange((NI)(TMP7590), ((NI) 0), ((NI) 2147483647))));
 				}
 				LA139: ;
 				nimln(219, "vmmarshal.nim");
-				if (((TMP7524[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7525));
+				if (((TMP7525[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP7526));
 				if ((NU)((*field).position) >= (NU)((*result).kindU.S6.sons->Sup.len)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*result).kindU.S6.sons->data[(*field).position]), loadany_384639(p, (*field).typ, tab));
 			} LA119: ;
@@ -2335,7 +2335,7 @@ appendString(LOC135, LOC136);
 		LA144: ;
 		{
 			nimln(221, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7587));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7588));
 		}
 		LA141: ;
 	}
@@ -2348,7 +2348,7 @@ appendString(LOC135, LOC136);
 			LOC150 = 0;
 			LOC150 = kind_291607((&(*p)));
 			if (!!((LOC150 == ((NU8) 10)))) goto LA151;
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7590));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7591));
 		}
 		LA151: ;
 		nimln(224, "vmmarshal.nim");
@@ -2395,7 +2395,7 @@ appendString(LOC135, LOC136);
 		LA164: ;
 		{
 			nimln(230, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7580));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7581));
 		}
 		LA161: ;
 	}
@@ -2436,7 +2436,7 @@ appendString(LOC135, LOC136);
 				LOC178 = 0;
 				LOC178 = nimInt64ToStr(LOC177);
 				LOC176 = rawNewString(LOC178->Sup.len + 32);
-appendString(LOC176, ((NimStringDesc*) &TMP7591));
+appendString(LOC176, ((NimStringDesc*) &TMP7592));
 appendString(LOC176, LOC178);
 				raiseparseerr_292758((&(*p)), LOC176);
 			}
@@ -2472,7 +2472,7 @@ appendString(LOC176, LOC178);
 			LA183: ;
 			{
 				nimln(248, "vmmarshal.nim");
-				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7592));
+				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7593));
 			}
 			LA180: ;
 			nimln(249, "vmmarshal.nim");
@@ -2487,7 +2487,7 @@ appendString(LOC176, LOC178);
 			LA190: ;
 			{
 				nimln(250, "vmmarshal.nim");
-				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7593));
+				raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7594));
 			}
 			LA187: ;
 		}
@@ -2495,7 +2495,7 @@ appendString(LOC176, LOC178);
 		default:
 		{
 			nimln(251, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7594));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7595));
 		}
 		break;
 		}
@@ -2531,7 +2531,7 @@ appendString(LOC176, LOC178);
 		default:
 		{
 			nimln(260, "vmmarshal.nim");
-			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7595));
+			raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7596));
 		}
 		break;
 		}
@@ -2558,7 +2558,7 @@ appendString(LOC176, LOC178);
 		}
 		LA204: ;
 		nimln(266, "vmmarshal.nim");
-		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7596));
+		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7597));
 	}
 	break;
 	case ((NU8) 36) ... ((NU8) 39):
@@ -2581,7 +2581,7 @@ appendString(LOC176, LOC178);
 		}
 		LA211: ;
 		nimln(272, "vmmarshal.nim");
-		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7598));
+		raiseparseerr_292758((&(*p)), ((NimStringDesc*) &TMP7599));
 	}
 	break;
 	case ((NU8) 20):
@@ -2603,7 +2603,7 @@ appendString(LOC176, LOC178);
 		LOC218 = 0;
 		LOC218 = typetostring_223032(t, ((NU8) 0));
 		LOC217 = rawNewString(LOC218->Sup.len + 31);
-appendString(LOC217, ((NimStringDesc*) &TMP7560));
+appendString(LOC217, ((NimStringDesc*) &TMP7561));
 appendString(LOC217, LOC218);
 		internalerror_167218(LOC217);
 	}
@@ -2644,7 +2644,7 @@ N_NIMCALL(Tnode193813*, loadany_385463)(NimStringDesc* s, Ttype193849* t) {
 	LOC1 = newstringstream_141671(s);
 	LOC2 = 0;
 	LOC2 = &LOC1->Sup;
-	open_291090((&p), LOC2, ((NimStringDesc*) &TMP7599));
+	open_291090((&p), LOC2, ((NimStringDesc*) &TMP7600));
 	nimln(281, "vmmarshal.nim");
 	next_292418((&p));
 	nimln(282, "vmmarshal.nim");

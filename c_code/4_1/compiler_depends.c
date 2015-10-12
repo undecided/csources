@@ -440,22 +440,22 @@ N_NIMCALL(NimStringDesc*, noschangeFileExt)(NimStringDesc* filename, NimStringDe
 N_NIMCALL(NimStringDesc*, nosextractFilename)(NimStringDesc* path);
 N_NIMCALL(Tpasscontext241005*, myopen_506131)(Tsym190843* module);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10591)(void* p, NI op);
+N_NIMCALL(void, TMP10592)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 static N_INLINE(Tcell46747*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
-STRING_LITERAL(TMP10581, "$1 -> $2;$n", 11);
-static NIM_CONST TY191031 TMP10583 = {
+STRING_LITERAL(TMP10582, "$1 -> $2;$n", 11);
+static NIM_CONST TY191031 TMP10584 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10584, "sons", 4);
-STRING_LITERAL(TMP10588, "digraph $1 {$n$2}$n", 19);
-STRING_LITERAL(TMP10589, "", 0);
-STRING_LITERAL(TMP10590, "dot", 3);
+STRING_LITERAL(TMP10585, "sons", 4);
+STRING_LITERAL(TMP10589, "digraph $1 {$n$2}$n", 19);
+STRING_LITERAL(TMP10590, "", 0);
+STRING_LITERAL(TMP10591, "dot", 3);
 NIM_CONST Tpass241017 gendependpass_506151 = {myopen_506131,
 NIM_NIL,
 adddotdependency_506041,
@@ -503,7 +503,7 @@ N_NIMCALL(void, adddependencyaux_506028)(NimStringDesc* importing, NimStringDesc
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	LOC1[0] = rope_160320(importing);
 	LOC1[1] = rope_160320(imported);
-	addf_161635(&gdotgraph_506023, ((NimStringDesc*) &TMP10581), LOC1, 2);
+	addf_161635(&gdotgraph_506023, ((NimStringDesc*) &TMP10582), LOC1, 2);
 	popFrame();
 }
 
@@ -565,34 +565,34 @@ N_NIMCALL(Tnode190813*, adddotdependency_506041)(Tpasscontext241005* c, Tnode190
 			NI i_506059;
 			NI HEX3Atmp_506081;
 			NI LOC3;
-			NI TMP10582;
+			NI TMP10583;
 			NI res_506084;
 			i_506059 = 0;
 			HEX3Atmp_506081 = 0;
 			nimln(33, "depends.nim");
 			LOC3 = 0;
 			LOC3 = sonslen_193403(n);
-			TMP10582 = subInt(LOC3, ((NI) 1));
-			HEX3Atmp_506081 = (NI)(TMP10582);
+			TMP10583 = subInt(LOC3, ((NI) 1));
+			HEX3Atmp_506081 = (NI)(TMP10583);
 			nimln(1598, "system.nim");
 			res_506084 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					NimStringDesc* imported;
-					NI TMP10585;
+					NI TMP10586;
 					if (!(res_506084 <= HEX3Atmp_506081)) goto LA5;
 					nimln(1600, "system.nim");
 					i_506059 = res_506084;
 					nimln(34, "depends.nim");
-					if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
+					if (((TMP10584[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10585));
 					if ((NU)(i_506059) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					imported = getmodulename_251018((*n).kindU.S6.sons->data[i_506059]);
 					nimln(35, "depends.nim");
 					adddependencyaux_506028((*(*(*g).module).name).s, imported);
 					nimln(1614, "system.nim");
-					TMP10585 = addInt(res_506084, ((NI) 1));
-					res_506084 = (NI)(TMP10585);
+					TMP10586 = addInt(res_506084, ((NI) 1));
+					res_506084 = (NI)(TMP10586);
 				} LA5: ;
 			}
 		}
@@ -603,7 +603,7 @@ N_NIMCALL(Tnode190813*, adddotdependency_506041)(Tpasscontext241005* c, Tnode190
 	{
 		NimStringDesc* imported;
 		nimln(37, "depends.nim");
-		if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
+		if (((TMP10584[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10585));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		imported = getmodulename_251018((*n).kindU.S6.sons->data[((NI) 0)]);
 		nimln(38, "depends.nim");
@@ -619,33 +619,33 @@ N_NIMCALL(Tnode190813*, adddotdependency_506041)(Tpasscontext241005* c, Tnode190
 			NI i_506078;
 			NI HEX3Atmp_506089;
 			NI LOC9;
-			NI TMP10586;
+			NI TMP10587;
 			NI res_506092;
 			i_506078 = 0;
 			HEX3Atmp_506089 = 0;
 			nimln(40, "depends.nim");
 			LOC9 = 0;
 			LOC9 = sonslen_193403(n);
-			TMP10586 = subInt(LOC9, ((NI) 1));
-			HEX3Atmp_506089 = (NI)(TMP10586);
+			TMP10587 = subInt(LOC9, ((NI) 1));
+			HEX3Atmp_506089 = (NI)(TMP10587);
 			nimln(1598, "system.nim");
 			res_506092 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					Tnode190813* LOC12;
-					NI TMP10587;
+					NI TMP10588;
 					if (!(res_506092 <= HEX3Atmp_506089)) goto LA11;
 					nimln(1600, "system.nim");
 					i_506078 = res_506092;
 					nimln(40, "depends.nim");
-					if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
+					if (((TMP10584[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10585));
 					if ((NU)(i_506078) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC12 = 0;
 					LOC12 = adddotdependency_506041(c, (*n).kindU.S6.sons->data[i_506078]);
 					nimln(1614, "system.nim");
-					TMP10587 = addInt(res_506092, ((NI) 1));
-					res_506092 = (NI)(TMP10587);
+					TMP10588 = addInt(res_506092, ((NI) 1));
+					res_506092 = (NI)(TMP10588);
 				} LA11: ;
 			}
 		}
@@ -673,18 +673,18 @@ N_NIMCALL(void, generatedot_506009)(NimStringDesc* project) {
 	LOC2 = 0;
 	LOC2 = nosextractFilename(project);
 	LOC3 = 0;
-	LOC3 = noschangeFileExt(LOC2, ((NimStringDesc*) &TMP10589));
+	LOC3 = noschangeFileExt(LOC2, ((NimStringDesc*) &TMP10590));
 	LOC1[0] = rope_160320(LOC3);
 	LOC1[1] = gdotgraph_506023;
 	LOC4 = 0;
-	LOC4 = HEX25_161235(((NimStringDesc*) &TMP10588), LOC1, 2);
+	LOC4 = HEX25_161235(((NimStringDesc*) &TMP10589), LOC1, 2);
 	nimln(47, "depends.nim");
 	LOC5 = 0;
-	LOC5 = noschangeFileExt(project, ((NimStringDesc*) &TMP10590));
+	LOC5 = noschangeFileExt(project, ((NimStringDesc*) &TMP10591));
 	writerope_161105(LOC4, LOC5, NIM_FALSE);
 	popFrame();
 }
-N_NIMCALL(void, TMP10591)(void* p, NI op) {
+N_NIMCALL(void, TMP10592)(void* p, NI op) {
 	Tgen506016* a;
 	a = (Tgen506016*)p;
 	nimGCvisit((void*)(*a).module, op);
@@ -764,18 +764,18 @@ NIM_EXTERNC N_NOINLINE(void, compiler_dependsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_dependsDatInit)(void) {
-static TNimNode TMP10579[1];
+static TNimNode TMP10580[1];
 NTI506016.size = sizeof(Tgen506016);
 NTI506016.kind = 17;
 NTI506016.base = (&NTI241005);
-TMP10579[0].kind = 1;
-TMP10579[0].offset = offsetof(Tgen506016, module);
-TMP10579[0].typ = (&NTI190811);
-TMP10579[0].name = "module";
-NTI506016.node = &TMP10579[0];
+TMP10580[0].kind = 1;
+TMP10580[0].offset = offsetof(Tgen506016, module);
+TMP10580[0].typ = (&NTI190811);
+TMP10580[0].name = "module";
+NTI506016.node = &TMP10580[0];
 NTI506018.size = sizeof(Tgen506016*);
 NTI506018.kind = 22;
 NTI506018.base = (&NTI506016);
-NTI506018.marker = TMP10591;
+NTI506018.marker = TMP10592;
 }
 

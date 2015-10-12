@@ -29,7 +29,7 @@ static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 static N_INLINE(NI, nexttry_151420)(NI h, NI maxhash);
-STRING_LITERAL(TMP655, "counter < length ", 17);
+STRING_LITERAL(TMP656, "counter < length ", 17);
 extern TFrame* frameptr_17242;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -102,25 +102,25 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 static N_INLINE(NIM_BOOL, mustrehash_151303)(NI length, NI counter) {
 	NIM_BOOL result;
 	NIM_BOOL LOC5;
-	NI TMP656;
 	NI TMP657;
 	NI TMP658;
+	NI TMP659;
 	nimfr("mustRehash", "sets.nim")
 	result = 0;
 	nimln(114, "sets.nim");
 	{
 		if (!!((counter < length))) goto LA3;
-		failedassertimpl_87217(((NimStringDesc*) &TMP655));
+		failedassertimpl_87217(((NimStringDesc*) &TMP656));
 	}
 	LA3: ;
 	nimln(115, "sets.nim");
 	LOC5 = 0;
-	TMP656 = mulInt(length, ((NI) 2));
-	TMP657 = mulInt(counter, ((NI) 3));
-	LOC5 = ((NI)(TMP656) < (NI)(TMP657));
+	TMP657 = mulInt(length, ((NI) 2));
+	TMP658 = mulInt(counter, ((NI) 3));
+	LOC5 = ((NI)(TMP657) < (NI)(TMP658));
 	if (LOC5) goto LA6;
-	TMP658 = subInt(length, counter);
-	LOC5 = ((NI)(TMP658) < ((NI) 4));
+	TMP659 = subInt(length, counter);
+	LOC5 = ((NI)(TMP659) < ((NI) 4));
 	LA6: ;
 	result = LOC5;
 	popFrame();
@@ -174,28 +174,28 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 
 static N_INLINE(NI, rightsize_151407)(NI count) {
 	NI result;
-	NI TMP659;
 	NI TMP660;
 	NI TMP661;
+	NI TMP662;
 	nimfr("rightSize", "sets.nim")
 	result = 0;
 	nimln(124, "sets.nim");
-	TMP659 = mulInt(((NI) (count)), ((NI) 3));
-	TMP660 = divInt(((NI) ((NI)(TMP659))), ((NI) 2));
-	TMP661 = addInt(((NI) ((NI)(TMP660))), ((NI) 4));
-	result = nextpoweroftwo_148531(((NI) ((NI)(TMP661))));
+	TMP660 = mulInt(((NI) (count)), ((NI) 3));
+	TMP661 = divInt(((NI) ((NI)(TMP660))), ((NI) 2));
+	TMP662 = addInt(((NI) ((NI)(TMP661))), ((NI) 4));
+	result = nextpoweroftwo_148531(((NI) ((NI)(TMP662))));
 	popFrame();
 	return result;
 }
 
 static N_INLINE(NI, nexttry_151420)(NI h, NI maxhash) {
 	NI result;
-	NI TMP662;
+	NI TMP663;
 	nimfr("nextTry", "sets.nim")
 	result = 0;
 	nimln(127, "sets.nim");
-	TMP662 = addInt(h, ((NI) 1));
-	result = (NI)((NI)(TMP662) & maxhash);
+	TMP663 = addInt(h, ((NI) 1));
+	result = (NI)((NI)(TMP663) & maxhash);
 	popFrame();
 	return result;
 }

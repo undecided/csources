@@ -214,8 +214,8 @@ N_NOINLINE(void, stackoverflow_20201)(void);
 static N_INLINE(void, popFrame)(void);
 N_NIMCALL(Trstnode296011*, newrstnode_296102)(NU8 kind);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP5004)(void* p, NI op);
 N_NIMCALL(void, TMP5005)(void* p, NI op);
+N_NIMCALL(void, TMP5006)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46946*, usrtocell_50446)(void* usr);
@@ -267,34 +267,34 @@ NIM_CONST TY296275 lvltochar_296274 = {33,
 124,
 43}
 ;
-STRING_LITERAL(TMP5009, "\012", 1);
-STRING_LITERAL(TMP5011, "", 0);
-STRING_LITERAL(TMP5013, "\012\012", 2);
-STRING_LITERAL(TMP5016, "* ", 2);
-STRING_LITERAL(TMP5019, "(#) ", 4);
-STRING_LITERAL(TMP5022, "  ", 2);
-STRING_LITERAL(TMP5029, "| ", 2);
-STRING_LITERAL(TMP5032, "`", 1);
-STRING_LITERAL(TMP5033, "`_", 2);
-STRING_LITERAL(TMP5034, " <", 2);
-STRING_LITERAL(TMP5035, ">`_", 3);
-STRING_LITERAL(TMP5036, "`:", 2);
-STRING_LITERAL(TMP5037, "`:sub:", 6);
-STRING_LITERAL(TMP5038, "`:sup:", 6);
-STRING_LITERAL(TMP5039, "`:idx:", 6);
-STRING_LITERAL(TMP5040, "*", 1);
-STRING_LITERAL(TMP5041, "**", 2);
-STRING_LITERAL(TMP5042, "***", 3);
-STRING_LITERAL(TMP5044, "``", 2);
-STRING_LITERAL(TMP5046, "\\", 1);
-STRING_LITERAL(TMP5047, "\\\\", 2);
-STRING_LITERAL(TMP5048, ".. index::\012", 11);
-STRING_LITERAL(TMP5051, ".. contents::", 13);
-STRING_LITERAL(TMP5052, "Error: cannot render: ", 22);
-STRING_LITERAL(TMP5055, "kind", 4);
-STRING_LITERAL(TMP5056, "level", 5);
-STRING_LITERAL(TMP5057, "text", 4);
-STRING_LITERAL(TMP5059, "sons", 4);
+STRING_LITERAL(TMP5010, "\012", 1);
+STRING_LITERAL(TMP5012, "", 0);
+STRING_LITERAL(TMP5014, "\012\012", 2);
+STRING_LITERAL(TMP5017, "* ", 2);
+STRING_LITERAL(TMP5020, "(#) ", 4);
+STRING_LITERAL(TMP5023, "  ", 2);
+STRING_LITERAL(TMP5030, "| ", 2);
+STRING_LITERAL(TMP5033, "`", 1);
+STRING_LITERAL(TMP5034, "`_", 2);
+STRING_LITERAL(TMP5035, " <", 2);
+STRING_LITERAL(TMP5036, ">`_", 3);
+STRING_LITERAL(TMP5037, "`:", 2);
+STRING_LITERAL(TMP5038, "`:sub:", 6);
+STRING_LITERAL(TMP5039, "`:sup:", 6);
+STRING_LITERAL(TMP5040, "`:idx:", 6);
+STRING_LITERAL(TMP5041, "*", 1);
+STRING_LITERAL(TMP5042, "**", 2);
+STRING_LITERAL(TMP5043, "***", 3);
+STRING_LITERAL(TMP5045, "``", 2);
+STRING_LITERAL(TMP5047, "\\", 1);
+STRING_LITERAL(TMP5048, "\\\\", 2);
+STRING_LITERAL(TMP5049, ".. index::\012", 11);
+STRING_LITERAL(TMP5052, ".. contents::", 13);
+STRING_LITERAL(TMP5053, "Error: cannot render: ", 22);
+STRING_LITERAL(TMP5056, "kind", 4);
+STRING_LITERAL(TMP5057, "level", 5);
+STRING_LITERAL(TMP5058, "text", 4);
+STRING_LITERAL(TMP5060, "sons", 4);
 extern TFrame* frameptr_17242;
 TNimType NTI296011; /* TRstNode */
 TNimType NTI296005; /* TRstNodeKind */
@@ -340,7 +340,7 @@ N_NIMCALL(NI, len_296084)(Trstnode296011* n) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP5004)(void* p, NI op) {
+N_NIMCALL(void, TMP5005)(void* p, NI op) {
 	Trstnodeseq296009* a;
 	NI LOC1;
 	a = (Trstnodeseq296009*)p;
@@ -349,7 +349,7 @@ N_NIMCALL(void, TMP5004)(void* p, NI op) {
 	nimGCvisit((void*)a->data[LOC1], op);
 	}
 }
-N_NIMCALL(void, TMP5005)(void* p, NI op) {
+N_NIMCALL(void, TMP5006)(void* p, NI op) {
 	Trstnode296011* a;
 	a = (Trstnode296011*)p;
 	nimGCvisit((void*)(*a).text, op);
@@ -443,13 +443,13 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 
 N_NIMCALL(Trstnode296011*, lastson_296147)(Trstnode296011* n) {
 	Trstnode296011* result;
-	NI TMP5006;
+	NI TMP5007;
 	nimfr("lastSon", "rstast.nim")
 	result = 0;
 	nimln(87, "rstast.nim");
-	TMP5006 = subInt(((*n).sons ? (*n).sons->Sup.len : 0), ((NI) 1));
-	if ((NU)((NI)(TMP5006)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
-	result = (*n).sons->data[(NI)(TMP5006)];
+	TMP5007 = subInt(((*n).sons ? (*n).sons->Sup.len : 0), ((NI) 1));
+	if ((NU)((NI)(TMP5007)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
+	result = (*n).sons->data[(NI)(TMP5007)];
 	popFrame();
 	return result;
 }
@@ -534,21 +534,21 @@ N_NIMCALL(void, renderrstsons_296224)(Trendercontext296208* d, Trstnode296011* n
 		NI i_296243;
 		NI HEX3Atmp_296245;
 		NI LOC2;
-		NI TMP5007;
+		NI TMP5008;
 		NI res_296248;
 		i_296243 = 0;
 		HEX3Atmp_296245 = 0;
 		nimln(105, "rstast.nim");
 		LOC2 = 0;
 		LOC2 = len_296084(n);
-		TMP5007 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_296245 = (NI)(TMP5007);
+		TMP5008 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_296245 = (NI)(TMP5008);
 		nimln(1598, "system.nim");
 		res_296248 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP5008;
+				NI TMP5009;
 				if (!(res_296248 <= HEX3Atmp_296245)) goto LA4;
 				nimln(1600, "system.nim");
 				i_296243 = res_296248;
@@ -556,8 +556,8 @@ N_NIMCALL(void, renderrstsons_296224)(Trendercontext296208* d, Trstnode296011* n
 				if ((NU)(i_296243) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 				renderrsttorst_296214(d, (*n).sons->data[i_296243], result);
 				nimln(1614, "system.nim");
-				TMP5008 = addInt(res_296248, ((NI) 1));
-				res_296248 = (NI)(TMP5008);
+				TMP5009 = addInt(res_296248, ((NI) 1));
+				res_296248 = (NI)(TMP5009);
 			} LA4: ;
 		}
 	}
@@ -652,11 +652,11 @@ N_NIMCALL(void, renderrsttorst_296214)(Trendercontext296208* d, Trstnode296011* 
 	{
 		NI oldlen;
 		NI headlinelen;
-		NI TMP5010;
+		NI TMP5011;
 		NimStringDesc* LOC7;
 		nimln(119, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(120, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -665,11 +665,11 @@ appendString((*result), ind);
 		nimln(123, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(124, "rstast.nim");
-		TMP5010 = subInt(((*result) ? (*result)->Sup.len : 0), oldlen);
-		headlinelen = (NI)(TMP5010);
+		TMP5011 = subInt(((*result) ? (*result)->Sup.len : 0), oldlen);
+		headlinelen = (NI)(TMP5011);
 		nimln(126, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(127, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -685,33 +685,33 @@ appendString((*result), LOC7);
 	{
 		NimStringDesc* headline;
 		NimStringDesc* lvl;
-		NI TMP5012;
+		NI TMP5013;
 		nimln(130, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(131, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 		nimln(133, "rstast.nim");
-		headline = copyString(((NimStringDesc*) &TMP5011));
+		headline = copyString(((NimStringDesc*) &TMP5012));
 		nimln(134, "rstast.nim");
 		renderrstsons_296224(d, n, (&headline));
 		nimln(136, "rstast.nim");
 		if ((NU)((*n).level) > (NU)(8)) raiseIndexError();
-		TMP5012 = subInt((headline ? headline->Sup.len : 0), (*d).indent);
-		lvl = nsuRepeatChar(lvltochar_296274[((*n).level)- 0], ((NI)chckRange((NI)(TMP5012), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		TMP5013 = subInt((headline ? headline->Sup.len : 0), (*d).indent);
+		lvl = nsuRepeatChar(lvltochar_296274[((*n).level)- 0], ((NI)chckRange((NI)(TMP5013), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		nimln(137, "rstast.nim");
 		(*result) = resizeString((*result), lvl->Sup.len + 0);
 appendString((*result), lvl);
 		nimln(138, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(139, "rstast.nim");
 		(*result) = resizeString((*result), headline->Sup.len + 0);
 appendString((*result), headline);
 		nimln(141, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(142, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -722,30 +722,30 @@ appendString((*result), lvl);
 	break;
 	case ((NU8) 3):
 	{
-		NI TMP5014;
+		NI TMP5015;
 		NimStringDesc* LOC10;
 		nimln(145, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 		nimln(146, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 		nimln(147, "rstast.nim");
-		TMP5014 = subInt(((NI) 78), (*d).indent);
+		TMP5015 = subInt(((NI) 78), (*d).indent);
 		LOC10 = 0;
-		LOC10 = nsuRepeatChar(45, ((NI)chckRange((NI)(TMP5014), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		LOC10 = nsuRepeatChar(45, ((NI)chckRange((NI)(TMP5015), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		(*result) = resizeString((*result), LOC10->Sup.len + 0);
 appendString((*result), LOC10);
 		nimln(148, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 	}
 	break;
 	case ((NU8) 4):
 	{
 		nimln(150, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 		nimln(151, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -755,14 +755,14 @@ appendString((*result), ind);
 	break;
 	case ((NU8) 6):
 	{
-		NI TMP5015;
+		NI TMP5016;
 		NimStringDesc* tmp;
-		NI TMP5017;
+		NI TMP5018;
 		nimln(154, "rstast.nim");
-		TMP5015 = addInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5015);
+		TMP5016 = addInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5016);
 		nimln(155, "rstast.nim");
-		tmp = copyString(((NimStringDesc*) &TMP5011));
+		tmp = copyString(((NimStringDesc*) &TMP5012));
 		nimln(156, "rstast.nim");
 		renderrstsons_296224(d, n, (&tmp));
 		nimln(157, "rstast.nim");
@@ -770,33 +770,33 @@ appendString((*result), ind);
 			if (!(((NI) 0) < (tmp ? tmp->Sup.len : 0))) goto LA15;
 			nimln(158, "rstast.nim");
 			(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 			nimln(159, "rstast.nim");
 			(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 			nimln(160, "rstast.nim");
 			(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5016));
+appendString((*result), ((NimStringDesc*) &TMP5017));
 			nimln(161, "rstast.nim");
 			(*result) = resizeString((*result), tmp->Sup.len + 0);
 appendString((*result), tmp);
 		}
 		LA15: ;
 		nimln(162, "rstast.nim");
-		TMP5017 = subInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5017);
+		TMP5018 = subInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5018);
 	}
 	break;
 	case ((NU8) 8):
 	{
-		NI TMP5018;
+		NI TMP5019;
 		NimStringDesc* tmp;
-		NI TMP5020;
+		NI TMP5021;
 		nimln(164, "rstast.nim");
-		TMP5018 = addInt((*d).indent, ((NI) 4));
-		(*d).indent = (NI)(TMP5018);
+		TMP5019 = addInt((*d).indent, ((NI) 4));
+		(*d).indent = (NI)(TMP5019);
 		nimln(165, "rstast.nim");
-		tmp = copyString(((NimStringDesc*) &TMP5011));
+		tmp = copyString(((NimStringDesc*) &TMP5012));
 		nimln(166, "rstast.nim");
 		renderrstsons_296224(d, n, (&tmp));
 		nimln(167, "rstast.nim");
@@ -804,21 +804,21 @@ appendString((*result), tmp);
 			if (!(((NI) 0) < (tmp ? tmp->Sup.len : 0))) goto LA20;
 			nimln(168, "rstast.nim");
 			(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 			nimln(169, "rstast.nim");
 			(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 			nimln(170, "rstast.nim");
 			(*result) = resizeString((*result), 4);
-appendString((*result), ((NimStringDesc*) &TMP5019));
+appendString((*result), ((NimStringDesc*) &TMP5020));
 			nimln(171, "rstast.nim");
 			(*result) = resizeString((*result), tmp->Sup.len + 0);
 appendString((*result), tmp);
 		}
 		LA20: ;
 		nimln(172, "rstast.nim");
-		TMP5020 = subInt((*d).indent, ((NI) 4));
-		(*d).indent = (NI)(TMP5020);
+		TMP5021 = subInt((*d).indent, ((NI) 4));
+		(*d).indent = (NI)(TMP5021);
 	}
 	break;
 	case ((NU8) 17):
@@ -840,7 +840,7 @@ appendString((*result), tmp);
 	{
 		nimln(177, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 		nimln(178, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -850,57 +850,57 @@ appendString((*result), ind);
 	break;
 	case ((NU8) 12):
 	{
-		NI TMP5021;
-		NI TMP5023;
+		NI TMP5022;
+		NI TMP5024;
 		nimln(181, "rstast.nim");
-		TMP5021 = addInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5021);
+		TMP5022 = addInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5022);
 		nimln(182, "rstast.nim");
 		{
 			if ((NU)(((NI) 0)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).sons->data[((NI) 0)]).kind == ((NU8) 5)))) goto LA27;
 			nimln(183, "rstast.nim");
 			(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 			nimln(184, "rstast.nim");
 			(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 			nimln(185, "rstast.nim");
 			(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5022));
+appendString((*result), ((NimStringDesc*) &TMP5023));
 		}
 		LA27: ;
 		nimln(186, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(187, "rstast.nim");
-		TMP5023 = subInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5023);
+		TMP5024 = subInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5024);
 	}
 	break;
 	case ((NU8) 14):
 	{
 		NimStringDesc* tmp;
 		NI L;
-		NI TMP5024;
 		NI TMP5025;
 		NI TMP5026;
 		NI TMP5027;
-		NimStringDesc* LOC30;
 		NI TMP5028;
+		NimStringDesc* LOC30;
+		NI TMP5029;
 		nimln(189, "rstast.nim");
-		tmp = copyString(((NimStringDesc*) &TMP5011));
+		tmp = copyString(((NimStringDesc*) &TMP5012));
 		nimln(190, "rstast.nim");
 		if ((NU)(((NI) 0)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 0)], (&tmp));
 		nimln(192, "rstast.nim");
-		TMP5024 = addInt((tmp ? tmp->Sup.len : 0), ((NI) 3));
-		L = (((NI)(TMP5024) >= ((NI) 30)) ? (NI)(TMP5024) : ((NI) 30));
+		TMP5025 = addInt((tmp ? tmp->Sup.len : 0), ((NI) 3));
+		L = (((NI)(TMP5025) >= ((NI) 30)) ? (NI)(TMP5025) : ((NI) 30));
 		nimln(193, "rstast.nim");
-		TMP5025 = addInt((*d).indent, L);
-		(*d).indent = (NI)(TMP5025);
+		TMP5026 = addInt((*d).indent, L);
+		(*d).indent = (NI)(TMP5026);
 		nimln(195, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(196, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
@@ -912,59 +912,59 @@ appendString((*result), tmp);
 		nimln(199, "rstast.nim");
 		(*result) = addChar((*result), 58);
 		nimln(200, "rstast.nim");
-		TMP5026 = subInt(L, (tmp ? tmp->Sup.len : 0));
-		TMP5027 = subInt((NI)(TMP5026), ((NI) 2));
+		TMP5027 = subInt(L, (tmp ? tmp->Sup.len : 0));
+		TMP5028 = subInt((NI)(TMP5027), ((NI) 2));
 		LOC30 = 0;
-		LOC30 = nsuRepeatChar(32, ((NI)chckRange((NI)(TMP5027), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		LOC30 = nsuRepeatChar(32, ((NI)chckRange((NI)(TMP5028), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 		(*result) = resizeString((*result), LOC30->Sup.len + 0);
 appendString((*result), LOC30);
 		nimln(201, "rstast.nim");
 		if ((NU)(((NI) 1)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 1)], result);
 		nimln(203, "rstast.nim");
-		TMP5028 = subInt((*d).indent, L);
-		(*d).indent = (NI)(TMP5028);
+		TMP5029 = subInt((*d).indent, L);
+		(*d).indent = (NI)(TMP5029);
 	}
 	break;
 	case ((NU8) 27):
 	{
 		nimln(205, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5009));
+appendString((*result), ((NimStringDesc*) &TMP5010));
 		nimln(206, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 		nimln(207, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5029));
+appendString((*result), ((NimStringDesc*) &TMP5030));
 		nimln(208, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 	}
 	break;
 	case ((NU8) 28):
 	{
-		NI TMP5030;
 		NI TMP5031;
+		NI TMP5032;
 		nimln(210, "rstast.nim");
-		TMP5030 = addInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5030);
+		TMP5031 = addInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5031);
 		nimln(211, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(212, "rstast.nim");
-		TMP5031 = subInt((*d).indent, ((NI) 2));
-		(*d).indent = (NI)(TMP5031);
+		TMP5032 = subInt((*d).indent, ((NI) 2));
+		(*d).indent = (NI)(TMP5032);
 	}
 	break;
 	case ((NU8) 39):
 	{
 		nimln(214, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5032));
+appendString((*result), ((NimStringDesc*) &TMP5033));
 		nimln(215, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(216, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5033));
+appendString((*result), ((NimStringDesc*) &TMP5034));
 	}
 	break;
 	case ((NU8) 38):
@@ -976,13 +976,13 @@ appendString((*result), ((NimStringDesc*) &TMP5033));
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 0)], result);
 		nimln(220, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5034));
+appendString((*result), ((NimStringDesc*) &TMP5035));
 		nimln(221, "rstast.nim");
 		if ((NU)(((NI) 1)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 1)], result);
 		nimln(222, "rstast.nim");
 		(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP5035));
+appendString((*result), ((NimStringDesc*) &TMP5036));
 	}
 	break;
 	case ((NU8) 53):
@@ -994,7 +994,7 @@ appendString((*result), ((NimStringDesc*) &TMP5035));
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 0)], result);
 		nimln(226, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5036));
+appendString((*result), ((NimStringDesc*) &TMP5037));
 		nimln(227, "rstast.nim");
 		if ((NU)(((NI) 1)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
 		renderrsttorst_296214(d, (*n).sons->data[((NI) 1)], result);
@@ -1010,7 +1010,7 @@ appendString((*result), ((NimStringDesc*) &TMP5036));
 		renderrstsons_296224(d, n, result);
 		nimln(232, "rstast.nim");
 		(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP5037));
+appendString((*result), ((NimStringDesc*) &TMP5038));
 	}
 	break;
 	case ((NU8) 55):
@@ -1021,7 +1021,7 @@ appendString((*result), ((NimStringDesc*) &TMP5037));
 		renderrstsons_296224(d, n, result);
 		nimln(236, "rstast.nim");
 		(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP5038));
+appendString((*result), ((NimStringDesc*) &TMP5039));
 	}
 	break;
 	case ((NU8) 56):
@@ -1032,43 +1032,43 @@ appendString((*result), ((NimStringDesc*) &TMP5038));
 		renderrstsons_296224(d, n, result);
 		nimln(240, "rstast.nim");
 		(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP5039));
+appendString((*result), ((NimStringDesc*) &TMP5040));
 	}
 	break;
 	case ((NU8) 57):
 	{
 		nimln(242, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5040));
+appendString((*result), ((NimStringDesc*) &TMP5041));
 		nimln(243, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(244, "rstast.nim");
 		(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP5040));
+appendString((*result), ((NimStringDesc*) &TMP5041));
 	}
 	break;
 	case ((NU8) 58):
 	{
 		nimln(246, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5041));
+appendString((*result), ((NimStringDesc*) &TMP5042));
 		nimln(247, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(248, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5041));
+appendString((*result), ((NimStringDesc*) &TMP5042));
 	}
 	break;
 	case ((NU8) 59):
 	{
 		nimln(250, "rstast.nim");
 		(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP5042));
+appendString((*result), ((NimStringDesc*) &TMP5043));
 		nimln(251, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(252, "rstast.nim");
 		(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP5042));
+appendString((*result), ((NimStringDesc*) &TMP5043));
 	}
 	break;
 	case ((NU8) 60):
@@ -1083,22 +1083,22 @@ appendString((*result), ((NimStringDesc*) &TMP5042));
 	break;
 	case ((NU8) 61):
 	{
-		NI TMP5043;
-		NI TMP5045;
+		NI TMP5044;
+		NI TMP5046;
 		nimln(258, "rstast.nim");
-		TMP5043 = addInt((*d).verbatim, ((NI) 1));
-		(*d).verbatim = (NI)(TMP5043);
+		TMP5044 = addInt((*d).verbatim, ((NI) 1));
+		(*d).verbatim = (NI)(TMP5044);
 		nimln(259, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5044));
+appendString((*result), ((NimStringDesc*) &TMP5045));
 		nimln(260, "rstast.nim");
 		renderrstsons_296224(d, n, result);
 		nimln(261, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5044));
+appendString((*result), ((NimStringDesc*) &TMP5045));
 		nimln(262, "rstast.nim");
-		TMP5045 = subInt((*d).verbatim, ((NI) 1));
-		(*d).verbatim = (NI)(TMP5045);
+		TMP5046 = subInt((*d).verbatim, ((NI) 1));
+		(*d).verbatim = (NI)(TMP5046);
 	}
 	break;
 	case ((NU8) 63):
@@ -1116,12 +1116,12 @@ appendString((*result), (*n).text);
 			LOC48 = 0;
 			LOC48 = ((*d).verbatim == ((NI) 0));
 			if (!(LOC48)) goto LA49;
-			LOC48 = eqStrings((*n).text, ((NimStringDesc*) &TMP5046));
+			LOC48 = eqStrings((*n).text, ((NimStringDesc*) &TMP5047));
 			LA49: ;
 			if (!LOC48) goto LA50;
 			nimln(267, "rstast.nim");
 			(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5047));
+appendString((*result), ((NimStringDesc*) &TMP5048));
 		}
 		goto LA46;
 		LA50: ;
@@ -1135,20 +1135,20 @@ appendString((*result), (*n).text);
 	break;
 	case ((NU8) 51):
 	{
-		NI TMP5049;
 		NI TMP5050;
+		NI TMP5051;
 		nimln(271, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 		nimln(272, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 		nimln(273, "rstast.nim");
 		(*result) = resizeString((*result), 11);
-appendString((*result), ((NimStringDesc*) &TMP5048));
+appendString((*result), ((NimStringDesc*) &TMP5049));
 		nimln(275, "rstast.nim");
-		TMP5049 = addInt((*d).indent, ((NI) 3));
-		(*d).indent = (NI)(TMP5049);
+		TMP5050 = addInt((*d).indent, ((NI) 3));
+		(*d).indent = (NI)(TMP5050);
 		nimln(276, "rstast.nim");
 		{
 			if ((NU)(((NI) 2)) >= (NU)((*n).sons->Sup.len)) raiseIndexError();
@@ -1158,21 +1158,21 @@ appendString((*result), ((NimStringDesc*) &TMP5048));
 		}
 		LA56: ;
 		nimln(277, "rstast.nim");
-		TMP5050 = subInt((*d).indent, ((NI) 3));
-		(*d).indent = (NI)(TMP5050);
+		TMP5051 = subInt((*d).indent, ((NI) 3));
+		(*d).indent = (NI)(TMP5051);
 	}
 	break;
 	case ((NU8) 44):
 	{
 		nimln(279, "rstast.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP5013));
+appendString((*result), ((NimStringDesc*) &TMP5014));
 		nimln(280, "rstast.nim");
 		(*result) = resizeString((*result), ind->Sup.len + 0);
 appendString((*result), ind);
 		nimln(281, "rstast.nim");
 		(*result) = resizeString((*result), 13);
-appendString((*result), ((NimStringDesc*) &TMP5051));
+appendString((*result), ((NimStringDesc*) &TMP5052));
 	}
 	break;
 	default:
@@ -1181,7 +1181,7 @@ appendString((*result), ((NimStringDesc*) &TMP5051));
 		nimln(283, "rstast.nim");
 		LOC60 = 0;
 		LOC60 = rawNewString(reprEnum((*n).kind, (&NTI296005))->Sup.len + 22);
-appendString(LOC60, ((NimStringDesc*) &TMP5052));
+appendString(LOC60, ((NimStringDesc*) &TMP5053));
 appendString(LOC60, reprEnum((*n).kind, (&NTI296005)));
 		(*result) = resizeString((*result), LOC60->Sup.len + 0);
 appendString((*result), LOC60);
@@ -1218,10 +1218,10 @@ N_NIMCALL(Jsonnodeobj289726*, renderrsttojsonnode_296483)(Trstnode296011* node) 
 	result = 0;
 	nimln(291, "rstast.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
-	LOC1[0].Field0 = copyString(((NimStringDesc*) &TMP5055));
+	LOC1[0].Field0 = copyString(((NimStringDesc*) &TMP5056));
 	nimln(293, "rstast.nim");
 	LOC1[0].Field1 = HEX25_290130(reprEnum((*node).kind, (&NTI296005)));
-	LOC1[1].Field0 = copyString(((NimStringDesc*) &TMP5056));
+	LOC1[1].Field0 = copyString(((NimStringDesc*) &TMP5057));
 	nimln(294, "rstast.nim");
 	LOC1[1].Field1 = HEX25_290149(((NI64) ((*node).level)));
 	result = HEX25_290206(LOC1, 2);
@@ -1232,7 +1232,7 @@ N_NIMCALL(Jsonnodeobj289726*, renderrsttojsonnode_296483)(Trstnode296011* node) 
 		nimln(297, "rstast.nim");
 		LOC6 = 0;
 		LOC6 = HEX25_290130((*node).text);
-		add_292418(result, ((NimStringDesc*) &TMP5057), LOC6);
+		add_292418(result, ((NimStringDesc*) &TMP5058), LOC6);
 	}
 	LA4: ;
 	nimln(298, "rstast.nim");
@@ -1266,7 +1266,7 @@ N_NIMCALL(Jsonnodeobj289726*, renderrsttojsonnode_296483)(Trstnode296011* node) 
 			{
 				nimln(1790, "system.nim");
 				while (1) {
-					NI TMP5058;
+					NI TMP5059;
 					if (!(i_296725 < (HEX3Atmp_296722 ? HEX3Atmp_296722->Sup.len : 0))) goto LA16;
 					nimln(1789, "system.nim");
 					i_296717 = i_296725;
@@ -1277,15 +1277,15 @@ N_NIMCALL(Jsonnodeobj289726*, renderrsttojsonnode_296483)(Trstnode296011* node) 
 					if ((NU)(i_296717) >= (NU)(accm->Sup.len)) raiseIndexError();
 					asgnRefNoCycle((void**) (&accm->data[i_296717]), renderrsttojsonnode_296483(son_296718));
 					nimln(1792, "system.nim");
-					TMP5058 = addInt(i_296725, ((NI) 1));
-					i_296725 = (NI)(TMP5058);
+					TMP5059 = addInt(i_296725, ((NI) 1));
+					i_296725 = (NI)(TMP5059);
 				} LA16: ;
 			}
 		}
 		nimln(302, "rstast.nim");
 		LOC17 = 0;
 		LOC17 = HEX25_290303(accm->data, accm->Sup.len);
-		add_292418(result, ((NimStringDesc*) &TMP5059), LOC17);
+		add_292418(result, ((NimStringDesc*) &TMP5060), LOC17);
 	}
 	LA12: ;
 	popFrame();
@@ -1311,10 +1311,10 @@ NIM_EXTERNC N_NOINLINE(void, docutils_rstastInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, docutils_rstastDatInit)(void) {
-static TNimNode* TMP5000[4];
-static TNimNode* TMP5001[65];
-NI TMP5003;
-static char* NIM_CONST TMP5002[65] = {
+static TNimNode* TMP5001[4];
+static TNimNode* TMP5002[65];
+NI TMP5004;
+static char* NIM_CONST TMP5003[65] = {
 "rnInner", 
 "rnHeadline", 
 "rnOverline", 
@@ -1380,54 +1380,54 @@ static char* NIM_CONST TMP5002[65] = {
 "rnSubstitutionReferences", 
 "rnSmiley", 
 "rnLeaf"};
-static TNimNode TMP4799[71];
+static TNimNode TMP4800[71];
 NTI296011.size = sizeof(Trstnode296011);
 NTI296011.kind = 18;
 NTI296011.base = 0;
 NTI296011.flags = 2;
-TMP5000[0] = &TMP4799[1];
+TMP5001[0] = &TMP4800[1];
 NTI296005.size = sizeof(NU8);
 NTI296005.kind = 14;
 NTI296005.base = 0;
 NTI296005.flags = 3;
-for (TMP5003 = 0; TMP5003 < 65; TMP5003++) {
-TMP4799[TMP5003+2].kind = 1;
-TMP4799[TMP5003+2].offset = TMP5003;
-TMP4799[TMP5003+2].name = TMP5002[TMP5003];
-TMP5001[TMP5003] = &TMP4799[TMP5003+2];
+for (TMP5004 = 0; TMP5004 < 65; TMP5004++) {
+TMP4800[TMP5004+2].kind = 1;
+TMP4800[TMP5004+2].offset = TMP5004;
+TMP4800[TMP5004+2].name = TMP5003[TMP5004];
+TMP5002[TMP5004] = &TMP4800[TMP5004+2];
 }
-TMP4799[67].len = 65; TMP4799[67].kind = 2; TMP4799[67].sons = &TMP5001[0];
-NTI296005.node = &TMP4799[67];
-TMP4799[1].kind = 1;
-TMP4799[1].offset = offsetof(Trstnode296011, kind);
-TMP4799[1].typ = (&NTI296005);
-TMP4799[1].name = "kind";
-TMP5000[1] = &TMP4799[68];
-TMP4799[68].kind = 1;
-TMP4799[68].offset = offsetof(Trstnode296011, text);
-TMP4799[68].typ = (&NTI149);
-TMP4799[68].name = "text";
-TMP5000[2] = &TMP4799[69];
-TMP4799[69].kind = 1;
-TMP4799[69].offset = offsetof(Trstnode296011, level);
-TMP4799[69].typ = (&NTI108);
-TMP4799[69].name = "level";
-TMP5000[3] = &TMP4799[70];
+TMP4800[67].len = 65; TMP4800[67].kind = 2; TMP4800[67].sons = &TMP5002[0];
+NTI296005.node = &TMP4800[67];
+TMP4800[1].kind = 1;
+TMP4800[1].offset = offsetof(Trstnode296011, kind);
+TMP4800[1].typ = (&NTI296005);
+TMP4800[1].name = "kind";
+TMP5001[1] = &TMP4800[68];
+TMP4800[68].kind = 1;
+TMP4800[68].offset = offsetof(Trstnode296011, text);
+TMP4800[68].typ = (&NTI149);
+TMP4800[68].name = "text";
+TMP5001[2] = &TMP4800[69];
+TMP4800[69].kind = 1;
+TMP4800[69].offset = offsetof(Trstnode296011, level);
+TMP4800[69].typ = (&NTI108);
+TMP4800[69].name = "level";
+TMP5001[3] = &TMP4800[70];
 NTI296009.size = sizeof(Trstnodeseq296009*);
 NTI296009.kind = 24;
 NTI296009.base = (&NTI296007);
 NTI296009.flags = 2;
-NTI296009.marker = TMP5004;
-TMP4799[70].kind = 1;
-TMP4799[70].offset = offsetof(Trstnode296011, sons);
-TMP4799[70].typ = (&NTI296009);
-TMP4799[70].name = "sons";
-TMP4799[0].len = 4; TMP4799[0].kind = 2; TMP4799[0].sons = &TMP5000[0];
-NTI296011.node = &TMP4799[0];
+NTI296009.marker = TMP5005;
+TMP4800[70].kind = 1;
+TMP4800[70].offset = offsetof(Trstnode296011, sons);
+TMP4800[70].typ = (&NTI296009);
+TMP4800[70].name = "sons";
+TMP4800[0].len = 4; TMP4800[0].kind = 2; TMP4800[0].sons = &TMP5001[0];
+NTI296011.node = &TMP4800[0];
 NTI296007.size = sizeof(Trstnode296011*);
 NTI296007.kind = 22;
 NTI296007.base = (&NTI296011);
 NTI296007.flags = 2;
-NTI296007.marker = TMP5005;
+NTI296007.marker = TMP5006;
 }
 

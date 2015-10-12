@@ -290,7 +290,7 @@ N_NIMCALL(Filestreamobj141692*, newfilestream_141758)(FILE* f);
 N_NIMCALL(void, TMP564)(void* p, NI op);
 N_NIMCALL(Filestreamobj141692*, newfilestream_141773)(NimStringDesc* filename, NU8 mode);
 N_NIMCALL(NIM_BOOL, open_13203)(FILE** f, NimStringDesc* filename, NU8 mode, NI bufsize);
-N_NIMCALL(void, TMP4254)(void* p, NI op);
+N_NIMCALL(void, TMP4255)(void* p, NI op);
 STRING_LITERAL(TMP552, "\015\012", 2);
 STRING_LITERAL(TMP553, "cannot read from stream", 23);
 STRING_LITERAL(TMP554, "", 0);
@@ -1247,7 +1247,7 @@ N_NIMCALL(Filestreamobj141692*, newfilestream_141773)(NimStringDesc* filename, N
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP4254)(void* p, NI op) {
+N_NIMCALL(void, TMP4255)(void* p, NI op) {
 	Streamobj141027* a;
 	a = (Streamobj141027*)p;
 }
@@ -1364,6 +1364,6 @@ NTI141690.marker = TMP564;
 NTI141025.size = sizeof(Streamobj141027*);
 NTI141025.kind = 22;
 NTI141025.base = (&NTI141027);
-NTI141025.marker = TMP4254;
+NTI141025.marker = TMP4255;
 }
 

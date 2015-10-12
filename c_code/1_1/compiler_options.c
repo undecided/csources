@@ -352,22 +352,22 @@ static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
 N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringDesc* a, NimStringDesc* b);
 NIM_CONST NU32 Checksoptions_156120 = 1022;
-STRING_LITERAL(TMP650, "", 0);
-STRING_LITERAL(TMP668, "nimcache", 8);
-STRING_LITERAL(TMP674, "*.nimble", 8);
-STRING_LITERAL(TMP676, "*.babel", 7);
-STRING_LITERAL(TMP679, "\015\012", 2);
-STRING_LITERAL(TMP684, "cannot create directory: ", 25);
-STRING_LITERAL(TMP685, "nim", 3);
-STRING_LITERAL(TMP691, "not (\'\\0\' == sep) ", 18);
-STRING_LITERAL(TMP695, "lib", 3);
-static NIM_CONST TY77659 TMP696 = {
+STRING_LITERAL(TMP651, "", 0);
+STRING_LITERAL(TMP669, "nimcache", 8);
+STRING_LITERAL(TMP675, "*.nimble", 8);
+STRING_LITERAL(TMP677, "*.babel", 7);
+STRING_LITERAL(TMP680, "\015\012", 2);
+STRING_LITERAL(TMP685, "cannot create directory: ", 25);
+STRING_LITERAL(TMP686, "nim", 3);
+STRING_LITERAL(TMP692, "not (\'\\0\' == sep) ", 18);
+STRING_LITERAL(TMP696, "lib", 3);
+static NIM_CONST TY77659 TMP697 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x43, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP698, "true", 4);
+STRING_LITERAL(TMP699, "true", 4);
 NU8 gidecmd_156115;
 NU32 goptions_156126;
 NU32 gglobaloptions_156128;
@@ -779,19 +779,19 @@ N_NIMCALL(NimStringDesc*, removetrailingdirsep_156418)(NimStringDesc* path) {
 	nimln(203, "options.nim");
 	{
 		NIM_BOOL LOC3;
-		NI TMP665;
 		NI TMP666;
+		NI TMP667;
 		LOC3 = 0;
 		LOC3 = (((NI) 0) < (path ? path->Sup.len : 0));
 		if (!(LOC3)) goto LA4;
-		TMP665 = subInt((path ? path->Sup.len : 0), ((NI) 1));
-		if ((NU)((NI)(TMP665)) > (NU)(path->Sup.len)) raiseIndexError();
-		LOC3 = ((NU8)(path->data[(NI)(TMP665)]) == (NU8)(92));
+		TMP666 = subInt((path ? path->Sup.len : 0), ((NI) 1));
+		if ((NU)((NI)(TMP666)) > (NU)(path->Sup.len)) raiseIndexError();
+		LOC3 = ((NU8)(path->data[(NI)(TMP666)]) == (NU8)(92));
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(204, "options.nim");
-		TMP666 = subInt((path ? path->Sup.len : 0), ((NI) 2));
-		result = copyStrLast(path, ((NI) 0), (NI)(TMP666));
+		TMP667 = subInt((path ? path->Sup.len : 0), ((NI) 2));
+		result = copyStrLast(path, ((NI) 0), (NI)(TMP667));
 	}
 	goto LA1;
 	LA5: ;
@@ -819,7 +819,7 @@ N_NIMCALL(NimStringDesc*, getgeneratedpath_156428)(void) {
 		NimStringDesc* LOC6;
 		LOC6 = 0;
 		LOC6 = shortendir_156407(gprojectpath_156235);
-		result = HEX2F_119492(LOC6, ((NimStringDesc*) &TMP668));
+		result = HEX2F_119492(LOC6, ((NimStringDesc*) &TMP669));
 	}
 	LA1: ;
 	popFrame();
@@ -899,7 +899,7 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 			{
 				nimln(225, "options.nim");
 				while (1) {
-					NI TMP673;
+					NI TMP674;
 					nimln(226, "options.nim");
 					current_156872 = nosparentDir(current_156872);
 					nimln(227, "options.nim");
@@ -922,8 +922,8 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 					}
 					LA12: ;
 					nimln(237, "options.nim");
-					TMP673 = addInt(parents, ((NI) 1));
-					parents = (NI)(TMP673);
+					TMP674 = addInt(parents, ((NI) 1));
+					parents = (NI)(TMP674);
 					{
 						NimStringDesc* file_156841;
 						NimStringDesc* HEX3Atmp_156855;
@@ -932,7 +932,7 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 						file_156841 = 0;
 						HEX3Atmp_156855 = 0;
 						nimln(238, "options.nim");
-						HEX3Atmp_156855 = HEX2F_119492(d_156831, ((NimStringDesc*) &TMP674));
+						HEX3Atmp_156855 = HEX2F_119492(d_156831, ((NimStringDesc*) &TMP675));
 						memset((void*)(&f_156858), 0, sizeof(f_156858));
 						res_156860 = 0;
 						nimln(1225, "os.nim");
@@ -1000,7 +1000,7 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 						file_156842 = 0;
 						HEX3Atmp_156863 = 0;
 						nimln(241, "options.nim");
-						HEX3Atmp_156863 = HEX2F_119492(d_156831, ((NimStringDesc*) &TMP676));
+						HEX3Atmp_156863 = HEX2F_119492(d_156831, ((NimStringDesc*) &TMP677));
 						memset((void*)(&f_156866), 0, sizeof(f_156866));
 						res_156868 = 0;
 						nimln(1225, "os.nim");
@@ -1067,7 +1067,7 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 	nimln(245, "options.nim");
 	{
 		if (!result == 0) goto LA62;
-		result = copyString(((NimStringDesc*) &TMP650));
+		result = copyString(((NimStringDesc*) &TMP651));
 	}
 	LA62: ;
 	{
@@ -1079,7 +1079,7 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 		{
 			nimln(225, "options.nim");
 			while (1) {
-				NI TMP677;
+				NI TMP678;
 				nimln(226, "options.nim");
 				current_156876 = nosparentDir(current_156876);
 				nimln(227, "options.nim");
@@ -1093,8 +1093,8 @@ N_NIMCALL(NimStringDesc*, getpackagename_156825)(NimStringDesc* path) {
 				nimln(248, "options.nim");
 				nstPut(packagecache_156601, d_156843, result);
 				nimln(249, "options.nim");
-				TMP677 = subInt(parents, ((NI) 1));
-				parents = (NI)(TMP677);
+				TMP678 = subInt(parents, ((NI) 1));
+				parents = (NI)(TMP678);
 				nimln(250, "options.nim");
 				{
 					if (!(parents <= ((NI) 0))) goto LA73;
@@ -1206,7 +1206,7 @@ static N_INLINE(void, writeln_157205)(FILE* f, NimStringDesc** x, NI xLen0) {
 		}
 	}
 	nimln(213, "sysio.nim");
-	write_13457(f, ((NimStringDesc*) &TMP679));
+	write_13457(f, ((NimStringDesc*) &TMP680));
 	popFrame();
 }
 
@@ -1257,12 +1257,12 @@ N_NIMCALL(NimStringDesc*, completegeneratedfilepath_157001)(NimStringDesc* f, NI
 	subdir = getgeneratedpath_156428();
 	nimln(293, "options.nim");
 	{
-		TSafePoint TMP680;
+		TSafePoint TMP681;
 		if (!createsubdir) goto LA4;
 		nimln(294, "options.nim");
-		pushSafePoint(&TMP680);
-		TMP680.status = setjmp(TMP680.context);
-		if (TMP680.status == 0) {
+		pushSafePoint(&TMP681);
+		TMP681.status = setjmp(TMP681.context);
+		if (TMP681.status == 0) {
 			nimln(295, "options.nim");
 			noscreateDir(subdir);
 			popSafePoint();
@@ -1273,12 +1273,12 @@ N_NIMCALL(NimStringDesc*, completegeneratedfilepath_157001)(NimStringDesc* f, NI
 			if (isObj(getCurrentException()->Sup.m_type, (&NTI3433))) {
 				TY157201 LOC9;
 				NimStringDesc* LOC10;
-				TMP680.status = 0;
+				TMP681.status = 0;
 				nimln(299, "options.nim");
 				memset((void*)LOC9, 0, sizeof(LOC9));
 				LOC10 = 0;
 				LOC10 = rawNewString(subdir->Sup.len + 25);
-appendString(LOC10, ((NimStringDesc*) &TMP684));
+appendString(LOC10, ((NimStringDesc*) &TMP685));
 appendString(LOC10, subdir);
 				LOC9[0] = LOC10;
 				writeln_157205(stdout, LOC9, 1);
@@ -1287,7 +1287,7 @@ appendString(LOC10, subdir);
 				popCurrentException();
 			}
 		}
-		if (TMP680.status != 0) reraiseException();
+		if (TMP681.status != 0) reraiseException();
 	}
 	LA4: ;
 	nimln(301, "options.nim");
@@ -1333,7 +1333,7 @@ N_NIMCALL(NimStringDesc*, rawfindfile_157280)(NimStringDesc* f) {
 		}
 	}
 	nimln(315, "options.nim");
-	result = copyString(((NimStringDesc*) &TMP650));
+	result = copyString(((NimStringDesc*) &TMP651));
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1375,7 +1375,7 @@ N_NIMCALL(NimStringDesc*, rawfindfile2_157306)(NimStringDesc* f) {
 		} LA2: ;
 	}
 	nimln(325, "options.nim");
-	result = copyString(((NimStringDesc*) &TMP650));
+	result = copyString(((NimStringDesc*) &TMP651));
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1426,7 +1426,7 @@ N_NIMCALL(NimStringDesc*, findmodule_157349)(NimStringDesc* modulename, NimStrin
 	nimfr("findModule", "options.nim")
 	result = 0;
 	nimln(348, "options.nim");
-	m = nosaddFileExt(modulename, ((NimStringDesc*) &TMP685));
+	m = nosaddFileExt(modulename, ((NimStringDesc*) &TMP686));
 	nimln(349, "options.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
 	nossplitFile(currentmodule, (&LOC1));
@@ -1474,20 +1474,20 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 N_NIMCALL(void, libcandidates_157409)(NimStringDesc* s, TY13606** dest) {
 	NI le;
 	NI ri;
-	NI TMP686;
+	NI TMP687;
 	nimfr("libCandidates", "options.nim")
 	nimln(355, "options.nim");
 	le = nsuFindChar(s, 40, ((NI) 0));
 	nimln(356, "options.nim");
-	TMP686 = addInt(le, ((NI) 1));
-	ri = nsuFindChar(s, 41, ((NI)chckRange((NI)(TMP686), ((NI) 0), ((NI) 2147483647))));
+	TMP687 = addInt(le, ((NI) 1));
+	ri = nsuFindChar(s, 41, ((NI)chckRange((NI)(TMP687), ((NI) 0), ((NI) 2147483647))));
 	nimln(357, "options.nim");
 	{
 		NIM_BOOL LOC3;
 		NimStringDesc* prefix;
-		NI TMP687;
-		NimStringDesc* suffix;
 		NI TMP688;
+		NimStringDesc* suffix;
+		NI TMP689;
 		LOC3 = 0;
 		LOC3 = (((NI) 0) <= le);
 		if (!(LOC3)) goto LA4;
@@ -1495,29 +1495,29 @@ N_NIMCALL(void, libcandidates_157409)(NimStringDesc* s, TY13606** dest) {
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(358, "options.nim");
-		TMP687 = subInt(le, ((NI) 1));
-		prefix = copyStrLast(s, ((NI) 0), (NI)(TMP687));
+		TMP688 = subInt(le, ((NI) 1));
+		prefix = copyStrLast(s, ((NI) 0), (NI)(TMP688));
 		nimln(359, "options.nim");
-		TMP688 = addInt(ri, ((NI) 1));
-		suffix = copyStr(s, (NI)(TMP688));
+		TMP689 = addInt(ri, ((NI) 1));
+		suffix = copyStr(s, (NI)(TMP689));
 		{
 			NimStringDesc* middle_157419;
 			NimStringDesc* HEX3Atmp_157431;
-			NI TMP689;
 			NI TMP690;
+			NI TMP691;
 			NI last_157435;
 			middle_157419 = 0;
 			HEX3Atmp_157431 = 0;
 			nimln(360, "options.nim");
-			TMP689 = addInt(le, ((NI) 1));
-			TMP690 = subInt(ri, ((NI) 1));
-			HEX3Atmp_157431 = copyStrLast(s, (NI)(TMP689), (NI)(TMP690));
+			TMP690 = addInt(le, ((NI) 1));
+			TMP691 = subInt(ri, ((NI) 1));
+			HEX3Atmp_157431 = copyStrLast(s, (NI)(TMP690), (NI)(TMP691));
 			nimln(279, "strutils.nim");
 			last_157435 = ((NI) 0);
 			nimln(280, "strutils.nim");
 			{
 				if (!NIM_FALSE) goto LA10;
-				failedassertimpl_88817(((NimStringDesc*) &TMP691));
+				failedassertimpl_88817(((NimStringDesc*) &TMP692));
 			}
 			LA10: ;
 			nimln(281, "strutils.nim");
@@ -1527,9 +1527,9 @@ N_NIMCALL(void, libcandidates_157409)(NimStringDesc* s, TY13606** dest) {
 					nimln(283, "strutils.nim");
 					while (1) {
 						NI first_157437;
-						NI TMP693;
-						NimStringDesc* LOC22;
 						NI TMP694;
+						NimStringDesc* LOC22;
+						NI TMP695;
 						if (!(last_157435 <= (HEX3Atmp_157431 ? HEX3Atmp_157431->Sup.len : 0))) goto LA17;
 						nimln(284, "strutils.nim");
 						first_157437 = last_157435;
@@ -1537,7 +1537,7 @@ N_NIMCALL(void, libcandidates_157409)(NimStringDesc* s, TY13606** dest) {
 							nimln(285, "strutils.nim");
 							while (1) {
 								NIM_BOOL LOC20;
-								NI TMP692;
+								NI TMP693;
 								LOC20 = 0;
 								LOC20 = (last_157435 < (HEX3Atmp_157431 ? HEX3Atmp_157431->Sup.len : 0));
 								if (!(LOC20)) goto LA21;
@@ -1545,13 +1545,13 @@ N_NIMCALL(void, libcandidates_157409)(NimStringDesc* s, TY13606** dest) {
 								LOC20 = !(((NU8)(HEX3Atmp_157431->data[last_157435]) == (NU8)(124)));
 								LA21: ;
 								if (!LOC20) goto LA19;
-								TMP692 = addInt(last_157435, ((NI) 1));
-								last_157435 = (NI)(TMP692);
+								TMP693 = addInt(last_157435, ((NI) 1));
+								last_157435 = (NI)(TMP693);
 							} LA19: ;
 						}
 						nimln(286, "strutils.nim");
-						TMP693 = subInt(last_157435, ((NI) 1));
-						middle_157419 = copyStrLast(HEX3Atmp_157431, first_157437, (NI)(TMP693));
+						TMP694 = subInt(last_157435, ((NI) 1));
+						middle_157419 = copyStrLast(HEX3Atmp_157431, first_157437, (NI)(TMP694));
 						nimln(361, "options.nim");
 						LOC22 = 0;
 						LOC22 = rawNewString(prefix->Sup.len + middle_157419->Sup.len + suffix->Sup.len + 0);
@@ -1560,8 +1560,8 @@ appendString(LOC22, middle_157419);
 appendString(LOC22, suffix);
 						libcandidates_157409(LOC22, dest);
 						nimln(287, "strutils.nim");
-						TMP694 = addInt(last_157435, ((NI) 1));
-						last_157435 = (NI)(TMP694);
+						TMP695 = addInt(last_157435, ((NI) 1));
+						last_157435 = (NI)(TMP695);
 					} LA17: ;
 				}
 			}
@@ -1592,7 +1592,7 @@ N_NIMCALL(NimStringDesc*, canondynlibname_157459)(NimStringDesc* s) {
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = nsuStartsWith(s, ((NimStringDesc*) &TMP695));
+		LOC3 = nsuStartsWith(s, ((NimStringDesc*) &TMP696));
 		if (!LOC3) goto LA4;
 		start = ((NI) 3);
 	}
@@ -1603,14 +1603,14 @@ N_NIMCALL(NimStringDesc*, canondynlibname_157459)(NimStringDesc* s) {
 	}
 	LA1: ;
 	nimln(367, "options.nim");
-	ende = nsuFindCharSet(s, TMP696, ((NI) 0));
+	ende = nsuFindCharSet(s, TMP697, ((NI) 0));
 	nimln(368, "options.nim");
 	{
-		NI TMP697;
+		NI TMP698;
 		if (!(((NI) 0) <= ende)) goto LA9;
 		nimln(369, "options.nim");
-		TMP697 = subInt(ende, ((NI) 1));
-		result = copyStrLast(s, start, (NI)(TMP697));
+		TMP698 = subInt(ende, ((NI) 1));
+		result = copyStrLast(s, start, (NI)(TMP698));
 	}
 	goto LA7;
 	LA9: ;
@@ -1629,7 +1629,7 @@ N_NIMCALL(void, incldynliboverride_157472)(NimStringDesc* lib) {
 	nimln(374, "options.nim");
 	LOC1 = 0;
 	LOC1 = canondynlibname_157459(lib);
-	nstPut(gdlloverrides_156232, LOC1, ((NimStringDesc*) &TMP698));
+	nstPut(gdlloverrides_156232, LOC1, ((NimStringDesc*) &TMP699));
 	popFrame();
 }
 
@@ -1675,46 +1675,46 @@ N_NIMCALL(NI, binarystrsearch_157491)(NimStringDesc** x, NI xLen0, NimStringDesc
 	NI result;
 	NI a;
 	NI b;
-	NI TMP699;
+	NI TMP700;
 	nimfr("binaryStrSearch", "options.nim")
 {	result = 0;
 	nimln(380, "options.nim");
 	a = ((NI) 0);
 	nimln(381, "options.nim");
-	TMP699 = subInt(xLen0, ((NI) 1));
-	b = (NI)(TMP699);
+	TMP700 = subInt(xLen0, ((NI) 1));
+	b = (NI)(TMP700);
 	{
 		nimln(382, "options.nim");
 		while (1) {
 			NI mid;
-			NI TMP700;
 			NI TMP701;
+			NI TMP702;
 			NI c;
 			if (!(a <= b)) goto LA2;
 			nimln(383, "options.nim");
-			TMP700 = addInt(a, b);
-			TMP701 = divInt((NI)(TMP700), ((NI) 2));
-			mid = (NI)(TMP701);
+			TMP701 = addInt(a, b);
+			TMP702 = divInt((NI)(TMP701), ((NI) 2));
+			mid = (NI)(TMP702);
 			nimln(384, "options.nim");
 			if ((NU)(mid) >= (NU)(xLen0)) raiseIndexError();
 			c = nsuCmpIgnoreCase(x[mid], y);
 			nimln(385, "options.nim");
 			{
-				NI TMP702;
+				NI TMP703;
 				if (!(c < ((NI) 0))) goto LA5;
 				nimln(386, "options.nim");
-				TMP702 = addInt(mid, ((NI) 1));
-				a = (NI)(TMP702);
+				TMP703 = addInt(mid, ((NI) 1));
+				a = (NI)(TMP703);
 			}
 			goto LA3;
 			LA5: ;
 			{
-				NI TMP703;
+				NI TMP704;
 				nimln(387, "options.nim");
 				if (!(((NI) 0) < c)) goto LA8;
 				nimln(388, "options.nim");
-				TMP703 = subInt(mid, ((NI) 1));
-				b = (NI)(TMP703);
+				TMP704 = subInt(mid, ((NI) 1));
+				b = (NI)(TMP704);
 			}
 			goto LA3;
 			LA8: ;
@@ -1754,21 +1754,21 @@ NIM_EXTERNC N_NOINLINE(void, compiler_optionsInit)(void) {
 	gselectedgc_156131 = ((NU8) 3);
 	nimln(106, "options.nim");
 	LOC1 = 0;
-	LOC1 = outfile_156134; outfile_156134 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC1 = outfile_156134; outfile_156134 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(107, "options.nim");
 	LOC2 = 0;
-	LOC2 = docseesrcurl_156135; docseesrcurl_156135 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC2 = docseesrcurl_156135; docseesrcurl_156135 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC2) nimGCunrefNoCycle(LOC2);
 	nimln(109, "options.nim");
 	LOC3 = 0;
-	LOC3 = headerfile_156136; headerfile_156136 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC3 = headerfile_156136; headerfile_156136 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC3) nimGCunrefNoCycle(LOC3);
 	nimln(110, "options.nim");
 	gverbosity_156137 = ((NI) 1);
 	nimln(113, "options.nim");
 	LOC4 = 0;
-	LOC4 = gevalexpr_156140; gevalexpr_156140 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC4 = gevalexpr_156140; gevalexpr_156140 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC4) nimGCunrefNoCycle(LOC4);
 	nimln(116, "options.nim");
 	isserving_156143 = NIM_FALSE;
@@ -1780,27 +1780,27 @@ NIM_EXTERNC N_NOINLINE(void, compiler_optionsInit)(void) {
 	asgnRef((void**) (&gdlloverrides_156232), nstnewStringTable(((NU8) 1)));
 	nimln(148, "options.nim");
 	LOC5 = 0;
-	LOC5 = libpath_156233; libpath_156233 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC5 = libpath_156233; libpath_156233 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC5) nimGCunrefNoCycle(LOC5);
 	nimln(149, "options.nim");
 	LOC6 = 0;
-	LOC6 = gprojectname_156234; gprojectname_156234 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC6 = gprojectname_156234; gprojectname_156234 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC6) nimGCunrefNoCycle(LOC6);
 	nimln(150, "options.nim");
 	LOC7 = 0;
-	LOC7 = gprojectpath_156235; gprojectpath_156235 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC7 = gprojectpath_156235; gprojectpath_156235 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC7) nimGCunrefNoCycle(LOC7);
 	nimln(151, "options.nim");
 	LOC8 = 0;
-	LOC8 = gprojectfull_156236; gprojectfull_156236 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC8 = gprojectfull_156236; gprojectfull_156236 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC8) nimGCunrefNoCycle(LOC8);
 	nimln(153, "options.nim");
 	LOC9 = 0;
-	LOC9 = nimcachedir_156238; nimcachedir_156238 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC9 = nimcachedir_156238; nimcachedir_156238 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC9) nimGCunrefNoCycle(LOC9);
 	nimln(154, "options.nim");
 	LOC10 = 0;
-	LOC10 = command_156239; command_156239 = copyStringRC1(((NimStringDesc*) &TMP650));
+	LOC10 = command_156239; command_156239 = copyStringRC1(((NimStringDesc*) &TMP651));
 	if (LOC10) nimGCunrefNoCycle(LOC10);
 	nimln(155, "options.nim");
 	if (commandargs_156257) nimGCunrefNoCycle(commandargs_156257);
@@ -1819,9 +1819,9 @@ NIM_EXTERNC N_NOINLINE(void, compiler_optionsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_optionsDatInit)(void) {
-static TNimNode* TMP2583[22];
-NI TMP2585;
-static char* NIM_CONST TMP2584[22] = {
+static TNimNode* TMP2584[22];
+NI TMP2586;
+static char* NIM_CONST TMP2585[22] = {
 "optNone", 
 "optObjCheck", 
 "optFieldCheck", 
@@ -1844,9 +1844,9 @@ static char* NIM_CONST TMP2584[22] = {
 "optProfiler", 
 "optImplicitStatic", 
 "optPatterns"};
-static TNimNode* TMP3948[30];
-NI TMP3950;
-static char* NIM_CONST TMP3949[30] = {
+static TNimNode* TMP3949[30];
+NI TMP3951;
+static char* NIM_CONST TMP3950[30] = {
 "gloptNone", 
 "optForceFullMake", 
 "optDeadCodeElim", 
@@ -1877,9 +1877,9 @@ static char* NIM_CONST TMP3949[30] = {
 "optEmbedOrigSrc", 
 "optIdeDebug", 
 "optIdeTerse"};
-static TNimNode* TMP3966[20];
-NI TMP3968;
-static char* NIM_CONST TMP3967[20] = {
+static TNimNode* TMP3967[20];
+NI TMP3969;
+static char* NIM_CONST TMP3968[20] = {
 "cmdNone", 
 "cmdCompileToC", 
 "cmdCompileToCpp", 
@@ -1905,13 +1905,13 @@ NTI156014.size = sizeof(NU8);
 NTI156014.kind = 14;
 NTI156014.base = 0;
 NTI156014.flags = 3;
-for (TMP2585 = 0; TMP2585 < 22; TMP2585++) {
-TMP470[TMP2585+0].kind = 1;
-TMP470[TMP2585+0].offset = TMP2585;
-TMP470[TMP2585+0].name = TMP2584[TMP2585];
-TMP2583[TMP2585] = &TMP470[TMP2585+0];
+for (TMP2586 = 0; TMP2586 < 22; TMP2586++) {
+TMP470[TMP2586+0].kind = 1;
+TMP470[TMP2586+0].offset = TMP2586;
+TMP470[TMP2586+0].name = TMP2585[TMP2586];
+TMP2584[TMP2586] = &TMP470[TMP2586+0];
 }
-TMP470[22].len = 22; TMP470[22].kind = 2; TMP470[22].sons = &TMP2583[0];
+TMP470[22].len = 22; TMP470[22].kind = 2; TMP470[22].sons = &TMP2584[0];
 NTI156014.node = &TMP470[22];
 NTI156121.size = sizeof(NU32);
 NTI156121.kind = 19;
@@ -1923,25 +1923,25 @@ NTI156018.size = sizeof(NU8);
 NTI156018.kind = 14;
 NTI156018.base = 0;
 NTI156018.flags = 3;
-for (TMP3950 = 0; TMP3950 < 30; TMP3950++) {
-TMP470[TMP3950+24].kind = 1;
-TMP470[TMP3950+24].offset = TMP3950;
-TMP470[TMP3950+24].name = TMP3949[TMP3950];
-TMP3948[TMP3950] = &TMP470[TMP3950+24];
+for (TMP3951 = 0; TMP3951 < 30; TMP3951++) {
+TMP470[TMP3951+24].kind = 1;
+TMP470[TMP3951+24].offset = TMP3951;
+TMP470[TMP3951+24].name = TMP3950[TMP3951];
+TMP3949[TMP3951] = &TMP470[TMP3951+24];
 }
-TMP470[54].len = 30; TMP470[54].kind = 2; TMP470[54].sons = &TMP3948[0];
+TMP470[54].len = 30; TMP470[54].kind = 2; TMP470[54].sons = &TMP3949[0];
 NTI156018.node = &TMP470[54];
 NTI156022.size = sizeof(NU8);
 NTI156022.kind = 14;
 NTI156022.base = 0;
 NTI156022.flags = 3;
-for (TMP3968 = 0; TMP3968 < 20; TMP3968++) {
-TMP470[TMP3968+55].kind = 1;
-TMP470[TMP3968+55].offset = TMP3968;
-TMP470[TMP3968+55].name = TMP3967[TMP3968];
-TMP3966[TMP3968] = &TMP470[TMP3968+55];
+for (TMP3969 = 0; TMP3969 < 20; TMP3969++) {
+TMP470[TMP3969+55].kind = 1;
+TMP470[TMP3969+55].offset = TMP3969;
+TMP470[TMP3969+55].name = TMP3968[TMP3969];
+TMP3967[TMP3969] = &TMP470[TMP3969+55];
 }
-TMP470[75].len = 20; TMP470[75].kind = 2; TMP470[75].sons = &TMP3966[0];
+TMP470[75].len = 20; TMP470[75].kind = 2; TMP470[75].sons = &TMP3967[0];
 NTI156022.node = &TMP470[75];
 }
 

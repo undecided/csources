@@ -415,19 +415,19 @@ N_NIMCALL(NI32, strcrc32_171045)(NimStringDesc* s) {
 	{
 		NI i_171516;
 		NI HEX3Atmp_171518;
-		NI TMP1336;
+		NI TMP1337;
 		NI res_171521;
 		i_171516 = 0;
 		HEX3Atmp_171518 = 0;
 		nimln(86, "crc.nim");
-		TMP1336 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_171518 = (NI)(TMP1336);
+		TMP1337 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_171518 = (NI)(TMP1337);
 		nimln(1598, "system.nim");
 		res_171521 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP1337;
+				NI TMP1338;
 				if (!(res_171521 <= HEX3Atmp_171518)) goto LA3;
 				nimln(1600, "system.nim");
 				i_171516 = res_171521;
@@ -435,8 +435,8 @@ N_NIMCALL(NI32, strcrc32_171045)(NimStringDesc* s) {
 				if ((NU)(i_171516) > (NU)(s->Sup.len)) raiseIndexError();
 				result = updatecrc32_171031(s->data[i_171516], result);
 				nimln(1614, "system.nim");
-				TMP1337 = addInt(res_171521, ((NI) 1));
-				res_171521 = (NI)(TMP1337);
+				TMP1338 = addInt(res_171521, ((NI) 1));
+				res_171521 = (NI)(TMP1338);
 			} LA3: ;
 		}
 	}
@@ -453,19 +453,19 @@ N_NIMCALL(NI32, HEX3EHEX3C_171540)(NI32 c, NimStringDesc* s) {
 	{
 		NI i_171555;
 		NI HEX3Atmp_171557;
-		NI TMP1338;
+		NI TMP1339;
 		NI res_171560;
 		i_171555 = 0;
 		HEX3Atmp_171557 = 0;
 		nimln(90, "crc.nim");
-		TMP1338 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_171557 = (NI)(TMP1338);
+		TMP1339 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_171557 = (NI)(TMP1339);
 		nimln(1598, "system.nim");
 		res_171560 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP1339;
+				NI TMP1340;
 				if (!(res_171560 <= HEX3Atmp_171557)) goto LA3;
 				nimln(1600, "system.nim");
 				i_171555 = res_171560;
@@ -473,8 +473,8 @@ N_NIMCALL(NI32, HEX3EHEX3C_171540)(NI32 c, NimStringDesc* s) {
 				if ((NU)(i_171555) > (NU)(s->Sup.len)) raiseIndexError();
 				result = updatecrc32_171031(s->data[i_171555], result);
 				nimln(1619, "system.nim");
-				TMP1339 = addInt(res_171560, ((NI) 1));
-				res_171560 = (NI)(TMP1339);
+				TMP1340 = addInt(res_171560, ((NI) 1));
+				res_171560 = (NI)(TMP1340);
 			} LA3: ;
 		}
 	}
@@ -494,19 +494,19 @@ N_NIMCALL(NI32, crcfrombuf_171038)(void* buf, NI length) {
 	{
 		NI i_171606;
 		NI HEX3Atmp_171609;
-		NI TMP1340;
+		NI TMP1341;
 		NI res_171612;
 		i_171606 = 0;
 		HEX3Atmp_171609 = 0;
 		nimln(99, "crc.nim");
-		TMP1340 = subInt(length, ((NI) 1));
-		HEX3Atmp_171609 = (NI)(TMP1340);
+		TMP1341 = subInt(length, ((NI) 1));
+		HEX3Atmp_171609 = (NI)(TMP1341);
 		nimln(1598, "system.nim");
 		res_171612 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP1341;
+				NI TMP1342;
 				if (!(res_171612 <= HEX3Atmp_171609)) goto LA3;
 				nimln(1600, "system.nim");
 				i_171606 = res_171612;
@@ -514,8 +514,8 @@ N_NIMCALL(NI32, crcfrombuf_171038)(void* buf, NI length) {
 				if ((NU)(i_171606) > (NU)(10000000)) raiseIndexError();
 				result = updatecrc32_171024(p[(i_171606)- 0], result);
 				nimln(1614, "system.nim");
-				TMP1341 = addInt(res_171612, ((NI) 1));
-				res_171612 = (NI)(TMP1341);
+				TMP1342 = addInt(res_171612, ((NI) 1));
+				res_171612 = (NI)(TMP1342);
 			} LA3: ;
 		}
 	}
@@ -556,19 +556,19 @@ N_NIMCALL(NI32, crcfromfile_171051)(NimStringDesc* filename) {
 			{
 				NI i_171654;
 				NI HEX3Atmp_171659;
-				NI TMP1342;
+				NI TMP1343;
 				NI res_171662;
 				i_171654 = 0;
 				HEX3Atmp_171659 = 0;
 				nimln(113, "crc.nim");
-				TMP1342 = subInt(readbytes, ((NI) 1));
-				HEX3Atmp_171659 = (NI)(TMP1342);
+				TMP1343 = subInt(readbytes, ((NI) 1));
+				HEX3Atmp_171659 = (NI)(TMP1343);
 				nimln(1598, "system.nim");
 				res_171662 = ((NI) 0);
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP1343;
+						NI TMP1344;
 						if (!(res_171662 <= HEX3Atmp_171659)) goto LA10;
 						nimln(1600, "system.nim");
 						i_171654 = res_171662;
@@ -576,8 +576,8 @@ N_NIMCALL(NI32, crcfromfile_171051)(NimStringDesc* filename) {
 						if ((NU)(i_171654) > (NU)(10000000)) raiseIndexError();
 						result = updatecrc32_171024(p[(i_171654)- 0], result);
 						nimln(1614, "system.nim");
-						TMP1343 = addInt(res_171662, ((NI) 1));
-						res_171662 = (NI)(TMP1343);
+						TMP1344 = addInt(res_171662, ((NI) 1));
+						res_171662 = (NI)(TMP1344);
 					} LA10: ;
 				}
 			}
@@ -623,7 +623,7 @@ N_NIMCALL(NI32, updateadler32_171057)(NI32 adler, void* buf, NI length) {
 	{
 		nimln(136, "crc.nim");
 		while (1) {
-			NI TMP1344;
+			NI TMP1345;
 			if (!(((NI) 0) < L)) goto LA2;
 			nimln(137, "crc.nim");
 			{
@@ -638,24 +638,24 @@ N_NIMCALL(NI32, updateadler32_171057)(NI32 adler, void* buf, NI length) {
 			}
 			LA3: ;
 			nimln(139, "crc.nim");
-			TMP1344 = subInt(L, k);
-			L = (NI)(TMP1344);
+			TMP1345 = subInt(L, k);
+			L = (NI)(TMP1345);
 			{
 				nimln(140, "crc.nim");
 				while (1) {
-					NI TMP1345;
 					NI TMP1346;
+					NI TMP1347;
 					if (!(((NI) 0) < k)) goto LA9;
 					nimln(141, "crc.nim");
 					s1 = (NI32)((NU32)(s1) + (NU32)(((NI32) (((NU8)(((NCSTRING) (buf))[b]))))));
 					nimln(142, "crc.nim");
 					s2 = (NI32)((NU32)(s2) + (NU32)(s1));
 					nimln(143, "crc.nim");
-					TMP1345 = addInt(b, ((NI) 1));
-					b = (NI)(TMP1345);
+					TMP1346 = addInt(b, ((NI) 1));
+					b = (NI)(TMP1346);
 					nimln(144, "crc.nim");
-					TMP1346 = subInt(k, ((NI) 1));
-					k = (NI)(TMP1346);
+					TMP1347 = subInt(k, ((NI) 1));
+					k = (NI)(TMP1347);
 				} LA9: ;
 			}
 			nimln(145, "crc.nim");

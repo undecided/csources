@@ -272,10 +272,10 @@ N_NIMCALL(void, prunesocketset_512846)(TY512647** s, fd_set* fd);
 N_NIMCALL(TGenericSeq*, setLengthSeq)(TGenericSeq* seq, NI elemsize, NI newlen);
 N_NIMCALL(NI, select_512913)(TY512647** readfds, NI timeout);
 N_NIMCALL(NI, selectwrite_512970)(TY512647** writefds, NI timeout);
-N_NIMCALL(void, TMP10665)(void* p, NI op);
-STRING_LITERAL(TMP10617, "Service not found.", 18);
-STRING_LITERAL(TMP10618, "unknown h_addrtype", 18);
-STRING_LITERAL(TMP10624, "len(a) == L seq modified while iterating over it", 48);
+N_NIMCALL(void, TMP10666)(void* p, NI op);
+STRING_LITERAL(TMP10618, "Service not found.", 18);
+STRING_LITERAL(TMP10619, "unknown h_addrtype", 18);
+STRING_LITERAL(TMP10625, "len(a) == L seq modified while iterating over it", 48);
 int osinvalidsocket_509651;
 extern TFrame* frameptr_17042;
 extern TNimType NTI116812; /* ref OSError */
@@ -674,7 +674,7 @@ N_NIMCALL(void, getservbyname_511027)(NimStringDesc* name, NimStringDesc* proto,
 		(*e_511216).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_511216).Sup.Sup.message; (*e_511216).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10617));
+		LOC5 = (*e_511216).Sup.Sup.message; (*e_511216).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10618));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(246, "rawsockets.nim");
 		raiseException((Exception*)e_511216, "OSError");
@@ -731,7 +731,7 @@ N_NIMCALL(void, getservbyport_511233)(NU16 port, NimStringDesc* proto, Servent50
 		(*e_511416).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC5 = 0;
-		LOC5 = (*e_511416).Sup.Sup.message; (*e_511416).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10617));
+		LOC5 = (*e_511416).Sup.Sup.message; (*e_511416).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10618));
 		if (LOC5) nimGCunrefNoCycle(LOC5);
 		nimln(262, "rawsockets.nim");
 		raiseException((Exception*)e_511416, "OSError");
@@ -803,7 +803,7 @@ N_NIMCALL(void, gethostbyaddr_511433)(NimStringDesc* ip, Hostent509612* Result) 
 		(*e_511803).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC14 = 0;
-		LOC14 = (*e_511803).Sup.Sup.message; (*e_511803).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10618));
+		LOC14 = (*e_511803).Sup.Sup.message; (*e_511803).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10619));
 		if (LOC14) nimGCunrefNoCycle(LOC14);
 		nimln(293, "rawsockets.nim");
 		raiseException((Exception*)e_511803, "OSError");
@@ -859,7 +859,7 @@ N_NIMCALL(void, gethostbyname_511824)(NimStringDesc* name, Hostent509612* Result
 		(*e_512203).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC14 = 0;
-		LOC14 = (*e_512203).Sup.Sup.message; (*e_512203).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10618));
+		LOC14 = (*e_512203).Sup.Sup.message; (*e_512203).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10619));
 		if (LOC14) nimGCunrefNoCycle(LOC14);
 		nimln(314, "rawsockets.nim");
 		raiseException((Exception*)e_512203, "OSError");
@@ -1062,21 +1062,21 @@ N_NIMCALL(struct timeval, timevalfrommilliseconds_512628)(NI timeout) {
 	nimln(369, "rawsockets.nim");
 	{
 		NI seconds;
-		NI TMP10619;
 		NI TMP10620;
 		NI TMP10621;
 		NI TMP10622;
+		NI TMP10623;
 		if (!!((timeout == ((NI) -1)))) goto LA3;
 		nimln(370, "rawsockets.nim");
-		TMP10619 = divInt(timeout, ((NI) 1000));
-		seconds = (NI)(TMP10619);
+		TMP10620 = divInt(timeout, ((NI) 1000));
+		seconds = (NI)(TMP10620);
 		nimln(371, "rawsockets.nim");
 		result.tv_sec = ((NI) (((NI32)chckRange(seconds, ((NI32) (-2147483647 -1)), ((NI32) 2147483647)))));
 		nimln(372, "rawsockets.nim");
-		TMP10620 = mulInt(seconds, ((NI) 1000));
-		TMP10621 = subInt(timeout, (NI)(TMP10620));
-		TMP10622 = mulInt((NI)(TMP10621), ((NI) 1000));
-		result.tv_usec = ((NI) (((NI32)chckRange((NI)(TMP10622), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)))));
+		TMP10621 = mulInt(seconds, ((NI) 1000));
+		TMP10622 = subInt(timeout, (NI)(TMP10621));
+		TMP10623 = mulInt((NI)(TMP10622), ((NI) 1000));
+		result.tv_usec = ((NI) (((NI32)chckRange((NI)(TMP10623), ((NI32) (-2147483647 -1)), ((NI32) 2147483647)))));
 	}
 	LA3: ;
 	popFrame();
@@ -1119,7 +1119,7 @@ N_NIMCALL(void, createfdset_512643)(fd_set* fd, TY512647* s, NI* m) {
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP10623;
+				NI TMP10624;
 				if (!(i_512828 < L_512830)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_512828) >= (NU)(s->Sup.len)) raiseIndexError();
@@ -1129,12 +1129,12 @@ N_NIMCALL(void, createfdset_512643)(fd_set* fd, TY512647* s, NI* m) {
 				nimln(378, "rawsockets.nim");
 				FD_SET(i_512811, fd);
 				nimln(3088, "system.nim");
-				TMP10623 = addInt(i_512828, ((NI) 1));
-				i_512828 = (NI)(TMP10623);
+				TMP10624 = addInt(i_512828, ((NI) 1));
+				i_512828 = (NI)(TMP10624);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((s ? s->Sup.len : 0) == L_512830))) goto LA6;
-					failedassertimpl_87017(((NimStringDesc*) &TMP10624));
+					failedassertimpl_87017(((NimStringDesc*) &TMP10625));
 				}
 				LA6: ;
 			} LA3: ;
@@ -1158,28 +1158,28 @@ N_NIMCALL(void, prunesocketset_512846)(TY512647** s, fd_set* fd) {
 			nimln(384, "rawsockets.nim");
 			{
 				int LOC5;
-				NI TMP10625;
 				NI TMP10626;
+				NI TMP10627;
 				if ((NU)(i) >= (NU)((*s)->Sup.len)) raiseIndexError();
 				LOC5 = 0;
 				LOC5 = FD_ISSET((*s)->data[i], fd);
 				if (!(LOC5 == ((NI32) 0))) goto LA6;
 				nimln(385, "rawsockets.nim");
 				if ((NU)(i) >= (NU)((*s)->Sup.len)) raiseIndexError();
-				TMP10625 = subInt(L, ((NI) 1));
-				if ((NU)((NI)(TMP10625)) >= (NU)((*s)->Sup.len)) raiseIndexError();
-				(*s)->data[i] = (*s)->data[(NI)(TMP10625)];
-				nimln(386, "rawsockets.nim");
 				TMP10626 = subInt(L, ((NI) 1));
-				L = (NI)(TMP10626);
+				if ((NU)((NI)(TMP10626)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+				(*s)->data[i] = (*s)->data[(NI)(TMP10626)];
+				nimln(386, "rawsockets.nim");
+				TMP10627 = subInt(L, ((NI) 1));
+				L = (NI)(TMP10627);
 			}
 			goto LA3;
 			LA6: ;
 			{
-				NI TMP10627;
+				NI TMP10628;
 				nimln(388, "rawsockets.nim");
-				TMP10627 = addInt(i, ((NI) 1));
-				i = (NI)(TMP10627);
+				TMP10628 = addInt(i, ((NI) 1));
+				i = (NI)(TMP10628);
 			}
 			LA3: ;
 		} LA2: ;
@@ -1205,24 +1205,24 @@ N_NIMCALL(NI, select_512913)(TY512647** readfds, NI timeout) {
 	createfdset_512643((&rd), (*readfds), (&m));
 	nimln(405, "rawsockets.nim");
 	{
-		NI TMP10628;
+		NI TMP10629;
 		int LOC5;
 		if (!!((timeout == ((NI) -1)))) goto LA3;
 		nimln(406, "rawsockets.nim");
-		TMP10628 = addInt(m, ((NI) 1));
+		TMP10629 = addInt(m, ((NI) 1));
 		LOC5 = 0;
-		LOC5 = select(((int)chckRange((NI)(TMP10628), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, (&tv));
+		LOC5 = select(((int)chckRange((NI)(TMP10629), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, (&tv));
 		result = ((NI) (LOC5));
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP10629;
+		NI TMP10630;
 		int LOC7;
 		nimln(408, "rawsockets.nim");
-		TMP10629 = addInt(m, ((NI) 1));
+		TMP10630 = addInt(m, ((NI) 1));
 		LOC7 = 0;
-		LOC7 = select(((int)chckRange((NI)(TMP10629), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, NIM_NIL);
+		LOC7 = select(((int)chckRange((NI)(TMP10630), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, NIM_NIL);
 		result = ((NI) (LOC7));
 	}
 	LA1: ;
@@ -1248,24 +1248,24 @@ N_NIMCALL(NI, selectwrite_512970)(TY512647** writefds, NI timeout) {
 	createfdset_512643((&wr), (*writefds), (&m));
 	nimln(427, "rawsockets.nim");
 	{
-		NI TMP10630;
+		NI TMP10631;
 		int LOC5;
 		if (!!((timeout == ((NI) -1)))) goto LA3;
 		nimln(428, "rawsockets.nim");
-		TMP10630 = addInt(m, ((NI) 1));
+		TMP10631 = addInt(m, ((NI) 1));
 		LOC5 = 0;
-		LOC5 = select(((int)chckRange((NI)(TMP10630), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, (&wr), NIM_NIL, (&tv));
+		LOC5 = select(((int)chckRange((NI)(TMP10631), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, (&wr), NIM_NIL, (&tv));
 		result = ((NI) (LOC5));
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP10631;
+		NI TMP10632;
 		int LOC7;
 		nimln(430, "rawsockets.nim");
-		TMP10631 = addInt(m, ((NI) 1));
+		TMP10632 = addInt(m, ((NI) 1));
 		LOC7 = 0;
-		LOC7 = select(((int)chckRange((NI)(TMP10631), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, (&wr), NIM_NIL, NIM_NIL);
+		LOC7 = select(((int)chckRange((NI)(TMP10632), ((int) (-2147483647 -1)), ((int) 2147483647))), NIM_NIL, (&wr), NIM_NIL, NIM_NIL);
 		result = ((NI) (LOC7));
 	}
 	LA1: ;
@@ -1274,7 +1274,7 @@ N_NIMCALL(NI, selectwrite_512970)(TY512647** writefds, NI timeout) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP10665)(void* p, NI op) {
+N_NIMCALL(void, TMP10666)(void* p, NI op) {
 	TY512647* a;
 	NI LOC1;
 	a = (TY512647*)p;
@@ -1294,6 +1294,6 @@ NTI512647.size = sizeof(TY512647*);
 NTI512647.kind = 24;
 NTI512647.base = (&NTI5811);
 NTI512647.flags = 2;
-NTI512647.marker = TMP10665;
+NTI512647.marker = TMP10666;
 }
 
