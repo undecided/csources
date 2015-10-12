@@ -74,8 +74,8 @@ N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI cap);
 N_NIMCALL(NIM_BOOL, readline_13481)(FILE* f, NimStringDesc** line);
 N_NIMCALL(NI, nsuParseInt)(NimStringDesc* s);
-STRING_LITERAL(TMP2552, "nimrod.gid", 10);
-STRING_LITERAL(TMP2553, "\012", 1);
+STRING_LITERAL(TMP2553, "nimrod.gid", 10);
+STRING_LITERAL(TMP2554, "\012", 1);
 NI gfrontendid_189012;
 NI gbackendid_189013;
 extern TFrame* frameptr_17042;
@@ -129,38 +129,38 @@ static N_INLINE(void, popFrame)(void) {
 
 static N_INLINE(NI, getid_189404)(void) {
 	NI result;
-	NI TMP2545;
+	NI TMP2546;
 	nimfr("getID", "idgen.nim")
 	result = 0;
 	nimln(30, "idgen.nim");
 	result = gfrontendid_189012;
 	nimln(31, "idgen.nim");
-	TMP2545 = addInt(gfrontendid_189012, ((NI) 1));
-	gfrontendid_189012 = (NI)(TMP2545);
+	TMP2546 = addInt(gfrontendid_189012, ((NI) 1));
+	gfrontendid_189012 = (NI)(TMP2546);
 	popFrame();
 	return result;
 }
 
 static N_INLINE(NI, backendid_189422)(void) {
 	NI result;
-	NI TMP2546;
+	NI TMP2547;
 	nimfr("backendId", "idgen.nim")
 	result = 0;
 	nimln(34, "idgen.nim");
 	result = gbackendid_189013;
 	nimln(35, "idgen.nim");
-	TMP2546 = addInt(gbackendid_189013, ((NI) 1));
-	gbackendid_189013 = (NI)(TMP2546);
+	TMP2547 = addInt(gbackendid_189013, ((NI) 1));
+	gbackendid_189013 = (NI)(TMP2547);
 	popFrame();
 	return result;
 }
 
 static N_INLINE(void, setid_189440)(NI id) {
-	NI TMP2547;
+	NI TMP2548;
 	nimfr("setId", "idgen.nim")
 	nimln(38, "idgen.nim");
-	TMP2547 = addInt(id, ((NI) 1));
-	gfrontendid_189012 = ((gfrontendid_189012 >= (NI)(TMP2547)) ? gfrontendid_189012 : (NI)(TMP2547));
+	TMP2548 = addInt(id, ((NI) 1));
+	gfrontendid_189012 = ((gfrontendid_189012 >= (NI)(TMP2548)) ? gfrontendid_189012 : (NI)(TMP2548));
 	popFrame();
 }
 
@@ -190,17 +190,17 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 }
 
 N_NIMCALL(void, idsynchronizationpoint_189453)(NI idrange) {
-	NI TMP2548;
 	NI TMP2549;
 	NI TMP2550;
 	NI TMP2551;
+	NI TMP2552;
 	nimfr("idSynchronizationPoint", "idgen.nim")
 	nimln(41, "idgen.nim");
-	TMP2548 = divInt(gfrontendid_189012, idrange);
-	TMP2549 = addInt((NI)(TMP2548), ((NI) 1));
-	TMP2550 = mulInt((NI)(TMP2549), idrange);
-	TMP2551 = addInt((NI)(TMP2550), ((NI) 1));
-	gfrontendid_189012 = (NI)(TMP2551);
+	TMP2549 = divInt(gfrontendid_189012, idrange);
+	TMP2550 = addInt((NI)(TMP2549), ((NI) 1));
+	TMP2551 = mulInt((NI)(TMP2550), idrange);
+	TMP2552 = addInt((NI)(TMP2551), ((NI) 1));
+	gfrontendid_189012 = (NI)(TMP2552);
 	popFrame();
 }
 
@@ -209,7 +209,7 @@ N_NIMCALL(NimStringDesc*, togid_189462)(NimStringDesc* f) {
 	nimfr("toGid", "idgen.nim")
 	result = 0;
 	nimln(47, "idgen.nim");
-	result = completegeneratedfilepath_154001(((NimStringDesc*) &TMP2552), NIM_TRUE);
+	result = completegeneratedfilepath_154001(((NimStringDesc*) &TMP2553), NIM_TRUE);
 	popFrame();
 	return result;
 }
@@ -236,7 +236,7 @@ static N_INLINE(void, writeln_154205)(FILE* f, NimStringDesc** x, NI xLen0) {
 		}
 	}
 	nimln(213, "sysio.nim");
-	write_13457(f, ((NimStringDesc*) &TMP2553));
+	write_13457(f, ((NimStringDesc*) &TMP2554));
 	popFrame();
 }
 

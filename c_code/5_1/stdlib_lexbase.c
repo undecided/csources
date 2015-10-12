@@ -111,18 +111,18 @@ NIM_CONST TY77659 Newlines_246018 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4227, "L.sentinel < L.bufLen ", 22);
-STRING_LITERAL(TMP4230, "0 <= toCopy ", 12);
-STRING_LITERAL(TMP4239, "s < L.bufLen ", 13);
-STRING_LITERAL(TMP4244, "L.bufLen - oldBufLen == oldBufLen ", 34);
-STRING_LITERAL(TMP4250, "pos <= L.sentinel ", 18);
-STRING_LITERAL(TMP4252, "L.buf[pos] == \'\\x0D\' ", 21);
-STRING_LITERAL(TMP4254, "L.buf[pos] == \'\\x0A\' ", 21);
-STRING_LITERAL(TMP4258, "0 < bufLen ", 11);
-STRING_LITERAL(TMP4259, "not (input == nil) ", 19);
-STRING_LITERAL(TMP4263, "", 0);
-STRING_LITERAL(TMP4265, "\012", 1);
-STRING_LITERAL(TMP4266, "^\012", 2);
+STRING_LITERAL(TMP4228, "L.sentinel < L.bufLen ", 22);
+STRING_LITERAL(TMP4231, "0 <= toCopy ", 12);
+STRING_LITERAL(TMP4240, "s < L.bufLen ", 13);
+STRING_LITERAL(TMP4245, "L.bufLen - oldBufLen == oldBufLen ", 34);
+STRING_LITERAL(TMP4251, "pos <= L.sentinel ", 18);
+STRING_LITERAL(TMP4253, "L.buf[pos] == \'\\x0D\' ", 21);
+STRING_LITERAL(TMP4255, "L.buf[pos] == \'\\x0A\' ", 21);
+STRING_LITERAL(TMP4259, "0 < bufLen ", 11);
+STRING_LITERAL(TMP4260, "not (input == nil) ", 19);
+STRING_LITERAL(TMP4264, "", 0);
+STRING_LITERAL(TMP4266, "\012", 1);
+STRING_LITERAL(TMP4267, "^\012", 2);
 extern TFrame* frameptr_17042;
 extern TNimType NTI3411; /* RootObj */
 TNimType NTI246024; /* BaseLexer */
@@ -261,13 +261,13 @@ N_NIMCALL(void, fillbuffer_246102)(Baselexer246024* L) {
 	NI tocopy;
 	NI s;
 	NI oldbuflen;
-	NI TMP4228;
 	NI TMP4229;
-	NI TMP4233;
+	NI TMP4230;
 	NI TMP4234;
-	NI LOC13;
 	NI TMP4235;
+	NI LOC13;
 	NI TMP4236;
+	NI TMP4237;
 	nimfr("fillBuffer", "lexbase.nim")
 	charsread = 0;
 	tocopy = 0;
@@ -276,48 +276,48 @@ N_NIMCALL(void, fillbuffer_246102)(Baselexer246024* L) {
 	nimln(79, "lexbase.nim");
 	{
 		if (!!(((*L).sentinel < (*L).buflen))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4227));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4228));
 	}
 	LA3: ;
 	nimln(80, "lexbase.nim");
-	TMP4228 = subInt((*L).buflen, (*L).sentinel);
-	TMP4229 = subInt((NI)(TMP4228), ((NI) 1));
-	tocopy = (NI)(TMP4229);
+	TMP4229 = subInt((*L).buflen, (*L).sentinel);
+	TMP4230 = subInt((NI)(TMP4229), ((NI) 1));
+	tocopy = (NI)(TMP4230);
 	nimln(81, "lexbase.nim");
 	{
 		if (!!((((NI) 0) <= tocopy))) goto LA7;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4230));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4231));
 	}
 	LA7: ;
 	nimln(82, "lexbase.nim");
 	{
-		NI TMP4231;
 		NI TMP4232;
+		NI TMP4233;
 		if (!(((NI) 0) < tocopy)) goto LA11;
 		nimln(83, "lexbase.nim");
-		TMP4231 = addInt((*L).sentinel, ((NI) 1));
-		TMP4232 = mulInt(tocopy, ((NI) 1));
-		memmove(((void*) ((*L).buf)), ((void*) ((&(*L).buf[(NI)(TMP4231)]))), ((NI)chckRange((NI)(TMP4232), ((NI) 0), ((NI) 2147483647))));
+		TMP4232 = addInt((*L).sentinel, ((NI) 1));
+		TMP4233 = mulInt(tocopy, ((NI) 1));
+		memmove(((void*) ((*L).buf)), ((void*) ((&(*L).buf[(NI)(TMP4232)]))), ((NI)chckRange((NI)(TMP4233), ((NI) 0), ((NI) 2147483647))));
 	}
 	LA11: ;
 	nimln(85, "lexbase.nim");
 	nimln(86, "lexbase.nim");
 	nimln(85, "lexbase.nim");
 	nimln(86, "lexbase.nim");
-	TMP4233 = addInt((*L).sentinel, ((NI) 1));
-	TMP4234 = mulInt((NI)(TMP4233), ((NI) 1));
+	TMP4234 = addInt((*L).sentinel, ((NI) 1));
+	TMP4235 = mulInt((NI)(TMP4234), ((NI) 1));
 	LOC13 = 0;
-	LOC13 = readdata_138174((*L).input, ((void*) ((&(*L).buf[tocopy]))), (NI)(TMP4234));
-	TMP4235 = divInt(LOC13, ((NI) 1));
-	charsread = (NI)(TMP4235);
+	LOC13 = readdata_138174((*L).input, ((void*) ((&(*L).buf[tocopy]))), (NI)(TMP4235));
+	TMP4236 = divInt(LOC13, ((NI) 1));
+	charsread = (NI)(TMP4236);
 	nimln(87, "lexbase.nim");
-	TMP4236 = addInt(tocopy, charsread);
-	s = (NI)(TMP4236);
+	TMP4237 = addInt(tocopy, charsread);
+	s = (NI)(TMP4237);
 	nimln(88, "lexbase.nim");
 	{
-		NI TMP4237;
-		TMP4237 = addInt((*L).sentinel, ((NI) 1));
-		if (!(charsread < (NI)(TMP4237))) goto LA16;
+		NI TMP4238;
+		TMP4238 = addInt((*L).sentinel, ((NI) 1));
+		if (!(charsread < (NI)(TMP4238))) goto LA16;
 		nimln(89, "lexbase.nim");
 		(*L).buf[s] = 0;
 		nimln(90, "lexbase.nim");
@@ -326,32 +326,32 @@ N_NIMCALL(void, fillbuffer_246102)(Baselexer246024* L) {
 	goto LA14;
 	LA16: ;
 	{
-		NI TMP4238;
+		NI TMP4239;
 		nimln(93, "lexbase.nim");
-		TMP4238 = subInt(s, ((NI) 1));
-		s = (NI)(TMP4238);
+		TMP4239 = subInt(s, ((NI) 1));
+		s = (NI)(TMP4239);
 		{
 			nimln(94, "lexbase.nim");
 			while (1) {
 				nimln(95, "lexbase.nim");
 				{
 					if (!!((s < (*L).buflen))) goto LA23;
-					failedassertimpl_87017(((NimStringDesc*) &TMP4239));
+					failedassertimpl_87017(((NimStringDesc*) &TMP4240));
 				}
 				LA23: ;
 				{
 					nimln(96, "lexbase.nim");
 					while (1) {
 						NIM_BOOL LOC27;
-						NI TMP4240;
+						NI TMP4241;
 						LOC27 = 0;
 						LOC27 = (((NI) 0) <= s);
 						if (!(LOC27)) goto LA28;
 						LOC27 = !((((NU8)((*L).buf[s])) == ((NU8)(13)) || ((NU8)((*L).buf[s])) == ((NU8)(10))));
 						LA28: ;
 						if (!LOC27) goto LA26;
-						TMP4240 = subInt(s, ((NI) 1));
-						s = (NI)(TMP4240);
+						TMP4241 = subInt(s, ((NI) 1));
+						s = (NI)(TMP4241);
 					} LA26: ;
 				}
 				nimln(97, "lexbase.nim");
@@ -365,58 +365,58 @@ N_NIMCALL(void, fillbuffer_246102)(Baselexer246024* L) {
 				goto LA29;
 				LA31: ;
 				{
-					NI TMP4241;
 					NI TMP4242;
+					NI TMP4243;
 					void* LOC34;
-					NI TMP4245;
-					NI LOC39;
 					NI TMP4246;
-					NI TMP4249;
+					NI LOC39;
+					NI TMP4247;
+					NI TMP4250;
 					nimln(104, "lexbase.nim");
 					oldbuflen = (*L).buflen;
 					nimln(105, "lexbase.nim");
-					TMP4241 = mulInt((*L).buflen, ((NI) 2));
-					(*L).buflen = (NI)(TMP4241);
+					TMP4242 = mulInt((*L).buflen, ((NI) 2));
+					(*L).buflen = (NI)(TMP4242);
 					nimln(106, "lexbase.nim");
-					TMP4242 = mulInt((*L).buflen, ((NI) 1));
+					TMP4243 = mulInt((*L).buflen, ((NI) 1));
 					LOC34 = 0;
-					LOC34 = realloc_6033(((void*) ((*L).buf)), ((NI)chckRange((NI)(TMP4242), ((NI) 0), ((NI) 2147483647))));
+					LOC34 = realloc_6033(((void*) ((*L).buf)), ((NI)chckRange((NI)(TMP4243), ((NI) 0), ((NI) 2147483647))));
 					(*L).buf = ((NCSTRING) (LOC34));
 					nimln(107, "lexbase.nim");
 					{
-						NI TMP4243;
-						TMP4243 = subInt((*L).buflen, oldbuflen);
-						if (!!(((NI)(TMP4243) == oldbuflen))) goto LA37;
-						failedassertimpl_87017(((NimStringDesc*) &TMP4244));
+						NI TMP4244;
+						TMP4244 = subInt((*L).buflen, oldbuflen);
+						if (!!(((NI)(TMP4244) == oldbuflen))) goto LA37;
+						failedassertimpl_87017(((NimStringDesc*) &TMP4245));
 					}
 					LA37: ;
 					nimln(108, "lexbase.nim");
 					nimln(109, "lexbase.nim");
 					nimln(108, "lexbase.nim");
 					nimln(109, "lexbase.nim");
-					TMP4245 = mulInt(oldbuflen, ((NI) 1));
+					TMP4246 = mulInt(oldbuflen, ((NI) 1));
 					LOC39 = 0;
-					LOC39 = readdata_138174((*L).input, ((void*) ((&(*L).buf[oldbuflen]))), (NI)(TMP4245));
-					TMP4246 = divInt(LOC39, ((NI) 1));
-					charsread = (NI)(TMP4246);
+					LOC39 = readdata_138174((*L).input, ((void*) ((&(*L).buf[oldbuflen]))), (NI)(TMP4246));
+					TMP4247 = divInt(LOC39, ((NI) 1));
+					charsread = (NI)(TMP4247);
 					nimln(110, "lexbase.nim");
 					{
-						NI TMP4247;
 						NI TMP4248;
+						NI TMP4249;
 						if (!(charsread < oldbuflen)) goto LA42;
 						nimln(111, "lexbase.nim");
-						TMP4247 = addInt(oldbuflen, charsread);
-						(*L).buf[(NI)(TMP4247)] = 0;
-						nimln(112, "lexbase.nim");
 						TMP4248 = addInt(oldbuflen, charsread);
-						(*L).sentinel = (NI)(TMP4248);
+						(*L).buf[(NI)(TMP4248)] = 0;
+						nimln(112, "lexbase.nim");
+						TMP4249 = addInt(oldbuflen, charsread);
+						(*L).sentinel = (NI)(TMP4249);
 						nimln(113, "lexbase.nim");
 						goto LA19;
 					}
 					LA42: ;
 					nimln(114, "lexbase.nim");
-					TMP4249 = subInt((*L).buflen, ((NI) 1));
-					s = (NI)(TMP4249);
+					TMP4250 = subInt((*L).buflen, ((NI) 1));
+					s = (NI)(TMP4250);
 				}
 				LA29: ;
 			}
@@ -433,16 +433,16 @@ N_NIMCALL(NI, fillbaselexer_246827)(Baselexer246024* L, NI pos) {
 	nimln(117, "lexbase.nim");
 	{
 		if (!!((pos <= (*L).sentinel))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4250));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4251));
 	}
 	LA3: ;
 	nimln(118, "lexbase.nim");
 	{
-		NI TMP4251;
+		NI TMP4252;
 		if (!(pos < (*L).sentinel)) goto LA7;
 		nimln(119, "lexbase.nim");
-		TMP4251 = addInt(pos, ((NI) 1));
-		result = (NI)(TMP4251);
+		TMP4252 = addInt(pos, ((NI) 1));
+		result = (NI)(TMP4252);
 	}
 	goto LA5;
 	LA7: ;
@@ -463,18 +463,18 @@ N_NIMCALL(NI, fillbaselexer_246827)(Baselexer246024* L, NI pos) {
 
 N_NIMCALL(NI, handlecr_246071)(Baselexer246024* L, NI pos) {
 	NI result;
-	NI TMP4253;
+	NI TMP4254;
 	nimfr("handleCR", "lexbase.nim")
 	result = 0;
 	nimln(127, "lexbase.nim");
 	{
 		if (!!(((NU8)((*L).buf[pos]) == (NU8)(13)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4252));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4253));
 	}
 	LA3: ;
 	nimln(128, "lexbase.nim");
-	TMP4253 = addInt((*L).linenumber, ((NI) 1));
-	(*L).linenumber = (NI)(TMP4253);
+	TMP4254 = addInt((*L).linenumber, ((NI) 1));
+	(*L).linenumber = (NI)(TMP4254);
 	nimln(129, "lexbase.nim");
 	result = fillbaselexer_246827(L, pos);
 	nimln(130, "lexbase.nim");
@@ -490,18 +490,18 @@ N_NIMCALL(NI, handlecr_246071)(Baselexer246024* L, NI pos) {
 
 N_NIMCALL(NI, handlelf_246079)(Baselexer246024* L, NI pos) {
 	NI result;
-	NI TMP4255;
+	NI TMP4256;
 	nimfr("handleLF", "lexbase.nim")
 	result = 0;
 	nimln(134, "lexbase.nim");
 	{
 		if (!!(((NU8)((*L).buf[pos]) == (NU8)(10)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4254));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4255));
 	}
 	LA3: ;
 	nimln(135, "lexbase.nim");
-	TMP4255 = addInt((*L).linenumber, ((NI) 1));
-	(*L).linenumber = (NI)(TMP4255);
+	TMP4256 = addInt((*L).linenumber, ((NI) 1));
+	(*L).linenumber = (NI)(TMP4256);
 	nimln(136, "lexbase.nim");
 	result = fillbaselexer_246827(L, pos);
 	popFrame();
@@ -514,8 +514,8 @@ N_NIMCALL(void, skiputf8bom_247416)(Baselexer246024* L) {
 	{
 		NIM_BOOL LOC3;
 		NIM_BOOL LOC4;
-		NI TMP4256;
 		NI TMP4257;
+		NI TMP4258;
 		LOC3 = 0;
 		LOC4 = 0;
 		LOC4 = ((NU8)((*L).buf[((NI) 0)]) == (NU8)(239));
@@ -528,31 +528,31 @@ N_NIMCALL(void, skiputf8bom_247416)(Baselexer246024* L) {
 		LA6: ;
 		if (!LOC3) goto LA7;
 		nimln(140, "lexbase.nim");
-		TMP4256 = addInt((*L).bufpos, ((NI) 3));
-		(*L).bufpos = (NI)(TMP4256);
+		TMP4257 = addInt((*L).bufpos, ((NI) 3));
+		(*L).bufpos = (NI)(TMP4257);
 		nimln(141, "lexbase.nim");
-		TMP4257 = addInt((*L).linestart, ((NI) 3));
-		(*L).linestart = (NI)(TMP4257);
+		TMP4258 = addInt((*L).linestart, ((NI) 3));
+		(*L).linestart = (NI)(TMP4258);
 	}
 	LA7: ;
 	popFrame();
 }
 
 N_NIMCALL(void, open_246040)(Baselexer246024* L, Streamobj138027* input, NI buflen) {
-	NI TMP4260;
-	void* LOC9;
 	NI TMP4261;
+	void* LOC9;
+	NI TMP4262;
 	nimfr("open", "lexbase.nim")
 	nimln(144, "lexbase.nim");
 	{
 		if (!!((((NI) 0) < buflen))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4258));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4259));
 	}
 	LA3: ;
 	nimln(145, "lexbase.nim");
 	{
 		if (!!(!((input == NIM_NIL)))) goto LA7;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4259));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4260));
 	}
 	LA7: ;
 	nimln(146, "lexbase.nim");
@@ -562,13 +562,13 @@ N_NIMCALL(void, open_246040)(Baselexer246024* L, Streamobj138027* input, NI bufl
 	nimln(148, "lexbase.nim");
 	(*L).buflen = buflen;
 	nimln(149, "lexbase.nim");
-	TMP4260 = mulInt(buflen, ((NI) 1));
+	TMP4261 = mulInt(buflen, ((NI) 1));
 	LOC9 = 0;
-	LOC9 = alloc_6001(((NI)chckRange((NI)(TMP4260), ((NI) 0), ((NI) 2147483647))));
+	LOC9 = alloc_6001(((NI)chckRange((NI)(TMP4261), ((NI) 0), ((NI) 2147483647))));
 	(*L).buf = ((NCSTRING) (LOC9));
 	nimln(150, "lexbase.nim");
-	TMP4261 = subInt(buflen, ((NI) 1));
-	(*L).sentinel = (NI)(TMP4261);
+	TMP4262 = subInt(buflen, ((NI) 1));
+	(*L).sentinel = (NI)(TMP4262);
 	nimln(151, "lexbase.nim");
 	(*L).linestart = ((NI) 0);
 	nimln(152, "lexbase.nim");
@@ -582,13 +582,13 @@ N_NIMCALL(void, open_246040)(Baselexer246024* L, Streamobj138027* input, NI bufl
 
 N_NIMCALL(NI, getcolnumber_246064)(Baselexer246024* L, NI pos) {
 	NI result;
-	NI TMP4262;
+	NI TMP4263;
 	nimfr("getColNumber", "lexbase.nim")
 	result = 0;
 	nimln(157, "lexbase.nim");
-	TMP4262 = subInt(pos, (*L).linestart);
-	if ((NI)(TMP4262) == (-2147483647 -1)) raiseOverflow();
-	result = ((NI)(TMP4262) > 0? ((NI)(TMP4262)) : -((NI)(TMP4262)));
+	TMP4263 = subInt(pos, (*L).linestart);
+	if ((NI)(TMP4263) == (-2147483647 -1)) raiseOverflow();
+	result = ((NI)(TMP4263) > 0? ((NI)(TMP4263)) : -((NI)(TMP4263)));
 	popFrame();
 	return result;
 }
@@ -605,24 +605,24 @@ N_NIMCALL(NimStringDesc*, getcurrentline_246057)(Baselexer246024* L, NIM_BOOL ma
 	result = 0;
 	i = 0;
 	nimln(161, "lexbase.nim");
-	result = copyString(((NimStringDesc*) &TMP4263));
+	result = copyString(((NimStringDesc*) &TMP4264));
 	nimln(162, "lexbase.nim");
 	i = (*L).linestart;
 	{
 		nimln(163, "lexbase.nim");
 		while (1) {
-			NI TMP4264;
+			NI TMP4265;
 			if (!!((((NU8)((*L).buf[i])) == ((NU8)(13)) || ((NU8)((*L).buf[i])) == ((NU8)(10)) || ((NU8)((*L).buf[i])) == ((NU8)(0))))) goto LA2;
 			nimln(164, "lexbase.nim");
 			result = addChar(result, (*L).buf[i]);
 			nimln(165, "lexbase.nim");
-			TMP4264 = addInt(i, ((NI) 1));
-			i = (NI)(TMP4264);
+			TMP4265 = addInt(i, ((NI) 1));
+			i = (NI)(TMP4265);
 		} LA2: ;
 	}
 	nimln(166, "lexbase.nim");
 	result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP4265));
+appendString(result, ((NimStringDesc*) &TMP4266));
 	nimln(167, "lexbase.nim");
 	{
 		NimStringDesc* LOC7;
@@ -637,7 +637,7 @@ appendString(result, ((NimStringDesc*) &TMP4265));
 		LOC9 = nsuRepeatChar(32, ((NI)chckRange(LOC8, ((NI) 0), ((NI) 2147483647))));
 		LOC7 = rawNewString(LOC9->Sup.len + 2);
 appendString(LOC7, LOC9);
-appendString(LOC7, ((NimStringDesc*) &TMP4266));
+appendString(LOC7, ((NimStringDesc*) &TMP4267));
 		result = resizeString(result, LOC7->Sup.len + 0);
 appendString(result, LOC7);
 	}
@@ -651,52 +651,52 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_lexbaseInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_lexbaseDatInit)(void) {
-static TNimNode* TMP4271[8];
-static TNimNode TMP4225[9];
+static TNimNode* TMP4272[8];
+static TNimNode TMP4226[9];
 NTI246024.size = sizeof(Baselexer246024);
 NTI246024.kind = 17;
 NTI246024.base = (&NTI3411);
-TMP4271[0] = &TMP4225[1];
-TMP4225[1].kind = 1;
-TMP4225[1].offset = offsetof(Baselexer246024, bufpos);
-TMP4225[1].typ = (&NTI108);
-TMP4225[1].name = "bufpos";
-TMP4271[1] = &TMP4225[2];
-TMP4225[2].kind = 1;
-TMP4225[2].offset = offsetof(Baselexer246024, buf);
-TMP4225[2].typ = (&NTI151);
-TMP4225[2].name = "buf";
-TMP4271[2] = &TMP4225[3];
-TMP4225[3].kind = 1;
-TMP4225[3].offset = offsetof(Baselexer246024, buflen);
-TMP4225[3].typ = (&NTI108);
-TMP4225[3].name = "bufLen";
-TMP4271[3] = &TMP4225[4];
-TMP4225[4].kind = 1;
-TMP4225[4].offset = offsetof(Baselexer246024, input);
-TMP4225[4].typ = (&NTI138025);
-TMP4225[4].name = "input";
-TMP4271[4] = &TMP4225[5];
-TMP4225[5].kind = 1;
-TMP4225[5].offset = offsetof(Baselexer246024, linenumber);
-TMP4225[5].typ = (&NTI108);
-TMP4225[5].name = "lineNumber";
-TMP4271[5] = &TMP4225[6];
-TMP4225[6].kind = 1;
-TMP4225[6].offset = offsetof(Baselexer246024, sentinel);
-TMP4225[6].typ = (&NTI108);
-TMP4225[6].name = "sentinel";
-TMP4271[6] = &TMP4225[7];
-TMP4225[7].kind = 1;
-TMP4225[7].offset = offsetof(Baselexer246024, linestart);
-TMP4225[7].typ = (&NTI108);
-TMP4225[7].name = "lineStart";
-TMP4271[7] = &TMP4225[8];
-TMP4225[8].kind = 1;
-TMP4225[8].offset = offsetof(Baselexer246024, fileopened);
-TMP4225[8].typ = (&NTI138);
-TMP4225[8].name = "fileOpened";
-TMP4225[0].len = 8; TMP4225[0].kind = 2; TMP4225[0].sons = &TMP4271[0];
-NTI246024.node = &TMP4225[0];
+TMP4272[0] = &TMP4226[1];
+TMP4226[1].kind = 1;
+TMP4226[1].offset = offsetof(Baselexer246024, bufpos);
+TMP4226[1].typ = (&NTI108);
+TMP4226[1].name = "bufpos";
+TMP4272[1] = &TMP4226[2];
+TMP4226[2].kind = 1;
+TMP4226[2].offset = offsetof(Baselexer246024, buf);
+TMP4226[2].typ = (&NTI151);
+TMP4226[2].name = "buf";
+TMP4272[2] = &TMP4226[3];
+TMP4226[3].kind = 1;
+TMP4226[3].offset = offsetof(Baselexer246024, buflen);
+TMP4226[3].typ = (&NTI108);
+TMP4226[3].name = "bufLen";
+TMP4272[3] = &TMP4226[4];
+TMP4226[4].kind = 1;
+TMP4226[4].offset = offsetof(Baselexer246024, input);
+TMP4226[4].typ = (&NTI138025);
+TMP4226[4].name = "input";
+TMP4272[4] = &TMP4226[5];
+TMP4226[5].kind = 1;
+TMP4226[5].offset = offsetof(Baselexer246024, linenumber);
+TMP4226[5].typ = (&NTI108);
+TMP4226[5].name = "lineNumber";
+TMP4272[5] = &TMP4226[6];
+TMP4226[6].kind = 1;
+TMP4226[6].offset = offsetof(Baselexer246024, sentinel);
+TMP4226[6].typ = (&NTI108);
+TMP4226[6].name = "sentinel";
+TMP4272[6] = &TMP4226[7];
+TMP4226[7].kind = 1;
+TMP4226[7].offset = offsetof(Baselexer246024, linestart);
+TMP4226[7].typ = (&NTI108);
+TMP4226[7].name = "lineStart";
+TMP4272[7] = &TMP4226[8];
+TMP4226[8].kind = 1;
+TMP4226[8].offset = offsetof(Baselexer246024, fileopened);
+TMP4226[8].typ = (&NTI138);
+TMP4226[8].name = "fileOpened";
+TMP4226[0].len = 8; TMP4226[0].kind = 2; TMP4226[0].sons = &TMP4272[0];
+NTI246024.node = &TMP4226[0];
 }
 

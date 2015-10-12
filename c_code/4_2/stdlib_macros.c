@@ -154,10 +154,10 @@ static N_INLINE(NIM_CHAR, tolower_287423)(NIM_CHAR c) {
 	result = 0;
 	nimln(791, "macros.nim");
 	{
-		NI TMP4819;
+		NI TMP4820;
 		if (!(((NU8)(c)) >= ((NU8)(65)) && ((NU8)(c)) <= ((NU8)(90)))) goto LA3;
-		TMP4819 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
-		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP4819), ((NI) 0), ((NI) 255)))));
+		TMP4820 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
+		result = ((NIM_CHAR) (((NI)chckRange((NI)(TMP4820), ((NI) 0), ((NI) 255)))));
 	}
 	goto LA1;
 	LA3: ;
@@ -205,25 +205,25 @@ N_NIMCALL(NI, cmpignorestyle_287418)(NCSTRING a, NCSTRING b) {
 		while (1) {
 			NIM_CHAR aa;
 			NIM_CHAR bb;
-			NI TMP4820;
 			NI TMP4821;
 			NI TMP4822;
+			NI TMP4823;
 			{
 				nimln(796, "macros.nim");
 				while (1) {
-					NI TMP4817;
+					NI TMP4818;
 					if (!((NU8)(a[i]) == (NU8)(95))) goto LA4;
-					TMP4817 = addInt(i, ((NI) 1));
-					i = (NI)(TMP4817);
+					TMP4818 = addInt(i, ((NI) 1));
+					i = (NI)(TMP4818);
 				} LA4: ;
 			}
 			{
 				nimln(797, "macros.nim");
 				while (1) {
-					NI TMP4818;
+					NI TMP4819;
 					if (!((NU8)(b[j]) == (NU8)(95))) goto LA6;
-					TMP4818 = addInt(j, ((NI) 1));
-					j = (NI)(TMP4818);
+					TMP4819 = addInt(j, ((NI) 1));
+					j = (NI)(TMP4819);
 				} LA6: ;
 			}
 			nimln(798, "macros.nim");
@@ -231,8 +231,8 @@ N_NIMCALL(NI, cmpignorestyle_287418)(NCSTRING a, NCSTRING b) {
 			nimln(799, "macros.nim");
 			bb = tolower_287423(b[j]);
 			nimln(800, "macros.nim");
-			TMP4820 = subInt(((NI) (((NU8)(aa)))), ((NI) (((NU8)(bb)))));
-			result = (NI)(TMP4820);
+			TMP4821 = subInt(((NI) (((NU8)(aa)))), ((NI) (((NU8)(bb)))));
+			result = (NI)(TMP4821);
 			nimln(801, "macros.nim");
 			{
 				NIM_BOOL LOC9;
@@ -246,11 +246,11 @@ N_NIMCALL(NI, cmpignorestyle_287418)(NCSTRING a, NCSTRING b) {
 			}
 			LA11: ;
 			nimln(802, "macros.nim");
-			TMP4821 = addInt(i, ((NI) 1));
-			i = (NI)(TMP4821);
+			TMP4822 = addInt(i, ((NI) 1));
+			i = (NI)(TMP4822);
 			nimln(803, "macros.nim");
-			TMP4822 = addInt(j, ((NI) 1));
-			j = (NI)(TMP4822);
+			TMP4823 = addInt(j, ((NI) 1));
+			j = (NI)(TMP4823);
 		}
 	} LA1: ;
 	popFrame();
@@ -275,9 +275,9 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_macrosInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_macrosDatInit)(void) {
-static TNimNode* TMP4813[155];
-NI TMP4815;
-static char* NIM_CONST TMP4814[155] = {
+static TNimNode* TMP4814[155];
+NI TMP4816;
+static char* NIM_CONST TMP4815[155] = {
 "nnkNone", 
 "nnkEmpty", 
 "nnkIdent", 
@@ -433,18 +433,18 @@ static char* NIM_CONST TMP4814[155] = {
 "nnkArglist", 
 "nnkPattern", 
 "nnkReturnToken"};
-static TNimNode TMP4811[156];
+static TNimNode TMP4812[156];
 NTI284012.size = sizeof(NU8);
 NTI284012.kind = 14;
 NTI284012.base = 0;
 NTI284012.flags = 3;
-for (TMP4815 = 0; TMP4815 < 155; TMP4815++) {
-TMP4811[TMP4815+0].kind = 1;
-TMP4811[TMP4815+0].offset = TMP4815;
-TMP4811[TMP4815+0].name = TMP4814[TMP4815];
-TMP4813[TMP4815] = &TMP4811[TMP4815+0];
+for (TMP4816 = 0; TMP4816 < 155; TMP4816++) {
+TMP4812[TMP4816+0].kind = 1;
+TMP4812[TMP4816+0].offset = TMP4816;
+TMP4812[TMP4816+0].name = TMP4815[TMP4816];
+TMP4814[TMP4816] = &TMP4812[TMP4816+0];
 }
-TMP4811[155].len = 155; TMP4811[155].kind = 2; TMP4811[155].sons = &TMP4813[0];
-NTI284012.node = &TMP4811[155];
+TMP4812[155].len = 155; TMP4812[155].kind = 2; TMP4812[155].sons = &TMP4814[0];
+NTI284012.node = &TMP4812[155];
 }
 

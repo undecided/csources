@@ -66,8 +66,8 @@ N_NIMCALL(void, unmapmem_231608)(Memfile231208* f, void* p, NI size);
 N_NIMCALL(Memfile231208, open_231807)(NimStringDesc* filename, NU8 mode, NI mappedsize, NI offset, NI newfilesize);
 N_NIMCALL(NI64, chckRange64)(NI64 i, NI64 a, NI64 b);
 N_NIMCALL(void, close_232248)(Memfile231208* f);
-STRING_LITERAL(TMP3733, "0 < mappedSize ", 15);
-STRING_LITERAL(TMP3734, "newFileSize == -1 or not (mode == fmRead) ", 42);
+STRING_LITERAL(TMP3734, "0 < mappedSize ", 15);
+STRING_LITERAL(TMP3735, "newFileSize == -1 or not (mode == fmRead) ", 42);
 extern int Mappopulate_109138;
 extern TFrame* frameptr_17042;
 TNimType NTI231208; /* MemFile */
@@ -114,7 +114,7 @@ N_NIMCALL(void*, mapmem_231219)(Memfile231208* m, NU8 mode, NI mappedsize, NI of
 	nimln(53, "memfiles.nim");
 	{
 		if (!!((((NI) 0) < mappedsize))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP3733));
+		failedassertimpl_87017(((NimStringDesc*) &TMP3734));
 	}
 	LA3: ;
 	nimln(54, "memfiles.nim");
@@ -191,7 +191,7 @@ N_NIMCALL(Memfile231208, open_231807)(NimStringDesc* filename, NU8 mode, NI mapp
 		LOC3 = !((mode == ((NU8) 0)));
 		LA4: ;
 		if (!!(LOC3)) goto LA5;
-		failedassertimpl_87017(((NimStringDesc*) &TMP3734));
+		failedassertimpl_87017(((NimStringDesc*) &TMP3735));
 	}
 	LA5: ;
 	nimln(97, "memfiles.nim");
@@ -427,28 +427,28 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_memfilesInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_memfilesDatInit)(void) {
-static TNimNode* TMP3908[3];
-static TNimNode TMP3731[4];
+static TNimNode* TMP3909[3];
+static TNimNode TMP3732[4];
 NTI231208.size = sizeof(Memfile231208);
 NTI231208.kind = 18;
 NTI231208.base = 0;
 NTI231208.flags = 3;
-TMP3908[0] = &TMP3731[1];
-TMP3731[1].kind = 1;
-TMP3731[1].offset = offsetof(Memfile231208, mem);
-TMP3731[1].typ = (&NTI153);
-TMP3731[1].name = "mem";
-TMP3908[1] = &TMP3731[2];
-TMP3731[2].kind = 1;
-TMP3731[2].offset = offsetof(Memfile231208, size);
-TMP3731[2].typ = (&NTI108);
-TMP3731[2].name = "size";
-TMP3908[2] = &TMP3731[3];
-TMP3731[3].kind = 1;
-TMP3731[3].offset = offsetof(Memfile231208, handle);
-TMP3731[3].typ = (&NTI5811);
-TMP3731[3].name = "handle";
-TMP3731[0].len = 3; TMP3731[0].kind = 2; TMP3731[0].sons = &TMP3908[0];
-NTI231208.node = &TMP3731[0];
+TMP3909[0] = &TMP3732[1];
+TMP3732[1].kind = 1;
+TMP3732[1].offset = offsetof(Memfile231208, mem);
+TMP3732[1].typ = (&NTI153);
+TMP3732[1].name = "mem";
+TMP3909[1] = &TMP3732[2];
+TMP3732[2].kind = 1;
+TMP3732[2].offset = offsetof(Memfile231208, size);
+TMP3732[2].typ = (&NTI108);
+TMP3732[2].name = "size";
+TMP3909[2] = &TMP3732[3];
+TMP3732[3].kind = 1;
+TMP3732[3].offset = offsetof(Memfile231208, handle);
+TMP3732[3].typ = (&NTI5811);
+TMP3732[3].name = "handle";
+TMP3732[0].len = 3; TMP3732[0].kind = 2; TMP3732[0].sons = &TMP3909[0];
+NTI231208.node = &TMP3732[0];
 }
 

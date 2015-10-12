@@ -289,10 +289,10 @@ STRING_LITERAL(TMP679, "_", 1);
 STRING_LITERAL(TMP680, "invalid index", 13);
 STRING_LITERAL(TMP681, "PATH", 4);
 STRING_LITERAL(TMP682, "not contains(seps, \'\\0\') ", 25);
-STRING_LITERAL(TMP1515, "HOME", 4);
-STRING_LITERAL(TMP1516, "/", 1);
-STRING_LITERAL(TMP2495, "/.config/", 9);
-STRING_LITERAL(TMP10783, "not (\'\\0\' == sep) ", 18);
+STRING_LITERAL(TMP1516, "HOME", 4);
+STRING_LITERAL(TMP1517, "/", 1);
+STRING_LITERAL(TMP2496, "/.config/", 9);
+STRING_LITERAL(TMP10784, "not (\'\\0\' == sep) ", 18);
 NIM_BOOL envcomputed_122007;
 TY13606* environment_122009;
 extern NCSTRING* environ;
@@ -1746,10 +1746,10 @@ N_NIMCALL(NimStringDesc*, nosgetHomeDir)(void) {
 	nimln(1630, "os.nim");
 	LOC1 = 0;
 	LOC2 = 0;
-	LOC2 = getenv_122644(((NimStringDesc*) &TMP1515));
+	LOC2 = getenv_122644(((NimStringDesc*) &TMP1516));
 	LOC1 = rawNewString(LOC2->Sup.len + 1);
 appendString(LOC1, LOC2);
-appendString(LOC1, ((NimStringDesc*) &TMP1516));
+appendString(LOC1, ((NimStringDesc*) &TMP1517));
 	result = LOC1;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -1789,7 +1789,7 @@ N_NIMCALL(NimStringDesc*, expandtilde_127610)(NimStringDesc* path) {
 		NIM_BOOL LOC4;
 		NIM_BOOL LOC7;
 		NimStringDesc* LOC11;
-		NI TMP1517;
+		NI TMP1518;
 		Slice86255 LOC12;
 		NimStringDesc* LOC13;
 		LOC3 = 0;
@@ -1814,8 +1814,8 @@ N_NIMCALL(NimStringDesc*, expandtilde_127610)(NimStringDesc* path) {
 		nimln(1900, "os.nim");
 		LOC11 = 0;
 		LOC11 = nosgetHomeDir();
-		TMP1517 = subInt((path ? path->Sup.len : 0), ((NI) 1));
-		LOC12 = HEX2EHEX2E_105273(((NI) 2), (NI)(TMP1517));
+		TMP1518 = subInt((path ? path->Sup.len : 0), ((NI) 1));
+		LOC12 = HEX2EHEX2E_105273(((NI) 2), (NI)(TMP1518));
 		LOC13 = 0;
 		LOC13 = HEX5BHEX5D_86248(path, LOC12);
 		result = HEX2F_119292(LOC11, LOC13);
@@ -1844,13 +1844,13 @@ N_NIMCALL(NIM_BOOL, nosisAbsolute)(NimStringDesc* path) {
 
 N_NIMCALL(NI, paramcount_125830)(void) {
 	NI result;
-	NI TMP1831;
+	NI TMP1832;
 	nimfr("paramCount", "os.nim")
 	result = 0;
 	nimln(1721, "os.nim");
-	TMP1831 = subInt(cmdCount, ((NI32) 1));
-	if (TMP1831 < (-2147483647 -1) || TMP1831 > 2147483647) raiseOverflow();
-	result = ((NI) ((NI32)(TMP1831)));
+	TMP1832 = subInt(cmdCount, ((NI32) 1));
+	if (TMP1832 < (-2147483647 -1) || TMP1832 > 2147483647) raiseOverflow();
+	result = ((NI) ((NI32)(TMP1832)));
 	popFrame();
 	return result;
 }
@@ -1928,10 +1928,10 @@ N_NIMCALL(NimStringDesc*, nosgetConfigDir)(void) {
 	nimln(1635, "os.nim");
 	LOC1 = 0;
 	LOC2 = 0;
-	LOC2 = getenv_122644(((NimStringDesc*) &TMP1515));
+	LOC2 = getenv_122644(((NimStringDesc*) &TMP1516));
 	LOC1 = rawNewString(LOC2->Sup.len + 9);
 appendString(LOC1, LOC2);
-appendString(LOC1, ((NimStringDesc*) &TMP2495));
+appendString(LOC1, ((NimStringDesc*) &TMP2496));
 	result = LOC1;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -2154,7 +2154,7 @@ N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe) {
 		nimln(280, "strutils.nim");
 		{
 			if (!NIM_FALSE) goto LA9;
-			failedassertimpl_87017(((NimStringDesc*) &TMP10783));
+			failedassertimpl_87017(((NimStringDesc*) &TMP10784));
 		}
 		LA9: ;
 		nimln(281, "strutils.nim");
@@ -2164,10 +2164,10 @@ N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe) {
 				nimln(283, "strutils.nim");
 				while (1) {
 					NI first_127809;
-					NI TMP10785;
+					NI TMP10786;
 					NimStringDesc* x;
 					NimStringDesc* LOC21;
-					NI TMP10786;
+					NI TMP10787;
 					if (!(last_127807 <= (path ? path->Sup.len : 0))) goto LA16;
 					nimln(284, "strutils.nim");
 					first_127809 = last_127807;
@@ -2175,7 +2175,7 @@ N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe) {
 						nimln(285, "strutils.nim");
 						while (1) {
 							NIM_BOOL LOC19;
-							NI TMP10784;
+							NI TMP10785;
 							LOC19 = 0;
 							LOC19 = (last_127807 < (path ? path->Sup.len : 0));
 							if (!(LOC19)) goto LA20;
@@ -2183,13 +2183,13 @@ N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe) {
 							LOC19 = !(((NU8)(path->data[last_127807]) == (NU8)(58)));
 							LA20: ;
 							if (!LOC19) goto LA18;
-							TMP10784 = addInt(last_127807, ((NI) 1));
-							last_127807 = (NI)(TMP10784);
+							TMP10785 = addInt(last_127807, ((NI) 1));
+							last_127807 = (NI)(TMP10785);
 						} LA18: ;
 					}
 					nimln(286, "strutils.nim");
-					TMP10785 = subInt(last_127807, ((NI) 1));
-					candidate_127621 = copyStrLast(path, first_127809, (NI)(TMP10785));
+					TMP10786 = subInt(last_127807, ((NI) 1));
+					candidate_127621 = copyStrLast(path, first_127809, (NI)(TMP10786));
 					nimln(1880, "os.nim");
 					LOC21 = 0;
 					LOC21 = expandtilde_127610(candidate_127621);
@@ -2205,8 +2205,8 @@ N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe) {
 					}
 					LA25: ;
 					nimln(287, "strutils.nim");
-					TMP10786 = addInt(last_127807, ((NI) 1));
-					last_127807 = (NI)(TMP10786);
+					TMP10787 = addInt(last_127807, ((NI) 1));
+					last_127807 = (NI)(TMP10787);
 				} LA16: ;
 			}
 		}

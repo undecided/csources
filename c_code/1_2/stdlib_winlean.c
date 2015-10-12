@@ -242,8 +242,8 @@ NIM_CONST TY107712 TMP154 = {((NI8) -107),
 ;
 STRING_LITERAL(TMP191, "kernel32", 8);
 STRING_LITERAL(TMP192, "kernel32", 8);
-STRING_LITERAL(TMP10596, "Ws2_32.dll", 10);
 STRING_LITERAL(TMP10597, "Ws2_32.dll", 10);
+STRING_LITERAL(TMP10598, "Ws2_32.dll", 10);
 Tguid107614 Wsaidconnectex_107714;
 Tguid107614 Wsaidacceptex_107718;
 Tguid107614 Wsaidgetacceptexsockaddrs_107722;
@@ -286,7 +286,7 @@ TY107411 Dl_107410;
 TY107405 Dl_107404;
 TY107440 Dl_107439;
 TY107421 Dl_107420;
-static void* TMP10595;
+static void* TMP10596;
 TY107024 Dl_107023;
 TY107032 Dl_107031;
 TY107048 Dl_107047;
@@ -378,15 +378,15 @@ N_NIMCALL(void, Fdset_107204)(NI socket, Tfdset106864* s) {
 	nimfr("FD_SET", "winlean.nim")
 	nimln(550, "winlean.nim");
 	{
-		NI TMP10603;
+		NI TMP10604;
 		if (!((*s).fdcount < ((NI32) 64))) goto LA3;
 		nimln(551, "winlean.nim");
 		if ((NU)(((NI) ((*s).fdcount))) > (NU)(63)) raiseIndexError();
 		(*s).fdarray[(((NI) ((*s).fdcount)))- 0] = socket;
 		nimln(552, "winlean.nim");
-		TMP10603 = addInt((*s).fdcount, ((NI) 1));
-		if (TMP10603 < (-2147483647 -1) || TMP10603 > 2147483647) raiseOverflow();
-		(*s).fdcount = (int)(TMP10603);
+		TMP10604 = addInt((*s).fdcount, ((NI) 1));
+		if (TMP10604 < (-2147483647 -1) || TMP10604 > 2147483647) raiseOverflow();
+		(*s).fdcount = (int)(TMP10604);
 	}
 	LA3: ;
 	popFrame();
@@ -485,29 +485,29 @@ if (!((TMP190 = nimLoadLibrary((NimStringDesc*) &TMP191))
 	Dl_107404 = (TY107405) nimGetProcAddr(TMP190, "SetEndOfFile");
 	Dl_107439 = (TY107440) nimGetProcAddr(TMP190, "CreateFileMappingW");
 	Dl_107420 = (TY107421) nimGetProcAddr(TMP190, "GetFileSize");
-if (!((TMP10595 = nimLoadLibrary((NimStringDesc*) &TMP10596))
-)) nimLoadLibraryError((NimStringDesc*) &TMP10597);
-	Dl_107023 = (TY107024) nimGetProcAddr(TMP10595, "socket");
-	Dl_107031 = (TY107032) nimGetProcAddr(TMP10595, "closesocket");
-	Dl_107047 = (TY107048) nimGetProcAddr(TMP10595, "bind");
-	Dl_107096 = (TY107097) nimGetProcAddr(TMP10595, "listen");
-	Dl_107243 = (TY107244) nimGetProcAddr(TMP10595, "getaddrinfo");
-	Dl_107255 = (TY107256) nimGetProcAddr(TMP10595, "freeaddrinfo");
-	Dl_106990 = (TY106991) nimGetProcAddr(TMP10595, "getservbyname");
-	Dl_106998 = (TY106999) nimGetProcAddr(TMP10595, "getservbyport");
-	Dl_107178 = (TY107179) nimGetProcAddr(TMP10595, "inet_addr");
-	Dl_107006 = (TY107007) nimGetProcAddr(TMP10595, "gethostbyaddr");
-	Dl_107016 = (TY107017) nimGetProcAddr(TMP10595, "gethostbyname");
-	Dl_107065 = (TY107066) nimGetProcAddr(TMP10595, "getsockname");
-	Dl_107075 = (TY107076) nimGetProcAddr(TMP10595, "getsockopt");
-	Dl_107086 = (TY107087) nimGetProcAddr(TMP10595, "setsockopt");
-	Dl_107184 = (TY107185) nimGetProcAddr(TMP10595, "__WSAFDIsSet");
-	Dl_107125 = (TY107126) nimGetProcAddr(TMP10595, "select");
-	Dl_107235 = (TY107236) nimGetProcAddr(TMP10595, "WSAStartup");
-	Dl_107137 = (TY107138) nimGetProcAddr(TMP10595, "send");
-	Dl_107037 = (TY107038) nimGetProcAddr(TMP10595, "accept");
-	Dl_107262 = (TY107263) nimGetProcAddr(TMP10595, "inet_ntoa");
-	Dl_107103 = (TY107104) nimGetProcAddr(TMP10595, "recv");
+if (!((TMP10596 = nimLoadLibrary((NimStringDesc*) &TMP10597))
+)) nimLoadLibraryError((NimStringDesc*) &TMP10598);
+	Dl_107023 = (TY107024) nimGetProcAddr(TMP10596, "socket");
+	Dl_107031 = (TY107032) nimGetProcAddr(TMP10596, "closesocket");
+	Dl_107047 = (TY107048) nimGetProcAddr(TMP10596, "bind");
+	Dl_107096 = (TY107097) nimGetProcAddr(TMP10596, "listen");
+	Dl_107243 = (TY107244) nimGetProcAddr(TMP10596, "getaddrinfo");
+	Dl_107255 = (TY107256) nimGetProcAddr(TMP10596, "freeaddrinfo");
+	Dl_106990 = (TY106991) nimGetProcAddr(TMP10596, "getservbyname");
+	Dl_106998 = (TY106999) nimGetProcAddr(TMP10596, "getservbyport");
+	Dl_107178 = (TY107179) nimGetProcAddr(TMP10596, "inet_addr");
+	Dl_107006 = (TY107007) nimGetProcAddr(TMP10596, "gethostbyaddr");
+	Dl_107016 = (TY107017) nimGetProcAddr(TMP10596, "gethostbyname");
+	Dl_107065 = (TY107066) nimGetProcAddr(TMP10596, "getsockname");
+	Dl_107075 = (TY107076) nimGetProcAddr(TMP10596, "getsockopt");
+	Dl_107086 = (TY107087) nimGetProcAddr(TMP10596, "setsockopt");
+	Dl_107184 = (TY107185) nimGetProcAddr(TMP10596, "__WSAFDIsSet");
+	Dl_107125 = (TY107126) nimGetProcAddr(TMP10596, "select");
+	Dl_107235 = (TY107236) nimGetProcAddr(TMP10596, "WSAStartup");
+	Dl_107137 = (TY107138) nimGetProcAddr(TMP10596, "send");
+	Dl_107037 = (TY107038) nimGetProcAddr(TMP10596, "accept");
+	Dl_107262 = (TY107263) nimGetProcAddr(TMP10596, "inet_ntoa");
+	Dl_107103 = (TY107104) nimGetProcAddr(TMP10596, "recv");
 	Dl_106804 = (TY106805) nimGetProcAddr(TMP190, "GetFileInformationByHandle");
 }
 

@@ -125,7 +125,7 @@ NI rd;
 NI wr;
 NI lineoffset;
 };
-typedef N_CLOSURE_PTR(void, TMP2285) (Tlineinfo161338 info, NU16 msg, NimStringDesc* arg);
+typedef N_CLOSURE_PTR(void, TMP2286) (Tlineinfo161338 info, NU16 msg, NimStringDesc* arg);
 struct  Exception  {
   TNimObject Sup;
 Exception* parent;
@@ -365,7 +365,7 @@ static N_INLINE(NI64, addInt64)(NI64 a, NI64 b);
 N_NIMCALL(void, skip_182437)(Tlexer179185* L, Ttoken179181* tok);
 N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok);
 N_NIMCALL(Tident165021*, getident_165463)(NimStringDesc* identifier);
-N_NIMCALL(void, TMP2494)(void* p, NI op);
+N_NIMCALL(void, TMP2495)(void* p, NI op);
 NIM_CONST TY77659 numchars_179006 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x07, 0xFE, 0xFF, 0xFF, 0x07,
@@ -390,127 +390,126 @@ NIM_CONST TY77659 Opchars_179015 = {
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-STRING_LITERAL(TMP2157, "tkInvalid", 9);
-STRING_LITERAL(TMP2158, "[EOF]", 5);
-STRING_LITERAL(TMP2159, "tkSymbol", 8);
-STRING_LITERAL(TMP2160, "addr", 4);
-STRING_LITERAL(TMP2161, "and", 3);
-STRING_LITERAL(TMP2162, "as", 2);
-STRING_LITERAL(TMP2163, "asm", 3);
-STRING_LITERAL(TMP2164, "atomic", 6);
-STRING_LITERAL(TMP2165, "bind", 4);
-STRING_LITERAL(TMP2166, "block", 5);
-STRING_LITERAL(TMP2167, "break", 5);
-STRING_LITERAL(TMP2168, "case", 4);
-STRING_LITERAL(TMP2169, "cast", 4);
-STRING_LITERAL(TMP2170, "concept", 7);
-STRING_LITERAL(TMP2171, "const", 5);
-STRING_LITERAL(TMP2172, "continue", 8);
-STRING_LITERAL(TMP2173, "converter", 9);
-STRING_LITERAL(TMP2174, "defer", 5);
-STRING_LITERAL(TMP2175, "discard", 7);
-STRING_LITERAL(TMP2176, "distinct", 8);
-STRING_LITERAL(TMP2177, "div", 3);
-STRING_LITERAL(TMP2178, "do", 2);
-STRING_LITERAL(TMP2179, "elif", 4);
-STRING_LITERAL(TMP2180, "else", 4);
-STRING_LITERAL(TMP2181, "end", 3);
-STRING_LITERAL(TMP2182, "enum", 4);
-STRING_LITERAL(TMP2183, "except", 6);
-STRING_LITERAL(TMP2184, "export", 6);
-STRING_LITERAL(TMP2185, "finally", 7);
-STRING_LITERAL(TMP2186, "for", 3);
-STRING_LITERAL(TMP2187, "from", 4);
-STRING_LITERAL(TMP2188, "func", 4);
-STRING_LITERAL(TMP2189, "generic", 7);
-STRING_LITERAL(TMP2190, "if", 2);
-STRING_LITERAL(TMP2191, "import", 6);
-STRING_LITERAL(TMP2192, "in", 2);
-STRING_LITERAL(TMP2193, "include", 7);
-STRING_LITERAL(TMP2194, "interface", 9);
-STRING_LITERAL(TMP2195, "is", 2);
-STRING_LITERAL(TMP2196, "isnot", 5);
-STRING_LITERAL(TMP2197, "iterator", 8);
-STRING_LITERAL(TMP2198, "let", 3);
-STRING_LITERAL(TMP2199, "macro", 5);
-STRING_LITERAL(TMP2200, "method", 6);
-STRING_LITERAL(TMP2201, "mixin", 5);
-STRING_LITERAL(TMP2202, "mod", 3);
-STRING_LITERAL(TMP2203, "nil", 3);
-STRING_LITERAL(TMP2204, "not", 3);
-STRING_LITERAL(TMP2205, "notin", 5);
-STRING_LITERAL(TMP2206, "object", 6);
-STRING_LITERAL(TMP2207, "of", 2);
-STRING_LITERAL(TMP2208, "or", 2);
-STRING_LITERAL(TMP2209, "out", 3);
-STRING_LITERAL(TMP2210, "proc", 4);
-STRING_LITERAL(TMP2211, "ptr", 3);
-STRING_LITERAL(TMP2212, "raise", 5);
-STRING_LITERAL(TMP2213, "ref", 3);
-STRING_LITERAL(TMP2214, "return", 6);
-STRING_LITERAL(TMP2215, "shl", 3);
-STRING_LITERAL(TMP2216, "shr", 3);
-STRING_LITERAL(TMP2217, "static", 6);
-STRING_LITERAL(TMP2218, "template", 8);
-STRING_LITERAL(TMP2219, "try", 3);
-STRING_LITERAL(TMP2220, "tuple", 5);
-STRING_LITERAL(TMP2221, "type", 4);
-STRING_LITERAL(TMP2222, "using", 5);
-STRING_LITERAL(TMP2223, "var", 3);
-STRING_LITERAL(TMP2224, "when", 4);
-STRING_LITERAL(TMP2225, "while", 5);
-STRING_LITERAL(TMP2226, "with", 4);
-STRING_LITERAL(TMP2227, "without", 7);
-STRING_LITERAL(TMP2228, "xor", 3);
-STRING_LITERAL(TMP2229, "yield", 5);
-STRING_LITERAL(TMP2230, "tkIntLit", 8);
-STRING_LITERAL(TMP2231, "tkInt8Lit", 9);
-STRING_LITERAL(TMP2232, "tkInt16Lit", 10);
-STRING_LITERAL(TMP2233, "tkInt32Lit", 10);
-STRING_LITERAL(TMP2234, "tkInt64Lit", 10);
-STRING_LITERAL(TMP2235, "tkUIntLit", 9);
-STRING_LITERAL(TMP2236, "tkUInt8Lit", 10);
-STRING_LITERAL(TMP2237, "tkUInt16Lit", 11);
-STRING_LITERAL(TMP2238, "tkUInt32Lit", 11);
-STRING_LITERAL(TMP2239, "tkUInt64Lit", 11);
-STRING_LITERAL(TMP2240, "tkFloatLit", 10);
-STRING_LITERAL(TMP2241, "tkFloat32Lit", 12);
-STRING_LITERAL(TMP2242, "tkFloat64Lit", 12);
-STRING_LITERAL(TMP2243, "tkFloat128Lit", 13);
-STRING_LITERAL(TMP2244, "tkStrLit", 8);
-STRING_LITERAL(TMP2245, "tkRStrLit", 9);
-STRING_LITERAL(TMP2246, "tkTripleStrLit", 14);
-STRING_LITERAL(TMP2247, "tkGStrLit", 9);
-STRING_LITERAL(TMP2248, "tkGTripleStrLit", 15);
-STRING_LITERAL(TMP2249, "tkCharLit", 9);
-STRING_LITERAL(TMP2250, "(", 1);
-STRING_LITERAL(TMP2251, ")", 1);
-STRING_LITERAL(TMP2252, "[", 1);
-STRING_LITERAL(TMP2253, "]", 1);
-STRING_LITERAL(TMP2254, "{", 1);
-STRING_LITERAL(TMP2255, "}", 1);
-STRING_LITERAL(TMP2256, "[.", 2);
-STRING_LITERAL(TMP2257, ".]", 2);
-STRING_LITERAL(TMP2258, "{.", 2);
-STRING_LITERAL(TMP2259, ".}", 2);
-STRING_LITERAL(TMP2260, "(.", 2);
-STRING_LITERAL(TMP2261, ".)", 2);
-STRING_LITERAL(TMP2262, ",", 1);
-STRING_LITERAL(TMP2263, ";", 1);
-STRING_LITERAL(TMP2264, ":", 1);
-STRING_LITERAL(TMP2265, "::", 2);
-STRING_LITERAL(TMP2266, "=", 1);
-STRING_LITERAL(TMP2267, ".", 1);
-STRING_LITERAL(TMP2268, "..", 2);
-STRING_LITERAL(TMP2269, "tkOpr", 5);
-STRING_LITERAL(TMP2270, "tkComment", 9);
-STRING_LITERAL(TMP2271, "`", 1);
-STRING_LITERAL(TMP2272, "tkSpaces", 8);
-STRING_LITERAL(TMP2273, "tkInfixOpr", 10);
-STRING_LITERAL(TMP2274, "tkPrefixOpr", 11);
-STRING_LITERAL(TMP2275, "tkPostfixOpr", 12);
-NIM_CONST TY179170 Toktypetostr_179169 = {((NimStringDesc*) &TMP2157),
-((NimStringDesc*) &TMP2158),
+STRING_LITERAL(TMP2158, "tkInvalid", 9);
+STRING_LITERAL(TMP2159, "[EOF]", 5);
+STRING_LITERAL(TMP2160, "tkSymbol", 8);
+STRING_LITERAL(TMP2161, "addr", 4);
+STRING_LITERAL(TMP2162, "and", 3);
+STRING_LITERAL(TMP2163, "as", 2);
+STRING_LITERAL(TMP2164, "asm", 3);
+STRING_LITERAL(TMP2165, "atomic", 6);
+STRING_LITERAL(TMP2166, "bind", 4);
+STRING_LITERAL(TMP2167, "block", 5);
+STRING_LITERAL(TMP2168, "break", 5);
+STRING_LITERAL(TMP2169, "case", 4);
+STRING_LITERAL(TMP2170, "cast", 4);
+STRING_LITERAL(TMP2171, "concept", 7);
+STRING_LITERAL(TMP2172, "const", 5);
+STRING_LITERAL(TMP2173, "continue", 8);
+STRING_LITERAL(TMP2174, "converter", 9);
+STRING_LITERAL(TMP2175, "defer", 5);
+STRING_LITERAL(TMP2176, "discard", 7);
+STRING_LITERAL(TMP2177, "distinct", 8);
+STRING_LITERAL(TMP2178, "div", 3);
+STRING_LITERAL(TMP2179, "do", 2);
+STRING_LITERAL(TMP2180, "elif", 4);
+STRING_LITERAL(TMP2181, "else", 4);
+STRING_LITERAL(TMP2182, "end", 3);
+STRING_LITERAL(TMP2183, "enum", 4);
+STRING_LITERAL(TMP2184, "except", 6);
+STRING_LITERAL(TMP2185, "export", 6);
+STRING_LITERAL(TMP2186, "finally", 7);
+STRING_LITERAL(TMP2187, "for", 3);
+STRING_LITERAL(TMP2188, "from", 4);
+STRING_LITERAL(TMP2189, "func", 4);
+STRING_LITERAL(TMP2190, "generic", 7);
+STRING_LITERAL(TMP2191, "if", 2);
+STRING_LITERAL(TMP2192, "import", 6);
+STRING_LITERAL(TMP2193, "in", 2);
+STRING_LITERAL(TMP2194, "include", 7);
+STRING_LITERAL(TMP2195, "interface", 9);
+STRING_LITERAL(TMP2196, "is", 2);
+STRING_LITERAL(TMP2197, "isnot", 5);
+STRING_LITERAL(TMP2198, "iterator", 8);
+STRING_LITERAL(TMP2199, "let", 3);
+STRING_LITERAL(TMP2200, "macro", 5);
+STRING_LITERAL(TMP2201, "method", 6);
+STRING_LITERAL(TMP2202, "mixin", 5);
+STRING_LITERAL(TMP2203, "mod", 3);
+STRING_LITERAL(TMP2204, "nil", 3);
+STRING_LITERAL(TMP2205, "not", 3);
+STRING_LITERAL(TMP2206, "notin", 5);
+STRING_LITERAL(TMP2207, "object", 6);
+STRING_LITERAL(TMP2208, "of", 2);
+STRING_LITERAL(TMP2209, "or", 2);
+STRING_LITERAL(TMP2210, "out", 3);
+STRING_LITERAL(TMP2211, "proc", 4);
+STRING_LITERAL(TMP2212, "ptr", 3);
+STRING_LITERAL(TMP2213, "raise", 5);
+STRING_LITERAL(TMP2214, "ref", 3);
+STRING_LITERAL(TMP2215, "return", 6);
+STRING_LITERAL(TMP2216, "shl", 3);
+STRING_LITERAL(TMP2217, "shr", 3);
+STRING_LITERAL(TMP2218, "static", 6);
+STRING_LITERAL(TMP2219, "template", 8);
+STRING_LITERAL(TMP2220, "try", 3);
+STRING_LITERAL(TMP2221, "tuple", 5);
+STRING_LITERAL(TMP2222, "type", 4);
+STRING_LITERAL(TMP2223, "using", 5);
+STRING_LITERAL(TMP2224, "var", 3);
+STRING_LITERAL(TMP2225, "when", 4);
+STRING_LITERAL(TMP2226, "while", 5);
+STRING_LITERAL(TMP2227, "with", 4);
+STRING_LITERAL(TMP2228, "without", 7);
+STRING_LITERAL(TMP2229, "xor", 3);
+STRING_LITERAL(TMP2230, "yield", 5);
+STRING_LITERAL(TMP2231, "tkIntLit", 8);
+STRING_LITERAL(TMP2232, "tkInt8Lit", 9);
+STRING_LITERAL(TMP2233, "tkInt16Lit", 10);
+STRING_LITERAL(TMP2234, "tkInt32Lit", 10);
+STRING_LITERAL(TMP2235, "tkInt64Lit", 10);
+STRING_LITERAL(TMP2236, "tkUIntLit", 9);
+STRING_LITERAL(TMP2237, "tkUInt8Lit", 10);
+STRING_LITERAL(TMP2238, "tkUInt16Lit", 11);
+STRING_LITERAL(TMP2239, "tkUInt32Lit", 11);
+STRING_LITERAL(TMP2240, "tkUInt64Lit", 11);
+STRING_LITERAL(TMP2241, "tkFloatLit", 10);
+STRING_LITERAL(TMP2242, "tkFloat32Lit", 12);
+STRING_LITERAL(TMP2243, "tkFloat64Lit", 12);
+STRING_LITERAL(TMP2244, "tkFloat128Lit", 13);
+STRING_LITERAL(TMP2245, "tkStrLit", 8);
+STRING_LITERAL(TMP2246, "tkRStrLit", 9);
+STRING_LITERAL(TMP2247, "tkTripleStrLit", 14);
+STRING_LITERAL(TMP2248, "tkGStrLit", 9);
+STRING_LITERAL(TMP2249, "tkGTripleStrLit", 15);
+STRING_LITERAL(TMP2250, "tkCharLit", 9);
+STRING_LITERAL(TMP2251, "(", 1);
+STRING_LITERAL(TMP2252, ")", 1);
+STRING_LITERAL(TMP2253, "[", 1);
+STRING_LITERAL(TMP2254, "]", 1);
+STRING_LITERAL(TMP2255, "{", 1);
+STRING_LITERAL(TMP2256, "}", 1);
+STRING_LITERAL(TMP2257, "[.", 2);
+STRING_LITERAL(TMP2258, ".]", 2);
+STRING_LITERAL(TMP2259, "{.", 2);
+STRING_LITERAL(TMP2260, ".}", 2);
+STRING_LITERAL(TMP2261, "(.", 2);
+STRING_LITERAL(TMP2262, ".)", 2);
+STRING_LITERAL(TMP2263, ",", 1);
+STRING_LITERAL(TMP2264, ";", 1);
+STRING_LITERAL(TMP2265, ":", 1);
+STRING_LITERAL(TMP2266, "::", 2);
+STRING_LITERAL(TMP2267, "=", 1);
+STRING_LITERAL(TMP2268, ".", 1);
+STRING_LITERAL(TMP2269, "..", 2);
+STRING_LITERAL(TMP2270, "tkOpr", 5);
+STRING_LITERAL(TMP2271, "tkComment", 9);
+STRING_LITERAL(TMP2272, "`", 1);
+STRING_LITERAL(TMP2273, "tkSpaces", 8);
+STRING_LITERAL(TMP2274, "tkInfixOpr", 10);
+STRING_LITERAL(TMP2275, "tkPrefixOpr", 11);
+STRING_LITERAL(TMP2276, "tkPostfixOpr", 12);
+NIM_CONST TY179170 Toktypetostr_179169 = {((NimStringDesc*) &TMP2158),
 ((NimStringDesc*) &TMP2159),
 ((NimStringDesc*) &TMP2160),
 ((NimStringDesc*) &TMP2161),
@@ -627,49 +626,50 @@ NIM_CONST TY179170 Toktypetostr_179169 = {((NimStringDesc*) &TMP2157),
 ((NimStringDesc*) &TMP2272),
 ((NimStringDesc*) &TMP2273),
 ((NimStringDesc*) &TMP2274),
-((NimStringDesc*) &TMP2275)}
+((NimStringDesc*) &TMP2275),
+((NimStringDesc*) &TMP2276)}
 ;
-STRING_LITERAL(TMP2278, "tokToStr", 8);
-STRING_LITERAL(TMP2279, "", 0);
-STRING_LITERAL(TMP2280, "keyword ", 8);
-STRING_LITERAL(TMP2281, "\011", 1);
-STRING_LITERAL(TMP2282, " ", 1);
-STRING_LITERAL(TMP2289, "_", 1);
-static NIM_CONST TY77659 TMP2295 = {
+STRING_LITERAL(TMP2279, "tokToStr", 8);
+STRING_LITERAL(TMP2280, "", 0);
+STRING_LITERAL(TMP2281, "keyword ", 8);
+STRING_LITERAL(TMP2282, "\011", 1);
+STRING_LITERAL(TMP2283, " ", 1);
+STRING_LITERAL(TMP2290, "_", 1);
+static NIM_CONST TY77659 TMP2296 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x7E, 0x00, 0x00, 0x01, 0x7E, 0x00, 0x00, 0x01,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY77659 TMP2296 = {
+static NIM_CONST TY77659 TMP2297 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x0C, 0x00, 0x00, 0x00, 0x0C, 0x80, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY77659 TMP2299 = {
+static NIM_CONST TY77659 TMP2300 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP2311, "\'f", 2);
-STRING_LITERAL(TMP2320, "\'i", 2);
-STRING_LITERAL(TMP2329, "\'", 1);
-STRING_LITERAL(TMP2354, "getNumber", 9);
-STRING_LITERAL(TMP2356, "invalid integer: ", 17);
-static NIM_CONST TY77659 TMP2411 = {
+STRING_LITERAL(TMP2312, "\'f", 2);
+STRING_LITERAL(TMP2321, "\'i", 2);
+STRING_LITERAL(TMP2330, "\'", 1);
+STRING_LITERAL(TMP2355, "getNumber", 9);
+STRING_LITERAL(TMP2357, "invalid integer: ", 17);
+static NIM_CONST TY77659 TMP2412 = {
 0x00, 0x00, 0x00, 0x00, 0x72, 0xEC, 0x00, 0xF4,
 0x01, 0x00, 0x00, 0x50, 0x00, 0x00, 0x00, 0x50,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-STRING_LITERAL(TMP2416, "buf[pos + 1] == \'#\' ", 20);
-STRING_LITERAL(TMP2419, "[]", 2);
-STRING_LITERAL(TMP2421, "use \'## [\' instead; \'##[\'", 25);
-STRING_LITERAL(TMP2427, "\012", 1);
-STRING_LITERAL(TMP2437, "use \'# [\' instead; \'#[\'", 23);
-STRING_LITERAL(TMP2467, " (\\", 3);
+STRING_LITERAL(TMP2417, "buf[pos + 1] == \'#\' ", 20);
+STRING_LITERAL(TMP2420, "[]", 2);
+STRING_LITERAL(TMP2422, "use \'## [\' instead; \'##[\'", 25);
+STRING_LITERAL(TMP2428, "\012", 1);
+STRING_LITERAL(TMP2438, "use \'# [\' instead; \'#[\'", 23);
+STRING_LITERAL(TMP2468, " (\\", 3);
 NI glinescompiled_179213;
 extern TFrame* frameptr_17042;
 Tident165021* dummyident_179364;
@@ -787,16 +787,16 @@ N_NIMCALL(NIM_BOOL, isnimidentifier_179257)(NimStringDesc* s) {
 		{
 			nimln(143, "lexer.nim");
 			while (1) {
-				NI TMP2277;
+				NI TMP2278;
 				if (!(i < (s ? s->Sup.len : 0))) goto LA6;
 				nimln(144, "lexer.nim");
 				{
-					NI TMP2276;
+					NI TMP2277;
 					if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 					if (!((NU8)(s->data[i]) == (NU8)(95))) goto LA9;
 					nimln(145, "lexer.nim");
-					TMP2276 = addInt(i, ((NI) 1));
-					i = (NI)(TMP2276);
+					TMP2277 = addInt(i, ((NI) 1));
+					i = (NI)(TMP2277);
 					nimln(146, "lexer.nim");
 					{
 						if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
@@ -814,8 +814,8 @@ N_NIMCALL(NIM_BOOL, isnimidentifier_179257)(NimStringDesc* s) {
 				}
 				LA17: ;
 				nimln(148, "lexer.nim");
-				TMP2277 = addInt(i, ((NI) 1));
-				i = (NI)(TMP2277);
+				TMP2278 = addInt(i, ((NI) 1));
+				i = (NI)(TMP2278);
 			} LA6: ;
 		}
 		nimln(149, "lexer.nim");
@@ -873,9 +873,9 @@ N_NIMCALL(NimStringDesc*, toktostr_179323)(Ttoken179181* tok) {
 		LA8: ;
 		{
 			nimln(162, "lexer.nim");
-			internalerror_163218(((NimStringDesc*) &TMP2278));
+			internalerror_163218(((NimStringDesc*) &TMP2279));
 			nimln(163, "lexer.nim");
-			result = copyString(((NimStringDesc*) &TMP2279));
+			result = copyString(((NimStringDesc*) &TMP2280));
 		}
 		LA6: ;
 	}
@@ -903,7 +903,7 @@ N_NIMCALL(NimStringDesc*, prettytok_179345)(Ttoken179181* tok) {
 		if (!LOC3) goto LA4;
 		LOC6 = 0;
 		LOC6 = rawNewString((*(*tok).ident).s->Sup.len + 8);
-appendString(LOC6, ((NimStringDesc*) &TMP2280));
+appendString(LOC6, ((NimStringDesc*) &TMP2281));
 appendString(LOC6, (*(*tok).ident).s);
 		result = LOC6;
 	}
@@ -937,11 +937,11 @@ N_NIMCALL(void, printtok_179355)(Ttoken179181* tok) {
 	LOC4 = toktostr_179323(tok);
 	LOC1 = rawNewString(LOC2->Sup.len + LOC3->Sup.len + Toktypetostr_179169[((*tok).toktype)- 0]->Sup.len + LOC4->Sup.len + 3);
 appendString(LOC1, LOC2);
-appendString(LOC1, ((NimStringDesc*) &TMP2264));
+appendString(LOC1, ((NimStringDesc*) &TMP2265));
 appendString(LOC1, LOC3);
-appendString(LOC1, ((NimStringDesc*) &TMP2281));
-appendString(LOC1, Toktypetostr_179169[((*tok).toktype)- 0]);
 appendString(LOC1, ((NimStringDesc*) &TMP2282));
+appendString(LOC1, Toktypetostr_179169[((*tok).toktype)- 0]);
+appendString(LOC1, ((NimStringDesc*) &TMP2283));
 appendString(LOC1, LOC4);
 	msgwriteln_162536(LOC1);
 	popFrame();
@@ -958,7 +958,7 @@ N_NIMCALL(void, inittoken_179369)(Ttoken179181* L) {
 	nimln(179, "lexer.nim");
 	(*L).strongspacea = ((NI8) 0);
 	nimln(180, "lexer.nim");
-	unsureAsgnRef((void**) (&(*L).literal), copyString(((NimStringDesc*) &TMP2279)));
+	unsureAsgnRef((void**) (&(*L).literal), copyString(((NimStringDesc*) &TMP2280)));
 	nimln(181, "lexer.nim");
 	(*L).fnumber = 0.0;
 	nimln(182, "lexer.nim");
@@ -991,7 +991,7 @@ N_NIMCALL(void, filltoken_179380)(Ttoken179181* L) {
 
 N_NIMCALL(void, openlexer_179391)(Tlexer179185* lex, NI32 fileidx, Tllstream176204* inputstream) {
 	Tbaselexer177024* LOC1;
-	NI TMP2283;
+	NI TMP2284;
 	nimfr("openLexer", "lexer.nim")
 	nimln(196, "lexer.nim");
 	LOC1 = 0;
@@ -1004,8 +1004,8 @@ N_NIMCALL(void, openlexer_179391)(Tlexer179185* lex, NI32 fileidx, Tllstream1762
 	nimln(199, "lexer.nim");
 	(*lex).currlineindent = ((NI) 0);
 	nimln(200, "lexer.nim");
-	TMP2283 = addInt((*lex).Sup.linenumber, (*inputstream).lineoffset);
-	(*lex).Sup.linenumber = (NI)(TMP2283);
+	TMP2284 = addInt((*lex).Sup.linenumber, (*inputstream).lineoffset);
+	(*lex).Sup.linenumber = (NI)(TMP2284);
 	popFrame();
 }
 
@@ -1020,12 +1020,12 @@ N_NIMCALL(void, openlexer_179412)(Tlexer179185* lex, NimStringDesc* filename, Tl
 }
 
 N_NIMCALL(void, closelexer_179424)(Tlexer179185* lex) {
-	NI TMP2284;
+	NI TMP2285;
 	Tbaselexer177024* LOC1;
 	nimfr("closeLexer", "lexer.nim")
 	nimln(206, "lexer.nim");
-	TMP2284 = addInt(glinescompiled_179213, (*lex).Sup.linenumber);
-	glinescompiled_179213 = (NI)(TMP2284);
+	TMP2285 = addInt(glinescompiled_179213, (*lex).Sup.linenumber);
+	glinescompiled_179213 = (NI)(TMP2285);
 	nimln(207, "lexer.nim");
 	LOC1 = 0;
 	LOC1 = &lex->Sup;
@@ -1068,7 +1068,7 @@ N_NIMCALL(void, dispmessage_179463)(Tlexer179185* L, Tlineinfo161338 info, NU16 
 	LA3: ;
 	{
 		nimln(219, "lexer.nim");
-		(*L).errorhandler.ClEnv? (*L).errorhandler.ClPrc(info, msg, arg, (*L).errorhandler.ClEnv):((TMP2285)((*L).errorhandler.ClPrc))(info, msg, arg);
+		(*L).errorhandler.ClEnv? (*L).errorhandler.ClPrc(info, msg, arg, (*L).errorhandler.ClEnv):((TMP2286)((*L).errorhandler.ClPrc))(info, msg, arg);
 	}
 	LA1: ;
 	popFrame();
@@ -1115,11 +1115,11 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 
 N_NIMCALL(void, lexmessagepos_179507)(Tlexer179185* L, NU16 msg, NI pos, NimStringDesc* arg) {
 	Tlineinfo161338 info;
-	NI TMP2286;
+	NI TMP2287;
 	nimfr("lexMessagePos", "lexer.nim")
 	nimln(229, "lexer.nim");
-	TMP2286 = subInt(pos, (*L).Sup.linestart);
-	info = newlineinfo_161867((*L).fileidx, (*L).Sup.linenumber, (NI)(TMP2286));
+	TMP2287 = subInt(pos, (*L).Sup.linestart);
+	info = newlineinfo_161867((*L).fileidx, (*L).Sup.linenumber, (NI)(TMP2287));
 	nimln(230, "lexer.nim");
 	dispmessage_179463((&(*L)), info, msg, arg);
 	popFrame();
@@ -1138,13 +1138,13 @@ N_NIMCALL(void, matchunderscorechars_179521)(Tlexer179185* L, Ttoken179181* tok,
 		while (1) {
 			nimln(236, "lexer.nim");
 			{
-				NI TMP2287;
+				NI TMP2288;
 				if (!((chars[((NU8)(buf[pos]))/8] &(1<<(((NU8)(buf[pos]))%8)))!=0)) goto LA5;
 				nimln(237, "lexer.nim");
 				(*tok).literal = addChar((*tok).literal, buf[pos]);
 				nimln(238, "lexer.nim");
-				TMP2287 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP2287);
+				TMP2288 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP2288);
 			}
 			goto LA3;
 			LA5: ;
@@ -1155,15 +1155,15 @@ N_NIMCALL(void, matchunderscorechars_179521)(Tlexer179185* L, Ttoken179181* tok,
 			LA3: ;
 			nimln(241, "lexer.nim");
 			{
-				NI TMP2290;
+				NI TMP2291;
 				if (!((NU8)(buf[pos]) == (NU8)(95))) goto LA10;
 				nimln(242, "lexer.nim");
 				{
-					NI TMP2288;
-					TMP2288 = addInt(pos, ((NI) 1));
-					if (!!(((chars[((NU8)(buf[(NI)(TMP2288)]))/8] &(1<<(((NU8)(buf[(NI)(TMP2288)]))%8)))!=0))) goto LA14;
+					NI TMP2289;
+					TMP2289 = addInt(pos, ((NI) 1));
+					if (!!(((chars[((NU8)(buf[(NI)(TMP2289)]))/8] &(1<<(((NU8)(buf[(NI)(TMP2289)]))%8)))!=0))) goto LA14;
 					nimln(243, "lexer.nim");
-					lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2289));
+					lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2290));
 					nimln(244, "lexer.nim");
 					goto LA1;
 				}
@@ -1171,8 +1171,8 @@ N_NIMCALL(void, matchunderscorechars_179521)(Tlexer179185* L, Ttoken179181* tok,
 				nimln(245, "lexer.nim");
 				(*tok).literal = addChar((*tok).literal, 95);
 				nimln(246, "lexer.nim");
-				TMP2290 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP2290);
+				TMP2291 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP2291);
 			}
 			LA10: ;
 		}
@@ -1185,15 +1185,15 @@ N_NIMCALL(void, matchunderscorechars_179521)(Tlexer179185* L, Ttoken179181* tok,
 N_NIMCALL(NIM_BOOL, matchtwochars_179582)(Tlexer179185* L, NIM_CHAR first, TY77659 second) {
 	NIM_BOOL result;
 	NIM_BOOL LOC1;
-	NI TMP2291;
+	NI TMP2292;
 	nimfr("matchTwoChars", "lexer.nim")
 	result = 0;
 	nimln(250, "lexer.nim");
 	LOC1 = 0;
 	LOC1 = ((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(first));
 	if (!(LOC1)) goto LA2;
-	TMP2291 = addInt((*L).Sup.bufpos, ((NI) 1));
-	LOC1 = ((second[((NU8)((*L).Sup.buf[(NI)(TMP2291)]))/8] &(1<<(((NU8)((*L).Sup.buf[(NI)(TMP2291)]))%8)))!=0);
+	TMP2292 = addInt((*L).Sup.bufpos, ((NI) 1));
+	LOC1 = ((second[((NU8)((*L).Sup.buf[(NI)(TMP2292)]))/8] &(1<<(((NU8)((*L).Sup.buf[(NI)(TMP2292)]))%8)))!=0);
 	LA2: ;
 	result = LOC1;
 	popFrame();
@@ -1207,19 +1207,19 @@ N_NIMCALL(NIM_BOOL, isfloatliteral_179605)(NimStringDesc* s) {
 	{
 		NI i_179621;
 		NI HEX3Atmp_179634;
-		NI TMP2292;
+		NI TMP2293;
 		NI res_179637;
 		i_179621 = 0;
 		HEX3Atmp_179634 = 0;
 		nimln(253, "lexer.nim");
-		TMP2292 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_179634 = (NI)(TMP2292);
+		TMP2293 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_179634 = (NI)(TMP2293);
 		nimln(1598, "system.nim");
 		res_179637 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2293;
+				NI TMP2294;
 				if (!(res_179637 <= HEX3Atmp_179634)) goto LA3;
 				nimln(1600, "system.nim");
 				i_179621 = res_179637;
@@ -1233,8 +1233,8 @@ N_NIMCALL(NIM_BOOL, isfloatliteral_179605)(NimStringDesc* s) {
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP2293 = addInt(res_179637, ((NI) 1));
-				res_179637 = (NI)(TMP2293);
+				TMP2294 = addInt(res_179637, ((NI) 1));
+				res_179637 = (NI)(TMP2294);
 			} LA3: ;
 		}
 	}
@@ -1471,7 +1471,7 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 	NI endpos;
 	NI64 volatile xi;
 	NIM_BOOL eallowed;
-	TSafePoint TMP2330;
+	TSafePoint TMP2331;
 	nimfr("getNumber", "lexer.nim")
 	pos = 0;
 	endpos = 0;
@@ -1479,7 +1479,7 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 	nimln(276, "lexer.nim");
 	(*Result).toktype = ((NU8) 73);
 	nimln(277, "lexer.nim");
-	unsureAsgnRef((void**) (&(*Result).literal), copyString(((NimStringDesc*) &TMP2279)));
+	unsureAsgnRef((void**) (&(*Result).literal), copyString(((NimStringDesc*) &TMP2280)));
 	nimln(278, "lexer.nim");
 	(*Result).base = ((NU8) 0);
 	nimln(279, "lexer.nim");
@@ -1489,22 +1489,22 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 	nimln(281, "lexer.nim");
 	{
 		NIM_BOOL LOC3;
-		NI TMP2294;
+		NI TMP2295;
 		LOC3 = 0;
 		LOC3 = ((NU8)((*L).Sup.buf[pos]) == (NU8)(48));
 		if (!(LOC3)) goto LA4;
-		TMP2294 = addInt(pos, ((NI) 1));
-		LOC3 = (((NU8)((*L).Sup.buf[(NI)(TMP2294)])) == ((NU8)(88)) || ((NU8)((*L).Sup.buf[(NI)(TMP2294)])) == ((NU8)(120)));
+		TMP2295 = addInt(pos, ((NI) 1));
+		LOC3 = (((NU8)((*L).Sup.buf[(NI)(TMP2295)])) == ((NU8)(88)) || ((NU8)((*L).Sup.buf[(NI)(TMP2295)])) == ((NU8)(120)));
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(282, "lexer.nim");
-		matchunderscorechars_179521(L, Result, TMP2295);
+		matchunderscorechars_179521(L, Result, TMP2296);
 	}
 	goto LA1;
 	LA5: ;
 	{
 		nimln(284, "lexer.nim");
-		matchunderscorechars_179521(L, Result, TMP2296);
+		matchunderscorechars_179521(L, Result, TMP2297);
 		nimln(285, "lexer.nim");
 		eallowed = NIM_TRUE;
 	}
@@ -1512,22 +1512,22 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 	nimln(286, "lexer.nim");
 	{
 		NIM_BOOL LOC10;
-		NI TMP2297;
 		NI TMP2298;
+		NI TMP2299;
 		LOC10 = 0;
 		LOC10 = ((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(46));
 		if (!(LOC10)) goto LA11;
-		TMP2297 = addInt((*L).Sup.bufpos, ((NI) 1));
-		LOC10 = (((NU8)((*L).Sup.buf[(NI)(TMP2297)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2297)])) <= ((NU8)(57)));
+		TMP2298 = addInt((*L).Sup.bufpos, ((NI) 1));
+		LOC10 = (((NU8)((*L).Sup.buf[(NI)(TMP2298)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2298)])) <= ((NU8)(57)));
 		LA11: ;
 		if (!LOC10) goto LA12;
 		nimln(287, "lexer.nim");
 		(*Result).literal = addChar((*Result).literal, 46);
 		nimln(288, "lexer.nim");
-		TMP2298 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2298);
+		TMP2299 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2299);
 		nimln(289, "lexer.nim");
-		matchunderscorechars_179521(L, Result, TMP2299);
+		matchunderscorechars_179521(L, Result, TMP2300);
 		nimln(290, "lexer.nim");
 		eallowed = NIM_TRUE;
 	}
@@ -1535,7 +1535,7 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 	nimln(291, "lexer.nim");
 	{
 		NIM_BOOL LOC16;
-		NI TMP2300;
+		NI TMP2301;
 		LOC16 = 0;
 		LOC16 = eallowed;
 		if (!(LOC16)) goto LA17;
@@ -1545,21 +1545,21 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 		nimln(292, "lexer.nim");
 		(*Result).literal = addChar((*Result).literal, 101);
 		nimln(293, "lexer.nim");
-		TMP2300 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2300);
+		TMP2301 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2301);
 		nimln(294, "lexer.nim");
 		{
-			NI TMP2301;
+			NI TMP2302;
 			if (!(((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) == ((NU8)(43)) || ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) == ((NU8)(45)))) goto LA22;
 			nimln(295, "lexer.nim");
 			(*Result).literal = addChar((*Result).literal, (*L).Sup.buf[(*L).Sup.bufpos]);
 			nimln(296, "lexer.nim");
-			TMP2301 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2301);
+			TMP2302 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2302);
 		}
 		LA22: ;
 		nimln(297, "lexer.nim");
-		matchunderscorechars_179521(L, Result, TMP2299);
+		matchunderscorechars_179521(L, Result, TMP2300);
 	}
 	LA18: ;
 	nimln(298, "lexer.nim");
@@ -1569,10 +1569,10 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 		if (!(((NU8)((*L).Sup.buf[endpos])) == ((NU8)(39)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(102)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(70)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(105)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(73)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(117)) || ((NU8)((*L).Sup.buf[endpos])) == ((NU8)(85)))) goto LA26;
 		nimln(300, "lexer.nim");
 		{
-			NI TMP2302;
+			NI TMP2303;
 			if (!((NU8)((*L).Sup.buf[endpos]) == (NU8)(39))) goto LA30;
-			TMP2302 = addInt(endpos, ((NI) 1));
-			endpos = (NI)(TMP2302);
+			TMP2303 = addInt(endpos, ((NI) 1));
+			endpos = (NI)(TMP2303);
 		}
 		LA30: ;
 		nimln(301, "lexer.nim");
@@ -1582,56 +1582,56 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 		case 102:
 		case 70:
 		{
-			NI TMP2303;
+			NI TMP2304;
 			nimln(304, "lexer.nim");
-			TMP2303 = addInt(endpos, ((NI) 1));
-			endpos = (NI)(TMP2303);
+			TMP2304 = addInt(endpos, ((NI) 1));
+			endpos = (NI)(TMP2304);
 			nimln(305, "lexer.nim");
 			{
 				NIM_BOOL LOC35;
-				NI TMP2304;
 				NI TMP2305;
+				NI TMP2306;
 				LOC35 = 0;
 				LOC35 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(51));
 				if (!(LOC35)) goto LA36;
-				TMP2304 = addInt(endpos, ((NI) 1));
-				LOC35 = ((NU8)((*L).Sup.buf[(NI)(TMP2304)]) == (NU8)(50));
+				TMP2305 = addInt(endpos, ((NI) 1));
+				LOC35 = ((NU8)((*L).Sup.buf[(NI)(TMP2305)]) == (NU8)(50));
 				LA36: ;
 				if (!LOC35) goto LA37;
 				nimln(306, "lexer.nim");
 				(*Result).toktype = ((NU8) 84);
 				nimln(307, "lexer.nim");
-				TMP2305 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2305);
+				TMP2306 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2306);
 			}
 			goto LA33;
 			LA37: ;
 			{
 				NIM_BOOL LOC40;
-				NI TMP2306;
 				NI TMP2307;
+				NI TMP2308;
 				nimln(308, "lexer.nim");
 				LOC40 = 0;
 				LOC40 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(54));
 				if (!(LOC40)) goto LA41;
-				TMP2306 = addInt(endpos, ((NI) 1));
-				LOC40 = ((NU8)((*L).Sup.buf[(NI)(TMP2306)]) == (NU8)(52));
+				TMP2307 = addInt(endpos, ((NI) 1));
+				LOC40 = ((NU8)((*L).Sup.buf[(NI)(TMP2307)]) == (NU8)(52));
 				LA41: ;
 				if (!LOC40) goto LA42;
 				nimln(309, "lexer.nim");
 				(*Result).toktype = ((NU8) 85);
 				nimln(310, "lexer.nim");
-				TMP2307 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2307);
+				TMP2308 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2308);
 			}
 			goto LA33;
 			LA42: ;
 			{
 				NIM_BOOL LOC45;
 				NIM_BOOL LOC46;
-				NI TMP2308;
 				NI TMP2309;
 				NI TMP2310;
+				NI TMP2311;
 				nimln(312, "lexer.nim");
 				LOC45 = 0;
 				nimln(311, "lexer.nim");
@@ -1639,21 +1639,21 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 				LOC46 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(49));
 				if (!(LOC46)) goto LA47;
 				nimln(312, "lexer.nim");
-				TMP2308 = addInt(endpos, ((NI) 1));
-				LOC46 = ((NU8)((*L).Sup.buf[(NI)(TMP2308)]) == (NU8)(50));
+				TMP2309 = addInt(endpos, ((NI) 1));
+				LOC46 = ((NU8)((*L).Sup.buf[(NI)(TMP2309)]) == (NU8)(50));
 				LA47: ;
 				LOC45 = LOC46;
 				if (!(LOC45)) goto LA48;
 				nimln(313, "lexer.nim");
-				TMP2309 = addInt(endpos, ((NI) 2));
-				LOC45 = ((NU8)((*L).Sup.buf[(NI)(TMP2309)]) == (NU8)(56));
+				TMP2310 = addInt(endpos, ((NI) 2));
+				LOC45 = ((NU8)((*L).Sup.buf[(NI)(TMP2310)]) == (NU8)(56));
 				LA48: ;
 				if (!LOC45) goto LA49;
 				nimln(314, "lexer.nim");
 				(*Result).toktype = ((NU8) 86);
 				nimln(315, "lexer.nim");
-				TMP2310 = addInt(endpos, ((NI) 3));
-				endpos = (NI)(TMP2310);
+				TMP2311 = addInt(endpos, ((NI) 3));
+				endpos = (NI)(TMP2311);
 			}
 			goto LA33;
 			LA49: ;
@@ -1663,7 +1663,7 @@ N_NIMCALL(void, getnumber_179747)(Tlexer179185* L, Ttoken179181* Result) {
 				LOC52 = 0;
 				LOC52 = rawNewString((*Result).literal->Sup.len + 3);
 appendString(LOC52, (*Result).literal);
-appendString(LOC52, ((NimStringDesc*) &TMP2311));
+appendString(LOC52, ((NimStringDesc*) &TMP2312));
 appendChar(LOC52, (*L).Sup.buf[endpos]);
 				lexmessage_179483((&(*L)), ((NU16) 14), LOC52);
 			}
@@ -1673,79 +1673,79 @@ appendChar(LOC52, (*L).Sup.buf[endpos]);
 		case 105:
 		case 73:
 		{
-			NI TMP2312;
+			NI TMP2313;
 			nimln(319, "lexer.nim");
-			TMP2312 = addInt(endpos, ((NI) 1));
-			endpos = (NI)(TMP2312);
+			TMP2313 = addInt(endpos, ((NI) 1));
+			endpos = (NI)(TMP2313);
 			nimln(320, "lexer.nim");
 			{
 				NIM_BOOL LOC56;
-				NI TMP2313;
 				NI TMP2314;
+				NI TMP2315;
 				LOC56 = 0;
 				LOC56 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(54));
 				if (!(LOC56)) goto LA57;
-				TMP2313 = addInt(endpos, ((NI) 1));
-				LOC56 = ((NU8)((*L).Sup.buf[(NI)(TMP2313)]) == (NU8)(52));
+				TMP2314 = addInt(endpos, ((NI) 1));
+				LOC56 = ((NU8)((*L).Sup.buf[(NI)(TMP2314)]) == (NU8)(52));
 				LA57: ;
 				if (!LOC56) goto LA58;
 				nimln(321, "lexer.nim");
 				(*Result).toktype = ((NU8) 77);
 				nimln(322, "lexer.nim");
-				TMP2314 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2314);
+				TMP2315 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2315);
 			}
 			goto LA54;
 			LA58: ;
 			{
 				NIM_BOOL LOC61;
-				NI TMP2315;
 				NI TMP2316;
+				NI TMP2317;
 				nimln(323, "lexer.nim");
 				LOC61 = 0;
 				LOC61 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(51));
 				if (!(LOC61)) goto LA62;
-				TMP2315 = addInt(endpos, ((NI) 1));
-				LOC61 = ((NU8)((*L).Sup.buf[(NI)(TMP2315)]) == (NU8)(50));
+				TMP2316 = addInt(endpos, ((NI) 1));
+				LOC61 = ((NU8)((*L).Sup.buf[(NI)(TMP2316)]) == (NU8)(50));
 				LA62: ;
 				if (!LOC61) goto LA63;
 				nimln(324, "lexer.nim");
 				(*Result).toktype = ((NU8) 76);
 				nimln(325, "lexer.nim");
-				TMP2316 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2316);
+				TMP2317 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2317);
 			}
 			goto LA54;
 			LA63: ;
 			{
 				NIM_BOOL LOC66;
-				NI TMP2317;
 				NI TMP2318;
+				NI TMP2319;
 				nimln(326, "lexer.nim");
 				LOC66 = 0;
 				LOC66 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(49));
 				if (!(LOC66)) goto LA67;
-				TMP2317 = addInt(endpos, ((NI) 1));
-				LOC66 = ((NU8)((*L).Sup.buf[(NI)(TMP2317)]) == (NU8)(54));
+				TMP2318 = addInt(endpos, ((NI) 1));
+				LOC66 = ((NU8)((*L).Sup.buf[(NI)(TMP2318)]) == (NU8)(54));
 				LA67: ;
 				if (!LOC66) goto LA68;
 				nimln(327, "lexer.nim");
 				(*Result).toktype = ((NU8) 75);
 				nimln(328, "lexer.nim");
-				TMP2318 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2318);
+				TMP2319 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2319);
 			}
 			goto LA54;
 			LA68: ;
 			{
-				NI TMP2319;
+				NI TMP2320;
 				nimln(329, "lexer.nim");
 				if (!((NU8)((*L).Sup.buf[endpos]) == (NU8)(56))) goto LA71;
 				nimln(330, "lexer.nim");
 				(*Result).toktype = ((NU8) 74);
 				nimln(331, "lexer.nim");
-				TMP2319 = addInt(endpos, ((NI) 1));
-				endpos = (NI)(TMP2319);
+				TMP2320 = addInt(endpos, ((NI) 1));
+				endpos = (NI)(TMP2320);
 			}
 			goto LA54;
 			LA71: ;
@@ -1755,7 +1755,7 @@ appendChar(LOC52, (*L).Sup.buf[endpos]);
 				LOC74 = 0;
 				LOC74 = rawNewString((*Result).literal->Sup.len + 3);
 appendString(LOC74, (*Result).literal);
-appendString(LOC74, ((NimStringDesc*) &TMP2320));
+appendString(LOC74, ((NimStringDesc*) &TMP2321));
 appendChar(LOC74, (*L).Sup.buf[endpos]);
 				lexmessage_179483((&(*L)), ((NU16) 14), LOC74);
 			}
@@ -1765,79 +1765,79 @@ appendChar(LOC74, (*L).Sup.buf[endpos]);
 		case 117:
 		case 85:
 		{
-			NI TMP2321;
+			NI TMP2322;
 			nimln(335, "lexer.nim");
-			TMP2321 = addInt(endpos, ((NI) 1));
-			endpos = (NI)(TMP2321);
+			TMP2322 = addInt(endpos, ((NI) 1));
+			endpos = (NI)(TMP2322);
 			nimln(336, "lexer.nim");
 			{
 				NIM_BOOL LOC78;
-				NI TMP2322;
 				NI TMP2323;
+				NI TMP2324;
 				LOC78 = 0;
 				LOC78 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(54));
 				if (!(LOC78)) goto LA79;
-				TMP2322 = addInt(endpos, ((NI) 1));
-				LOC78 = ((NU8)((*L).Sup.buf[(NI)(TMP2322)]) == (NU8)(52));
+				TMP2323 = addInt(endpos, ((NI) 1));
+				LOC78 = ((NU8)((*L).Sup.buf[(NI)(TMP2323)]) == (NU8)(52));
 				LA79: ;
 				if (!LOC78) goto LA80;
 				nimln(337, "lexer.nim");
 				(*Result).toktype = ((NU8) 82);
 				nimln(338, "lexer.nim");
-				TMP2323 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2323);
+				TMP2324 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2324);
 			}
 			goto LA76;
 			LA80: ;
 			{
 				NIM_BOOL LOC83;
-				NI TMP2324;
 				NI TMP2325;
+				NI TMP2326;
 				nimln(339, "lexer.nim");
 				LOC83 = 0;
 				LOC83 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(51));
 				if (!(LOC83)) goto LA84;
-				TMP2324 = addInt(endpos, ((NI) 1));
-				LOC83 = ((NU8)((*L).Sup.buf[(NI)(TMP2324)]) == (NU8)(50));
+				TMP2325 = addInt(endpos, ((NI) 1));
+				LOC83 = ((NU8)((*L).Sup.buf[(NI)(TMP2325)]) == (NU8)(50));
 				LA84: ;
 				if (!LOC83) goto LA85;
 				nimln(340, "lexer.nim");
 				(*Result).toktype = ((NU8) 81);
 				nimln(341, "lexer.nim");
-				TMP2325 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2325);
+				TMP2326 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2326);
 			}
 			goto LA76;
 			LA85: ;
 			{
 				NIM_BOOL LOC88;
-				NI TMP2326;
 				NI TMP2327;
+				NI TMP2328;
 				nimln(342, "lexer.nim");
 				LOC88 = 0;
 				LOC88 = ((NU8)((*L).Sup.buf[endpos]) == (NU8)(49));
 				if (!(LOC88)) goto LA89;
-				TMP2326 = addInt(endpos, ((NI) 1));
-				LOC88 = ((NU8)((*L).Sup.buf[(NI)(TMP2326)]) == (NU8)(54));
+				TMP2327 = addInt(endpos, ((NI) 1));
+				LOC88 = ((NU8)((*L).Sup.buf[(NI)(TMP2327)]) == (NU8)(54));
 				LA89: ;
 				if (!LOC88) goto LA90;
 				nimln(343, "lexer.nim");
 				(*Result).toktype = ((NU8) 80);
 				nimln(344, "lexer.nim");
-				TMP2327 = addInt(endpos, ((NI) 2));
-				endpos = (NI)(TMP2327);
+				TMP2328 = addInt(endpos, ((NI) 2));
+				endpos = (NI)(TMP2328);
 			}
 			goto LA76;
 			LA90: ;
 			{
-				NI TMP2328;
+				NI TMP2329;
 				nimln(345, "lexer.nim");
 				if (!((NU8)((*L).Sup.buf[endpos]) == (NU8)(56))) goto LA93;
 				nimln(346, "lexer.nim");
 				(*Result).toktype = ((NU8) 79);
 				nimln(347, "lexer.nim");
-				TMP2328 = addInt(endpos, ((NI) 1));
-				endpos = (NI)(TMP2328);
+				TMP2329 = addInt(endpos, ((NI) 1));
+				endpos = (NI)(TMP2329);
 			}
 			goto LA76;
 			LA93: ;
@@ -1855,7 +1855,7 @@ appendChar(LOC74, (*L).Sup.buf[endpos]);
 			LOC97 = 0;
 			LOC97 = rawNewString((*Result).literal->Sup.len + 2);
 appendString(LOC97, (*Result).literal);
-appendString(LOC97, ((NimStringDesc*) &TMP2329));
+appendString(LOC97, ((NimStringDesc*) &TMP2330));
 appendChar(LOC97, (*L).Sup.buf[endpos]);
 			lexmessage_179483((&(*L)), ((NU16) 14), LOC97);
 		}
@@ -1870,31 +1870,31 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 	}
 	LA24: ;
 	nimln(353, "lexer.nim");
-	pushSafePoint(&TMP2330);
-	TMP2330.status = _setjmp(TMP2330.context);
-	if (TMP2330.status == 0) {
+	pushSafePoint(&TMP2331);
+	TMP2331.status = _setjmp(TMP2331.context);
+	if (TMP2331.status == 0) {
 		nimln(354, "lexer.nim");
 		{
 			NIM_BOOL LOC102;
-			NI TMP2331;
 			NI TMP2332;
 			NI TMP2333;
+			NI TMP2334;
 			LOC102 = 0;
 			LOC102 = ((NU8)((*L).Sup.buf[pos]) == (NU8)(48));
 			if (!(LOC102)) goto LA103;
 			nimln(355, "lexer.nim");
-			TMP2331 = addInt(pos, ((NI) 1));
-			LOC102 = (((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(120)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(88)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(98)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(66)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(111)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(79)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(99)) || ((NU8)((*L).Sup.buf[(NI)(TMP2331)])) == ((NU8)(67)));
+			TMP2332 = addInt(pos, ((NI) 1));
+			LOC102 = (((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(120)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(88)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(98)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(66)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(111)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(79)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(99)) || ((NU8)((*L).Sup.buf[(NI)(TMP2332)])) == ((NU8)(67)));
 			LA103: ;
 			if (!LOC102) goto LA104;
 			nimln(356, "lexer.nim");
-			TMP2332 = addInt(pos, ((NI) 2));
-			pos = (NI)(TMP2332);
+			TMP2333 = addInt(pos, ((NI) 2));
+			pos = (NI)(TMP2333);
 			nimln(357, "lexer.nim");
 			xi = IL64(0);
 			nimln(358, "lexer.nim");
-			TMP2333 = subInt(pos, ((NI) 1));
-			switch (((NU8)((*L).Sup.buf[(NI)(TMP2333)]))) {
+			TMP2334 = subInt(pos, ((NI) 1));
+			switch (((NU8)((*L).Sup.buf[(NI)(TMP2334)]))) {
 			case 98:
 			case 66:
 			{
@@ -1908,44 +1908,44 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 						case 50 ... 57:
 						case 46:
 						{
-							NI TMP2334;
+							NI TMP2335;
 							nimln(364, "lexer.nim");
 							lexmessage_179483((&(*L)), ((NU16) 14), (*Result).literal);
 							nimln(365, "lexer.nim");
-							TMP2334 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2334);
+							TMP2335 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2335);
 						}
 						break;
 						case 95:
 						{
-							NI TMP2336;
+							NI TMP2337;
 							nimln(367, "lexer.nim");
 							{
-								NI TMP2335;
-								TMP2335 = addInt(pos, ((NI) 1));
-								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2335)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2335)])) <= ((NU8)(49))))) goto LA113;
+								NI TMP2336;
+								TMP2336 = addInt(pos, ((NI) 1));
+								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2336)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2336)])) <= ((NU8)(49))))) goto LA113;
 								nimln(368, "lexer.nim");
-								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2289));
+								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2290));
 								nimln(369, "lexer.nim");
 								goto LA107;
 							}
 							LA113: ;
 							nimln(370, "lexer.nim");
-							TMP2336 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2336);
+							TMP2337 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2337);
 						}
 						break;
 						case 48:
 						case 49:
 						{
-							NI TMP2337;
 							NI TMP2338;
+							NI TMP2339;
 							nimln(372, "lexer.nim");
-							TMP2337 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
-							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(1))) | ((NI64) ((NI)(TMP2337))));
+							TMP2338 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
+							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(1))) | ((NI64) ((NI)(TMP2338))));
 							nimln(373, "lexer.nim");
-							TMP2338 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2338);
+							TMP2339 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2339);
 						}
 						break;
 						default:
@@ -1973,43 +1973,43 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 						case 56 ... 57:
 						case 46:
 						{
-							NI TMP2339;
+							NI TMP2340;
 							nimln(380, "lexer.nim");
 							lexmessage_179483((&(*L)), ((NU16) 14), (*Result).literal);
 							nimln(381, "lexer.nim");
-							TMP2339 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2339);
+							TMP2340 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2340);
 						}
 						break;
 						case 95:
 						{
-							NI TMP2341;
+							NI TMP2342;
 							nimln(383, "lexer.nim");
 							{
-								NI TMP2340;
-								TMP2340 = addInt(pos, ((NI) 1));
-								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2340)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2340)])) <= ((NU8)(55))))) goto LA124;
+								NI TMP2341;
+								TMP2341 = addInt(pos, ((NI) 1));
+								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2341)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2341)])) <= ((NU8)(55))))) goto LA124;
 								nimln(384, "lexer.nim");
-								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2289));
+								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2290));
 								nimln(385, "lexer.nim");
 								goto LA118;
 							}
 							LA124: ;
 							nimln(386, "lexer.nim");
-							TMP2341 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2341);
+							TMP2342 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2342);
 						}
 						break;
 						case 48 ... 55:
 						{
-							NI TMP2342;
 							NI TMP2343;
+							NI TMP2344;
 							nimln(388, "lexer.nim");
-							TMP2342 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
-							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(3))) | ((NI64) ((NI)(TMP2342))));
+							TMP2343 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
+							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(3))) | ((NI64) ((NI)(TMP2343))));
 							nimln(389, "lexer.nim");
-							TMP2343 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2343);
+							TMP2344 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2344);
 						}
 						break;
 						default:
@@ -2041,61 +2041,61 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 						switch (((NU8)((*L).Sup.buf[pos]))) {
 						case 95:
 						{
-							NI TMP2345;
+							NI TMP2346;
 							nimln(398, "lexer.nim");
 							{
-								NI TMP2344;
-								TMP2344 = addInt(pos, ((NI) 1));
-								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2344)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2344)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2344)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2344)])) <= ((NU8)(102)) || ((NU8)((*L).Sup.buf[(NI)(TMP2344)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2344)])) <= ((NU8)(70))))) goto LA135;
+								NI TMP2345;
+								TMP2345 = addInt(pos, ((NI) 1));
+								if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2345)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2345)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2345)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2345)])) <= ((NU8)(102)) || ((NU8)((*L).Sup.buf[(NI)(TMP2345)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2345)])) <= ((NU8)(70))))) goto LA135;
 								nimln(399, "lexer.nim");
-								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2289));
+								lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2290));
 								nimln(400, "lexer.nim");
 								goto LA130;
 							}
 							LA135: ;
 							nimln(401, "lexer.nim");
-							TMP2345 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2345);
+							TMP2346 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2346);
 						}
 						break;
 						case 48 ... 57:
 						{
-							NI TMP2346;
 							NI TMP2347;
+							NI TMP2348;
 							nimln(403, "lexer.nim");
-							TMP2346 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
-							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2346))));
+							TMP2347 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 48));
+							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2347))));
 							nimln(404, "lexer.nim");
-							TMP2347 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2347);
+							TMP2348 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2348);
 						}
 						break;
 						case 97 ... 102:
 						{
-							NI TMP2348;
 							NI TMP2349;
 							NI TMP2350;
+							NI TMP2351;
 							nimln(406, "lexer.nim");
-							TMP2348 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 97));
-							TMP2349 = addInt(((NI) ((NI)(TMP2348))), ((NI) 10));
-							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2349))));
+							TMP2349 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 97));
+							TMP2350 = addInt(((NI) ((NI)(TMP2349))), ((NI) 10));
+							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2350))));
 							nimln(407, "lexer.nim");
-							TMP2350 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2350);
+							TMP2351 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2351);
 						}
 						break;
 						case 65 ... 70:
 						{
-							NI TMP2351;
 							NI TMP2352;
 							NI TMP2353;
+							NI TMP2354;
 							nimln(409, "lexer.nim");
-							TMP2351 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 65));
-							TMP2352 = addInt(((NI) ((NI)(TMP2351))), ((NI) 10));
-							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2352))));
+							TMP2352 = subInt(((NI) (((NU8)((*L).Sup.buf[pos])))), ((NI) 65));
+							TMP2353 = addInt(((NI) ((NI)(TMP2352))), ((NI) 10));
+							xi = (NI64)((NI64)((NU64)(xi) << (NU64)(IL64(4))) | ((NI64) ((NI)(TMP2353))));
 							nimln(410, "lexer.nim");
-							TMP2353 = addInt(pos, ((NI) 1));
-							pos = (NI)(TMP2353);
+							TMP2354 = addInt(pos, ((NI) 1));
+							pos = (NI)(TMP2354);
 						}
 						break;
 						default:
@@ -2114,7 +2114,7 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 				Tlineinfo161338 LOC142;
 				nimln(412, "lexer.nim");
 				LOC142 = getlineinfo_179453((&(*L)));
-				internalerror_163199(LOC142, ((NimStringDesc*) &TMP2354));
+				internalerror_163199(LOC142, ((NimStringDesc*) &TMP2355));
 			}
 			break;
 			}
@@ -2187,7 +2187,7 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 				Tlineinfo161338 LOC154;
 				nimln(427, "lexer.nim");
 				LOC154 = getlineinfo_179453((&(*L)));
-				internalerror_163199(LOC154, ((NimStringDesc*) &TMP2354));
+				internalerror_163199(LOC154, ((NimStringDesc*) &TMP2355));
 			}
 			break;
 			}
@@ -2251,7 +2251,7 @@ appendChar(LOC97, (*L).Sup.buf[endpos]);
 				LOC176 = 0;
 				LOC176 = nimInt64ToStr(xi);
 				LOC175 = rawNewString(LOC176->Sup.len + 17);
-appendString(LOC175, ((NimStringDesc*) &TMP2356));
+appendString(LOC175, ((NimStringDesc*) &TMP2357));
 appendString(LOC175, LOC176);
 				asgnRefNoCycle((void**) (&(*e_180255).Sup.message), LOC175);
 				raiseException((Exception*)e_180255, "ValueError");
@@ -2345,19 +2345,19 @@ appendString(LOC175, LOC176);
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		if (isObj(getCurrentException()->Sup.m_type, (&NTI3449))) {
-			TMP2330.status = 0;
+			TMP2331.status = 0;
 			nimln(452, "lexer.nim");
 			lexmessage_179483((&(*L)), ((NU16) 14), (*Result).literal);
 			popCurrentException();
 		}
 		else 		if (isObj(getCurrentException()->Sup.m_type, (&NTI3443))||isObj(getCurrentException()->Sup.m_type, (&NTI3459))) {
-			TMP2330.status = 0;
+			TMP2331.status = 0;
 			nimln(454, "lexer.nim");
 			lexmessage_179483((&(*L)), ((NU16) 15), (*Result).literal);
 			popCurrentException();
 		}
 	}
-	if (TMP2330.status != 0) reraiseException();
+	if (TMP2331.status != 0) reraiseException();
 	nimln(455, "lexer.nim");
 	(*L).Sup.bufpos = endpos;
 	popFrame();
@@ -2369,42 +2369,42 @@ N_NIMCALL(void, handlehexchar_180360)(Tlexer179185* L, NI* xi) {
 	switch (((NU8)((*L).Sup.buf[(*L).Sup.bufpos]))) {
 	case 48 ... 57:
 	{
-		NI TMP2357;
 		NI TMP2358;
+		NI TMP2359;
 		nimln(460, "lexer.nim");
-		TMP2357 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 48));
-		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2357))));
+		TMP2358 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 48));
+		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2358))));
 		nimln(461, "lexer.nim");
-		TMP2358 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2358);
+		TMP2359 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2359);
 	}
 	break;
 	case 97 ... 102:
 	{
-		NI TMP2359;
 		NI TMP2360;
 		NI TMP2361;
+		NI TMP2362;
 		nimln(463, "lexer.nim");
-		TMP2359 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 97));
-		TMP2360 = addInt(((NI) ((NI)(TMP2359))), ((NI) 10));
-		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2360))));
+		TMP2360 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 97));
+		TMP2361 = addInt(((NI) ((NI)(TMP2360))), ((NI) 10));
+		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2361))));
 		nimln(464, "lexer.nim");
-		TMP2361 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2361);
+		TMP2362 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2362);
 	}
 	break;
 	case 65 ... 70:
 	{
-		NI TMP2362;
 		NI TMP2363;
 		NI TMP2364;
+		NI TMP2365;
 		nimln(466, "lexer.nim");
-		TMP2362 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 65));
-		TMP2363 = addInt(((NI) ((NI)(TMP2362))), ((NI) 10));
-		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2363))));
+		TMP2363 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 65));
+		TMP2364 = addInt(((NI) ((NI)(TMP2363))), ((NI) 10));
+		(*xi) = (NI)((NI)((NU32)((*xi)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP2364))));
 		nimln(467, "lexer.nim");
-		TMP2364 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2364);
+		TMP2365 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2365);
 	}
 	break;
 	default:
@@ -2420,19 +2420,19 @@ N_NIMCALL(void, handledecchars_180454)(Tlexer179185* L, NI* xi) {
 	{
 		nimln(471, "lexer.nim");
 		while (1) {
-			NI TMP2365;
 			NI TMP2366;
 			NI TMP2367;
 			NI TMP2368;
+			NI TMP2369;
 			if (!(((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) <= ((NU8)(57)))) goto LA2;
 			nimln(472, "lexer.nim");
-			TMP2365 = mulInt((*xi), ((NI) 10));
-			TMP2366 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 48));
-			TMP2367 = addInt((NI)(TMP2365), ((NI) ((NI)(TMP2366))));
-			(*xi) = (NI)(TMP2367);
+			TMP2366 = mulInt((*xi), ((NI) 10));
+			TMP2367 = subInt(((NI) (((NU8)((*L).Sup.buf[(*L).Sup.bufpos])))), ((NI) 48));
+			TMP2368 = addInt((NI)(TMP2366), ((NI) ((NI)(TMP2367))));
+			(*xi) = (NI)(TMP2368);
 			nimln(473, "lexer.nim");
-			TMP2368 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2368);
+			TMP2369 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2369);
 		} LA2: ;
 	}
 	popFrame();
@@ -2463,29 +2463,29 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 }
 
 N_NIMCALL(void, getescapedchar_180510)(Tlexer179185* L, Ttoken179181* tok) {
-	NI TMP2369;
+	NI TMP2370;
 	nimfr("getEscapedChar", "lexer.nim")
 	nimln(476, "lexer.nim");
-	TMP2369 = addInt((*L).Sup.bufpos, ((NI) 1));
-	(*L).Sup.bufpos = (NI)(TMP2369);
+	TMP2370 = addInt((*L).Sup.bufpos, ((NI) 1));
+	(*L).Sup.bufpos = (NI)(TMP2370);
 	nimln(477, "lexer.nim");
 	switch (((NU8)((*L).Sup.buf[(*L).Sup.bufpos]))) {
 	case 110:
 	case 78:
 	{
-		NI TMP2370;
+		NI TMP2371;
 		nimln(479, "lexer.nim");
 		{
 			if (!((*tok).toktype == ((NU8) 92))) goto LA4;
-			lexmessage_179483((&(*L)), ((NU16) 16), ((NimStringDesc*) &TMP2279));
+			lexmessage_179483((&(*L)), ((NU16) 16), ((NimStringDesc*) &TMP2280));
 		}
 		LA4: ;
 		nimln(480, "lexer.nim");
 		(*tok).literal = resizeString((*tok).literal, tnl_157626->Sup.len + 0);
 appendString((*tok).literal, tnl_157626);
 		nimln(481, "lexer.nim");
-		TMP2370 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2370);
+		TMP2371 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2371);
 	}
 	break;
 	case 114:
@@ -2493,120 +2493,120 @@ appendString((*tok).literal, tnl_157626);
 	case 99:
 	case 67:
 	{
-		NI TMP2371;
+		NI TMP2372;
 		nimln(483, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 13);
 		nimln(484, "lexer.nim");
-		TMP2371 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2371);
+		TMP2372 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2372);
 	}
 	break;
 	case 108:
 	case 76:
 	{
-		NI TMP2372;
+		NI TMP2373;
 		nimln(486, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 10);
 		nimln(487, "lexer.nim");
-		TMP2372 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2372);
+		TMP2373 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2373);
 	}
 	break;
 	case 102:
 	case 70:
 	{
-		NI TMP2373;
+		NI TMP2374;
 		nimln(489, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 12);
 		nimln(490, "lexer.nim");
-		TMP2373 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2373);
+		TMP2374 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2374);
 	}
 	break;
 	case 101:
 	case 69:
 	{
-		NI TMP2374;
+		NI TMP2375;
 		nimln(492, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 27);
 		nimln(493, "lexer.nim");
-		TMP2374 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2374);
+		TMP2375 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2375);
 	}
 	break;
 	case 97:
 	case 65:
 	{
-		NI TMP2375;
+		NI TMP2376;
 		nimln(495, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 7);
 		nimln(496, "lexer.nim");
-		TMP2375 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2375);
+		TMP2376 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2376);
 	}
 	break;
 	case 98:
 	case 66:
 	{
-		NI TMP2376;
+		NI TMP2377;
 		nimln(498, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 8);
 		nimln(499, "lexer.nim");
-		TMP2376 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2376);
+		TMP2377 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2377);
 	}
 	break;
 	case 118:
 	case 86:
 	{
-		NI TMP2377;
+		NI TMP2378;
 		nimln(501, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 11);
 		nimln(502, "lexer.nim");
-		TMP2377 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2377);
+		TMP2378 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2378);
 	}
 	break;
 	case 116:
 	case 84:
 	{
-		NI TMP2378;
+		NI TMP2379;
 		nimln(504, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 9);
 		nimln(505, "lexer.nim");
-		TMP2378 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2378);
+		TMP2379 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2379);
 	}
 	break;
 	case 39:
 	case 34:
 	{
-		NI TMP2379;
+		NI TMP2380;
 		nimln(507, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, (*L).Sup.buf[(*L).Sup.bufpos]);
 		nimln(508, "lexer.nim");
-		TMP2379 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2379);
+		TMP2380 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2380);
 	}
 	break;
 	case 92:
 	{
-		NI TMP2380;
+		NI TMP2381;
 		nimln(510, "lexer.nim");
 		(*tok).literal = addChar((*tok).literal, 92);
 		nimln(511, "lexer.nim");
-		TMP2380 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2380);
+		TMP2381 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2381);
 	}
 	break;
 	case 120:
 	case 88:
 	{
-		NI TMP2381;
+		NI TMP2382;
 		NI xi;
 		nimln(513, "lexer.nim");
-		TMP2381 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2381);
+		TMP2382 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2382);
 		nimln(514, "lexer.nim");
 		xi = ((NI) 0);
 		nimln(515, "lexer.nim");
@@ -2624,10 +2624,10 @@ appendString((*tok).literal, tnl_157626);
 		{
 			NIM_BOOL LOC20;
 			LOC20 = 0;
-			LOC20 = matchtwochars_179582((&(*L)), 48, TMP2299);
+			LOC20 = matchtwochars_179582((&(*L)), 48, TMP2300);
 			if (!LOC20) goto LA21;
 			nimln(520, "lexer.nim");
-			lexmessage_179483((&(*L)), ((NU16) 231), ((NimStringDesc*) &TMP2279));
+			lexmessage_179483((&(*L)), ((NU16) 231), ((NimStringDesc*) &TMP2280));
 		}
 		LA21: ;
 		nimln(521, "lexer.nim");
@@ -2643,7 +2643,7 @@ appendString((*tok).literal, tnl_157626);
 		LA25: ;
 		{
 			nimln(524, "lexer.nim");
-			lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2279));
+			lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2280));
 		}
 		LA23: ;
 	}
@@ -2651,7 +2651,7 @@ appendString((*tok).literal, tnl_157626);
 	default:
 	{
 		nimln(525, "lexer.nim");
-		lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2279));
+		lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2280));
 	}
 	break;
 	}
@@ -2677,7 +2677,7 @@ N_NIMCALL(NimStringDesc*, newstring_180655)(NCSTRING s, NI len) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP2382;
+				NI TMP2383;
 				if (!(res_180683 <= HEX3Atmp_180680)) goto LA3;
 				nimln(1600, "system.nim");
 				i_180678 = res_180683;
@@ -2685,8 +2685,8 @@ N_NIMCALL(NimStringDesc*, newstring_180655)(NCSTRING s, NI len) {
 				if ((NU)(i_180678) > (NU)(result->Sup.len)) raiseIndexError();
 				result->data[i_180678] = s[i_180678];
 				nimln(1619, "system.nim");
-				TMP2382 = addInt(res_180683, ((NI) 1));
-				res_180683 = (NI)(TMP2382);
+				TMP2383 = addInt(res_180683, ((NI) 1));
+				res_180683 = (NI)(TMP2383);
 			} LA3: ;
 		}
 	}
@@ -2710,18 +2710,18 @@ N_NIMCALL(NI, handlecrlf_180702)(Tlexer179185* L, NI pos) {
 		{
 			if (!(((NI) 80) < col_180719)) goto LA4;
 			nimln(538, "lexer.nim");
-			lexmessagepos_179507(L, ((NU16) 263), pos, ((NimStringDesc*) &TMP2279));
+			lexmessagepos_179507(L, ((NU16) 263), pos, ((NimStringDesc*) &TMP2280));
 		}
 		LA4: ;
 		nimln(540, "lexer.nim");
 		{
 			NI linestart_180721;
-			NI TMP2383;
+			NI TMP2384;
 			NimStringDesc* line_180723;
 			if (!((gglobaloptions_152128 &(1<<((((NU8) 27))&31)))!=0)) goto LA8;
 			nimln(541, "lexer.nim");
-			TMP2383 = addInt(((NI) ((*L).Sup.buf)), (*L).Sup.linestart);
-			linestart_180721 = (NI)(TMP2383);
+			TMP2384 = addInt(((NI) ((*L).Sup.buf)), (*L).Sup.linestart);
+			linestart_180721 = (NI)(TMP2384);
 			nimln(542, "lexer.nim");
 			line_180723 = newstring_180655(((NCSTRING) (linestart_180721)), col_180719);
 			nimln(543, "lexer.nim");
@@ -2744,18 +2744,18 @@ N_NIMCALL(NI, handlecrlf_180702)(Tlexer179185* L, NI pos) {
 		{
 			if (!(((NI) 80) < col_180735)) goto LA14;
 			nimln(538, "lexer.nim");
-			lexmessagepos_179507(L, ((NU16) 263), pos, ((NimStringDesc*) &TMP2279));
+			lexmessagepos_179507(L, ((NU16) 263), pos, ((NimStringDesc*) &TMP2280));
 		}
 		LA14: ;
 		nimln(540, "lexer.nim");
 		{
 			NI linestart_180737;
-			NI TMP2384;
+			NI TMP2385;
 			NimStringDesc* line_180739;
 			if (!((gglobaloptions_152128 &(1<<((((NU8) 27))&31)))!=0)) goto LA18;
 			nimln(541, "lexer.nim");
-			TMP2384 = addInt(((NI) ((*L).Sup.buf)), (*L).Sup.linestart);
-			linestart_180737 = (NI)(TMP2384);
+			TMP2385 = addInt(((NI) ((*L).Sup.buf)), (*L).Sup.linestart);
+			linestart_180737 = (NI)(TMP2385);
 			nimln(542, "lexer.nim");
 			line_180739 = newstring_180655(((NCSTRING) (linestart_180737)), col_180735);
 			nimln(543, "lexer.nim");
@@ -2781,13 +2781,13 @@ N_NIMCALL(NI, handlecrlf_180702)(Tlexer179185* L, NI pos) {
 
 N_NIMCALL(void, getstring_180760)(Tlexer179185* L, Ttoken179181* tok, NIM_BOOL rawmode) {
 	NI pos;
-	NI TMP2385;
+	NI TMP2386;
 	NCSTRING buf;
 	NI line;
 	nimfr("getString", "lexer.nim")
 	nimln(555, "lexer.nim");
-	TMP2385 = addInt((*L).Sup.bufpos, ((NI) 1));
-	pos = (NI)(TMP2385);
+	TMP2386 = addInt((*L).Sup.bufpos, ((NI) 1));
+	pos = (NI)(TMP2386);
 	nimln(556, "lexer.nim");
 	buf = (*L).Sup.buf;
 	nimln(557, "lexer.nim");
@@ -2795,35 +2795,35 @@ N_NIMCALL(void, getstring_180760)(Tlexer179185* L, Ttoken179181* tok, NIM_BOOL r
 	nimln(558, "lexer.nim");
 	{
 		NIM_BOOL LOC3;
-		NI TMP2386;
 		NI TMP2387;
+		NI TMP2388;
 		LOC3 = 0;
 		LOC3 = ((NU8)(buf[pos]) == (NU8)(34));
 		if (!(LOC3)) goto LA4;
-		TMP2386 = addInt(pos, ((NI) 1));
-		LOC3 = ((NU8)(buf[(NI)(TMP2386)]) == (NU8)(34));
+		TMP2387 = addInt(pos, ((NI) 1));
+		LOC3 = ((NU8)(buf[(NI)(TMP2387)]) == (NU8)(34));
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(559, "lexer.nim");
 		(*tok).toktype = ((NU8) 89);
 		nimln(560, "lexer.nim");
-		TMP2387 = addInt(pos, ((NI) 2));
-		pos = (NI)(TMP2387);
+		TMP2388 = addInt(pos, ((NI) 2));
+		pos = (NI)(TMP2388);
 		nimln(562, "lexer.nim");
 		{
 			NI newpos;
-			NI TMP2388;
+			NI TMP2389;
 			if (!(((NU8)(buf[pos])) == ((NU8)(32)) || ((NU8)(buf[pos])) == ((NU8)(9)))) goto LA9;
 			nimln(563, "lexer.nim");
-			TMP2388 = addInt(pos, ((NI) 1));
-			newpos = (NI)(TMP2388);
+			TMP2389 = addInt(pos, ((NI) 1));
+			newpos = (NI)(TMP2389);
 			{
 				nimln(564, "lexer.nim");
 				while (1) {
-					NI TMP2389;
+					NI TMP2390;
 					if (!(((NU8)(buf[newpos])) == ((NU8)(32)) || ((NU8)(buf[newpos])) == ((NU8)(9)))) goto LA12;
-					TMP2389 = addInt(newpos, ((NI) 1));
-					newpos = (NI)(TMP2389);
+					TMP2390 = addInt(newpos, ((NI) 1));
+					newpos = (NI)(TMP2390);
 				} LA12: ;
 			}
 			nimln(565, "lexer.nim");
@@ -2845,33 +2845,33 @@ N_NIMCALL(void, getstring_180760)(Tlexer179185* L, Ttoken179181* tok, NIM_BOOL r
 				switch (((NU8)(buf[pos]))) {
 				case 34:
 				{
-					NI TMP2394;
+					NI TMP2395;
 					nimln(571, "lexer.nim");
 					{
 						NIM_BOOL LOC22;
 						NIM_BOOL LOC23;
-						NI TMP2390;
 						NI TMP2391;
 						NI TMP2392;
 						NI TMP2393;
+						NI TMP2394;
 						LOC22 = 0;
 						LOC23 = 0;
-						TMP2390 = addInt(pos, ((NI) 1));
-						LOC23 = ((NU8)(buf[(NI)(TMP2390)]) == (NU8)(34));
-						if (!(LOC23)) goto LA24;
-						TMP2391 = addInt(pos, ((NI) 2));
+						TMP2391 = addInt(pos, ((NI) 1));
 						LOC23 = ((NU8)(buf[(NI)(TMP2391)]) == (NU8)(34));
+						if (!(LOC23)) goto LA24;
+						TMP2392 = addInt(pos, ((NI) 2));
+						LOC23 = ((NU8)(buf[(NI)(TMP2392)]) == (NU8)(34));
 						LA24: ;
 						LOC22 = LOC23;
 						if (!(LOC22)) goto LA25;
 						nimln(572, "lexer.nim");
-						TMP2392 = addInt(pos, ((NI) 3));
-						LOC22 = !(((NU8)(buf[(NI)(TMP2392)]) == (NU8)(34)));
+						TMP2393 = addInt(pos, ((NI) 3));
+						LOC22 = !(((NU8)(buf[(NI)(TMP2393)]) == (NU8)(34)));
 						LA25: ;
 						if (!LOC22) goto LA26;
 						nimln(573, "lexer.nim");
-						TMP2393 = addInt(pos, ((NI) 3));
-						(*L).Sup.bufpos = (NI)(TMP2393);
+						TMP2394 = addInt(pos, ((NI) 3));
+						(*L).Sup.bufpos = (NI)(TMP2394);
 						nimln(574, "lexer.nim");
 						goto LA17;
 					}
@@ -2879,8 +2879,8 @@ N_NIMCALL(void, getstring_180760)(Tlexer179185* L, Ttoken179181* tok, NIM_BOOL r
 					nimln(575, "lexer.nim");
 					(*tok).literal = addChar((*tok).literal, 34);
 					nimln(576, "lexer.nim");
-					TMP2394 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP2394);
+					TMP2395 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP2395);
 				}
 				break;
 				case 13:
@@ -2903,7 +2903,7 @@ appendString((*tok).literal, tnl_157626);
 					nimln(583, "lexer.nim");
 					(*L).Sup.linenumber = line;
 					nimln(584, "lexer.nim");
-					lexmessagepos_179507(L, ((NU16) 9), (*L).Sup.linestart, ((NimStringDesc*) &TMP2279));
+					lexmessagepos_179507(L, ((NU16) 9), (*L).Sup.linestart, ((NimStringDesc*) &TMP2280));
 					nimln(585, "lexer.nim");
 					(*L).Sup.linenumber = line2;
 					nimln(586, "lexer.nim");
@@ -2912,12 +2912,12 @@ appendString((*tok).literal, tnl_157626);
 				break;
 				default:
 				{
-					NI TMP2395;
+					NI TMP2396;
 					nimln(588, "lexer.nim");
 					(*tok).literal = addChar((*tok).literal, buf[pos]);
 					nimln(589, "lexer.nim");
-					TMP2395 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP2395);
+					TMP2396 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP2396);
 				}
 				break;
 				}
@@ -2951,28 +2951,28 @@ appendString((*tok).literal, tnl_157626);
 					nimln(597, "lexer.nim");
 					{
 						NIM_BOOL LOC45;
-						NI TMP2396;
 						NI TMP2397;
+						NI TMP2398;
 						LOC45 = 0;
 						LOC45 = rawmode;
 						if (!(LOC45)) goto LA46;
-						TMP2396 = addInt(pos, ((NI) 1));
-						LOC45 = ((NU8)(buf[(NI)(TMP2396)]) == (NU8)(34));
+						TMP2397 = addInt(pos, ((NI) 1));
+						LOC45 = ((NU8)(buf[(NI)(TMP2397)]) == (NU8)(34));
 						LA46: ;
 						if (!LOC45) goto LA47;
 						nimln(598, "lexer.nim");
-						TMP2397 = addInt(pos, ((NI) 2));
-						pos = (NI)(TMP2397);
+						TMP2398 = addInt(pos, ((NI) 2));
+						pos = (NI)(TMP2398);
 						nimln(599, "lexer.nim");
 						(*tok).literal = addChar((*tok).literal, 34);
 					}
 					goto LA43;
 					LA47: ;
 					{
-						NI TMP2398;
+						NI TMP2399;
 						nimln(601, "lexer.nim");
-						TMP2398 = addInt(pos, ((NI) 1));
-						pos = (NI)(TMP2398);
+						TMP2399 = addInt(pos, ((NI) 1));
+						pos = (NI)(TMP2399);
 						nimln(602, "lexer.nim");
 						goto LA37;
 					}
@@ -2984,7 +2984,7 @@ appendString((*tok).literal, tnl_157626);
 					nimln(603, "lexer.nim");
 					if (!(((NU8)(c)) == ((NU8)(13)) || ((NU8)(c)) == ((NU8)(10)) || ((NU8)(c)) == ((NU8)(0)))) goto LA51;
 					nimln(604, "lexer.nim");
-					lexmessage_179483((&(*L)), ((NU16) 10), ((NimStringDesc*) &TMP2279));
+					lexmessage_179483((&(*L)), ((NU16) 10), ((NimStringDesc*) &TMP2280));
 					nimln(605, "lexer.nim");
 					goto LA37;
 				}
@@ -3009,12 +3009,12 @@ appendString((*tok).literal, tnl_157626);
 				goto LA39;
 				LA56: ;
 				{
-					NI TMP2399;
+					NI TMP2400;
 					nimln(611, "lexer.nim");
 					(*tok).literal = addChar((*tok).literal, c);
 					nimln(612, "lexer.nim");
-					TMP2399 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP2399);
+					TMP2400 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP2400);
 				}
 				LA39: ;
 			}
@@ -3027,13 +3027,13 @@ appendString((*tok).literal, tnl_157626);
 }
 
 N_NIMCALL(void, getcharacter_180907)(Tlexer179185* L, Ttoken179181* tok) {
-	NI TMP2400;
+	NI TMP2401;
 	NIM_CHAR c;
-	NI TMP2402;
+	NI TMP2403;
 	nimfr("getCharacter", "lexer.nim")
 	nimln(616, "lexer.nim");
-	TMP2400 = addInt((*L).Sup.bufpos, ((NI) 1));
-	(*L).Sup.bufpos = (NI)(TMP2400);
+	TMP2401 = addInt((*L).Sup.bufpos, ((NI) 1));
+	(*L).Sup.bufpos = (NI)(TMP2401);
 	nimln(617, "lexer.nim");
 	c = (*L).Sup.buf[(*L).Sup.bufpos];
 	nimln(618, "lexer.nim");
@@ -3042,7 +3042,7 @@ N_NIMCALL(void, getcharacter_180907)(Tlexer179185* L, Ttoken179181* tok) {
 	case 39:
 	{
 		nimln(619, "lexer.nim");
-		lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2279));
+		lexmessage_179483((&(*L)), ((NU16) 8), ((NimStringDesc*) &TMP2280));
 	}
 	break;
 	case 92:
@@ -3053,24 +3053,24 @@ N_NIMCALL(void, getcharacter_180907)(Tlexer179185* L, Ttoken179181* tok) {
 	break;
 	default:
 	{
-		NI TMP2401;
+		NI TMP2402;
 		nimln(622, "lexer.nim");
 		unsureAsgnRef((void**) (&(*tok).literal), nimCharToStr(c));
 		nimln(623, "lexer.nim");
-		TMP2401 = addInt((*L).Sup.bufpos, ((NI) 1));
-		(*L).Sup.bufpos = (NI)(TMP2401);
+		TMP2402 = addInt((*L).Sup.bufpos, ((NI) 1));
+		(*L).Sup.bufpos = (NI)(TMP2402);
 	}
 	break;
 	}
 	nimln(624, "lexer.nim");
 	{
 		if (!!(((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(39)))) goto LA6;
-		lexmessage_179483((&(*L)), ((NU16) 18), ((NimStringDesc*) &TMP2279));
+		lexmessage_179483((&(*L)), ((NU16) 18), ((NimStringDesc*) &TMP2280));
 	}
 	LA6: ;
 	nimln(625, "lexer.nim");
-	TMP2402 = addInt((*L).Sup.bufpos, ((NI) 1));
-	(*L).Sup.bufpos = (NI)(TMP2402);
+	TMP2403 = addInt((*L).Sup.bufpos, ((NI) 1));
+	(*L).Sup.bufpos = (NI)(TMP2403);
 	popFrame();
 }
 
@@ -3106,7 +3106,7 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 	NI h;
 	NI pos;
 	NCSTRING buf;
-	NI TMP2406;
+	NI TMP2407;
 	nimfr("getSymbol", "lexer.nim")
 	nimln(628, "lexer.nim");
 	h = ((NI) 0);
@@ -3118,7 +3118,7 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 		nimln(631, "lexer.nim");
 		while (1) {
 			NIM_CHAR c;
-			NI TMP2405;
+			NI TMP2406;
 			nimln(632, "lexer.nim");
 			c = buf[pos];
 			nimln(633, "lexer.nim");
@@ -3133,10 +3133,10 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 			break;
 			case 65 ... 90:
 			{
-				NI TMP2403;
+				NI TMP2404;
 				nimln(637, "lexer.nim");
-				TMP2403 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
-				c = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2403), ((NI) 0), ((NI) 255)))));
+				TMP2404 = addInt(((NI) (((NU8)(c)))), ((NI) 32));
+				c = ((NIM_CHAR) (((NI)chckRange((NI)(TMP2404), ((NI) 0), ((NI) 255)))));
 				nimln(638, "lexer.nim");
 				h = HEX21HEX26_130025(h, ((NI) (((NU8)(c)))));
 			}
@@ -3145,11 +3145,11 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 			{
 				nimln(640, "lexer.nim");
 				{
-					NI TMP2404;
-					TMP2404 = addInt(pos, ((NI) 1));
-					if (!!((((NU8)(buf[(NI)(TMP2404)])) >= ((NU8)(97)) && ((NU8)(buf[(NI)(TMP2404)])) <= ((NU8)(122)) || ((NU8)(buf[(NI)(TMP2404)])) >= ((NU8)(65)) && ((NU8)(buf[(NI)(TMP2404)])) <= ((NU8)(90)) || ((NU8)(buf[(NI)(TMP2404)])) >= ((NU8)(48)) && ((NU8)(buf[(NI)(TMP2404)])) <= ((NU8)(57)) || ((NU8)(buf[(NI)(TMP2404)])) >= ((NU8)(128)) && ((NU8)(buf[(NI)(TMP2404)])) <= ((NU8)(255))))) goto LA8;
+					NI TMP2405;
+					TMP2405 = addInt(pos, ((NI) 1));
+					if (!!((((NU8)(buf[(NI)(TMP2405)])) >= ((NU8)(97)) && ((NU8)(buf[(NI)(TMP2405)])) <= ((NU8)(122)) || ((NU8)(buf[(NI)(TMP2405)])) >= ((NU8)(65)) && ((NU8)(buf[(NI)(TMP2405)])) <= ((NU8)(90)) || ((NU8)(buf[(NI)(TMP2405)])) >= ((NU8)(48)) && ((NU8)(buf[(NI)(TMP2405)])) <= ((NU8)(57)) || ((NU8)(buf[(NI)(TMP2405)])) >= ((NU8)(128)) && ((NU8)(buf[(NI)(TMP2405)])) <= ((NU8)(255))))) goto LA8;
 					nimln(641, "lexer.nim");
-					lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2289));
+					lexmessage_179483((&(*L)), ((NU16) 12), ((NimStringDesc*) &TMP2290));
 					nimln(642, "lexer.nim");
 					goto LA1;
 				}
@@ -3164,15 +3164,15 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 			break;
 			}
 			nimln(644, "lexer.nim");
-			TMP2405 = addInt(pos, ((NI) 1));
-			pos = (NI)(TMP2405);
+			TMP2406 = addInt(pos, ((NI) 1));
+			pos = (NI)(TMP2406);
 		}
 	} LA1: ;
 	nimln(645, "lexer.nim");
 	h = HEX21HEX24_130054(h);
 	nimln(646, "lexer.nim");
-	TMP2406 = subInt(pos, (*L).Sup.bufpos);
-	unsureAsgnRef((void**) (&(*tok).ident), getident_165248(((NCSTRING) ((&(*L).Sup.buf[(*L).Sup.bufpos]))), (NI)(TMP2406), h));
+	TMP2407 = subInt(pos, (*L).Sup.bufpos);
+	unsureAsgnRef((void**) (&(*tok).ident), getident_165248(((NCSTRING) ((&(*L).Sup.buf[(*L).Sup.bufpos]))), (NI)(TMP2407), h));
 	nimln(647, "lexer.nim");
 	(*L).Sup.bufpos = pos;
 	nimln(648, "lexer.nim");
@@ -3191,10 +3191,10 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 	goto LA11;
 	LA15: ;
 	{
-		NI TMP2407;
+		NI TMP2408;
 		nimln(652, "lexer.nim");
-		TMP2407 = addInt((*(*tok).ident).Sup.id, ((NI) 2));
-		(*tok).toktype = ((NU8)chckRange((NI)(TMP2407), ((NU8) 0), ((NU8) 118)));
+		TMP2408 = addInt((*(*tok).ident).Sup.id, ((NI) 2));
+		(*tok).toktype = ((NU8)chckRange((NI)(TMP2408), ((NU8) 0), ((NU8) 118)));
 	}
 	LA11: ;
 	popFrame();
@@ -3202,13 +3202,13 @@ N_NIMCALL(void, getsymbol_180957)(Tlexer179185* L, Ttoken179181* tok) {
 
 static N_INLINE(void, endoperator_181086)(Tlexer179185* L, Ttoken179181* tok, NI pos, NI hash) {
 	NI h;
-	NI TMP2408;
+	NI TMP2409;
 	nimfr("endOperator", "lexer.nim")
 	nimln(656, "lexer.nim");
 	h = HEX21HEX24_130054(hash);
 	nimln(657, "lexer.nim");
-	TMP2408 = subInt(pos, (*L).Sup.bufpos);
-	unsureAsgnRef((void**) (&(*tok).ident), getident_165248(((NCSTRING) ((&(*L).Sup.buf[(*L).Sup.bufpos]))), (NI)(TMP2408), h));
+	TMP2409 = subInt(pos, (*L).Sup.bufpos);
+	unsureAsgnRef((void**) (&(*tok).ident), getident_165248(((NCSTRING) ((&(*L).Sup.buf[(*L).Sup.bufpos]))), (NI)(TMP2409), h));
 	nimln(658, "lexer.nim");
 	{
 		NIM_BOOL LOC3;
@@ -3223,12 +3223,12 @@ static N_INLINE(void, endoperator_181086)(Tlexer179185* L, Ttoken179181* tok, NI
 	goto LA1;
 	LA5: ;
 	{
-		NI TMP2409;
 		NI TMP2410;
+		NI TMP2411;
 		nimln(659, "lexer.nim");
-		TMP2409 = subInt((*(*tok).ident).Sup.id, ((NI) 71));
-		TMP2410 = addInt((NI)(TMP2409), ((NI) 107));
-		(*tok).toktype = ((NU8)chckRange((NI)(TMP2410), ((NU8) 0), ((NU8) 118)));
+		TMP2410 = subInt((*(*tok).ident).Sup.id, ((NI) 71));
+		TMP2411 = addInt((NI)(TMP2410), ((NI) 107));
+		(*tok).toktype = ((NU8)chckRange((NI)(TMP2411), ((NU8) 0), ((NU8) 118)));
 	}
 	LA1: ;
 	nimln(660, "lexer.nim");
@@ -3251,20 +3251,20 @@ N_NIMCALL(void, getoperator_181111)(Tlexer179185* L, Ttoken179181* tok) {
 		nimln(666, "lexer.nim");
 		while (1) {
 			NIM_CHAR c;
-			NI TMP2412;
+			NI TMP2413;
 			nimln(667, "lexer.nim");
 			c = buf[pos];
 			nimln(668, "lexer.nim");
 			{
-				if (!!(((TMP2411[((NU8)(c))/8] &(1<<(((NU8)(c))%8)))!=0))) goto LA5;
+				if (!!(((TMP2412[((NU8)(c))/8] &(1<<(((NU8)(c))%8)))!=0))) goto LA5;
 				goto LA1;
 			}
 			LA5: ;
 			nimln(669, "lexer.nim");
 			h = HEX21HEX26_130025(h, ((NI) (((NU8)(c)))));
 			nimln(670, "lexer.nim");
-			TMP2412 = addInt(pos, ((NI) 1));
-			pos = (NI)(TMP2412);
+			TMP2413 = addInt(pos, ((NI) 1));
+			pos = (NI)(TMP2413);
 		}
 	} LA1: ;
 	nimln(671, "lexer.nim");
@@ -3274,16 +3274,16 @@ N_NIMCALL(void, getoperator_181111)(Tlexer179185* L, Ttoken179181* tok) {
 	{
 		nimln(675, "lexer.nim");
 		while (1) {
-			NI TMP2413;
 			NI TMP2414;
+			NI TMP2415;
 			if (!((NU8)(buf[pos]) == (NU8)(32))) goto LA8;
 			nimln(676, "lexer.nim");
-			TMP2413 = addInt(pos, ((NI) 1));
-			pos = (NI)(TMP2413);
+			TMP2414 = addInt(pos, ((NI) 1));
+			pos = (NI)(TMP2414);
 			nimln(677, "lexer.nim");
-			TMP2414 = addInt((*tok).strongspaceb, ((NI) 1));
-			if (TMP2414 < -128 || TMP2414 > 127) raiseOverflow();
-			(*tok).strongspaceb = (NI8)(TMP2414);
+			TMP2415 = addInt((*tok).strongspaceb, ((NI) 1));
+			if (TMP2415 < -128 || TMP2415 > 127) raiseOverflow();
+			(*tok).strongspaceb = (NI8)(TMP2415);
 		} LA8: ;
 	}
 	nimln(678, "lexer.nim");
@@ -3326,30 +3326,30 @@ N_NIMCALL(void, scancomment_181198)(Tlexer179185* L, Ttoken179181* tok) {
 	buf = (*L).Sup.buf;
 	nimln(685, "lexer.nim");
 	{
-		NI TMP2415;
-		TMP2415 = addInt(pos, ((NI) 1));
-		if (!!(((NU8)(buf[(NI)(TMP2415)]) == (NU8)(35)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP2416));
+		NI TMP2416;
+		TMP2416 = addInt(pos, ((NI) 1));
+		if (!!(((NU8)(buf[(NI)(TMP2416)]) == (NU8)(35)))) goto LA3;
+		failedassertimpl_87017(((NimStringDesc*) &TMP2417));
 	}
 	LA3: ;
 	nimln(686, "lexer.nim");
 	{
-		NI TMP2417;
-		TMP2417 = addInt(pos, ((NI) 2));
-		if (!((NU8)(buf[(NI)(TMP2417)]) == (NU8)(91))) goto LA7;
+		NI TMP2418;
+		TMP2418 = addInt(pos, ((NI) 2));
+		if (!((NU8)(buf[(NI)(TMP2418)]) == (NU8)(91))) goto LA7;
 		nimln(687, "lexer.nim");
 		{
-			NI TMP2418;
-			NI TMP2420;
-			TMP2418 = addInt(pos, ((NI) 3));
-			if (!((NU8)(buf[(NI)(TMP2418)]) == (NU8)(93))) goto LA11;
+			NI TMP2419;
+			NI TMP2421;
+			TMP2419 = addInt(pos, ((NI) 3));
+			if (!((NU8)(buf[(NI)(TMP2419)]) == (NU8)(93))) goto LA11;
 			nimln(689, "lexer.nim");
 			(*tok).toktype = ((NU8) 113);
 			nimln(690, "lexer.nim");
-			unsureAsgnRef((void**) (&(*tok).literal), copyString(((NimStringDesc*) &TMP2419)));
+			unsureAsgnRef((void**) (&(*tok).literal), copyString(((NimStringDesc*) &TMP2420)));
 			nimln(691, "lexer.nim");
-			TMP2420 = addInt((*L).Sup.bufpos, ((NI) 4));
-			(*L).Sup.bufpos = (NI)(TMP2420);
+			TMP2421 = addInt((*L).Sup.bufpos, ((NI) 4));
+			(*L).Sup.bufpos = (NI)(TMP2421);
 			nimln(692, "lexer.nim");
 			goto BeforeRet;
 		}
@@ -3357,7 +3357,7 @@ N_NIMCALL(void, scancomment_181198)(Tlexer179185* L, Ttoken179181* tok) {
 		LA11: ;
 		{
 			nimln(694, "lexer.nim");
-			lexmessagepos_179507(L, ((NU16) 234), pos, ((NimStringDesc*) &TMP2421));
+			lexmessagepos_179507(L, ((NU16) 234), pos, ((NimStringDesc*) &TMP2422));
 		}
 		LA9: ;
 	}
@@ -3376,21 +3376,21 @@ N_NIMCALL(void, scancomment_181198)(Tlexer179185* L, Ttoken179181* tok) {
 			{
 				nimln(703, "lexer.nim");
 				while (1) {
-					NI TMP2423;
+					NI TMP2424;
 					if (!!((((NU8)(buf[pos])) == ((NU8)(13)) || ((NU8)(buf[pos])) == ((NU8)(10)) || ((NU8)(buf[pos])) == ((NU8)(0))))) goto LA17;
 					nimln(704, "lexer.nim");
 					{
-						NI TMP2422;
+						NI TMP2423;
 						if (!((NU8)(buf[pos]) == (NU8)(92))) goto LA20;
-						TMP2422 = addInt(pos, ((NI) 1));
-						lastbackslash = (NI)(TMP2422);
+						TMP2423 = addInt(pos, ((NI) 1));
+						lastbackslash = (NI)(TMP2423);
 					}
 					LA20: ;
 					nimln(705, "lexer.nim");
 					(*tok).literal = addChar((*tok).literal, buf[pos]);
 					nimln(706, "lexer.nim");
-					TMP2423 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP2423);
+					TMP2424 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP2424);
 				} LA17: ;
 			}
 			nimln(716, "lexer.nim");
@@ -3402,35 +3402,35 @@ N_NIMCALL(void, scancomment_181198)(Tlexer179185* L, Ttoken179181* tok) {
 			{
 				nimln(719, "lexer.nim");
 				while (1) {
-					NI TMP2424;
 					NI TMP2425;
+					NI TMP2426;
 					if (!((NU8)(buf[pos]) == (NU8)(32))) goto LA23;
 					nimln(720, "lexer.nim");
-					TMP2424 = addInt(pos, ((NI) 1));
-					pos = (NI)(TMP2424);
+					TMP2425 = addInt(pos, ((NI) 1));
+					pos = (NI)(TMP2425);
 					nimln(721, "lexer.nim");
-					TMP2425 = addInt(indent, ((NI) 1));
-					indent = (NI)(TMP2425);
+					TMP2426 = addInt(indent, ((NI) 1));
+					indent = (NI)(TMP2426);
 				} LA23: ;
 			}
 			nimln(729, "lexer.nim");
 			{
 				NIM_BOOL LOC26;
-				NI TMP2426;
-				NI64 TMP2428;
+				NI TMP2427;
+				NI64 TMP2429;
 				LOC26 = 0;
 				LOC26 = ((NU8)(buf[pos]) == (NU8)(35));
 				if (!(LOC26)) goto LA27;
-				TMP2426 = addInt(pos, ((NI) 1));
-				LOC26 = ((NU8)(buf[(NI)(TMP2426)]) == (NU8)(35));
+				TMP2427 = addInt(pos, ((NI) 1));
+				LOC26 = ((NU8)(buf[(NI)(TMP2427)]) == (NU8)(35));
 				LA27: ;
 				if (!LOC26) goto LA28;
 				nimln(730, "lexer.nim");
 				(*tok).literal = resizeString((*tok).literal, 1);
-appendString((*tok).literal, ((NimStringDesc*) &TMP2427));
+appendString((*tok).literal, ((NimStringDesc*) &TMP2428));
 				nimln(732, "lexer.nim");
-				TMP2428 = addInt64((*tok).inumber, ((NI) 1));
-				(*tok).inumber = (NI64)(TMP2428);
+				TMP2429 = addInt64((*tok).inumber, ((NI) 1));
+				(*tok).inumber = (NI64)(TMP2429);
 			}
 			goto LA24;
 			LA28: ;
@@ -3471,25 +3471,25 @@ N_NIMCALL(void, skip_182437)(Tlexer179185* L, Ttoken179181* tok) {
 			switch (((NU8)(buf[pos]))) {
 			case 32:
 			{
-				NI TMP2429;
 				NI TMP2430;
+				NI TMP2431;
 				nimln(746, "lexer.nim");
-				TMP2429 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP2429);
+				TMP2430 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP2430);
 				nimln(747, "lexer.nim");
-				TMP2430 = addInt((*tok).strongspacea, ((NI) 1));
-				if (TMP2430 < -128 || TMP2430 > 127) raiseOverflow();
-				(*tok).strongspacea = (NI8)(TMP2430);
+				TMP2431 = addInt((*tok).strongspacea, ((NI) 1));
+				if (TMP2431 < -128 || TMP2431 > 127) raiseOverflow();
+				(*tok).strongspacea = (NI8)(TMP2431);
 			}
 			break;
 			case 9:
 			{
-				NI TMP2431;
+				NI TMP2432;
 				nimln(749, "lexer.nim");
-				lexmessagepos_179507(L, ((NU16) 11), pos, ((NimStringDesc*) &TMP2279));
+				lexmessagepos_179507(L, ((NU16) 11), pos, ((NimStringDesc*) &TMP2280));
 				nimln(750, "lexer.nim");
-				TMP2431 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP2431);
+				TMP2432 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP2432);
 			}
 			break;
 			case 13:
@@ -3505,15 +3505,15 @@ N_NIMCALL(void, skip_182437)(Tlexer179185* L, Ttoken179181* tok) {
 				{
 					nimln(755, "lexer.nim");
 					while (1) {
-						NI TMP2432;
 						NI TMP2433;
+						NI TMP2434;
 						if (!((NU8)(buf[pos]) == (NU8)(32))) goto LA7;
 						nimln(756, "lexer.nim");
-						TMP2432 = addInt(pos, ((NI) 1));
-						pos = (NI)(TMP2432);
+						TMP2433 = addInt(pos, ((NI) 1));
+						pos = (NI)(TMP2433);
 						nimln(757, "lexer.nim");
-						TMP2433 = addInt(indent, ((NI) 1));
-						indent = (NI)(TMP2433);
+						TMP2434 = addInt(indent, ((NI) 1));
+						indent = (NI)(TMP2434);
 					} LA7: ;
 				}
 				nimln(758, "lexer.nim");
@@ -3522,15 +3522,15 @@ N_NIMCALL(void, skip_182437)(Tlexer179185* L, Ttoken179181* tok) {
 				{
 					NIM_BOOL LOC10;
 					NIM_BOOL LOC12;
-					NI TMP2434;
+					NI TMP2435;
 					LOC10 = 0;
 					LOC10 = ((NU8)(32) < (NU8)(buf[pos]));
 					if (!(LOC10)) goto LA11;
 					LOC12 = 0;
 					LOC12 = !(((NU8)(buf[pos]) == (NU8)(35)));
 					if (LOC12) goto LA13;
-					TMP2434 = addInt(pos, ((NI) 1));
-					LOC12 = ((NU8)(buf[(NI)(TMP2434)]) == (NU8)(35));
+					TMP2435 = addInt(pos, ((NI) 1));
+					LOC12 = ((NU8)(buf[(NI)(TMP2435)]) == (NU8)(35));
 					LA13: ;
 					LOC10 = LOC12;
 					LA11: ;
@@ -3549,28 +3549,28 @@ N_NIMCALL(void, skip_182437)(Tlexer179185* L, Ttoken179181* tok) {
 			{
 				nimln(773, "lexer.nim");
 				{
-					NI TMP2435;
-					TMP2435 = addInt(pos, ((NI) 1));
-					if (!((NU8)(buf[(NI)(TMP2435)]) == (NU8)(35))) goto LA19;
+					NI TMP2436;
+					TMP2436 = addInt(pos, ((NI) 1));
+					if (!((NU8)(buf[(NI)(TMP2436)]) == (NU8)(35))) goto LA19;
 					goto LA1;
 				}
 				LA19: ;
 				nimln(774, "lexer.nim");
 				{
-					NI TMP2436;
-					TMP2436 = addInt(pos, ((NI) 1));
-					if (!((NU8)(buf[(NI)(TMP2436)]) == (NU8)(91))) goto LA23;
+					NI TMP2437;
+					TMP2437 = addInt(pos, ((NI) 1));
+					if (!((NU8)(buf[(NI)(TMP2437)]) == (NU8)(91))) goto LA23;
 					nimln(775, "lexer.nim");
-					lexmessagepos_179507(L, ((NU16) 234), pos, ((NimStringDesc*) &TMP2437));
+					lexmessagepos_179507(L, ((NU16) 234), pos, ((NimStringDesc*) &TMP2438));
 				}
 				LA23: ;
 				{
 					nimln(776, "lexer.nim");
 					while (1) {
-						NI TMP2438;
+						NI TMP2439;
 						if (!!((((NU8)(buf[pos])) == ((NU8)(13)) || ((NU8)(buf[pos])) == ((NU8)(10)) || ((NU8)(buf[pos])) == ((NU8)(0))))) goto LA26;
-						TMP2438 = addInt(pos, ((NI) 1));
-						pos = (NI)(TMP2438);
+						TMP2439 = addInt(pos, ((NI) 1));
+						pos = (NI)(TMP2439);
 					} LA26: ;
 				}
 			}
@@ -3641,23 +3641,23 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 			nimln(802, "lexer.nim");
 			{
 				NIM_BOOL LOC15;
-				NI TMP2439;
 				NI TMP2440;
-				NI h;
 				NI TMP2441;
+				NI h;
+				NI TMP2442;
 				LOC15 = 0;
-				TMP2439 = addInt((*L).Sup.bufpos, ((NI) 1));
-				LOC15 = ((NU8)((*L).Sup.buf[(NI)(TMP2439)]) == (NU8)(58));
+				TMP2440 = addInt((*L).Sup.bufpos, ((NI) 1));
+				LOC15 = ((NU8)((*L).Sup.buf[(NI)(TMP2440)]) == (NU8)(58));
 				if (!(LOC15)) goto LA16;
-				TMP2440 = addInt((*L).Sup.bufpos, ((NI) 2));
-				LOC15 = !(((TMP2411[((NU8)((*L).Sup.buf[(NI)(TMP2440)]))/8] &(1<<(((NU8)((*L).Sup.buf[(NI)(TMP2440)]))%8)))!=0));
+				TMP2441 = addInt((*L).Sup.bufpos, ((NI) 2));
+				LOC15 = !(((TMP2412[((NU8)((*L).Sup.buf[(NI)(TMP2441)]))/8] &(1<<(((NU8)((*L).Sup.buf[(NI)(TMP2441)]))%8)))!=0));
 				LA16: ;
 				if (!LOC15) goto LA17;
 				nimln(803, "lexer.nim");
 				h = HEX21HEX26_130025(((NI) 0), ((NI) 42));
 				nimln(804, "lexer.nim");
-				TMP2441 = addInt((*L).Sup.bufpos, ((NI) 1));
-				endoperator_181086(L, tok, (NI)(TMP2441), h);
+				TMP2442 = addInt((*L).Sup.bufpos, ((NI) 1));
+				endoperator_181086(L, tok, (NI)(TMP2442), h);
 			}
 			goto LA13;
 			LA17: ;
@@ -3670,23 +3670,23 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 44:
 		{
-			NI TMP2442;
+			NI TMP2443;
 			nimln(808, "lexer.nim");
 			(*tok).toktype = ((NU8) 105);
 			nimln(809, "lexer.nim");
-			TMP2442 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2442);
+			TMP2443 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2443);
 		}
 		break;
 		case 108:
 		{
 			nimln(813, "lexer.nim");
 			{
-				NI TMP2443;
-				TMP2443 = addInt((*L).Sup.bufpos, ((NI) 1));
-				if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2443)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) <= ((NU8)(90)) || ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) == ((NU8)(95)) || ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) <= ((NU8)(122)) || ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) >= ((NU8)(128)) && ((NU8)((*L).Sup.buf[(NI)(TMP2443)])) <= ((NU8)(255))))) goto LA24;
+				NI TMP2444;
+				TMP2444 = addInt((*L).Sup.bufpos, ((NI) 1));
+				if (!!((((NU8)((*L).Sup.buf[(NI)(TMP2444)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) <= ((NU8)(90)) || ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) == ((NU8)(95)) || ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) <= ((NU8)(122)) || ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) >= ((NU8)(128)) && ((NU8)((*L).Sup.buf[(NI)(TMP2444)])) <= ((NU8)(255))))) goto LA24;
 				nimln(814, "lexer.nim");
-				lexmessage_179483((&(*L)), ((NU16) 236), ((NimStringDesc*) &TMP2279));
+				lexmessage_179483((&(*L)), ((NU16) 236), ((NimStringDesc*) &TMP2280));
 			}
 			LA24: ;
 			nimln(815, "lexer.nim");
@@ -3698,13 +3698,13 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		{
 			nimln(817, "lexer.nim");
 			{
-				NI TMP2444;
 				NI TMP2445;
-				TMP2444 = addInt((*L).Sup.bufpos, ((NI) 1));
-				if (!((NU8)((*L).Sup.buf[(NI)(TMP2444)]) == (NU8)(34))) goto LA29;
-				nimln(818, "lexer.nim");
+				NI TMP2446;
 				TMP2445 = addInt((*L).Sup.bufpos, ((NI) 1));
-				(*L).Sup.bufpos = (NI)(TMP2445);
+				if (!((NU8)((*L).Sup.buf[(NI)(TMP2445)]) == (NU8)(34))) goto LA29;
+				nimln(818, "lexer.nim");
+				TMP2446 = addInt((*L).Sup.bufpos, ((NI) 1));
+				(*L).Sup.bufpos = (NI)(TMP2446);
 				nimln(819, "lexer.nim");
 				getstring_180760(L, tok, NIM_TRUE);
 			}
@@ -3719,27 +3719,27 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 40:
 		{
-			NI TMP2446;
+			NI TMP2447;
 			nimln(823, "lexer.nim");
-			TMP2446 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2446);
+			TMP2447 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2447);
 			nimln(824, "lexer.nim");
 			{
 				NIM_BOOL LOC35;
-				NI TMP2447;
 				NI TMP2448;
+				NI TMP2449;
 				LOC35 = 0;
 				LOC35 = ((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(46));
 				if (!(LOC35)) goto LA36;
-				TMP2447 = addInt((*L).Sup.bufpos, ((NI) 1));
-				LOC35 = !(((NU8)((*L).Sup.buf[(NI)(TMP2447)]) == (NU8)(46)));
+				TMP2448 = addInt((*L).Sup.bufpos, ((NI) 1));
+				LOC35 = !(((NU8)((*L).Sup.buf[(NI)(TMP2448)]) == (NU8)(46)));
 				LA36: ;
 				if (!LOC35) goto LA37;
 				nimln(825, "lexer.nim");
 				(*tok).toktype = ((NU8) 103);
 				nimln(826, "lexer.nim");
-				TMP2448 = addInt((*L).Sup.bufpos, ((NI) 1));
-				(*L).Sup.bufpos = (NI)(TMP2448);
+				TMP2449 = addInt((*L).Sup.bufpos, ((NI) 1));
+				(*L).Sup.bufpos = (NI)(TMP2449);
 			}
 			goto LA33;
 			LA37: ;
@@ -3752,37 +3752,37 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 41:
 		{
-			NI TMP2449;
+			NI TMP2450;
 			nimln(830, "lexer.nim");
 			(*tok).toktype = ((NU8) 94);
 			nimln(831, "lexer.nim");
-			TMP2449 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2449);
+			TMP2450 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2450);
 		}
 		break;
 		case 91:
 		{
-			NI TMP2450;
+			NI TMP2451;
 			nimln(833, "lexer.nim");
-			TMP2450 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2450);
+			TMP2451 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2451);
 			nimln(834, "lexer.nim");
 			{
 				NIM_BOOL LOC44;
-				NI TMP2451;
 				NI TMP2452;
+				NI TMP2453;
 				LOC44 = 0;
 				LOC44 = ((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(46));
 				if (!(LOC44)) goto LA45;
-				TMP2451 = addInt((*L).Sup.bufpos, ((NI) 1));
-				LOC44 = !(((NU8)((*L).Sup.buf[(NI)(TMP2451)]) == (NU8)(46)));
+				TMP2452 = addInt((*L).Sup.bufpos, ((NI) 1));
+				LOC44 = !(((NU8)((*L).Sup.buf[(NI)(TMP2452)]) == (NU8)(46)));
 				LA45: ;
 				if (!LOC44) goto LA46;
 				nimln(835, "lexer.nim");
 				(*tok).toktype = ((NU8) 99);
 				nimln(836, "lexer.nim");
-				TMP2452 = addInt((*L).Sup.bufpos, ((NI) 1));
-				(*L).Sup.bufpos = (NI)(TMP2452);
+				TMP2453 = addInt((*L).Sup.bufpos, ((NI) 1));
+				(*L).Sup.bufpos = (NI)(TMP2453);
 			}
 			goto LA42;
 			LA46: ;
@@ -3795,55 +3795,55 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 93:
 		{
-			NI TMP2453;
+			NI TMP2454;
 			nimln(840, "lexer.nim");
 			(*tok).toktype = ((NU8) 96);
 			nimln(841, "lexer.nim");
-			TMP2453 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2453);
+			TMP2454 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2454);
 		}
 		break;
 		case 46:
 		{
 			nimln(843, "lexer.nim");
 			{
-				NI TMP2454;
 				NI TMP2455;
-				TMP2454 = addInt((*L).Sup.bufpos, ((NI) 1));
-				if (!((NU8)((*L).Sup.buf[(NI)(TMP2454)]) == (NU8)(93))) goto LA53;
+				NI TMP2456;
+				TMP2455 = addInt((*L).Sup.bufpos, ((NI) 1));
+				if (!((NU8)((*L).Sup.buf[(NI)(TMP2455)]) == (NU8)(93))) goto LA53;
 				nimln(844, "lexer.nim");
 				(*tok).toktype = ((NU8) 100);
 				nimln(845, "lexer.nim");
-				TMP2455 = addInt((*L).Sup.bufpos, ((NI) 2));
-				(*L).Sup.bufpos = (NI)(TMP2455);
+				TMP2456 = addInt((*L).Sup.bufpos, ((NI) 2));
+				(*L).Sup.bufpos = (NI)(TMP2456);
 			}
 			goto LA51;
 			LA53: ;
 			{
-				NI TMP2456;
 				NI TMP2457;
+				NI TMP2458;
 				nimln(846, "lexer.nim");
-				TMP2456 = addInt((*L).Sup.bufpos, ((NI) 1));
-				if (!((NU8)((*L).Sup.buf[(NI)(TMP2456)]) == (NU8)(125))) goto LA56;
+				TMP2457 = addInt((*L).Sup.bufpos, ((NI) 1));
+				if (!((NU8)((*L).Sup.buf[(NI)(TMP2457)]) == (NU8)(125))) goto LA56;
 				nimln(847, "lexer.nim");
 				(*tok).toktype = ((NU8) 102);
 				nimln(848, "lexer.nim");
-				TMP2457 = addInt((*L).Sup.bufpos, ((NI) 2));
-				(*L).Sup.bufpos = (NI)(TMP2457);
+				TMP2458 = addInt((*L).Sup.bufpos, ((NI) 2));
+				(*L).Sup.bufpos = (NI)(TMP2458);
 			}
 			goto LA51;
 			LA56: ;
 			{
-				NI TMP2458;
 				NI TMP2459;
+				NI TMP2460;
 				nimln(849, "lexer.nim");
-				TMP2458 = addInt((*L).Sup.bufpos, ((NI) 1));
-				if (!((NU8)((*L).Sup.buf[(NI)(TMP2458)]) == (NU8)(41))) goto LA59;
+				TMP2459 = addInt((*L).Sup.bufpos, ((NI) 1));
+				if (!((NU8)((*L).Sup.buf[(NI)(TMP2459)]) == (NU8)(41))) goto LA59;
 				nimln(850, "lexer.nim");
 				(*tok).toktype = ((NU8) 104);
 				nimln(851, "lexer.nim");
-				TMP2459 = addInt((*L).Sup.bufpos, ((NI) 2));
-				(*L).Sup.bufpos = (NI)(TMP2459);
+				TMP2460 = addInt((*L).Sup.bufpos, ((NI) 2));
+				(*L).Sup.bufpos = (NI)(TMP2460);
 			}
 			goto LA51;
 			LA59: ;
@@ -3856,27 +3856,27 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 123:
 		{
-			NI TMP2460;
+			NI TMP2461;
 			nimln(855, "lexer.nim");
-			TMP2460 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2460);
+			TMP2461 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2461);
 			nimln(856, "lexer.nim");
 			{
 				NIM_BOOL LOC65;
-				NI TMP2461;
 				NI TMP2462;
+				NI TMP2463;
 				LOC65 = 0;
 				LOC65 = ((NU8)((*L).Sup.buf[(*L).Sup.bufpos]) == (NU8)(46));
 				if (!(LOC65)) goto LA66;
-				TMP2461 = addInt((*L).Sup.bufpos, ((NI) 1));
-				LOC65 = !(((NU8)((*L).Sup.buf[(NI)(TMP2461)]) == (NU8)(46)));
+				TMP2462 = addInt((*L).Sup.bufpos, ((NI) 1));
+				LOC65 = !(((NU8)((*L).Sup.buf[(NI)(TMP2462)]) == (NU8)(46)));
 				LA66: ;
 				if (!LOC65) goto LA67;
 				nimln(857, "lexer.nim");
 				(*tok).toktype = ((NU8) 101);
 				nimln(858, "lexer.nim");
-				TMP2462 = addInt((*L).Sup.bufpos, ((NI) 1));
-				(*L).Sup.bufpos = (NI)(TMP2462);
+				TMP2463 = addInt((*L).Sup.bufpos, ((NI) 1));
+				(*L).Sup.bufpos = (NI)(TMP2463);
 			}
 			goto LA63;
 			LA67: ;
@@ -3889,47 +3889,47 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 		break;
 		case 125:
 		{
-			NI TMP2463;
+			NI TMP2464;
 			nimln(862, "lexer.nim");
 			(*tok).toktype = ((NU8) 98);
 			nimln(863, "lexer.nim");
-			TMP2463 = addInt((*L).Sup.bufpos, ((NI) 1));
-			(*L).Sup.bufpos = (NI)(TMP2463);
-		}
-		break;
-		case 59:
-		{
-			NI TMP2464;
-			nimln(865, "lexer.nim");
-			(*tok).toktype = ((NU8) 106);
-			nimln(866, "lexer.nim");
 			TMP2464 = addInt((*L).Sup.bufpos, ((NI) 1));
 			(*L).Sup.bufpos = (NI)(TMP2464);
 		}
 		break;
-		case 96:
+		case 59:
 		{
 			NI TMP2465;
-			nimln(868, "lexer.nim");
-			(*tok).toktype = ((NU8) 114);
-			nimln(869, "lexer.nim");
+			nimln(865, "lexer.nim");
+			(*tok).toktype = ((NU8) 106);
+			nimln(866, "lexer.nim");
 			TMP2465 = addInt((*L).Sup.bufpos, ((NI) 1));
 			(*L).Sup.bufpos = (NI)(TMP2465);
 		}
 		break;
-		case 95:
+		case 96:
 		{
 			NI TMP2466;
-			nimln(871, "lexer.nim");
+			nimln(868, "lexer.nim");
+			(*tok).toktype = ((NU8) 114);
+			nimln(869, "lexer.nim");
 			TMP2466 = addInt((*L).Sup.bufpos, ((NI) 1));
 			(*L).Sup.bufpos = (NI)(TMP2466);
+		}
+		break;
+		case 95:
+		{
+			NI TMP2467;
+			nimln(871, "lexer.nim");
+			TMP2467 = addInt((*L).Sup.bufpos, ((NI) 1));
+			(*L).Sup.bufpos = (NI)(TMP2467);
 			nimln(872, "lexer.nim");
 			{
 				if (!!((((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) <= ((NU8)(122)) || ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) <= ((NU8)(90)) || ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) >= ((NU8)(128)) && ((NU8)((*L).Sup.buf[(*L).Sup.bufpos])) <= ((NU8)(255))))) goto LA76;
 				nimln(873, "lexer.nim");
 				(*tok).toktype = ((NU8) 2);
 				nimln(874, "lexer.nim");
-				unsureAsgnRef((void**) (&(*tok).ident), getident_165463(((NimStringDesc*) &TMP2289)));
+				unsureAsgnRef((void**) (&(*tok).ident), getident_165463(((NimStringDesc*) &TMP2290)));
 			}
 			goto LA74;
 			LA76: ;
@@ -3946,7 +3946,7 @@ N_NIMCALL(void, rawgettok_182848)(Tlexer179185* L, Ttoken179181* tok) {
 				LOC80 = nimIntToStr(((NI) (((NU8)(c)))));
 				LOC79 = rawNewString(LOC80->Sup.len + 5);
 appendChar(LOC79, c);
-appendString(LOC79, ((NimStringDesc*) &TMP2467));
+appendString(LOC79, ((NimStringDesc*) &TMP2468));
 appendString(LOC79, LOC80);
 appendChar(LOC79, 41);
 				lexmessage_179483((&(*L)), ((NU16) 12), LOC79);
@@ -3958,25 +3958,25 @@ appendChar(LOC79, 41);
 		{
 			NIM_BOOL rawmode;
 			NIM_BOOL LOC82;
-			NI TMP2468;
+			NI TMP2469;
 			nimln(881, "lexer.nim");
 			LOC82 = 0;
 			LOC82 = (((NI) 0) < (*L).Sup.bufpos);
 			if (!(LOC82)) goto LA83;
-			TMP2468 = subInt((*L).Sup.bufpos, ((NI) 1));
-			LOC82 = (((NU8)((*L).Sup.buf[(NI)(TMP2468)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) <= ((NU8)(122)) || ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) <= ((NU8)(90)) || ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) >= ((NU8)(128)) && ((NU8)((*L).Sup.buf[(NI)(TMP2468)])) <= ((NU8)(255)));
+			TMP2469 = subInt((*L).Sup.bufpos, ((NI) 1));
+			LOC82 = (((NU8)((*L).Sup.buf[(NI)(TMP2469)])) >= ((NU8)(97)) && ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) <= ((NU8)(122)) || ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) >= ((NU8)(65)) && ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) <= ((NU8)(90)) || ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) >= ((NU8)(48)) && ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) <= ((NU8)(57)) || ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) >= ((NU8)(128)) && ((NU8)((*L).Sup.buf[(NI)(TMP2469)])) <= ((NU8)(255)));
 			LA83: ;
 			rawmode = LOC82;
 			nimln(882, "lexer.nim");
 			getstring_180760(L, tok, rawmode);
 			nimln(883, "lexer.nim");
 			{
-				NI TMP2469;
+				NI TMP2470;
 				if (!rawmode) goto LA86;
 				nimln(886, "lexer.nim");
-				TMP2469 = addInt((*tok).toktype, ((NI) 2));
-				if (TMP2469 < 0 || TMP2469 > 118) raiseOverflow();
-				(*tok).toktype = (NU8)(TMP2469);
+				TMP2470 = addInt((*tok).toktype, ((NI) 2));
+				if (TMP2470 < 0 || TMP2470 > 118) raiseOverflow();
+				(*tok).toktype = (NU8)(TMP2470);
 			}
 			LA86: ;
 		}
@@ -4001,7 +4001,7 @@ appendChar(LOC79, 41);
 		{
 			nimln(894, "lexer.nim");
 			{
-				if (!((TMP2411[((NU8)(c))/8] &(1<<(((NU8)(c))%8)))!=0)) goto LA93;
+				if (!((TMP2412[((NU8)(c))/8] &(1<<(((NU8)(c))%8)))!=0)) goto LA93;
 				nimln(895, "lexer.nim");
 				getoperator_181111(L, tok);
 			}
@@ -4020,7 +4020,7 @@ appendChar(LOC79, 41);
 			{
 				NimStringDesc* LOC99;
 				NimStringDesc* LOC100;
-				NI TMP2470;
+				NI TMP2471;
 				nimln(900, "lexer.nim");
 				unsureAsgnRef((void**) (&(*tok).literal), nimCharToStr(c));
 				nimln(901, "lexer.nim");
@@ -4031,13 +4031,13 @@ appendChar(LOC79, 41);
 				LOC100 = nimIntToStr(((NI) (((NU8)(c)))));
 				LOC99 = rawNewString(LOC100->Sup.len + 5);
 appendChar(LOC99, c);
-appendString(LOC99, ((NimStringDesc*) &TMP2467));
+appendString(LOC99, ((NimStringDesc*) &TMP2468));
 appendString(LOC99, LOC100);
 appendChar(LOC99, 41);
 				lexmessage_179483((&(*L)), ((NU16) 12), LOC99);
 				nimln(903, "lexer.nim");
-				TMP2470 = addInt((*L).Sup.bufpos, ((NI) 1));
-				(*L).Sup.bufpos = (NI)(TMP2470);
+				TMP2471 = addInt((*L).Sup.bufpos, ((NI) 1));
+				(*L).Sup.bufpos = (NI)(TMP2471);
 			}
 			LA91: ;
 		}
@@ -4047,24 +4047,24 @@ appendChar(LOC99, 41);
 	LA6: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP2494)(void* p, NI op) {
+N_NIMCALL(void, TMP2495)(void* p, NI op) {
 	TY184581* a;
 	a = (TY184581*)p;
 }
 NIM_EXTERNC N_NOINLINE(void, compiler_lexerInit)(void) {
 	nimfr("lexer", "lexer.nim")
 	nimln(905, "lexer.nim");
-	asgnRefNoCycle((void**) (&dummyident_179364), getident_165463(((NimStringDesc*) &TMP2279)));
+	asgnRefNoCycle((void**) (&dummyident_179364), getident_165463(((NimStringDesc*) &TMP2280)));
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_lexerDatInit)(void) {
-static TNimNode* TMP2492[5];
-static TNimNode* TMP2493[2];
-static TNimNode* TMP2977[11];
-static TNimNode* TMP2978[119];
-NI TMP2980;
-static char* NIM_CONST TMP2979[119] = {
+static TNimNode* TMP2493[5];
+static TNimNode* TMP2494[2];
+static TNimNode* TMP2978[11];
+static TNimNode* TMP2979[119];
+NI TMP2981;
+static char* NIM_CONST TMP2980[119] = {
 "tkInvalid", 
 "tkEof", 
 "tkSymbol", 
@@ -4184,155 +4184,155 @@ static char* NIM_CONST TMP2979[119] = {
 "tkInfixOpr", 
 "tkPrefixOpr", 
 "tkPostfixOpr"};
-static TNimNode* TMP2981[4];
-NI TMP2983;
-static char* NIM_CONST TMP2982[4] = {
+static TNimNode* TMP2982[4];
+NI TMP2984;
+static char* NIM_CONST TMP2983[4] = {
 "base10", 
 "base2", 
 "base8", 
 "base16"};
-static TNimNode TMP2075[147];
+static TNimNode TMP2076[147];
 NTI179185.size = sizeof(Tlexer179185);
 NTI179185.kind = 17;
 NTI179185.base = (&NTI177024);
-TMP2492[0] = &TMP2075[1];
-TMP2075[1].kind = 1;
-TMP2075[1].offset = offsetof(Tlexer179185, fileidx);
-TMP2075[1].typ = (&NTI114);
-TMP2075[1].name = "fileIdx";
-TMP2492[1] = &TMP2075[2];
-TMP2075[2].kind = 1;
-TMP2075[2].offset = offsetof(Tlexer179185, indentahead);
-TMP2075[2].typ = (&NTI108);
-TMP2075[2].name = "indentAhead";
-TMP2492[2] = &TMP2075[3];
-TMP2075[3].kind = 1;
-TMP2075[3].offset = offsetof(Tlexer179185, currlineindent);
-TMP2075[3].typ = (&NTI108);
-TMP2075[3].name = "currLineIndent";
-TMP2492[3] = &TMP2075[4];
-TMP2075[4].kind = 1;
-TMP2075[4].offset = offsetof(Tlexer179185, strongspaces);
-TMP2075[4].typ = (&NTI138);
-TMP2075[4].name = "strongSpaces";
-TMP2492[4] = &TMP2075[5];
+TMP2493[0] = &TMP2076[1];
+TMP2076[1].kind = 1;
+TMP2076[1].offset = offsetof(Tlexer179185, fileidx);
+TMP2076[1].typ = (&NTI114);
+TMP2076[1].name = "fileIdx";
+TMP2493[1] = &TMP2076[2];
+TMP2076[2].kind = 1;
+TMP2076[2].offset = offsetof(Tlexer179185, indentahead);
+TMP2076[2].typ = (&NTI108);
+TMP2076[2].name = "indentAhead";
+TMP2493[2] = &TMP2076[3];
+TMP2076[3].kind = 1;
+TMP2076[3].offset = offsetof(Tlexer179185, currlineindent);
+TMP2076[3].typ = (&NTI108);
+TMP2076[3].name = "currLineIndent";
+TMP2493[3] = &TMP2076[4];
+TMP2076[4].kind = 1;
+TMP2076[4].offset = offsetof(Tlexer179185, strongspaces);
+TMP2076[4].typ = (&NTI138);
+TMP2076[4].name = "strongSpaces";
+TMP2493[4] = &TMP2076[5];
 NTI179183.size = sizeof(TY184578);
 NTI179183.kind = 18;
 NTI179183.base = 0;
 NTI179183.flags = 2;
-TMP2493[0] = &TMP2075[7];
-TMP2075[7].kind = 1;
-TMP2075[7].offset = offsetof(TY184578, Field0);
-TMP2075[7].typ = (&NTI153);
-TMP2075[7].name = "Field0";
-TMP2493[1] = &TMP2075[8];
+TMP2494[0] = &TMP2076[7];
+TMP2076[7].kind = 1;
+TMP2076[7].offset = offsetof(TY184578, Field0);
+TMP2076[7].typ = (&NTI153);
+TMP2076[7].name = "Field0";
+TMP2494[1] = &TMP2076[8];
 NTI184581.size = sizeof(TY184581);
 NTI184581.kind = 18;
 NTI184581.base = 0;
 NTI184581.flags = 3;
-TMP2075[9].len = 0; TMP2075[9].kind = 2;
-NTI184581.node = &TMP2075[9];
+TMP2076[9].len = 0; TMP2076[9].kind = 2;
+NTI184581.node = &TMP2076[9];
 NTI184580.size = sizeof(TY184581*);
 NTI184580.kind = 22;
 NTI184580.base = (&NTI184581);
 NTI184580.flags = 2;
-NTI184580.marker = TMP2494;
-TMP2075[8].kind = 1;
-TMP2075[8].offset = offsetof(TY184578, Field1);
-TMP2075[8].typ = (&NTI184580);
-TMP2075[8].name = "Field1";
-TMP2075[6].len = 2; TMP2075[6].kind = 2; TMP2075[6].sons = &TMP2493[0];
-NTI179183.node = &TMP2075[6];
-TMP2075[5].kind = 1;
-TMP2075[5].offset = offsetof(Tlexer179185, errorhandler);
-TMP2075[5].typ = (&NTI179183);
-TMP2075[5].name = "errorHandler";
-TMP2075[0].len = 5; TMP2075[0].kind = 2; TMP2075[0].sons = &TMP2492[0];
-NTI179185.node = &TMP2075[0];
+NTI184580.marker = TMP2495;
+TMP2076[8].kind = 1;
+TMP2076[8].offset = offsetof(TY184578, Field1);
+TMP2076[8].typ = (&NTI184580);
+TMP2076[8].name = "Field1";
+TMP2076[6].len = 2; TMP2076[6].kind = 2; TMP2076[6].sons = &TMP2494[0];
+NTI179183.node = &TMP2076[6];
+TMP2076[5].kind = 1;
+TMP2076[5].offset = offsetof(Tlexer179185, errorhandler);
+TMP2076[5].typ = (&NTI179183);
+TMP2076[5].name = "errorHandler";
+TMP2076[0].len = 5; TMP2076[0].kind = 2; TMP2076[0].sons = &TMP2493[0];
+NTI179185.node = &TMP2076[0];
 NTI179181.size = sizeof(Ttoken179181);
 NTI179181.kind = 18;
 NTI179181.base = 0;
 NTI179181.flags = 2;
-TMP2977[0] = &TMP2075[11];
+TMP2978[0] = &TMP2076[11];
 NTI179022.size = sizeof(NU8);
 NTI179022.kind = 14;
 NTI179022.base = 0;
 NTI179022.flags = 3;
-for (TMP2980 = 0; TMP2980 < 119; TMP2980++) {
-TMP2075[TMP2980+12].kind = 1;
-TMP2075[TMP2980+12].offset = TMP2980;
-TMP2075[TMP2980+12].name = TMP2979[TMP2980];
-TMP2978[TMP2980] = &TMP2075[TMP2980+12];
+for (TMP2981 = 0; TMP2981 < 119; TMP2981++) {
+TMP2076[TMP2981+12].kind = 1;
+TMP2076[TMP2981+12].offset = TMP2981;
+TMP2076[TMP2981+12].name = TMP2980[TMP2981];
+TMP2979[TMP2981] = &TMP2076[TMP2981+12];
 }
-TMP2075[131].len = 119; TMP2075[131].kind = 2; TMP2075[131].sons = &TMP2978[0];
-NTI179022.node = &TMP2075[131];
-TMP2075[11].kind = 1;
-TMP2075[11].offset = offsetof(Ttoken179181, toktype);
-TMP2075[11].typ = (&NTI179022);
-TMP2075[11].name = "tokType";
-TMP2977[1] = &TMP2075[132];
-TMP2075[132].kind = 1;
-TMP2075[132].offset = offsetof(Ttoken179181, indent);
-TMP2075[132].typ = (&NTI108);
-TMP2075[132].name = "indent";
-TMP2977[2] = &TMP2075[133];
-TMP2075[133].kind = 1;
-TMP2075[133].offset = offsetof(Ttoken179181, ident);
-TMP2075[133].typ = (&NTI165019);
-TMP2075[133].name = "ident";
-TMP2977[3] = &TMP2075[134];
-TMP2075[134].kind = 1;
-TMP2075[134].offset = offsetof(Ttoken179181, inumber);
-TMP2075[134].typ = (&NTI5710);
-TMP2075[134].name = "iNumber";
-TMP2977[4] = &TMP2075[135];
-TMP2075[135].kind = 1;
-TMP2075[135].offset = offsetof(Ttoken179181, fnumber);
-TMP2075[135].typ = (&NTI5712);
-TMP2075[135].name = "fNumber";
-TMP2977[5] = &TMP2075[136];
+TMP2076[131].len = 119; TMP2076[131].kind = 2; TMP2076[131].sons = &TMP2979[0];
+NTI179022.node = &TMP2076[131];
+TMP2076[11].kind = 1;
+TMP2076[11].offset = offsetof(Ttoken179181, toktype);
+TMP2076[11].typ = (&NTI179022);
+TMP2076[11].name = "tokType";
+TMP2978[1] = &TMP2076[132];
+TMP2076[132].kind = 1;
+TMP2076[132].offset = offsetof(Ttoken179181, indent);
+TMP2076[132].typ = (&NTI108);
+TMP2076[132].name = "indent";
+TMP2978[2] = &TMP2076[133];
+TMP2076[133].kind = 1;
+TMP2076[133].offset = offsetof(Ttoken179181, ident);
+TMP2076[133].typ = (&NTI165019);
+TMP2076[133].name = "ident";
+TMP2978[3] = &TMP2076[134];
+TMP2076[134].kind = 1;
+TMP2076[134].offset = offsetof(Ttoken179181, inumber);
+TMP2076[134].typ = (&NTI5710);
+TMP2076[134].name = "iNumber";
+TMP2978[4] = &TMP2076[135];
+TMP2076[135].kind = 1;
+TMP2076[135].offset = offsetof(Ttoken179181, fnumber);
+TMP2076[135].typ = (&NTI5712);
+TMP2076[135].name = "fNumber";
+TMP2978[5] = &TMP2076[136];
 NTI179179.size = sizeof(NU8);
 NTI179179.kind = 14;
 NTI179179.base = 0;
 NTI179179.flags = 3;
-for (TMP2983 = 0; TMP2983 < 4; TMP2983++) {
-TMP2075[TMP2983+137].kind = 1;
-TMP2075[TMP2983+137].offset = TMP2983;
-TMP2075[TMP2983+137].name = TMP2982[TMP2983];
-TMP2981[TMP2983] = &TMP2075[TMP2983+137];
+for (TMP2984 = 0; TMP2984 < 4; TMP2984++) {
+TMP2076[TMP2984+137].kind = 1;
+TMP2076[TMP2984+137].offset = TMP2984;
+TMP2076[TMP2984+137].name = TMP2983[TMP2984];
+TMP2982[TMP2984] = &TMP2076[TMP2984+137];
 }
-TMP2075[141].len = 4; TMP2075[141].kind = 2; TMP2075[141].sons = &TMP2981[0];
-NTI179179.node = &TMP2075[141];
-TMP2075[136].kind = 1;
-TMP2075[136].offset = offsetof(Ttoken179181, base);
-TMP2075[136].typ = (&NTI179179);
-TMP2075[136].name = "base";
-TMP2977[6] = &TMP2075[142];
-TMP2075[142].kind = 1;
-TMP2075[142].offset = offsetof(Ttoken179181, strongspacea);
-TMP2075[142].typ = (&NTI110);
-TMP2075[142].name = "strongSpaceA";
-TMP2977[7] = &TMP2075[143];
-TMP2075[143].kind = 1;
-TMP2075[143].offset = offsetof(Ttoken179181, strongspaceb);
-TMP2075[143].typ = (&NTI110);
-TMP2075[143].name = "strongSpaceB";
-TMP2977[8] = &TMP2075[144];
-TMP2075[144].kind = 1;
-TMP2075[144].offset = offsetof(Ttoken179181, literal);
-TMP2075[144].typ = (&NTI149);
-TMP2075[144].name = "literal";
-TMP2977[9] = &TMP2075[145];
-TMP2075[145].kind = 1;
-TMP2075[145].offset = offsetof(Ttoken179181, line);
-TMP2075[145].typ = (&NTI108);
-TMP2075[145].name = "line";
-TMP2977[10] = &TMP2075[146];
-TMP2075[146].kind = 1;
-TMP2075[146].offset = offsetof(Ttoken179181, col);
-TMP2075[146].typ = (&NTI108);
-TMP2075[146].name = "col";
-TMP2075[10].len = 11; TMP2075[10].kind = 2; TMP2075[10].sons = &TMP2977[0];
-NTI179181.node = &TMP2075[10];
+TMP2076[141].len = 4; TMP2076[141].kind = 2; TMP2076[141].sons = &TMP2982[0];
+NTI179179.node = &TMP2076[141];
+TMP2076[136].kind = 1;
+TMP2076[136].offset = offsetof(Ttoken179181, base);
+TMP2076[136].typ = (&NTI179179);
+TMP2076[136].name = "base";
+TMP2978[6] = &TMP2076[142];
+TMP2076[142].kind = 1;
+TMP2076[142].offset = offsetof(Ttoken179181, strongspacea);
+TMP2076[142].typ = (&NTI110);
+TMP2076[142].name = "strongSpaceA";
+TMP2978[7] = &TMP2076[143];
+TMP2076[143].kind = 1;
+TMP2076[143].offset = offsetof(Ttoken179181, strongspaceb);
+TMP2076[143].typ = (&NTI110);
+TMP2076[143].name = "strongSpaceB";
+TMP2978[8] = &TMP2076[144];
+TMP2076[144].kind = 1;
+TMP2076[144].offset = offsetof(Ttoken179181, literal);
+TMP2076[144].typ = (&NTI149);
+TMP2076[144].name = "literal";
+TMP2978[9] = &TMP2076[145];
+TMP2076[145].kind = 1;
+TMP2076[145].offset = offsetof(Ttoken179181, line);
+TMP2076[145].typ = (&NTI108);
+TMP2076[145].name = "line";
+TMP2978[10] = &TMP2076[146];
+TMP2076[146].kind = 1;
+TMP2076[146].offset = offsetof(Ttoken179181, col);
+TMP2076[146].typ = (&NTI108);
+TMP2076[146].name = "col";
+TMP2076[10].len = 11; TMP2076[10].kind = 2; TMP2076[10].sons = &TMP2978[0];
+NTI179181.node = &TMP2076[10];
 }
 

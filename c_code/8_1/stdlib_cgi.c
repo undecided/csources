@@ -228,7 +228,7 @@ static N_INLINE(void, addxmlchar_334261)(NimStringDesc** dest, NIM_CHAR c);
 N_NIMCALL(NimStringDesc*, xmlencode_334272)(NimStringDesc* s);
 N_NIMCALL(void, cgierror_334327)(NimStringDesc* msg);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP6537)(void* p, NI op);
+N_NIMCALL(void, TMP6538)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
@@ -300,63 +300,63 @@ static N_INLINE(void, decref_52204)(Tcell46747* c);
 N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj133012* t, NimStringDesc* key);
 N_NIMCALL(NIM_BOOL, existscookie_335143)(NimStringDesc* name);
 N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj133012* t, NimStringDesc* key);
-STRING_LITERAL(TMP6524, "false ", 6);
-STRING_LITERAL(TMP6530, "&amp;", 5);
-STRING_LITERAL(TMP6531, "&lt;", 4);
-STRING_LITERAL(TMP6532, "&gt;", 4);
-STRING_LITERAL(TMP6533, "&quot;", 6);
-STRING_LITERAL(TMP6538, "REQUEST_METHOD", 14);
-STRING_LITERAL(TMP6539, "POST", 4);
-STRING_LITERAL(TMP6540, "GET", 3);
-STRING_LITERAL(TMP6541, "\'REQUEST_METHOD\' \'POST\' is not supported", 40);
-STRING_LITERAL(TMP6542, "CONTENT_LENGTH", 14);
-STRING_LITERAL(TMP6543, "cannot read from stdin", 22);
-STRING_LITERAL(TMP6544, "\'REQUEST_METHOD\' \'GET\' is not supported", 39);
-STRING_LITERAL(TMP6545, "QUERY_STRING", 12);
-STRING_LITERAL(TMP6546, "\'REQUEST_METHOD\' must be \'POST\' or \'GET\'", 40);
-STRING_LITERAL(TMP6547, "", 0);
-STRING_LITERAL(TMP6552, "\'=\' expected", 12);
-STRING_LITERAL(TMP6559, "\'&\' expected", 12);
-STRING_LITERAL(TMP6562, "unknown variable name: ", 23);
-STRING_LITERAL(TMP6564, "CONTENT_Type", 12);
-STRING_LITERAL(TMP6565, "DOCUMENT_ROOT", 13);
-STRING_LITERAL(TMP6566, "GATEWAY_INTERFACE", 17);
-STRING_LITERAL(TMP6567, "HTTP_ACCEPT", 11);
-STRING_LITERAL(TMP6568, "HTTP_ACCEPT_CHARSET", 19);
-STRING_LITERAL(TMP6569, "HTTP_ACCEPT_ENCODING", 20);
-STRING_LITERAL(TMP6570, "HTTP_ACCEPT_LANGUAGE", 20);
-STRING_LITERAL(TMP6571, "HTTP_CONNECTION", 15);
-STRING_LITERAL(TMP6572, "HTTP_COOKIE", 11);
-STRING_LITERAL(TMP6573, "HTTP_HOST", 9);
-STRING_LITERAL(TMP6574, "HTTP_REFERER", 12);
-STRING_LITERAL(TMP6575, "HTTP_USER_AGENT", 15);
-STRING_LITERAL(TMP6576, "PATH_INFO", 9);
-STRING_LITERAL(TMP6577, "PATH_TRANSLATED", 15);
-STRING_LITERAL(TMP6578, "REMOTE_ADDR", 11);
-STRING_LITERAL(TMP6579, "REMOTE_HOST", 11);
-STRING_LITERAL(TMP6580, "REMOTE_IDENT", 12);
-STRING_LITERAL(TMP6581, "REMOTE_PORT", 11);
-STRING_LITERAL(TMP6582, "REMOTE_USER", 11);
-STRING_LITERAL(TMP6583, "REQUEST_URI", 11);
-STRING_LITERAL(TMP6584, "SCRIPT_FILENAME", 15);
-STRING_LITERAL(TMP6585, "SCRIPT_NAME", 11);
-STRING_LITERAL(TMP6586, "SERVER_ADDR", 11);
-STRING_LITERAL(TMP6587, "SERVER_ADMIN", 12);
-STRING_LITERAL(TMP6588, "SERVER_NAME", 11);
-STRING_LITERAL(TMP6589, "SERVER_PORT", 11);
-STRING_LITERAL(TMP6590, "SERVER_PROTOCOL", 15);
-STRING_LITERAL(TMP6591, "SERVER_SIGNATURE", 16);
-STRING_LITERAL(TMP6592, "SERVER_SOFTWARE", 15);
-STRING_LITERAL(TMP6595, "Content-type: text/html\012\012", 25);
-STRING_LITERAL(TMP6596, "<!--: spam\012Content-Type: text/html\012\012<body bgcolor=#f0f0f8><font"
+STRING_LITERAL(TMP6525, "false ", 6);
+STRING_LITERAL(TMP6531, "&amp;", 5);
+STRING_LITERAL(TMP6532, "&lt;", 4);
+STRING_LITERAL(TMP6533, "&gt;", 4);
+STRING_LITERAL(TMP6534, "&quot;", 6);
+STRING_LITERAL(TMP6539, "REQUEST_METHOD", 14);
+STRING_LITERAL(TMP6540, "POST", 4);
+STRING_LITERAL(TMP6541, "GET", 3);
+STRING_LITERAL(TMP6542, "\'REQUEST_METHOD\' \'POST\' is not supported", 40);
+STRING_LITERAL(TMP6543, "CONTENT_LENGTH", 14);
+STRING_LITERAL(TMP6544, "cannot read from stdin", 22);
+STRING_LITERAL(TMP6545, "\'REQUEST_METHOD\' \'GET\' is not supported", 39);
+STRING_LITERAL(TMP6546, "QUERY_STRING", 12);
+STRING_LITERAL(TMP6547, "\'REQUEST_METHOD\' must be \'POST\' or \'GET\'", 40);
+STRING_LITERAL(TMP6548, "", 0);
+STRING_LITERAL(TMP6553, "\'=\' expected", 12);
+STRING_LITERAL(TMP6560, "\'&\' expected", 12);
+STRING_LITERAL(TMP6563, "unknown variable name: ", 23);
+STRING_LITERAL(TMP6565, "CONTENT_Type", 12);
+STRING_LITERAL(TMP6566, "DOCUMENT_ROOT", 13);
+STRING_LITERAL(TMP6567, "GATEWAY_INTERFACE", 17);
+STRING_LITERAL(TMP6568, "HTTP_ACCEPT", 11);
+STRING_LITERAL(TMP6569, "HTTP_ACCEPT_CHARSET", 19);
+STRING_LITERAL(TMP6570, "HTTP_ACCEPT_ENCODING", 20);
+STRING_LITERAL(TMP6571, "HTTP_ACCEPT_LANGUAGE", 20);
+STRING_LITERAL(TMP6572, "HTTP_CONNECTION", 15);
+STRING_LITERAL(TMP6573, "HTTP_COOKIE", 11);
+STRING_LITERAL(TMP6574, "HTTP_HOST", 9);
+STRING_LITERAL(TMP6575, "HTTP_REFERER", 12);
+STRING_LITERAL(TMP6576, "HTTP_USER_AGENT", 15);
+STRING_LITERAL(TMP6577, "PATH_INFO", 9);
+STRING_LITERAL(TMP6578, "PATH_TRANSLATED", 15);
+STRING_LITERAL(TMP6579, "REMOTE_ADDR", 11);
+STRING_LITERAL(TMP6580, "REMOTE_HOST", 11);
+STRING_LITERAL(TMP6581, "REMOTE_IDENT", 12);
+STRING_LITERAL(TMP6582, "REMOTE_PORT", 11);
+STRING_LITERAL(TMP6583, "REMOTE_USER", 11);
+STRING_LITERAL(TMP6584, "REQUEST_URI", 11);
+STRING_LITERAL(TMP6585, "SCRIPT_FILENAME", 15);
+STRING_LITERAL(TMP6586, "SCRIPT_NAME", 11);
+STRING_LITERAL(TMP6587, "SERVER_ADDR", 11);
+STRING_LITERAL(TMP6588, "SERVER_ADMIN", 12);
+STRING_LITERAL(TMP6589, "SERVER_NAME", 11);
+STRING_LITERAL(TMP6590, "SERVER_PORT", 11);
+STRING_LITERAL(TMP6591, "SERVER_PROTOCOL", 15);
+STRING_LITERAL(TMP6592, "SERVER_SIGNATURE", 16);
+STRING_LITERAL(TMP6593, "SERVER_SOFTWARE", 15);
+STRING_LITERAL(TMP6596, "Content-type: text/html\012\012", 25);
+STRING_LITERAL(TMP6597, "<!--: spam\012Content-Type: text/html\012\012<body bgcolor=#f0f0f8><font"
 " color=#f0f0f8 size=-5> -->\012<body bgcolor=#f0f0f8><font color=#f"
 "0f0f8 size=-5> --> -->\012</font> </font> </font> </script> </objec"
 "t> </blockquote> </pre>\012</table> </table> </table> </table> </ta"
 "ble> </font> </font> </font>\012", 284);
-STRING_LITERAL(TMP6597, "<plaintext>\012", 12);
-STRING_LITERAL(TMP6598, "Set-Cookie: ", 12);
-STRING_LITERAL(TMP6599, "=", 1);
-STRING_LITERAL(TMP6600, "\012", 1);
+STRING_LITERAL(TMP6598, "<plaintext>\012", 12);
+STRING_LITERAL(TMP6599, "Set-Cookie: ", 12);
+STRING_LITERAL(TMP6600, "=", 1);
+STRING_LITERAL(TMP6601, "\012", 1);
 extern TFrame* frameptr_17042;
 extern TNimType NTI3431; /* IOError */
 TNimType NTI334312; /* CgiError */
@@ -463,28 +463,28 @@ static N_INLINE(void, popFrame)(void) {
 
 N_NIMCALL(NimStringDesc*, encodeurl_334004)(NimStringDesc* s) {
 	NimStringDesc* result;
-	NI TMP6516;
+	NI TMP6517;
 	nimfr("encodeUrl", "cgi.nim")
 	result = 0;
 	nimln(39, "cgi.nim");
-	TMP6516 = addInt((s ? s->Sup.len : 0), (NI)((NU32)((s ? s->Sup.len : 0)) >> (NU32)(((NI) 2))));
-	result = rawNewString(((NI)chckRange((NI)(TMP6516), ((NI) 0), ((NI) 2147483647))));
+	TMP6517 = addInt((s ? s->Sup.len : 0), (NI)((NU32)((s ? s->Sup.len : 0)) >> (NU32)(((NI) 2))));
+	result = rawNewString(((NI)chckRange((NI)(TMP6517), ((NI) 0), ((NI) 2147483647))));
 	{
 		NI i_334018;
 		NI HEX3Atmp_334028;
-		NI TMP6517;
+		NI TMP6518;
 		NI res_334031;
 		i_334018 = 0;
 		HEX3Atmp_334028 = 0;
 		nimln(40, "cgi.nim");
-		TMP6517 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_334028 = (NI)(TMP6517);
+		TMP6518 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_334028 = (NI)(TMP6518);
 		nimln(1598, "system.nim");
 		res_334031 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6518;
+				NI TMP6519;
 				if (!(res_334031 <= HEX3Atmp_334028)) goto LA3;
 				nimln(1600, "system.nim");
 				i_334018 = res_334031;
@@ -522,8 +522,8 @@ appendString(result, LOC7);
 				break;
 				}
 				nimln(1619, "system.nim");
-				TMP6518 = addInt(res_334031, ((NI) 1));
-				res_334031 = (NI)(TMP6518);
+				TMP6519 = addInt(res_334031, ((NI) 1));
+				res_334031 = (NI)(TMP6519);
 			} LA3: ;
 		}
 	}
@@ -537,30 +537,30 @@ static N_INLINE(void, handlehexchar_334050)(NIM_CHAR c, NI* x) {
 	switch (((NU8)(c))) {
 	case 48 ... 57:
 	{
-		NI TMP6519;
+		NI TMP6520;
 		nimln(50, "cgi.nim");
-		TMP6519 = subInt(((NI) (((NU8)(c)))), ((NI) 48));
-		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6519))));
+		TMP6520 = subInt(((NI) (((NU8)(c)))), ((NI) 48));
+		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6520))));
 	}
 	break;
 	case 97 ... 102:
 	{
-		NI TMP6520;
 		NI TMP6521;
+		NI TMP6522;
 		nimln(51, "cgi.nim");
-		TMP6520 = subInt(((NI) (((NU8)(c)))), ((NI) 97));
-		TMP6521 = addInt(((NI) ((NI)(TMP6520))), ((NI) 10));
-		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6521))));
+		TMP6521 = subInt(((NI) (((NU8)(c)))), ((NI) 97));
+		TMP6522 = addInt(((NI) ((NI)(TMP6521))), ((NI) 10));
+		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6522))));
 	}
 	break;
 	case 65 ... 70:
 	{
-		NI TMP6522;
 		NI TMP6523;
+		NI TMP6524;
 		nimln(52, "cgi.nim");
-		TMP6522 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
-		TMP6523 = addInt(((NI) ((NI)(TMP6522))), ((NI) 10));
-		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6523))));
+		TMP6523 = subInt(((NI) (((NU8)(c)))), ((NI) 65));
+		TMP6524 = addInt(((NI) ((NI)(TMP6523))), ((NI) 10));
+		(*x) = (NI)((NI)((NU32)((*x)) << (NU32)(((NI) 4))) | ((NI) ((NI)(TMP6524))));
 	}
 	break;
 	default:
@@ -568,7 +568,7 @@ static N_INLINE(void, handlehexchar_334050)(NIM_CHAR c, NI* x) {
 		nimln(53, "cgi.nim");
 		{
 			if (!NIM_TRUE) goto LA7;
-			failedassertimpl_87017(((NimStringDesc*) &TMP6524));
+			failedassertimpl_87017(((NimStringDesc*) &TMP6525));
 		}
 		LA7: ;
 	}
@@ -592,8 +592,8 @@ N_NIMCALL(NimStringDesc*, decodeurl_334207)(NimStringDesc* s) {
 	{
 		nimln(63, "cgi.nim");
 		while (1) {
-			NI TMP6528;
 			NI TMP6529;
+			NI TMP6530;
 			if (!(i < (s ? s->Sup.len : 0))) goto LA2;
 			nimln(64, "cgi.nim");
 			if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
@@ -601,22 +601,22 @@ N_NIMCALL(NimStringDesc*, decodeurl_334207)(NimStringDesc* s) {
 			case 37:
 			{
 				NI x;
-				NI TMP6525;
 				NI TMP6526;
 				NI TMP6527;
+				NI TMP6528;
 				nimln(66, "cgi.nim");
 				x = ((NI) 0);
 				nimln(67, "cgi.nim");
-				TMP6525 = addInt(i, ((NI) 1));
-				if ((NU)((NI)(TMP6525)) > (NU)(s->Sup.len)) raiseIndexError();
-				handlehexchar_334050(s->data[(NI)(TMP6525)], (&x));
-				nimln(68, "cgi.nim");
-				TMP6526 = addInt(i, ((NI) 2));
+				TMP6526 = addInt(i, ((NI) 1));
 				if ((NU)((NI)(TMP6526)) > (NU)(s->Sup.len)) raiseIndexError();
 				handlehexchar_334050(s->data[(NI)(TMP6526)], (&x));
-				nimln(69, "cgi.nim");
+				nimln(68, "cgi.nim");
 				TMP6527 = addInt(i, ((NI) 2));
-				i = (NI)(TMP6527);
+				if ((NU)((NI)(TMP6527)) > (NU)(s->Sup.len)) raiseIndexError();
+				handlehexchar_334050(s->data[(NI)(TMP6527)], (&x));
+				nimln(69, "cgi.nim");
+				TMP6528 = addInt(i, ((NI) 2));
+				i = (NI)(TMP6528);
 				nimln(70, "cgi.nim");
 				if ((NU)(j) > (NU)(result->Sup.len)) raiseIndexError();
 				result->data[j] = ((NIM_CHAR) (((NI)chckRange(x, ((NI) 0), ((NI) 255)))));
@@ -639,11 +639,11 @@ N_NIMCALL(NimStringDesc*, decodeurl_334207)(NimStringDesc* s) {
 			break;
 			}
 			nimln(73, "cgi.nim");
-			TMP6528 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6528);
+			TMP6529 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6529);
 			nimln(74, "cgi.nim");
-			TMP6529 = addInt(j, ((NI) 1));
-			j = (NI)(TMP6529);
+			TMP6530 = addInt(j, ((NI) 1));
+			j = (NI)(TMP6530);
 		} LA2: ;
 	}
 	nimln(75, "cgi.nim");
@@ -660,28 +660,28 @@ static N_INLINE(void, addxmlchar_334261)(NimStringDesc** dest, NIM_CHAR c) {
 	{
 		nimln(81, "cgi.nim");
 		(*dest) = resizeString((*dest), 5);
-appendString((*dest), ((NimStringDesc*) &TMP6530));
+appendString((*dest), ((NimStringDesc*) &TMP6531));
 	}
 	break;
 	case 60:
 	{
 		nimln(82, "cgi.nim");
 		(*dest) = resizeString((*dest), 4);
-appendString((*dest), ((NimStringDesc*) &TMP6531));
+appendString((*dest), ((NimStringDesc*) &TMP6532));
 	}
 	break;
 	case 62:
 	{
 		nimln(83, "cgi.nim");
 		(*dest) = resizeString((*dest), 4);
-appendString((*dest), ((NimStringDesc*) &TMP6532));
+appendString((*dest), ((NimStringDesc*) &TMP6533));
 	}
 	break;
 	case 34:
 	{
 		nimln(84, "cgi.nim");
 		(*dest) = resizeString((*dest), 6);
-appendString((*dest), ((NimStringDesc*) &TMP6533));
+appendString((*dest), ((NimStringDesc*) &TMP6534));
 	}
 	break;
 	default:
@@ -696,28 +696,28 @@ appendString((*dest), ((NimStringDesc*) &TMP6533));
 
 N_NIMCALL(NimStringDesc*, xmlencode_334272)(NimStringDesc* s) {
 	NimStringDesc* result;
-	NI TMP6534;
+	NI TMP6535;
 	nimfr("xmlEncode", "cgi.nim")
 	result = 0;
 	nimln(94, "cgi.nim");
-	TMP6534 = addInt((s ? s->Sup.len : 0), (NI)((NU32)((s ? s->Sup.len : 0)) >> (NU32)(((NI) 2))));
-	result = rawNewString(((NI)chckRange((NI)(TMP6534), ((NI) 0), ((NI) 2147483647))));
+	TMP6535 = addInt((s ? s->Sup.len : 0), (NI)((NU32)((s ? s->Sup.len : 0)) >> (NU32)(((NI) 2))));
+	result = rawNewString(((NI)chckRange((NI)(TMP6535), ((NI) 0), ((NI) 2147483647))));
 	{
 		NI i_334286;
 		NI HEX3Atmp_334289;
-		NI TMP6535;
+		NI TMP6536;
 		NI res_334292;
 		i_334286 = 0;
 		HEX3Atmp_334289 = 0;
 		nimln(95, "cgi.nim");
-		TMP6535 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_334289 = (NI)(TMP6535);
+		TMP6536 = subInt((s ? s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_334289 = (NI)(TMP6536);
 		nimln(1598, "system.nim");
 		res_334292 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6536;
+				NI TMP6537;
 				if (!(res_334292 <= HEX3Atmp_334289)) goto LA3;
 				nimln(1600, "system.nim");
 				i_334286 = res_334292;
@@ -725,15 +725,15 @@ N_NIMCALL(NimStringDesc*, xmlencode_334272)(NimStringDesc* s) {
 				if ((NU)(i_334286) > (NU)(s->Sup.len)) raiseIndexError();
 				addxmlchar_334261((&result), s->data[i_334286]);
 				nimln(1619, "system.nim");
-				TMP6536 = addInt(res_334292, ((NI) 1));
-				res_334292 = (NI)(TMP6536);
+				TMP6537 = addInt(res_334292, ((NI) 1));
+				res_334292 = (NI)(TMP6537);
 			} LA3: ;
 		}
 	}
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP6537)(void* p, NI op) {
+N_NIMCALL(void, TMP6538)(void* p, NI op) {
 	Cgierror334312* a;
 	a = (Cgierror334312*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.Sup.parent, op);
@@ -836,9 +836,9 @@ N_NIMCALL(NimStringDesc*, getencodeddata_334347)(NU8 allowedmethods) {
 	result = 0;
 	nimln(115, "cgi.nim");
 	LOC1 = 0;
-	LOC1 = getenv_121644(((NimStringDesc*) &TMP6538));
-	if (eqStrings(LOC1, ((NimStringDesc*) &TMP6539))) goto LA2;
-	if (eqStrings(LOC1, ((NimStringDesc*) &TMP6540))) goto LA3;
+	LOC1 = getenv_121644(((NimStringDesc*) &TMP6539));
+	if (eqStrings(LOC1, ((NimStringDesc*) &TMP6540))) goto LA2;
+	if (eqStrings(LOC1, ((NimStringDesc*) &TMP6541))) goto LA3;
 	goto LA4;
 	LA2: ;
 	{
@@ -848,12 +848,12 @@ N_NIMCALL(NimStringDesc*, getencodeddata_334347)(NU8 allowedmethods) {
 		{
 			if (!!(((allowedmethods &(1<<((((NU8) 1))&7)))!=0))) goto LA9;
 			nimln(118, "cgi.nim");
-			cgierror_334327(((NimStringDesc*) &TMP6541));
+			cgierror_334327(((NimStringDesc*) &TMP6542));
 		}
 		LA9: ;
 		nimln(119, "cgi.nim");
 		LOC11 = 0;
-		LOC11 = getenv_121644(((NimStringDesc*) &TMP6542));
+		LOC11 = getenv_121644(((NimStringDesc*) &TMP6543));
 		L = nsuParseInt(LOC11);
 		nimln(120, "cgi.nim");
 		result = mnewString(((NI)chckRange(L, ((NI) 0), ((NI) 2147483647))));
@@ -865,7 +865,7 @@ N_NIMCALL(NimStringDesc*, getencodeddata_334347)(NU8 allowedmethods) {
 			LOC14 = readbuffer_13515(stdin, ((void*) ((&result->data[((NI) 0)]))), ((NI)chckRange(L, ((NI) 0), ((NI) 2147483647))));
 			if (!!((LOC14 == L))) goto LA15;
 			nimln(122, "cgi.nim");
-			cgierror_334327(((NimStringDesc*) &TMP6543));
+			cgierror_334327(((NimStringDesc*) &TMP6544));
 		}
 		LA15: ;
 	}
@@ -876,11 +876,11 @@ N_NIMCALL(NimStringDesc*, getencodeddata_334347)(NU8 allowedmethods) {
 		{
 			if (!!(((allowedmethods &(1<<((((NU8) 2))&7)))!=0))) goto LA20;
 			nimln(125, "cgi.nim");
-			cgierror_334327(((NimStringDesc*) &TMP6544));
+			cgierror_334327(((NimStringDesc*) &TMP6545));
 		}
 		LA20: ;
 		nimln(126, "cgi.nim");
-		result = getenv_121644(((NimStringDesc*) &TMP6545));
+		result = getenv_121644(((NimStringDesc*) &TMP6546));
 	}
 	goto LA5;
 	LA4: ;
@@ -889,7 +889,7 @@ N_NIMCALL(NimStringDesc*, getencodeddata_334347)(NU8 allowedmethods) {
 		{
 			if (!!(((allowedmethods &(1<<((((NU8) 0))&7)))!=0))) goto LA25;
 			nimln(129, "cgi.nim");
-			cgierror_334327(((NimStringDesc*) &TMP6546));
+			cgierror_334327(((NimStringDesc*) &TMP6547));
 		}
 		LA25: ;
 	}
@@ -928,13 +928,13 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 				nimln(134, "cgi.nim");
 				i_334578 = ((NI) 0);
 				nimln(135, "cgi.nim");
-				name_334580 = copyString(((NimStringDesc*) &TMP6547));
+				name_334580 = copyString(((NimStringDesc*) &TMP6548));
 				nimln(136, "cgi.nim");
-				value_334582 = copyString(((NimStringDesc*) &TMP6547));
+				value_334582 = copyString(((NimStringDesc*) &TMP6548));
 				{
 					nimln(138, "cgi.nim");
 					while (1) {
-						NI TMP6553;
+						NI TMP6554;
 						if ((NU)(i_334578) > (NU)(data_334572->Sup.len)) raiseIndexError();
 						if (!!(((NU8)(data_334572->data[i_334578]) == (NU8)(0)))) goto LA9;
 						nimln(139, "cgi.nim");
@@ -942,7 +942,7 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 						{
 							nimln(140, "cgi.nim");
 							while (1) {
-								NI TMP6551;
+								NI TMP6552;
 								nimln(141, "cgi.nim");
 								if ((NU)(i_334578) > (NU)(data_334572->Sup.len)) raiseIndexError();
 								switch (((NU8)(data_334572->data[i_334578]))) {
@@ -955,22 +955,22 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 								case 37:
 								{
 									NI x_334584;
-									NI TMP6548;
 									NI TMP6549;
 									NI TMP6550;
+									NI TMP6551;
 									nimln(144, "cgi.nim");
 									x_334584 = ((NI) 0);
 									nimln(145, "cgi.nim");
-									TMP6548 = addInt(i_334578, ((NI) 1));
-									if ((NU)((NI)(TMP6548)) > (NU)(data_334572->Sup.len)) raiseIndexError();
-									handlehexchar_334050(data_334572->data[(NI)(TMP6548)], (&x_334584));
-									nimln(146, "cgi.nim");
-									TMP6549 = addInt(i_334578, ((NI) 2));
+									TMP6549 = addInt(i_334578, ((NI) 1));
 									if ((NU)((NI)(TMP6549)) > (NU)(data_334572->Sup.len)) raiseIndexError();
 									handlehexchar_334050(data_334572->data[(NI)(TMP6549)], (&x_334584));
-									nimln(147, "cgi.nim");
+									nimln(146, "cgi.nim");
 									TMP6550 = addInt(i_334578, ((NI) 2));
-									i_334578 = (NI)(TMP6550);
+									if ((NU)((NI)(TMP6550)) > (NU)(data_334572->Sup.len)) raiseIndexError();
+									handlehexchar_334050(data_334572->data[(NI)(TMP6550)], (&x_334584));
+									nimln(147, "cgi.nim");
+									TMP6551 = addInt(i_334578, ((NI) 2));
+									i_334578 = (NI)(TMP6551);
 									nimln(148, "cgi.nim");
 									name_334580 = addChar(name_334580, ((NIM_CHAR) (((NI)chckRange(x_334584, ((NI) 0), ((NI) 255))))));
 								}
@@ -997,48 +997,48 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 								break;
 								}
 								nimln(152, "cgi.nim");
-								TMP6551 = addInt(i_334578, ((NI) 1));
-								i_334578 = (NI)(TMP6551);
+								TMP6552 = addInt(i_334578, ((NI) 1));
+								i_334578 = (NI)(TMP6552);
 							}
 						} LA10: ;
 						nimln(153, "cgi.nim");
 						{
 							if ((NU)(i_334578) > (NU)(data_334572->Sup.len)) raiseIndexError();
 							if (!!(((NU8)(data_334572->data[i_334578]) == (NU8)(61)))) goto LA19;
-							cgierror_334327(((NimStringDesc*) &TMP6552));
+							cgierror_334327(((NimStringDesc*) &TMP6553));
 						}
 						LA19: ;
 						nimln(154, "cgi.nim");
-						TMP6553 = addInt(i_334578, ((NI) 1));
-						i_334578 = (NI)(TMP6553);
+						TMP6554 = addInt(i_334578, ((NI) 1));
+						i_334578 = (NI)(TMP6554);
 						nimln(155, "cgi.nim");
 						value_334582 = setLengthStr(value_334582, ((NI) 0));
 						{
 							nimln(156, "cgi.nim");
 							while (1) {
-								NI TMP6557;
+								NI TMP6558;
 								nimln(157, "cgi.nim");
 								if ((NU)(i_334578) > (NU)(data_334572->Sup.len)) raiseIndexError();
 								switch (((NU8)(data_334572->data[i_334578]))) {
 								case 37:
 								{
 									NI x_334586;
-									NI TMP6554;
 									NI TMP6555;
 									NI TMP6556;
+									NI TMP6557;
 									nimln(159, "cgi.nim");
 									x_334586 = ((NI) 0);
 									nimln(160, "cgi.nim");
-									TMP6554 = addInt(i_334578, ((NI) 1));
-									if ((NU)((NI)(TMP6554)) > (NU)(data_334572->Sup.len)) raiseIndexError();
-									handlehexchar_334050(data_334572->data[(NI)(TMP6554)], (&x_334586));
-									nimln(161, "cgi.nim");
-									TMP6555 = addInt(i_334578, ((NI) 2));
+									TMP6555 = addInt(i_334578, ((NI) 1));
 									if ((NU)((NI)(TMP6555)) > (NU)(data_334572->Sup.len)) raiseIndexError();
 									handlehexchar_334050(data_334572->data[(NI)(TMP6555)], (&x_334586));
-									nimln(162, "cgi.nim");
+									nimln(161, "cgi.nim");
 									TMP6556 = addInt(i_334578, ((NI) 2));
-									i_334578 = (NI)(TMP6556);
+									if ((NU)((NI)(TMP6556)) > (NU)(data_334572->Sup.len)) raiseIndexError();
+									handlehexchar_334050(data_334572->data[(NI)(TMP6556)], (&x_334586));
+									nimln(162, "cgi.nim");
+									TMP6557 = addInt(i_334578, ((NI) 2));
+									i_334578 = (NI)(TMP6557);
 									nimln(163, "cgi.nim");
 									value_334582 = addChar(value_334582, ((NIM_CHAR) (((NI)chckRange(x_334586, ((NI) 0), ((NI) 255))))));
 								}
@@ -1065,8 +1065,8 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 								break;
 								}
 								nimln(167, "cgi.nim");
-								TMP6557 = addInt(i_334578, ((NI) 1));
-								i_334578 = (NI)(TMP6557);
+								TMP6558 = addInt(i_334578, ((NI) 1));
+								i_334578 = (NI)(TMP6558);
 							}
 						} LA21: ;
 						nimln(168, "cgi.nim");
@@ -1079,11 +1079,11 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 						nstPut(result, name_334561, value_334562);
 						nimln(169, "cgi.nim");
 						{
-							NI TMP6558;
+							NI TMP6559;
 							if ((NU)(i_334578) > (NU)(data_334572->Sup.len)) raiseIndexError();
 							if (!((NU8)(data_334572->data[i_334578]) == (NU8)(38))) goto LA29;
-							TMP6558 = addInt(i_334578, ((NI) 1));
-							i_334578 = (NI)(TMP6558);
+							TMP6559 = addInt(i_334578, ((NI) 1));
+							i_334578 = (NI)(TMP6559);
 						}
 						goto LA27;
 						LA29: ;
@@ -1097,7 +1097,7 @@ N_NIMCALL(Stringtableobj133012*, readdata_334549)(NU8 allowedmethods) {
 						LA32: ;
 						{
 							nimln(171, "cgi.nim");
-							cgierror_334327(((NimStringDesc*) &TMP6559));
+							cgierror_334327(((NimStringDesc*) &TMP6560));
 						}
 						LA27: ;
 					} LA9: ;
@@ -1123,8 +1123,8 @@ static N_INLINE(NI, find_334627)(NimStringDesc** a, NI aLen0, NimStringDesc* ite
 		{
 			nimln(1690, "system.nim");
 			while (1) {
-				NI TMP6560;
 				NI TMP6561;
+				NI TMP6562;
 				if (!(i_334657 < aLen0)) goto LA3;
 				nimln(1691, "system.nim");
 				if ((NU)(i_334657) >= (NU)(aLen0)) raiseIndexError();
@@ -1136,11 +1136,11 @@ static N_INLINE(NI, find_334627)(NimStringDesc** a, NI aLen0, NimStringDesc* ite
 				}
 				LA6: ;
 				nimln(1915, "system.nim");
-				TMP6560 = addInt(result, ((NI) 1));
-				result = (NI)(TMP6560);
+				TMP6561 = addInt(result, ((NI) 1));
+				result = (NI)(TMP6561);
 				nimln(1692, "system.nim");
-				TMP6561 = addInt(i_334657, ((NI) 1));
-				i_334657 = (NI)(TMP6561);
+				TMP6562 = addInt(i_334657, ((NI) 1));
+				i_334657 = (NI)(TMP6562);
 			} LA3: ;
 		}
 	}
@@ -1171,7 +1171,7 @@ N_NIMCALL(void, validatedata_334619)(Stringtableobj133012* data, NimStringDesc**
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP6563;
+					NI TMP6564;
 					if (!(res_334678 <= HEX3Atmp_334676)) goto LA4;
 					nimln(1600, "system.nim");
 					h_334674 = res_334678;
@@ -1194,7 +1194,7 @@ N_NIMCALL(void, validatedata_334619)(Stringtableobj133012* data, NimStringDesc**
 							nimln(196, "cgi.nim");
 							LOC14 = 0;
 							LOC14 = rawNewString(key_334624->Sup.len + 23);
-appendString(LOC14, ((NimStringDesc*) &TMP6562));
+appendString(LOC14, ((NimStringDesc*) &TMP6563));
 appendString(LOC14, key_334624);
 							cgierror_334327(LOC14);
 						}
@@ -1202,8 +1202,8 @@ appendString(LOC14, key_334624);
 					}
 					LA7: ;
 					nimln(1619, "system.nim");
-					TMP6563 = addInt(res_334678, ((NI) 1));
-					res_334678 = (NI)(TMP6563);
+					TMP6564 = addInt(res_334678, ((NI) 1));
+					res_334678 = (NI)(TMP6564);
 				} LA4: ;
 			}
 		}
@@ -1216,7 +1216,7 @@ N_NIMCALL(NimStringDesc*, getcontentlength_334699)(void) {
 	nimfr("getContentLength", "cgi.nim")
 {	result = 0;
 	nimln(200, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6542));
+	result = getenv_121644(((NimStringDesc*) &TMP6543));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1228,7 +1228,7 @@ N_NIMCALL(NimStringDesc*, getcontenttype_334709)(void) {
 	nimfr("getContentType", "cgi.nim")
 {	result = 0;
 	nimln(204, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6564));
+	result = getenv_121644(((NimStringDesc*) &TMP6565));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1240,7 +1240,7 @@ N_NIMCALL(NimStringDesc*, getdocumentroot_334719)(void) {
 	nimfr("getDocumentRoot", "cgi.nim")
 {	result = 0;
 	nimln(208, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6565));
+	result = getenv_121644(((NimStringDesc*) &TMP6566));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1252,7 +1252,7 @@ N_NIMCALL(NimStringDesc*, getgatewayinterface_334729)(void) {
 	nimfr("getGatewayInterface", "cgi.nim")
 {	result = 0;
 	nimln(212, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6566));
+	result = getenv_121644(((NimStringDesc*) &TMP6567));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1264,7 +1264,7 @@ N_NIMCALL(NimStringDesc*, gethttpaccept_334739)(void) {
 	nimfr("getHttpAccept", "cgi.nim")
 {	result = 0;
 	nimln(216, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6567));
+	result = getenv_121644(((NimStringDesc*) &TMP6568));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1276,7 +1276,7 @@ N_NIMCALL(NimStringDesc*, gethttpacceptcharset_334749)(void) {
 	nimfr("getHttpAcceptCharset", "cgi.nim")
 {	result = 0;
 	nimln(220, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6568));
+	result = getenv_121644(((NimStringDesc*) &TMP6569));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1288,7 +1288,7 @@ N_NIMCALL(NimStringDesc*, gethttpacceptencoding_334759)(void) {
 	nimfr("getHttpAcceptEncoding", "cgi.nim")
 {	result = 0;
 	nimln(224, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6569));
+	result = getenv_121644(((NimStringDesc*) &TMP6570));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1300,7 +1300,7 @@ N_NIMCALL(NimStringDesc*, gethttpacceptlanguage_334769)(void) {
 	nimfr("getHttpAcceptLanguage", "cgi.nim")
 {	result = 0;
 	nimln(228, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6570));
+	result = getenv_121644(((NimStringDesc*) &TMP6571));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1312,7 +1312,7 @@ N_NIMCALL(NimStringDesc*, gethttpconnection_334779)(void) {
 	nimfr("getHttpConnection", "cgi.nim")
 {	result = 0;
 	nimln(232, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6571));
+	result = getenv_121644(((NimStringDesc*) &TMP6572));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1324,7 +1324,7 @@ N_NIMCALL(NimStringDesc*, gethttpcookie_334789)(void) {
 	nimfr("getHttpCookie", "cgi.nim")
 {	result = 0;
 	nimln(236, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6572));
+	result = getenv_121644(((NimStringDesc*) &TMP6573));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1336,7 +1336,7 @@ N_NIMCALL(NimStringDesc*, gethttphost_334799)(void) {
 	nimfr("getHttpHost", "cgi.nim")
 {	result = 0;
 	nimln(240, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6573));
+	result = getenv_121644(((NimStringDesc*) &TMP6574));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1348,7 +1348,7 @@ N_NIMCALL(NimStringDesc*, gethttpreferer_334809)(void) {
 	nimfr("getHttpReferer", "cgi.nim")
 {	result = 0;
 	nimln(244, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6574));
+	result = getenv_121644(((NimStringDesc*) &TMP6575));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1360,7 +1360,7 @@ N_NIMCALL(NimStringDesc*, gethttpuseragent_334819)(void) {
 	nimfr("getHttpUserAgent", "cgi.nim")
 {	result = 0;
 	nimln(248, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6575));
+	result = getenv_121644(((NimStringDesc*) &TMP6576));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1372,7 +1372,7 @@ N_NIMCALL(NimStringDesc*, getpathinfo_334829)(void) {
 	nimfr("getPathInfo", "cgi.nim")
 {	result = 0;
 	nimln(252, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6576));
+	result = getenv_121644(((NimStringDesc*) &TMP6577));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1384,7 +1384,7 @@ N_NIMCALL(NimStringDesc*, getpathtranslated_334839)(void) {
 	nimfr("getPathTranslated", "cgi.nim")
 {	result = 0;
 	nimln(256, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6577));
+	result = getenv_121644(((NimStringDesc*) &TMP6578));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1396,7 +1396,7 @@ N_NIMCALL(NimStringDesc*, getquerystring_334849)(void) {
 	nimfr("getQueryString", "cgi.nim")
 {	result = 0;
 	nimln(260, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6545));
+	result = getenv_121644(((NimStringDesc*) &TMP6546));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1408,7 +1408,7 @@ N_NIMCALL(NimStringDesc*, getremoteaddr_334859)(void) {
 	nimfr("getRemoteAddr", "cgi.nim")
 {	result = 0;
 	nimln(264, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6578));
+	result = getenv_121644(((NimStringDesc*) &TMP6579));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1420,7 +1420,7 @@ N_NIMCALL(NimStringDesc*, getremotehost_334869)(void) {
 	nimfr("getRemoteHost", "cgi.nim")
 {	result = 0;
 	nimln(268, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6579));
+	result = getenv_121644(((NimStringDesc*) &TMP6580));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1432,7 +1432,7 @@ N_NIMCALL(NimStringDesc*, getremoteident_334879)(void) {
 	nimfr("getRemoteIdent", "cgi.nim")
 {	result = 0;
 	nimln(272, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6580));
+	result = getenv_121644(((NimStringDesc*) &TMP6581));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1444,7 +1444,7 @@ N_NIMCALL(NimStringDesc*, getremoteport_334889)(void) {
 	nimfr("getRemotePort", "cgi.nim")
 {	result = 0;
 	nimln(276, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6581));
+	result = getenv_121644(((NimStringDesc*) &TMP6582));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1456,7 +1456,7 @@ N_NIMCALL(NimStringDesc*, getremoteuser_334899)(void) {
 	nimfr("getRemoteUser", "cgi.nim")
 {	result = 0;
 	nimln(280, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6582));
+	result = getenv_121644(((NimStringDesc*) &TMP6583));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1468,7 +1468,7 @@ N_NIMCALL(NimStringDesc*, getrequestmethod_334909)(void) {
 	nimfr("getRequestMethod", "cgi.nim")
 {	result = 0;
 	nimln(284, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6538));
+	result = getenv_121644(((NimStringDesc*) &TMP6539));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1480,7 +1480,7 @@ N_NIMCALL(NimStringDesc*, getrequesturi_334919)(void) {
 	nimfr("getRequestURI", "cgi.nim")
 {	result = 0;
 	nimln(288, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6583));
+	result = getenv_121644(((NimStringDesc*) &TMP6584));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1492,7 +1492,7 @@ N_NIMCALL(NimStringDesc*, getscriptfilename_334929)(void) {
 	nimfr("getScriptFilename", "cgi.nim")
 {	result = 0;
 	nimln(292, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6584));
+	result = getenv_121644(((NimStringDesc*) &TMP6585));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1504,7 +1504,7 @@ N_NIMCALL(NimStringDesc*, getscriptname_334939)(void) {
 	nimfr("getScriptName", "cgi.nim")
 {	result = 0;
 	nimln(296, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6585));
+	result = getenv_121644(((NimStringDesc*) &TMP6586));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1516,7 +1516,7 @@ N_NIMCALL(NimStringDesc*, getserveraddr_334949)(void) {
 	nimfr("getServerAddr", "cgi.nim")
 {	result = 0;
 	nimln(300, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6586));
+	result = getenv_121644(((NimStringDesc*) &TMP6587));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1528,7 +1528,7 @@ N_NIMCALL(NimStringDesc*, getserveradmin_334959)(void) {
 	nimfr("getServerAdmin", "cgi.nim")
 {	result = 0;
 	nimln(304, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6587));
+	result = getenv_121644(((NimStringDesc*) &TMP6588));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1540,7 +1540,7 @@ N_NIMCALL(NimStringDesc*, getservername_334969)(void) {
 	nimfr("getServerName", "cgi.nim")
 {	result = 0;
 	nimln(308, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6588));
+	result = getenv_121644(((NimStringDesc*) &TMP6589));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1552,7 +1552,7 @@ N_NIMCALL(NimStringDesc*, getserverport_334979)(void) {
 	nimfr("getServerPort", "cgi.nim")
 {	result = 0;
 	nimln(312, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6589));
+	result = getenv_121644(((NimStringDesc*) &TMP6590));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1564,7 +1564,7 @@ N_NIMCALL(NimStringDesc*, getserverprotocol_334989)(void) {
 	nimfr("getServerProtocol", "cgi.nim")
 {	result = 0;
 	nimln(316, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6590));
+	result = getenv_121644(((NimStringDesc*) &TMP6591));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1576,7 +1576,7 @@ N_NIMCALL(NimStringDesc*, getserversignature_334999)(void) {
 	nimfr("getServerSignature", "cgi.nim")
 {	result = 0;
 	nimln(320, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6591));
+	result = getenv_121644(((NimStringDesc*) &TMP6592));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1588,7 +1588,7 @@ N_NIMCALL(NimStringDesc*, getserversoftware_335009)(void) {
 	nimfr("getServerSoftware", "cgi.nim")
 {	result = 0;
 	nimln(324, "cgi.nim");
-	result = getenv_121644(((NimStringDesc*) &TMP6592));
+	result = getenv_121644(((NimStringDesc*) &TMP6593));
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();
@@ -1600,18 +1600,18 @@ N_NIMCALL(void, settestdata_335019)(NimStringDesc** keysvalues, NI keysvaluesLen
 	NimStringDesc* query;
 	nimfr("setTestData", "cgi.nim")
 	nimln(333, "cgi.nim");
-	putenv_121669(((NimStringDesc*) &TMP6538), ((NimStringDesc*) &TMP6540));
+	putenv_121669(((NimStringDesc*) &TMP6539), ((NimStringDesc*) &TMP6541));
 	nimln(334, "cgi.nim");
 	i = ((NI) 0);
 	nimln(335, "cgi.nim");
-	query = copyString(((NimStringDesc*) &TMP6547));
+	query = copyString(((NimStringDesc*) &TMP6548));
 	{
 		nimln(336, "cgi.nim");
 		while (1) {
 			NimStringDesc* LOC3;
-			NI TMP6593;
-			NimStringDesc* LOC4;
 			NI TMP6594;
+			NimStringDesc* LOC4;
+			NI TMP6595;
 			if (!(i < keysvaluesLen0)) goto LA2;
 			nimln(337, "cgi.nim");
 			if ((NU)(i) >= (NU)(keysvaluesLen0)) raiseIndexError();
@@ -1622,35 +1622,35 @@ appendString(query, LOC3);
 			nimln(338, "cgi.nim");
 			query = addChar(query, 61);
 			nimln(339, "cgi.nim");
-			TMP6593 = addInt(i, ((NI) 1));
-			if ((NU)((NI)(TMP6593)) >= (NU)(keysvaluesLen0)) raiseIndexError();
+			TMP6594 = addInt(i, ((NI) 1));
+			if ((NU)((NI)(TMP6594)) >= (NU)(keysvaluesLen0)) raiseIndexError();
 			LOC4 = 0;
-			LOC4 = encodeurl_334004(keysvalues[(NI)(TMP6593)]);
+			LOC4 = encodeurl_334004(keysvalues[(NI)(TMP6594)]);
 			query = resizeString(query, LOC4->Sup.len + 0);
 appendString(query, LOC4);
 			nimln(340, "cgi.nim");
 			query = addChar(query, 38);
 			nimln(341, "cgi.nim");
-			TMP6594 = addInt(i, ((NI) 2));
-			i = (NI)(TMP6594);
+			TMP6595 = addInt(i, ((NI) 2));
+			i = (NI)(TMP6595);
 		} LA2: ;
 	}
 	nimln(342, "cgi.nim");
-	putenv_121669(((NimStringDesc*) &TMP6545), query);
+	putenv_121669(((NimStringDesc*) &TMP6546), query);
 	popFrame();
 }
 
 N_NIMCALL(void, writecontenttype_335054)(void) {
 	nimfr("writeContentType", "cgi.nim")
 	nimln(350, "cgi.nim");
-	write_13457(stdout, ((NimStringDesc*) &TMP6595));
+	write_13457(stdout, ((NimStringDesc*) &TMP6596));
 	popFrame();
 }
 
 N_NIMCALL(void, resetforstacktrace_335064)(void) {
 	nimfr("resetForStacktrace", "cgi.nim")
 	nimln(353, "cgi.nim");
-	write_13457(stdout, ((NimStringDesc*) &TMP6596));
+	write_13457(stdout, ((NimStringDesc*) &TMP6597));
 	popFrame();
 }
 
@@ -1659,7 +1659,7 @@ N_NIMCALL(void, writeerrormessage_335074)(NimStringDesc* data) {
 	nimln(365, "cgi.nim");
 	resetforstacktrace_335064();
 	nimln(368, "cgi.nim");
-	write_13457(stdout, ((NimStringDesc*) &TMP6597));
+	write_13457(stdout, ((NimStringDesc*) &TMP6598));
 	nimln(369, "cgi.nim");
 	write_13457(stdout, data);
 	popFrame();
@@ -1684,11 +1684,11 @@ N_NIMCALL(void, setcookie_335103)(NimStringDesc* name, NimStringDesc* value) {
 	nimfr("setCookie", "cgi.nim")
 	nimln(382, "cgi.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
-	LOC1[0] = copyString(((NimStringDesc*) &TMP6598));
+	LOC1[0] = copyString(((NimStringDesc*) &TMP6599));
 	LOC1[1] = copyString(name);
-	LOC1[2] = copyString(((NimStringDesc*) &TMP6599));
+	LOC1[2] = copyString(((NimStringDesc*) &TMP6600));
 	LOC1[3] = copyString(value);
-	LOC1[4] = copyString(((NimStringDesc*) &TMP6600));
+	LOC1[4] = copyString(((NimStringDesc*) &TMP6601));
 	write_13473(stdout, LOC1, 5);
 	popFrame();
 }
@@ -1830,15 +1830,15 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_cgiInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_cgiDatInit)(void) {
-static TNimNode TMP6496[1];
+static TNimNode TMP6497[1];
 NTI334312.size = sizeof(Cgierror334312);
 NTI334312.kind = 17;
 NTI334312.base = (&NTI3431);
-TMP6496[0].len = 0; TMP6496[0].kind = 2;
-NTI334312.node = &TMP6496[0];
+TMP6497[0].len = 0; TMP6497[0].kind = 2;
+NTI334312.node = &TMP6497[0];
 NTI334330.size = sizeof(Cgierror334312*);
 NTI334330.kind = 22;
 NTI334330.base = (&NTI334312);
-NTI334330.marker = TMP6537;
+NTI334330.marker = TMP6538;
 }
 

@@ -383,37 +383,37 @@ N_NIMCALL(NI, hashignorestyle_131887)(NimStringDesc* x);
 N_NIMCALL(void, strtableadd_198103)(Tstrtable190817* t, Tsym190843* n);
 N_NIMCALL(void, registercompilerproc_238042)(Tsym190843* s);
 N_NIMCALL(void, finishsystem_238048)(Tstrtable190817 tab);
-STRING_LITERAL(TMP4024, "tab", 3);
-STRING_LITERAL(TMP4025, "int", 3);
-STRING_LITERAL(TMP4026, "int8", 4);
-STRING_LITERAL(TMP4027, "int16", 5);
-STRING_LITERAL(TMP4028, "int32", 5);
-STRING_LITERAL(TMP4029, "int64", 5);
-STRING_LITERAL(TMP4030, "uint", 4);
-STRING_LITERAL(TMP4031, "uint8", 5);
-STRING_LITERAL(TMP4032, "uint16", 6);
-STRING_LITERAL(TMP4033, "uint32", 6);
-STRING_LITERAL(TMP4034, "uint64", 6);
-STRING_LITERAL(TMP4035, "float", 5);
-STRING_LITERAL(TMP4036, "float32", 7);
-STRING_LITERAL(TMP4037, "float64", 7);
-STRING_LITERAL(TMP4038, "float128", 8);
-STRING_LITERAL(TMP4039, "bool", 4);
-STRING_LITERAL(TMP4040, "char", 4);
-STRING_LITERAL(TMP4041, "string", 6);
-STRING_LITERAL(TMP4042, "cstring", 7);
-STRING_LITERAL(TMP4043, "pointer", 7);
-STRING_LITERAL(TMP4044, "request for typekind: ", 22);
-STRING_LITERAL(TMP4045, "wanted: ", 8);
-STRING_LITERAL(TMP4046, " got: ", 6);
-STRING_LITERAL(TMP4047, "type not found: ", 16);
-static NIM_CONST TY191031 TMP4050 = {
+STRING_LITERAL(TMP4025, "tab", 3);
+STRING_LITERAL(TMP4026, "int", 3);
+STRING_LITERAL(TMP4027, "int8", 4);
+STRING_LITERAL(TMP4028, "int16", 5);
+STRING_LITERAL(TMP4029, "int32", 5);
+STRING_LITERAL(TMP4030, "int64", 5);
+STRING_LITERAL(TMP4031, "uint", 4);
+STRING_LITERAL(TMP4032, "uint8", 5);
+STRING_LITERAL(TMP4033, "uint16", 6);
+STRING_LITERAL(TMP4034, "uint32", 6);
+STRING_LITERAL(TMP4035, "uint64", 6);
+STRING_LITERAL(TMP4036, "float", 5);
+STRING_LITERAL(TMP4037, "float32", 7);
+STRING_LITERAL(TMP4038, "float64", 7);
+STRING_LITERAL(TMP4039, "float128", 8);
+STRING_LITERAL(TMP4040, "bool", 4);
+STRING_LITERAL(TMP4041, "char", 4);
+STRING_LITERAL(TMP4042, "string", 6);
+STRING_LITERAL(TMP4043, "cstring", 7);
+STRING_LITERAL(TMP4044, "pointer", 7);
+STRING_LITERAL(TMP4045, "request for typekind: ", 22);
+STRING_LITERAL(TMP4046, "wanted: ", 8);
+STRING_LITERAL(TMP4047, " got: ", 6);
+STRING_LITERAL(TMP4048, "type not found: ", 16);
+static NIM_CONST TY191031 TMP4051 = {
 0xE0, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4051, "intVal", 6);
-STRING_LITERAL(TMP4052, "invalid int size", 16);
+STRING_LITERAL(TMP4052, "intVal", 6);
+STRING_LITERAL(TMP4053, "invalid int size", 16);
 Tsym190843* systemmodule_238019;
 TY238060 gsystypes_238063;
 Tstrtable190817 compilerprocs_238064;
@@ -570,7 +570,7 @@ N_NIMCALL(Tsym190843*, getsyssym_238054)(NimStringDesc* name) {
 	nimfr("getSysSym", "magicsys.nim")
 	result = 0;
 	nimln(41, "magicsys.nim");
-	if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4024));
+	if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4025));
 	LOC1 = 0;
 	LOC1 = getident_166463(name);
 	result = strtableget_198111((*systemmodule_238019).kindU.S3.tab, LOC1);
@@ -614,7 +614,7 @@ N_NIMCALL(Tsym190843*, getsysmagic_238155)(NimStringDesc* name, NU16 m) {
 	nimln(51, "magicsys.nim");
 	id = getident_166463(name);
 	nimln(52, "magicsys.nim");
-	if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4024));
+	if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4025));
 	result = initidentiter_198147((&ti), (*systemmodule_238019).kindU.S3.tab, id);
 	{
 		nimln(53, "magicsys.nim");
@@ -633,7 +633,7 @@ N_NIMCALL(Tsym190843*, getsysmagic_238155)(NimStringDesc* name, NU16 m) {
 			}
 			LA9: ;
 			nimln(56, "magicsys.nim");
-			if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4024));
+			if (!(((64 &(1<<(((*systemmodule_238019).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4025));
 			result = nextidentiter_198156((&ti), (*systemmodule_238019).kindU.S3.tab);
 		} LA2: ;
 	}
@@ -680,116 +680,116 @@ N_NIMCALL(Ttype190849*, getsystype_238030)(NU8 kind) {
 		case ((NU8) 31):
 		{
 			nimln(68, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4025));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4026));
 		}
 		break;
 		case ((NU8) 32):
 		{
 			nimln(69, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4026));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4027));
 		}
 		break;
 		case ((NU8) 33):
 		{
 			nimln(70, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4027));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4028));
 		}
 		break;
 		case ((NU8) 34):
 		{
 			nimln(71, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4028));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4029));
 		}
 		break;
 		case ((NU8) 35):
 		{
 			nimln(72, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4029));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4030));
 		}
 		break;
 		case ((NU8) 40):
 		{
 			nimln(73, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4030));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4031));
 		}
 		break;
 		case ((NU8) 41):
 		{
 			nimln(74, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4031));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4032));
 		}
 		break;
 		case ((NU8) 42):
 		{
 			nimln(75, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4032));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4033));
 		}
 		break;
 		case ((NU8) 43):
 		{
 			nimln(76, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4033));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4034));
 		}
 		break;
 		case ((NU8) 44):
 		{
 			nimln(77, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4034));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4035));
 		}
 		break;
 		case ((NU8) 36):
 		{
 			nimln(78, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4035));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4036));
 		}
 		break;
 		case ((NU8) 37):
 		{
 			nimln(79, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4036));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4037));
 		}
 		break;
 		case ((NU8) 38):
 		{
 			nimln(80, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4037));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4038));
 			goto BeforeRet;
 		}
 		break;
 		case ((NU8) 39):
 		{
 			nimln(81, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4038));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4039));
 		}
 		break;
 		case ((NU8) 1):
 		{
 			nimln(82, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4039));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4040));
 		}
 		break;
 		case ((NU8) 2):
 		{
 			nimln(83, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4040));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4041));
 		}
 		break;
 		case ((NU8) 28):
 		{
 			nimln(84, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4041));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4042));
 		}
 		break;
 		case ((NU8) 29):
 		{
 			nimln(85, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4042));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4043));
 		}
 		break;
 		case ((NU8) 26):
 		{
 			nimln(86, "magicsys.nim");
-			result = systypefromname_238213(((NimStringDesc*) &TMP4043));
+			result = systypefromname_238213(((NimStringDesc*) &TMP4044));
 		}
 		break;
 		case ((NU8) 5):
@@ -804,7 +804,7 @@ N_NIMCALL(Ttype190849*, getsystype_238030)(NU8 kind) {
 			nimln(88, "magicsys.nim");
 			LOC26 = 0;
 			LOC26 = rawNewString(reprEnum(kind, (&NTI190260))->Sup.len + 22);
-appendString(LOC26, ((NimStringDesc*) &TMP4044));
+appendString(LOC26, ((NimStringDesc*) &TMP4045));
 appendString(LOC26, reprEnum(kind, (&NTI190260)));
 			internalerror_164218(LOC26);
 		}
@@ -821,9 +821,9 @@ appendString(LOC26, reprEnum(kind, (&NTI190260)));
 		nimln(91, "magicsys.nim");
 		LOC31 = 0;
 		LOC31 = rawNewString(reprEnum(kind, (&NTI190260))->Sup.len + reprEnum((*result).kind, (&NTI190260))->Sup.len + 14);
-appendString(LOC31, ((NimStringDesc*) &TMP4045));
-appendString(LOC31, reprEnum(kind, (&NTI190260)));
 appendString(LOC31, ((NimStringDesc*) &TMP4046));
+appendString(LOC31, reprEnum(kind, (&NTI190260)));
+appendString(LOC31, ((NimStringDesc*) &TMP4047));
 appendString(LOC31, reprEnum((*result).kind, (&NTI190260)));
 		internalerror_164218(LOC31);
 	}
@@ -834,7 +834,7 @@ appendString(LOC31, reprEnum((*result).kind, (&NTI190260)));
 		if (!(result == NIM_NIL)) goto LA34;
 		LOC36 = 0;
 		LOC36 = rawNewString(reprEnum(kind, (&NTI190260))->Sup.len + 16);
-appendString(LOC36, ((NimStringDesc*) &TMP4047));
+appendString(LOC36, ((NimStringDesc*) &TMP4048));
 appendString(LOC36, reprEnum(kind, (&NTI190260)));
 		internalerror_164218(LOC36);
 	}
@@ -879,15 +879,15 @@ N_NIMCALL(void, resetsystypes_238302)(void) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4048;
+				NI TMP4049;
 				if (!(res_238627 <= ((NI) 61))) goto LA3;
 				nimln(1600, "system.nim");
 				i_238423 = ((NU8)chckRange(res_238627, ((NU8) 0), ((NU8) 61)));
 				nimln(101, "magicsys.nim");
 				asgnRefNoCycle((void**) (&gsystypes_238063[(i_238423)- 0]), NIM_NIL);
 				nimln(1619, "system.nim");
-				TMP4048 = addInt(res_238627, ((NI) 1));
-				res_238627 = (NI)(TMP4048);
+				TMP4049 = addInt(res_238627, ((NI) 1));
+				res_238627 = (NI)(TMP4049);
 			} LA3: ;
 		}
 	}
@@ -900,7 +900,7 @@ N_NIMCALL(void, resetsystypes_238302)(void) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4049;
+				NI TMP4050;
 				if (!(res_238633 <= ((NI) 64))) goto LA6;
 				nimln(1600, "system.nim");
 				i_238623 = ((NI)chckRange(res_238633, ((NI) -5), ((NI) 64)));
@@ -908,8 +908,8 @@ N_NIMCALL(void, resetsystypes_238302)(void) {
 				if (i_238623 < -5 || i_238623 > 64) raiseIndexError();
 				asgnRefNoCycle((void**) (&inttypecache_238297[(i_238623)- -5]), NIM_NIL);
 				nimln(1619, "system.nim");
-				TMP4049 = addInt(res_238633, ((NI) 1));
-				res_238633 = (NI)(TMP4049);
+				TMP4050 = addInt(res_238633, ((NI) 1));
+				res_238633 = (NI)(TMP4050);
 			} LA6: ;
 		}
 	}
@@ -922,7 +922,7 @@ N_NIMCALL(Ttype190849*, getintlittype_238660)(Tnode190813* literal) {
 	nimfr("getIntLitType", "magicsys.nim")
 	result = 0;
 	nimln(108, "magicsys.nim");
-	if (!(((TMP4050[(*literal).kind/8] &(1<<((*literal).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4051));
+	if (!(((TMP4051[(*literal).kind/8] &(1<<((*literal).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4052));
 	value = (*literal).kindU.S1.intval;
 	nimln(109, "magicsys.nim");
 	{
@@ -1046,7 +1046,7 @@ N_NIMCALL(void, setintlittype_238776)(Tnode190813* result) {
 	NI64 i;
 	nimfr("setIntLitType", "magicsys.nim")
 	nimln(139, "magicsys.nim");
-	if (!(((TMP4050[(*result).kind/8] &(1<<((*result).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4051));
+	if (!(((TMP4051[(*result).kind/8] &(1<<((*result).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4052));
 	i = (*result).kindU.S1.intval;
 	nimln(140, "magicsys.nim");
 	switch (intsize_158623) {
@@ -1170,7 +1170,7 @@ N_NIMCALL(void, setintlittype_238776)(Tnode190813* result) {
 	default:
 	{
 		nimln(164, "magicsys.nim");
-		internalerror_164199((*result).info, ((NimStringDesc*) &TMP4052));
+		internalerror_164199((*result).info, ((NimStringDesc*) &TMP4053));
 	}
 	break;
 	}

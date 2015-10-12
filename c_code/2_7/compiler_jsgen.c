@@ -491,7 +491,7 @@ struct Tidpairseq191859 {
 };
 N_NIMCALL(Tglobals497027*, newglobals_497084)(void);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10090)(void* p, NI op);
+N_NIMCALL(void, TMP10091)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
@@ -506,9 +506,9 @@ N_NIMCALL(void, initcompres_497117)(Tcompres497023* r);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 static N_INLINE(Ropeobj161009*, rdloc_497127)(Tcompres497023 a);
 N_NIMCALL(Tproc497033*, newproc_497207)(Tglobals497027* globals, Tjsgen497015* module, Tnode191813* procdef, NU32 options);
-N_NIMCALL(void, TMP10092)(void* p, NI op);
-N_NIMCALL(void, TMP10097)(void* p, NI op);
+N_NIMCALL(void, TMP10093)(void* p, NI op);
 N_NIMCALL(void, TMP10098)(void* p, NI op);
+N_NIMCALL(void, TMP10099)(void* p, NI op);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
 static N_INLINE(void, incref_52622)(Tcell46746* c);
 static N_INLINE(NIM_BOOL, canbecycleroot_50267)(Tcell46746* c);
@@ -678,1416 +678,1416 @@ N_NIMCALL(NimStringDesc*, completecfilepath_170912)(NimStringDesc* cfile, NIM_BO
 N_NIMCALL(NIM_BOOL, writeropeifnotequal_162930)(Ropeobj161009* r, NimStringDesc* filename);
 N_NIMCALL(Tpasscontext242005*, myopencached_504732)(Tsym191843* s, Trodreader234030* rd);
 N_NIMCALL(Tpasscontext242005*, myopen_504743)(Tsym191843* s);
-static NIM_CONST TY192031 TMP10099 = {
+static NIM_CONST TY192031 TMP10100 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10100, "sons", 4);
-static NIM_CONST TY192031 TMP10101 = {
+STRING_LITERAL(TMP10101, "sons", 4);
+static NIM_CONST TY192031 TMP10102 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10102, "sym", 3);
+STRING_LITERAL(TMP10103, "sym", 3);
 NIM_CONST NU64 Mappedtoobject_497251 = IL64(316659484000272);
-STRING_LITERAL(TMP10103, "_", 1);
-STRING_LITERAL(TMP10104, "null", 4);
-STRING_LITERAL(TMP10105, "\"", 1);
-STRING_LITERAL(TMP10106, "NTI$1", 5);
-STRING_LITERAL(TMP10107, "var $1 = {size: 0,kind: $2,base: null,node: null,finalizer: nul"
+STRING_LITERAL(TMP10104, "_", 1);
+STRING_LITERAL(TMP10105, "null", 4);
+STRING_LITERAL(TMP10106, "\"", 1);
+STRING_LITERAL(TMP10107, "NTI$1", 5);
+STRING_LITERAL(TMP10108, "var $1 = {size: 0,kind: $2,base: null,node: null,finalizer: nul"
 "l};$n", 68);
-STRING_LITERAL(TMP10108, "$1.base = $2;$n", 15);
-STRING_LITERAL(TMP10110, "genEnumInfo", 11);
-STRING_LITERAL(TMP10111, ", ", 2);
-static NIM_CONST TY192031 TMP10112 = {
+STRING_LITERAL(TMP10109, "$1.base = $2;$n", 15);
+STRING_LITERAL(TMP10111, "genEnumInfo", 11);
+STRING_LITERAL(TMP10112, ", ", 2);
+static NIM_CONST TY192031 TMP10113 = {
 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10113, "strVal", 6);
-STRING_LITERAL(TMP10114, "{kind: 1, offset: $1, typ: $2, name: $3, len: 0, sons: null}", 60);
-STRING_LITERAL(TMP10116, "var NNI$1 = {kind: 2, offset: 0, typ: null, name: null, len: $2"
+STRING_LITERAL(TMP10114, "strVal", 6);
+STRING_LITERAL(TMP10115, "{kind: 1, offset: $1, typ: $2, name: $3, len: 0, sons: null}", 60);
+STRING_LITERAL(TMP10117, "var NNI$1 = {kind: 2, offset: 0, typ: null, name: null, len: $2"
 ", sons: [$3]};$n", 79);
-STRING_LITERAL(TMP10117, "var $1 = {size: 0, kind: $2, base: null, node: null, finalizer:"
+STRING_LITERAL(TMP10118, "var $1 = {size: 0, kind: $2, base: null, node: null, finalizer:"
 " null};$n", 72);
-STRING_LITERAL(TMP10118, "$1.node = NNI$2;$n", 18);
-STRING_LITERAL(TMP10119, "var NNI$1 = $2;$n", 17);
-STRING_LITERAL(TMP10122, "{kind: 2, len: $1, offset: 0, typ: null, name: null, sons: [$2]"
+STRING_LITERAL(TMP10119, "$1.node = NNI$2;$n", 18);
+STRING_LITERAL(TMP10120, "var NNI$1 = $2;$n", 17);
+STRING_LITERAL(TMP10123, "{kind: 2, len: $1, offset: 0, typ: null, name: null, sons: [$2]"
 "}", 64);
-STRING_LITERAL(TMP10123, "{kind: 1, offset: \"$1\", len: 0, typ: $2, name: $3, sons: null}", 62);
-STRING_LITERAL(TMP10124, "genObjectFields", 15);
-STRING_LITERAL(TMP10126, "genObjectFields; nkOfBranch broken", 34);
-STRING_LITERAL(TMP10128, "[$1, $2]", 8);
-STRING_LITERAL(TMP10130, "genObjectFields(nkRecCase)", 26);
-STRING_LITERAL(TMP10131, "[SetConstr($1), $2]", 19);
-STRING_LITERAL(TMP10133, "{kind: 3, offset: \"$1\", len: $3, typ: $2, name: $4, sons: [$5]}", 63);
-STRING_LITERAL(TMP10134, "{kind: 1, offset: \"Field$1\", len: 0, typ: $2, name: \"Field$1\", "
+STRING_LITERAL(TMP10124, "{kind: 1, offset: \"$1\", len: 0, typ: $2, name: $3, sons: null}", 62);
+STRING_LITERAL(TMP10125, "genObjectFields", 15);
+STRING_LITERAL(TMP10127, "genObjectFields; nkOfBranch broken", 34);
+STRING_LITERAL(TMP10129, "[$1, $2]", 8);
+STRING_LITERAL(TMP10131, "genObjectFields(nkRecCase)", 26);
+STRING_LITERAL(TMP10132, "[SetConstr($1), $2]", 19);
+STRING_LITERAL(TMP10134, "{kind: 3, offset: \"$1\", len: $3, typ: $2, name: $4, sons: [$5]}", 63);
+STRING_LITERAL(TMP10135, "{kind: 1, offset: \"Field$1\", len: 0, typ: $2, name: \"Field$1\", "
 "sons: null}", 74);
-STRING_LITERAL(TMP10136, "genTypeInfo(", 12);
-STRING_LITERAL(TMP10138, "compiler/jsgen.nim", 18);
-NIM_CONST TY147211 TMP10137 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10137, "genTypeInfo(", 12);
+STRING_LITERAL(TMP10139, "compiler/jsgen.nim", 18);
+NIM_CONST TY147211 TMP10138 = {((NimStringDesc*) &TMP10139),
 ((NI) 180)}
 ;
-STRING_LITERAL(TMP10141, "Tmp$1", 5);
-STRING_LITERAL(TMP10142, "var $1;$n", 9);
-STRING_LITERAL(TMP10143, "local $1;$n", 11);
-STRING_LITERAL(TMP10144, "r.kind == resNone ", 18);
-STRING_LITERAL(TMP10145, "($1 && $2)", 10);
-STRING_LITERAL(TMP10146, "($1 and $2)", 11);
-STRING_LITERAL(TMP10147, "if (!$1) $2 = false; else {", 27);
-STRING_LITERAL(TMP10148, "if not $1 then $2 = false; else", 31);
-STRING_LITERAL(TMP10149, "$2 = $1; }", 10);
-STRING_LITERAL(TMP10150, "$2 = $1 end", 11);
-STRING_LITERAL(TMP10151, "($1 || $2)", 10);
-STRING_LITERAL(TMP10152, "($1 or $2)", 10);
-STRING_LITERAL(TMP10153, "if ($1) $2 = true; else {", 25);
-STRING_LITERAL(TMP10154, "if $1 then $2 = true; else", 26);
-STRING_LITERAL(TMP10155, "addInt", 6);
-STRING_LITERAL(TMP10156, "", 0);
-STRING_LITERAL(TMP10157, "addInt($1, $2)", 14);
-STRING_LITERAL(TMP10158, "($1 + $2)", 9);
-STRING_LITERAL(TMP10159, "subInt", 6);
-STRING_LITERAL(TMP10160, "subInt($1, $2)", 14);
-STRING_LITERAL(TMP10161, "($1 - $2)", 9);
-STRING_LITERAL(TMP10162, "mulInt", 6);
-STRING_LITERAL(TMP10163, "mulInt($1, $2)", 14);
-STRING_LITERAL(TMP10164, "($1 * $2)", 9);
-STRING_LITERAL(TMP10165, "divInt", 6);
-STRING_LITERAL(TMP10166, "divInt($1, $2)", 14);
-STRING_LITERAL(TMP10167, "Math.floor($1 / $2)", 19);
-STRING_LITERAL(TMP10168, "modInt", 6);
-STRING_LITERAL(TMP10169, "modInt($1, $2)", 14);
-STRING_LITERAL(TMP10170, "Math.floor($1 % $2)", 19);
-STRING_LITERAL(TMP10171, "addInt64", 8);
-STRING_LITERAL(TMP10172, "addInt64($1, $2)", 16);
-STRING_LITERAL(TMP10173, "subInt64", 8);
-STRING_LITERAL(TMP10174, "subInt64($1, $2)", 16);
-STRING_LITERAL(TMP10175, "mulInt64", 8);
-STRING_LITERAL(TMP10176, "mulInt64($1, $2)", 16);
-STRING_LITERAL(TMP10177, "divInt64", 8);
-STRING_LITERAL(TMP10178, "divInt64($1, $2)", 16);
-STRING_LITERAL(TMP10179, "modInt64", 8);
-STRING_LITERAL(TMP10180, "modInt64($1, $2)", 16);
-STRING_LITERAL(TMP10181, "($1 / $2)", 9);
-STRING_LITERAL(TMP10182, "($1 >>> $2)", 11);
-STRING_LITERAL(TMP10183, "($1 << $2)", 10);
-STRING_LITERAL(TMP10184, "($1 & $2)", 9);
-STRING_LITERAL(TMP10185, "($1 | $2)", 9);
-STRING_LITERAL(TMP10186, "($1 ^ $2)", 9);
-STRING_LITERAL(TMP10187, "nimMin", 6);
-STRING_LITERAL(TMP10188, "nimMin($1, $2)", 14);
-STRING_LITERAL(TMP10189, "nimMax", 6);
-STRING_LITERAL(TMP10190, "nimMax($1, $2)", 14);
-STRING_LITERAL(TMP10191, "addU", 4);
-STRING_LITERAL(TMP10192, "addU($1, $2)", 12);
-STRING_LITERAL(TMP10193, "subU", 4);
-STRING_LITERAL(TMP10194, "subU($1, $2)", 12);
-STRING_LITERAL(TMP10195, "mulU", 4);
-STRING_LITERAL(TMP10196, "mulU($1, $2)", 12);
-STRING_LITERAL(TMP10197, "divU", 4);
-STRING_LITERAL(TMP10198, "divU($1, $2)", 12);
-STRING_LITERAL(TMP10199, "modU", 4);
-STRING_LITERAL(TMP10200, "modU($1, $2)", 12);
-STRING_LITERAL(TMP10201, "($1 == $2)", 10);
-STRING_LITERAL(TMP10202, "($1 <= $2)", 10);
-STRING_LITERAL(TMP10203, "($1 < $2)", 9);
-STRING_LITERAL(TMP10204, "leU", 3);
-STRING_LITERAL(TMP10205, "leU($1, $2)", 11);
-STRING_LITERAL(TMP10206, "ltU", 3);
-STRING_LITERAL(TMP10207, "ltU($1, $2)", 11);
-STRING_LITERAL(TMP10208, "leU64", 5);
-STRING_LITERAL(TMP10209, "leU64($1, $2)", 13);
-STRING_LITERAL(TMP10210, "ltU64", 5);
-STRING_LITERAL(TMP10211, "ltU64($1, $2)", 13);
-STRING_LITERAL(TMP10212, "($1 != $2)", 10);
-STRING_LITERAL(TMP10213, "negInt", 6);
-STRING_LITERAL(TMP10214, "negInt($1)", 10);
-STRING_LITERAL(TMP10215, "-($1)", 5);
-STRING_LITERAL(TMP10216, "negInt64", 8);
-STRING_LITERAL(TMP10217, "negInt64($1)", 12);
-STRING_LITERAL(TMP10218, "absInt", 6);
-STRING_LITERAL(TMP10219, "absInt($1)", 10);
-STRING_LITERAL(TMP10220, "Math.abs($1)", 12);
-STRING_LITERAL(TMP10221, "absInt64", 8);
-STRING_LITERAL(TMP10222, "absInt64($1)", 12);
-STRING_LITERAL(TMP10223, "!($1)", 5);
-STRING_LITERAL(TMP10224, "+($1)", 5);
-STRING_LITERAL(TMP10225, "~($1)", 5);
-STRING_LITERAL(TMP10226, "Ze8ToI", 6);
-STRING_LITERAL(TMP10227, "Ze8ToI($1)", 10);
-STRING_LITERAL(TMP10228, "Ze8ToI64", 8);
-STRING_LITERAL(TMP10229, "Ze8ToI64($1)", 12);
-STRING_LITERAL(TMP10230, "Ze16ToI", 7);
-STRING_LITERAL(TMP10231, "Ze16ToI($1)", 11);
-STRING_LITERAL(TMP10232, "Ze16ToI64", 9);
-STRING_LITERAL(TMP10233, "Ze16ToI64($1)", 13);
-STRING_LITERAL(TMP10234, "Ze32ToI64", 9);
-STRING_LITERAL(TMP10235, "Ze32ToI64($1)", 13);
-STRING_LITERAL(TMP10236, "ZeIToI64", 8);
-STRING_LITERAL(TMP10237, "ZeIToI64($1)", 12);
-STRING_LITERAL(TMP10238, "toU8", 4);
-STRING_LITERAL(TMP10239, "toU8($1)", 8);
-STRING_LITERAL(TMP10240, "toU16", 5);
-STRING_LITERAL(TMP10241, "toU16($1)", 9);
-STRING_LITERAL(TMP10242, "toU32", 5);
-STRING_LITERAL(TMP10243, "toU32($1)", 9);
-STRING_LITERAL(TMP10244, "$1", 2);
-STRING_LITERAL(TMP10245, "Math.floor($1)", 14);
-STRING_LITERAL(TMP10246, "nimCharToStr", 12);
-STRING_LITERAL(TMP10247, "nimCharToStr($1)", 16);
-STRING_LITERAL(TMP10248, "nimBoolToStr", 12);
-STRING_LITERAL(TMP10249, "nimBoolToStr($1)", 16);
-STRING_LITERAL(TMP10250, "cstrToNimstr", 12);
-STRING_LITERAL(TMP10251, "cstrToNimstr(($1)+\"\")", 21);
-STRING_LITERAL(TMP10252, "cstrToNimstr($1)", 16);
-NIM_CONST Tmagicops498455 jsops_498461 = {{((NimStringDesc*) &TMP10155),
-((NimStringDesc*) &TMP10156),
+STRING_LITERAL(TMP10142, "Tmp$1", 5);
+STRING_LITERAL(TMP10143, "var $1;$n", 9);
+STRING_LITERAL(TMP10144, "local $1;$n", 11);
+STRING_LITERAL(TMP10145, "r.kind == resNone ", 18);
+STRING_LITERAL(TMP10146, "($1 && $2)", 10);
+STRING_LITERAL(TMP10147, "($1 and $2)", 11);
+STRING_LITERAL(TMP10148, "if (!$1) $2 = false; else {", 27);
+STRING_LITERAL(TMP10149, "if not $1 then $2 = false; else", 31);
+STRING_LITERAL(TMP10150, "$2 = $1; }", 10);
+STRING_LITERAL(TMP10151, "$2 = $1 end", 11);
+STRING_LITERAL(TMP10152, "($1 || $2)", 10);
+STRING_LITERAL(TMP10153, "($1 or $2)", 10);
+STRING_LITERAL(TMP10154, "if ($1) $2 = true; else {", 25);
+STRING_LITERAL(TMP10155, "if $1 then $2 = true; else", 26);
+STRING_LITERAL(TMP10156, "addInt", 6);
+STRING_LITERAL(TMP10157, "", 0);
+STRING_LITERAL(TMP10158, "addInt($1, $2)", 14);
+STRING_LITERAL(TMP10159, "($1 + $2)", 9);
+STRING_LITERAL(TMP10160, "subInt", 6);
+STRING_LITERAL(TMP10161, "subInt($1, $2)", 14);
+STRING_LITERAL(TMP10162, "($1 - $2)", 9);
+STRING_LITERAL(TMP10163, "mulInt", 6);
+STRING_LITERAL(TMP10164, "mulInt($1, $2)", 14);
+STRING_LITERAL(TMP10165, "($1 * $2)", 9);
+STRING_LITERAL(TMP10166, "divInt", 6);
+STRING_LITERAL(TMP10167, "divInt($1, $2)", 14);
+STRING_LITERAL(TMP10168, "Math.floor($1 / $2)", 19);
+STRING_LITERAL(TMP10169, "modInt", 6);
+STRING_LITERAL(TMP10170, "modInt($1, $2)", 14);
+STRING_LITERAL(TMP10171, "Math.floor($1 % $2)", 19);
+STRING_LITERAL(TMP10172, "addInt64", 8);
+STRING_LITERAL(TMP10173, "addInt64($1, $2)", 16);
+STRING_LITERAL(TMP10174, "subInt64", 8);
+STRING_LITERAL(TMP10175, "subInt64($1, $2)", 16);
+STRING_LITERAL(TMP10176, "mulInt64", 8);
+STRING_LITERAL(TMP10177, "mulInt64($1, $2)", 16);
+STRING_LITERAL(TMP10178, "divInt64", 8);
+STRING_LITERAL(TMP10179, "divInt64($1, $2)", 16);
+STRING_LITERAL(TMP10180, "modInt64", 8);
+STRING_LITERAL(TMP10181, "modInt64($1, $2)", 16);
+STRING_LITERAL(TMP10182, "($1 / $2)", 9);
+STRING_LITERAL(TMP10183, "($1 >>> $2)", 11);
+STRING_LITERAL(TMP10184, "($1 << $2)", 10);
+STRING_LITERAL(TMP10185, "($1 & $2)", 9);
+STRING_LITERAL(TMP10186, "($1 | $2)", 9);
+STRING_LITERAL(TMP10187, "($1 ^ $2)", 9);
+STRING_LITERAL(TMP10188, "nimMin", 6);
+STRING_LITERAL(TMP10189, "nimMin($1, $2)", 14);
+STRING_LITERAL(TMP10190, "nimMax", 6);
+STRING_LITERAL(TMP10191, "nimMax($1, $2)", 14);
+STRING_LITERAL(TMP10192, "addU", 4);
+STRING_LITERAL(TMP10193, "addU($1, $2)", 12);
+STRING_LITERAL(TMP10194, "subU", 4);
+STRING_LITERAL(TMP10195, "subU($1, $2)", 12);
+STRING_LITERAL(TMP10196, "mulU", 4);
+STRING_LITERAL(TMP10197, "mulU($1, $2)", 12);
+STRING_LITERAL(TMP10198, "divU", 4);
+STRING_LITERAL(TMP10199, "divU($1, $2)", 12);
+STRING_LITERAL(TMP10200, "modU", 4);
+STRING_LITERAL(TMP10201, "modU($1, $2)", 12);
+STRING_LITERAL(TMP10202, "($1 == $2)", 10);
+STRING_LITERAL(TMP10203, "($1 <= $2)", 10);
+STRING_LITERAL(TMP10204, "($1 < $2)", 9);
+STRING_LITERAL(TMP10205, "leU", 3);
+STRING_LITERAL(TMP10206, "leU($1, $2)", 11);
+STRING_LITERAL(TMP10207, "ltU", 3);
+STRING_LITERAL(TMP10208, "ltU($1, $2)", 11);
+STRING_LITERAL(TMP10209, "leU64", 5);
+STRING_LITERAL(TMP10210, "leU64($1, $2)", 13);
+STRING_LITERAL(TMP10211, "ltU64", 5);
+STRING_LITERAL(TMP10212, "ltU64($1, $2)", 13);
+STRING_LITERAL(TMP10213, "($1 != $2)", 10);
+STRING_LITERAL(TMP10214, "negInt", 6);
+STRING_LITERAL(TMP10215, "negInt($1)", 10);
+STRING_LITERAL(TMP10216, "-($1)", 5);
+STRING_LITERAL(TMP10217, "negInt64", 8);
+STRING_LITERAL(TMP10218, "negInt64($1)", 12);
+STRING_LITERAL(TMP10219, "absInt", 6);
+STRING_LITERAL(TMP10220, "absInt($1)", 10);
+STRING_LITERAL(TMP10221, "Math.abs($1)", 12);
+STRING_LITERAL(TMP10222, "absInt64", 8);
+STRING_LITERAL(TMP10223, "absInt64($1)", 12);
+STRING_LITERAL(TMP10224, "!($1)", 5);
+STRING_LITERAL(TMP10225, "+($1)", 5);
+STRING_LITERAL(TMP10226, "~($1)", 5);
+STRING_LITERAL(TMP10227, "Ze8ToI", 6);
+STRING_LITERAL(TMP10228, "Ze8ToI($1)", 10);
+STRING_LITERAL(TMP10229, "Ze8ToI64", 8);
+STRING_LITERAL(TMP10230, "Ze8ToI64($1)", 12);
+STRING_LITERAL(TMP10231, "Ze16ToI", 7);
+STRING_LITERAL(TMP10232, "Ze16ToI($1)", 11);
+STRING_LITERAL(TMP10233, "Ze16ToI64", 9);
+STRING_LITERAL(TMP10234, "Ze16ToI64($1)", 13);
+STRING_LITERAL(TMP10235, "Ze32ToI64", 9);
+STRING_LITERAL(TMP10236, "Ze32ToI64($1)", 13);
+STRING_LITERAL(TMP10237, "ZeIToI64", 8);
+STRING_LITERAL(TMP10238, "ZeIToI64($1)", 12);
+STRING_LITERAL(TMP10239, "toU8", 4);
+STRING_LITERAL(TMP10240, "toU8($1)", 8);
+STRING_LITERAL(TMP10241, "toU16", 5);
+STRING_LITERAL(TMP10242, "toU16($1)", 9);
+STRING_LITERAL(TMP10243, "toU32", 5);
+STRING_LITERAL(TMP10244, "toU32($1)", 9);
+STRING_LITERAL(TMP10245, "$1", 2);
+STRING_LITERAL(TMP10246, "Math.floor($1)", 14);
+STRING_LITERAL(TMP10247, "nimCharToStr", 12);
+STRING_LITERAL(TMP10248, "nimCharToStr($1)", 16);
+STRING_LITERAL(TMP10249, "nimBoolToStr", 12);
+STRING_LITERAL(TMP10250, "nimBoolToStr($1)", 16);
+STRING_LITERAL(TMP10251, "cstrToNimstr", 12);
+STRING_LITERAL(TMP10252, "cstrToNimstr(($1)+\"\")", 21);
+STRING_LITERAL(TMP10253, "cstrToNimstr($1)", 16);
+NIM_CONST Tmagicops498455 jsops_498461 = {{((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10157),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10159),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10160),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10162),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10163),
-((NimStringDesc*) &TMP10164)}
-,
-{((NimStringDesc*) &TMP10165),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10166),
-((NimStringDesc*) &TMP10167)}
-,
-{((NimStringDesc*) &TMP10168),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10169),
-((NimStringDesc*) &TMP10170)}
-,
-{((NimStringDesc*) &TMP10171),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10172),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10173),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10174),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10175),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10176),
-((NimStringDesc*) &TMP10164)}
-,
-{((NimStringDesc*) &TMP10177),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10178),
-((NimStringDesc*) &TMP10167)}
-,
-{((NimStringDesc*) &TMP10179),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10180),
-((NimStringDesc*) &TMP10170)}
-,
-{((NimStringDesc*) &TMP10155),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10157),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10159),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10160),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10158),
-((NimStringDesc*) &TMP10158)}
+((NimStringDesc*) &TMP10159)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10160),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10161),
-((NimStringDesc*) &TMP10161)}
+((NimStringDesc*) &TMP10162)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10163),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10164),
-((NimStringDesc*) &TMP10164)}
+((NimStringDesc*) &TMP10165)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10166),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10167),
+((NimStringDesc*) &TMP10168)}
+,
+{((NimStringDesc*) &TMP10169),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10170),
+((NimStringDesc*) &TMP10171)}
+,
+{((NimStringDesc*) &TMP10172),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10173),
+((NimStringDesc*) &TMP10159)}
+,
+{((NimStringDesc*) &TMP10174),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10175),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10176),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10177),
+((NimStringDesc*) &TMP10165)}
+,
+{((NimStringDesc*) &TMP10178),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10179),
+((NimStringDesc*) &TMP10168)}
+,
+{((NimStringDesc*) &TMP10180),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10181),
-((NimStringDesc*) &TMP10181)}
+((NimStringDesc*) &TMP10171)}
 ,
 {((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10158),
+((NimStringDesc*) &TMP10159)}
+,
+{((NimStringDesc*) &TMP10160),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10161),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10159),
+((NimStringDesc*) &TMP10159)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10162),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10165),
+((NimStringDesc*) &TMP10165)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10182),
 ((NimStringDesc*) &TMP10182)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10183),
 ((NimStringDesc*) &TMP10183)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10184),
 ((NimStringDesc*) &TMP10184)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10185),
 ((NimStringDesc*) &TMP10185)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10186),
 ((NimStringDesc*) &TMP10186)}
 ,
-{((NimStringDesc*) &TMP10187),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10187),
+((NimStringDesc*) &TMP10187)}
+,
+{((NimStringDesc*) &TMP10188),
 ((NimStringDesc*) &TMP10188),
-((NimStringDesc*) &TMP10188)}
-,
-{((NimStringDesc*) &TMP10189),
 ((NimStringDesc*) &TMP10189),
+((NimStringDesc*) &TMP10189)}
+,
+{((NimStringDesc*) &TMP10190),
 ((NimStringDesc*) &TMP10190),
-((NimStringDesc*) &TMP10190)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10182),
-((NimStringDesc*) &TMP10182)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10183),
-((NimStringDesc*) &TMP10183)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10184),
-((NimStringDesc*) &TMP10184)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10185),
-((NimStringDesc*) &TMP10185)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10186),
-((NimStringDesc*) &TMP10186)}
-,
-{((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10188),
-((NimStringDesc*) &TMP10188)}
-,
-{((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10190),
-((NimStringDesc*) &TMP10190)}
-,
-{((NimStringDesc*) &TMP10191),
 ((NimStringDesc*) &TMP10191),
+((NimStringDesc*) &TMP10191)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10183),
+((NimStringDesc*) &TMP10183)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10184),
+((NimStringDesc*) &TMP10184)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10185),
+((NimStringDesc*) &TMP10185)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10186),
+((NimStringDesc*) &TMP10186)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10187),
+((NimStringDesc*) &TMP10187)}
+,
+{((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10189),
+((NimStringDesc*) &TMP10189)}
+,
+{((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10191),
+((NimStringDesc*) &TMP10191)}
+,
+{((NimStringDesc*) &TMP10192),
 ((NimStringDesc*) &TMP10192),
-((NimStringDesc*) &TMP10192)}
-,
-{((NimStringDesc*) &TMP10193),
 ((NimStringDesc*) &TMP10193),
+((NimStringDesc*) &TMP10193)}
+,
+{((NimStringDesc*) &TMP10194),
 ((NimStringDesc*) &TMP10194),
-((NimStringDesc*) &TMP10194)}
-,
-{((NimStringDesc*) &TMP10195),
 ((NimStringDesc*) &TMP10195),
+((NimStringDesc*) &TMP10195)}
+,
+{((NimStringDesc*) &TMP10196),
 ((NimStringDesc*) &TMP10196),
-((NimStringDesc*) &TMP10196)}
-,
-{((NimStringDesc*) &TMP10197),
 ((NimStringDesc*) &TMP10197),
+((NimStringDesc*) &TMP10197)}
+,
+{((NimStringDesc*) &TMP10198),
 ((NimStringDesc*) &TMP10198),
-((NimStringDesc*) &TMP10198)}
-,
-{((NimStringDesc*) &TMP10199),
 ((NimStringDesc*) &TMP10199),
+((NimStringDesc*) &TMP10199)}
+,
+{((NimStringDesc*) &TMP10200),
 ((NimStringDesc*) &TMP10200),
-((NimStringDesc*) &TMP10200)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10201),
 ((NimStringDesc*) &TMP10201)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10202),
 ((NimStringDesc*) &TMP10202)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10203),
 ((NimStringDesc*) &TMP10203)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10204),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10205),
 ((NimStringDesc*) &TMP10205),
-((NimStringDesc*) &TMP10205)}
-,
-{((NimStringDesc*) &TMP10206),
 ((NimStringDesc*) &TMP10206),
+((NimStringDesc*) &TMP10206)}
+,
+{((NimStringDesc*) &TMP10207),
 ((NimStringDesc*) &TMP10207),
-((NimStringDesc*) &TMP10207)}
-,
-{((NimStringDesc*) &TMP10208),
 ((NimStringDesc*) &TMP10208),
+((NimStringDesc*) &TMP10208)}
+,
+{((NimStringDesc*) &TMP10209),
 ((NimStringDesc*) &TMP10209),
-((NimStringDesc*) &TMP10209)}
-,
-{((NimStringDesc*) &TMP10210),
 ((NimStringDesc*) &TMP10210),
+((NimStringDesc*) &TMP10210)}
+,
+{((NimStringDesc*) &TMP10211),
 ((NimStringDesc*) &TMP10211),
-((NimStringDesc*) &TMP10211)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10212),
 ((NimStringDesc*) &TMP10212)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
 ,
-{((NimStringDesc*) &TMP10213),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10214),
-((NimStringDesc*) &TMP10215)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
 ,
-{((NimStringDesc*) &TMP10216),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10217),
-((NimStringDesc*) &TMP10215)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
 ,
-{((NimStringDesc*) &TMP10218),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10219),
-((NimStringDesc*) &TMP10220)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
 ,
-{((NimStringDesc*) &TMP10221),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10222),
-((NimStringDesc*) &TMP10220)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10223),
-((NimStringDesc*) &TMP10223)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10224),
-((NimStringDesc*) &TMP10224)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10225),
-((NimStringDesc*) &TMP10225)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10225),
-((NimStringDesc*) &TMP10225)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10224),
-((NimStringDesc*) &TMP10224)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10213),
+((NimStringDesc*) &TMP10213)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10214),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10215),
-((NimStringDesc*) &TMP10215)}
+((NimStringDesc*) &TMP10216)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10217),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10218),
+((NimStringDesc*) &TMP10216)}
+,
+{((NimStringDesc*) &TMP10219),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10220),
-((NimStringDesc*) &TMP10220)}
+((NimStringDesc*) &TMP10221)}
 ,
-{((NimStringDesc*) &TMP10226),
+{((NimStringDesc*) &TMP10222),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10223),
+((NimStringDesc*) &TMP10221)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10224),
+((NimStringDesc*) &TMP10224)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10225),
+((NimStringDesc*) &TMP10225)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10226),
+((NimStringDesc*) &TMP10226)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10226),
+((NimStringDesc*) &TMP10226)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10225),
+((NimStringDesc*) &TMP10225)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10216),
+((NimStringDesc*) &TMP10216)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10221),
+((NimStringDesc*) &TMP10221)}
+,
+{((NimStringDesc*) &TMP10227),
 ((NimStringDesc*) &TMP10227),
-((NimStringDesc*) &TMP10227)}
-,
-{((NimStringDesc*) &TMP10228),
 ((NimStringDesc*) &TMP10228),
+((NimStringDesc*) &TMP10228)}
+,
+{((NimStringDesc*) &TMP10229),
 ((NimStringDesc*) &TMP10229),
-((NimStringDesc*) &TMP10229)}
-,
-{((NimStringDesc*) &TMP10230),
 ((NimStringDesc*) &TMP10230),
+((NimStringDesc*) &TMP10230)}
+,
+{((NimStringDesc*) &TMP10231),
 ((NimStringDesc*) &TMP10231),
-((NimStringDesc*) &TMP10231)}
-,
-{((NimStringDesc*) &TMP10232),
 ((NimStringDesc*) &TMP10232),
+((NimStringDesc*) &TMP10232)}
+,
+{((NimStringDesc*) &TMP10233),
 ((NimStringDesc*) &TMP10233),
-((NimStringDesc*) &TMP10233)}
-,
-{((NimStringDesc*) &TMP10234),
 ((NimStringDesc*) &TMP10234),
+((NimStringDesc*) &TMP10234)}
+,
+{((NimStringDesc*) &TMP10235),
 ((NimStringDesc*) &TMP10235),
-((NimStringDesc*) &TMP10235)}
-,
-{((NimStringDesc*) &TMP10236),
 ((NimStringDesc*) &TMP10236),
+((NimStringDesc*) &TMP10236)}
+,
+{((NimStringDesc*) &TMP10237),
 ((NimStringDesc*) &TMP10237),
-((NimStringDesc*) &TMP10237)}
-,
-{((NimStringDesc*) &TMP10238),
 ((NimStringDesc*) &TMP10238),
+((NimStringDesc*) &TMP10238)}
+,
+{((NimStringDesc*) &TMP10239),
 ((NimStringDesc*) &TMP10239),
-((NimStringDesc*) &TMP10239)}
-,
-{((NimStringDesc*) &TMP10240),
 ((NimStringDesc*) &TMP10240),
+((NimStringDesc*) &TMP10240)}
+,
+{((NimStringDesc*) &TMP10241),
 ((NimStringDesc*) &TMP10241),
-((NimStringDesc*) &TMP10241)}
-,
-{((NimStringDesc*) &TMP10242),
 ((NimStringDesc*) &TMP10242),
+((NimStringDesc*) &TMP10242)}
+,
+{((NimStringDesc*) &TMP10243),
 ((NimStringDesc*) &TMP10243),
-((NimStringDesc*) &TMP10243)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10244),
 ((NimStringDesc*) &TMP10244)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10244),
-((NimStringDesc*) &TMP10244)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10245),
 ((NimStringDesc*) &TMP10245)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10245),
 ((NimStringDesc*) &TMP10245)}
 ,
-{((NimStringDesc*) &TMP10246),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10246),
+((NimStringDesc*) &TMP10246)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10246),
+((NimStringDesc*) &TMP10246)}
+,
+{((NimStringDesc*) &TMP10247),
 ((NimStringDesc*) &TMP10247),
-((NimStringDesc*) &TMP10247)}
-,
-{((NimStringDesc*) &TMP10248),
 ((NimStringDesc*) &TMP10248),
+((NimStringDesc*) &TMP10248)}
+,
+{((NimStringDesc*) &TMP10249),
 ((NimStringDesc*) &TMP10249),
-((NimStringDesc*) &TMP10249)}
-,
-{((NimStringDesc*) &TMP10250),
 ((NimStringDesc*) &TMP10250),
+((NimStringDesc*) &TMP10250)}
+,
+{((NimStringDesc*) &TMP10251),
 ((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
 ((NimStringDesc*) &TMP10252),
 ((NimStringDesc*) &TMP10252)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10244),
-((NimStringDesc*) &TMP10244)}
-}
-;
-STRING_LITERAL(TMP10253, "not ($1)", 8);
-NIM_CONST Tmagicops498455 luaops_498654 = {{((NimStringDesc*) &TMP10155),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10157),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10159),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10160),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10162),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10163),
-((NimStringDesc*) &TMP10164)}
-,
-{((NimStringDesc*) &TMP10165),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10166),
-((NimStringDesc*) &TMP10167)}
-,
-{((NimStringDesc*) &TMP10168),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10169),
-((NimStringDesc*) &TMP10170)}
-,
-{((NimStringDesc*) &TMP10171),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10172),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10173),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10174),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10175),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10176),
-((NimStringDesc*) &TMP10164)}
-,
-{((NimStringDesc*) &TMP10177),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10178),
-((NimStringDesc*) &TMP10167)}
-,
-{((NimStringDesc*) &TMP10179),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10180),
-((NimStringDesc*) &TMP10170)}
-,
-{((NimStringDesc*) &TMP10155),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10157),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10159),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10160),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10158),
-((NimStringDesc*) &TMP10158)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10161),
-((NimStringDesc*) &TMP10161)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10164),
-((NimStringDesc*) &TMP10164)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10181),
-((NimStringDesc*) &TMP10181)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10182),
-((NimStringDesc*) &TMP10182)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10183),
-((NimStringDesc*) &TMP10183)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10184),
-((NimStringDesc*) &TMP10184)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10185),
-((NimStringDesc*) &TMP10185)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10186),
-((NimStringDesc*) &TMP10186)}
-,
-{((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10188),
-((NimStringDesc*) &TMP10188)}
-,
-{((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10190),
-((NimStringDesc*) &TMP10190)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10182),
-((NimStringDesc*) &TMP10182)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10183),
-((NimStringDesc*) &TMP10183)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10184),
-((NimStringDesc*) &TMP10184)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10185),
-((NimStringDesc*) &TMP10185)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10186),
-((NimStringDesc*) &TMP10186)}
-,
-{((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10187),
-((NimStringDesc*) &TMP10188),
-((NimStringDesc*) &TMP10188)}
-,
-{((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10189),
-((NimStringDesc*) &TMP10190),
-((NimStringDesc*) &TMP10190)}
-,
-{((NimStringDesc*) &TMP10191),
-((NimStringDesc*) &TMP10191),
-((NimStringDesc*) &TMP10192),
-((NimStringDesc*) &TMP10192)}
-,
-{((NimStringDesc*) &TMP10193),
-((NimStringDesc*) &TMP10193),
-((NimStringDesc*) &TMP10194),
-((NimStringDesc*) &TMP10194)}
-,
-{((NimStringDesc*) &TMP10195),
-((NimStringDesc*) &TMP10195),
-((NimStringDesc*) &TMP10196),
-((NimStringDesc*) &TMP10196)}
-,
-{((NimStringDesc*) &TMP10197),
-((NimStringDesc*) &TMP10197),
-((NimStringDesc*) &TMP10198),
-((NimStringDesc*) &TMP10198)}
-,
-{((NimStringDesc*) &TMP10199),
-((NimStringDesc*) &TMP10199),
-((NimStringDesc*) &TMP10200),
-((NimStringDesc*) &TMP10200)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10204),
-((NimStringDesc*) &TMP10204),
-((NimStringDesc*) &TMP10205),
-((NimStringDesc*) &TMP10205)}
-,
-{((NimStringDesc*) &TMP10206),
-((NimStringDesc*) &TMP10206),
-((NimStringDesc*) &TMP10207),
-((NimStringDesc*) &TMP10207)}
-,
-{((NimStringDesc*) &TMP10208),
-((NimStringDesc*) &TMP10208),
-((NimStringDesc*) &TMP10209),
-((NimStringDesc*) &TMP10209)}
-,
-{((NimStringDesc*) &TMP10210),
-((NimStringDesc*) &TMP10210),
-((NimStringDesc*) &TMP10211),
-((NimStringDesc*) &TMP10211)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10202),
-((NimStringDesc*) &TMP10202)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10203),
-((NimStringDesc*) &TMP10203)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10212),
-((NimStringDesc*) &TMP10212)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10201),
-((NimStringDesc*) &TMP10201)}
-,
-{((NimStringDesc*) &TMP10213),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10214),
-((NimStringDesc*) &TMP10215)}
-,
-{((NimStringDesc*) &TMP10216),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10217),
-((NimStringDesc*) &TMP10215)}
-,
-{((NimStringDesc*) &TMP10218),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10219),
-((NimStringDesc*) &TMP10220)}
-,
-{((NimStringDesc*) &TMP10221),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10222),
-((NimStringDesc*) &TMP10220)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10252),
+((NimStringDesc*) &TMP10252)}
+,
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10252),
+((NimStringDesc*) &TMP10252)}
+,
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
 ((NimStringDesc*) &TMP10253),
 ((NimStringDesc*) &TMP10253)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10224),
-((NimStringDesc*) &TMP10224)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10245),
+((NimStringDesc*) &TMP10245)}
+}
+;
+STRING_LITERAL(TMP10254, "not ($1)", 8);
+NIM_CONST Tmagicops498455 luaops_498654 = {{((NimStringDesc*) &TMP10156),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10158),
+((NimStringDesc*) &TMP10159)}
+,
+{((NimStringDesc*) &TMP10160),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10161),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10163),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10164),
+((NimStringDesc*) &TMP10165)}
+,
+{((NimStringDesc*) &TMP10166),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10167),
+((NimStringDesc*) &TMP10168)}
+,
+{((NimStringDesc*) &TMP10169),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10170),
+((NimStringDesc*) &TMP10171)}
+,
+{((NimStringDesc*) &TMP10172),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10173),
+((NimStringDesc*) &TMP10159)}
+,
+{((NimStringDesc*) &TMP10174),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10175),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10176),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10177),
+((NimStringDesc*) &TMP10165)}
+,
+{((NimStringDesc*) &TMP10178),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10179),
+((NimStringDesc*) &TMP10168)}
+,
+{((NimStringDesc*) &TMP10180),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10181),
+((NimStringDesc*) &TMP10171)}
 ,
 {((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10225),
-((NimStringDesc*) &TMP10225)}
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10158),
+((NimStringDesc*) &TMP10159)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10225),
-((NimStringDesc*) &TMP10225)}
+{((NimStringDesc*) &TMP10160),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10161),
+((NimStringDesc*) &TMP10162)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10224),
-((NimStringDesc*) &TMP10224)}
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10159),
+((NimStringDesc*) &TMP10159)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10162),
+((NimStringDesc*) &TMP10162)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10165),
+((NimStringDesc*) &TMP10165)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10182),
+((NimStringDesc*) &TMP10182)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10183),
+((NimStringDesc*) &TMP10183)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10184),
+((NimStringDesc*) &TMP10184)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10185),
+((NimStringDesc*) &TMP10185)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10186),
+((NimStringDesc*) &TMP10186)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10187),
+((NimStringDesc*) &TMP10187)}
+,
+{((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10189),
+((NimStringDesc*) &TMP10189)}
+,
+{((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10191),
+((NimStringDesc*) &TMP10191)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10183),
+((NimStringDesc*) &TMP10183)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10184),
+((NimStringDesc*) &TMP10184)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10185),
+((NimStringDesc*) &TMP10185)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10186),
+((NimStringDesc*) &TMP10186)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10187),
+((NimStringDesc*) &TMP10187)}
+,
+{((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10188),
+((NimStringDesc*) &TMP10189),
+((NimStringDesc*) &TMP10189)}
+,
+{((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10190),
+((NimStringDesc*) &TMP10191),
+((NimStringDesc*) &TMP10191)}
+,
+{((NimStringDesc*) &TMP10192),
+((NimStringDesc*) &TMP10192),
+((NimStringDesc*) &TMP10193),
+((NimStringDesc*) &TMP10193)}
+,
+{((NimStringDesc*) &TMP10194),
+((NimStringDesc*) &TMP10194),
+((NimStringDesc*) &TMP10195),
+((NimStringDesc*) &TMP10195)}
+,
+{((NimStringDesc*) &TMP10196),
+((NimStringDesc*) &TMP10196),
+((NimStringDesc*) &TMP10197),
+((NimStringDesc*) &TMP10197)}
+,
+{((NimStringDesc*) &TMP10198),
+((NimStringDesc*) &TMP10198),
+((NimStringDesc*) &TMP10199),
+((NimStringDesc*) &TMP10199)}
+,
+{((NimStringDesc*) &TMP10200),
+((NimStringDesc*) &TMP10200),
+((NimStringDesc*) &TMP10201),
+((NimStringDesc*) &TMP10201)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10205),
+((NimStringDesc*) &TMP10205),
+((NimStringDesc*) &TMP10206),
+((NimStringDesc*) &TMP10206)}
+,
+{((NimStringDesc*) &TMP10207),
+((NimStringDesc*) &TMP10207),
+((NimStringDesc*) &TMP10208),
+((NimStringDesc*) &TMP10208)}
+,
+{((NimStringDesc*) &TMP10209),
+((NimStringDesc*) &TMP10209),
+((NimStringDesc*) &TMP10210),
+((NimStringDesc*) &TMP10210)}
+,
+{((NimStringDesc*) &TMP10211),
+((NimStringDesc*) &TMP10211),
+((NimStringDesc*) &TMP10212),
+((NimStringDesc*) &TMP10212)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10203),
+((NimStringDesc*) &TMP10203)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10204),
+((NimStringDesc*) &TMP10204)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10213),
+((NimStringDesc*) &TMP10213)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10202),
+((NimStringDesc*) &TMP10202)}
+,
+{((NimStringDesc*) &TMP10214),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10215),
-((NimStringDesc*) &TMP10215)}
+((NimStringDesc*) &TMP10216)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10217),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10218),
+((NimStringDesc*) &TMP10216)}
+,
+{((NimStringDesc*) &TMP10219),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10220),
-((NimStringDesc*) &TMP10220)}
+((NimStringDesc*) &TMP10221)}
 ,
-{((NimStringDesc*) &TMP10226),
+{((NimStringDesc*) &TMP10222),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10223),
+((NimStringDesc*) &TMP10221)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10254),
+((NimStringDesc*) &TMP10254)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10225),
+((NimStringDesc*) &TMP10225)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10226),
+((NimStringDesc*) &TMP10226)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10226),
+((NimStringDesc*) &TMP10226)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10225),
+((NimStringDesc*) &TMP10225)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10216),
+((NimStringDesc*) &TMP10216)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10221),
+((NimStringDesc*) &TMP10221)}
+,
+{((NimStringDesc*) &TMP10227),
 ((NimStringDesc*) &TMP10227),
-((NimStringDesc*) &TMP10227)}
-,
-{((NimStringDesc*) &TMP10228),
 ((NimStringDesc*) &TMP10228),
+((NimStringDesc*) &TMP10228)}
+,
+{((NimStringDesc*) &TMP10229),
 ((NimStringDesc*) &TMP10229),
-((NimStringDesc*) &TMP10229)}
-,
-{((NimStringDesc*) &TMP10230),
 ((NimStringDesc*) &TMP10230),
+((NimStringDesc*) &TMP10230)}
+,
+{((NimStringDesc*) &TMP10231),
 ((NimStringDesc*) &TMP10231),
-((NimStringDesc*) &TMP10231)}
-,
-{((NimStringDesc*) &TMP10232),
 ((NimStringDesc*) &TMP10232),
+((NimStringDesc*) &TMP10232)}
+,
+{((NimStringDesc*) &TMP10233),
 ((NimStringDesc*) &TMP10233),
-((NimStringDesc*) &TMP10233)}
-,
-{((NimStringDesc*) &TMP10234),
 ((NimStringDesc*) &TMP10234),
+((NimStringDesc*) &TMP10234)}
+,
+{((NimStringDesc*) &TMP10235),
 ((NimStringDesc*) &TMP10235),
-((NimStringDesc*) &TMP10235)}
-,
-{((NimStringDesc*) &TMP10236),
 ((NimStringDesc*) &TMP10236),
+((NimStringDesc*) &TMP10236)}
+,
+{((NimStringDesc*) &TMP10237),
 ((NimStringDesc*) &TMP10237),
-((NimStringDesc*) &TMP10237)}
-,
-{((NimStringDesc*) &TMP10238),
 ((NimStringDesc*) &TMP10238),
+((NimStringDesc*) &TMP10238)}
+,
+{((NimStringDesc*) &TMP10239),
 ((NimStringDesc*) &TMP10239),
-((NimStringDesc*) &TMP10239)}
-,
-{((NimStringDesc*) &TMP10240),
 ((NimStringDesc*) &TMP10240),
+((NimStringDesc*) &TMP10240)}
+,
+{((NimStringDesc*) &TMP10241),
 ((NimStringDesc*) &TMP10241),
-((NimStringDesc*) &TMP10241)}
-,
-{((NimStringDesc*) &TMP10242),
 ((NimStringDesc*) &TMP10242),
+((NimStringDesc*) &TMP10242)}
+,
+{((NimStringDesc*) &TMP10243),
 ((NimStringDesc*) &TMP10243),
-((NimStringDesc*) &TMP10243)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
 ((NimStringDesc*) &TMP10244),
 ((NimStringDesc*) &TMP10244)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10244),
-((NimStringDesc*) &TMP10244)}
-,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10245),
 ((NimStringDesc*) &TMP10245)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10245),
 ((NimStringDesc*) &TMP10245)}
 ,
-{((NimStringDesc*) &TMP10246),
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
 ((NimStringDesc*) &TMP10246),
+((NimStringDesc*) &TMP10246)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10246),
+((NimStringDesc*) &TMP10246)}
+,
+{((NimStringDesc*) &TMP10247),
 ((NimStringDesc*) &TMP10247),
-((NimStringDesc*) &TMP10247)}
-,
-{((NimStringDesc*) &TMP10248),
 ((NimStringDesc*) &TMP10248),
+((NimStringDesc*) &TMP10248)}
+,
+{((NimStringDesc*) &TMP10249),
 ((NimStringDesc*) &TMP10249),
-((NimStringDesc*) &TMP10249)}
-,
-{((NimStringDesc*) &TMP10250),
 ((NimStringDesc*) &TMP10250),
+((NimStringDesc*) &TMP10250)}
+,
+{((NimStringDesc*) &TMP10251),
 ((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10251),
-((NimStringDesc*) &TMP10251)}
-,
-{((NimStringDesc*) &TMP10250),
-((NimStringDesc*) &TMP10250),
 ((NimStringDesc*) &TMP10252),
 ((NimStringDesc*) &TMP10252)}
 ,
-{((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10156),
-((NimStringDesc*) &TMP10244),
-((NimStringDesc*) &TMP10244)}
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10252),
+((NimStringDesc*) &TMP10252)}
+,
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10252),
+((NimStringDesc*) &TMP10252)}
+,
+{((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10251),
+((NimStringDesc*) &TMP10253),
+((NimStringDesc*) &TMP10253)}
+,
+{((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10157),
+((NimStringDesc*) &TMP10245),
+((NimStringDesc*) &TMP10245)}
 }
 ;
-STRING_LITERAL(TMP10256, "// line $2 \"$1\"$n", 17);
-STRING_LITERAL(TMP10257, "-- line $2 \"$1\"$n", 17);
-STRING_LITERAL(TMP10258, "endb", 4);
-STRING_LITERAL(TMP10259, "endb($1);$n", 11);
-STRING_LITERAL(TMP10260, "F.line = $1;$n", 14);
-NIM_CONST TY147211 TMP10261 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10257, "// line $2 \"$1\"$n", 17);
+STRING_LITERAL(TMP10258, "-- line $2 \"$1\"$n", 17);
+STRING_LITERAL(TMP10259, "endb", 4);
+STRING_LITERAL(TMP10260, "endb($1);$n", 11);
+STRING_LITERAL(TMP10261, "F.line = $1;$n", 14);
+NIM_CONST TY147211 TMP10262 = {((NimStringDesc*) &TMP10139),
 ((NI) 510)}
 ;
-STRING_LITERAL(TMP10264, "L$1: while (true) {$n", 21);
-STRING_LITERAL(TMP10265, "while true do$n", 15);
-STRING_LITERAL(TMP10266, "if (!$1) break L$2;$n", 21);
-STRING_LITERAL(TMP10267, "if not $1 then goto ::L$2:: end;$n", 34);
-STRING_LITERAL(TMP10268, "}$n", 3);
-STRING_LITERAL(TMP10269, "end ::L$#::$n", 13);
-STRING_LITERAL(TMP10270, "$1 = $2;$n", 10);
-STRING_LITERAL(TMP10271, "$1;$n", 5);
-STRING_LITERAL(TMP10273, "var $1 = {prev: excHandler, exc: null};$nexcHandler = $1;$n", 59);
-STRING_LITERAL(TMP10274, "local $1 = pcall(", 17);
-STRING_LITERAL(TMP10275, "framePtr = F;", 13);
-STRING_LITERAL(TMP10276, "try {$n", 7);
-STRING_LITERAL(TMP10277, "function()$n", 12);
-STRING_LITERAL(TMP10278, "} catch (EXC) {$n  lastJSError = EXC;$n", 39);
-STRING_LITERAL(TMP10279, "end)$n", 6);
-STRING_LITERAL(TMP10280, "else {$n", 8);
-STRING_LITERAL(TMP10281, "else$n", 6);
-STRING_LITERAL(TMP10282, "end$n", 5);
-STRING_LITERAL(TMP10283, "isObj", 5);
-STRING_LITERAL(TMP10285, "genTryStmt", 10);
-STRING_LITERAL(TMP10286, "||", 2);
-STRING_LITERAL(TMP10287, " or ", 4);
-STRING_LITERAL(TMP10288, "isObj($1.exc.m_type, $2)", 24);
-STRING_LITERAL(TMP10290, "else ", 5);
-STRING_LITERAL(TMP10291, "if ($1.exc && ($2)) {$n", 23);
-STRING_LITERAL(TMP10292, "if $1.exc and ($2) then$n", 25);
-STRING_LITERAL(TMP10295, "} finally {", 11);
-STRING_LITERAL(TMP10296, "excHandler = excHandler.prev;", 29);
-STRING_LITERAL(TMP10297, "}", 1);
-STRING_LITERAL(TMP10298, "raiseException", 14);
-STRING_LITERAL(TMP10299, "raiseException($1, $2);$n", 25);
-STRING_LITERAL(TMP10300, "reraiseException", 16);
-STRING_LITERAL(TMP10301, "reraiseException();", 19);
-STRING_LITERAL(TMP10302, "toJSStr", 7);
-STRING_LITERAL(TMP10303, "switch (toJSStr($1)) {$n", 24);
-STRING_LITERAL(TMP10304, "switch ($1) {$n", 15);
-static NIM_CONST TY192031 TMP10307 = {
+STRING_LITERAL(TMP10265, "L$1: while (true) {$n", 21);
+STRING_LITERAL(TMP10266, "while true do$n", 15);
+STRING_LITERAL(TMP10267, "if (!$1) break L$2;$n", 21);
+STRING_LITERAL(TMP10268, "if not $1 then goto ::L$2:: end;$n", 34);
+STRING_LITERAL(TMP10269, "}$n", 3);
+STRING_LITERAL(TMP10270, "end ::L$#::$n", 13);
+STRING_LITERAL(TMP10271, "$1 = $2;$n", 10);
+STRING_LITERAL(TMP10272, "$1;$n", 5);
+STRING_LITERAL(TMP10274, "var $1 = {prev: excHandler, exc: null};$nexcHandler = $1;$n", 59);
+STRING_LITERAL(TMP10275, "local $1 = pcall(", 17);
+STRING_LITERAL(TMP10276, "framePtr = F;", 13);
+STRING_LITERAL(TMP10277, "try {$n", 7);
+STRING_LITERAL(TMP10278, "function()$n", 12);
+STRING_LITERAL(TMP10279, "} catch (EXC) {$n  lastJSError = EXC;$n", 39);
+STRING_LITERAL(TMP10280, "end)$n", 6);
+STRING_LITERAL(TMP10281, "else {$n", 8);
+STRING_LITERAL(TMP10282, "else$n", 6);
+STRING_LITERAL(TMP10283, "end$n", 5);
+STRING_LITERAL(TMP10284, "isObj", 5);
+STRING_LITERAL(TMP10286, "genTryStmt", 10);
+STRING_LITERAL(TMP10287, "||", 2);
+STRING_LITERAL(TMP10288, " or ", 4);
+STRING_LITERAL(TMP10289, "isObj($1.exc.m_type, $2)", 24);
+STRING_LITERAL(TMP10291, "else ", 5);
+STRING_LITERAL(TMP10292, "if ($1.exc && ($2)) {$n", 23);
+STRING_LITERAL(TMP10293, "if $1.exc and ($2) then$n", 25);
+STRING_LITERAL(TMP10296, "} finally {", 11);
+STRING_LITERAL(TMP10297, "excHandler = excHandler.prev;", 29);
+STRING_LITERAL(TMP10298, "}", 1);
+STRING_LITERAL(TMP10299, "raiseException", 14);
+STRING_LITERAL(TMP10300, "raiseException($1, $2);$n", 25);
+STRING_LITERAL(TMP10301, "reraiseException", 16);
+STRING_LITERAL(TMP10302, "reraiseException();", 19);
+STRING_LITERAL(TMP10303, "toJSStr", 7);
+STRING_LITERAL(TMP10304, "switch (toJSStr($1)) {$n", 24);
+STRING_LITERAL(TMP10305, "switch ($1) {$n", 15);
+static NIM_CONST TY192031 TMP10308 = {
 0xE0, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10308, "intVal", 6);
-STRING_LITERAL(TMP10309, "case $1: ", 9);
-STRING_LITERAL(TMP10311, "jsgen.genCaseStmt: 2", 20);
-STRING_LITERAL(TMP10313, "$nbreak;$n", 10);
-STRING_LITERAL(TMP10314, "default: $n", 11);
-STRING_LITERAL(TMP10315, "break;$n", 8);
-STRING_LITERAL(TMP10316, "jsgen.genCaseStmt", 17);
-STRING_LITERAL(TMP10318, "eqStr", 5);
-STRING_LITERAL(TMP10320, "$nelsif ", 8);
-STRING_LITERAL(TMP10321, "if ", 3);
-STRING_LITERAL(TMP10323, "$1 >= $2 and $1 <= $3", 21);
-STRING_LITERAL(TMP10324, "eqStr($1, $2)", 13);
-STRING_LITERAL(TMP10325, "$1 == $2", 8);
-STRING_LITERAL(TMP10327, " then$n", 7);
-STRING_LITERAL(TMP10329, "$nend$n", 7);
-STRING_LITERAL(TMP10331, "genBlock", 8);
-STRING_LITERAL(TMP10334, "L$1: do {$n", 11);
-STRING_LITERAL(TMP10335, "} while(false);$n", 17);
-STRING_LITERAL(TMP10336, "$n::L$#::$n", 11);
-STRING_LITERAL(TMP10337, "n.sons[0].kind == nkSym ", 24);
-STRING_LITERAL(TMP10338, "sym.loc.k == locOther ", 22);
-STRING_LITERAL(TMP10342, "no loop to break", 16);
-STRING_LITERAL(TMP10343, "break L$1;$n", 12);
-STRING_LITERAL(TMP10344, "goto ::L$1::;$n", 15);
-STRING_LITERAL(TMP10345, "n.kind == nkAsmStmt ", 20);
-STRING_LITERAL(TMP10347, "jsgen: genAsmStmt()", 19);
-STRING_LITERAL(TMP10351, "if ($1) {$n", 11);
-STRING_LITERAL(TMP10352, "if $# then$n", 12);
-STRING_LITERAL(TMP10356, "typ.n.sons[i].kind == nkSym ", 28);
-STRING_LITERAL(TMP10357, "_Idx", 4);
+STRING_LITERAL(TMP10309, "intVal", 6);
+STRING_LITERAL(TMP10310, "case $1: ", 9);
+STRING_LITERAL(TMP10312, "jsgen.genCaseStmt: 2", 20);
+STRING_LITERAL(TMP10314, "$nbreak;$n", 10);
+STRING_LITERAL(TMP10315, "default: $n", 11);
+STRING_LITERAL(TMP10316, "break;$n", 8);
+STRING_LITERAL(TMP10317, "jsgen.genCaseStmt", 17);
+STRING_LITERAL(TMP10319, "eqStr", 5);
+STRING_LITERAL(TMP10321, "$nelsif ", 8);
+STRING_LITERAL(TMP10322, "if ", 3);
+STRING_LITERAL(TMP10324, "$1 >= $2 and $1 <= $3", 21);
+STRING_LITERAL(TMP10325, "eqStr($1, $2)", 13);
+STRING_LITERAL(TMP10326, "$1 == $2", 8);
+STRING_LITERAL(TMP10328, " then$n", 7);
+STRING_LITERAL(TMP10330, "$nend$n", 7);
+STRING_LITERAL(TMP10332, "genBlock", 8);
+STRING_LITERAL(TMP10335, "L$1: do {$n", 11);
+STRING_LITERAL(TMP10336, "} while(false);$n", 17);
+STRING_LITERAL(TMP10337, "$n::L$#::$n", 11);
+STRING_LITERAL(TMP10338, "n.sons[0].kind == nkSym ", 24);
+STRING_LITERAL(TMP10339, "sym.loc.k == locOther ", 22);
+STRING_LITERAL(TMP10343, "no loop to break", 16);
+STRING_LITERAL(TMP10344, "break L$1;$n", 12);
+STRING_LITERAL(TMP10345, "goto ::L$1::;$n", 15);
+STRING_LITERAL(TMP10346, "n.kind == nkAsmStmt ", 20);
+STRING_LITERAL(TMP10348, "jsgen: genAsmStmt()", 19);
+STRING_LITERAL(TMP10352, "if ($1) {$n", 11);
+STRING_LITERAL(TMP10353, "if $# then$n", 12);
+STRING_LITERAL(TMP10357, "typ.n.sons[i].kind == nkSym ", 28);
+STRING_LITERAL(TMP10358, "_Idx", 4);
 NIM_CONST TY192031 nodekindsneednocopy_501060 = {
 0xE0, 0x07, 0x77, 0xFC, 0xE1, 0x00, 0x00, 0x00,
 0x80, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY192031 TMP10359 = {
+static NIM_CONST TY192031 TMP10360 = {
 0xE0, 0x07, 0x77, 0xFC, 0xE1, 0x00, 0x00, 0x00,
 0x80, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10360, "nimCopy", 7);
-STRING_LITERAL(TMP10361, "$1 = nimCopy($2, $3);$n", 23);
-STRING_LITERAL(TMP10362, "genAsgn", 7);
-STRING_LITERAL(TMP10363, "$1 = $2; $3 = $4;$n", 19);
-STRING_LITERAL(TMP10366, "genSwap", 7);
-STRING_LITERAL(TMP10367, "var $1 = $2; $2 = $3; $3 = $1;$n", 32);
-STRING_LITERAL(TMP10368, "local $1 = $2; $2 = $3; $3 = $1;$n", 34);
-STRING_LITERAL(TMP10369, "var $1 = $2; $2 = $3; $3 = $1;", 30);
-STRING_LITERAL(TMP10370, "local $1 = $2; $2 = $3; $3 = $1;", 32);
-STRING_LITERAL(TMP10371, "genFieldPosition", 16);
-STRING_LITERAL(TMP10372, "Field", 5);
-STRING_LITERAL(TMP10373, "genFieldAddr", 12);
-NIM_CONST TY147211 TMP10374 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10361, "nimCopy", 7);
+STRING_LITERAL(TMP10362, "$1 = nimCopy($2, $3);$n", 23);
+STRING_LITERAL(TMP10363, "genAsgn", 7);
+STRING_LITERAL(TMP10364, "$1 = $2; $3 = $4;$n", 19);
+STRING_LITERAL(TMP10367, "genSwap", 7);
+STRING_LITERAL(TMP10368, "var $1 = $2; $2 = $3; $3 = $1;$n", 32);
+STRING_LITERAL(TMP10369, "local $1 = $2; $2 = $3; $3 = $1;$n", 34);
+STRING_LITERAL(TMP10370, "var $1 = $2; $2 = $3; $3 = $1;", 30);
+STRING_LITERAL(TMP10371, "local $1 = $2; $2 = $3; $3 = $1;", 32);
+STRING_LITERAL(TMP10372, "genFieldPosition", 16);
+STRING_LITERAL(TMP10373, "Field", 5);
+STRING_LITERAL(TMP10374, "genFieldAddr", 12);
+NIM_CONST TY147211 TMP10375 = {((NimStringDesc*) &TMP10139),
 ((NI) 873)}
 ;
-STRING_LITERAL(TMP10375, "$1.Field$2", 10);
-STRING_LITERAL(TMP10376, "$1.$2", 5);
-NIM_CONST TY147211 TMP10377 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10376, "$1.Field$2", 10);
+STRING_LITERAL(TMP10377, "$1.$2", 5);
+NIM_CONST TY147211 TMP10378 = {((NimStringDesc*) &TMP10139),
 ((NI) 891)}
 ;
-NIM_CONST TY147211 TMP10378 = {((NimStringDesc*) &TMP10138),
+NIM_CONST TY147211 TMP10379 = {((NimStringDesc*) &TMP10139),
 ((NI) 905)}
 ;
-STRING_LITERAL(TMP10379, "chckIndx", 8);
-STRING_LITERAL(TMP10380, "chckIndx($1, $2, $3.length)-$2", 30);
-STRING_LITERAL(TMP10381, "($1)-$2", 7);
-STRING_LITERAL(TMP10382, "expr(nkBracketExpr, ", 20);
-STRING_LITERAL(TMP10383, "genArrayAccess", 14);
-STRING_LITERAL(TMP10384, "$1[$2]", 6);
-STRING_LITERAL(TMP10385, "genAddr: 3", 10);
-STRING_LITERAL(TMP10386, "[0]", 3);
-STRING_LITERAL(TMP10387, "0", 1);
-STRING_LITERAL(TMP10388, "genAddr: 2", 10);
-STRING_LITERAL(TMP10389, "genAddr", 7);
-STRING_LITERAL(TMP10390, "symbol has no generated name: ", 30);
-STRING_LITERAL(TMP10391, "$1[0]", 5);
-STRING_LITERAL(TMP10392, "$1[1]", 5);
-STRING_LITERAL(TMP10393, "genDeref", 8);
-STRING_LITERAL(TMP10394, "(", 1);
-STRING_LITERAL(TMP10397, ")", 1);
-STRING_LITERAL(TMP10398, "cannot invoke with infix syntax", 31);
-STRING_LITERAL(TMP10399, ".", 1);
-STRING_LITERAL(TMP10402, "rawEcho", 7);
-STRING_LITERAL(TMP10403, "rawEcho(", 8);
-NIM_CONST TY147211 TMP10404 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10380, "chckIndx", 8);
+STRING_LITERAL(TMP10381, "chckIndx($1, $2, $3.length)-$2", 30);
+STRING_LITERAL(TMP10382, "($1)-$2", 7);
+STRING_LITERAL(TMP10383, "expr(nkBracketExpr, ", 20);
+STRING_LITERAL(TMP10384, "genArrayAccess", 14);
+STRING_LITERAL(TMP10385, "$1[$2]", 6);
+STRING_LITERAL(TMP10386, "genAddr: 3", 10);
+STRING_LITERAL(TMP10387, "[0]", 3);
+STRING_LITERAL(TMP10388, "0", 1);
+STRING_LITERAL(TMP10389, "genAddr: 2", 10);
+STRING_LITERAL(TMP10390, "genAddr", 7);
+STRING_LITERAL(TMP10391, "symbol has no generated name: ", 30);
+STRING_LITERAL(TMP10392, "$1[0]", 5);
+STRING_LITERAL(TMP10393, "$1[1]", 5);
+STRING_LITERAL(TMP10394, "genDeref", 8);
+STRING_LITERAL(TMP10395, "(", 1);
+STRING_LITERAL(TMP10398, ")", 1);
+STRING_LITERAL(TMP10399, "cannot invoke with infix syntax", 31);
+STRING_LITERAL(TMP10400, ".", 1);
+STRING_LITERAL(TMP10403, "rawEcho", 7);
+STRING_LITERAL(TMP10404, "rawEcho(", 8);
+NIM_CONST TY147211 TMP10405 = {((NimStringDesc*) &TMP10139),
 ((NI) 1091)}
 ;
-STRING_LITERAL(TMP10407, "[$1]", 4);
-STRING_LITERAL(TMP10412, ": ", 2);
-STRING_LITERAL(TMP10414, "createRecordVarAux", 18);
-STRING_LITERAL(TMP10415, "0.0", 3);
-STRING_LITERAL(TMP10416, "{}", 2);
-STRING_LITERAL(TMP10417, "false", 5);
-STRING_LITERAL(TMP10418, "arrayConstr", 11);
-STRING_LITERAL(TMP10419, "arrayConstr($1, $2, $3)", 23);
-STRING_LITERAL(TMP10420, "[", 1);
-STRING_LITERAL(TMP10422, "]", 1);
-STRING_LITERAL(TMP10423, "{", 1);
-STRING_LITERAL(TMP10424, "Field$1: $2", 11);
-STRING_LITERAL(TMP10425, "Field$# = $#", 12);
-STRING_LITERAL(TMP10428, "m_type: $1", 10);
-STRING_LITERAL(TMP10429, "m_type = $#", 11);
-STRING_LITERAL(TMP10430, "[null, 0]", 9);
-STRING_LITERAL(TMP10431, "{nil, 0}", 8);
-STRING_LITERAL(TMP10432, "nil", 3);
-STRING_LITERAL(TMP10433, "createVar: ", 11);
-STRING_LITERAL(TMP10434, "var $1 = $2;$n", 14);
-STRING_LITERAL(TMP10435, "local $1 = $2;$n", 16);
-STRING_LITERAL(TMP10436, "nimCopy($1, $2)", 15);
-STRING_LITERAL(TMP10437, "genVarInit", 10);
-STRING_LITERAL(TMP10438, "var $1 = [$2, $3];$n", 20);
-STRING_LITERAL(TMP10439, "local $1 = {$2, $3};$n", 22);
-STRING_LITERAL(TMP10440, "var $1 = $2; var $1_Idx = $3;$n", 31);
-STRING_LITERAL(TMP10441, "local $1 = $2; local $1_Idx = $3;$n", 35);
-STRING_LITERAL(TMP10442, "var $1 = /**/[$2];$n", 20);
-STRING_LITERAL(TMP10443, "local $1 = {$2};$n", 18);
-STRING_LITERAL(TMP10445, "a.kind == nkIdentDefs ", 22);
-STRING_LITERAL(TMP10446, "a.sons[0].kind == nkSym ", 24);
-STRING_LITERAL(TMP10448, "$1 = new Array($2); for (var i=0;i<$2;++i) {$1[i]=$3;}", 54);
-STRING_LITERAL(TMP10449, "($1 ? 1:0)", 10);
-STRING_LITERAL(TMP10450, "toBool($#)", 10);
-STRING_LITERAL(TMP10451, "genOrd", 6);
-STRING_LITERAL(TMP10452, "[$1].concat(", 12);
-STRING_LITERAL(TMP10453, "($1.slice(0,-1)).concat(", 24);
-STRING_LITERAL(TMP10455, "[$1],", 5);
-STRING_LITERAL(TMP10456, "$1.slice(0,-1),", 15);
-STRING_LITERAL(TMP10460, "[$1, 0])", 8);
-STRING_LITERAL(TMP10461, "$1)", 3);
-STRING_LITERAL(TMP10462, "(\"\"+ ($1))", 10);
-STRING_LITERAL(TMP10463, "cstrToNimstr($1.node.sons[$2].name)", 35);
-STRING_LITERAL(TMP10464, "genRepr: Not implemented", 24);
-STRING_LITERAL(TMP10465, "($1.m_type == $2)", 17);
-STRING_LITERAL(TMP10466, "isObj($1.m_type, $2)", 20);
-STRING_LITERAL(TMP10467, "genericReset", 12);
-STRING_LITERAL(TMP10468, "$1 = genericReset($1, $2);$n", 28);
-STRING_LITERAL(TMP10469, "$1 - 1", 6);
-STRING_LITERAL(TMP10470, "subInt($1, 1)", 13);
-STRING_LITERAL(TMP10471, "addChar", 7);
-STRING_LITERAL(TMP10472, "if ($1 != null) { addChar($1, $2); } else { $1 = [$2, 0]; }", 59);
-STRING_LITERAL(TMP10473, "if ($1 != null) { $1 += $2; } else { $1 = $2; }", 47);
-STRING_LITERAL(TMP10474, "if ($1 != null) { $1 = ($1.slice(0, -1)).concat($2); } else { $"
+STRING_LITERAL(TMP10408, "[$1]", 4);
+STRING_LITERAL(TMP10413, ": ", 2);
+STRING_LITERAL(TMP10415, "createRecordVarAux", 18);
+STRING_LITERAL(TMP10416, "0.0", 3);
+STRING_LITERAL(TMP10417, "{}", 2);
+STRING_LITERAL(TMP10418, "false", 5);
+STRING_LITERAL(TMP10419, "arrayConstr", 11);
+STRING_LITERAL(TMP10420, "arrayConstr($1, $2, $3)", 23);
+STRING_LITERAL(TMP10421, "[", 1);
+STRING_LITERAL(TMP10423, "]", 1);
+STRING_LITERAL(TMP10424, "{", 1);
+STRING_LITERAL(TMP10425, "Field$1: $2", 11);
+STRING_LITERAL(TMP10426, "Field$# = $#", 12);
+STRING_LITERAL(TMP10429, "m_type: $1", 10);
+STRING_LITERAL(TMP10430, "m_type = $#", 11);
+STRING_LITERAL(TMP10431, "[null, 0]", 9);
+STRING_LITERAL(TMP10432, "{nil, 0}", 8);
+STRING_LITERAL(TMP10433, "nil", 3);
+STRING_LITERAL(TMP10434, "createVar: ", 11);
+STRING_LITERAL(TMP10435, "var $1 = $2;$n", 14);
+STRING_LITERAL(TMP10436, "local $1 = $2;$n", 16);
+STRING_LITERAL(TMP10437, "nimCopy($1, $2)", 15);
+STRING_LITERAL(TMP10438, "genVarInit", 10);
+STRING_LITERAL(TMP10439, "var $1 = [$2, $3];$n", 20);
+STRING_LITERAL(TMP10440, "local $1 = {$2, $3};$n", 22);
+STRING_LITERAL(TMP10441, "var $1 = $2; var $1_Idx = $3;$n", 31);
+STRING_LITERAL(TMP10442, "local $1 = $2; local $1_Idx = $3;$n", 35);
+STRING_LITERAL(TMP10443, "var $1 = /**/[$2];$n", 20);
+STRING_LITERAL(TMP10444, "local $1 = {$2};$n", 18);
+STRING_LITERAL(TMP10446, "a.kind == nkIdentDefs ", 22);
+STRING_LITERAL(TMP10447, "a.sons[0].kind == nkSym ", 24);
+STRING_LITERAL(TMP10449, "$1 = new Array($2); for (var i=0;i<$2;++i) {$1[i]=$3;}", 54);
+STRING_LITERAL(TMP10450, "($1 ? 1:0)", 10);
+STRING_LITERAL(TMP10451, "toBool($#)", 10);
+STRING_LITERAL(TMP10452, "genOrd", 6);
+STRING_LITERAL(TMP10453, "[$1].concat(", 12);
+STRING_LITERAL(TMP10454, "($1.slice(0,-1)).concat(", 24);
+STRING_LITERAL(TMP10456, "[$1],", 5);
+STRING_LITERAL(TMP10457, "$1.slice(0,-1),", 15);
+STRING_LITERAL(TMP10461, "[$1, 0])", 8);
+STRING_LITERAL(TMP10462, "$1)", 3);
+STRING_LITERAL(TMP10463, "(\"\"+ ($1))", 10);
+STRING_LITERAL(TMP10464, "cstrToNimstr($1.node.sons[$2].name)", 35);
+STRING_LITERAL(TMP10465, "genRepr: Not implemented", 24);
+STRING_LITERAL(TMP10466, "($1.m_type == $2)", 17);
+STRING_LITERAL(TMP10467, "isObj($1.m_type, $2)", 20);
+STRING_LITERAL(TMP10468, "genericReset", 12);
+STRING_LITERAL(TMP10469, "$1 = genericReset($1, $2);$n", 28);
+STRING_LITERAL(TMP10470, "$1 - 1", 6);
+STRING_LITERAL(TMP10471, "subInt($1, 1)", 13);
+STRING_LITERAL(TMP10472, "addChar", 7);
+STRING_LITERAL(TMP10473, "if ($1 != null) { addChar($1, $2); } else { $1 = [$2, 0]; }", 59);
+STRING_LITERAL(TMP10474, "if ($1 != null) { $1 += $2; } else { $1 = $2; }", 47);
+STRING_LITERAL(TMP10475, "if ($1 != null) { $1 = ($1.slice(0, -1)).concat($2); } else { $"
 "1 = $2;}", 71);
-STRING_LITERAL(TMP10475, "if ($1 != null) { $1.push($2); } else { $1 = [$2]; }", 52);
-STRING_LITERAL(TMP10476, "eqStrings", 9);
-STRING_LITERAL(TMP10477, "eqStrings($1, $2)", 17);
-STRING_LITERAL(TMP10478, "cmpStrings", 10);
-STRING_LITERAL(TMP10479, "(cmpStrings($1, $2) <= 0)", 25);
-STRING_LITERAL(TMP10480, "(cmpStrings($1, $2) < 0)", 24);
-STRING_LITERAL(TMP10481, "$1 == null", 10);
-STRING_LITERAL(TMP10482, "($1 != null ? $1.length-1 : 0)", 30);
-STRING_LITERAL(TMP10483, "$1.length-1", 11);
-STRING_LITERAL(TMP10484, "($1 != null ? $1.length : 0)", 28);
-STRING_LITERAL(TMP10485, "$1.length", 9);
-STRING_LITERAL(TMP10486, "($1 != null ? ($1.length-2) : -1)", 33);
-STRING_LITERAL(TMP10487, "($1 != null ? ($1.length-1) : -1)", 33);
-STRING_LITERAL(TMP10488, "$1 += $2", 8);
-STRING_LITERAL(TMP10489, "$1 = addInt($1, $2)", 19);
-STRING_LITERAL(TMP10490, "$1 -= $2", 8);
-STRING_LITERAL(TMP10491, "$1 = subInt($1, $2)", 19);
-STRING_LITERAL(TMP10492, "$1.length = $2+1; $1[$1.length-1] = 0", 37);
-STRING_LITERAL(TMP10493, "$1.length = $2", 14);
-STRING_LITERAL(TMP10494, "SetCard", 7);
-STRING_LITERAL(TMP10495, "SetCard($1)", 11);
-STRING_LITERAL(TMP10496, "SetLt", 5);
-STRING_LITERAL(TMP10497, "SetLt($1, $2)", 13);
-STRING_LITERAL(TMP10498, "SetLe", 5);
-STRING_LITERAL(TMP10499, "SetLe($1, $2)", 13);
-STRING_LITERAL(TMP10500, "SetEq", 5);
-STRING_LITERAL(TMP10501, "SetEq($1, $2)", 13);
-STRING_LITERAL(TMP10502, "SetMul", 6);
-STRING_LITERAL(TMP10503, "SetMul($1, $2)", 14);
-STRING_LITERAL(TMP10504, "SetPlus", 7);
-STRING_LITERAL(TMP10505, "SetPlus($1, $2)", 15);
-STRING_LITERAL(TMP10506, "SetMinus", 8);
-STRING_LITERAL(TMP10507, "SetMinus($1, $2)", 16);
-STRING_LITERAL(TMP10508, "$1[$2] = true", 13);
-STRING_LITERAL(TMP10509, "delete $1[$2]", 13);
-STRING_LITERAL(TMP10510, "($1[$2] != undefined)", 21);
-STRING_LITERAL(TMP10511, "($1.slice($2))", 14);
-STRING_LITERAL(TMP10512, "($1.slice($2, ($3)+1).concat(0))", 32);
-STRING_LITERAL(TMP10513, "mnewString", 10);
-STRING_LITERAL(TMP10514, "mnewString($1)", 14);
-STRING_LITERAL(TMP10515, "mnewString(0)", 13);
-STRING_LITERAL(TMP10516, "SetConstr", 9);
-STRING_LITERAL(TMP10517, "SetConstr(", 10);
-STRING_LITERAL(TMP10523, "Field$#: $#", 11);
-NIM_CONST TY147211 TMP10526 = {((NimStringDesc*) &TMP10138),
+STRING_LITERAL(TMP10476, "if ($1 != null) { $1.push($2); } else { $1 = [$2]; }", 52);
+STRING_LITERAL(TMP10477, "eqStrings", 9);
+STRING_LITERAL(TMP10478, "eqStrings($1, $2)", 17);
+STRING_LITERAL(TMP10479, "cmpStrings", 10);
+STRING_LITERAL(TMP10480, "(cmpStrings($1, $2) <= 0)", 25);
+STRING_LITERAL(TMP10481, "(cmpStrings($1, $2) < 0)", 24);
+STRING_LITERAL(TMP10482, "$1 == null", 10);
+STRING_LITERAL(TMP10483, "($1 != null ? $1.length-1 : 0)", 30);
+STRING_LITERAL(TMP10484, "$1.length-1", 11);
+STRING_LITERAL(TMP10485, "($1 != null ? $1.length : 0)", 28);
+STRING_LITERAL(TMP10486, "$1.length", 9);
+STRING_LITERAL(TMP10487, "($1 != null ? ($1.length-2) : -1)", 33);
+STRING_LITERAL(TMP10488, "($1 != null ? ($1.length-1) : -1)", 33);
+STRING_LITERAL(TMP10489, "$1 += $2", 8);
+STRING_LITERAL(TMP10490, "$1 = addInt($1, $2)", 19);
+STRING_LITERAL(TMP10491, "$1 -= $2", 8);
+STRING_LITERAL(TMP10492, "$1 = subInt($1, $2)", 19);
+STRING_LITERAL(TMP10493, "$1.length = $2+1; $1[$1.length-1] = 0", 37);
+STRING_LITERAL(TMP10494, "$1.length = $2", 14);
+STRING_LITERAL(TMP10495, "SetCard", 7);
+STRING_LITERAL(TMP10496, "SetCard($1)", 11);
+STRING_LITERAL(TMP10497, "SetLt", 5);
+STRING_LITERAL(TMP10498, "SetLt($1, $2)", 13);
+STRING_LITERAL(TMP10499, "SetLe", 5);
+STRING_LITERAL(TMP10500, "SetLe($1, $2)", 13);
+STRING_LITERAL(TMP10501, "SetEq", 5);
+STRING_LITERAL(TMP10502, "SetEq($1, $2)", 13);
+STRING_LITERAL(TMP10503, "SetMul", 6);
+STRING_LITERAL(TMP10504, "SetMul($1, $2)", 14);
+STRING_LITERAL(TMP10505, "SetPlus", 7);
+STRING_LITERAL(TMP10506, "SetPlus($1, $2)", 15);
+STRING_LITERAL(TMP10507, "SetMinus", 8);
+STRING_LITERAL(TMP10508, "SetMinus($1, $2)", 16);
+STRING_LITERAL(TMP10509, "$1[$2] = true", 13);
+STRING_LITERAL(TMP10510, "delete $1[$2]", 13);
+STRING_LITERAL(TMP10511, "($1[$2] != undefined)", 21);
+STRING_LITERAL(TMP10512, "($1.slice($2))", 14);
+STRING_LITERAL(TMP10513, "($1.slice($2, ($3)+1).concat(0))", 32);
+STRING_LITERAL(TMP10514, "mnewString", 10);
+STRING_LITERAL(TMP10515, "mnewString($1)", 14);
+STRING_LITERAL(TMP10516, "mnewString(0)", 13);
+STRING_LITERAL(TMP10517, "SetConstr", 9);
+STRING_LITERAL(TMP10518, "SetConstr(", 10);
+STRING_LITERAL(TMP10524, "Field$#: $#", 11);
+NIM_CONST TY147211 TMP10527 = {((NimStringDesc*) &TMP10139),
 ((NI) 1444)}
 ;
-STRING_LITERAL(TMP10527, "$#: $#", 6);
-STRING_LITERAL(TMP10528, "$# = $#", 7);
-STRING_LITERAL(TMP10530, "(($1)? 1:0)", 11);
-STRING_LITERAL(TMP10531, "($1|0)", 6);
-STRING_LITERAL(TMP10532, "chckRange", 9);
-STRING_LITERAL(TMP10533, "chckRange($1, $2, $3)", 21);
-STRING_LITERAL(TMP10534, "convStrToCStr", 13);
-STRING_LITERAL(TMP10535, "toJSStr($1)", 11);
-STRING_LITERAL(TMP10536, "convCStrToStr", 13);
-STRING_LITERAL(TMP10537, "genReturnStmt", 13);
-STRING_LITERAL(TMP10538, "break BeforeRet;$n", 18);
-STRING_LITERAL(TMP10539, "goto ::BeforeRet::;$n", 21);
-STRING_LITERAL(TMP10540, "var F={procname:$1,prev:framePtr,filename:$2,line:0};$n", 55);
-STRING_LITERAL(TMP10541, "local F={procname=$#,prev=framePtr,filename=$#,line=0};$n", 57);
-STRING_LITERAL(TMP10542, "framePtr = F;$n", 15);
-STRING_LITERAL(TMP10543, "BeforeRet: do {$n$1} while (false); $n", 38);
-STRING_LITERAL(TMP10544, "$#;::BeforeRet::$n", 18);
-STRING_LITERAL(TMP10545, "try {$n$1} catch (e) {$n alert(\"Unhandled exception:\\n\" + e.mes"
+STRING_LITERAL(TMP10528, "$#: $#", 6);
+STRING_LITERAL(TMP10529, "$# = $#", 7);
+STRING_LITERAL(TMP10531, "(($1)? 1:0)", 11);
+STRING_LITERAL(TMP10532, "($1|0)", 6);
+STRING_LITERAL(TMP10533, "chckRange", 9);
+STRING_LITERAL(TMP10534, "chckRange($1, $2, $3)", 21);
+STRING_LITERAL(TMP10535, "convStrToCStr", 13);
+STRING_LITERAL(TMP10536, "toJSStr($1)", 11);
+STRING_LITERAL(TMP10537, "convCStrToStr", 13);
+STRING_LITERAL(TMP10538, "genReturnStmt", 13);
+STRING_LITERAL(TMP10539, "break BeforeRet;$n", 18);
+STRING_LITERAL(TMP10540, "goto ::BeforeRet::;$n", 21);
+STRING_LITERAL(TMP10541, "var F={procname:$1,prev:framePtr,filename:$2,line:0};$n", 55);
+STRING_LITERAL(TMP10542, "local F={procname=$#,prev=framePtr,filename=$#,line=0};$n", 57);
+STRING_LITERAL(TMP10543, "framePtr = F;$n", 15);
+STRING_LITERAL(TMP10544, "BeforeRet: do {$n$1} while (false); $n", 38);
+STRING_LITERAL(TMP10545, "$#;::BeforeRet::$n", 18);
+STRING_LITERAL(TMP10546, "try {$n$1} catch (e) {$n alert(\"Unhandled exception:\\n\" + e.mes"
 "sage + \"\\n\"$n}", 77);
-STRING_LITERAL(TMP10546, "framePtr = framePtr.prev;", 25);
-STRING_LITERAL(TMP10547, "var $# = $#;$n", 14);
-STRING_LITERAL(TMP10548, "local $# = $#;$n", 16);
-STRING_LITERAL(TMP10549, "return $#;$n", 12);
-STRING_LITERAL(TMP10550, "function $#($#) {$n$#$#$#$#}$n", 30);
-STRING_LITERAL(TMP10551, "function $#($#) $n$#$#$#$#$nend$n", 33);
-STRING_LITERAL(TMP10552, "$#;$n", 5);
-STRING_LITERAL(TMP10553, "null", 4);
-STRING_LITERAL(TMP10554, "nil", 3);
-STRING_LITERAL(TMP10555, "0", 1);
-static NIM_CONST TY192031 TMP10556 = {
+STRING_LITERAL(TMP10547, "framePtr = framePtr.prev;", 25);
+STRING_LITERAL(TMP10548, "var $# = $#;$n", 14);
+STRING_LITERAL(TMP10549, "local $# = $#;$n", 16);
+STRING_LITERAL(TMP10550, "return $#;$n", 12);
+STRING_LITERAL(TMP10551, "function $#($#) {$n$#$#$#$#}$n", 30);
+STRING_LITERAL(TMP10552, "function $#($#) $n$#$#$#$#$nend$n", 33);
+STRING_LITERAL(TMP10553, "$#;$n", 5);
+STRING_LITERAL(TMP10554, "null", 4);
+STRING_LITERAL(TMP10555, "nil", 3);
+STRING_LITERAL(TMP10556, "0", 1);
+static NIM_CONST TY192031 TMP10557 = {
 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10557, "floatVal", 8);
-STRING_LITERAL(TMP10558, "NaN", 3);
-STRING_LITERAL(TMP10559, "0.0", 3);
-STRING_LITERAL(TMP10560, "Infinity", 8);
-STRING_LITERAL(TMP10561, "-Infinity", 9);
-STRING_LITERAL(TMP10562, "chckRangeF", 10);
-STRING_LITERAL(TMP10563, "chckRange64", 11);
-STRING_LITERAL(TMP10567, "for statement not eliminated", 28);
-STRING_LITERAL(TMP10568, "first class iterators not implemented", 37);
-STRING_LITERAL(TMP10569, "gen: unknown node type: ", 24);
-STRING_LITERAL(TMP10570, "/* Generated by the Nim Compiler v$1 */$n/*   (c) 2015 Andreas "
+STRING_LITERAL(TMP10558, "floatVal", 8);
+STRING_LITERAL(TMP10559, "NaN", 3);
+STRING_LITERAL(TMP10560, "0.0", 3);
+STRING_LITERAL(TMP10561, "Infinity", 8);
+STRING_LITERAL(TMP10562, "-Infinity", 9);
+STRING_LITERAL(TMP10563, "chckRangeF", 10);
+STRING_LITERAL(TMP10564, "chckRange64", 11);
+STRING_LITERAL(TMP10568, "for statement not eliminated", 28);
+STRING_LITERAL(TMP10569, "first class iterators not implemented", 37);
+STRING_LITERAL(TMP10570, "gen: unknown node type: ", 24);
+STRING_LITERAL(TMP10571, "/* Generated by the Nim Compiler v$1 */$n/*   (c) 2015 Andreas "
 "Rumpf */$n$nvar framePtr = null;$nvar excHandler = null;$nvar la"
 "stJSError = null;$n", 146);
-STRING_LITERAL(TMP10571, "0.11.2", 6);
-STRING_LITERAL(TMP10572, "var F = {procname:$1,prev:framePtr,filename:$2,line:0};$nframeP"
+STRING_LITERAL(TMP10572, "0.11.2", 6);
+STRING_LITERAL(TMP10573, "var F = {procname:$1,prev:framePtr,filename:$2,line:0};$nframeP"
 "tr = F;$n", 72);
-STRING_LITERAL(TMP10573, "module ", 7);
-STRING_LITERAL(TMP10574, "framePtr = framePtr.prev;$n", 27);
-STRING_LITERAL(TMP10575, "myProcess", 9);
-STRING_LITERAL(TMP10577, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP10580, "js", 2);
-STRING_LITERAL(TMP10581, "symbol files are not possible with the JS code generator", 56);
+STRING_LITERAL(TMP10574, "module ", 7);
+STRING_LITERAL(TMP10575, "framePtr = framePtr.prev;$n", 27);
+STRING_LITERAL(TMP10576, "myProcess", 9);
+STRING_LITERAL(TMP10578, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP10581, "js", 2);
+STRING_LITERAL(TMP10582, "symbol files are not possible with the JS code generator", 56);
 NIM_CONST Tpass242017 Jsgenpass_504753 = {myopen_504743,
 myopencached_504732,
 myprocess_504597,
@@ -2122,7 +2122,7 @@ extern TNimType NTI191029; /* TNodeKind */
 Tglobals497027* globals_504510;
 extern NI gerrorcounter_164015;
 extern NimStringDesc* outfile_154134;
-N_NIMCALL(void, TMP10090)(void* p, NI op) {
+N_NIMCALL(void, TMP10091)(void* p, NI op) {
 	Tglobals497027* a;
 	a = (Tglobals497027*)p;
 	nimGCvisit((void*)(*a).typeinfo, op);
@@ -2235,12 +2235,12 @@ static N_INLINE(Ropeobj161009*, rdloc_497127)(Tcompres497023 a) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP10092)(void* p, NI op) {
+N_NIMCALL(void, TMP10093)(void* p, NI op) {
 	Tjsgen497015* a;
 	a = (Tjsgen497015*)p;
 	nimGCvisit((void*)(*a).module, op);
 }
-N_NIMCALL(void, TMP10097)(void* p, NI op) {
+N_NIMCALL(void, TMP10098)(void* p, NI op) {
 	TY497071* a;
 	NI LOC1;
 	a = (TY497071*)p;
@@ -2248,7 +2248,7 @@ N_NIMCALL(void, TMP10097)(void* p, NI op) {
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	}
 }
-N_NIMCALL(void, TMP10098)(void* p, NI op) {
+N_NIMCALL(void, TMP10099)(void* p, NI op) {
 	Tproc497033* a;
 	a = (Tproc497033*)p;
 	nimGCvisit((void*)(*a).procdef, op);
@@ -2408,9 +2408,9 @@ N_NIMCALL(Tproc497033*, newproc_497207)(Tglobals497027* globals, Tjsgen497015* m
 	nimln(123, "jsgen.nim");
 	{
 		if (!!((procdef == NIM_NIL))) goto LA4;
-		if (((TMP10099[(*procdef).kind/8] &(1<<((*procdef).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*procdef).kind/8] &(1<<((*procdef).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*procdef).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*procdef).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*procdef).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*procdef).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*procdef).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		asgnRefNoCycle((void**) (&(*result).prc), (*(*procdef).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym);
 	}
 	LA4: ;
@@ -2582,7 +2582,7 @@ N_NIMCALL(Ropeobj161009*, manglename_497277)(Tsym191843* s) {
 		LOC5 = mangle_455896((*(*s).name).s);
 		result = rope_161320(LOC5);
 		nimln(162, "jsgen.nim");
-		add_161545(&result, ((NimStringDesc*) &TMP10103));
+		add_161545(&result, ((NimStringDesc*) &TMP10104));
 		nimln(163, "jsgen.nim");
 		LOC6 = 0;
 		LOC6 = rope_161407(((NI64) ((*s).Sup.id)));
@@ -2602,14 +2602,14 @@ N_NIMCALL(Ropeobj161009*, makejsstring_497305)(NimStringDesc* s) {
 	nimln(167, "jsgen.nim");
 	{
 		if (!s == 0) goto LA3;
-		result = rope_161320(((NimStringDesc*) &TMP10104));
+		result = rope_161320(((NimStringDesc*) &TMP10105));
 	}
 	goto LA1;
 	LA3: ;
 	{
 		NimStringDesc* LOC6;
 		LOC6 = 0;
-		LOC6 = nsuEscape(s, ((NimStringDesc*) &TMP10105), ((NimStringDesc*) &TMP10105));
+		LOC6 = nsuEscape(s, ((NimStringDesc*) &TMP10106), ((NimStringDesc*) &TMP10106));
 		result = rope_161320(LOC6);
 	}
 	LA1: ;
@@ -2677,13 +2677,13 @@ N_NIMCALL(void, genenuminfo_497634)(Tproc497033* p, Ttype191849* typ, Ropeobj161
 	{
 		NI i_497653;
 		NI HEX3Atmp_497724;
-		NI TMP10109;
+		NI TMP10110;
 		NI res_497727;
 		i_497653 = 0;
 		HEX3Atmp_497724 = 0;
 		nimln(100, "jstypes.nim");
-		TMP10109 = subInt(length, ((NI) 1));
-		HEX3Atmp_497724 = (NI)(TMP10109);
+		TMP10110 = subInt(length, ((NI) 1));
+		HEX3Atmp_497724 = (NI)(TMP10110);
 		nimln(1598, "system.nim");
 		res_497727 = ((NI) 0);
 		{
@@ -2692,22 +2692,22 @@ N_NIMCALL(void, genenuminfo_497634)(Tproc497033* p, Ttype191849* typ, Ropeobj161
 				Tsym191843* field;
 				NimStringDesc* extname;
 				TY200103 LOC18;
-				NI TMP10115;
+				NI TMP10116;
 				if (!(res_497727 <= HEX3Atmp_497724)) goto LA3;
 				nimln(1600, "system.nim");
 				i_497653 = res_497727;
 				nimln(101, "jstypes.nim");
 				{
-					if (((TMP10099[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_497653) >= (NU)((*(*typ).n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					if (!!(((*(*(*typ).n).kindU.S6.sons->data[i_497653]).kind == ((NU8) 3)))) goto LA6;
-					internalerror_165199((*(*typ).n).info, ((NimStringDesc*) &TMP10110));
+					internalerror_165199((*(*typ).n).info, ((NimStringDesc*) &TMP10111));
 				}
 				LA6: ;
 				nimln(102, "jstypes.nim");
-				if (((TMP10099[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_497653) >= (NU)((*(*typ).n).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (!(((TMP10101[(*(*(*typ).n).kindU.S6.sons->data[i_497653]).kind/8] &(1<<((*(*(*typ).n).kindU.S6.sons->data[i_497653]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+				if (!(((TMP10102[(*(*(*typ).n).kindU.S6.sons->data[i_497653]).kind/8] &(1<<((*(*(*typ).n).kindU.S6.sons->data[i_497653]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 				field = (*(*(*typ).n).kindU.S6.sons->data[i_497653]).kindU.S4.sym;
 				nimln(103, "jstypes.nim");
 				{
@@ -2715,7 +2715,7 @@ N_NIMCALL(void, genenuminfo_497634)(Tproc497033* p, Ttype191849* typ, Ropeobj161
 					if (!(((NI) 0) < i_497653)) goto LA10;
 					LOC12 = 0;
 					LOC12 = rawNewString(tnl_159626->Sup.len + 2);
-appendString(LOC12, ((NimStringDesc*) &TMP10111));
+appendString(LOC12, ((NimStringDesc*) &TMP10112));
 appendString(LOC12, tnl_159626);
 					add_161545(&s, LOC12);
 				}
@@ -2728,7 +2728,7 @@ appendString(LOC12, tnl_159626);
 				goto LA13;
 				LA15: ;
 				{
-					if (!(((TMP10112[(*(*field).ast).kind/8] &(1<<((*(*field).ast).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+					if (!(((TMP10113[(*(*field).ast).kind/8] &(1<<((*(*field).ast).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 					extname = (*(*field).ast).kindU.S3.strval;
 				}
 				LA13: ;
@@ -2738,10 +2738,10 @@ appendString(LOC12, tnl_159626);
 				LOC18[0] = rope_161407(((NI64) ((*field).position)));
 				LOC18[1] = name;
 				LOC18[2] = makejsstring_497305(extname);
-				addf_162635(&s, ((NimStringDesc*) &TMP10114), LOC18, 3);
+				addf_162635(&s, ((NimStringDesc*) &TMP10115), LOC18, 3);
 				nimln(1614, "system.nim");
-				TMP10115 = addInt(res_497727, ((NI) 1));
-				res_497727 = (NI)(TMP10115);
+				TMP10116 = addInt(res_497727, ((NI) 1));
+				res_497727 = (NI)(TMP10116);
 			} LA3: ;
 		}
 	}
@@ -2751,13 +2751,13 @@ appendString(LOC12, tnl_159626);
 	LOC19[0] = rope_161407(((NI64) ((*typ).Sup.id)));
 	LOC19[1] = rope_161407(((NI64) (length)));
 	LOC19[2] = s;
-	n = HEX25_162235(((NimStringDesc*) &TMP10116), LOC19, 3);
+	n = HEX25_162235(((NimStringDesc*) &TMP10117), LOC19, 3);
 	nimln(109, "jstypes.nim");
 	memset((void*)LOC20, 0, sizeof(LOC20));
 	LOC20[0] = name;
 	nimln(110, "jstypes.nim");
 	LOC20[1] = rope_161407(((NI64) ((*typ).kind)));
-	s = HEX25_162235(((NimStringDesc*) &TMP10117), LOC20, 2);
+	s = HEX25_162235(((NimStringDesc*) &TMP10118), LOC20, 2);
 	nimln(111, "jstypes.nim");
 	prepend_162205(&(*(*p).g).typeinfo, s);
 	nimln(112, "jstypes.nim");
@@ -2766,7 +2766,7 @@ appendString(LOC12, tnl_159626);
 	memset((void*)LOC21, 0, sizeof(LOC21));
 	LOC21[0] = name;
 	LOC21[1] = rope_161407(((NI64) ((*typ).Sup.id)));
-	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10118), LOC21, 2);
+	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10119), LOC21, 2);
 	nimln(114, "jstypes.nim");
 	{
 		TY200177 LOC26;
@@ -2778,7 +2778,7 @@ appendString(LOC12, tnl_159626);
 		nimln(116, "jstypes.nim");
 		if ((NU)(((NI) 0)) >= (NU)((*typ).sons->Sup.len)) raiseIndexError();
 		LOC26[1] = gentypeinfo_497315(p, (*typ).sons->data[((NI) 0)]);
-		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10108), LOC26, 2);
+		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10109), LOC26, 2);
 	}
 	LA24: ;
 	popFrame();
@@ -2810,7 +2810,7 @@ N_NIMCALL(Ropeobj161009*, genobjectfields_497319)(Tproc497033* p, Ttype191849* t
 		{
 			if (!(length == ((NI) 1))) goto LA4;
 			nimln(24, "jstypes.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			result = genobjectfields_497319(p, typ, (*n).kindU.S6.sons->data[((NI) 0)]);
 		}
@@ -2823,20 +2823,20 @@ N_NIMCALL(Ropeobj161009*, genobjectfields_497319)(Tproc497033* p, Ttype191849* t
 			{
 				NI i_497343;
 				NI HEX3Atmp_497453;
-				NI TMP10120;
+				NI TMP10121;
 				NI res_497456;
 				i_497343 = 0;
 				HEX3Atmp_497453 = 0;
 				nimln(27, "jstypes.nim");
-				TMP10120 = subInt(length, ((NI) 1));
-				HEX3Atmp_497453 = (NI)(TMP10120);
+				TMP10121 = subInt(length, ((NI) 1));
+				HEX3Atmp_497453 = (NI)(TMP10121);
 				nimln(1598, "system.nim");
 				res_497456 = ((NI) 0);
 				{
 					nimln(1599, "system.nim");
 					while (1) {
 						Ropeobj161009* LOC15;
-						NI TMP10121;
+						NI TMP10122;
 						if (!(res_497456 <= HEX3Atmp_497453)) goto LA9;
 						nimln(1600, "system.nim");
 						i_497343 = res_497456;
@@ -2846,20 +2846,20 @@ N_NIMCALL(Ropeobj161009*, genobjectfields_497319)(Tproc497033* p, Ttype191849* t
 							if (!(((NI) 0) < i_497343)) goto LA12;
 							LOC14 = 0;
 							LOC14 = rawNewString(tnl_159626->Sup.len + 2);
-appendString(LOC14, ((NimStringDesc*) &TMP10111));
+appendString(LOC14, ((NimStringDesc*) &TMP10112));
 appendString(LOC14, tnl_159626);
 							add_161545(&s, LOC14);
 						}
 						LA12: ;
 						nimln(29, "jstypes.nim");
-						if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+						if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 						if ((NU)(i_497343) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						LOC15 = 0;
 						LOC15 = genobjectfields_497319(p, typ, (*n).kindU.S6.sons->data[i_497343]);
 						add_161534(&s, LOC15);
 						nimln(1614, "system.nim");
-						TMP10121 = addInt(res_497456, ((NI) 1));
-						res_497456 = (NI)(TMP10121);
+						TMP10122 = addInt(res_497456, ((NI) 1));
+						res_497456 = (NI)(TMP10122);
 					} LA9: ;
 				}
 			}
@@ -2868,7 +2868,7 @@ appendString(LOC14, tnl_159626);
 			nimln(31, "jstypes.nim");
 			LOC16[0] = rope_161407(((NI64) (length)));
 			LOC16[1] = s;
-			result = HEX25_162235(((NimStringDesc*) &TMP10122), LOC16, 2);
+			result = HEX25_162235(((NimStringDesc*) &TMP10123), LOC16, 2);
 		}
 		LA2: ;
 	}
@@ -2877,7 +2877,7 @@ appendString(LOC14, tnl_159626);
 	{
 		TY200103 LOC18;
 		nimln(33, "jstypes.nim");
-		if (!(((TMP10101[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		field = (*n).kindU.S4.sym;
 		nimln(34, "jstypes.nim");
 		s = gentypeinfo_497315(p, (*field).typ);
@@ -2887,7 +2887,7 @@ appendString(LOC14, tnl_159626);
 		LOC18[0] = manglename_497277(field);
 		LOC18[1] = s;
 		LOC18[2] = makejsstring_497305((*(*field).name).s);
-		result = HEX25_162235(((NimStringDesc*) &TMP10123), LOC18, 3);
+		result = HEX25_162235(((NimStringDesc*) &TMP10124), LOC18, 3);
 	}
 	break;
 	case ((NU8) 139):
@@ -2898,29 +2898,29 @@ appendString(LOC14, tnl_159626);
 		length = sonslen_194403(n);
 		nimln(40, "jstypes.nim");
 		{
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA22;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10124));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10125));
 		}
 		LA22: ;
 		nimln(41, "jstypes.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		field = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(42, "jstypes.nim");
 		s = gentypeinfo_497315(p, (*field).typ);
 		{
 			NI i_497379;
 			NI HEX3Atmp_497469;
-			NI TMP10125;
+			NI TMP10126;
 			NI res_497472;
 			i_497379 = 0;
 			HEX3Atmp_497469 = 0;
 			nimln(43, "jstypes.nim");
-			TMP10125 = subInt(length, ((NI) 1));
-			HEX3Atmp_497469 = (NI)(TMP10125);
+			TMP10126 = subInt(length, ((NI) 1));
+			HEX3Atmp_497469 = (NI)(TMP10126);
 			nimln(1598, "system.nim");
 			res_497472 = ((NI) 1);
 			{
@@ -2928,12 +2928,12 @@ appendString(LOC14, tnl_159626);
 				while (1) {
 					TY200177 LOC59;
 					Tnode191813* LOC60;
-					NI TMP10132;
+					NI TMP10133;
 					if (!(res_497472 <= HEX3Atmp_497469)) goto LA26;
 					nimln(1600, "system.nim");
 					i_497379 = res_497472;
 					nimln(44, "jstypes.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_497379) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					b = (*n).kindU.S6.sons->data[i_497379];
 					nimln(45, "jstypes.nim");
@@ -2949,35 +2949,35 @@ appendString(LOC14, tnl_159626);
 							LOC30 = sonslen_194403(b);
 							if (!(LOC30 < ((NI) 2))) goto LA31;
 							nimln(49, "jstypes.nim");
-							internalerror_165199((*b).info, ((NimStringDesc*) &TMP10126));
+							internalerror_165199((*b).info, ((NimStringDesc*) &TMP10127));
 						}
 						LA31: ;
 						{
 							NI j_497393;
 							NI HEX3Atmp_497462;
 							NI LOC34;
-							NI TMP10127;
+							NI TMP10128;
 							NI res_497465;
 							j_497393 = 0;
 							HEX3Atmp_497462 = 0;
 							nimln(50, "jstypes.nim");
 							LOC34 = 0;
 							LOC34 = sonslen_194403(b);
-							TMP10127 = subInt(LOC34, ((NI) 2));
-							HEX3Atmp_497462 = (NI)(TMP10127);
+							TMP10128 = subInt(LOC34, ((NI) 2));
+							HEX3Atmp_497462 = (NI)(TMP10128);
 							nimln(1598, "system.nim");
 							res_497465 = ((NI) 0);
 							{
 								nimln(1599, "system.nim");
 								while (1) {
-									NI TMP10129;
+									NI TMP10130;
 									if (!(res_497465 <= HEX3Atmp_497462)) goto LA36;
 									nimln(1600, "system.nim");
 									j_497393 = res_497465;
 									nimln(51, "jstypes.nim");
 									{
 										if (!!((u == NIM_NIL))) goto LA39;
-										add_161545(&u, ((NimStringDesc*) &TMP10111));
+										add_161545(&u, ((NimStringDesc*) &TMP10112));
 									}
 									LA39: ;
 									nimln(52, "jstypes.nim");
@@ -2985,27 +2985,27 @@ appendString(LOC14, tnl_159626);
 										TY200177 LOC45;
 										NI64 LOC46;
 										NI64 LOC47;
-										if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(j_497393) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 										if (!((*(*b).kindU.S6.sons->data[j_497393]).kind == ((NU8) 44))) goto LA43;
 										nimln(53, "jstypes.nim");
 										memset((void*)LOC45, 0, sizeof(LOC45));
-										if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(j_497393) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
-										if (((TMP10099[(*(*b).kindU.S6.sons->data[j_497393]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[j_497393]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*(*b).kindU.S6.sons->data[j_497393]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[j_497393]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(((NI) 0)) >= (NU)((*(*b).kindU.S6.sons->data[j_497393]).kindU.S6.sons->Sup.len)) raiseIndexError();
 										LOC46 = 0;
 										LOC46 = getordvalue_221178((*(*b).kindU.S6.sons->data[j_497393]).kindU.S6.sons->data[((NI) 0)]);
 										LOC45[0] = rope_161407(LOC46);
 										nimln(54, "jstypes.nim");
-										if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(j_497393) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
-										if (((TMP10099[(*(*b).kindU.S6.sons->data[j_497393]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[j_497393]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*(*b).kindU.S6.sons->data[j_497393]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[j_497393]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(((NI) 1)) >= (NU)((*(*b).kindU.S6.sons->data[j_497393]).kindU.S6.sons->Sup.len)) raiseIndexError();
 										LOC47 = 0;
 										LOC47 = getordvalue_221178((*(*b).kindU.S6.sons->data[j_497393]).kindU.S6.sons->data[((NI) 1)]);
 										LOC45[1] = rope_161407(LOC47);
-										addf_162635(&u, ((NimStringDesc*) &TMP10128), LOC45, 2);
+										addf_162635(&u, ((NimStringDesc*) &TMP10129), LOC45, 2);
 									}
 									goto LA41;
 									LA43: ;
@@ -3013,7 +3013,7 @@ appendString(LOC14, tnl_159626);
 										NI64 LOC49;
 										Ropeobj161009* LOC50;
 										nimln(56, "jstypes.nim");
-										if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+										if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 										if ((NU)(j_497393) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 										LOC49 = 0;
 										LOC49 = getordvalue_221178((*b).kindU.S6.sons->data[j_497393]);
@@ -3023,8 +3023,8 @@ appendString(LOC14, tnl_159626);
 									}
 									LA41: ;
 									nimln(1614, "system.nim");
-									TMP10129 = addInt(res_497465, ((NI) 1));
-									res_497465 = (NI)(TMP10129);
+									TMP10130 = addInt(res_497465, ((NI) 1));
+									res_497465 = (NI)(TMP10130);
 								} LA36: ;
 							}
 						}
@@ -3042,7 +3042,7 @@ appendString(LOC14, tnl_159626);
 					default:
 					{
 						nimln(59, "jstypes.nim");
-						internalerror_165199((*n).info, ((NimStringDesc*) &TMP10130));
+						internalerror_165199((*n).info, ((NimStringDesc*) &TMP10131));
 					}
 					break;
 					}
@@ -3052,7 +3052,7 @@ appendString(LOC14, tnl_159626);
 						if (!!((result == NIM_NIL))) goto LA56;
 						LOC58 = 0;
 						LOC58 = rawNewString(tnl_159626->Sup.len + 2);
-appendString(LOC58, ((NimStringDesc*) &TMP10111));
+appendString(LOC58, ((NimStringDesc*) &TMP10112));
 appendString(LOC58, tnl_159626);
 						add_161545(&result, LOC58);
 					}
@@ -3064,10 +3064,10 @@ appendString(LOC58, tnl_159626);
 					LOC60 = 0;
 					LOC60 = lastson_194431(b);
 					LOC59[1] = genobjectfields_497319(p, typ, LOC60);
-					addf_162635(&result, ((NimStringDesc*) &TMP10131), LOC59, 2);
+					addf_162635(&result, ((NimStringDesc*) &TMP10132), LOC59, 2);
 					nimln(1614, "system.nim");
-					TMP10132 = addInt(res_497472, ((NI) 1));
-					res_497472 = (NI)(TMP10132);
+					TMP10133 = addInt(res_497472, ((NI) 1));
+					res_497472 = (NI)(TMP10133);
 				} LA26: ;
 			}
 		}
@@ -3082,13 +3082,13 @@ appendString(LOC58, tnl_159626);
 		LOC61[2] = rope_161407(LOC62);
 		LOC61[3] = makejsstring_497305((*(*field).name).s);
 		LOC61[4] = result;
-		result = HEX25_162235(((NimStringDesc*) &TMP10133), LOC61, 5);
+		result = HEX25_162235(((NimStringDesc*) &TMP10134), LOC61, 5);
 	}
 	break;
 	default:
 	{
 		nimln(66, "jstypes.nim");
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10124));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10125));
 	}
 	break;
 	}
@@ -3107,7 +3107,7 @@ N_NIMCALL(void, genobjectinfo_497506)(Tproc497033* p, Ttype191849* typ, Ropeobj1
 	LOC1[0] = name;
 	nimln(70, "jstypes.nim");
 	LOC1[1] = rope_161407(((NI64) ((*typ).kind)));
-	s = HEX25_162235(((NimStringDesc*) &TMP10117), LOC1, 2);
+	s = HEX25_162235(((NimStringDesc*) &TMP10118), LOC1, 2);
 	nimln(71, "jstypes.nim");
 	prepend_162205(&(*(*p).g).typeinfo, s);
 	nimln(72, "jstypes.nim");
@@ -3115,12 +3115,12 @@ N_NIMCALL(void, genobjectinfo_497506)(Tproc497033* p, Ttype191849* typ, Ropeobj1
 	nimln(73, "jstypes.nim");
 	LOC2[0] = rope_161407(((NI64) ((*typ).Sup.id)));
 	LOC2[1] = genobjectfields_497319(p, typ, (*typ).n);
-	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10119), LOC2, 2);
+	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10120), LOC2, 2);
 	nimln(74, "jstypes.nim");
 	memset((void*)LOC3, 0, sizeof(LOC3));
 	LOC3[0] = name;
 	LOC3[1] = rope_161407(((NI64) ((*typ).Sup.id)));
-	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10118), LOC3, 2);
+	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10119), LOC3, 2);
 	nimln(75, "jstypes.nim");
 	{
 		NIM_BOOL LOC6;
@@ -3138,7 +3138,7 @@ N_NIMCALL(void, genobjectinfo_497506)(Tproc497033* p, Ttype191849* typ, Ropeobj1
 		nimln(77, "jstypes.nim");
 		if ((NU)(((NI) 0)) >= (NU)((*typ).sons->Sup.len)) raiseIndexError();
 		LOC10[1] = gentypeinfo_497315(p, (*typ).sons->data[((NI) 0)]);
-		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10108), LOC10, 2);
+		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10109), LOC10, 2);
 	}
 	LA8: ;
 	popFrame();
@@ -3170,7 +3170,7 @@ N_NIMCALL(Ropeobj161009*, gentuplefields_497556)(Tproc497033* p, Ttype191849* ty
 			nimln(1599, "system.nim");
 			while (1) {
 				TY200177 LOC10;
-				NI TMP10135;
+				NI TMP10136;
 				if (!(res_497592 <= HEX3Atmp_497589)) goto LA4;
 				nimln(1600, "system.nim");
 				i_497580 = res_497592;
@@ -3180,7 +3180,7 @@ N_NIMCALL(Ropeobj161009*, gentuplefields_497556)(Tproc497033* p, Ttype191849* ty
 					if (!(((NI) 0) < i_497580)) goto LA7;
 					LOC9 = 0;
 					LOC9 = rawNewString(tnl_159626->Sup.len + 2);
-appendString(LOC9, ((NimStringDesc*) &TMP10111));
+appendString(LOC9, ((NimStringDesc*) &TMP10112));
 appendString(LOC9, tnl_159626);
 					add_161545(&s, LOC9);
 				}
@@ -3191,10 +3191,10 @@ appendString(LOC9, tnl_159626);
 				LOC10[0] = rope_161407(((NI64) (i_497580)));
 				if ((NU)(i_497580) >= (NU)((*typ).sons->Sup.len)) raiseIndexError();
 				LOC10[1] = gentypeinfo_497315(p, (*typ).sons->data[i_497580]);
-				addf_162635(&s, ((NimStringDesc*) &TMP10134), LOC10, 2);
+				addf_162635(&s, ((NimStringDesc*) &TMP10135), LOC10, 2);
 				nimln(1619, "system.nim");
-				TMP10135 = addInt(res_497592, ((NI) 1));
-				res_497592 = (NI)(TMP10135);
+				TMP10136 = addInt(res_497592, ((NI) 1));
+				res_497592 = (NI)(TMP10136);
 			} LA4: ;
 		}
 	}
@@ -3205,7 +3205,7 @@ appendString(LOC9, tnl_159626);
 	LOC12 = len_194377(typ);
 	LOC11[0] = rope_161407(((NI64) (LOC12)));
 	LOC11[1] = s;
-	result = HEX25_162235(((NimStringDesc*) &TMP10122), LOC11, 2);
+	result = HEX25_162235(((NimStringDesc*) &TMP10123), LOC11, 2);
 	popFrame();
 	return result;
 }
@@ -3221,7 +3221,7 @@ N_NIMCALL(void, gentupleinfo_497608)(Tproc497033* p, Ttype191849* typ, Ropeobj16
 	LOC1[0] = name;
 	nimln(91, "jstypes.nim");
 	LOC1[1] = rope_161407(((NI64) ((*typ).kind)));
-	s = HEX25_162235(((NimStringDesc*) &TMP10117), LOC1, 2);
+	s = HEX25_162235(((NimStringDesc*) &TMP10118), LOC1, 2);
 	nimln(92, "jstypes.nim");
 	prepend_162205(&(*(*p).g).typeinfo, s);
 	nimln(93, "jstypes.nim");
@@ -3229,12 +3229,12 @@ N_NIMCALL(void, gentupleinfo_497608)(Tproc497033* p, Ttype191849* typ, Ropeobj16
 	nimln(94, "jstypes.nim");
 	LOC2[0] = rope_161407(((NI64) ((*typ).Sup.id)));
 	LOC2[1] = gentuplefields_497556(p, typ);
-	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10119), LOC2, 2);
+	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10120), LOC2, 2);
 	nimln(95, "jstypes.nim");
 	memset((void*)LOC3, 0, sizeof(LOC3));
 	LOC3[0] = name;
 	LOC3[1] = rope_161407(((NI64) ((*typ).Sup.id)));
-	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10118), LOC3, 2);
+	addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10119), LOC3, 2);
 	popFrame();
 }
 
@@ -3261,7 +3261,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 	nimln(121, "jstypes.nim");
 	memset((void*)LOC5, 0, sizeof(LOC5));
 	LOC5[0] = rope_161407(((NI64) ((*t).Sup.id)));
-	result = HEX25_162235(((NimStringDesc*) &TMP10106), LOC5, 1);
+	result = HEX25_162235(((NimStringDesc*) &TMP10107), LOC5, 1);
 	nimln(122, "jstypes.nim");
 	{
 		NIM_BOOL LOC8;
@@ -3295,7 +3295,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		LOC13[0] = result;
 		nimln(129, "jstypes.nim");
 		LOC13[1] = rope_161407(((NI64) ((*t).kind)));
-		s = HEX25_162235(((NimStringDesc*) &TMP10107), LOC13, 2);
+		s = HEX25_162235(((NimStringDesc*) &TMP10108), LOC13, 2);
 		nimln(130, "jstypes.nim");
 		prepend_162205(&(*(*p).g).typeinfo, s);
 	}
@@ -3316,7 +3316,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		LOC15[0] = result;
 		nimln(134, "jstypes.nim");
 		LOC15[1] = rope_161407(((NI64) ((*t).kind)));
-		s = HEX25_162235(((NimStringDesc*) &TMP10107), LOC15, 2);
+		s = HEX25_162235(((NimStringDesc*) &TMP10108), LOC15, 2);
 		nimln(135, "jstypes.nim");
 		prepend_162205(&(*(*p).g).typeinfo, s);
 		nimln(136, "jstypes.nim");
@@ -3326,7 +3326,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		LOC17 = 0;
 		LOC17 = lastson_194442(typ);
 		LOC16[1] = gentypeinfo_497315(p, LOC17);
-		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10108), LOC16, 2);
+		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10109), LOC16, 2);
 	}
 	break;
 	case ((NU8) 4):
@@ -3340,7 +3340,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		LOC19[0] = result;
 		nimln(141, "jstypes.nim");
 		LOC19[1] = rope_161407(((NI64) ((*t).kind)));
-		s = HEX25_162235(((NimStringDesc*) &TMP10107), LOC19, 2);
+		s = HEX25_162235(((NimStringDesc*) &TMP10108), LOC19, 2);
 		nimln(142, "jstypes.nim");
 		prepend_162205(&(*(*p).g).typeinfo, s);
 		nimln(143, "jstypes.nim");
@@ -3349,7 +3349,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		nimln(144, "jstypes.nim");
 		if ((NU)(((NI) 1)) >= (NU)((*typ).sons->Sup.len)) raiseIndexError();
 		LOC20[1] = gentypeinfo_497315(p, (*typ).sons->data[((NI) 1)]);
-		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10108), LOC20, 2);
+		addf_162635(&(*(*p).g).typeinfo, ((NimStringDesc*) &TMP10109), LOC20, 2);
 	}
 	break;
 	case ((NU8) 14):
@@ -3376,7 +3376,7 @@ N_NIMCALL(Ropeobj161009*, gentypeinfo_497315)(Tproc497033* p, Ttype191849* typ) 
 		nimln(148, "jstypes.nim");
 		LOC25 = 0;
 		LOC25 = rawNewString(reprEnum((*t).kind, (&NTI191260))->Sup.len + 13);
-appendString(LOC25, ((NimStringDesc*) &TMP10136));
+appendString(LOC25, ((NimStringDesc*) &TMP10137));
 appendString(LOC25, reprEnum((*t).kind, (&NTI191260)));
 appendChar(LOC25, 41);
 		internalerror_165218(LOC25);
@@ -3409,7 +3409,7 @@ N_NIMCALL(void, usemagic_497846)(Tproc497033* p, NimStringDesc* name) {
 			if (!!(((77824 &(1<<(((*s).kind)&31)))!=0))) goto LA11;
 			nimln(854, "msgs.nim");
 			LOC13 = 0;
-			LOC13 = HEX24_165306(TMP10137);
+			LOC13 = HEX24_165306(TMP10138);
 			internalerror_165218(LOC13);
 		}
 		LA11: ;
@@ -3454,7 +3454,7 @@ static N_INLINE(NI, len_192097)(Tnode191813* n) {
 	result = 0;
 	nimln(934, "ast.nim");
 	{
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if (!(*n).kindU.S6.sons == 0) goto LA3;
 		result = ((NI) 0);
 	}
@@ -3462,7 +3462,7 @@ static N_INLINE(NI, len_192097)(Tnode191813* n) {
 	LA3: ;
 	{
 		nimln(935, "ast.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -3512,12 +3512,12 @@ N_NIMCALL(NIM_BOOL, issimpleexpr_497903)(Tnode191813* n) {
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP10139;
+						NI TMP10140;
 						if (!(res_497941 <= HEX3Atmp_497939)) goto LA9;
 						nimln(1600, "system.nim");
 						i_497937 = res_497941;
 						nimln(1537, "ast.nim");
-						if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+						if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 						if ((NU)(i_497937) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						c_497930 = (*n).kindU.S6.sons->data[i_497937];
 						nimln(195, "jsgen.nim");
@@ -3531,8 +3531,8 @@ N_NIMCALL(NIM_BOOL, issimpleexpr_497903)(Tnode191813* n) {
 						}
 						LA13: ;
 						nimln(1619, "system.nim");
-						TMP10139 = addInt(res_497941, ((NI) 1));
-						res_497941 = (NI)(TMP10139);
+						TMP10140 = addInt(res_497941, ((NI) 1));
+						res_497941 = (NI)(TMP10140);
 					} LA9: ;
 				}
 			}
@@ -3561,30 +3561,30 @@ N_NIMCALL(NIM_BOOL, issimpleexpr_497903)(Tnode191813* n) {
 
 N_NIMCALL(Ropeobj161009*, gettemp_497962)(Tproc497033* p) {
 	Ropeobj161009* result;
-	NI TMP10140;
+	NI TMP10141;
 	TY161572 LOC1;
 	NimStringDesc* LOC2;
 	TY161572 LOC8;
 	nimfr("getTemp", "jsgen.nim")
 	result = 0;
 	nimln(201, "jsgen.nim");
-	TMP10140 = addInt((*p).unique, ((NI) 1));
-	(*p).unique = (NI)(TMP10140);
+	TMP10141 = addInt((*p).unique, ((NI) 1));
+	(*p).unique = (NI)(TMP10141);
 	nimln(202, "jsgen.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	LOC1[0] = rope_161407(((NI64) ((*p).unique)));
-	result = HEX25_162235(((NimStringDesc*) &TMP10141), LOC1, 1);
+	result = HEX25_162235(((NimStringDesc*) &TMP10142), LOC1, 1);
 	nimln(203, "jsgen.nim");
 	LOC2 = 0;
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA5;
-		LOC2 = copyString(((NimStringDesc*) &TMP10142));
+		LOC2 = copyString(((NimStringDesc*) &TMP10143));
 	}
 	goto LA3;
 	LA5: ;
 	{
-		LOC2 = copyString(((NimStringDesc*) &TMP10143));
+		LOC2 = copyString(((NimStringDesc*) &TMP10144));
 	}
 	LA3: ;
 	memset((void*)LOC8, 0, sizeof(LOC8));
@@ -3601,7 +3601,7 @@ N_NIMCALL(void, genand_497995)(Tproc497033* p, Tnode191813* a, Tnode191813* b, T
 	nimln(206, "jsgen.nim");
 	{
 		if (!!(((*r).kind == ((NU8) 0)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP10144));
+		failedassertimpl_87017(((NimStringDesc*) &TMP10145));
 	}
 	LA3: ;
 	memset((void*)(&x), 0, sizeof(x));
@@ -3628,12 +3628,12 @@ N_NIMCALL(void, genand_497995)(Tproc497033* p, Tnode191813* a, Tnode191813* b, T
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA14;
-			LOC11 = copyString(((NimStringDesc*) &TMP10145));
+			LOC11 = copyString(((NimStringDesc*) &TMP10146));
 		}
 		goto LA12;
 		LA14: ;
 		{
-			LOC11 = copyString(((NimStringDesc*) &TMP10146));
+			LOC11 = copyString(((NimStringDesc*) &TMP10147));
 		}
 		LA12: ;
 		memset((void*)LOC17, 0, sizeof(LOC17));
@@ -3660,12 +3660,12 @@ N_NIMCALL(void, genand_497995)(Tproc497033* p, Tnode191813* a, Tnode191813* b, T
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA22;
-			LOC19 = copyString(((NimStringDesc*) &TMP10147));
+			LOC19 = copyString(((NimStringDesc*) &TMP10148));
 		}
 		goto LA20;
 		LA22: ;
 		{
-			LOC19 = copyString(((NimStringDesc*) &TMP10148));
+			LOC19 = copyString(((NimStringDesc*) &TMP10149));
 		}
 		LA20: ;
 		memset((void*)LOC25, 0, sizeof(LOC25));
@@ -3680,12 +3680,12 @@ N_NIMCALL(void, genand_497995)(Tproc497033* p, Tnode191813* a, Tnode191813* b, T
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA29;
-			LOC26 = copyString(((NimStringDesc*) &TMP10149));
+			LOC26 = copyString(((NimStringDesc*) &TMP10150));
 		}
 		goto LA27;
 		LA29: ;
 		{
-			LOC26 = copyString(((NimStringDesc*) &TMP10150));
+			LOC26 = copyString(((NimStringDesc*) &TMP10151));
 		}
 		LA27: ;
 		memset((void*)LOC32, 0, sizeof(LOC32));
@@ -3705,7 +3705,7 @@ N_NIMCALL(void, genor_498252)(Tproc497033* p, Tnode191813* a, Tnode191813* b, Tc
 	nimln(233, "jsgen.nim");
 	{
 		if (!!(((*r).kind == ((NU8) 0)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP10144));
+		failedassertimpl_87017(((NimStringDesc*) &TMP10145));
 	}
 	LA3: ;
 	memset((void*)(&x), 0, sizeof(x));
@@ -3732,12 +3732,12 @@ N_NIMCALL(void, genor_498252)(Tproc497033* p, Tnode191813* a, Tnode191813* b, Tc
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA14;
-			LOC11 = copyString(((NimStringDesc*) &TMP10151));
+			LOC11 = copyString(((NimStringDesc*) &TMP10152));
 		}
 		goto LA12;
 		LA14: ;
 		{
-			LOC11 = copyString(((NimStringDesc*) &TMP10152));
+			LOC11 = copyString(((NimStringDesc*) &TMP10153));
 		}
 		LA12: ;
 		memset((void*)LOC17, 0, sizeof(LOC17));
@@ -3764,12 +3764,12 @@ N_NIMCALL(void, genor_498252)(Tproc497033* p, Tnode191813* a, Tnode191813* b, Tc
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA22;
-			LOC19 = copyString(((NimStringDesc*) &TMP10153));
+			LOC19 = copyString(((NimStringDesc*) &TMP10154));
 		}
 		goto LA20;
 		LA22: ;
 		{
-			LOC19 = copyString(((NimStringDesc*) &TMP10154));
+			LOC19 = copyString(((NimStringDesc*) &TMP10155));
 		}
 		LA20: ;
 		memset((void*)LOC25, 0, sizeof(LOC25));
@@ -3784,12 +3784,12 @@ N_NIMCALL(void, genor_498252)(Tproc497033* p, Tnode191813* a, Tnode191813* b, Tc
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA29;
-			LOC26 = copyString(((NimStringDesc*) &TMP10149));
+			LOC26 = copyString(((NimStringDesc*) &TMP10150));
 		}
 		goto LA27;
 		LA29: ;
 		{
-			LOC26 = copyString(((NimStringDesc*) &TMP10150));
+			LOC26 = copyString(((NimStringDesc*) &TMP10151));
 		}
 		LA27: ;
 		memset((void*)LOC32, 0, sizeof(LOC32));
@@ -3812,11 +3812,11 @@ N_NIMCALL(void, binaryexpr_498850)(Tproc497033* p, Tnode191813* n, Tcompres49702
 	nimln(455, "jsgen.nim");
 	usemagic_497846(p, magic);
 	nimln(456, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 	nimln(457, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&y));
 	nimln(458, "jsgen.nim");
@@ -3841,15 +3841,15 @@ N_NIMCALL(void, ternaryexpr_498874)(Tproc497033* p, Tnode191813* n, Tcompres4970
 	nimln(463, "jsgen.nim");
 	usemagic_497846(p, magic);
 	nimln(464, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 	nimln(465, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&y));
 	nimln(466, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 3)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 3)], (&z));
 	nimln(467, "jsgen.nim");
@@ -3869,7 +3869,7 @@ N_NIMCALL(void, unaryexpr_498902)(Tproc497033* p, Tnode191813* n, Tcompres497023
 	nimln(471, "jsgen.nim");
 	usemagic_497846(p, magic);
 	nimln(472, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	nimln(473, "jsgen.nim");
@@ -3896,42 +3896,42 @@ N_NIMCALL(void, arithaux_498919)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	nimln(481, "jsgen.nim");
 	{
 		NI LOC3;
-		NI TMP10254;
+		NI TMP10255;
 		TY200177 LOC6;
 		LOC3 = 0;
 		LOC3 = sonslen_194403(n);
 		if (!(((NI) 2) < LOC3)) goto LA4;
 		nimln(482, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 		nimln(483, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&y));
 		nimln(484, "jsgen.nim");
 		if (op < 41 || op > 135) raiseIndexError();
-		TMP10254 = addInt(((NI) (i)), ((NI) 2));
+		TMP10255 = addInt(((NI) (i)), ((NI) 2));
 		memset((void*)LOC6, 0, sizeof(LOC6));
 		LOC6[0] = rdloc_497127(x);
 		LOC6[1] = rdloc_497127(y);
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(ops[(op)- 41][((NI)(TMP10254))- 0], LOC6, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(ops[(op)- 41][((NI)(TMP10255))- 0], LOC6, 2));
 	}
 	goto LA1;
 	LA4: ;
 	{
-		NI TMP10255;
+		NI TMP10256;
 		TY161572 LOC8;
 		nimln(486, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 		nimln(487, "jsgen.nim");
 		if (op < 41 || op > 135) raiseIndexError();
-		TMP10255 = addInt(((NI) (i)), ((NI) 2));
+		TMP10256 = addInt(((NI) (i)), ((NI) 2));
 		memset((void*)LOC8, 0, sizeof(LOC8));
 		LOC8[0] = rdloc_497127((*r));
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(ops[(op)- 41][((NI)(TMP10255))- 0], LOC8, 1));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(ops[(op)- 41][((NI)(TMP10256))- 0], LOC8, 1));
 	}
 	LA1: ;
 	nimln(488, "jsgen.nim");
@@ -3985,12 +3985,12 @@ N_NIMCALL(void, genlinedir_498989)(Tproc497033* p, Tnode191813* n) {
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA8;
-			LOC5 = copyString(((NimStringDesc*) &TMP10256));
+			LOC5 = copyString(((NimStringDesc*) &TMP10257));
 		}
 		goto LA6;
 		LA8: ;
 		{
-			LOC5 = copyString(((NimStringDesc*) &TMP10257));
+			LOC5 = copyString(((NimStringDesc*) &TMP10258));
 		}
 		LA6: ;
 		memset((void*)LOC11, 0, sizeof(LOC11));
@@ -4020,11 +4020,11 @@ N_NIMCALL(void, genlinedir_498989)(Tproc497033* p, Tnode191813* n) {
 		LA16: ;
 		if (!LOC15) goto LA19;
 		nimln(500, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10258));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10259));
 		nimln(501, "jsgen.nim");
 		memset((void*)LOC21, 0, sizeof(LOC21));
 		LOC21[0] = rope_161407(((NI64) (line)));
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10259), LOC21, 1);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10260), LOC21, 1);
 	}
 	goto LA13;
 	LA19: ;
@@ -4049,7 +4049,7 @@ N_NIMCALL(void, genlinedir_498989)(Tproc497033* p, Tnode191813* n) {
 		nimln(505, "jsgen.nim");
 		memset((void*)LOC29, 0, sizeof(LOC29));
 		LOC29[0] = rope_161407(((NI64) (line)));
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10260), LOC29, 1);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10261), LOC29, 1);
 	}
 	goto LA13;
 	LA27: ;
@@ -4099,9 +4099,9 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 
 N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 	Tcompres497023 cond;
-	NI TMP10262;
-	NI length;
 	NI TMP10263;
+	NI length;
+	NI TMP10264;
 	Ropeobj161009* labl;
 	NimStringDesc* LOC7;
 	TY161572 LOC13;
@@ -4121,20 +4121,20 @@ N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 		if (!!(LOC3)) goto LA4;
 		nimln(854, "msgs.nim");
 		LOC6 = 0;
-		LOC6 = HEX24_165306(TMP10261);
+		LOC6 = HEX24_165306(TMP10262);
 		internalerror_165218(LOC6);
 	}
 	LA4: ;
 	nimln(511, "jsgen.nim");
 	genlinedir_498989(p, n);
 	nimln(512, "jsgen.nim");
-	TMP10262 = addInt((*p).unique, ((NI) 1));
-	(*p).unique = (NI)(TMP10262);
+	TMP10263 = addInt((*p).unique, ((NI) 1));
+	(*p).unique = (NI)(TMP10263);
 	nimln(513, "jsgen.nim");
 	length = ((*p).blocks ? (*p).blocks->Sup.len : 0);
 	nimln(514, "jsgen.nim");
-	TMP10263 = addInt(length, ((NI) 1));
-	(*p).blocks = (TY497071*) setLengthSeq(&((*p).blocks)->Sup, sizeof(Tblock497025), ((NI)chckRange((NI)(TMP10263), ((NI) 0), ((NI) 2147483647))));
+	TMP10264 = addInt(length, ((NI) 1));
+	(*p).blocks = (TY497071*) setLengthSeq(&((*p).blocks)->Sup, sizeof(Tblock497025), ((NI)chckRange((NI)(TMP10264), ((NI) 0), ((NI) 2147483647))));
 	nimln(515, "jsgen.nim");
 	if ((NU)(length) >= (NU)((*p).blocks->Sup.len)) raiseIndexError();
 	if ((*p).unique == (-2147483647 -1)) raiseOverflow();
@@ -4149,19 +4149,19 @@ N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA10;
-		LOC7 = copyString(((NimStringDesc*) &TMP10264));
+		LOC7 = copyString(((NimStringDesc*) &TMP10265));
 	}
 	goto LA8;
 	LA10: ;
 	{
-		LOC7 = copyString(((NimStringDesc*) &TMP10265));
+		LOC7 = copyString(((NimStringDesc*) &TMP10266));
 	}
 	LA8: ;
 	memset((void*)LOC13, 0, sizeof(LOC13));
 	LOC13[0] = labl;
 	addf_162635(&(*p).body, LOC7, LOC13, 1);
 	nimln(519, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&cond));
 	nimln(520, "jsgen.nim");
@@ -4169,12 +4169,12 @@ N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA17;
-		LOC14 = copyString(((NimStringDesc*) &TMP10266));
+		LOC14 = copyString(((NimStringDesc*) &TMP10267));
 	}
 	goto LA15;
 	LA17: ;
 	{
-		LOC14 = copyString(((NimStringDesc*) &TMP10267));
+		LOC14 = copyString(((NimStringDesc*) &TMP10268));
 	}
 	LA15: ;
 	memset((void*)LOC20, 0, sizeof(LOC20));
@@ -4182,7 +4182,7 @@ N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 	LOC20[1] = labl;
 	addf_162635(&(*p).body, LOC14, LOC20, 2);
 	nimln(522, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	genstmt_497825(p, (*n).kindU.S6.sons->data[((NI) 1)]);
 	nimln(523, "jsgen.nim");
@@ -4190,12 +4190,12 @@ N_NIMCALL(void, genwhilestmt_499124)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA24;
-		LOC21 = copyString(((NimStringDesc*) &TMP10268));
+		LOC21 = copyString(((NimStringDesc*) &TMP10269));
 	}
 	goto LA22;
 	LA24: ;
 	{
-		LOC21 = copyString(((NimStringDesc*) &TMP10269));
+		LOC21 = copyString(((NimStringDesc*) &TMP10270));
 	}
 	LA22: ;
 	memset((void*)LOC27, 0, sizeof(LOC27));
@@ -4219,7 +4219,7 @@ N_NIMCALL(void, moveinto_499221)(Tproc497033* p, Tcompres497023* src, Tcompres49
 			memset((void*)LOC9, 0, sizeof(LOC9));
 			LOC9[0] = rdloc_497127(dest);
 			LOC9[1] = rdloc_497127((*src));
-			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10270), LOC9, 2);
+			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC9, 2);
 		}
 		goto LA5;
 		LA7: ;
@@ -4228,7 +4228,7 @@ N_NIMCALL(void, moveinto_499221)(Tproc497033* p, Tcompres497023* src, Tcompres49
 			nimln(531, "jsgen.nim");
 			memset((void*)LOC11, 0, sizeof(LOC11));
 			LOC11[0] = rdloc_497127((*src));
-			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC11, 1);
+			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10272), LOC11, 1);
 		}
 		LA5: ;
 		nimln(532, "jsgen.nim");
@@ -4241,7 +4241,7 @@ N_NIMCALL(void, moveinto_499221)(Tproc497033* p, Tcompres497023* src, Tcompres49
 }
 
 N_NIMCALL(void, gentry_499257)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
-	NI TMP10272;
+	NI TMP10273;
 	Ropeobj161009* safepoint;
 	TY161572 LOC6;
 	NimStringDesc* LOC7;
@@ -4267,23 +4267,23 @@ N_NIMCALL(void, gentry_499257)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 	}
 	LA4: ;
 	nimln(559, "jsgen.nim");
-	TMP10272 = addInt((*p).unique, ((NI) 1));
-	(*p).unique = (NI)(TMP10272);
+	TMP10273 = addInt((*p).unique, ((NI) 1));
+	(*p).unique = (NI)(TMP10273);
 	nimln(560, "jsgen.nim");
 	memset((void*)LOC6, 0, sizeof(LOC6));
 	LOC6[0] = rope_161407(((NI64) ((*p).unique)));
-	safepoint = HEX25_162235(((NimStringDesc*) &TMP10141), LOC6, 1);
+	safepoint = HEX25_162235(((NimStringDesc*) &TMP10142), LOC6, 1);
 	nimln(561, "jsgen.nim");
 	LOC7 = 0;
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA10;
-		LOC7 = copyString(((NimStringDesc*) &TMP10273));
+		LOC7 = copyString(((NimStringDesc*) &TMP10274));
 	}
 	goto LA8;
 	LA10: ;
 	{
-		LOC7 = copyString(((NimStringDesc*) &TMP10274));
+		LOC7 = copyString(((NimStringDesc*) &TMP10275));
 	}
 	LA8: ;
 	memset((void*)LOC13, 0, sizeof(LOC13));
@@ -4295,7 +4295,7 @@ N_NIMCALL(void, gentry_499257)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 		if (!(((*p).options &(1<<((((NU8) 15))&31)))!=0)) goto LA16;
 		LOC18 = 0;
 		LOC18 = rawNewString(tnl_159626->Sup.len + 13);
-appendString(LOC18, ((NimStringDesc*) &TMP10275));
+appendString(LOC18, ((NimStringDesc*) &TMP10276));
 appendString(LOC18, tnl_159626);
 		add_161545(&(*p).body, LOC18);
 	}
@@ -4305,12 +4305,12 @@ appendString(LOC18, tnl_159626);
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA22;
-		LOC19 = copyString(((NimStringDesc*) &TMP10276));
+		LOC19 = copyString(((NimStringDesc*) &TMP10277));
 	}
 	goto LA20;
 	LA22: ;
 	{
-		LOC19 = copyString(((NimStringDesc*) &TMP10277));
+		LOC19 = copyString(((NimStringDesc*) &TMP10278));
 	}
 	LA20: ;
 	memset((void*)LOC25, 0, sizeof(LOC25));
@@ -4319,7 +4319,7 @@ appendString(LOC18, tnl_159626);
 	length = sonslen_194403(n);
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(569, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&a));
 	nimln(570, "jsgen.nim");
@@ -4339,14 +4339,14 @@ appendString(LOC18, tnl_159626);
 		LA30: ;
 		LOC28 = LOC29;
 		if (!(LOC28)) goto LA31;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC28 = ((*(*n).kindU.S6.sons->data[i]).kind == ((NU8) 87));
 		LA31: ;
 		if (!LOC28) goto LA32;
 		nimln(573, "jsgen.nim");
 		memset((void*)LOC34, 0, sizeof(LOC34));
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10278), LOC34, 0);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10279), LOC34, 0);
 	}
 	goto LA26;
 	LA32: ;
@@ -4356,7 +4356,7 @@ appendString(LOC18, tnl_159626);
 		if (!((*p).target == ((NU8) 1))) goto LA36;
 		nimln(575, "jsgen.nim");
 		memset((void*)LOC38, 0, sizeof(LOC38));
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10279), LOC38, 0);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10280), LOC38, 0);
 	}
 	goto LA26;
 	LA36: ;
@@ -4366,17 +4366,17 @@ appendString(LOC18, tnl_159626);
 		while (1) {
 			NIM_BOOL LOC41;
 			NI blen;
-			NI TMP10294;
+			NI TMP10295;
 			LOC41 = 0;
 			LOC41 = (i < length);
 			if (!(LOC41)) goto LA42;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC41 = ((*(*n).kindU.S6.sons->data[i]).kind == ((NU8) 87));
 			LA42: ;
 			if (!LOC41) goto LA40;
 			nimln(577, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			blen = sonslen_194403((*n).kindU.S6.sons->data[i]);
 			nimln(578, "jsgen.nim");
@@ -4391,12 +4391,12 @@ appendString(LOC18, tnl_159626);
 					nimln(93, "jsgen.nim");
 					{
 						if (!((*p).target == ((NU8) 0))) goto LA54;
-						LOC51 = copyString(((NimStringDesc*) &TMP10280));
+						LOC51 = copyString(((NimStringDesc*) &TMP10281));
 					}
 					goto LA52;
 					LA54: ;
 					{
-						LOC51 = copyString(((NimStringDesc*) &TMP10281));
+						LOC51 = copyString(((NimStringDesc*) &TMP10282));
 					}
 					LA52: ;
 					memset((void*)LOC57, 0, sizeof(LOC57));
@@ -4404,9 +4404,9 @@ appendString(LOC18, tnl_159626);
 				}
 				LA49: ;
 				nimln(581, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
 				gen_497816(p, (*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[((NI) 0)], (&a));
 				nimln(582, "jsgen.nim");
@@ -4420,12 +4420,12 @@ appendString(LOC18, tnl_159626);
 					nimln(93, "jsgen.nim");
 					{
 						if (!((*p).target == ((NU8) 0))) goto LA65;
-						LOC62 = copyString(((NimStringDesc*) &TMP10268));
+						LOC62 = copyString(((NimStringDesc*) &TMP10269));
 					}
 					goto LA63;
 					LA65: ;
 					{
-						LOC62 = copyString(((NimStringDesc*) &TMP10282));
+						LOC62 = copyString(((NimStringDesc*) &TMP10283));
 					}
 					LA63: ;
 					memset((void*)LOC68, 0, sizeof(LOC68));
@@ -4439,42 +4439,42 @@ appendString(LOC18, tnl_159626);
 				Ropeobj161009* orexpr;
 				NimStringDesc* LOC92;
 				TY200177 LOC98;
-				NI TMP10293;
+				NI TMP10294;
 				NimStringDesc* LOC99;
 				TY461359 LOC105;
 				nimln(585, "jsgen.nim");
 				orexpr = NIM_NIL;
 				nimln(586, "jsgen.nim");
-				usemagic_497846(p, ((NimStringDesc*) &TMP10283));
+				usemagic_497846(p, ((NimStringDesc*) &TMP10284));
 				{
 					NI j_499408;
 					NI HEX3Atmp_499548;
-					NI TMP10284;
+					NI TMP10285;
 					NI res_499551;
 					j_499408 = 0;
 					HEX3Atmp_499548 = 0;
 					nimln(587, "jsgen.nim");
-					TMP10284 = subInt(blen, ((NI) 2));
-					HEX3Atmp_499548 = (NI)(TMP10284);
+					TMP10285 = subInt(blen, ((NI) 2));
+					HEX3Atmp_499548 = (NI)(TMP10285);
 					nimln(1598, "system.nim");
 					res_499551 = ((NI) 0);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
 							TY200177 LOC87;
-							NI TMP10289;
+							NI TMP10290;
 							if (!(res_499551 <= HEX3Atmp_499548)) goto LA72;
 							nimln(1600, "system.nim");
 							j_499408 = res_499551;
 							nimln(588, "jsgen.nim");
 							{
-								if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+								if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 								if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-								if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+								if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 								if ((NU)(j_499408) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
 								if (!!(((*(*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[j_499408]).kind == ((NU8) 4)))) goto LA75;
 								nimln(589, "jsgen.nim");
-								internalerror_165199((*n).info, ((NimStringDesc*) &TMP10285));
+								internalerror_165199((*n).info, ((NimStringDesc*) &TMP10286));
 							}
 							LA75: ;
 							nimln(590, "jsgen.nim");
@@ -4485,12 +4485,12 @@ appendString(LOC18, tnl_159626);
 								nimln(93, "jsgen.nim");
 								{
 									if (!((*p).target == ((NU8) 0))) goto LA84;
-									LOC81 = copyString(((NimStringDesc*) &TMP10286));
+									LOC81 = copyString(((NimStringDesc*) &TMP10287));
 								}
 								goto LA82;
 								LA84: ;
 								{
-									LOC81 = copyString(((NimStringDesc*) &TMP10287));
+									LOC81 = copyString(((NimStringDesc*) &TMP10288));
 								}
 								LA82: ;
 								add_161545(&orexpr, LOC81);
@@ -4500,22 +4500,22 @@ appendString(LOC18, tnl_159626);
 							memset((void*)LOC87, 0, sizeof(LOC87));
 							LOC87[0] = safepoint;
 							nimln(592, "jsgen.nim");
-							if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+							if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 							if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-							if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+							if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 							if ((NU)(j_499408) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
 							LOC87[1] = gentypeinfo_497315(p, (*(*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[j_499408]).typ);
-							addf_162635(&orexpr, ((NimStringDesc*) &TMP10288), LOC87, 2);
+							addf_162635(&orexpr, ((NimStringDesc*) &TMP10289), LOC87, 2);
 							nimln(1614, "system.nim");
-							TMP10289 = addInt(res_499551, ((NI) 1));
-							res_499551 = (NI)(TMP10289);
+							TMP10290 = addInt(res_499551, ((NI) 1));
+							res_499551 = (NI)(TMP10290);
 						} LA72: ;
 					}
 				}
 				nimln(593, "jsgen.nim");
 				{
 					if (!(((NI) 1) < i)) goto LA90;
-					add_161545(&(*p).body, ((NimStringDesc*) &TMP10290));
+					add_161545(&(*p).body, ((NimStringDesc*) &TMP10291));
 				}
 				LA90: ;
 				nimln(594, "jsgen.nim");
@@ -4523,12 +4523,12 @@ appendString(LOC18, tnl_159626);
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA95;
-					LOC92 = copyString(((NimStringDesc*) &TMP10291));
+					LOC92 = copyString(((NimStringDesc*) &TMP10292));
 				}
 				goto LA93;
 				LA95: ;
 				{
-					LOC92 = copyString(((NimStringDesc*) &TMP10292));
+					LOC92 = copyString(((NimStringDesc*) &TMP10293));
 				}
 				LA93: ;
 				memset((void*)LOC98, 0, sizeof(LOC98));
@@ -4536,12 +4536,12 @@ appendString(LOC18, tnl_159626);
 				LOC98[1] = orexpr;
 				addf_162635(&(*p).body, LOC92, LOC98, 2);
 				nimln(596, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
-				TMP10293 = subInt(blen, ((NI) 1));
-				if ((NU)((NI)(TMP10293)) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
-				gen_497816(p, (*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[(NI)(TMP10293)], (&a));
+				if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
+				TMP10294 = subInt(blen, ((NI) 1));
+				if ((NU)((NI)(TMP10294)) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
+				gen_497816(p, (*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[(NI)(TMP10294)], (&a));
 				nimln(597, "jsgen.nim");
 				moveinto_499221(p, (&a), (*r));
 				nimln(598, "jsgen.nim");
@@ -4549,12 +4549,12 @@ appendString(LOC18, tnl_159626);
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA102;
-					LOC99 = copyString(((NimStringDesc*) &TMP10268));
+					LOC99 = copyString(((NimStringDesc*) &TMP10269));
 				}
 				goto LA100;
 				LA102: ;
 				{
-					LOC99 = copyString(((NimStringDesc*) &TMP10282));
+					LOC99 = copyString(((NimStringDesc*) &TMP10283));
 				}
 				LA100: ;
 				memset((void*)LOC105, 0, sizeof(LOC105));
@@ -4562,8 +4562,8 @@ appendString(LOC18, tnl_159626);
 			}
 			LA43: ;
 			nimln(599, "jsgen.nim");
-			TMP10294 = addInt(i, ((NI) 1));
-			i = (NI)(TMP10294);
+			TMP10295 = addInt(i, ((NI) 1));
+			i = (NI)(TMP10295);
 		} LA40: ;
 	}
 	nimln(600, "jsgen.nim");
@@ -4573,9 +4573,9 @@ appendString(LOC18, tnl_159626);
 		nimln(601, "jsgen.nim");
 		LOC110 = 0;
 		LOC110 = rawNewString(tnl_159626->Sup.len + tnl_159626->Sup.len + 40);
-appendString(LOC110, ((NimStringDesc*) &TMP10295));
-appendString(LOC110, tnl_159626);
 appendString(LOC110, ((NimStringDesc*) &TMP10296));
+appendString(LOC110, tnl_159626);
+appendString(LOC110, ((NimStringDesc*) &TMP10297));
 appendString(LOC110, tnl_159626);
 		add_161545(&(*p).body, LOC110);
 	}
@@ -4586,15 +4586,15 @@ appendString(LOC110, tnl_159626);
 		LOC113 = 0;
 		LOC113 = (i < length);
 		if (!(LOC113)) goto LA114;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC113 = ((*(*n).kindU.S6.sons->data[i]).kind == ((NU8) 107));
 		LA114: ;
 		if (!LOC113) goto LA115;
 		nimln(603, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
 		genstmt_497825(p, (*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[((NI) 0)]);
 	}
@@ -4606,7 +4606,7 @@ appendString(LOC110, tnl_159626);
 		nimln(605, "jsgen.nim");
 		LOC121 = 0;
 		LOC121 = rawNewString(tnl_159626->Sup.len + 1);
-appendString(LOC121, ((NimStringDesc*) &TMP10297));
+appendString(LOC121, ((NimStringDesc*) &TMP10298));
 appendString(LOC121, tnl_159626);
 		add_161545(&(*p).body, LOC121);
 	}
@@ -4620,15 +4620,15 @@ appendString(LOC121, tnl_159626);
 			LOC128 = 0;
 			LOC128 = (i < length);
 			if (!(LOC128)) goto LA129;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC128 = ((*(*n).kindU.S6.sons->data[i]).kind == ((NU8) 107));
 			LA129: ;
 			if (!LOC128) goto LA130;
 			nimln(609, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (((TMP10099[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*(*n).kindU.S6.sons->data[i]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->Sup.len)) raiseIndexError();
 			genstmt_497825(p, (*(*n).kindU.S6.sons->data[i]).kindU.S6.sons->data[((NI) 0)]);
 		}
@@ -4647,37 +4647,37 @@ N_NIMCALL(void, genraisestmt_499577)(Tproc497033* p, Tnode191813* n) {
 		Tcompres497023 a;
 		Ttype191849* typ;
 		TY200177 LOC5;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 1)))) goto LA3;
 		memset((void*)(&a), 0, sizeof(a));
 		nimln(615, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&a));
 		nimln(616, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		typ = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106247256320));
 		nimln(617, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10298));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10299));
 		nimln(618, "jsgen.nim");
 		memset((void*)LOC5, 0, sizeof(LOC5));
 		nimln(619, "jsgen.nim");
 		LOC5[0] = rdloc_497127(a);
 		LOC5[1] = makejsstring_497305((*(*(*typ).sym).name).s);
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10299), LOC5, 2);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10300), LOC5, 2);
 	}
 	goto LA1;
 	LA3: ;
 	{
 		NimStringDesc* LOC7;
 		nimln(621, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10300));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10301));
 		nimln(622, "jsgen.nim");
 		LOC7 = 0;
 		LOC7 = rawNewString(tnl_159626->Sup.len + 19);
-appendString(LOC7, ((NimStringDesc*) &TMP10301));
+appendString(LOC7, ((NimStringDesc*) &TMP10302));
 appendString(LOC7, tnl_159626);
 		add_161545(&(*p).body, LOC7);
 	}
@@ -4717,11 +4717,11 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 	nimln(627, "jsgen.nim");
 	genlinedir_498989(p, n);
 	nimln(628, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&cond));
 	nimln(629, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106240964864));
@@ -4731,11 +4731,11 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 		TY161572 LOC6;
 		if (!stringswitch) goto LA4;
 		nimln(631, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10302));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10303));
 		nimln(632, "jsgen.nim");
 		memset((void*)LOC6, 0, sizeof(LOC6));
 		LOC6[0] = rdloc_497127(cond);
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10303), LOC6, 1);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10304), LOC6, 1);
 	}
 	goto LA2;
 	LA4: ;
@@ -4744,7 +4744,7 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 		nimln(634, "jsgen.nim");
 		memset((void*)LOC8, 0, sizeof(LOC8));
 		LOC8[0] = rdloc_497127(cond);
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10304), LOC8, 1);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10305), LOC8, 1);
 	}
 	LA2: ;
 	nimln(635, "jsgen.nim");
@@ -4763,27 +4763,27 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 		NI i_499647;
 		NI HEX3Atmp_499737;
 		NI LOC15;
-		NI TMP10305;
+		NI TMP10306;
 		NI res_499740;
 		i_499647 = 0;
 		HEX3Atmp_499737 = 0;
 		nimln(638, "jsgen.nim");
 		LOC15 = 0;
 		LOC15 = sonslen_194403(n);
-		TMP10305 = subInt(LOC15, ((NI) 1));
-		HEX3Atmp_499737 = (NI)(TMP10305);
+		TMP10306 = subInt(LOC15, ((NI) 1));
+		HEX3Atmp_499737 = (NI)(TMP10306);
 		nimln(1598, "system.nim");
 		res_499740 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode191813* it;
-				NI TMP10317;
+				NI TMP10318;
 				if (!(res_499740 <= HEX3Atmp_499737)) goto LA17;
 				nimln(1600, "system.nim");
 				i_499647 = res_499740;
 				nimln(639, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_499647) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_499647];
 				nimln(640, "jsgen.nim");
@@ -4796,27 +4796,27 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 						NI j_499662;
 						NI HEX3Atmp_499727;
 						NI LOC20;
-						NI TMP10306;
+						NI TMP10307;
 						NI res_499730;
 						j_499662 = 0;
 						HEX3Atmp_499727 = 0;
 						nimln(642, "jsgen.nim");
 						LOC20 = 0;
 						LOC20 = sonslen_194403(it);
-						TMP10306 = subInt(LOC20, ((NI) 2));
-						HEX3Atmp_499727 = (NI)(TMP10306);
+						TMP10307 = subInt(LOC20, ((NI) 2));
+						HEX3Atmp_499727 = (NI)(TMP10307);
 						nimln(1598, "system.nim");
 						res_499730 = ((NI) 0);
 						{
 							nimln(1599, "system.nim");
 							while (1) {
 								Tnode191813* e;
-								NI TMP10312;
+								NI TMP10313;
 								if (!(res_499730 <= HEX3Atmp_499727)) goto LA22;
 								nimln(1600, "system.nim");
 								j_499662 = res_499730;
 								nimln(643, "jsgen.nim");
-								if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+								if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 								if ((NU)(j_499662) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 								e = (*it).kindU.S6.sons->data[j_499662];
 								nimln(644, "jsgen.nim");
@@ -4824,29 +4824,29 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 									Tnode191813* v;
 									if (!((*e).kind == ((NU8) 44))) goto LA25;
 									nimln(645, "jsgen.nim");
-									if (((TMP10099[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+									if (((TMP10100[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 									if ((NU)(((NI) 0)) >= (NU)((*e).kindU.S6.sons->Sup.len)) raiseIndexError();
 									v = copynode_195640((*e).kindU.S6.sons->data[((NI) 0)]);
 									{
 										nimln(646, "jsgen.nim");
 										while (1) {
 											TY161572 LOC29;
-											NI64 TMP10310;
-											if (!(((TMP10307[(*v).kind/8] &(1<<((*v).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10308));
-											if (((TMP10099[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+											NI64 TMP10311;
+											if (!(((TMP10308[(*v).kind/8] &(1<<((*v).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10309));
+											if (((TMP10100[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 											if ((NU)(((NI) 1)) >= (NU)((*e).kindU.S6.sons->Sup.len)) raiseIndexError();
-											if (!(((TMP10307[(*(*e).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*e).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10308));
+											if (!(((TMP10308[(*(*e).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*e).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10309));
 											if (!((*v).kindU.S1.intval <= (*(*e).kindU.S6.sons->data[((NI) 1)]).kindU.S1.intval)) goto LA28;
 											nimln(647, "jsgen.nim");
 											gen_497816(p, v, (&cond));
 											nimln(648, "jsgen.nim");
 											memset((void*)LOC29, 0, sizeof(LOC29));
 											LOC29[0] = rdloc_497127(cond);
-											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10309), LOC29, 1);
+											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10310), LOC29, 1);
 											nimln(649, "jsgen.nim");
-											if (!(((TMP10307[(*v).kind/8] &(1<<((*v).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10308));
-											TMP10310 = addInt64((*v).kindU.S1.intval, ((NI) 1));
-											(*v).kindU.S1.intval = (NI64)(TMP10310);
+											if (!(((TMP10308[(*v).kind/8] &(1<<((*v).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10309));
+											TMP10311 = addInt64((*v).kindU.S1.intval, ((NI) 1));
+											(*v).kindU.S1.intval = (NI64)(TMP10311);
 										} LA28: ;
 									}
 								}
@@ -4864,15 +4864,15 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 											nimln(653, "jsgen.nim");
 											memset((void*)LOC36, 0, sizeof(LOC36));
 											nimln(654, "jsgen.nim");
-											if (!(((TMP10112[(*e).kind/8] &(1<<((*e).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+											if (!(((TMP10113[(*e).kind/8] &(1<<((*e).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 											LOC36[0] = makejsstring_497305((*e).kindU.S3.strval);
-											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10309), LOC36, 1);
+											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10310), LOC36, 1);
 										}
 										break;
 										default:
 										{
 											nimln(655, "jsgen.nim");
-											internalerror_165199((*e).info, ((NimStringDesc*) &TMP10311));
+											internalerror_165199((*e).info, ((NimStringDesc*) &TMP10312));
 										}
 										break;
 										}
@@ -4886,14 +4886,14 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 										nimln(658, "jsgen.nim");
 										memset((void*)LOC39, 0, sizeof(LOC39));
 										LOC39[0] = rdloc_497127(cond);
-										addf_162635(&(*p).body, ((NimStringDesc*) &TMP10309), LOC39, 1);
+										addf_162635(&(*p).body, ((NimStringDesc*) &TMP10310), LOC39, 1);
 									}
 									LA31: ;
 								}
 								LA23: ;
 								nimln(1614, "system.nim");
-								TMP10312 = addInt(res_499730, ((NI) 1));
-								res_499730 = (NI)(TMP10312);
+								TMP10313 = addInt(res_499730, ((NI) 1));
+								res_499730 = (NI)(TMP10313);
 							} LA22: ;
 						}
 					}
@@ -4905,7 +4905,7 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 					moveinto_499221(p, (&stmt), (*r));
 					nimln(661, "jsgen.nim");
 					memset((void*)LOC41, 0, sizeof(LOC41));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10313), LOC41, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10314), LOC41, 0);
 				}
 				break;
 				case ((NU8) 88):
@@ -4914,34 +4914,34 @@ N_NIMCALL(void, gencasejs_499608)(Tproc497033* p, Tnode191813* n, Tcompres497023
 					TY461359 LOC44;
 					nimln(663, "jsgen.nim");
 					memset((void*)LOC43, 0, sizeof(LOC43));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10314), LOC43, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10315), LOC43, 0);
 					nimln(664, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 0)], (&stmt));
 					nimln(665, "jsgen.nim");
 					moveinto_499221(p, (&stmt), (*r));
 					nimln(666, "jsgen.nim");
 					memset((void*)LOC44, 0, sizeof(LOC44));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10315), LOC44, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10316), LOC44, 0);
 				}
 				break;
 				default:
 				{
 					nimln(667, "jsgen.nim");
-					internalerror_165199((*it).info, ((NimStringDesc*) &TMP10316));
+					internalerror_165199((*it).info, ((NimStringDesc*) &TMP10317));
 				}
 				break;
 				}
 				nimln(1614, "system.nim");
-				TMP10317 = addInt(res_499740, ((NI) 1));
-				res_499740 = (NI)(TMP10317);
+				TMP10318 = addInt(res_499740, ((NI) 1));
+				res_499740 = (NI)(TMP10318);
 			} LA17: ;
 		}
 	}
 	nimln(668, "jsgen.nim");
 	memset((void*)LOC46, 0, sizeof(LOC46));
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10268), LOC46, 0);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10269), LOC46, 0);
 	popFrame();
 }
 
@@ -4959,11 +4959,11 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 	nimln(673, "jsgen.nim");
 	genlinedir_498989(p, n);
 	nimln(674, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&cond));
 	nimln(675, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106240964864));
@@ -4972,7 +4972,7 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 	{
 		if (!stringswitch) goto LA4;
 		nimln(677, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10318));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10319));
 	}
 	LA4: ;
 	nimln(678, "jsgen.nim");
@@ -4981,7 +4981,7 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 	memset((void*)LOC6, 0, sizeof(LOC6));
 	LOC6[0] = tmp;
 	LOC6[1] = rdloc_497127(cond);
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10270), LOC6, 2);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC6, 2);
 	nimln(680, "jsgen.nim");
 	{
 		NIM_BOOL LOC9;
@@ -4998,27 +4998,27 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 		NI i_499812;
 		NI HEX3Atmp_499899;
 		NI LOC13;
-		NI TMP10319;
+		NI TMP10320;
 		NI res_499902;
 		i_499812 = 0;
 		HEX3Atmp_499899 = 0;
 		nimln(683, "jsgen.nim");
 		LOC13 = 0;
 		LOC13 = sonslen_194403(n);
-		TMP10319 = subInt(LOC13, ((NI) 1));
-		HEX3Atmp_499899 = (NI)(TMP10319);
+		TMP10320 = subInt(LOC13, ((NI) 1));
+		HEX3Atmp_499899 = (NI)(TMP10320);
 		nimln(1598, "system.nim");
 		res_499902 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode191813* it;
-				NI TMP10328;
+				NI TMP10329;
 				if (!(res_499902 <= HEX3Atmp_499899)) goto LA15;
 				nimln(1600, "system.nim");
 				i_499812 = res_499902;
 				nimln(684, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_499812) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_499812];
 				nimln(685, "jsgen.nim");
@@ -5032,7 +5032,7 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 						TY461359 LOC21;
 						if (!!((i_499812 == ((NI) 1)))) goto LA19;
 						memset((void*)LOC21, 0, sizeof(LOC21));
-						addf_162635(&(*p).body, ((NimStringDesc*) &TMP10320), LOC21, 0);
+						addf_162635(&(*p).body, ((NimStringDesc*) &TMP10321), LOC21, 0);
 					}
 					goto LA17;
 					LA19: ;
@@ -5040,40 +5040,40 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 						TY461359 LOC23;
 						nimln(688, "jsgen.nim");
 						memset((void*)LOC23, 0, sizeof(LOC23));
-						addf_162635(&(*p).body, ((NimStringDesc*) &TMP10321), LOC23, 0);
+						addf_162635(&(*p).body, ((NimStringDesc*) &TMP10322), LOC23, 0);
 					}
 					LA17: ;
 					{
 						NI j_499835;
 						NI HEX3Atmp_499890;
 						NI LOC25;
-						NI TMP10322;
+						NI TMP10323;
 						NI res_499893;
 						j_499835 = 0;
 						HEX3Atmp_499890 = 0;
 						nimln(689, "jsgen.nim");
 						LOC25 = 0;
 						LOC25 = sonslen_194403(it);
-						TMP10322 = subInt(LOC25, ((NI) 2));
-						HEX3Atmp_499890 = (NI)(TMP10322);
+						TMP10323 = subInt(LOC25, ((NI) 2));
+						HEX3Atmp_499890 = (NI)(TMP10323);
 						nimln(1598, "system.nim");
 						res_499893 = ((NI) 0);
 						{
 							nimln(1599, "system.nim");
 							while (1) {
 								Tnode191813* e;
-								NI TMP10326;
+								NI TMP10327;
 								if (!(res_499893 <= HEX3Atmp_499890)) goto LA27;
 								nimln(1600, "system.nim");
 								j_499835 = res_499893;
 								nimln(690, "jsgen.nim");
 								{
 									if (!!((j_499835 == ((NI) 0)))) goto LA30;
-									add_161545(&(*p).body, ((NimStringDesc*) &TMP10287));
+									add_161545(&(*p).body, ((NimStringDesc*) &TMP10288));
 								}
 								LA30: ;
 								nimln(691, "jsgen.nim");
-								if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+								if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 								if ((NU)(j_499835) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 								e = (*it).kindU.S6.sons->data[j_499835];
 								nimln(692, "jsgen.nim");
@@ -5085,11 +5085,11 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 									memset((void*)(&ia), 0, sizeof(ia));
 									memset((void*)(&ib), 0, sizeof(ib));
 									nimln(694, "jsgen.nim");
-									if (((TMP10099[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+									if (((TMP10100[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 									if ((NU)(((NI) 0)) >= (NU)((*e).kindU.S6.sons->Sup.len)) raiseIndexError();
 									gen_497816(p, (*e).kindU.S6.sons->data[((NI) 0)], (&ia));
 									nimln(695, "jsgen.nim");
-									if (((TMP10099[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+									if (((TMP10100[(*e).kind/8] &(1<<((*e).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 									if ((NU)(((NI) 1)) >= (NU)((*e).kindU.S6.sons->Sup.len)) raiseIndexError();
 									gen_497816(p, (*e).kindU.S6.sons->data[((NI) 1)], (&ib));
 									nimln(696, "jsgen.nim");
@@ -5097,7 +5097,7 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 									LOC36[0] = tmp;
 									LOC36[1] = rdloc_497127(ia);
 									LOC36[2] = rdloc_497127(ib);
-									addf_162635(&(*p).body, ((NimStringDesc*) &TMP10323), LOC36, 3);
+									addf_162635(&(*p).body, ((NimStringDesc*) &TMP10324), LOC36, 3);
 								}
 								goto LA32;
 								LA34: ;
@@ -5114,15 +5114,15 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 											memset((void*)LOC43, 0, sizeof(LOC43));
 											LOC43[0] = tmp;
 											nimln(701, "jsgen.nim");
-											if (!(((TMP10112[(*e).kind/8] &(1<<((*e).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+											if (!(((TMP10113[(*e).kind/8] &(1<<((*e).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 											LOC43[1] = makejsstring_497305((*e).kindU.S3.strval);
-											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10324), LOC43, 2);
+											addf_162635(&(*p).body, ((NimStringDesc*) &TMP10325), LOC43, 2);
 										}
 										break;
 										default:
 										{
 											nimln(702, "jsgen.nim");
-											internalerror_165199((*e).info, ((NimStringDesc*) &TMP10311));
+											internalerror_165199((*e).info, ((NimStringDesc*) &TMP10312));
 										}
 										break;
 										}
@@ -5137,20 +5137,20 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 										memset((void*)LOC46, 0, sizeof(LOC46));
 										LOC46[0] = tmp;
 										LOC46[1] = rdloc_497127(cond);
-										addf_162635(&(*p).body, ((NimStringDesc*) &TMP10325), LOC46, 2);
+										addf_162635(&(*p).body, ((NimStringDesc*) &TMP10326), LOC46, 2);
 									}
 									LA38: ;
 								}
 								LA32: ;
 								nimln(1614, "system.nim");
-								TMP10326 = addInt(res_499893, ((NI) 1));
-								res_499893 = (NI)(TMP10326);
+								TMP10327 = addInt(res_499893, ((NI) 1));
+								res_499893 = (NI)(TMP10327);
 							} LA27: ;
 						}
 					}
 					nimln(706, "jsgen.nim");
 					memset((void*)LOC47, 0, sizeof(LOC47));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10327), LOC47, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10328), LOC47, 0);
 					nimln(707, "jsgen.nim");
 					LOC48 = 0;
 					LOC48 = lastson_194431(it);
@@ -5164,9 +5164,9 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 					TY461359 LOC50;
 					nimln(710, "jsgen.nim");
 					memset((void*)LOC50, 0, sizeof(LOC50));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10281), LOC50, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10282), LOC50, 0);
 					nimln(711, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 0)], (&stmt));
 					nimln(712, "jsgen.nim");
@@ -5176,26 +5176,26 @@ N_NIMCALL(void, gencaselua_499775)(Tproc497033* p, Tnode191813* n, Tcompres49702
 				default:
 				{
 					nimln(713, "jsgen.nim");
-					internalerror_165199((*it).info, ((NimStringDesc*) &TMP10316));
+					internalerror_165199((*it).info, ((NimStringDesc*) &TMP10317));
 				}
 				break;
 				}
 				nimln(1614, "system.nim");
-				TMP10328 = addInt(res_499902, ((NI) 1));
-				res_499902 = (NI)(TMP10328);
+				TMP10329 = addInt(res_499902, ((NI) 1));
+				res_499902 = (NI)(TMP10329);
 			} LA15: ;
 		}
 	}
 	nimln(714, "jsgen.nim");
 	memset((void*)LOC52, 0, sizeof(LOC52));
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10329), LOC52, 0);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10330), LOC52, 0);
 	popFrame();
 }
 
 N_NIMCALL(void, genblock_499931)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
-	NI TMP10330;
+	NI TMP10331;
 	NI idx;
-	NI TMP10333;
+	NI TMP10334;
 	NI labl;
 	NimStringDesc* LOC9;
 	TY161572 LOC15;
@@ -5203,40 +5203,40 @@ N_NIMCALL(void, genblock_499931)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	TY161572 LOC22;
 	nimfr("genBlock", "jsgen.nim")
 	nimln(717, "jsgen.nim");
-	TMP10330 = addInt((*p).unique, ((NI) 1));
-	(*p).unique = (NI)(TMP10330);
+	TMP10331 = addInt((*p).unique, ((NI) 1));
+	(*p).unique = (NI)(TMP10331);
 	nimln(718, "jsgen.nim");
 	idx = ((*p).blocks ? (*p).blocks->Sup.len : 0);
 	nimln(719, "jsgen.nim");
 	{
 		Tsym191843* sym;
-		NI TMP10332;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		NI TMP10333;
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 1)))) goto LA3;
 		nimln(721, "jsgen.nim");
 		{
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA7;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10331));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10332));
 		}
 		LA7: ;
 		nimln(722, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		sym = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(723, "jsgen.nim");
 		(*sym).loc.k = ((NU8) 10);
 		nimln(724, "jsgen.nim");
-		TMP10332 = addInt(idx, ((NI) 1));
-		(*sym).position = (NI)(TMP10332);
+		TMP10333 = addInt(idx, ((NI) 1));
+		(*sym).position = (NI)(TMP10333);
 	}
 	LA3: ;
 	nimln(725, "jsgen.nim");
-	TMP10333 = addInt(idx, ((NI) 1));
-	(*p).blocks = (TY497071*) setLengthSeq(&((*p).blocks)->Sup, sizeof(Tblock497025), ((NI)chckRange((NI)(TMP10333), ((NI) 0), ((NI) 2147483647))));
+	TMP10334 = addInt(idx, ((NI) 1));
+	(*p).blocks = (TY497071*) setLengthSeq(&((*p).blocks)->Sup, sizeof(Tblock497025), ((NI)chckRange((NI)(TMP10334), ((NI) 0), ((NI) 2147483647))));
 	nimln(726, "jsgen.nim");
 	if ((NU)(idx) >= (NU)((*p).blocks->Sup.len)) raiseIndexError();
 	if ((*p).unique == (-2147483647 -1)) raiseOverflow();
@@ -5248,12 +5248,12 @@ N_NIMCALL(void, genblock_499931)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA12;
-		LOC9 = copyString(((NimStringDesc*) &TMP10334));
+		LOC9 = copyString(((NimStringDesc*) &TMP10335));
 	}
 	goto LA10;
 	LA12: ;
 	{
-		LOC9 = copyString(((NimStringDesc*) &TMP10156));
+		LOC9 = copyString(((NimStringDesc*) &TMP10157));
 	}
 	LA10: ;
 	memset((void*)LOC15, 0, sizeof(LOC15));
@@ -5261,7 +5261,7 @@ N_NIMCALL(void, genblock_499931)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	LOC15[0] = rope_161407(((NI64) (labl)));
 	addf_162635(&(*p).body, LOC9, LOC15, 1);
 	nimln(729, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	nimln(730, "jsgen.nim");
@@ -5269,12 +5269,12 @@ N_NIMCALL(void, genblock_499931)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA19;
-		LOC16 = copyString(((NimStringDesc*) &TMP10335));
+		LOC16 = copyString(((NimStringDesc*) &TMP10336));
 	}
 	goto LA17;
 	LA19: ;
 	{
-		LOC16 = copyString(((NimStringDesc*) &TMP10336));
+		LOC16 = copyString(((NimStringDesc*) &TMP10337));
 	}
 	LA17: ;
 	memset((void*)LOC22, 0, sizeof(LOC22));
@@ -5297,45 +5297,45 @@ N_NIMCALL(void, genbreakstmt_500032)(Tproc497033* p, Tnode191813* n) {
 	nimln(736, "jsgen.nim");
 	{
 		Tsym191843* sym;
-		NI TMP10339;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		NI TMP10340;
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 1)))) goto LA3;
 		nimln(738, "jsgen.nim");
 		{
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA7;
-			failedassertimpl_87017(((NimStringDesc*) &TMP10337));
+			failedassertimpl_87017(((NimStringDesc*) &TMP10338));
 		}
 		LA7: ;
 		nimln(739, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		sym = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(740, "jsgen.nim");
 		{
 			if (!!(((*sym).loc.k == ((NU8) 10)))) goto LA11;
-			failedassertimpl_87017(((NimStringDesc*) &TMP10338));
+			failedassertimpl_87017(((NimStringDesc*) &TMP10339));
 		}
 		LA11: ;
 		nimln(741, "jsgen.nim");
-		TMP10339 = subInt((*sym).position, ((NI) 1));
-		idx = (NI)(TMP10339);
+		TMP10340 = subInt((*sym).position, ((NI) 1));
+		idx = (NI)(TMP10340);
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP10340;
+		NI TMP10341;
 		nimln(744, "jsgen.nim");
-		TMP10340 = subInt(((*p).blocks ? (*p).blocks->Sup.len : 0), ((NI) 1));
-		idx = (NI)(TMP10340);
+		TMP10341 = subInt(((*p).blocks ? (*p).blocks->Sup.len : 0), ((NI) 1));
+		idx = (NI)(TMP10341);
 		{
 			nimln(745, "jsgen.nim");
 			while (1) {
 				NIM_BOOL LOC16;
-				NI TMP10341;
+				NI TMP10342;
 				LOC16 = 0;
 				LOC16 = (((NI) 0) <= idx);
 				if (!(LOC16)) goto LA17;
@@ -5343,8 +5343,8 @@ N_NIMCALL(void, genbreakstmt_500032)(Tproc497033* p, Tnode191813* n) {
 				LOC16 = !((*p).blocks->data[idx].isloop);
 				LA17: ;
 				if (!LOC16) goto LA15;
-				TMP10341 = subInt(idx, ((NI) 1));
-				idx = (NI)(TMP10341);
+				TMP10342 = subInt(idx, ((NI) 1));
+				idx = (NI)(TMP10342);
 			} LA15: ;
 		}
 		nimln(746, "jsgen.nim");
@@ -5358,7 +5358,7 @@ N_NIMCALL(void, genbreakstmt_500032)(Tproc497033* p, Tnode191813* n) {
 			LA21: ;
 			if (!LOC20) goto LA22;
 			nimln(747, "jsgen.nim");
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10342));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10343));
 		}
 		LA22: ;
 	}
@@ -5373,12 +5373,12 @@ N_NIMCALL(void, genbreakstmt_500032)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA27;
-		LOC24 = copyString(((NimStringDesc*) &TMP10343));
+		LOC24 = copyString(((NimStringDesc*) &TMP10344));
 	}
 	goto LA25;
 	LA27: ;
 	{
-		LOC24 = copyString(((NimStringDesc*) &TMP10344));
+		LOC24 = copyString(((NimStringDesc*) &TMP10345));
 	}
 	LA25: ;
 	memset((void*)LOC30, 0, sizeof(LOC30));
@@ -5396,41 +5396,41 @@ N_NIMCALL(void, genasmstmt_500445)(Tproc497033* p, Tnode191813* n) {
 	nimln(753, "jsgen.nim");
 	{
 		if (!!(((*n).kind == ((NU8) 89)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP10345));
+		failedassertimpl_87017(((NimStringDesc*) &TMP10346));
 	}
 	LA3: ;
 	{
 		NI i_500613;
 		NI HEX3Atmp_500623;
 		NI LOC6;
-		NI TMP10346;
+		NI TMP10347;
 		NI res_500626;
 		i_500613 = 0;
 		HEX3Atmp_500623 = 0;
 		nimln(754, "jsgen.nim");
 		LOC6 = 0;
 		LOC6 = sonslen_194403(n);
-		TMP10346 = subInt(LOC6, ((NI) 1));
-		HEX3Atmp_500623 = (NI)(TMP10346);
+		TMP10347 = subInt(LOC6, ((NI) 1));
+		HEX3Atmp_500623 = (NI)(TMP10347);
 		nimln(1598, "system.nim");
 		res_500626 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10348;
+				NI TMP10349;
 				if (!(res_500626 <= HEX3Atmp_500623)) goto LA8;
 				nimln(1600, "system.nim");
 				i_500613 = res_500626;
 				nimln(755, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_500613) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				switch ((*(*n).kindU.S6.sons->data[i_500613]).kind) {
 				case ((NU8) 20) ... ((NU8) 22):
 				{
 					nimln(756, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_500613) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (!(((TMP10112[(*(*n).kindU.S6.sons->data[i_500613]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i_500613]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+					if (!(((TMP10113[(*(*n).kindU.S6.sons->data[i_500613]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i_500613]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 					add_161545(&(*p).body, (*(*n).kindU.S6.sons->data[i_500613]).kindU.S3.strval);
 				}
 				break;
@@ -5438,9 +5438,9 @@ N_NIMCALL(void, genasmstmt_500445)(Tproc497033* p, Tnode191813* n) {
 				{
 					Ropeobj161009* LOC11;
 					nimln(757, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_500613) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (!(((TMP10101[(*(*n).kindU.S6.sons->data[i_500613]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i_500613]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+					if (!(((TMP10102[(*(*n).kindU.S6.sons->data[i_500613]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[i_500613]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 					LOC11 = 0;
 					LOC11 = manglename_497277((*(*n).kindU.S6.sons->data[i_500613]).kindU.S4.sym);
 					add_161534(&(*p).body, LOC11);
@@ -5449,15 +5449,15 @@ N_NIMCALL(void, genasmstmt_500445)(Tproc497033* p, Tnode191813* n) {
 				default:
 				{
 					nimln(758, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_500613) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-					internalerror_165199((*(*n).kindU.S6.sons->data[i_500613]).info, ((NimStringDesc*) &TMP10347));
+					internalerror_165199((*(*n).kindU.S6.sons->data[i_500613]).info, ((NimStringDesc*) &TMP10348));
 				}
 				break;
 				}
 				nimln(1614, "system.nim");
-				TMP10348 = addInt(res_500626, ((NI) 1));
-				res_500626 = (NI)(TMP10348);
+				TMP10349 = addInt(res_500626, ((NI) 1));
+				res_500626 = (NI)(TMP10349);
 			} LA8: ;
 		}
 	}
@@ -5489,15 +5489,15 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 		NI i_500666;
 		NI HEX3Atmp_500767;
 		NI LOC7;
-		NI TMP10349;
+		NI TMP10350;
 		NI res_500770;
 		i_500666 = 0;
 		HEX3Atmp_500767 = 0;
 		nimln(766, "jsgen.nim");
 		LOC7 = 0;
 		LOC7 = sonslen_194403(n);
-		TMP10349 = subInt(LOC7, ((NI) 1));
-		HEX3Atmp_500767 = (NI)(TMP10349);
+		TMP10350 = subInt(LOC7, ((NI) 1));
+		HEX3Atmp_500767 = (NI)(TMP10350);
 		nimln(1598, "system.nim");
 		res_500770 = ((NI) 0);
 		{
@@ -5506,12 +5506,12 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 				Tnode191813* it;
 				NimStringDesc* LOC41;
 				TY461359 LOC47;
-				NI TMP10353;
+				NI TMP10354;
 				if (!(res_500770 <= HEX3Atmp_500767)) goto LA9;
 				nimln(1600, "system.nim");
 				i_500666 = res_500770;
 				nimln(767, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_500666) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_500666];
 				nimln(768, "jsgen.nim");
@@ -5526,30 +5526,30 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 					{
 						NimStringDesc* LOC19;
 						TY461359 LOC25;
-						NI TMP10350;
+						NI TMP10351;
 						if (!(((NI) 0) < i_500666)) goto LA17;
 						nimln(770, "jsgen.nim");
 						LOC19 = 0;
 						nimln(93, "jsgen.nim");
 						{
 							if (!((*p).target == ((NU8) 0))) goto LA22;
-							LOC19 = copyString(((NimStringDesc*) &TMP10280));
+							LOC19 = copyString(((NimStringDesc*) &TMP10281));
 						}
 						goto LA20;
 						LA22: ;
 						{
-							LOC19 = copyString(((NimStringDesc*) &TMP10281));
+							LOC19 = copyString(((NimStringDesc*) &TMP10282));
 						}
 						LA20: ;
 						memset((void*)LOC25, 0, sizeof(LOC25));
 						addf_162635(&(*p).body, LOC19, LOC25, 0);
 						nimln(771, "jsgen.nim");
-						TMP10350 = addInt(toclose, ((NI) 1));
-						toclose = (NI)(TMP10350);
+						TMP10351 = addInt(toclose, ((NI) 1));
+						toclose = (NI)(TMP10351);
 					}
 					LA17: ;
 					nimln(772, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 0)], (&cond));
 					nimln(773, "jsgen.nim");
@@ -5557,12 +5557,12 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 					nimln(93, "jsgen.nim");
 					{
 						if (!((*p).target == ((NU8) 0))) goto LA29;
-						LOC26 = copyString(((NimStringDesc*) &TMP10351));
+						LOC26 = copyString(((NimStringDesc*) &TMP10352));
 					}
 					goto LA27;
 					LA29: ;
 					{
-						LOC26 = copyString(((NimStringDesc*) &TMP10352));
+						LOC26 = copyString(((NimStringDesc*) &TMP10353));
 					}
 					LA27: ;
 					memset((void*)LOC32, 0, sizeof(LOC32));
@@ -5570,7 +5570,7 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 					LOC32[0] = rdloc_497127(cond);
 					addf_162635(&(*p).body, LOC26, LOC32, 1);
 					nimln(774, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 1)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 1)], (&stmt));
 				}
@@ -5584,18 +5584,18 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 					nimln(93, "jsgen.nim");
 					{
 						if (!((*p).target == ((NU8) 0))) goto LA37;
-						LOC34 = copyString(((NimStringDesc*) &TMP10280));
+						LOC34 = copyString(((NimStringDesc*) &TMP10281));
 					}
 					goto LA35;
 					LA37: ;
 					{
-						LOC34 = copyString(((NimStringDesc*) &TMP10281));
+						LOC34 = copyString(((NimStringDesc*) &TMP10282));
 					}
 					LA35: ;
 					memset((void*)LOC40, 0, sizeof(LOC40));
 					addf_162635(&(*p).body, LOC34, LOC40, 0);
 					nimln(778, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 0)], (&stmt));
 				}
@@ -5607,19 +5607,19 @@ N_NIMCALL(void, genif_500645)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA44;
-					LOC41 = copyString(((NimStringDesc*) &TMP10268));
+					LOC41 = copyString(((NimStringDesc*) &TMP10269));
 				}
 				goto LA42;
 				LA44: ;
 				{
-					LOC41 = copyString(((NimStringDesc*) &TMP10282));
+					LOC41 = copyString(((NimStringDesc*) &TMP10283));
 				}
 				LA42: ;
 				memset((void*)LOC47, 0, sizeof(LOC47));
 				addf_162635(&(*p).body, LOC41, LOC47, 0);
 				nimln(1614, "system.nim");
-				TMP10353 = addInt(res_500770, ((NI) 1));
-				res_500770 = (NI)(TMP10353);
+				TMP10354 = addInt(res_500770, ((NI) 1));
+				res_500770 = (NI)(TMP10354);
 			} LA9: ;
 		}
 	}
@@ -5650,16 +5650,16 @@ appendString(LOC52, tnl_159626);
 				nimln(1599, "system.nim");
 				while (1) {
 					TY461359 LOC58;
-					NI TMP10354;
+					NI TMP10355;
 					if (!(res_500778 <= toclose)) goto LA57;
 					nimln(1600, "system.nim");
 					i_500756 = res_500778;
 					nimln(784, "jsgen.nim");
 					memset((void*)LOC58, 0, sizeof(LOC58));
-					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10282), LOC58, 0);
+					addf_162635(&(*p).body, ((NimStringDesc*) &TMP10283), LOC58, 0);
 					nimln(1619, "system.nim");
-					TMP10354 = addInt(res_500778, ((NI) 1));
-					res_500778 = (NI)(TMP10354);
+					TMP10355 = addInt(res_500778, ((NI) 1));
+					res_500778 = (NI)(TMP10355);
 				} LA57: ;
 			}
 		}
@@ -5688,21 +5688,21 @@ N_NIMCALL(Ropeobj161009*, generateheader_500806)(Tproc497033* p, Ttype191849* ty
 		NI i_500823;
 		NI HEX3Atmp_501035;
 		NI LOC2;
-		NI TMP10355;
+		NI TMP10356;
 		NI res_501038;
 		i_500823 = 0;
 		HEX3Atmp_501035 = 0;
 		nimln(788, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403((*typ).n);
-		TMP10355 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_501035 = (NI)(TMP10355);
+		TMP10356 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_501035 = (NI)(TMP10356);
 		nimln(1598, "system.nim");
 		res_501038 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10358;
+				NI TMP10359;
 				if (!(res_501038 <= HEX3Atmp_501035)) goto LA4;
 				nimln(1600, "system.nim");
 				i_500823 = res_501038;
@@ -5711,16 +5711,16 @@ N_NIMCALL(Ropeobj161009*, generateheader_500806)(Tproc497033* p, Ttype191849* ty
 					Ropeobj161009* name;
 					nimln(789, "jsgen.nim");
 					{
-						if (((TMP10099[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+						if (((TMP10100[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 						if ((NU)(i_500823) >= (NU)((*(*typ).n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						if (!!(((*(*(*typ).n).kindU.S6.sons->data[i_500823]).kind == ((NU8) 3)))) goto LA8;
-						failedassertimpl_87017(((NimStringDesc*) &TMP10356));
+						failedassertimpl_87017(((NimStringDesc*) &TMP10357));
 					}
 					LA8: ;
 					nimln(790, "jsgen.nim");
-					if (((TMP10099[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*(*typ).n).kind/8] &(1<<((*(*typ).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_500823) >= (NU)((*(*typ).n).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (!(((TMP10101[(*(*(*typ).n).kindU.S6.sons->data[i_500823]).kind/8] &(1<<((*(*(*typ).n).kindU.S6.sons->data[i_500823]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+					if (!(((TMP10102[(*(*(*typ).n).kindU.S6.sons->data[i_500823]).kind/8] &(1<<((*(*(*typ).n).kindU.S6.sons->data[i_500823]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 					param = (*(*(*typ).n).kindU.S6.sons->data[i_500823]).kindU.S4.sym;
 					nimln(791, "jsgen.nim");
 					{
@@ -5734,7 +5734,7 @@ N_NIMCALL(Ropeobj161009*, generateheader_500806)(Tproc497033* p, Ttype191849* ty
 					nimln(792, "jsgen.nim");
 					{
 						if (!!((result == NIM_NIL))) goto LA17;
-						add_161545(&result, ((NimStringDesc*) &TMP10111));
+						add_161545(&result, ((NimStringDesc*) &TMP10112));
 					}
 					LA17: ;
 					nimln(793, "jsgen.nim");
@@ -5748,17 +5748,17 @@ N_NIMCALL(Ropeobj161009*, generateheader_500806)(Tproc497033* p, Ttype191849* ty
 						LOC21 = maptype_497256((*param).typ);
 						if (!(LOC21 == ((NU8) 8))) goto LA22;
 						nimln(796, "jsgen.nim");
-						add_161545(&result, ((NimStringDesc*) &TMP10111));
+						add_161545(&result, ((NimStringDesc*) &TMP10112));
 						nimln(797, "jsgen.nim");
 						add_161534(&result, name);
 						nimln(798, "jsgen.nim");
-						add_161545(&result, ((NimStringDesc*) &TMP10357));
+						add_161545(&result, ((NimStringDesc*) &TMP10358));
 					}
 					LA22: ;
 				} LA5: ;
 				nimln(1614, "system.nim");
-				TMP10358 = addInt(res_501038, ((NI) 1));
-				res_501038 = (NI)(TMP10358);
+				TMP10359 = addInt(res_501038, ((NI) 1));
+				res_501038 = (NI)(TMP10359);
 			} LA4: ;
 		}
 	}
@@ -5774,7 +5774,7 @@ N_NIMCALL(NIM_BOOL, needsnocopy_501065)(Tnode191813* y) {
 	result = 0;
 	nimln(807, "jsgen.nim");
 	LOC1 = 0;
-	LOC1 = ((TMP10359[(*y).kind/8] &(1<<((*y).kind%8)))!=0);
+	LOC1 = ((TMP10360[(*y).kind/8] &(1<<((*y).kind%8)))!=0);
 	if (LOC1) goto LA2;
 	nimln(808, "jsgen.nim");
 	LOC3 = 0;
@@ -5817,21 +5817,21 @@ N_NIMCALL(void, genasgnaux_501096)(Tproc497033* p, Tnode191813* x, Tnode191813* 
 			memset((void*)LOC9, 0, sizeof(LOC9));
 			LOC9[0] = rdloc_497127(a);
 			LOC9[1] = rdloc_497127(b);
-			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10270), LOC9, 2);
+			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC9, 2);
 		}
 		goto LA3;
 		LA7: ;
 		{
 			TY200103 LOC11;
 			nimln(819, "jsgen.nim");
-			usemagic_497846(p, ((NimStringDesc*) &TMP10360));
+			usemagic_497846(p, ((NimStringDesc*) &TMP10361));
 			nimln(820, "jsgen.nim");
 			memset((void*)LOC11, 0, sizeof(LOC11));
 			LOC11[0] = a.res;
 			LOC11[1] = b.res;
 			nimln(821, "jsgen.nim");
 			LOC11[2] = gentypeinfo_497315(p, (*y).typ);
-			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10361), LOC11, 3);
+			addf_162635(&(*p).body, ((NimStringDesc*) &TMP10362), LOC11, 3);
 		}
 		LA3: ;
 	}
@@ -5849,7 +5849,7 @@ N_NIMCALL(void, genasgnaux_501096)(Tproc497033* p, Tnode191813* x, Tnode191813* 
 			LA16: ;
 			if (!LOC15) goto LA17;
 			nimln(824, "jsgen.nim");
-			internalerror_165199((*x).info, ((NimStringDesc*) &TMP10362));
+			internalerror_165199((*x).info, ((NimStringDesc*) &TMP10363));
 		}
 		LA17: ;
 		nimln(825, "jsgen.nim");
@@ -5858,7 +5858,7 @@ N_NIMCALL(void, genasgnaux_501096)(Tproc497033* p, Tnode191813* x, Tnode191813* 
 		LOC19[1] = b.address;
 		LOC19[2] = a.res;
 		LOC19[3] = b.res;
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10363), LOC19, 4);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10364), LOC19, 4);
 	}
 	break;
 	default:
@@ -5868,7 +5868,7 @@ N_NIMCALL(void, genasgnaux_501096)(Tproc497033* p, Tnode191813* x, Tnode191813* 
 		memset((void*)LOC21, 0, sizeof(LOC21));
 		LOC21[0] = a.res;
 		LOC21[1] = b.res;
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10270), LOC21, 2);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC21, 2);
 	}
 	break;
 	}
@@ -5880,9 +5880,9 @@ N_NIMCALL(void, genasgn_501144)(Tproc497033* p, Tnode191813* n) {
 	nimln(830, "jsgen.nim");
 	genlinedir_498989(p, n);
 	nimln(831, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	genasgnaux_501096(p, (*n).kindU.S6.sons->data[((NI) 0)], (*n).kindU.S6.sons->data[((NI) 1)], NIM_FALSE);
 	popFrame();
@@ -5893,9 +5893,9 @@ N_NIMCALL(void, genfastasgn_501156)(Tproc497033* p, Tnode191813* n) {
 	nimln(834, "jsgen.nim");
 	genlinedir_498989(p, n);
 	nimln(835, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	genasgnaux_501096(p, (*n).kindU.S6.sons->data[((NI) 0)], (*n).kindU.S6.sons->data[((NI) 1)], NIM_TRUE);
 	popFrame();
@@ -5904,7 +5904,7 @@ N_NIMCALL(void, genfastasgn_501156)(Tproc497033* p, Tnode191813* n) {
 N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 	Tcompres497023 a;
 	Tcompres497023 b;
-	NI TMP10364;
+	NI TMP10365;
 	Ropeobj161009* tmp;
 	TY161572 LOC1;
 	NimStringDesc* LOC22;
@@ -5913,30 +5913,30 @@ N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 	memset((void*)(&a), 0, sizeof(a));
 	memset((void*)(&b), 0, sizeof(b));
 	nimln(839, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&a));
 	nimln(840, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&b));
 	nimln(841, "jsgen.nim");
-	TMP10364 = addInt((*p).unique, ((NI) 1));
-	(*p).unique = (NI)(TMP10364);
+	TMP10365 = addInt((*p).unique, ((NI) 1));
+	(*p).unique = (NI)(TMP10365);
 	nimln(842, "jsgen.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	LOC1[0] = rope_161407(((NI64) ((*p).unique)));
-	tmp = HEX25_162235(((NimStringDesc*) &TMP10141), LOC1, 1);
+	tmp = HEX25_162235(((NimStringDesc*) &TMP10142), LOC1, 1);
 	nimln(843, "jsgen.nim");
 	{
 		Ttype191849* LOC4;
 		NU8 LOC5;
-		NI TMP10365;
+		NI TMP10366;
 		Ropeobj161009* tmp2;
 		TY161572 LOC8;
 		NimStringDesc* LOC15;
 		TY200103 LOC21;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC4 = 0;
 		LOC4 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106240964864));
@@ -5944,12 +5944,12 @@ N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 		LOC5 = maptype_497256(LOC4);
 		if (!(LOC5 == ((NU8) 8))) goto LA6;
 		nimln(844, "jsgen.nim");
-		TMP10365 = addInt((*p).unique, ((NI) 1));
-		(*p).unique = (NI)(TMP10365);
+		TMP10366 = addInt((*p).unique, ((NI) 1));
+		(*p).unique = (NI)(TMP10366);
 		nimln(845, "jsgen.nim");
 		memset((void*)LOC8, 0, sizeof(LOC8));
 		LOC8[0] = rope_161407(((NI64) ((*p).unique)));
-		tmp2 = HEX25_162235(((NimStringDesc*) &TMP10141), LOC8, 1);
+		tmp2 = HEX25_162235(((NimStringDesc*) &TMP10142), LOC8, 1);
 		nimln(846, "jsgen.nim");
 		{
 			NIM_BOOL LOC11;
@@ -5960,7 +5960,7 @@ N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 			LA12: ;
 			if (!LOC11) goto LA13;
 			nimln(847, "jsgen.nim");
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10366));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10367));
 		}
 		LA13: ;
 		nimln(848, "jsgen.nim");
@@ -5968,12 +5968,12 @@ N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA18;
-			LOC15 = copyString(((NimStringDesc*) &TMP10367));
+			LOC15 = copyString(((NimStringDesc*) &TMP10368));
 		}
 		goto LA16;
 		LA18: ;
 		{
-			LOC15 = copyString(((NimStringDesc*) &TMP10368));
+			LOC15 = copyString(((NimStringDesc*) &TMP10369));
 		}
 		LA16: ;
 		memset((void*)LOC21, 0, sizeof(LOC21));
@@ -5990,12 +5990,12 @@ N_NIMCALL(void, genswap_501168)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA25;
-		LOC22 = copyString(((NimStringDesc*) &TMP10369));
+		LOC22 = copyString(((NimStringDesc*) &TMP10370));
 	}
 	goto LA23;
 	LA25: ;
 	{
-		LOC22 = copyString(((NimStringDesc*) &TMP10370));
+		LOC22 = copyString(((NimStringDesc*) &TMP10371));
 	}
 	LA23: ;
 	memset((void*)LOC28, 0, sizeof(LOC28));
@@ -6015,21 +6015,21 @@ N_NIMCALL(NI, getfieldposition_501262)(Tnode191813* f) {
 	case ((NU8) 6) ... ((NU8) 15):
 	{
 		nimln(857, "jsgen.nim");
-		if (!(((TMP10307[(*f).kind/8] &(1<<((*f).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10308));
+		if (!(((TMP10308[(*f).kind/8] &(1<<((*f).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10309));
 		result = ((NI)chckRange64((*f).kindU.S1.intval, ((NI) (-2147483647 -1)), ((NI) 2147483647)));
 	}
 	break;
 	case ((NU8) 3):
 	{
 		nimln(858, "jsgen.nim");
-		if (!(((TMP10101[(*f).kind/8] &(1<<((*f).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*f).kind/8] &(1<<((*f).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		result = (*(*f).kindU.S4.sym).position;
 	}
 	break;
 	default:
 	{
 		nimln(859, "jsgen.nim");
-		internalerror_165199((*f).info, ((NimStringDesc*) &TMP10371));
+		internalerror_165199((*f).info, ((NimStringDesc*) &TMP10372));
 	}
 	break;
 	}
@@ -6047,7 +6047,7 @@ N_NIMCALL(void, genfieldaddr_501275)(Tproc497033* p, Tnode191813* n, Tcompres497
 	nimln(864, "jsgen.nim");
 	{
 		if (!((*n).kind == ((NU8) 64))) goto LA3;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		b = (*n).kindU.S6.sons->data[((NI) 0)];
 	}
@@ -6058,7 +6058,7 @@ N_NIMCALL(void, genfieldaddr_501275)(Tproc497033* p, Tnode191813* n, Tcompres497
 	}
 	LA1: ;
 	nimln(865, "jsgen.nim");
-	if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*b).kindU.S6.sons->data[((NI) 0)], (&a));
 	nimln(866, "jsgen.nim");
@@ -6067,21 +6067,21 @@ N_NIMCALL(void, genfieldaddr_501275)(Tproc497033* p, Tnode191813* n, Tcompres497
 		NimStringDesc* LOC11;
 		NI LOC12;
 		NimStringDesc* LOC13;
-		if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC8 = 0;
 		LOC8 = skiptypes_195167((*(*b).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106242013440));
 		if (!((*LOC8).kind == ((NU8) 18))) goto LA9;
 		nimln(867, "jsgen.nim");
 		LOC11 = 0;
-		if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC12 = 0;
 		LOC12 = getfieldposition_501262((*b).kindU.S6.sons->data[((NI) 1)]);
 		LOC13 = 0;
 		LOC13 = nimIntToStr(LOC12);
 		LOC11 = rawNewString(LOC13->Sup.len + 5);
-appendString(LOC11, ((NimStringDesc*) &TMP10372));
+appendString(LOC11, ((NimStringDesc*) &TMP10373));
 appendString(LOC11, LOC13);
 		unsureAsgnRef((void**) (&(*r).res), makejsstring_497305(LOC11));
 	}
@@ -6092,18 +6092,18 @@ appendString(LOC11, LOC13);
 		NimStringDesc* LOC23;
 		nimln(869, "jsgen.nim");
 		{
-			if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*b).kindU.S6.sons->data[((NI) 1)]).kind == ((NU8) 3)))) goto LA17;
-			if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
-			internalerror_165199((*(*b).kindU.S6.sons->data[((NI) 1)]).info, ((NimStringDesc*) &TMP10373));
+			internalerror_165199((*(*b).kindU.S6.sons->data[((NI) 1)]).info, ((NimStringDesc*) &TMP10374));
 		}
 		LA17: ;
 		nimln(870, "jsgen.nim");
-		if (((TMP10099[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*b).kind/8] &(1<<((*b).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*b).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*b).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*b).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*b).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		f = (*(*b).kindU.S6.sons->data[((NI) 1)]).kindU.S4.sym;
 		nimln(871, "jsgen.nim");
 		{
@@ -6124,7 +6124,7 @@ appendString(LOC11, LOC13);
 		if (!!(!((a.typ == ((NU8) 8))))) goto LA26;
 		nimln(854, "msgs.nim");
 		LOC28 = 0;
-		LOC28 = HEX24_165306(TMP10374);
+		LOC28 = HEX24_165306(TMP10375);
 		internalerror_165218(LOC28);
 	}
 	LA26: ;
@@ -6140,7 +6140,7 @@ N_NIMCALL(void, genfieldaccess_501358)(Tproc497033* p, Tnode191813* n, Tcompres4
 	nimln(878, "jsgen.nim");
 	(*r).typ = ((NU8) 0);
 	nimln(879, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	nimln(880, "jsgen.nim");
@@ -6148,7 +6148,7 @@ N_NIMCALL(void, genfieldaccess_501358)(Tproc497033* p, Tnode191813* n, Tcompres4
 		Ttype191849* LOC3;
 		TY200177 LOC6;
 		NI LOC7;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC3 = 0;
 		LOC3 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106242013440));
@@ -6156,12 +6156,12 @@ N_NIMCALL(void, genfieldaccess_501358)(Tproc497033* p, Tnode191813* n, Tcompres4
 		nimln(881, "jsgen.nim");
 		memset((void*)LOC6, 0, sizeof(LOC6));
 		LOC6[0] = (*r).res;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC7 = 0;
 		LOC7 = getfieldposition_501262((*n).kindU.S6.sons->data[((NI) 1)]);
 		LOC6[1] = rope_161407(((NI64) (LOC7)));
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10375), LOC6, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10376), LOC6, 2));
 	}
 	goto LA1;
 	LA4: ;
@@ -6170,18 +6170,18 @@ N_NIMCALL(void, genfieldaccess_501358)(Tproc497033* p, Tnode191813* n, Tcompres4
 		TY200177 LOC17;
 		nimln(883, "jsgen.nim");
 		{
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).kindU.S6.sons->data[((NI) 1)]).kind == ((NU8) 3)))) goto LA11;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			internalerror_165199((*(*n).kindU.S6.sons->data[((NI) 1)]).info, ((NimStringDesc*) &TMP10373));
+			internalerror_165199((*(*n).kindU.S6.sons->data[((NI) 1)]).info, ((NimStringDesc*) &TMP10374));
 		}
 		LA11: ;
 		nimln(884, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		f = (*(*n).kindU.S6.sons->data[((NI) 1)]).kindU.S4.sym;
 		nimln(885, "jsgen.nim");
 		{
@@ -6193,7 +6193,7 @@ N_NIMCALL(void, genfieldaccess_501358)(Tproc497033* p, Tnode191813* n, Tcompres4
 		memset((void*)LOC17, 0, sizeof(LOC17));
 		LOC17[0] = (*r).res;
 		LOC17[1] = (*f).loc.r;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10376), LOC17, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10377), LOC17, 2));
 	}
 	LA1: ;
 	nimln(887, "jsgen.nim");
@@ -6207,7 +6207,7 @@ N_NIMCALL(void, gencheckedfieldaddr_501415)(Tproc497033* p, Tnode191813* n, Tcom
 	nimln(890, "jsgen.nim");
 	{
 		if (!((*n).kind == ((NU8) 64))) goto LA3;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		m = (*n).kindU.S6.sons->data[((NI) 0)];
 	}
@@ -6224,12 +6224,12 @@ N_NIMCALL(void, gencheckedfieldaddr_501415)(Tproc497033* p, Tnode191813* n, Tcom
 		if (!!(((*m).kind == ((NU8) 46)))) goto LA8;
 		nimln(854, "msgs.nim");
 		LOC10 = 0;
-		LOC10 = HEX24_165306(TMP10377);
+		LOC10 = HEX24_165306(TMP10378);
 		internalerror_165218(LOC10);
 	}
 	LA8: ;
 	nimln(892, "jsgen.nim");
-	if (((TMP10099[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*m).kindU.S6.sons->Sup.len)) raiseIndexError();
 	genfieldaddr_501275(p, (*m).kindU.S6.sons->data[((NI) 0)], r);
 	popFrame();
@@ -6238,7 +6238,7 @@ N_NIMCALL(void, gencheckedfieldaddr_501415)(Tproc497033* p, Tnode191813* n, Tcom
 N_NIMCALL(void, gencheckedfieldaccess_501455)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	nimfr("genCheckedFieldAccess", "jsgen.nim")
 	nimln(895, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	genfieldaccess_501358(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	popFrame();
@@ -6259,7 +6259,7 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 	nimln(902, "jsgen.nim");
 	{
 		if (!((*n).kind == ((NU8) 64))) goto LA3;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		m = (*n).kindU.S6.sons->data[((NI) 0)];
 	}
@@ -6270,11 +6270,11 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 	}
 	LA1: ;
 	nimln(903, "jsgen.nim");
-	if (((TMP10099[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*m).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*m).kindU.S6.sons->data[((NI) 0)], (&a));
 	nimln(904, "jsgen.nim");
-	if (((TMP10099[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*m).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*m).kindU.S6.sons->data[((NI) 1)], (&b));
 	nimln(854, "msgs.nim");
@@ -6290,14 +6290,14 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 		if (!!(LOC8)) goto LA10;
 		nimln(854, "msgs.nim");
 		LOC12 = 0;
-		LOC12 = HEX24_165306(TMP10378);
+		LOC12 = HEX24_165306(TMP10379);
 		internalerror_165218(LOC12);
 	}
 	LA10: ;
 	nimln(906, "jsgen.nim");
 	unsureAsgnRef((void**) (&(*r).address), a.res);
 	nimln(907, "jsgen.nim");
-	if (((TMP10099[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*m).kindU.S6.sons->Sup.len)) raiseIndexError();
 	typ = skiptypes_195167((*(*m).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106247256320));
 	nimln(908, "jsgen.nim");
@@ -6321,7 +6321,7 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 		LOC20 = 0;
 		LOC20 = (((*p).options &(1<<((((NU8) 4))&31)))!=0);
 		if (!(LOC20)) goto LA21;
-		if (((TMP10099[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*m).kind/8] &(1<<((*m).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*m).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC22 = 0;
 		LOC22 = isconstexpr_220428((*m).kindU.S6.sons->data[((NI) 1)]);
@@ -6329,13 +6329,13 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 		LA21: ;
 		if (!LOC20) goto LA23;
 		nimln(911, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10379));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10380));
 		nimln(912, "jsgen.nim");
 		memset((void*)LOC25, 0, sizeof(LOC25));
 		LOC25[0] = b.res;
 		LOC25[1] = rope_161407(first);
 		LOC25[2] = a.res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10380), LOC25, 3));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10381), LOC25, 3));
 	}
 	goto LA18;
 	LA23: ;
@@ -6347,7 +6347,7 @@ N_NIMCALL(void, genarrayaddr_501468)(Tproc497033* p, Tnode191813* n, Tcompres497
 		memset((void*)LOC29, 0, sizeof(LOC29));
 		LOC29[0] = b.res;
 		LOC29[1] = rope_161407(first);
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10381), LOC29, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10382), LOC29, 2));
 	}
 	goto LA18;
 	LA27: ;
@@ -6366,7 +6366,7 @@ N_NIMCALL(void, genarrayaccess_501554)(Tproc497033* p, Tnode191813* n, Tcompres4
 	TY200177 LOC14;
 	nimfr("genArrayAccess", "jsgen.nim")
 	nimln(920, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	ty = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106242013440));
 	nimln(921, "jsgen.nim");
@@ -6404,7 +6404,7 @@ N_NIMCALL(void, genarrayaccess_501554)(Tproc497033* p, Tnode191813* n, Tcompres4
 		nimln(928, "jsgen.nim");
 		LOC9 = 0;
 		LOC9 = rawNewString(reprEnum((*ty).kind, (&NTI191260))->Sup.len + 21);
-appendString(LOC9, ((NimStringDesc*) &TMP10382));
+appendString(LOC9, ((NimStringDesc*) &TMP10383));
 appendString(LOC9, reprEnum((*ty).kind, (&NTI191260)));
 appendChar(LOC9, 41);
 		internalerror_165199((*n).info, LOC9);
@@ -6416,14 +6416,14 @@ appendChar(LOC9, 41);
 	nimln(930, "jsgen.nim");
 	{
 		if (!((*r).res == NIM_NIL)) goto LA12;
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10383));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10384));
 	}
 	LA12: ;
 	nimln(931, "jsgen.nim");
 	memset((void*)LOC14, 0, sizeof(LOC14));
 	LOC14[0] = (*r).address;
 	LOC14[1] = (*r).res;
-	unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10384), LOC14, 2));
+	unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10385), LOC14, 2));
 	nimln(932, "jsgen.nim");
 	unsureAsgnRef((void**) (&(*r).address), NIM_NIL);
 	nimln(933, "jsgen.nim");
@@ -6460,21 +6460,21 @@ N_NIMCALL(NIM_BOOL, isindirect_501600)(Tsym191843* v) {
 N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	nimfr("genAddr", "jsgen.nim")
 	nimln(943, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	switch ((*(*n).kindU.S6.sons->data[((NI) 0)]).kind) {
 	case ((NU8) 3):
 	{
 		Tsym191843* s;
 		nimln(945, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		s = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(946, "jsgen.nim");
 		{
 			if (!((*s).loc.r == NIM_NIL)) goto LA4;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10385));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10386));
 		}
 		LA4: ;
 		nimln(947, "jsgen.nim");
@@ -6500,7 +6500,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 					LOC13 = isindirect_501600(s);
 					if (!LOC13) goto LA14;
 					nimln(955, "jsgen.nim");
-					unsureAsgnRef((void**) (&(*r).res), HEX26_161471((*s).loc.r, ((NimStringDesc*) &TMP10386)));
+					unsureAsgnRef((void**) (&(*r).res), HEX26_161471((*s).loc.r, ((NimStringDesc*) &TMP10387)));
 				}
 				goto LA11;
 				LA14: ;
@@ -6528,13 +6528,13 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 				nimln(963, "jsgen.nim");
 				unsureAsgnRef((void**) (&(*r).address), (*s).loc.r);
 				nimln(964, "jsgen.nim");
-				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10387)));
+				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10388)));
 			}
 			goto LA7;
 			LA20: ;
 			{
 				nimln(967, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 			}
@@ -6544,7 +6544,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		default:
 		{
 			nimln(969, "jsgen.nim");
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10388));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10389));
 		}
 		break;
 		}
@@ -6559,7 +6559,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 	case ((NU8) 45):
 	{
 		nimln(973, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		genfieldaddr_501275(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	}
@@ -6568,7 +6568,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 	{
 		Ttype191849* ty;
 		nimln(975, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		ty = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 0)]).typ, IL64(211106242013440));
 		nimln(976, "jsgen.nim");
@@ -6592,7 +6592,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		case ((NU8) 2):
 		{
 			nimln(980, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			genarrayaddr_501468(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 		}
@@ -6600,7 +6600,7 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		case ((NU8) 18):
 		{
 			nimln(982, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			genfieldaddr_501275(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 		}
@@ -6609,11 +6609,11 @@ N_NIMCALL(void, genaddr_501677)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		{
 			NimStringDesc* LOC35;
 			nimln(983, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC35 = 0;
 			LOC35 = rawNewString(reprEnum((*ty).kind, (&NTI191260))->Sup.len + 21);
-appendString(LOC35, ((NimStringDesc*) &TMP10382));
+appendString(LOC35, ((NimStringDesc*) &TMP10383));
 appendString(LOC35, reprEnum((*ty).kind, (&NTI191260)));
 appendChar(LOC35, 41);
 			internalerror_165199((*(*n).kindU.S6.sons->data[((NI) 0)]).info, LOC35);
@@ -6625,9 +6625,9 @@ appendChar(LOC35, 41);
 	default:
 	{
 		nimln(984, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		internalerror_165199((*(*n).kindU.S6.sons->data[((NI) 0)]).info, ((NimStringDesc*) &TMP10389));
+		internalerror_165199((*(*n).kindU.S6.sons->data[((NI) 0)]).info, ((NimStringDesc*) &TMP10390));
 	}
 	break;
 	}
@@ -6638,7 +6638,7 @@ N_NIMCALL(void, gensym_501782)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 	Tsym191843* s;
 	nimfr("genSym", "jsgen.nim")
 	nimln(987, "jsgen.nim");
-	if (!(((TMP10101[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+	if (!(((TMP10102[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 	s = (*n).kindU.S4.sym;
 	nimln(988, "jsgen.nim");
 	switch ((*s).kind) {
@@ -6656,7 +6656,7 @@ N_NIMCALL(void, gensym_501782)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 			nimln(991, "jsgen.nim");
 			LOC6 = 0;
 			LOC6 = rawNewString((*(*s).name).s->Sup.len + 30);
-appendString(LOC6, ((NimStringDesc*) &TMP10390));
+appendString(LOC6, ((NimStringDesc*) &TMP10391));
 appendString(LOC6, (*(*s).name).s);
 			internalerror_165199((*n).info, LOC6);
 		}
@@ -6676,11 +6676,11 @@ appendString(LOC6, (*(*s).name).s);
 				nimln(996, "jsgen.nim");
 				memset((void*)LOC15, 0, sizeof(LOC15));
 				LOC15[0] = (*s).loc.r;
-				unsureAsgnRef((void**) (&(*r).address), HEX25_162235(((NimStringDesc*) &TMP10391), LOC15, 1));
+				unsureAsgnRef((void**) (&(*r).address), HEX25_162235(((NimStringDesc*) &TMP10392), LOC15, 1));
 				nimln(997, "jsgen.nim");
 				memset((void*)LOC16, 0, sizeof(LOC16));
 				LOC16[0] = (*s).loc.r;
-				unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10392), LOC16, 1));
+				unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10393), LOC16, 1));
 			}
 			goto LA11;
 			LA13: ;
@@ -6688,7 +6688,7 @@ appendString(LOC6, (*(*s).name).s);
 				nimln(999, "jsgen.nim");
 				unsureAsgnRef((void**) (&(*r).address), (*s).loc.r);
 				nimln(1000, "jsgen.nim");
-				unsureAsgnRef((void**) (&(*r).res), HEX26_161471((*s).loc.r, ((NimStringDesc*) &TMP10357)));
+				unsureAsgnRef((void**) (&(*r).res), HEX26_161471((*s).loc.r, ((NimStringDesc*) &TMP10358)));
 			}
 			LA11: ;
 		}
@@ -6704,7 +6704,7 @@ appendString(LOC6, (*(*s).name).s);
 			nimln(1002, "jsgen.nim");
 			memset((void*)LOC22, 0, sizeof(LOC22));
 			LOC22[0] = (*s).loc.r;
-			unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10391), LOC22, 1));
+			unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10392), LOC22, 1));
 		}
 		goto LA7;
 		LA20: ;
@@ -6726,7 +6726,7 @@ appendString(LOC6, (*(*s).name).s);
 			nimln(1008, "jsgen.nim");
 			LOC29 = 0;
 			LOC29 = rawNewString((*(*s).name).s->Sup.len + 30);
-appendString(LOC29, ((NimStringDesc*) &TMP10390));
+appendString(LOC29, ((NimStringDesc*) &TMP10391));
 appendString(LOC29, (*(*s).name).s);
 			internalerror_165199((*n).info, LOC29);
 		}
@@ -6841,7 +6841,7 @@ appendString(LOC29, (*(*s).name).s);
 			nimln(1030, "jsgen.nim");
 			LOC67 = 0;
 			LOC67 = rawNewString((*(*s).name).s->Sup.len + 30);
-appendString(LOC67, ((NimStringDesc*) &TMP10390));
+appendString(LOC67, ((NimStringDesc*) &TMP10391));
 appendString(LOC67, (*(*s).name).s);
 			internalerror_165199((*n).info, LOC67);
 		}
@@ -6861,13 +6861,13 @@ N_NIMCALL(void, genderef_502030)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	nimln(1035, "jsgen.nim");
 	{
 		NU8 LOC3;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC3 = 0;
 		LOC3 = maptype_497256((*(*n).kindU.S6.sons->data[((NI) 0)]).typ);
 		if (!(LOC3 == ((NU8) 7))) goto LA4;
 		nimln(1036, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	}
@@ -6878,20 +6878,20 @@ N_NIMCALL(void, genderef_502030)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		TY200177 LOC11;
 		memset((void*)(&a), 0, sizeof(a));
 		nimln(1039, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&a));
 		nimln(1040, "jsgen.nim");
 		{
 			if (!!((a.typ == ((NU8) 8)))) goto LA9;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10393));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10394));
 		}
 		LA9: ;
 		nimln(1041, "jsgen.nim");
 		memset((void*)LOC11, 0, sizeof(LOC11));
 		LOC11[0] = a.address;
 		LOC11[1] = a.res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10384), LOC11, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10385), LOC11, 2));
 	}
 	LA1: ;
 	popFrame();
@@ -6909,7 +6909,7 @@ N_NIMCALL(void, genarg_502068)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 		nimln(1047, "jsgen.nim");
 		add_161534(&(*r).res, a.address);
 		nimln(1048, "jsgen.nim");
-		add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+		add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 		nimln(1049, "jsgen.nim");
 		add_161534(&(*r).res, a.res);
 	}
@@ -6926,33 +6926,33 @@ N_NIMCALL(void, genarg_502068)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 N_NIMCALL(void, genargs_502096)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	nimfr("genArgs", "jsgen.nim")
 	nimln(1054, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10394));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10395));
 	{
 		NI i_502115;
 		NI HEX3Atmp_502122;
 		NI LOC2;
-		NI TMP10395;
+		NI TMP10396;
 		NI res_502125;
 		i_502115 = 0;
 		HEX3Atmp_502122 = 0;
 		nimln(1055, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10395 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_502122 = (NI)(TMP10395);
+		TMP10396 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_502122 = (NI)(TMP10396);
 		nimln(1598, "system.nim");
 		res_502125 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10396;
+				NI TMP10397;
 				if (!(res_502125 <= HEX3Atmp_502122)) goto LA4;
 				nimln(1600, "system.nim");
 				i_502115 = res_502125;
 				{
 					Tnode191813* it;
 					nimln(1056, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_502115) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					it = (*n).kindU.S6.sons->data[i_502115];
 					nimln(1057, "jsgen.nim");
@@ -6967,20 +6967,20 @@ N_NIMCALL(void, genargs_502096)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 					nimln(1058, "jsgen.nim");
 					{
 						if (!(((NI) 1) < i_502115)) goto LA13;
-						add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+						add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 					}
 					LA13: ;
 					nimln(1059, "jsgen.nim");
 					genarg_502068(p, it, r);
 				} LA5: ;
 				nimln(1614, "system.nim");
-				TMP10396 = addInt(res_502125, ((NI) 1));
-				res_502125 = (NI)(TMP10396);
+				TMP10397 = addInt(res_502125, ((NI) 1));
+				res_502125 = (NI)(TMP10397);
 			} LA4: ;
 		}
 	}
 	nimln(1060, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10397));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10398));
 	nimln(1061, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	popFrame();
@@ -6989,7 +6989,7 @@ N_NIMCALL(void, genargs_502096)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 N_NIMCALL(void, gencall_502147)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	nimfr("genCall", "jsgen.nim")
 	nimln(1064, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	nimln(1065, "jsgen.nim");
@@ -7001,7 +7001,7 @@ N_NIMCALL(void, geninfixcall_502160)(Tproc497033* p, Tnode191813* n, Tcompres497
 	Tcompres497023 op;
 	nimfr("genInfixCall", "jsgen.nim")
 	nimln(1068, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	nimln(1069, "jsgen.nim");
@@ -7012,14 +7012,14 @@ N_NIMCALL(void, geninfixcall_502160)(Tproc497033* p, Tnode191813* n, Tcompres497
 		{
 			if (!((*r).address == NIM_NIL)) goto LA7;
 			nimln(1071, "jsgen.nim");
-			globalerror_165145((*n).info, ((NimStringDesc*) &TMP10398));
+			globalerror_165145((*n).info, ((NimStringDesc*) &TMP10399));
 		}
 		LA7: ;
 		nimln(1072, "jsgen.nim");
 		memset((void*)LOC9, 0, sizeof(LOC9));
 		LOC9[0] = (*r).address;
 		LOC9[1] = (*r).res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10384), LOC9, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10385), LOC9, 2));
 		nimln(1073, "jsgen.nim");
 		unsureAsgnRef((void**) (&(*r).address), NIM_NIL);
 		nimln(1074, "jsgen.nim");
@@ -7027,56 +7027,56 @@ N_NIMCALL(void, geninfixcall_502160)(Tproc497033* p, Tnode191813* n, Tcompres497
 	}
 	LA3: ;
 	nimln(1075, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10399));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10400));
 	memset((void*)(&op), 0, sizeof(op));
 	nimln(1077, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], (&op));
 	nimln(1078, "jsgen.nim");
 	add_161534(&(*r).res, op.res);
 	nimln(1080, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10394));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10395));
 	{
 		NI i_502208;
 		NI HEX3Atmp_502214;
 		NI LOC11;
-		NI TMP10400;
+		NI TMP10401;
 		NI res_502217;
 		i_502208 = 0;
 		HEX3Atmp_502214 = 0;
 		nimln(1081, "jsgen.nim");
 		LOC11 = 0;
 		LOC11 = sonslen_194403(n);
-		TMP10400 = subInt(LOC11, ((NI) 1));
-		HEX3Atmp_502214 = (NI)(TMP10400);
+		TMP10401 = subInt(LOC11, ((NI) 1));
+		HEX3Atmp_502214 = (NI)(TMP10401);
 		nimln(1598, "system.nim");
 		res_502217 = ((NI) 2);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10401;
+				NI TMP10402;
 				if (!(res_502217 <= HEX3Atmp_502214)) goto LA13;
 				nimln(1600, "system.nim");
 				i_502208 = res_502217;
 				nimln(1082, "jsgen.nim");
 				{
 					if (!(((NI) 2) < i_502208)) goto LA16;
-					add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+					add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 				}
 				LA16: ;
 				nimln(1083, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_502208) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				genarg_502068(p, (*n).kindU.S6.sons->data[i_502208], r);
 				nimln(1614, "system.nim");
-				TMP10401 = addInt(res_502217, ((NI) 1));
-				res_502217 = (NI)(TMP10401);
+				TMP10402 = addInt(res_502217, ((NI) 1));
+				res_502217 = (NI)(TMP10402);
 			} LA13: ;
 		}
 	}
 	nimln(1084, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10397));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10398));
 	nimln(1085, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	popFrame();
@@ -7087,7 +7087,7 @@ static N_INLINE(Tnode191813*, HEX5BHEX5D_192244)(Tnode191813* n, NI i) {
 	nimfr("[]", "ast.nim")
 	result = 0;
 	nimln(948, "ast.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	result = (*n).kindU.S6.sons->data[i];
 	popFrame();
@@ -7099,9 +7099,9 @@ N_NIMCALL(void, genecho_502236)(Tproc497033* p, Tnode191813* n_502239, Tcompres4
 	Tnode191813* LOC1;
 	nimfr("genEcho", "jsgen.nim")
 	nimln(1088, "jsgen.nim");
-	usemagic_497846(p, ((NimStringDesc*) &TMP10402));
+	usemagic_497846(p, ((NimStringDesc*) &TMP10403));
 	nimln(1089, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10403));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10404));
 	nimln(1090, "jsgen.nim");
 	LOC1 = 0;
 	LOC1 = HEX5BHEX5D_192244(n_502239, ((NI) 1));
@@ -7113,7 +7113,7 @@ N_NIMCALL(void, genecho_502236)(Tproc497033* p, Tnode191813* n_502239, Tcompres4
 		if (!!(((*n).kind == ((NU8) 41)))) goto LA4;
 		nimln(854, "msgs.nim");
 		LOC6 = 0;
-		LOC6 = HEX24_165306(TMP10404);
+		LOC6 = HEX24_165306(TMP10405);
 		internalerror_165218(LOC6);
 	}
 	LA4: ;
@@ -7121,28 +7121,28 @@ N_NIMCALL(void, genecho_502236)(Tproc497033* p, Tnode191813* n_502239, Tcompres4
 		NI i_502273;
 		NI HEX3Atmp_502280;
 		NI LOC8;
-		NI TMP10405;
+		NI TMP10406;
 		NI res_502283;
 		i_502273 = 0;
 		HEX3Atmp_502280 = 0;
 		nimln(1092, "jsgen.nim");
 		LOC8 = 0;
 		LOC8 = sonslen_194403(n);
-		TMP10405 = subInt(LOC8, ((NI) 1));
-		HEX3Atmp_502280 = (NI)(TMP10405);
+		TMP10406 = subInt(LOC8, ((NI) 1));
+		HEX3Atmp_502280 = (NI)(TMP10406);
 		nimln(1598, "system.nim");
 		res_502283 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10406;
+				NI TMP10407;
 				if (!(res_502283 <= HEX3Atmp_502280)) goto LA10;
 				nimln(1600, "system.nim");
 				i_502273 = res_502283;
 				{
 					Tnode191813* it;
 					nimln(1093, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_502273) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					it = (*n).kindU.S6.sons->data[i_502273];
 					nimln(1094, "jsgen.nim");
@@ -7157,20 +7157,20 @@ N_NIMCALL(void, genecho_502236)(Tproc497033* p, Tnode191813* n_502239, Tcompres4
 					nimln(1095, "jsgen.nim");
 					{
 						if (!(((NI) 0) < i_502273)) goto LA19;
-						add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+						add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 					}
 					LA19: ;
 					nimln(1096, "jsgen.nim");
 					genarg_502068(p, it, r);
 				} LA11: ;
 				nimln(1614, "system.nim");
-				TMP10406 = addInt(res_502283, ((NI) 1));
-				res_502283 = (NI)(TMP10406);
+				TMP10407 = addInt(res_502283, ((NI) 1));
+				res_502283 = (NI)(TMP10407);
 			} LA10: ;
 		}
 	}
 	nimln(1097, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10397));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10398));
 	nimln(1098, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	popFrame();
@@ -7188,7 +7188,7 @@ N_NIMCALL(Ropeobj161009*, puttoseq_502305)(NimStringDesc* s, NIM_BOOL indirect) 
 		if (!indirect) goto LA3;
 		memset((void*)LOC5, 0, sizeof(LOC5));
 		LOC5[0] = result;
-		result = HEX25_162235(((NimStringDesc*) &TMP10407), LOC5, 1);
+		result = HEX25_162235(((NimStringDesc*) &TMP10408), LOC5, 1);
 	}
 	LA3: ;
 	popFrame();
@@ -7209,34 +7209,34 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 			NI i_502345;
 			NI HEX3Atmp_502382;
 			NI LOC3;
-			NI TMP10408;
+			NI TMP10409;
 			NI res_502385;
 			i_502345 = 0;
 			HEX3Atmp_502382 = 0;
 			nimln(1109, "jsgen.nim");
 			LOC3 = 0;
 			LOC3 = sonslen_194403(rec);
-			TMP10408 = subInt(LOC3, ((NI) 1));
-			HEX3Atmp_502382 = (NI)(TMP10408);
+			TMP10409 = subInt(LOC3, ((NI) 1));
+			HEX3Atmp_502382 = (NI)(TMP10409);
 			nimln(1598, "system.nim");
 			res_502385 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					Ropeobj161009* LOC6;
-					NI TMP10409;
+					NI TMP10410;
 					if (!(res_502385 <= HEX3Atmp_502382)) goto LA5;
 					nimln(1600, "system.nim");
 					i_502345 = res_502385;
 					nimln(1110, "jsgen.nim");
-					if (((TMP10099[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_502345) >= (NU)((*rec).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC6 = 0;
 					LOC6 = createrecordvaraux_502326(p, (*rec).kindU.S6.sons->data[i_502345], c);
 					add_161534(&result, LOC6);
 					nimln(1614, "system.nim");
-					TMP10409 = addInt(res_502385, ((NI) 1));
-					res_502385 = (NI)(TMP10409);
+					TMP10410 = addInt(res_502385, ((NI) 1));
+					res_502385 = (NI)(TMP10410);
 				} LA5: ;
 			}
 		}
@@ -7246,7 +7246,7 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 	{
 		Ropeobj161009* LOC8;
 		nimln(1112, "jsgen.nim");
-		if (((TMP10099[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*rec).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC8 = 0;
 		LOC8 = createrecordvaraux_502326(p, (*rec).kindU.S6.sons->data[((NI) 0)], c);
@@ -7255,15 +7255,15 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 			NI i_502362;
 			NI HEX3Atmp_502390;
 			NI LOC10;
-			NI TMP10410;
+			NI TMP10411;
 			NI res_502393;
 			i_502362 = 0;
 			HEX3Atmp_502390 = 0;
 			nimln(1113, "jsgen.nim");
 			LOC10 = 0;
 			LOC10 = sonslen_194403(rec);
-			TMP10410 = subInt(LOC10, ((NI) 1));
-			HEX3Atmp_502390 = (NI)(TMP10410);
+			TMP10411 = subInt(LOC10, ((NI) 1));
+			HEX3Atmp_502390 = (NI)(TMP10411);
 			nimln(1598, "system.nim");
 			res_502393 = ((NI) 1);
 			{
@@ -7271,12 +7271,12 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 				while (1) {
 					Tnode191813* LOC13;
 					Ropeobj161009* LOC14;
-					NI TMP10411;
+					NI TMP10412;
 					if (!(res_502393 <= HEX3Atmp_502390)) goto LA12;
 					nimln(1600, "system.nim");
 					i_502362 = res_502393;
 					nimln(1114, "jsgen.nim");
-					if (((TMP10099[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_502362) >= (NU)((*rec).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC13 = 0;
 					LOC13 = lastson_194431((*rec).kindU.S6.sons->data[i_502362]);
@@ -7284,8 +7284,8 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 					LOC14 = createrecordvaraux_502326(p, LOC13, c);
 					add_161534(&result, LOC14);
 					nimln(1614, "system.nim");
-					TMP10411 = addInt(res_502393, ((NI) 1));
-					res_502393 = (NI)(TMP10411);
+					TMP10412 = addInt(res_502393, ((NI) 1));
+					res_502393 = (NI)(TMP10412);
 				} LA12: ;
 			}
 		}
@@ -7295,34 +7295,34 @@ N_NIMCALL(Ropeobj161009*, createrecordvaraux_502326)(Tproc497033* p, Tnode191813
 	{
 		Ropeobj161009* LOC20;
 		Ropeobj161009* LOC21;
-		NI TMP10413;
+		NI TMP10414;
 		nimln(1116, "jsgen.nim");
 		{
 			if (!(((NI) 0) < (*c))) goto LA18;
-			add_161545(&result, ((NimStringDesc*) &TMP10111));
+			add_161545(&result, ((NimStringDesc*) &TMP10112));
 		}
 		LA18: ;
 		nimln(1117, "jsgen.nim");
-		if (!(((TMP10101[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		LOC20 = 0;
 		LOC20 = manglename_497277((*rec).kindU.S4.sym);
 		add_161534(&result, LOC20);
 		nimln(1118, "jsgen.nim");
-		add_161545(&result, ((NimStringDesc*) &TMP10412));
+		add_161545(&result, ((NimStringDesc*) &TMP10413));
 		nimln(1119, "jsgen.nim");
-		if (!(((TMP10101[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*rec).kind/8] &(1<<((*rec).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		LOC21 = 0;
 		LOC21 = createvar_502318(p, (*(*rec).kindU.S4.sym).typ, NIM_FALSE);
 		add_161534(&result, LOC21);
 		nimln(1120, "jsgen.nim");
-		TMP10413 = addInt((*c), ((NI) 1));
-		(*c) = (NI)(TMP10413);
+		TMP10414 = addInt((*c), ((NI) 1));
+		(*c) = (NI)(TMP10414);
 	}
 	break;
 	default:
 	{
 		nimln(1121, "jsgen.nim");
-		internalerror_165199((*rec).info, ((NimStringDesc*) &TMP10414));
+		internalerror_165199((*rec).info, ((NimStringDesc*) &TMP10415));
 	}
 	break;
 	}
@@ -7345,13 +7345,13 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 	case ((NU8) 2):
 	{
 		nimln(1127, "jsgen.nim");
-		result = puttoseq_502305(((NimStringDesc*) &TMP10387), indirect);
+		result = puttoseq_502305(((NimStringDesc*) &TMP10388), indirect);
 	}
 	break;
 	case ((NU8) 36) ... ((NU8) 39):
 	{
 		nimln(1129, "jsgen.nim");
-		result = puttoseq_502305(((NimStringDesc*) &TMP10415), indirect);
+		result = puttoseq_502305(((NimStringDesc*) &TMP10416), indirect);
 	}
 	break;
 	case ((NU8) 20):
@@ -7367,13 +7367,13 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 	case ((NU8) 19):
 	{
 		nimln(1133, "jsgen.nim");
-		result = puttoseq_502305(((NimStringDesc*) &TMP10416), indirect);
+		result = puttoseq_502305(((NimStringDesc*) &TMP10417), indirect);
 	}
 	break;
 	case ((NU8) 1):
 	{
 		nimln(1135, "jsgen.nim");
-		result = puttoseq_502305(((NimStringDesc*) &TMP10417), indirect);
+		result = puttoseq_502305(((NimStringDesc*) &TMP10418), indirect);
 	}
 	break;
 	case ((NU8) 16):
@@ -7393,35 +7393,35 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			TY200103 LOC13;
 			if (!(((NI) 32) < length)) goto LA11;
 			nimln(1140, "jsgen.nim");
-			usemagic_497846(p, ((NimStringDesc*) &TMP10418));
+			usemagic_497846(p, ((NimStringDesc*) &TMP10419));
 			nimln(1142, "jsgen.nim");
-			usemagic_497846(p, ((NimStringDesc*) &TMP10360));
+			usemagic_497846(p, ((NimStringDesc*) &TMP10361));
 			nimln(1143, "jsgen.nim");
 			memset((void*)LOC13, 0, sizeof(LOC13));
 			LOC13[0] = rope_161407(((NI64) (length)));
 			nimln(1144, "jsgen.nim");
 			LOC13[1] = createvar_502318(p, e, NIM_FALSE);
 			LOC13[2] = gentypeinfo_497315(p, e);
-			result = HEX25_162235(((NimStringDesc*) &TMP10419), LOC13, 3);
+			result = HEX25_162235(((NimStringDesc*) &TMP10420), LOC13, 3);
 		}
 		goto LA9;
 		LA11: ;
 		{
 			NI i;
 			nimln(1146, "jsgen.nim");
-			result = rope_161320(((NimStringDesc*) &TMP10420));
+			result = rope_161320(((NimStringDesc*) &TMP10421));
 			nimln(1147, "jsgen.nim");
 			i = ((NI) 0);
 			{
 				nimln(1148, "jsgen.nim");
 				while (1) {
 					Ropeobj161009* LOC21;
-					NI TMP10421;
+					NI TMP10422;
 					if (!(i < length)) goto LA16;
 					nimln(1149, "jsgen.nim");
 					{
 						if (!(((NI) 0) < i)) goto LA19;
-						add_161545(&result, ((NimStringDesc*) &TMP10111));
+						add_161545(&result, ((NimStringDesc*) &TMP10112));
 					}
 					LA19: ;
 					nimln(1150, "jsgen.nim");
@@ -7429,12 +7429,12 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 					LOC21 = createvar_502318(p, e, NIM_FALSE);
 					add_161534(&result, LOC21);
 					nimln(1151, "jsgen.nim");
-					TMP10421 = addInt(i, ((NI) 1));
-					i = (NI)(TMP10421);
+					TMP10422 = addInt(i, ((NI) 1));
+					i = (NI)(TMP10422);
 				} LA16: ;
 			}
 			nimln(1152, "jsgen.nim");
-			add_161545(&result, ((NimStringDesc*) &TMP10422));
+			add_161545(&result, ((NimStringDesc*) &TMP10423));
 		}
 		LA9: ;
 		nimln(1153, "jsgen.nim");
@@ -7443,7 +7443,7 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			if (!indirect) goto LA24;
 			memset((void*)LOC26, 0, sizeof(LOC26));
 			LOC26[0] = result;
-			result = HEX25_162235(((NimStringDesc*) &TMP10407), LOC26, 1);
+			result = HEX25_162235(((NimStringDesc*) &TMP10408), LOC26, 1);
 		}
 		LA24: ;
 	}
@@ -7451,7 +7451,7 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 	case ((NU8) 18):
 	{
 		nimln(1155, "jsgen.nim");
-		result = rope_161320(((NimStringDesc*) &TMP10423));
+		result = rope_161320(((NimStringDesc*) &TMP10424));
 		{
 			NI i_502465;
 			NI HEX3Atmp_502588;
@@ -7470,14 +7470,14 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 				while (1) {
 					NimStringDesc* LOC36;
 					TY200177 LOC42;
-					NI TMP10426;
+					NI TMP10427;
 					if (!(res_502591 <= HEX3Atmp_502588)) goto LA31;
 					nimln(1600, "system.nim");
 					i_502465 = res_502591;
 					nimln(1157, "jsgen.nim");
 					{
 						if (!(((NI) 0) < i_502465)) goto LA34;
-						add_161545(&result, ((NimStringDesc*) &TMP10111));
+						add_161545(&result, ((NimStringDesc*) &TMP10112));
 					}
 					LA34: ;
 					nimln(1158, "jsgen.nim");
@@ -7485,12 +7485,12 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 					nimln(93, "jsgen.nim");
 					{
 						if (!((*p).target == ((NU8) 0))) goto LA39;
-						LOC36 = copyString(((NimStringDesc*) &TMP10424));
+						LOC36 = copyString(((NimStringDesc*) &TMP10425));
 					}
 					goto LA37;
 					LA39: ;
 					{
-						LOC36 = copyString(((NimStringDesc*) &TMP10425));
+						LOC36 = copyString(((NimStringDesc*) &TMP10426));
 					}
 					LA37: ;
 					memset((void*)LOC42, 0, sizeof(LOC42));
@@ -7501,20 +7501,20 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 					LOC42[1] = createvar_502318(p, (*t).sons->data[i_502465], NIM_FALSE);
 					addf_162635(&result, LOC36, LOC42, 2);
 					nimln(1619, "system.nim");
-					TMP10426 = addInt(res_502591, ((NI) 1));
-					res_502591 = (NI)(TMP10426);
+					TMP10427 = addInt(res_502591, ((NI) 1));
+					res_502591 = (NI)(TMP10427);
 				} LA31: ;
 			}
 		}
 		nimln(1160, "jsgen.nim");
-		add_161545(&result, ((NimStringDesc*) &TMP10297));
+		add_161545(&result, ((NimStringDesc*) &TMP10298));
 		nimln(1161, "jsgen.nim");
 		{
 			TY161572 LOC47;
 			if (!indirect) goto LA45;
 			memset((void*)LOC47, 0, sizeof(LOC47));
 			LOC47[0] = result;
-			result = HEX25_162235(((NimStringDesc*) &TMP10407), LOC47, 1);
+			result = HEX25_162235(((NimStringDesc*) &TMP10408), LOC47, 1);
 		}
 		LA45: ;
 	}
@@ -7523,13 +7523,13 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 	{
 		NI c;
 		nimln(1163, "jsgen.nim");
-		result = rope_161320(((NimStringDesc*) &TMP10423));
+		result = rope_161320(((NimStringDesc*) &TMP10424));
 		nimln(1164, "jsgen.nim");
 		c = ((NI) 0);
 		nimln(1165, "jsgen.nim");
 		{
 			NIM_BOOL LOC51;
-			NI TMP10427;
+			NI TMP10428;
 			NimStringDesc* LOC55;
 			TY161572 LOC61;
 			LOC51 = 0;
@@ -7540,19 +7540,19 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			LA52: ;
 			if (!LOC51) goto LA53;
 			nimln(1166, "jsgen.nim");
-			TMP10427 = addInt(c, ((NI) 1));
-			c = (NI)(TMP10427);
+			TMP10428 = addInt(c, ((NI) 1));
+			c = (NI)(TMP10428);
 			nimln(1167, "jsgen.nim");
 			LOC55 = 0;
 			nimln(93, "jsgen.nim");
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA58;
-				LOC55 = copyString(((NimStringDesc*) &TMP10428));
+				LOC55 = copyString(((NimStringDesc*) &TMP10429));
 			}
 			goto LA56;
 			LA58: ;
 			{
-				LOC55 = copyString(((NimStringDesc*) &TMP10429));
+				LOC55 = copyString(((NimStringDesc*) &TMP10430));
 			}
 			LA56: ;
 			memset((void*)LOC61, 0, sizeof(LOC61));
@@ -7576,14 +7576,14 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			} LA63: ;
 		}
 		nimln(1171, "jsgen.nim");
-		add_161545(&result, ((NimStringDesc*) &TMP10297));
+		add_161545(&result, ((NimStringDesc*) &TMP10298));
 		nimln(1172, "jsgen.nim");
 		{
 			TY161572 LOC69;
 			if (!indirect) goto LA67;
 			memset((void*)LOC69, 0, sizeof(LOC69));
 			LOC69[0] = result;
-			result = HEX25_162235(((NimStringDesc*) &TMP10407), LOC69, 1);
+			result = HEX25_162235(((NimStringDesc*) &TMP10408), LOC69, 1);
 		}
 		LA67: ;
 	}
@@ -7604,12 +7604,12 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			nimln(93, "jsgen.nim");
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA79;
-				LOC76 = copyString(((NimStringDesc*) &TMP10430));
+				LOC76 = copyString(((NimStringDesc*) &TMP10431));
 			}
 			goto LA77;
 			LA79: ;
 			{
-				LOC76 = copyString(((NimStringDesc*) &TMP10431));
+				LOC76 = copyString(((NimStringDesc*) &TMP10432));
 			}
 			LA77: ;
 			result = puttoseq_502305(LOC76, indirect);
@@ -7623,12 +7623,12 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 			nimln(93, "jsgen.nim");
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA86;
-				LOC83 = copyString(((NimStringDesc*) &TMP10104));
+				LOC83 = copyString(((NimStringDesc*) &TMP10105));
 			}
 			goto LA84;
 			LA86: ;
 			{
-				LOC83 = copyString(((NimStringDesc*) &TMP10432));
+				LOC83 = copyString(((NimStringDesc*) &TMP10433));
 			}
 			LA84: ;
 			result = puttoseq_502305(LOC83, indirect);
@@ -7648,12 +7648,12 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA93;
-			LOC90 = copyString(((NimStringDesc*) &TMP10104));
+			LOC90 = copyString(((NimStringDesc*) &TMP10105));
 		}
 		goto LA91;
 		LA93: ;
 		{
-			LOC90 = copyString(((NimStringDesc*) &TMP10432));
+			LOC90 = copyString(((NimStringDesc*) &TMP10433));
 		}
 		LA91: ;
 		result = puttoseq_502305(LOC90, indirect);
@@ -7665,7 +7665,7 @@ N_NIMCALL(Ropeobj161009*, createvar_502318)(Tproc497033* p, Ttype191849* typ, NI
 		nimln(1181, "jsgen.nim");
 		LOC97 = 0;
 		LOC97 = rawNewString(reprEnum((*t).kind, (&NTI191260))->Sup.len + 11);
-appendString(LOC97, ((NimStringDesc*) &TMP10433));
+appendString(LOC97, ((NimStringDesc*) &TMP10434));
 appendString(LOC97, reprEnum((*t).kind, (&NTI191260)));
 		internalerror_165218(LOC97);
 		nimln(1182, "jsgen.nim");
@@ -7694,12 +7694,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA8;
-			LOC5 = copyString(((NimStringDesc*) &TMP10434));
+			LOC5 = copyString(((NimStringDesc*) &TMP10435));
 		}
 		goto LA6;
 		LA8: ;
 		{
-			LOC5 = copyString(((NimStringDesc*) &TMP10435));
+			LOC5 = copyString(((NimStringDesc*) &TMP10436));
 		}
 		LA6: ;
 		memset((void*)LOC11, 0, sizeof(LOC11));
@@ -7740,12 +7740,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 			{
 				TY200177 LOC23;
 				nimln(1199, "jsgen.nim");
-				usemagic_497846(p, ((NimStringDesc*) &TMP10360));
+				usemagic_497846(p, ((NimStringDesc*) &TMP10361));
 				nimln(1200, "jsgen.nim");
 				memset((void*)LOC23, 0, sizeof(LOC23));
 				LOC23[0] = a.res;
 				LOC23[1] = gentypeinfo_497315(p, (*n).typ);
-				s = HEX25_162235(((NimStringDesc*) &TMP10436), LOC23, 2);
+				s = HEX25_162235(((NimStringDesc*) &TMP10437), LOC23, 2);
 			}
 			LA17: ;
 		}
@@ -7755,7 +7755,7 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 			nimln(1202, "jsgen.nim");
 			{
 				if (!!((a.typ == ((NU8) 8)))) goto LA27;
-				internalerror_165199((*n).info, ((NimStringDesc*) &TMP10437));
+				internalerror_165199((*n).info, ((NimStringDesc*) &TMP10438));
 			}
 			LA27: ;
 			nimln(1203, "jsgen.nim");
@@ -7768,12 +7768,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA36;
-					LOC33 = copyString(((NimStringDesc*) &TMP10438));
+					LOC33 = copyString(((NimStringDesc*) &TMP10439));
 				}
 				goto LA34;
 				LA36: ;
 				{
-					LOC33 = copyString(((NimStringDesc*) &TMP10439));
+					LOC33 = copyString(((NimStringDesc*) &TMP10440));
 				}
 				LA34: ;
 				memset((void*)LOC39, 0, sizeof(LOC39));
@@ -7792,12 +7792,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA44;
-					LOC41 = copyString(((NimStringDesc*) &TMP10440));
+					LOC41 = copyString(((NimStringDesc*) &TMP10441));
 				}
 				goto LA42;
 				LA44: ;
 				{
-					LOC41 = copyString(((NimStringDesc*) &TMP10441));
+					LOC41 = copyString(((NimStringDesc*) &TMP10442));
 				}
 				LA42: ;
 				memset((void*)LOC47, 0, sizeof(LOC47));
@@ -7831,12 +7831,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 			nimln(93, "jsgen.nim");
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA57;
-				LOC54 = copyString(((NimStringDesc*) &TMP10442));
+				LOC54 = copyString(((NimStringDesc*) &TMP10443));
 			}
 			goto LA55;
 			LA57: ;
 			{
-				LOC54 = copyString(((NimStringDesc*) &TMP10443));
+				LOC54 = copyString(((NimStringDesc*) &TMP10444));
 			}
 			LA55: ;
 			memset((void*)LOC60, 0, sizeof(LOC60));
@@ -7854,12 +7854,12 @@ N_NIMCALL(void, genvarinit_502623)(Tproc497033* p, Tsym191843* v, Tnode191813* n
 			nimln(93, "jsgen.nim");
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA65;
-				LOC62 = copyString(((NimStringDesc*) &TMP10434));
+				LOC62 = copyString(((NimStringDesc*) &TMP10435));
 			}
 			goto LA63;
 			LA65: ;
 			{
-				LOC62 = copyString(((NimStringDesc*) &TMP10435));
+				LOC62 = copyString(((NimStringDesc*) &TMP10436));
 			}
 			LA63: ;
 			memset((void*)LOC68, 0, sizeof(LOC68));
@@ -7880,27 +7880,27 @@ N_NIMCALL(void, genvarstmt_502753)(Tproc497033* p, Tnode191813* n) {
 		NI i_502769;
 		NI HEX3Atmp_503217;
 		NI LOC2;
-		NI TMP10444;
+		NI TMP10445;
 		NI res_503220;
 		i_502769 = 0;
 		HEX3Atmp_503217 = 0;
 		nimln(1219, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10444 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_503217 = (NI)(TMP10444);
+		TMP10445 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_503217 = (NI)(TMP10445);
 		nimln(1598, "system.nim");
 		res_503220 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode191813* a;
-				NI TMP10447;
+				NI TMP10448;
 				if (!(res_503220 <= HEX3Atmp_503217)) goto LA4;
 				nimln(1600, "system.nim");
 				i_502769 = res_503220;
 				nimln(1220, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_502769) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				a = (*n).kindU.S6.sons->data[i_502769];
 				nimln(1221, "jsgen.nim");
@@ -7922,21 +7922,21 @@ N_NIMCALL(void, genvarstmt_502753)(Tproc497033* p, Tnode191813* n) {
 						nimln(1226, "jsgen.nim");
 						{
 							if (!!(((*a).kind == ((NU8) 35)))) goto LA16;
-							failedassertimpl_87017(((NimStringDesc*) &TMP10445));
+							failedassertimpl_87017(((NimStringDesc*) &TMP10446));
 						}
 						LA16: ;
 						nimln(1227, "jsgen.nim");
 						{
-							if (((TMP10099[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+							if (((TMP10100[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 							if ((NU)(((NI) 0)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
 							if (!!(((*(*a).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA20;
-							failedassertimpl_87017(((NimStringDesc*) &TMP10446));
+							failedassertimpl_87017(((NimStringDesc*) &TMP10447));
 						}
 						LA20: ;
 						nimln(1228, "jsgen.nim");
-						if (((TMP10099[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+						if (((TMP10100[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 						if ((NU)(((NI) 0)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
-						if (!(((TMP10101[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+						if (!(((TMP10102[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 						v = (*(*a).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 						nimln(1229, "jsgen.nim");
 						{
@@ -7944,7 +7944,7 @@ N_NIMCALL(void, genvarstmt_502753)(Tproc497033* p, Tnode191813* n) {
 							nimln(1230, "jsgen.nim");
 							genlinedir_498989(p, a);
 							nimln(1231, "jsgen.nim");
-							if (((TMP10099[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+							if (((TMP10100[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 							if ((NU)(((NI) 2)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
 							genvarinit_502623(p, v, (*a).kindU.S6.sons->data[((NI) 2)]);
 						}
@@ -7954,8 +7954,8 @@ N_NIMCALL(void, genvarstmt_502753)(Tproc497033* p, Tnode191813* n) {
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP10447 = addInt(res_503220, ((NI) 1));
-				res_503220 = (NI)(TMP10447);
+				TMP10448 = addInt(res_503220, ((NI) 1));
+				res_503220 = (NI)(TMP10448);
 			} LA4: ;
 		}
 	}
@@ -8000,11 +8000,11 @@ N_NIMCALL(void, gennew_503265)(Tproc497033* p, Tnode191813* n) {
 	nimfr("genNew", "jsgen.nim")
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(1244, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&a));
 	nimln(1245, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106240964864));
@@ -8014,7 +8014,7 @@ N_NIMCALL(void, gennew_503265)(Tproc497033* p, Tnode191813* n) {
 	memset((void*)LOC2, 0, sizeof(LOC2));
 	LOC2[0] = a.res;
 	LOC2[1] = createvar_502318(p, t, NIM_FALSE);
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10270), LOC2, 2);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10271), LOC2, 2);
 	popFrame();
 }
 
@@ -8028,15 +8028,15 @@ N_NIMCALL(void, gennewseq_503284)(Tproc497033* p, Tnode191813* n) {
 	memset((void*)(&x), 0, sizeof(x));
 	memset((void*)(&y), 0, sizeof(y));
 	nimln(1250, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 	nimln(1251, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&y));
 	nimln(1252, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106240964864));
@@ -8048,7 +8048,7 @@ N_NIMCALL(void, gennewseq_503284)(Tproc497033* p, Tnode191813* n) {
 	LOC2[0] = rdloc_497127(x);
 	LOC2[1] = rdloc_497127(y);
 	LOC2[2] = createvar_502318(p, t, NIM_FALSE);
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10448), LOC2, 3);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10449), LOC2, 3);
 	popFrame();
 }
 
@@ -8056,7 +8056,7 @@ N_NIMCALL(void, genord_503307)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 	Ttype191849* LOC1;
 	nimfr("genOrd", "jsgen.nim")
 	nimln(1257, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106240964864));
@@ -8066,7 +8066,7 @@ N_NIMCALL(void, genord_503307)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 	case ((NU8) 2):
 	{
 		nimln(1258, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	}
@@ -8079,21 +8079,21 @@ N_NIMCALL(void, genord_503307)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA7;
-			LOC4 = copyString(((NimStringDesc*) &TMP10449));
+			LOC4 = copyString(((NimStringDesc*) &TMP10450));
 		}
 		goto LA5;
 		LA7: ;
 		{
-			LOC4 = copyString(((NimStringDesc*) &TMP10450));
+			LOC4 = copyString(((NimStringDesc*) &TMP10451));
 		}
 		LA5: ;
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), LOC4);
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), LOC4);
 	}
 	break;
 	default:
 	{
 		nimln(1260, "jsgen.nim");
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10451));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10452));
 	}
 	break;
 	}
@@ -8103,11 +8103,11 @@ N_NIMCALL(void, genord_503307)(Tproc497033* p, Tnode191813* n, Tcompres497023* r
 N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	Tcompres497023 a;
 	NI LOC25;
-	NI TMP10458;
+	NI TMP10459;
 	nimfr("genConStrStr", "jsgen.nim")
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(1265, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&a));
 	nimln(1266, "jsgen.nim");
@@ -8117,7 +8117,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 		Ttype191849* LOC3;
 		TY161572 LOC6;
 		Ropeobj161009* LOC7;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC3 = 0;
 		LOC3 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106242013440));
@@ -8126,7 +8126,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 		memset((void*)LOC6, 0, sizeof(LOC6));
 		LOC6[0] = a.res;
 		LOC7 = 0;
-		LOC7 = HEX25_162235(((NimStringDesc*) &TMP10452), LOC6, 1);
+		LOC7 = HEX25_162235(((NimStringDesc*) &TMP10453), LOC6, 1);
 		add_161534(&(*r).res, LOC7);
 	}
 	goto LA1;
@@ -8138,7 +8138,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 		memset((void*)LOC9, 0, sizeof(LOC9));
 		LOC9[0] = a.res;
 		LOC10 = 0;
-		LOC10 = HEX25_162235(((NimStringDesc*) &TMP10453), LOC9, 1);
+		LOC10 = HEX25_162235(((NimStringDesc*) &TMP10454), LOC9, 1);
 		add_161534(&(*r).res, LOC10);
 	}
 	LA1: ;
@@ -8146,26 +8146,26 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 		NI i_503367;
 		NI HEX3Atmp_503406;
 		NI LOC12;
-		NI TMP10454;
+		NI TMP10455;
 		NI res_503409;
 		i_503367 = 0;
 		HEX3Atmp_503406 = 0;
 		nimln(1272, "jsgen.nim");
 		LOC12 = 0;
 		LOC12 = sonslen_194403(n);
-		TMP10454 = subInt(LOC12, ((NI) 2));
-		HEX3Atmp_503406 = (NI)(TMP10454);
+		TMP10455 = subInt(LOC12, ((NI) 2));
+		HEX3Atmp_503406 = (NI)(TMP10455);
 		nimln(1598, "system.nim");
 		res_503409 = ((NI) 2);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10457;
+				NI TMP10458;
 				if (!(res_503409 <= HEX3Atmp_503406)) goto LA14;
 				nimln(1600, "system.nim");
 				i_503367 = res_503409;
 				nimln(1273, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_503367) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				gen_497816(p, (*n).kindU.S6.sons->data[i_503367], (&a));
 				nimln(1274, "jsgen.nim");
@@ -8173,7 +8173,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 					Ttype191849* LOC17;
 					TY161572 LOC20;
 					Ropeobj161009* LOC21;
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_503367) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC17 = 0;
 					LOC17 = skiptypes_195167((*(*n).kindU.S6.sons->data[i_503367]).typ, IL64(211106242013440));
@@ -8182,7 +8182,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 					memset((void*)LOC20, 0, sizeof(LOC20));
 					LOC20[0] = a.res;
 					LOC21 = 0;
-					LOC21 = HEX25_162235(((NimStringDesc*) &TMP10455), LOC20, 1);
+					LOC21 = HEX25_162235(((NimStringDesc*) &TMP10456), LOC20, 1);
 					add_161534(&(*r).res, LOC21);
 				}
 				goto LA15;
@@ -8194,43 +8194,43 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 					memset((void*)LOC23, 0, sizeof(LOC23));
 					LOC23[0] = a.res;
 					LOC24 = 0;
-					LOC24 = HEX25_162235(((NimStringDesc*) &TMP10456), LOC23, 1);
+					LOC24 = HEX25_162235(((NimStringDesc*) &TMP10457), LOC23, 1);
 					add_161534(&(*r).res, LOC24);
 				}
 				LA15: ;
 				nimln(1614, "system.nim");
-				TMP10457 = addInt(res_503409, ((NI) 1));
-				res_503409 = (NI)(TMP10457);
+				TMP10458 = addInt(res_503409, ((NI) 1));
+				res_503409 = (NI)(TMP10458);
 			} LA14: ;
 		}
 	}
 	nimln(1279, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	LOC25 = 0;
 	LOC25 = sonslen_194403(n);
-	TMP10458 = subInt(LOC25, ((NI) 1));
-	if ((NU)((NI)(TMP10458)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	gen_497816(p, (*n).kindU.S6.sons->data[(NI)(TMP10458)], (&a));
+	TMP10459 = subInt(LOC25, ((NI) 1));
+	if ((NU)((NI)(TMP10459)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
+	gen_497816(p, (*n).kindU.S6.sons->data[(NI)(TMP10459)], (&a));
 	nimln(1280, "jsgen.nim");
 	{
 		NI LOC28;
-		NI TMP10459;
+		NI TMP10460;
 		Ttype191849* LOC29;
 		TY161572 LOC32;
 		Ropeobj161009* LOC33;
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		LOC28 = 0;
 		LOC28 = sonslen_194403(n);
-		TMP10459 = subInt(LOC28, ((NI) 1));
-		if ((NU)((NI)(TMP10459)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
+		TMP10460 = subInt(LOC28, ((NI) 1));
+		if ((NU)((NI)(TMP10460)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC29 = 0;
-		LOC29 = skiptypes_195167((*(*n).kindU.S6.sons->data[(NI)(TMP10459)]).typ, IL64(211106242013440));
+		LOC29 = skiptypes_195167((*(*n).kindU.S6.sons->data[(NI)(TMP10460)]).typ, IL64(211106242013440));
 		if (!((*LOC29).kind == ((NU8) 2))) goto LA30;
 		nimln(1281, "jsgen.nim");
 		memset((void*)LOC32, 0, sizeof(LOC32));
 		LOC32[0] = a.res;
 		LOC33 = 0;
-		LOC33 = HEX25_162235(((NimStringDesc*) &TMP10460), LOC32, 1);
+		LOC33 = HEX25_162235(((NimStringDesc*) &TMP10461), LOC32, 1);
 		add_161534(&(*r).res, LOC33);
 	}
 	goto LA26;
@@ -8242,7 +8242,7 @@ N_NIMCALL(void, genconstrstr_503330)(Tproc497033* p, Tnode191813* n, Tcompres497
 		memset((void*)LOC35, 0, sizeof(LOC35));
 		LOC35[0] = a.res;
 		LOC36 = 0;
-		LOC36 = HEX25_162235(((NimStringDesc*) &TMP10461), LOC35, 1);
+		LOC36 = HEX25_162235(((NimStringDesc*) &TMP10462), LOC35, 1);
 		add_161534(&(*r).res, LOC36);
 	}
 	LA26: ;
@@ -8253,7 +8253,7 @@ N_NIMCALL(void, genrepr_503428)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 	Ttype191849* t;
 	nimfr("genRepr", "jsgen.nim")
 	nimln(1286, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	t = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106242013440));
 	nimln(1287, "jsgen.nim");
@@ -8261,7 +8261,7 @@ N_NIMCALL(void, genrepr_503428)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 	case ((NU8) 31) ... ((NU8) 44):
 	{
 		nimln(1289, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10462));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10463));
 	}
 	break;
 	case ((NU8) 14):
@@ -8269,24 +8269,24 @@ N_NIMCALL(void, genrepr_503428)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 	{
 		TY200177 LOC3;
 		nimln(1291, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 		nimln(1292, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10250));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10251));
 		nimln(1293, "jsgen.nim");
 		(*r).kind = ((NU8) 1);
 		nimln(1294, "jsgen.nim");
 		memset((void*)LOC3, 0, sizeof(LOC3));
 		LOC3[0] = gentypeinfo_497315(p, t);
 		LOC3[1] = (*r).res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10463), LOC3, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10464), LOC3, 2));
 	}
 	break;
 	default:
 	{
 		nimln(1297, "jsgen.nim");
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10464));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10465));
 	}
 	break;
 	}
@@ -8299,11 +8299,11 @@ N_NIMCALL(void, genof_503445)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 	nimfr("genOf", "jsgen.nim")
 	memset((void*)(&x), 0, sizeof(x));
 	nimln(1301, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	t = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 2)]).typ, IL64(211106248304896));
 	nimln(1302, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 	nimln(1303, "jsgen.nim");
@@ -8314,19 +8314,19 @@ N_NIMCALL(void, genof_503445)(Tproc497033* p, Tnode191813* n, Tcompres497023* r)
 		memset((void*)LOC5, 0, sizeof(LOC5));
 		LOC5[0] = x.res;
 		LOC5[1] = gentypeinfo_497315(p, t);
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10465), LOC5, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10466), LOC5, 2));
 	}
 	goto LA1;
 	LA3: ;
 	{
 		TY200177 LOC7;
 		nimln(1306, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10283));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10284));
 		nimln(1307, "jsgen.nim");
 		memset((void*)LOC7, 0, sizeof(LOC7));
 		LOC7[0] = x.res;
 		LOC7[1] = gentypeinfo_497315(p, t);
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10466), LOC7, 2));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10467), LOC7, 2));
 	}
 	LA1: ;
 	nimln(1308, "jsgen.nim");
@@ -8340,19 +8340,19 @@ N_NIMCALL(void, genreset_503490)(Tproc497033* p, Tnode191813* n) {
 	nimfr("genReset", "jsgen.nim")
 	memset((void*)(&x), 0, sizeof(x));
 	nimln(1312, "jsgen.nim");
-	usemagic_497846(p, ((NimStringDesc*) &TMP10467));
+	usemagic_497846(p, ((NimStringDesc*) &TMP10468));
 	nimln(1313, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&x));
 	nimln(1314, "jsgen.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	LOC1[0] = x.res;
 	nimln(1315, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1[1] = gentypeinfo_497315(p, (*(*n).kindU.S6.sons->data[((NI) 1)]).typ);
-	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10468), LOC1, 2);
+	addf_162635(&(*p).body, ((NimStringDesc*) &TMP10469), LOC1, 2);
 	popFrame();
 }
 
@@ -8366,18 +8366,18 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	line = 0;
 	filen = 0;
 	nimln(1321, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+	if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 	op = (*(*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym).magic;
 	nimln(1322, "jsgen.nim");
 	switch (op) {
 	case ((NU16) 138):
 	{
 		nimln(1323, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		genor_498252(p, (*n).kindU.S6.sons->data[((NI) 1)], (*n).kindU.S6.sons->data[((NI) 2)], r);
 	}
@@ -8385,9 +8385,9 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 137):
 	{
 		nimln(1324, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		genand_497995(p, (*n).kindU.S6.sons->data[((NI) 1)], (*n).kindU.S6.sons->data[((NI) 2)], r);
 	}
@@ -8415,13 +8415,13 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		nimln(1330, "jsgen.nim");
 		{
 			if (!!((((*p).options &(1<<((((NU8) 5))&31)))!=0))) goto LA9;
-			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10469));
+			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10470));
 		}
 		goto LA7;
 		LA9: ;
 		{
 			nimln(1331, "jsgen.nim");
-			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10159), ((NimStringDesc*) &TMP10470));
+			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10160), ((NimStringDesc*) &TMP10471));
 		}
 		LA7: ;
 	}
@@ -8429,7 +8429,7 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 155):
 	{
 		nimln(1332, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10471), ((NimStringDesc*) &TMP10472));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10472), ((NimStringDesc*) &TMP10473));
 	}
 	break;
 	case ((NU16) 156):
@@ -8437,19 +8437,19 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		nimln(1335, "jsgen.nim");
 		{
 			Ttype191849* LOC16;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC16 = 0;
 			LOC16 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106242013440));
 			if (!((*LOC16).kind == ((NU8) 29))) goto LA17;
 			nimln(1336, "jsgen.nim");
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10473));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10474));
 		}
 		goto LA14;
 		LA17: ;
 		{
 			nimln(1338, "jsgen.nim");
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10474));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10475));
 		}
 		LA14: ;
 	}
@@ -8457,7 +8457,7 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 157):
 	{
 		nimln(1341, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10475));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10476));
 	}
 	break;
 	case ((NU16) 149):
@@ -8469,25 +8469,25 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 139):
 	{
 		nimln(1344, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10476), ((NimStringDesc*) &TMP10477));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10477), ((NimStringDesc*) &TMP10478));
 	}
 	break;
 	case ((NU16) 140):
 	{
 		nimln(1345, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10478), ((NimStringDesc*) &TMP10479));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10479), ((NimStringDesc*) &TMP10480));
 	}
 	break;
 	case ((NU16) 141):
 	{
 		nimln(1346, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10478), ((NimStringDesc*) &TMP10480));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10479), ((NimStringDesc*) &TMP10481));
 	}
 	break;
 	case ((NU16) 168):
 	{
 		nimln(1347, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10481));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10482));
 	}
 	break;
 	case ((NU16) 136):
@@ -8507,7 +8507,7 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	{
 		NI64 LOC29;
 		nimln(1350, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC29 = 0;
 		LOC29 = getsize_221190((*(*n).kindU.S6.sons->data[((NI) 1)]).typ);
@@ -8518,7 +8518,7 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 169):
 	{
 		nimln(1351, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	}
@@ -8532,13 +8532,13 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 30):
 	{
 		nimln(1353, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10482));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10483));
 	}
 	break;
 	case ((NU16) 33):
 	{
 		nimln(1354, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10483));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10484));
 	}
 	break;
 	case ((NU16) 32):
@@ -8546,13 +8546,13 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 31):
 	{
 		nimln(1356, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10484));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10485));
 	}
 	break;
 	case ((NU16) 34):
 	{
 		nimln(1358, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10485));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10486));
 	}
 	break;
 	case ((NU16) 5):
@@ -8560,19 +8560,19 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		nimln(1360, "jsgen.nim");
 		{
 			Ttype191849* LOC39;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC39 = 0;
 			LOC39 = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106240964864));
 			if (!((*LOC39).kind == ((NU8) 28))) goto LA40;
 			nimln(1361, "jsgen.nim");
-			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10486));
+			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10487));
 		}
 		goto LA37;
 		LA40: ;
 		{
 			nimln(1363, "jsgen.nim");
-			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10487));
+			unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10488));
 		}
 		LA37: ;
 	}
@@ -8582,13 +8582,13 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		nimln(1365, "jsgen.nim");
 		{
 			if (!!((((*p).options &(1<<((((NU8) 5))&31)))!=0))) goto LA46;
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10488));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10489));
 		}
 		goto LA44;
 		LA46: ;
 		{
 			nimln(1366, "jsgen.nim");
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10155), ((NimStringDesc*) &TMP10489));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10490));
 		}
 		LA44: ;
 	}
@@ -8598,13 +8598,13 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 		nimln(1368, "jsgen.nim");
 		{
 			if (!!((((*p).options &(1<<((((NU8) 5))&31)))!=0))) goto LA52;
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10490));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10491));
 		}
 		goto LA50;
 		LA52: ;
 		{
 			nimln(1369, "jsgen.nim");
-			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10159), ((NimStringDesc*) &TMP10491));
+			binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10160), ((NimStringDesc*) &TMP10492));
 		}
 		LA50: ;
 	}
@@ -8612,73 +8612,73 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 162):
 	{
 		nimln(1370, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10492));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10493));
 	}
 	break;
 	case ((NU16) 163):
 	{
 		nimln(1371, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10493));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10494));
 	}
 	break;
 	case ((NU16) 37):
 	{
 		nimln(1372, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10494), ((NimStringDesc*) &TMP10495));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10495), ((NimStringDesc*) &TMP10496));
 	}
 	break;
 	case ((NU16) 144):
 	{
 		nimln(1373, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10496), ((NimStringDesc*) &TMP10497));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10497), ((NimStringDesc*) &TMP10498));
 	}
 	break;
 	case ((NU16) 143):
 	{
 		nimln(1374, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10498), ((NimStringDesc*) &TMP10499));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10499), ((NimStringDesc*) &TMP10500));
 	}
 	break;
 	case ((NU16) 142):
 	{
 		nimln(1375, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10500), ((NimStringDesc*) &TMP10501));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10501), ((NimStringDesc*) &TMP10502));
 	}
 	break;
 	case ((NU16) 145):
 	{
 		nimln(1376, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10502), ((NimStringDesc*) &TMP10503));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10503), ((NimStringDesc*) &TMP10504));
 	}
 	break;
 	case ((NU16) 146):
 	{
 		nimln(1377, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10504), ((NimStringDesc*) &TMP10505));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10505), ((NimStringDesc*) &TMP10506));
 	}
 	break;
 	case ((NU16) 147):
 	{
 		nimln(1378, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10506), ((NimStringDesc*) &TMP10507));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10507), ((NimStringDesc*) &TMP10508));
 	}
 	break;
 	case ((NU16) 35):
 	{
 		nimln(1379, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10508));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10509));
 	}
 	break;
 	case ((NU16) 36):
 	{
 		nimln(1380, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10509));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10510));
 	}
 	break;
 	case ((NU16) 159):
 	{
 		nimln(1381, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10510));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10511));
 	}
 	break;
 	case ((NU16) 28):
@@ -8710,34 +8710,34 @@ N_NIMCALL(void, genmagic_503508)(Tproc497033* p, Tnode191813* n, Tcompres497023*
 	case ((NU16) 17):
 	{
 		nimln(1387, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		localerror_165155((*n).info, ((NU16) 224), (*(*(*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym).name).s);
 	}
 	break;
 	case ((NU16) 170):
 	{
 		nimln(1388, "jsgen.nim");
-		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10511));
+		binaryexpr_498850(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10512));
 	}
 	break;
 	case ((NU16) 171):
 	{
 		nimln(1389, "jsgen.nim");
-		ternaryexpr_498874(p, n, r, ((NimStringDesc*) &TMP10156), ((NimStringDesc*) &TMP10512));
+		ternaryexpr_498874(p, n, r, ((NimStringDesc*) &TMP10157), ((NimStringDesc*) &TMP10513));
 	}
 	break;
 	case ((NU16) 172):
 	{
 		nimln(1390, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10513), ((NimStringDesc*) &TMP10514));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10514), ((NimStringDesc*) &TMP10515));
 	}
 	break;
 	case ((NU16) 173):
 	{
 		nimln(1391, "jsgen.nim");
-		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10513), ((NimStringDesc*) &TMP10515));
+		unaryexpr_498902(p, n, r, ((NimStringDesc*) &TMP10514), ((NimStringDesc*) &TMP10516));
 	}
 	break;
 	default:
@@ -8757,42 +8757,42 @@ N_NIMCALL(void, gensetconstr_503589)(Tproc497033* p, Tnode191813* n, Tcompres497
 	memset((void*)(&a), 0, sizeof(a));
 	memset((void*)(&b), 0, sizeof(b));
 	nimln(1399, "jsgen.nim");
-	usemagic_497846(p, ((NimStringDesc*) &TMP10516));
+	usemagic_497846(p, ((NimStringDesc*) &TMP10517));
 	nimln(1400, "jsgen.nim");
-	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10517)));
+	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10518)));
 	nimln(1401, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	{
 		NI i_503609;
 		NI HEX3Atmp_503635;
 		NI LOC2;
-		NI TMP10518;
+		NI TMP10519;
 		NI res_503638;
 		i_503609 = 0;
 		HEX3Atmp_503635 = 0;
 		nimln(1402, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10518 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_503635 = (NI)(TMP10518);
+		TMP10519 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_503635 = (NI)(TMP10519);
 		nimln(1598, "system.nim");
 		res_503638 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode191813* it;
-				NI TMP10519;
+				NI TMP10520;
 				if (!(res_503638 <= HEX3Atmp_503635)) goto LA4;
 				nimln(1600, "system.nim");
 				i_503609 = res_503638;
 				nimln(1403, "jsgen.nim");
 				{
 					if (!(((NI) 0) < i_503609)) goto LA7;
-					add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+					add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 				}
 				LA7: ;
 				nimln(1404, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_503609) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_503609];
 				nimln(1405, "jsgen.nim");
@@ -8800,18 +8800,18 @@ N_NIMCALL(void, gensetconstr_503589)(Tproc497033* p, Tnode191813* n, Tcompres497
 					TY200177 LOC13;
 					if (!((*it).kind == ((NU8) 44))) goto LA11;
 					nimln(1406, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 0)], (&a));
 					nimln(1407, "jsgen.nim");
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 1)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					gen_497816(p, (*it).kindU.S6.sons->data[((NI) 1)], (&b));
 					nimln(1408, "jsgen.nim");
 					memset((void*)LOC13, 0, sizeof(LOC13));
 					LOC13[0] = a.res;
 					LOC13[1] = b.res;
-					addf_162635(&(*r).res, ((NimStringDesc*) &TMP10128), LOC13, 2);
+					addf_162635(&(*r).res, ((NimStringDesc*) &TMP10129), LOC13, 2);
 				}
 				goto LA9;
 				LA11: ;
@@ -8823,13 +8823,13 @@ N_NIMCALL(void, gensetconstr_503589)(Tproc497033* p, Tnode191813* n, Tcompres497
 				}
 				LA9: ;
 				nimln(1614, "system.nim");
-				TMP10519 = addInt(res_503638, ((NI) 1));
-				res_503638 = (NI)(TMP10519);
+				TMP10520 = addInt(res_503638, ((NI) 1));
+				res_503638 = (NI)(TMP10520);
 			} LA4: ;
 		}
 	}
 	nimln(1412, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10397));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10398));
 	popFrame();
 }
 
@@ -8838,51 +8838,51 @@ N_NIMCALL(void, genarrayconstr_503657)(Tproc497033* p, Tnode191813* n, Tcompres4
 	nimfr("genArrayConstr", "jsgen.nim")
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(1416, "jsgen.nim");
-	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10420)));
+	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10421)));
 	nimln(1417, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	{
 		NI i_503676;
 		NI HEX3Atmp_503684;
 		NI LOC2;
-		NI TMP10520;
+		NI TMP10521;
 		NI res_503687;
 		i_503676 = 0;
 		HEX3Atmp_503684 = 0;
 		nimln(1418, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10520 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_503684 = (NI)(TMP10520);
+		TMP10521 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_503684 = (NI)(TMP10521);
 		nimln(1598, "system.nim");
 		res_503687 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10521;
+				NI TMP10522;
 				if (!(res_503687 <= HEX3Atmp_503684)) goto LA4;
 				nimln(1600, "system.nim");
 				i_503676 = res_503687;
 				nimln(1419, "jsgen.nim");
 				{
 					if (!(((NI) 0) < i_503676)) goto LA7;
-					add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+					add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 				}
 				LA7: ;
 				nimln(1420, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_503676) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				gen_497816(p, (*n).kindU.S6.sons->data[i_503676], (&a));
 				nimln(1421, "jsgen.nim");
 				add_161534(&(*r).res, a.res);
 				nimln(1614, "system.nim");
-				TMP10521 = addInt(res_503687, ((NI) 1));
-				res_503687 = (NI)(TMP10521);
+				TMP10522 = addInt(res_503687, ((NI) 1));
+				res_503687 = (NI)(TMP10522);
 			} LA4: ;
 		}
 	}
 	nimln(1422, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10422));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10423));
 	popFrame();
 }
 
@@ -8891,22 +8891,22 @@ N_NIMCALL(void, gentupleconstr_503706)(Tproc497033* p, Tnode191813* n, Tcompres4
 	nimfr("genTupleConstr", "jsgen.nim")
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(1426, "jsgen.nim");
-	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10423)));
+	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10424)));
 	nimln(1427, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	{
 		NI i_503725;
 		NI HEX3Atmp_503755;
 		NI LOC2;
-		NI TMP10522;
+		NI TMP10523;
 		NI res_503758;
 		i_503725 = 0;
 		HEX3Atmp_503755 = 0;
 		nimln(1428, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10522 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_503755 = (NI)(TMP10522);
+		TMP10523 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_503755 = (NI)(TMP10523);
 		nimln(1598, "system.nim");
 		res_503758 = ((NI) 0);
 		{
@@ -8915,24 +8915,24 @@ N_NIMCALL(void, gentupleconstr_503706)(Tproc497033* p, Tnode191813* n, Tcompres4
 				Tnode191813* it;
 				NimStringDesc* LOC13;
 				TY200177 LOC19;
-				NI TMP10524;
+				NI TMP10525;
 				if (!(res_503758 <= HEX3Atmp_503755)) goto LA4;
 				nimln(1600, "system.nim");
 				i_503725 = res_503758;
 				nimln(1429, "jsgen.nim");
 				{
 					if (!(((NI) 0) < i_503725)) goto LA7;
-					add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+					add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 				}
 				LA7: ;
 				nimln(1430, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_503725) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_503725];
 				nimln(1431, "jsgen.nim");
 				{
 					if (!((*it).kind == ((NU8) 34))) goto LA11;
-					if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(((NI) 1)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 					it = (*it).kindU.S6.sons->data[((NI) 1)];
 				}
@@ -8944,12 +8944,12 @@ N_NIMCALL(void, gentupleconstr_503706)(Tproc497033* p, Tnode191813* n, Tcompres4
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA16;
-					LOC13 = copyString(((NimStringDesc*) &TMP10523));
+					LOC13 = copyString(((NimStringDesc*) &TMP10524));
 				}
 				goto LA14;
 				LA16: ;
 				{
-					LOC13 = copyString(((NimStringDesc*) &TMP10425));
+					LOC13 = copyString(((NimStringDesc*) &TMP10426));
 				}
 				LA14: ;
 				memset((void*)LOC19, 0, sizeof(LOC19));
@@ -8958,13 +8958,13 @@ N_NIMCALL(void, gentupleconstr_503706)(Tproc497033* p, Tnode191813* n, Tcompres4
 				LOC19[1] = a.res;
 				addf_162635(&(*r).res, LOC13, LOC19, 2);
 				nimln(1614, "system.nim");
-				TMP10524 = addInt(res_503758, ((NI) 1));
-				res_503758 = (NI)(TMP10524);
+				TMP10525 = addInt(res_503758, ((NI) 1));
+				res_503758 = (NI)(TMP10525);
 			} LA4: ;
 		}
 	}
 	nimln(1434, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10297));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10298));
 	popFrame();
 }
 
@@ -8973,22 +8973,22 @@ N_NIMCALL(void, genobjconstr_503777)(Tproc497033* p, Tnode191813* n, Tcompres497
 	nimfr("genObjConstr", "jsgen.nim")
 	memset((void*)(&a), 0, sizeof(a));
 	nimln(1439, "jsgen.nim");
-	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10423)));
+	unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10424)));
 	nimln(1440, "jsgen.nim");
 	(*r).kind = ((NU8) 1);
 	{
 		NI i_503796;
 		NI HEX3Atmp_503851;
 		NI LOC2;
-		NI TMP10525;
+		NI TMP10526;
 		NI res_503854;
 		i_503796 = 0;
 		HEX3Atmp_503851 = 0;
 		nimln(1441, "jsgen.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_194403(n);
-		TMP10525 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_503851 = (NI)(TMP10525);
+		TMP10526 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_503851 = (NI)(TMP10526);
 		nimln(1598, "system.nim");
 		res_503854 = ((NI) 1);
 		{
@@ -8998,18 +8998,18 @@ N_NIMCALL(void, genobjconstr_503777)(Tproc497033* p, Tnode191813* n, Tcompres497
 				Tsym191843* f;
 				NimStringDesc* LOC18;
 				TY200177 LOC24;
-				NI TMP10529;
+				NI TMP10530;
 				if (!(res_503854 <= HEX3Atmp_503851)) goto LA4;
 				nimln(1600, "system.nim");
 				i_503796 = res_503854;
 				nimln(1442, "jsgen.nim");
 				{
 					if (!(((NI) 1) < i_503796)) goto LA7;
-					add_161545(&(*r).res, ((NimStringDesc*) &TMP10111));
+					add_161545(&(*r).res, ((NimStringDesc*) &TMP10112));
 				}
 				LA7: ;
 				nimln(1443, "jsgen.nim");
-				if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_503796) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				it = (*n).kindU.S6.sons->data[i_503796];
 				nimln(854, "msgs.nim");
@@ -9019,18 +9019,18 @@ N_NIMCALL(void, genobjconstr_503777)(Tproc497033* p, Tnode191813* n, Tcompres497
 					if (!!(((*it).kind == ((NU8) 34)))) goto LA11;
 					nimln(854, "msgs.nim");
 					LOC13 = 0;
-					LOC13 = HEX24_165306(TMP10526);
+					LOC13 = HEX24_165306(TMP10527);
 					internalerror_165218(LOC13);
 				}
 				LA11: ;
 				nimln(1445, "jsgen.nim");
-				if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(((NI) 1)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
 				gen_497816(p, (*it).kindU.S6.sons->data[((NI) 1)], (&a));
 				nimln(1446, "jsgen.nim");
-				if (((TMP10099[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*it).kind/8] &(1<<((*it).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(((NI) 0)) >= (NU)((*it).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (!(((TMP10101[(*(*it).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*it).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+				if (!(((TMP10102[(*(*it).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*it).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 				f = (*(*it).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 				nimln(1447, "jsgen.nim");
 				{
@@ -9043,12 +9043,12 @@ N_NIMCALL(void, genobjconstr_503777)(Tproc497033* p, Tnode191813* n, Tcompres497
 				nimln(93, "jsgen.nim");
 				{
 					if (!((*p).target == ((NU8) 0))) goto LA21;
-					LOC18 = copyString(((NimStringDesc*) &TMP10527));
+					LOC18 = copyString(((NimStringDesc*) &TMP10528));
 				}
 				goto LA19;
 				LA21: ;
 				{
-					LOC18 = copyString(((NimStringDesc*) &TMP10528));
+					LOC18 = copyString(((NimStringDesc*) &TMP10529));
 				}
 				LA19: ;
 				memset((void*)LOC24, 0, sizeof(LOC24));
@@ -9056,13 +9056,13 @@ N_NIMCALL(void, genobjconstr_503777)(Tproc497033* p, Tnode191813* n, Tcompres497
 				LOC24[1] = a.res;
 				addf_162635(&(*r).res, LOC18, LOC24, 2);
 				nimln(1614, "system.nim");
-				TMP10529 = addInt(res_503854, ((NI) 1));
-				res_503854 = (NI)(TMP10529);
+				TMP10530 = addInt(res_503854, ((NI) 1));
+				res_503854 = (NI)(TMP10530);
 			} LA4: ;
 		}
 	}
 	nimln(1449, "jsgen.nim");
-	add_161545(&(*r).res, ((NimStringDesc*) &TMP10297));
+	add_161545(&(*r).res, ((NimStringDesc*) &TMP10298));
 	popFrame();
 }
 
@@ -9073,11 +9073,11 @@ N_NIMCALL(void, genconv_503873)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 {	nimln(1452, "jsgen.nim");
 	dest = skiptypes_195167((*n).typ, IL64(211106242013440));
 	nimln(1453, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	src = skiptypes_195167((*(*n).kindU.S6.sons->data[((NI) 1)]).typ, IL64(211106242013440));
 	nimln(1454, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	nimln(1455, "jsgen.nim");
@@ -9098,12 +9098,12 @@ N_NIMCALL(void, genconv_503873)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA9;
-			LOC6 = copyString(((NimStringDesc*) &TMP10530));
+			LOC6 = copyString(((NimStringDesc*) &TMP10531));
 		}
 		goto LA7;
 		LA9: ;
 		{
-			LOC6 = copyString(((NimStringDesc*) &TMP10450));
+			LOC6 = copyString(((NimStringDesc*) &TMP10451));
 		}
 		LA7: ;
 		memset((void*)LOC12, 0, sizeof(LOC12));
@@ -9119,7 +9119,7 @@ N_NIMCALL(void, genconv_503873)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 		nimln(1463, "jsgen.nim");
 		memset((void*)LOC14, 0, sizeof(LOC14));
 		LOC14[0] = (*r).res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10531), LOC14, 1));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10532), LOC14, 1));
 	}
 	break;
 	default:
@@ -9134,7 +9134,7 @@ N_NIMCALL(void, genconv_503873)(Tproc497033* p, Tnode191813* n, Tcompres497023* 
 N_NIMCALL(void, upconv_503911)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	nimfr("upConv", "jsgen.nim")
 	nimln(1469, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	popFrame();
@@ -9147,7 +9147,7 @@ N_NIMCALL(void, genrangechck_503924)(Tproc497033* p, Tnode191813* n, Tcompres497
 	memset((void*)(&a), 0, sizeof(a));
 	memset((void*)(&b), 0, sizeof(b));
 	nimln(1473, "jsgen.nim");
-	if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+	if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	nimln(1474, "jsgen.nim");
@@ -9155,21 +9155,21 @@ N_NIMCALL(void, genrangechck_503924)(Tproc497033* p, Tnode191813* n, Tcompres497
 		TY200103 LOC5;
 		if (!(((*p).options &(1<<((((NU8) 3))&31)))!=0)) goto LA3;
 		nimln(1475, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], (&a));
 		nimln(1476, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 2)], (&b));
 		nimln(1477, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10532));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10533));
 		nimln(1478, "jsgen.nim");
 		memset((void*)LOC5, 0, sizeof(LOC5));
 		LOC5[0] = (*r).res;
 		LOC5[1] = a.res;
 		LOC5[2] = b.res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10533), LOC5, 3));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10534), LOC5, 3));
 		nimln(1479, "jsgen.nim");
 		(*r).kind = ((NU8) 1);
 	}
@@ -9181,13 +9181,13 @@ N_NIMCALL(void, convstrtocstr_503958)(Tproc497033* p, Tnode191813* n, Tcompres49
 	nimfr("convStrToCStr", "jsgen.nim")
 	nimln(1484, "jsgen.nim");
 	{
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 72))) goto LA3;
 		nimln(1485, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (((TMP10099[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->data[((NI) 0)], r);
 	}
@@ -9196,21 +9196,21 @@ N_NIMCALL(void, convstrtocstr_503958)(Tproc497033* p, Tnode191813* n, Tcompres49
 	{
 		TY161572 LOC10;
 		nimln(1487, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 		nimln(1488, "jsgen.nim");
 		{
 			if (!((*r).res == NIM_NIL)) goto LA8;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10534));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10535));
 		}
 		LA8: ;
 		nimln(1489, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10302));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10303));
 		nimln(1490, "jsgen.nim");
 		memset((void*)LOC10, 0, sizeof(LOC10));
 		LOC10[0] = (*r).res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10535), LOC10, 1));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10536), LOC10, 1));
 		nimln(1491, "jsgen.nim");
 		(*r).kind = ((NU8) 1);
 	}
@@ -9222,13 +9222,13 @@ N_NIMCALL(void, convcstrtostr_503997)(Tproc497033* p, Tnode191813* n, Tcompres49
 	nimfr("convCStrToStr", "jsgen.nim")
 	nimln(1496, "jsgen.nim");
 	{
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 71))) goto LA3;
 		nimln(1497, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (((TMP10099[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->data[((NI) 0)], r);
 	}
@@ -9237,21 +9237,21 @@ N_NIMCALL(void, convcstrtostr_503997)(Tproc497033* p, Tnode191813* n, Tcompres49
 	{
 		TY161572 LOC10;
 		nimln(1499, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 		nimln(1500, "jsgen.nim");
 		{
 			if (!((*r).res == NIM_NIL)) goto LA8;
-			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10536));
+			internalerror_165199((*n).info, ((NimStringDesc*) &TMP10537));
 		}
 		LA8: ;
 		nimln(1501, "jsgen.nim");
-		usemagic_497846(p, ((NimStringDesc*) &TMP10250));
+		usemagic_497846(p, ((NimStringDesc*) &TMP10251));
 		nimln(1502, "jsgen.nim");
 		memset((void*)LOC10, 0, sizeof(LOC10));
 		LOC10[0] = (*r).res;
-		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10252), LOC10, 1));
+		unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10253), LOC10, 1));
 		nimln(1503, "jsgen.nim");
 		(*r).kind = ((NU8) 1);
 	}
@@ -9266,18 +9266,18 @@ N_NIMCALL(void, genreturnstmt_504036)(Tproc497033* p, Tnode191813* n) {
 	nimln(1506, "jsgen.nim");
 	{
 		if (!((*p).procdef == NIM_NIL)) goto LA3;
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10537));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10538));
 	}
 	LA3: ;
 	nimln(1507, "jsgen.nim");
 	(*p).beforeretneeded = NIM_TRUE;
 	nimln(1508, "jsgen.nim");
 	{
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 1)))) goto LA7;
 		nimln(1509, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		genstmt_497825(p, (*n).kindU.S6.sons->data[((NI) 0)]);
 	}
@@ -9293,12 +9293,12 @@ N_NIMCALL(void, genreturnstmt_504036)(Tproc497033* p, Tnode191813* n) {
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA13;
-		LOC10 = copyString(((NimStringDesc*) &TMP10538));
+		LOC10 = copyString(((NimStringDesc*) &TMP10539));
 	}
 	goto LA11;
 	LA13: ;
 	{
-		LOC10 = copyString(((NimStringDesc*) &TMP10539));
+		LOC10 = copyString(((NimStringDesc*) &TMP10540));
 	}
 	LA11: ;
 	memset((void*)LOC16, 0, sizeof(LOC16));
@@ -9325,17 +9325,17 @@ N_NIMCALL(Ropeobj161009*, genprocbody_504083)(Tproc497033* p, Tsym191843* prc) {
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA9;
-			LOC6 = copyString(((NimStringDesc*) &TMP10540));
+			LOC6 = copyString(((NimStringDesc*) &TMP10541));
 		}
 		goto LA7;
 		LA9: ;
 		{
-			LOC6 = copyString(((NimStringDesc*) &TMP10541));
+			LOC6 = copyString(((NimStringDesc*) &TMP10542));
 		}
 		LA7: ;
 		LOC5 = rawNewString(LOC6->Sup.len + 15);
 appendString(LOC5, LOC6);
-appendString(LOC5, ((NimStringDesc*) &TMP10542));
+appendString(LOC5, ((NimStringDesc*) &TMP10543));
 		memset((void*)LOC12, 0, sizeof(LOC12));
 		nimln(1519, "jsgen.nim");
 		LOC13 = 0;
@@ -9367,12 +9367,12 @@ appendString(LOC13, (*(*prc).name).s);
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA23;
-			LOC20 = copyString(((NimStringDesc*) &TMP10543));
+			LOC20 = copyString(((NimStringDesc*) &TMP10544));
 		}
 		goto LA21;
 		LA23: ;
 		{
-			LOC20 = copyString(((NimStringDesc*) &TMP10544));
+			LOC20 = copyString(((NimStringDesc*) &TMP10545));
 		}
 		LA21: ;
 		memset((void*)LOC26, 0, sizeof(LOC26));
@@ -9399,7 +9399,7 @@ appendString(LOC13, (*(*prc).name).s);
 		nimln(1529, "jsgen.nim");
 		memset((void*)LOC34, 0, sizeof(LOC34));
 		LOC34[0] = result;
-		result = HEX25_162235(((NimStringDesc*) &TMP10545), LOC34, 1);
+		result = HEX25_162235(((NimStringDesc*) &TMP10546), LOC34, 1);
 	}
 	LA32: ;
 	nimln(1531, "jsgen.nim");
@@ -9409,7 +9409,7 @@ appendString(LOC13, (*(*prc).name).s);
 		nimln(1532, "jsgen.nim");
 		LOC39 = 0;
 		LOC39 = rawNewString(tnl_159626->Sup.len + 25);
-appendString(LOC39, ((NimStringDesc*) &TMP10546));
+appendString(LOC39, ((NimStringDesc*) &TMP10547));
 appendString(LOC39, tnl_159626);
 		add_161545(&result, LOC39);
 	}
@@ -9467,21 +9467,21 @@ N_NIMCALL(Ropeobj161009*, genproc_497832)(Tproc497033* oldproc, Tsym191843* prc)
 		LA4: ;
 		if (!LOC3) goto LA5;
 		nimln(1549, "jsgen.nim");
-		if (((TMP10099[(*(*prc).ast).kind/8] &(1<<((*(*prc).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*(*prc).ast).kind/8] &(1<<((*(*prc).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 7)) >= (NU)((*(*prc).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*(*prc).ast).kindU.S6.sons->data[((NI) 7)]).kind/8] &(1<<((*(*(*prc).ast).kindU.S6.sons->data[((NI) 7)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*(*prc).ast).kindU.S6.sons->data[((NI) 7)]).kind/8] &(1<<((*(*(*prc).ast).kindU.S6.sons->data[((NI) 7)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		resultsym = (*(*(*prc).ast).kindU.S6.sons->data[((NI) 7)]).kindU.S4.sym;
 		nimln(1550, "jsgen.nim");
 		LOC7 = 0;
 		nimln(93, "jsgen.nim");
 		{
 			if (!((*p).target == ((NU8) 0))) goto LA10;
-			LOC7 = copyString(((NimStringDesc*) &TMP10547));
+			LOC7 = copyString(((NimStringDesc*) &TMP10548));
 		}
 		goto LA8;
 		LA10: ;
 		{
-			LOC7 = copyString(((NimStringDesc*) &TMP10548));
+			LOC7 = copyString(((NimStringDesc*) &TMP10549));
 		}
 		LA8: ;
 		memset((void*)LOC13, 0, sizeof(LOC13));
@@ -9493,13 +9493,13 @@ N_NIMCALL(Ropeobj161009*, genproc_497832)(Tproc497033* oldproc, Tsym191843* prc)
 		LOC13[1] = createvar_502318(p, (*resultsym).typ, LOC14);
 		resultasgn = HEX25_162235(LOC7, LOC13, 2);
 		nimln(1553, "jsgen.nim");
-		if (((TMP10099[(*(*prc).ast).kind/8] &(1<<((*(*prc).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*(*prc).ast).kind/8] &(1<<((*(*prc).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 7)) >= (NU)((*(*prc).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*(*prc).ast).kindU.S6.sons->data[((NI) 7)], (&a));
 		nimln(1554, "jsgen.nim");
 		memset((void*)LOC15, 0, sizeof(LOC15));
 		LOC15[0] = a.res;
-		returnstmt = HEX25_162235(((NimStringDesc*) &TMP10549), LOC15, 1);
+		returnstmt = HEX25_162235(((NimStringDesc*) &TMP10550), LOC15, 1);
 	}
 	LA5: ;
 	nimln(1555, "jsgen.nim");
@@ -9511,12 +9511,12 @@ N_NIMCALL(Ropeobj161009*, genproc_497832)(Tproc497033* oldproc, Tsym191843* prc)
 	nimln(93, "jsgen.nim");
 	{
 		if (!((*p).target == ((NU8) 0))) goto LA20;
-		LOC17 = copyString(((NimStringDesc*) &TMP10550));
+		LOC17 = copyString(((NimStringDesc*) &TMP10551));
 	}
 	goto LA18;
 	LA20: ;
 	{
-		LOC17 = copyString(((NimStringDesc*) &TMP10551));
+		LOC17 = copyString(((NimStringDesc*) &TMP10552));
 	}
 	LA18: ;
 	memset((void*)LOC23, 0, sizeof(LOC23));
@@ -9544,7 +9544,7 @@ N_NIMCALL(void, genstmt_497825)(Tproc497033* p, Tnode191813* n) {
 		if (!!((r.res == NIM_NIL))) goto LA3;
 		memset((void*)LOC5, 0, sizeof(LOC5));
 		LOC5[0] = r.res;
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10552), LOC5, 1);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10553), LOC5, 1);
 	}
 	LA3: ;
 	popFrame();
@@ -9569,7 +9569,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 5) ... ((NU8) 10):
 	{
 		nimln(1577, "jsgen.nim");
-		if (!(((TMP10307[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10308));
+		if (!(((TMP10308[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10309));
 		unsureAsgnRef((void**) (&(*r).res), rope_161407((*n).kindU.S1.intval));
 		nimln(1578, "jsgen.nim");
 		(*r).kind = ((NU8) 1);
@@ -9599,16 +9599,16 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA15;
 				nimln(1584, "jsgen.nim");
-				unsureAsgnRef((void**) (&(*r).address), rope_161320(((NimStringDesc*) &TMP10553)));
+				unsureAsgnRef((void**) (&(*r).address), rope_161320(((NimStringDesc*) &TMP10554)));
 			}
 			goto LA13;
 			LA15: ;
 			{
-				unsureAsgnRef((void**) (&(*r).address), rope_161320(((NimStringDesc*) &TMP10554)));
+				unsureAsgnRef((void**) (&(*r).address), rope_161320(((NimStringDesc*) &TMP10555)));
 			}
 			LA13: ;
 			nimln(1585, "jsgen.nim");
-			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10555)));
+			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10556)));
 			nimln(1586, "jsgen.nim");
 			(*r).kind = ((NU8) 1);
 		}
@@ -9620,12 +9620,12 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			{
 				if (!((*p).target == ((NU8) 0))) goto LA21;
 				nimln(1588, "jsgen.nim");
-				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10553)));
+				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10554)));
 			}
 			goto LA19;
 			LA21: ;
 			{
-				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10554)));
+				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10555)));
 			}
 			LA19: ;
 			nimln(1589, "jsgen.nim");
@@ -9644,18 +9644,18 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			LOC27 = skiptypes_195167((*n).typ, IL64(211106242013440));
 			if (!((*LOC27).kind == ((NU8) 28))) goto LA28;
 			nimln(1592, "jsgen.nim");
-			usemagic_497846(p, ((NimStringDesc*) &TMP10250));
+			usemagic_497846(p, ((NimStringDesc*) &TMP10251));
 			nimln(1593, "jsgen.nim");
 			memset((void*)LOC30, 0, sizeof(LOC30));
-			if (!(((TMP10112[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+			if (!(((TMP10113[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 			LOC30[0] = makejsstring_497305((*n).kindU.S3.strval);
-			unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10252), LOC30, 1));
+			unsureAsgnRef((void**) (&(*r).res), HEX25_162235(((NimStringDesc*) &TMP10253), LOC30, 1));
 		}
 		goto LA25;
 		LA28: ;
 		{
 			nimln(1595, "jsgen.nim");
-			if (!(((TMP10112[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10113));
+			if (!(((TMP10113[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10114));
 			unsureAsgnRef((void**) (&(*r).res), makejsstring_497305((*n).kindU.S3.strval));
 		}
 		LA25: ;
@@ -9667,19 +9667,19 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	{
 		NF f;
 		nimln(1598, "jsgen.nim");
-		if (!(((TMP10556[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10557));
+		if (!(((TMP10557[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10558));
 		f = (*n).kindU.S2.floatval;
 		nimln(1599, "jsgen.nim");
 		{
 			if (!!((f == f))) goto LA35;
-			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10558)));
+			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10559)));
 		}
 		goto LA33;
 		LA35: ;
 		{
 			nimln(1600, "jsgen.nim");
 			if (!(f == 0.0)) goto LA38;
-			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10559)));
+			unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10560)));
 		}
 		goto LA33;
 		LA38: ;
@@ -9689,13 +9689,13 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			nimln(1602, "jsgen.nim");
 			{
 				if (!(0.0 < f)) goto LA45;
-				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10560)));
+				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10561)));
 			}
 			goto LA43;
 			LA45: ;
 			{
 				nimln(1603, "jsgen.nim");
-				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10561)));
+				unsureAsgnRef((void**) (&(*r).res), rope_161320(((NimStringDesc*) &TMP10562)));
 			}
 			LA43: ;
 		}
@@ -9725,13 +9725,13 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 		{
 			NIM_BOOL LOC53;
 			LOC53 = 0;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC53 = ((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3));
 			if (!(LOC53)) goto LA54;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+			if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 			LOC53 = !(((*(*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym).magic == ((NU16) 0)));
 			LA54: ;
 			if (!LOC53) goto LA55;
@@ -9747,13 +9747,13 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			nimln(1609, "jsgen.nim");
 			LOC58 = 0;
 			LOC59 = 0;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC59 = ((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3));
 			if (!(LOC59)) goto LA60;
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+			if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 			LOC59 = (((*(*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym).flags &(1<<((((NU8) 27))&31)))!=0);
 			LA60: ;
 			LOC58 = LOC59;
@@ -9843,7 +9843,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 66):
 	{
 		nimln(1624, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 	}
@@ -9857,7 +9857,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 61):
 	{
 		nimln(1626, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		gen_497816(p, (*n).kindU.S6.sons->data[((NI) 1)], r);
 	}
@@ -9865,19 +9865,19 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 68):
 	{
 		nimln(1627, "jsgen.nim");
-		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10562));
+		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10563));
 	}
 	break;
 	case ((NU8) 69):
 	{
 		nimln(1628, "jsgen.nim");
-		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10563));
+		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10564));
 	}
 	break;
 	case ((NU8) 70):
 	{
 		nimln(1629, "jsgen.nim");
-		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10532));
+		genrangechck_503924(p, n, r, ((NimStringDesc*) &TMP10533));
 	}
 	break;
 	case ((NU8) 71):
@@ -9902,9 +9902,9 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 		Tsym191843* s;
 		Ropeobj161009* LOC86;
 		nimln(1634, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		s = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(1635, "jsgen.nim");
 		LOC86 = 0;
@@ -9959,33 +9959,33 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 			NI i_504427;
 			NI HEX3Atmp_504488;
 			NI LOC102;
-			NI TMP10564;
 			NI TMP10565;
+			NI TMP10566;
 			NI res_504491;
 			i_504427 = 0;
 			HEX3Atmp_504488 = 0;
 			nimln(1645, "jsgen.nim");
 			LOC102 = 0;
 			LOC102 = sonslen_194403(n);
-			TMP10564 = subInt(LOC102, ((NI) 1));
-			TMP10565 = subInt((NI)(TMP10564), ((NI) (isexpr)));
-			HEX3Atmp_504488 = (NI)(TMP10565);
+			TMP10565 = subInt(LOC102, ((NI) 1));
+			TMP10566 = subInt((NI)(TMP10565), ((NI) (isexpr)));
+			HEX3Atmp_504488 = (NI)(TMP10566);
 			nimln(1598, "system.nim");
 			res_504491 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP10566;
+					NI TMP10567;
 					if (!(res_504491 <= HEX3Atmp_504488)) goto LA104;
 					nimln(1600, "system.nim");
 					i_504427 = res_504491;
 					nimln(1646, "jsgen.nim");
-					if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+					if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 					if ((NU)(i_504427) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					genstmt_497825(p, (*n).kindU.S6.sons->data[i_504427]);
 					nimln(1614, "system.nim");
-					TMP10566 = addInt(res_504491, ((NI) 1));
-					res_504491 = (NI)(TMP10566);
+					TMP10567 = addInt(res_504491, ((NI) 1));
+					res_504491 = (NI)(TMP10567);
 				} LA104: ;
 			}
 		}
@@ -10036,7 +10036,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 95):
 	{
 		nimln(1655, "jsgen.nim");
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10567));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10568));
 	}
 	break;
 	case ((NU8) 97):
@@ -10083,13 +10083,13 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	{
 		nimln(1664, "jsgen.nim");
 		{
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!!(((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 1)))) goto LA129;
 			nimln(1665, "jsgen.nim");
 			genlinedir_498989(p, n);
 			nimln(1666, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			gen_497816(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 		}
@@ -10135,15 +10135,15 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	{
 		Tsym191843* s;
 		nimln(1674, "jsgen.nim");
-		if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+		if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP10101[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+		if (!(((TMP10102[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 		s = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(1675, "jsgen.nim");
 		{
 			if (!((65600 & (*s).flags) == 64)) goto LA138;
 			nimln(1676, "jsgen.nim");
-			if (((TMP10099[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+			if (((TMP10100[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			gensym_501782(p, (*n).kindU.S6.sons->data[((NI) 0)], r);
 			nimln(1677, "jsgen.nim");
@@ -10156,7 +10156,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 	case ((NU8) 157):
 	{
 		nimln(1679, "jsgen.nim");
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10568));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10569));
 	}
 	break;
 	case ((NU8) 91):
@@ -10174,7 +10174,7 @@ N_NIMCALL(void, gen_497816)(Tproc497033* p, Tnode191813* n, Tcompres497023* r) {
 		nimln(1681, "jsgen.nim");
 		LOC144 = 0;
 		LOC144 = rawNewString(reprEnum((*n).kind, (&NTI191029))->Sup.len + 24);
-appendString(LOC144, ((NimStringDesc*) &TMP10569));
+appendString(LOC144, ((NimStringDesc*) &TMP10570));
 appendString(LOC144, reprEnum((*n).kind, (&NTI191029)));
 		internalerror_165199((*n).info, LOC144);
 	}
@@ -10210,8 +10210,8 @@ N_NIMCALL(Ropeobj161009*, genheader_504545)(void) {
 	nimln(1691, "jsgen.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	nimln(1696, "jsgen.nim");
-	LOC1[0] = rope_161320(((NimStringDesc*) &TMP10571));
-	result = HEX25_162235(((NimStringDesc*) &TMP10570), LOC1, 1);
+	LOC1[0] = rope_161320(((NimStringDesc*) &TMP10572));
+	result = HEX25_162235(((NimStringDesc*) &TMP10571), LOC1, 1);
 	popFrame();
 	return result;
 }
@@ -10229,14 +10229,14 @@ N_NIMCALL(void, genmodule_504556)(Tproc497033* p, Tnode191813* n) {
 		nimln(1702, "jsgen.nim");
 		LOC6 = 0;
 		LOC6 = rawNewString((*(*(*(*p).module).module).name).s->Sup.len + 7);
-appendString(LOC6, ((NimStringDesc*) &TMP10573));
+appendString(LOC6, ((NimStringDesc*) &TMP10574));
 appendString(LOC6, (*(*(*(*p).module).module).name).s);
 		LOC5[0] = makejsstring_497305(LOC6);
 		nimln(1703, "jsgen.nim");
 		LOC7 = 0;
 		LOC7 = tofilename_164266((*(*(*p).module).module).info.fileindex);
 		LOC5[1] = makejsstring_497305(LOC7);
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10572), LOC5, 2);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10573), LOC5, 2);
 	}
 	LA3: ;
 	nimln(1704, "jsgen.nim");
@@ -10247,7 +10247,7 @@ appendString(LOC6, (*(*(*(*p).module).module).name).s);
 		if (!(((*p).options &(1<<((((NU8) 15))&31)))!=0)) goto LA10;
 		nimln(1706, "jsgen.nim");
 		memset((void*)LOC12, 0, sizeof(LOC12));
-		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10574), LOC12, 0);
+		addf_162635(&(*p).body, ((NimStringDesc*) &TMP10575), LOC12, 0);
 	}
 	LA10: ;
 	popFrame();
@@ -10287,7 +10287,7 @@ N_NIMCALL(Tnode191813*, myprocess_504597)(Tpasscontext242005* b, Tnode191813* n)
 	nimln(1712, "jsgen.nim");
 	{
 		if (!((*m).module == NIM_NIL)) goto LA8;
-		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10575));
+		internalerror_165199((*n).info, ((NimStringDesc*) &TMP10576));
 	}
 	LA8: ;
 	nimln(1713, "jsgen.nim");
@@ -10324,7 +10324,7 @@ N_NIMCALL(Ropeobj161009*, wholecode_504625)(Tjsgen497015* m) {
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP10576;
+				NI TMP10577;
 				if (!(i_504668 < L_504670)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_504668) >= (NU)(HEX3Atmp_504665->Sup.len)) raiseIndexError();
@@ -10346,12 +10346,12 @@ N_NIMCALL(Ropeobj161009*, wholecode_504625)(Tjsgen497015* m) {
 				}
 				LA7: ;
 				nimln(3088, "system.nim");
-				TMP10576 = addInt(i_504668, ((NI) 1));
-				i_504668 = (NI)(TMP10576);
+				TMP10577 = addInt(i_504668, ((NI) 1));
+				i_504668 = (NI)(TMP10577);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((HEX3Atmp_504665 ? HEX3Atmp_504665->Sup.len : 0) == L_504670))) goto LA12;
-					failedassertimpl_87017(((NimStringDesc*) &TMP10577));
+					failedassertimpl_87017(((NimStringDesc*) &TMP10578));
 				}
 				LA12: ;
 			} LA3: ;
@@ -10363,29 +10363,29 @@ N_NIMCALL(Ropeobj161009*, wholecode_504625)(Tjsgen497015* m) {
 		NI i_504655;
 		NI HEX3Atmp_504672;
 		NI LOC15;
-		NI TMP10578;
+		NI TMP10579;
 		NI res_504675;
 		i_504655 = 0;
 		HEX3Atmp_504672 = 0;
 		nimln(1725, "jsgen.nim");
 		LOC15 = 0;
 		LOC15 = sonslen_194403(disp);
-		TMP10578 = subInt(LOC15, ((NI) 1));
-		HEX3Atmp_504672 = (NI)(TMP10578);
+		TMP10579 = subInt(LOC15, ((NI) 1));
+		HEX3Atmp_504672 = (NI)(TMP10579);
 		nimln(1598, "system.nim");
 		res_504675 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tsym191843* prc;
-				NI TMP10579;
+				NI TMP10580;
 				if (!(res_504675 <= HEX3Atmp_504672)) goto LA17;
 				nimln(1600, "system.nim");
 				i_504655 = res_504675;
 				nimln(1726, "jsgen.nim");
-				if (((TMP10099[(*disp).kind/8] &(1<<((*disp).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10100));
+				if (((TMP10100[(*disp).kind/8] &(1<<((*disp).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10101));
 				if ((NU)(i_504655) >= (NU)((*disp).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (!(((TMP10101[(*(*disp).kindU.S6.sons->data[i_504655]).kind/8] &(1<<((*(*disp).kindU.S6.sons->data[i_504655]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10102));
+				if (!(((TMP10102[(*(*disp).kindU.S6.sons->data[i_504655]).kind/8] &(1<<((*(*disp).kindU.S6.sons->data[i_504655]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10103));
 				prc = (*(*disp).kindU.S6.sons->data[i_504655]).kindU.S4.sym;
 				nimln(1727, "jsgen.nim");
 				{
@@ -10404,8 +10404,8 @@ N_NIMCALL(Ropeobj161009*, wholecode_504625)(Tjsgen497015* m) {
 				}
 				LA21: ;
 				nimln(1619, "system.nim");
-				TMP10579 = addInt(res_504675, ((NI) 1));
-				res_504675 = (NI)(TMP10579);
+				TMP10580 = addInt(res_504675, ((NI) 1));
+				res_504675 = (NI)(TMP10580);
 			} LA17: ;
 		}
 	}
@@ -10478,7 +10478,7 @@ N_NIMCALL(Tnode191813*, myclose_504703)(Tpasscontext242005* b, Tnode191813* n) {
 			LOC22 = tofilename_164266(((NI32) ((*(*m).module).position)));
 			LOC23 = 0;
 			LOC23 = completecfilepath_170912(LOC22, NIM_TRUE);
-			outfile = noschangeFileExt(LOC23, ((NimStringDesc*) &TMP10580));
+			outfile = noschangeFileExt(LOC23, ((NimStringDesc*) &TMP10581));
 		}
 		LA10: ;
 		nimln(1745, "jsgen.nim");
@@ -10500,7 +10500,7 @@ N_NIMCALL(Tpasscontext242005*, myopencached_504732)(Tsym191843* s, Trodreader234
 	nimfr("myOpenCached", "jsgen.nim")
 	result = 0;
 	nimln(1748, "jsgen.nim");
-	internalerror_165218(((NimStringDesc*) &TMP10581));
+	internalerror_165218(((NimStringDesc*) &TMP10582));
 	nimln(1749, "jsgen.nim");
 	result = NIM_NIL;
 	popFrame();
@@ -10525,165 +10525,165 @@ NIM_EXTERNC N_NOINLINE(void, compiler_jsgenInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_jsgenDatInit)(void) {
-static TNimNode* TMP10089[5];
-static TNimNode* TMP10091[12];
-static TNimNode* TMP10093[2];
-NI TMP10095;
-static char* NIM_CONST TMP10094[2] = {
+static TNimNode* TMP10090[5];
+static TNimNode* TMP10092[12];
+static TNimNode* TMP10094[2];
+NI TMP10096;
+static char* NIM_CONST TMP10095[2] = {
 "targetJS", 
 "targetLua"};
-static TNimNode* TMP10096[2];
-static TNimNode TMP10087[26];
+static TNimNode* TMP10097[2];
+static TNimNode TMP10088[26];
 NTI497027.size = sizeof(Tglobals497027);
 NTI497027.kind = 18;
 NTI497027.base = 0;
 NTI497027.flags = 2;
-TMP10089[0] = &TMP10087[1];
-TMP10087[1].kind = 1;
-TMP10087[1].offset = offsetof(Tglobals497027, typeinfo);
-TMP10087[1].typ = (&NTI161007);
-TMP10087[1].name = "typeInfo";
-TMP10089[1] = &TMP10087[2];
-TMP10087[2].kind = 1;
-TMP10087[2].offset = offsetof(Tglobals497027, code);
-TMP10087[2].typ = (&NTI161007);
-TMP10087[2].name = "code";
-TMP10089[2] = &TMP10087[3];
-TMP10087[3].kind = 1;
-TMP10087[3].offset = offsetof(Tglobals497027, forwarded);
-TMP10087[3].typ = (&NTI191815);
-TMP10087[3].name = "forwarded";
-TMP10089[3] = &TMP10087[4];
-TMP10087[4].kind = 1;
-TMP10087[4].offset = offsetof(Tglobals497027, generatedsyms);
-TMP10087[4].typ = (&NTI188056);
-TMP10087[4].name = "generatedSyms";
-TMP10089[4] = &TMP10087[5];
-TMP10087[5].kind = 1;
-TMP10087[5].offset = offsetof(Tglobals497027, typeinfogenerated);
-TMP10087[5].typ = (&NTI188056);
-TMP10087[5].name = "typeInfoGenerated";
-TMP10087[0].len = 5; TMP10087[0].kind = 2; TMP10087[0].sons = &TMP10089[0];
-NTI497027.node = &TMP10087[0];
+TMP10090[0] = &TMP10088[1];
+TMP10088[1].kind = 1;
+TMP10088[1].offset = offsetof(Tglobals497027, typeinfo);
+TMP10088[1].typ = (&NTI161007);
+TMP10088[1].name = "typeInfo";
+TMP10090[1] = &TMP10088[2];
+TMP10088[2].kind = 1;
+TMP10088[2].offset = offsetof(Tglobals497027, code);
+TMP10088[2].typ = (&NTI161007);
+TMP10088[2].name = "code";
+TMP10090[2] = &TMP10088[3];
+TMP10088[3].kind = 1;
+TMP10088[3].offset = offsetof(Tglobals497027, forwarded);
+TMP10088[3].typ = (&NTI191815);
+TMP10088[3].name = "forwarded";
+TMP10090[3] = &TMP10088[4];
+TMP10088[4].kind = 1;
+TMP10088[4].offset = offsetof(Tglobals497027, generatedsyms);
+TMP10088[4].typ = (&NTI188056);
+TMP10088[4].name = "generatedSyms";
+TMP10090[4] = &TMP10088[5];
+TMP10088[5].kind = 1;
+TMP10088[5].offset = offsetof(Tglobals497027, typeinfogenerated);
+TMP10088[5].typ = (&NTI188056);
+TMP10088[5].name = "typeInfoGenerated";
+TMP10088[0].len = 5; TMP10088[0].kind = 2; TMP10088[0].sons = &TMP10090[0];
+NTI497027.node = &TMP10088[0];
 NTI497029.size = sizeof(Tglobals497027*);
 NTI497029.kind = 22;
 NTI497029.base = (&NTI497027);
 NTI497029.flags = 2;
-NTI497029.marker = TMP10090;
+NTI497029.marker = TMP10091;
 NTI497033.size = sizeof(Tproc497033);
 NTI497033.kind = 18;
 NTI497033.base = 0;
-TMP10091[0] = &TMP10087[7];
-TMP10087[7].kind = 1;
-TMP10087[7].offset = offsetof(Tproc497033, procdef);
-TMP10087[7].typ = (&NTI191805);
-TMP10087[7].name = "procDef";
-TMP10091[1] = &TMP10087[8];
-TMP10087[8].kind = 1;
-TMP10087[8].offset = offsetof(Tproc497033, prc);
-TMP10087[8].typ = (&NTI191811);
-TMP10087[8].name = "prc";
-TMP10091[2] = &TMP10087[9];
-TMP10087[9].kind = 1;
-TMP10087[9].offset = offsetof(Tproc497033, locals);
-TMP10087[9].typ = (&NTI161007);
-TMP10087[9].name = "locals";
-TMP10091[3] = &TMP10087[10];
-TMP10087[10].kind = 1;
-TMP10087[10].offset = offsetof(Tproc497033, body);
-TMP10087[10].typ = (&NTI161007);
-TMP10087[10].name = "body";
-TMP10091[4] = &TMP10087[11];
-TMP10087[11].kind = 1;
-TMP10087[11].offset = offsetof(Tproc497033, options);
-TMP10087[11].typ = (&NTI154121);
-TMP10087[11].name = "options";
-TMP10091[5] = &TMP10087[12];
+TMP10092[0] = &TMP10088[7];
+TMP10088[7].kind = 1;
+TMP10088[7].offset = offsetof(Tproc497033, procdef);
+TMP10088[7].typ = (&NTI191805);
+TMP10088[7].name = "procDef";
+TMP10092[1] = &TMP10088[8];
+TMP10088[8].kind = 1;
+TMP10088[8].offset = offsetof(Tproc497033, prc);
+TMP10088[8].typ = (&NTI191811);
+TMP10088[8].name = "prc";
+TMP10092[2] = &TMP10088[9];
+TMP10088[9].kind = 1;
+TMP10088[9].offset = offsetof(Tproc497033, locals);
+TMP10088[9].typ = (&NTI161007);
+TMP10088[9].name = "locals";
+TMP10092[3] = &TMP10088[10];
+TMP10088[10].kind = 1;
+TMP10088[10].offset = offsetof(Tproc497033, body);
+TMP10088[10].typ = (&NTI161007);
+TMP10088[10].name = "body";
+TMP10092[4] = &TMP10088[11];
+TMP10088[11].kind = 1;
+TMP10088[11].offset = offsetof(Tproc497033, options);
+TMP10088[11].typ = (&NTI154121);
+TMP10088[11].name = "options";
+TMP10092[5] = &TMP10088[12];
 NTI497015.size = sizeof(Tjsgen497015);
 NTI497015.kind = 17;
 NTI497015.base = (&NTI242005);
-TMP10087[13].kind = 1;
-TMP10087[13].offset = offsetof(Tjsgen497015, module);
-TMP10087[13].typ = (&NTI191811);
-TMP10087[13].name = "module";
-NTI497015.node = &TMP10087[13];
+TMP10088[13].kind = 1;
+TMP10088[13].offset = offsetof(Tjsgen497015, module);
+TMP10088[13].typ = (&NTI191811);
+TMP10088[13].name = "module";
+NTI497015.node = &TMP10088[13];
 NTI497017.size = sizeof(Tjsgen497015*);
 NTI497017.kind = 22;
 NTI497017.base = (&NTI497015);
-NTI497017.marker = TMP10092;
-TMP10087[12].kind = 1;
-TMP10087[12].offset = offsetof(Tproc497033, module);
-TMP10087[12].typ = (&NTI497017);
-TMP10087[12].name = "module";
-TMP10091[6] = &TMP10087[14];
-TMP10087[14].kind = 1;
-TMP10087[14].offset = offsetof(Tproc497033, g);
-TMP10087[14].typ = (&NTI497029);
-TMP10087[14].name = "g";
-TMP10091[7] = &TMP10087[15];
-TMP10087[15].kind = 1;
-TMP10087[15].offset = offsetof(Tproc497033, beforeretneeded);
-TMP10087[15].typ = (&NTI138);
-TMP10087[15].name = "beforeRetNeeded";
-TMP10091[8] = &TMP10087[16];
+NTI497017.marker = TMP10093;
+TMP10088[12].kind = 1;
+TMP10088[12].offset = offsetof(Tproc497033, module);
+TMP10088[12].typ = (&NTI497017);
+TMP10088[12].name = "module";
+TMP10092[6] = &TMP10088[14];
+TMP10088[14].kind = 1;
+TMP10088[14].offset = offsetof(Tproc497033, g);
+TMP10088[14].typ = (&NTI497029);
+TMP10088[14].name = "g";
+TMP10092[7] = &TMP10088[15];
+TMP10088[15].kind = 1;
+TMP10088[15].offset = offsetof(Tproc497033, beforeretneeded);
+TMP10088[15].typ = (&NTI138);
+TMP10088[15].name = "beforeRetNeeded";
+TMP10092[8] = &TMP10088[16];
 NTI497013.size = sizeof(NU8);
 NTI497013.kind = 14;
 NTI497013.base = 0;
 NTI497013.flags = 3;
-for (TMP10095 = 0; TMP10095 < 2; TMP10095++) {
-TMP10087[TMP10095+17].kind = 1;
-TMP10087[TMP10095+17].offset = TMP10095;
-TMP10087[TMP10095+17].name = TMP10094[TMP10095];
-TMP10093[TMP10095] = &TMP10087[TMP10095+17];
+for (TMP10096 = 0; TMP10096 < 2; TMP10096++) {
+TMP10088[TMP10096+17].kind = 1;
+TMP10088[TMP10096+17].offset = TMP10096;
+TMP10088[TMP10096+17].name = TMP10095[TMP10096];
+TMP10094[TMP10096] = &TMP10088[TMP10096+17];
 }
-TMP10087[19].len = 2; TMP10087[19].kind = 2; TMP10087[19].sons = &TMP10093[0];
-NTI497013.node = &TMP10087[19];
-TMP10087[16].kind = 1;
-TMP10087[16].offset = offsetof(Tproc497033, target);
-TMP10087[16].typ = (&NTI497013);
-TMP10087[16].name = "target";
-TMP10091[9] = &TMP10087[20];
-TMP10087[20].kind = 1;
-TMP10087[20].offset = offsetof(Tproc497033, unique);
-TMP10087[20].typ = (&NTI108);
-TMP10087[20].name = "unique";
-TMP10091[10] = &TMP10087[21];
+TMP10088[19].len = 2; TMP10088[19].kind = 2; TMP10088[19].sons = &TMP10094[0];
+NTI497013.node = &TMP10088[19];
+TMP10088[16].kind = 1;
+TMP10088[16].offset = offsetof(Tproc497033, target);
+TMP10088[16].typ = (&NTI497013);
+TMP10088[16].name = "target";
+TMP10092[9] = &TMP10088[20];
+TMP10088[20].kind = 1;
+TMP10088[20].offset = offsetof(Tproc497033, unique);
+TMP10088[20].typ = (&NTI108);
+TMP10088[20].name = "unique";
+TMP10092[10] = &TMP10088[21];
 NTI497025.size = sizeof(Tblock497025);
 NTI497025.kind = 18;
 NTI497025.base = 0;
 NTI497025.flags = 3;
-TMP10096[0] = &TMP10087[23];
-TMP10087[23].kind = 1;
-TMP10087[23].offset = offsetof(Tblock497025, id);
-TMP10087[23].typ = (&NTI108);
-TMP10087[23].name = "id";
-TMP10096[1] = &TMP10087[24];
-TMP10087[24].kind = 1;
-TMP10087[24].offset = offsetof(Tblock497025, isloop);
-TMP10087[24].typ = (&NTI138);
-TMP10087[24].name = "isLoop";
-TMP10087[22].len = 2; TMP10087[22].kind = 2; TMP10087[22].sons = &TMP10096[0];
-NTI497025.node = &TMP10087[22];
+TMP10097[0] = &TMP10088[23];
+TMP10088[23].kind = 1;
+TMP10088[23].offset = offsetof(Tblock497025, id);
+TMP10088[23].typ = (&NTI108);
+TMP10088[23].name = "id";
+TMP10097[1] = &TMP10088[24];
+TMP10088[24].kind = 1;
+TMP10088[24].offset = offsetof(Tblock497025, isloop);
+TMP10088[24].typ = (&NTI138);
+TMP10088[24].name = "isLoop";
+TMP10088[22].len = 2; TMP10088[22].kind = 2; TMP10088[22].sons = &TMP10097[0];
+NTI497025.node = &TMP10088[22];
 NTI497071.size = sizeof(TY497071*);
 NTI497071.kind = 24;
 NTI497071.base = (&NTI497025);
 NTI497071.flags = 2;
-NTI497071.marker = TMP10097;
-TMP10087[21].kind = 1;
-TMP10087[21].offset = offsetof(Tproc497033, blocks);
-TMP10087[21].typ = (&NTI497071);
-TMP10087[21].name = "blocks";
-TMP10091[11] = &TMP10087[25];
-TMP10087[25].kind = 1;
-TMP10087[25].offset = offsetof(Tproc497033, up);
-TMP10087[25].typ = (&NTI497031);
-TMP10087[25].name = "up";
-TMP10087[6].len = 12; TMP10087[6].kind = 2; TMP10087[6].sons = &TMP10091[0];
-NTI497033.node = &TMP10087[6];
+NTI497071.marker = TMP10098;
+TMP10088[21].kind = 1;
+TMP10088[21].offset = offsetof(Tproc497033, blocks);
+TMP10088[21].typ = (&NTI497071);
+TMP10088[21].name = "blocks";
+TMP10092[11] = &TMP10088[25];
+TMP10088[25].kind = 1;
+TMP10088[25].offset = offsetof(Tproc497033, up);
+TMP10088[25].typ = (&NTI497031);
+TMP10088[25].name = "up";
+TMP10088[6].len = 12; TMP10088[6].kind = 2; TMP10088[6].sons = &TMP10092[0];
+NTI497033.node = &TMP10088[6];
 NTI497031.size = sizeof(Tproc497033*);
 NTI497031.kind = 22;
 NTI497031.base = (&NTI497033);
-NTI497031.marker = TMP10098;
+NTI497031.marker = TMP10099;
 NTI498453.size = sizeof(Tmagicfrmt498453);
 NTI498453.kind = 16;
 NTI498453.base = (&NTI149);

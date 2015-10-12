@@ -67,20 +67,20 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-typedef N_CLOSURE_PTR(NI, TMP5961) (Tindexentry312396* x_313751, Tindexentry312396* y_313753);
-typedef N_CLOSURE_PTR(NI, TMP5965) (Tindexentry312396* x_313751, Tindexentry312396* y_313753);
+typedef N_CLOSURE_PTR(NI, TMP5962) (Tindexentry312396* x_313751, Tindexentry312396* y_313753);
+typedef N_CLOSURE_PTR(NI, TMP5966) (Tindexentry312396* x_313751, Tindexentry312396* y_313753);
 typedef struct {
 N_NIMCALL_PTR(NI, ClPrc) (NimStringDesc* x_315310, NimStringDesc* y_315312, void* ClEnv);
 void* ClEnv;
 } TY315308;
-typedef N_CLOSURE_PTR(NI, TMP6007) (NimStringDesc* x_315365, NimStringDesc* y_315367);
-typedef N_CLOSURE_PTR(NI, TMP6010) (NimStringDesc* x_315365, NimStringDesc* y_315367);
+typedef N_CLOSURE_PTR(NI, TMP6008) (NimStringDesc* x_315365, NimStringDesc* y_315367);
+typedef N_CLOSURE_PTR(NI, TMP6011) (NimStringDesc* x_315365, NimStringDesc* y_315367);
 typedef struct {
 N_NIMCALL_PTR(NI, ClPrc) (Tsym190843* x_351527, Tsym190843* y_351529, void* ClEnv);
 void* ClEnv;
 } TY351525;
-typedef N_CLOSURE_PTR(NI, TMP6967) (Tsym190843* x_351582, Tsym190843* y_351584);
-typedef N_CLOSURE_PTR(NI, TMP6970) (Tsym190843* x_351582, Tsym190843* y_351584);
+typedef N_CLOSURE_PTR(NI, TMP6968) (Tsym190843* x_351582, Tsym190843* y_351584);
+typedef N_CLOSURE_PTR(NI, TMP6971) (Tsym190843* x_351582, Tsym190843* y_351584);
 struct  TNimObject  {
 TNimType* m_type;
 };
@@ -258,7 +258,7 @@ N_NIMCALL(NI, mulInt)(NI a, NI b);
 N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI bLen0, NI lo, NI m, NI hi, TY315308 cmp, NU8 order);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0, NI lo, NI m, NI hi, TY351525 cmp, NU8 order);
-STRING_LITERAL(TMP5962, "j <= m ", 7);
+STRING_LITERAL(TMP5963, "j <= m ", 7);
 extern TFrame* frameptr_17042;
 extern TNimType NTI312897; /* seq[TIndexEntry] */
 extern TNimType NTI13606; /* seq[string] */
@@ -314,16 +314,16 @@ static N_INLINE(void, popFrame)(void) {
 static N_INLINE(NI, HEX2A_310020)(NI x, NU8 order) {
 	NI result;
 	NI y;
-	NI TMP5844;
 	NI TMP5845;
+	NI TMP5846;
 	nimfr("*", "algorithm.nim")
 	result = 0;
 	nimln(24, "algorithm.nim");
-	TMP5844 = subInt(((NI) (order)), ((NI) 1));
-	y = (NI)(TMP5844);
+	TMP5845 = subInt(((NI) (order)), ((NI) 1));
+	y = (NI)(TMP5845);
 	nimln(25, "algorithm.nim");
-	TMP5845 = subInt((NI)(x ^ ((NI) (y))), ((NI) (y)));
-	result = (NI)(TMP5845);
+	TMP5846 = subInt((NI)(x ^ ((NI) (y))), ((NI) (y)));
+	result = (NI)(TMP5846);
 	popFrame();
 	return result;
 }
@@ -405,14 +405,14 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 	nimfr("merge", "algorithm.nim")
 {	nimln(119, "algorithm.nim");
 	{
-		NI TMP5960;
+		NI TMP5961;
 		NI LOC3;
 		NI LOC4;
 		if ((NU)(m) >= (NU)(aLen0)) raiseIndexError();
-		TMP5960 = addInt(m, ((NI) 1));
-		if ((NU)((NI)(TMP5960)) >= (NU)(aLen0)) raiseIndexError();
+		TMP5961 = addInt(m, ((NI) 1));
+		if ((NU)((NI)(TMP5961)) >= (NU)(aLen0)) raiseIndexError();
 		LOC3 = 0;
-		LOC3 = cmp.ClEnv? cmp.ClPrc((&a[m]), (&a[(NI)(TMP5960)]), cmp.ClEnv):((TMP5961)(cmp.ClPrc))((&a[m]), (&a[(NI)(TMP5960)]));
+		LOC3 = cmp.ClEnv? cmp.ClPrc((&a[m]), (&a[(NI)(TMP5961)]), cmp.ClEnv):((TMP5962)(cmp.ClPrc))((&a[m]), (&a[(NI)(TMP5961)]));
 		LOC4 = 0;
 		LOC4 = HEX2A_310020(LOC3, order);
 		if (!(LOC4 <= ((NI) 0))) goto LA5;
@@ -424,7 +424,7 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 	nimln(122, "algorithm.nim");
 	{
 		if (!!((j <= m))) goto LA9;
-		failedassertimpl_87017(((NimStringDesc*) &TMP5962));
+		failedassertimpl_87017(((NimStringDesc*) &TMP5963));
 	}
 	LA9: ;
 	nimln(124, "algorithm.nim");
@@ -432,19 +432,19 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 	{
 		nimln(125, "algorithm.nim");
 		while (1) {
-			NI TMP5963;
 			NI TMP5964;
+			NI TMP5965;
 			if (!(j <= m)) goto LA12;
 			nimln(126, "algorithm.nim");
 			if ((NU)(bb) >= (NU)(bLen0)) raiseIndexError();
 			if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 			HEX3CHEX2D_312807((&b[bb]), (&a[j]));
 			nimln(127, "algorithm.nim");
-			TMP5963 = addInt(bb, ((NI) 1));
-			bb = (NI)(TMP5963);
+			TMP5964 = addInt(bb, ((NI) 1));
+			bb = (NI)(TMP5964);
 			nimln(128, "algorithm.nim");
-			TMP5964 = addInt(j, ((NI) 1));
-			j = (NI)(TMP5964);
+			TMP5965 = addInt(j, ((NI) 1));
+			j = (NI)(TMP5965);
 		} LA12: ;
 	}
 	nimln(132, "algorithm.nim");
@@ -455,7 +455,7 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 		nimln(135, "algorithm.nim");
 		while (1) {
 			NIM_BOOL LOC15;
-			NI TMP5968;
+			NI TMP5969;
 			LOC15 = 0;
 			LOC15 = (k < j);
 			if (!(LOC15)) goto LA16;
@@ -466,11 +466,11 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 			{
 				NI LOC19;
 				NI LOC20;
-				NI TMP5966;
+				NI TMP5967;
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				LOC19 = 0;
-				LOC19 = cmp.ClEnv? cmp.ClPrc((&b[i]), (&a[j]), cmp.ClEnv):((TMP5965)(cmp.ClPrc))((&b[i]), (&a[j]));
+				LOC19 = cmp.ClEnv? cmp.ClPrc((&b[i]), (&a[j]), cmp.ClEnv):((TMP5966)(cmp.ClPrc))((&b[i]), (&a[j]));
 				LOC20 = 0;
 				LOC20 = HEX2A_310020(LOC19, order);
 				if (!(LOC20 <= ((NI) 0))) goto LA21;
@@ -479,43 +479,43 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				HEX3CHEX2D_312807((&a[k]), (&b[i]));
 				nimln(138, "algorithm.nim");
-				TMP5966 = addInt(i, ((NI) 1));
-				i = (NI)(TMP5966);
+				TMP5967 = addInt(i, ((NI) 1));
+				i = (NI)(TMP5967);
 			}
 			goto LA17;
 			LA21: ;
 			{
-				NI TMP5967;
+				NI TMP5968;
 				nimln(140, "algorithm.nim");
 				if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				HEX3CHEX2D_312807((&a[k]), (&a[j]));
 				nimln(141, "algorithm.nim");
-				TMP5967 = addInt(j, ((NI) 1));
-				j = (NI)(TMP5967);
+				TMP5968 = addInt(j, ((NI) 1));
+				j = (NI)(TMP5968);
 			}
 			LA17: ;
 			nimln(142, "algorithm.nim");
-			TMP5968 = addInt(k, ((NI) 1));
-			k = (NI)(TMP5968);
+			TMP5969 = addInt(k, ((NI) 1));
+			k = (NI)(TMP5969);
 		} LA14: ;
 	}
 	{
 		nimln(145, "algorithm.nim");
 		while (1) {
-			NI TMP5969;
 			NI TMP5970;
+			NI TMP5971;
 			if (!(k < j)) goto LA25;
 			nimln(146, "algorithm.nim");
 			if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 			if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 			HEX3CHEX2D_312807((&a[k]), (&b[i]));
 			nimln(147, "algorithm.nim");
-			TMP5969 = addInt(k, ((NI) 1));
-			k = (NI)(TMP5969);
+			TMP5970 = addInt(k, ((NI) 1));
+			k = (NI)(TMP5970);
 			nimln(148, "algorithm.nim");
-			TMP5970 = addInt(i, ((NI) 1));
-			i = (NI)(TMP5970);
+			TMP5971 = addInt(i, ((NI) 1));
+			i = (NI)(TMP5971);
 		} LA25: ;
 	}
 	}BeforeRet: ;
@@ -525,52 +525,52 @@ N_NIMCALL(void, merge_313732)(Tindexentry312396* a, NI aLen0, Tindexentry312396*
 N_NIMCALL(void, sort_313687)(Tindexentry312396* a, NI aLen0, TY313694 cmp, NU8 order) {
 	NI n;
 	TY312897* b;
-	NI TMP5955;
+	NI TMP5956;
 	NI s;
 	nimfr("sort", "algorithm.nim")
 	nimln(180, "algorithm.nim");
 	n = aLen0;
 	b = 0;
 	nimln(182, "algorithm.nim");
-	TMP5955 = divInt(n, ((NI) 2));
-	b = (TY312897*) newSeq((&NTI312897), ((NI)chckRange((NI)(TMP5955), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP5956 = divInt(n, ((NI) 2));
+	b = (TY312897*) newSeq((&NTI312897), ((NI)chckRange((NI)(TMP5956), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(183, "algorithm.nim");
 	s = ((NI) 1);
 	{
 		nimln(184, "algorithm.nim");
 		while (1) {
 			NI m;
-			NI TMP5958;
 			NI TMP5959;
-			NI TMP5976;
+			NI TMP5960;
+			NI TMP5977;
 			if (!(s < n)) goto LA2;
 			nimln(185, "algorithm.nim");
-			TMP5958 = subInt(n, ((NI) 1));
-			TMP5959 = subInt((NI)(TMP5958), s);
-			m = (NI)(TMP5959);
+			TMP5959 = subInt(n, ((NI) 1));
+			TMP5960 = subInt((NI)(TMP5959), s);
+			m = (NI)(TMP5960);
 			{
 				nimln(186, "algorithm.nim");
 				while (1) {
-					NI TMP5971;
 					NI TMP5972;
 					NI TMP5973;
 					NI TMP5974;
 					NI TMP5975;
+					NI TMP5976;
 					if (!(((NI) 0) <= m)) goto LA4;
 					nimln(187, "algorithm.nim");
-					TMP5971 = subInt(m, s);
-					TMP5972 = addInt((NI)(TMP5971), ((NI) 1));
-					TMP5973 = addInt(m, s);
-					merge_313732(a, aLen0, b->data, b->Sup.len, (((NI)(TMP5972) >= ((NI) 0)) ? (NI)(TMP5972) : ((NI) 0)), m, (NI)(TMP5973), cmp, order);
+					TMP5972 = subInt(m, s);
+					TMP5973 = addInt((NI)(TMP5972), ((NI) 1));
+					TMP5974 = addInt(m, s);
+					merge_313732(a, aLen0, b->data, b->Sup.len, (((NI)(TMP5973) >= ((NI) 0)) ? (NI)(TMP5973) : ((NI) 0)), m, (NI)(TMP5974), cmp, order);
 					nimln(188, "algorithm.nim");
-					TMP5974 = mulInt(s, ((NI) 2));
-					TMP5975 = subInt(m, (NI)(TMP5974));
-					m = (NI)(TMP5975);
+					TMP5975 = mulInt(s, ((NI) 2));
+					TMP5976 = subInt(m, (NI)(TMP5975));
+					m = (NI)(TMP5976);
 				} LA4: ;
 			}
 			nimln(189, "algorithm.nim");
-			TMP5976 = mulInt(s, ((NI) 2));
-			s = (NI)(TMP5976);
+			TMP5977 = mulInt(s, ((NI) 2));
+			s = (NI)(TMP5977);
 		} LA2: ;
 	}
 	popFrame();
@@ -584,14 +584,14 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 	nimfr("merge", "algorithm.nim")
 {	nimln(119, "algorithm.nim");
 	{
-		NI TMP6006;
+		NI TMP6007;
 		NI LOC3;
 		NI LOC4;
 		if ((NU)(m) >= (NU)(aLen0)) raiseIndexError();
-		TMP6006 = addInt(m, ((NI) 1));
-		if ((NU)((NI)(TMP6006)) >= (NU)(aLen0)) raiseIndexError();
+		TMP6007 = addInt(m, ((NI) 1));
+		if ((NU)((NI)(TMP6007)) >= (NU)(aLen0)) raiseIndexError();
 		LOC3 = 0;
-		LOC3 = cmp.ClEnv? cmp.ClPrc(a[m], a[(NI)(TMP6006)], cmp.ClEnv):((TMP6007)(cmp.ClPrc))(a[m], a[(NI)(TMP6006)]);
+		LOC3 = cmp.ClEnv? cmp.ClPrc(a[m], a[(NI)(TMP6007)], cmp.ClEnv):((TMP6008)(cmp.ClPrc))(a[m], a[(NI)(TMP6007)]);
 		LOC4 = 0;
 		LOC4 = HEX2A_310020(LOC3, order);
 		if (!(LOC4 <= ((NI) 0))) goto LA5;
@@ -603,7 +603,7 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 	nimln(122, "algorithm.nim");
 	{
 		if (!!((j <= m))) goto LA9;
-		failedassertimpl_87017(((NimStringDesc*) &TMP5962));
+		failedassertimpl_87017(((NimStringDesc*) &TMP5963));
 	}
 	LA9: ;
 	nimln(124, "algorithm.nim");
@@ -611,19 +611,19 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 	{
 		nimln(125, "algorithm.nim");
 		while (1) {
-			NI TMP6008;
 			NI TMP6009;
+			NI TMP6010;
 			if (!(j <= m)) goto LA12;
 			nimln(112, "algorithm.nim");
 			if ((NU)(bb) >= (NU)(bLen0)) raiseIndexError();
 			if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 			unsureAsgnRef((void**) (&b[bb]), a[j]);
 			nimln(127, "algorithm.nim");
-			TMP6008 = addInt(bb, ((NI) 1));
-			bb = (NI)(TMP6008);
+			TMP6009 = addInt(bb, ((NI) 1));
+			bb = (NI)(TMP6009);
 			nimln(128, "algorithm.nim");
-			TMP6009 = addInt(j, ((NI) 1));
-			j = (NI)(TMP6009);
+			TMP6010 = addInt(j, ((NI) 1));
+			j = (NI)(TMP6010);
 		} LA12: ;
 	}
 	nimln(132, "algorithm.nim");
@@ -634,7 +634,7 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 		nimln(135, "algorithm.nim");
 		while (1) {
 			NIM_BOOL LOC15;
-			NI TMP6013;
+			NI TMP6014;
 			LOC15 = 0;
 			LOC15 = (k < j);
 			if (!(LOC15)) goto LA16;
@@ -645,11 +645,11 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 			{
 				NI LOC19;
 				NI LOC20;
-				NI TMP6011;
+				NI TMP6012;
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				LOC19 = 0;
-				LOC19 = cmp.ClEnv? cmp.ClPrc(b[i], a[j], cmp.ClEnv):((TMP6010)(cmp.ClPrc))(b[i], a[j]);
+				LOC19 = cmp.ClEnv? cmp.ClPrc(b[i], a[j], cmp.ClEnv):((TMP6011)(cmp.ClPrc))(b[i], a[j]);
 				LOC20 = 0;
 				LOC20 = HEX2A_310020(LOC19, order);
 				if (!(LOC20 <= ((NI) 0))) goto LA21;
@@ -658,43 +658,43 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[k]), b[i]);
 				nimln(138, "algorithm.nim");
-				TMP6011 = addInt(i, ((NI) 1));
-				i = (NI)(TMP6011);
+				TMP6012 = addInt(i, ((NI) 1));
+				i = (NI)(TMP6012);
 			}
 			goto LA17;
 			LA21: ;
 			{
-				NI TMP6012;
+				NI TMP6013;
 				nimln(112, "algorithm.nim");
 				if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[k]), a[j]);
 				nimln(141, "algorithm.nim");
-				TMP6012 = addInt(j, ((NI) 1));
-				j = (NI)(TMP6012);
+				TMP6013 = addInt(j, ((NI) 1));
+				j = (NI)(TMP6013);
 			}
 			LA17: ;
 			nimln(142, "algorithm.nim");
-			TMP6013 = addInt(k, ((NI) 1));
-			k = (NI)(TMP6013);
+			TMP6014 = addInt(k, ((NI) 1));
+			k = (NI)(TMP6014);
 		} LA14: ;
 	}
 	{
 		nimln(145, "algorithm.nim");
 		while (1) {
-			NI TMP6014;
 			NI TMP6015;
+			NI TMP6016;
 			if (!(k < j)) goto LA25;
 			nimln(112, "algorithm.nim");
 			if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 			if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 			unsureAsgnRef((void**) (&a[k]), b[i]);
 			nimln(147, "algorithm.nim");
-			TMP6014 = addInt(k, ((NI) 1));
-			k = (NI)(TMP6014);
+			TMP6015 = addInt(k, ((NI) 1));
+			k = (NI)(TMP6015);
 			nimln(148, "algorithm.nim");
-			TMP6015 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6015);
+			TMP6016 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6016);
 		} LA25: ;
 	}
 	}BeforeRet: ;
@@ -704,52 +704,52 @@ N_NIMCALL(void, merge_315346)(NimStringDesc** a, NI aLen0, NimStringDesc** b, NI
 N_NIMCALL(void, sort_315301)(NimStringDesc** a, NI aLen0, TY315308 cmp, NU8 order) {
 	NI n;
 	TY13606* b;
-	NI TMP6003;
+	NI TMP6004;
 	NI s;
 	nimfr("sort", "algorithm.nim")
 	nimln(180, "algorithm.nim");
 	n = aLen0;
 	b = 0;
 	nimln(182, "algorithm.nim");
-	TMP6003 = divInt(n, ((NI) 2));
-	b = (TY13606*) newSeq((&NTI13606), ((NI)chckRange((NI)(TMP6003), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP6004 = divInt(n, ((NI) 2));
+	b = (TY13606*) newSeq((&NTI13606), ((NI)chckRange((NI)(TMP6004), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(183, "algorithm.nim");
 	s = ((NI) 1);
 	{
 		nimln(184, "algorithm.nim");
 		while (1) {
 			NI m;
-			NI TMP6004;
 			NI TMP6005;
-			NI TMP6021;
+			NI TMP6006;
+			NI TMP6022;
 			if (!(s < n)) goto LA2;
 			nimln(185, "algorithm.nim");
-			TMP6004 = subInt(n, ((NI) 1));
-			TMP6005 = subInt((NI)(TMP6004), s);
-			m = (NI)(TMP6005);
+			TMP6005 = subInt(n, ((NI) 1));
+			TMP6006 = subInt((NI)(TMP6005), s);
+			m = (NI)(TMP6006);
 			{
 				nimln(186, "algorithm.nim");
 				while (1) {
-					NI TMP6016;
 					NI TMP6017;
 					NI TMP6018;
 					NI TMP6019;
 					NI TMP6020;
+					NI TMP6021;
 					if (!(((NI) 0) <= m)) goto LA4;
 					nimln(187, "algorithm.nim");
-					TMP6016 = subInt(m, s);
-					TMP6017 = addInt((NI)(TMP6016), ((NI) 1));
-					TMP6018 = addInt(m, s);
-					merge_315346(a, aLen0, b->data, b->Sup.len, (((NI)(TMP6017) >= ((NI) 0)) ? (NI)(TMP6017) : ((NI) 0)), m, (NI)(TMP6018), cmp, order);
+					TMP6017 = subInt(m, s);
+					TMP6018 = addInt((NI)(TMP6017), ((NI) 1));
+					TMP6019 = addInt(m, s);
+					merge_315346(a, aLen0, b->data, b->Sup.len, (((NI)(TMP6018) >= ((NI) 0)) ? (NI)(TMP6018) : ((NI) 0)), m, (NI)(TMP6019), cmp, order);
 					nimln(188, "algorithm.nim");
-					TMP6019 = mulInt(s, ((NI) 2));
-					TMP6020 = subInt(m, (NI)(TMP6019));
-					m = (NI)(TMP6020);
+					TMP6020 = mulInt(s, ((NI) 2));
+					TMP6021 = subInt(m, (NI)(TMP6020));
+					m = (NI)(TMP6021);
 				} LA4: ;
 			}
 			nimln(189, "algorithm.nim");
-			TMP6021 = mulInt(s, ((NI) 2));
-			s = (NI)(TMP6021);
+			TMP6022 = mulInt(s, ((NI) 2));
+			s = (NI)(TMP6022);
 		} LA2: ;
 	}
 	popFrame();
@@ -763,14 +763,14 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 	nimfr("merge", "algorithm.nim")
 {	nimln(119, "algorithm.nim");
 	{
-		NI TMP6966;
+		NI TMP6967;
 		NI LOC3;
 		NI LOC4;
 		if ((NU)(m) >= (NU)(aLen0)) raiseIndexError();
-		TMP6966 = addInt(m, ((NI) 1));
-		if ((NU)((NI)(TMP6966)) >= (NU)(aLen0)) raiseIndexError();
+		TMP6967 = addInt(m, ((NI) 1));
+		if ((NU)((NI)(TMP6967)) >= (NU)(aLen0)) raiseIndexError();
 		LOC3 = 0;
-		LOC3 = cmp.ClEnv? cmp.ClPrc(a[m], a[(NI)(TMP6966)], cmp.ClEnv):((TMP6967)(cmp.ClPrc))(a[m], a[(NI)(TMP6966)]);
+		LOC3 = cmp.ClEnv? cmp.ClPrc(a[m], a[(NI)(TMP6967)], cmp.ClEnv):((TMP6968)(cmp.ClPrc))(a[m], a[(NI)(TMP6967)]);
 		LOC4 = 0;
 		LOC4 = HEX2A_310020(LOC3, order);
 		if (!(LOC4 <= ((NI) 0))) goto LA5;
@@ -782,7 +782,7 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 	nimln(122, "algorithm.nim");
 	{
 		if (!!((j <= m))) goto LA9;
-		failedassertimpl_87017(((NimStringDesc*) &TMP5962));
+		failedassertimpl_87017(((NimStringDesc*) &TMP5963));
 	}
 	LA9: ;
 	nimln(124, "algorithm.nim");
@@ -790,19 +790,19 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 	{
 		nimln(125, "algorithm.nim");
 		while (1) {
-			NI TMP6968;
 			NI TMP6969;
+			NI TMP6970;
 			if (!(j <= m)) goto LA12;
 			nimln(112, "algorithm.nim");
 			if ((NU)(bb) >= (NU)(bLen0)) raiseIndexError();
 			if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 			unsureAsgnRef((void**) (&b[bb]), a[j]);
 			nimln(127, "algorithm.nim");
-			TMP6968 = addInt(bb, ((NI) 1));
-			bb = (NI)(TMP6968);
+			TMP6969 = addInt(bb, ((NI) 1));
+			bb = (NI)(TMP6969);
 			nimln(128, "algorithm.nim");
-			TMP6969 = addInt(j, ((NI) 1));
-			j = (NI)(TMP6969);
+			TMP6970 = addInt(j, ((NI) 1));
+			j = (NI)(TMP6970);
 		} LA12: ;
 	}
 	nimln(132, "algorithm.nim");
@@ -813,7 +813,7 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 		nimln(135, "algorithm.nim");
 		while (1) {
 			NIM_BOOL LOC15;
-			NI TMP6973;
+			NI TMP6974;
 			LOC15 = 0;
 			LOC15 = (k < j);
 			if (!(LOC15)) goto LA16;
@@ -824,11 +824,11 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 			{
 				NI LOC19;
 				NI LOC20;
-				NI TMP6971;
+				NI TMP6972;
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				LOC19 = 0;
-				LOC19 = cmp.ClEnv? cmp.ClPrc(b[i], a[j], cmp.ClEnv):((TMP6970)(cmp.ClPrc))(b[i], a[j]);
+				LOC19 = cmp.ClEnv? cmp.ClPrc(b[i], a[j], cmp.ClEnv):((TMP6971)(cmp.ClPrc))(b[i], a[j]);
 				LOC20 = 0;
 				LOC20 = HEX2A_310020(LOC19, order);
 				if (!(LOC20 <= ((NI) 0))) goto LA21;
@@ -837,43 +837,43 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 				if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[k]), b[i]);
 				nimln(138, "algorithm.nim");
-				TMP6971 = addInt(i, ((NI) 1));
-				i = (NI)(TMP6971);
+				TMP6972 = addInt(i, ((NI) 1));
+				i = (NI)(TMP6972);
 			}
 			goto LA17;
 			LA21: ;
 			{
-				NI TMP6972;
+				NI TMP6973;
 				nimln(112, "algorithm.nim");
 				if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 				if ((NU)(j) >= (NU)(aLen0)) raiseIndexError();
 				unsureAsgnRef((void**) (&a[k]), a[j]);
 				nimln(141, "algorithm.nim");
-				TMP6972 = addInt(j, ((NI) 1));
-				j = (NI)(TMP6972);
+				TMP6973 = addInt(j, ((NI) 1));
+				j = (NI)(TMP6973);
 			}
 			LA17: ;
 			nimln(142, "algorithm.nim");
-			TMP6973 = addInt(k, ((NI) 1));
-			k = (NI)(TMP6973);
+			TMP6974 = addInt(k, ((NI) 1));
+			k = (NI)(TMP6974);
 		} LA14: ;
 	}
 	{
 		nimln(145, "algorithm.nim");
 		while (1) {
-			NI TMP6974;
 			NI TMP6975;
+			NI TMP6976;
 			if (!(k < j)) goto LA25;
 			nimln(112, "algorithm.nim");
 			if ((NU)(k) >= (NU)(aLen0)) raiseIndexError();
 			if ((NU)(i) >= (NU)(bLen0)) raiseIndexError();
 			unsureAsgnRef((void**) (&a[k]), b[i]);
 			nimln(147, "algorithm.nim");
-			TMP6974 = addInt(k, ((NI) 1));
-			k = (NI)(TMP6974);
+			TMP6975 = addInt(k, ((NI) 1));
+			k = (NI)(TMP6975);
 			nimln(148, "algorithm.nim");
-			TMP6975 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6975);
+			TMP6976 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6976);
 		} LA25: ;
 	}
 	}BeforeRet: ;
@@ -883,52 +883,52 @@ N_NIMCALL(void, merge_351563)(Tsym190843** a, NI aLen0, Tsym190843** b, NI bLen0
 N_NIMCALL(void, sort_351518)(Tsym190843** a, NI aLen0, TY351525 cmp, NU8 order) {
 	NI n;
 	Tsymseq190815* b;
-	NI TMP6963;
+	NI TMP6964;
 	NI s;
 	nimfr("sort", "algorithm.nim")
 	nimln(180, "algorithm.nim");
 	n = aLen0;
 	b = 0;
 	nimln(182, "algorithm.nim");
-	TMP6963 = divInt(n, ((NI) 2));
-	b = (Tsymseq190815*) newSeq((&NTI190815), ((NI)chckRange((NI)(TMP6963), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP6964 = divInt(n, ((NI) 2));
+	b = (Tsymseq190815*) newSeq((&NTI190815), ((NI)chckRange((NI)(TMP6964), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(183, "algorithm.nim");
 	s = ((NI) 1);
 	{
 		nimln(184, "algorithm.nim");
 		while (1) {
 			NI m;
-			NI TMP6964;
 			NI TMP6965;
-			NI TMP6981;
+			NI TMP6966;
+			NI TMP6982;
 			if (!(s < n)) goto LA2;
 			nimln(185, "algorithm.nim");
-			TMP6964 = subInt(n, ((NI) 1));
-			TMP6965 = subInt((NI)(TMP6964), s);
-			m = (NI)(TMP6965);
+			TMP6965 = subInt(n, ((NI) 1));
+			TMP6966 = subInt((NI)(TMP6965), s);
+			m = (NI)(TMP6966);
 			{
 				nimln(186, "algorithm.nim");
 				while (1) {
-					NI TMP6976;
 					NI TMP6977;
 					NI TMP6978;
 					NI TMP6979;
 					NI TMP6980;
+					NI TMP6981;
 					if (!(((NI) 0) <= m)) goto LA4;
 					nimln(187, "algorithm.nim");
-					TMP6976 = subInt(m, s);
-					TMP6977 = addInt((NI)(TMP6976), ((NI) 1));
-					TMP6978 = addInt(m, s);
-					merge_351563(a, aLen0, b->data, b->Sup.len, (((NI)(TMP6977) >= ((NI) 0)) ? (NI)(TMP6977) : ((NI) 0)), m, (NI)(TMP6978), cmp, order);
+					TMP6977 = subInt(m, s);
+					TMP6978 = addInt((NI)(TMP6977), ((NI) 1));
+					TMP6979 = addInt(m, s);
+					merge_351563(a, aLen0, b->data, b->Sup.len, (((NI)(TMP6978) >= ((NI) 0)) ? (NI)(TMP6978) : ((NI) 0)), m, (NI)(TMP6979), cmp, order);
 					nimln(188, "algorithm.nim");
-					TMP6979 = mulInt(s, ((NI) 2));
-					TMP6980 = subInt(m, (NI)(TMP6979));
-					m = (NI)(TMP6980);
+					TMP6980 = mulInt(s, ((NI) 2));
+					TMP6981 = subInt(m, (NI)(TMP6980));
+					m = (NI)(TMP6981);
 				} LA4: ;
 			}
 			nimln(189, "algorithm.nim");
-			TMP6981 = mulInt(s, ((NI) 2));
-			s = (NI)(TMP6981);
+			TMP6982 = mulInt(s, ((NI) 2));
+			s = (NI)(TMP6982);
 		} LA2: ;
 	}
 	popFrame();

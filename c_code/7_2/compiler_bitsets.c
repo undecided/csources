@@ -55,7 +55,7 @@ N_NIMCALL(void, bitsetexcl_238069)(Tbitset238012** x, NI64 elem);
 N_NIMCALL(void, bitsetinit_238021)(Tbitset238012** b, NI length);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(void, TMP4074)(void* p, NI op);
+N_NIMCALL(void, TMP4075)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 N_NIMCALL(void, bitsetunion_238029)(Tbitset238012** x, Tbitset238012* y);
@@ -65,7 +65,7 @@ N_NIMCALL(void, bitsetsymdiff_238045)(Tbitset238012** x, Tbitset238012* y);
 N_NIMCALL(void, bitsetintersect_238053)(Tbitset238012** x, Tbitset238012* y);
 N_NIMCALL(NIM_BOOL, bitsetequals_238084)(Tbitset238012* x, Tbitset238012* y);
 N_NIMCALL(NIM_BOOL, bitsetcontains_238091)(Tbitset238012* x, Tbitset238012* y);
-STRING_LITERAL(TMP4067, "0 <= elem ", 10);
+STRING_LITERAL(TMP4068, "0 <= elem ", 10);
 extern TFrame* frameptr_17042;
 extern TNimType NTI110; /* int8 */
 TNimType NTI238012; /* TBitSet */
@@ -138,54 +138,54 @@ static N_INLINE(void, popFrame)(void) {
 
 N_NIMCALL(NIM_BOOL, bitsetin_238077)(Tbitset238012* x, NI64 e) {
 	NIM_BOOL result;
-	NI64 TMP4065;
 	NI64 TMP4066;
+	NI64 TMP4067;
 	nimfr("bitSetIn", "bitsets.nim")
 	result = 0;
 	nimln(34, "bitsets.nim");
-	TMP4065 = divInt64(e, IL64(8));
-	if ((NU)((NI64)(TMP4065)) >= (NU)(x->Sup.len)) raiseIndexError();
-	TMP4066 = modInt64(e, IL64(8));
-	result = !(((NI8)(x->data[(NI64)(TMP4065)] & ((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4066)))))))) == ((NI8) 0)));
+	TMP4066 = divInt64(e, IL64(8));
+	if ((NU)((NI64)(TMP4066)) >= (NU)(x->Sup.len)) raiseIndexError();
+	TMP4067 = modInt64(e, IL64(8));
+	result = !(((NI8)(x->data[(NI64)(TMP4066)] & ((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4067)))))))) == ((NI8) 0)));
 	popFrame();
 	return result;
 }
 
 N_NIMCALL(void, bitsetincl_238061)(Tbitset238012** x, NI64 elem) {
-	NI64 TMP4068;
 	NI64 TMP4069;
 	NI64 TMP4070;
+	NI64 TMP4071;
 	nimfr("bitSetIncl", "bitsets.nim")
 	nimln(38, "bitsets.nim");
 	{
 		if (!!((IL64(0) <= elem))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP4067));
+		failedassertimpl_87017(((NimStringDesc*) &TMP4068));
 	}
 	LA3: ;
 	nimln(39, "bitsets.nim");
-	TMP4068 = divInt64(elem, IL64(8));
-	if ((NU)((NI64)(TMP4068)) >= (NU)((*x)->Sup.len)) raiseIndexError();
 	TMP4069 = divInt64(elem, IL64(8));
 	if ((NU)((NI64)(TMP4069)) >= (NU)((*x)->Sup.len)) raiseIndexError();
+	TMP4070 = divInt64(elem, IL64(8));
+	if ((NU)((NI64)(TMP4070)) >= (NU)((*x)->Sup.len)) raiseIndexError();
 	nimln(40, "bitsets.nim");
-	TMP4070 = modInt64(elem, IL64(8));
-	(*x)->data[(NI64)(TMP4068)] = (NI8)((*x)->data[(NI64)(TMP4069)] | ((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4070))))))));
+	TMP4071 = modInt64(elem, IL64(8));
+	(*x)->data[(NI64)(TMP4069)] = (NI8)((*x)->data[(NI64)(TMP4070)] | ((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4071))))))));
 	popFrame();
 }
 
 N_NIMCALL(void, bitsetexcl_238069)(Tbitset238012** x, NI64 elem) {
-	NI64 TMP4071;
 	NI64 TMP4072;
 	NI64 TMP4073;
+	NI64 TMP4074;
 	nimfr("bitSetExcl", "bitsets.nim")
 	nimln(43, "bitsets.nim");
-	TMP4071 = divInt64(elem, IL64(8));
-	if ((NU)((NI64)(TMP4071)) >= (NU)((*x)->Sup.len)) raiseIndexError();
 	TMP4072 = divInt64(elem, IL64(8));
 	if ((NU)((NI64)(TMP4072)) >= (NU)((*x)->Sup.len)) raiseIndexError();
+	TMP4073 = divInt64(elem, IL64(8));
+	if ((NU)((NI64)(TMP4073)) >= (NU)((*x)->Sup.len)) raiseIndexError();
 	nimln(44, "bitsets.nim");
-	TMP4073 = modInt64(elem, IL64(8));
-	(*x)->data[(NI64)(TMP4071)] = (NI8)((*x)->data[(NI64)(TMP4072)] & (NI8)((NU8) ~(((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4073))))))))));
+	TMP4074 = modInt64(elem, IL64(8));
+	(*x)->data[(NI64)(TMP4072)] = (NI8)((*x)->data[(NI64)(TMP4073)] & (NI8)((NU8) ~(((NI8)(NU8)(NU)((NI)((NU64)(((NI) 1)) << (NU64)(((NI) ((NI64)(TMP4074))))))))));
 	popFrame();
 }
 
@@ -212,7 +212,7 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP4074)(void* p, NI op) {
+N_NIMCALL(void, TMP4075)(void* p, NI op) {
 	Tbitset238012* a;
 	NI LOC1;
 	a = (Tbitset238012*)p;
@@ -263,7 +263,7 @@ N_NIMCALL(void, bitsetunion_238029)(Tbitset238012** x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4075;
+				NI TMP4076;
 				if (!(res_238265 <= HEX3Atmp_238262)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238260 = res_238265;
@@ -273,8 +273,8 @@ N_NIMCALL(void, bitsetunion_238029)(Tbitset238012** x, Tbitset238012* y) {
 				if ((NU)(i_238260) >= (NU)(y->Sup.len)) raiseIndexError();
 				(*x)->data[i_238260] = (NI8)((*x)->data[i_238260] | y->data[i_238260]);
 				nimln(1614, "system.nim");
-				TMP4075 = addInt(res_238265, ((NI) 1));
-				res_238265 = (NI)(TMP4075);
+				TMP4076 = addInt(res_238265, ((NI) 1));
+				res_238265 = (NI)(TMP4076);
 			} LA3: ;
 		}
 	}
@@ -296,7 +296,7 @@ N_NIMCALL(void, bitsetdiff_238037)(Tbitset238012** x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4076;
+				NI TMP4077;
 				if (!(res_238306 <= HEX3Atmp_238303)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238301 = res_238306;
@@ -306,8 +306,8 @@ N_NIMCALL(void, bitsetdiff_238037)(Tbitset238012** x, Tbitset238012* y) {
 				if ((NU)(i_238301) >= (NU)(y->Sup.len)) raiseIndexError();
 				(*x)->data[i_238301] = (NI8)((*x)->data[i_238301] & (NI8)((NU8) ~(y->data[i_238301])));
 				nimln(1614, "system.nim");
-				TMP4076 = addInt(res_238306, ((NI) 1));
-				res_238306 = (NI)(TMP4076);
+				TMP4077 = addInt(res_238306, ((NI) 1));
+				res_238306 = (NI)(TMP4077);
 			} LA3: ;
 		}
 	}
@@ -329,7 +329,7 @@ N_NIMCALL(void, bitsetsymdiff_238045)(Tbitset238012** x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4077;
+				NI TMP4078;
 				if (!(res_238347 <= HEX3Atmp_238344)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238342 = res_238347;
@@ -339,8 +339,8 @@ N_NIMCALL(void, bitsetsymdiff_238045)(Tbitset238012** x, Tbitset238012* y) {
 				if ((NU)(i_238342) >= (NU)(y->Sup.len)) raiseIndexError();
 				(*x)->data[i_238342] = (NI8)((*x)->data[i_238342] ^ y->data[i_238342]);
 				nimln(1614, "system.nim");
-				TMP4077 = addInt(res_238347, ((NI) 1));
-				res_238347 = (NI)(TMP4077);
+				TMP4078 = addInt(res_238347, ((NI) 1));
+				res_238347 = (NI)(TMP4078);
 			} LA3: ;
 		}
 	}
@@ -362,7 +362,7 @@ N_NIMCALL(void, bitsetintersect_238053)(Tbitset238012** x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4078;
+				NI TMP4079;
 				if (!(res_238388 <= HEX3Atmp_238385)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238383 = res_238388;
@@ -372,8 +372,8 @@ N_NIMCALL(void, bitsetintersect_238053)(Tbitset238012** x, Tbitset238012* y) {
 				if ((NU)(i_238383) >= (NU)(y->Sup.len)) raiseIndexError();
 				(*x)->data[i_238383] = (NI8)((*x)->data[i_238383] & y->data[i_238383]);
 				nimln(1614, "system.nim");
-				TMP4078 = addInt(res_238388, ((NI) 1));
-				res_238388 = (NI)(TMP4078);
+				TMP4079 = addInt(res_238388, ((NI) 1));
+				res_238388 = (NI)(TMP4079);
 			} LA3: ;
 		}
 	}
@@ -397,7 +397,7 @@ N_NIMCALL(NIM_BOOL, bitsetequals_238084)(Tbitset238012* x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4079;
+				NI TMP4080;
 				if (!(res_238429 <= HEX3Atmp_238426)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238424 = res_238429;
@@ -412,8 +412,8 @@ N_NIMCALL(NIM_BOOL, bitsetequals_238084)(Tbitset238012* x, Tbitset238012* y) {
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP4079 = addInt(res_238429, ((NI) 1));
-				res_238429 = (NI)(TMP4079);
+				TMP4080 = addInt(res_238429, ((NI) 1));
+				res_238429 = (NI)(TMP4080);
 			} LA3: ;
 		}
 	}
@@ -441,7 +441,7 @@ N_NIMCALL(NIM_BOOL, bitsetcontains_238091)(Tbitset238012* x, Tbitset238012* y) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4080;
+				NI TMP4081;
 				if (!(res_238470 <= HEX3Atmp_238467)) goto LA3;
 				nimln(1600, "system.nim");
 				i_238465 = res_238470;
@@ -456,8 +456,8 @@ N_NIMCALL(NIM_BOOL, bitsetcontains_238091)(Tbitset238012* x, Tbitset238012* y) {
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP4080 = addInt(res_238470, ((NI) 1));
-				res_238470 = (NI)(TMP4080);
+				TMP4081 = addInt(res_238470, ((NI) 1));
+				res_238470 = (NI)(TMP4081);
 			} LA3: ;
 		}
 	}
@@ -477,6 +477,6 @@ NTI238012.size = sizeof(Tbitset238012*);
 NTI238012.kind = 24;
 NTI238012.base = (&NTI110);
 NTI238012.flags = 2;
-NTI238012.marker = TMP4074;
+NTI238012.marker = TMP4075;
 }
 

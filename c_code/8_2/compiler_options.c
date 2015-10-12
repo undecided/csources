@@ -1771,9 +1771,9 @@ NIM_EXTERNC N_NOINLINE(void, compiler_optionsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_optionsDatInit)(void) {
-static TNimNode* TMP2595[22];
-NI TMP2597;
-static char* NIM_CONST TMP2596[22] = {
+static TNimNode* TMP2596[22];
+NI TMP2598;
+static char* NIM_CONST TMP2597[22] = {
 "optNone", 
 "optObjCheck", 
 "optFieldCheck", 
@@ -1796,9 +1796,9 @@ static char* NIM_CONST TMP2596[22] = {
 "optProfiler", 
 "optImplicitStatic", 
 "optPatterns"};
-static TNimNode* TMP3961[30];
-NI TMP3963;
-static char* NIM_CONST TMP3962[30] = {
+static TNimNode* TMP3962[30];
+NI TMP3964;
+static char* NIM_CONST TMP3963[30] = {
 "gloptNone", 
 "optForceFullMake", 
 "optDeadCodeElim", 
@@ -1829,9 +1829,9 @@ static char* NIM_CONST TMP3962[30] = {
 "optEmbedOrigSrc", 
 "optIdeDebug", 
 "optIdeTerse"};
-static TNimNode* TMP3979[20];
-NI TMP3981;
-static char* NIM_CONST TMP3980[20] = {
+static TNimNode* TMP3980[20];
+NI TMP3982;
+static char* NIM_CONST TMP3981[20] = {
 "cmdNone", 
 "cmdCompileToC", 
 "cmdCompileToCpp", 
@@ -1857,13 +1857,13 @@ NTI152014.size = sizeof(NU8);
 NTI152014.kind = 14;
 NTI152014.base = 0;
 NTI152014.flags = 3;
-for (TMP2597 = 0; TMP2597 < 22; TMP2597++) {
-TMP461[TMP2597+0].kind = 1;
-TMP461[TMP2597+0].offset = TMP2597;
-TMP461[TMP2597+0].name = TMP2596[TMP2597];
-TMP2595[TMP2597] = &TMP461[TMP2597+0];
+for (TMP2598 = 0; TMP2598 < 22; TMP2598++) {
+TMP461[TMP2598+0].kind = 1;
+TMP461[TMP2598+0].offset = TMP2598;
+TMP461[TMP2598+0].name = TMP2597[TMP2598];
+TMP2596[TMP2598] = &TMP461[TMP2598+0];
 }
-TMP461[22].len = 22; TMP461[22].kind = 2; TMP461[22].sons = &TMP2595[0];
+TMP461[22].len = 22; TMP461[22].kind = 2; TMP461[22].sons = &TMP2596[0];
 NTI152014.node = &TMP461[22];
 NTI152121.size = sizeof(NU32);
 NTI152121.kind = 19;
@@ -1875,25 +1875,25 @@ NTI152018.size = sizeof(NU8);
 NTI152018.kind = 14;
 NTI152018.base = 0;
 NTI152018.flags = 3;
-for (TMP3963 = 0; TMP3963 < 30; TMP3963++) {
-TMP461[TMP3963+24].kind = 1;
-TMP461[TMP3963+24].offset = TMP3963;
-TMP461[TMP3963+24].name = TMP3962[TMP3963];
-TMP3961[TMP3963] = &TMP461[TMP3963+24];
+for (TMP3964 = 0; TMP3964 < 30; TMP3964++) {
+TMP461[TMP3964+24].kind = 1;
+TMP461[TMP3964+24].offset = TMP3964;
+TMP461[TMP3964+24].name = TMP3963[TMP3964];
+TMP3962[TMP3964] = &TMP461[TMP3964+24];
 }
-TMP461[54].len = 30; TMP461[54].kind = 2; TMP461[54].sons = &TMP3961[0];
+TMP461[54].len = 30; TMP461[54].kind = 2; TMP461[54].sons = &TMP3962[0];
 NTI152018.node = &TMP461[54];
 NTI152022.size = sizeof(NU8);
 NTI152022.kind = 14;
 NTI152022.base = 0;
 NTI152022.flags = 3;
-for (TMP3981 = 0; TMP3981 < 20; TMP3981++) {
-TMP461[TMP3981+55].kind = 1;
-TMP461[TMP3981+55].offset = TMP3981;
-TMP461[TMP3981+55].name = TMP3980[TMP3981];
-TMP3979[TMP3981] = &TMP461[TMP3981+55];
+for (TMP3982 = 0; TMP3982 < 20; TMP3982++) {
+TMP461[TMP3982+55].kind = 1;
+TMP461[TMP3982+55].offset = TMP3982;
+TMP461[TMP3982+55].name = TMP3981[TMP3982];
+TMP3980[TMP3982] = &TMP461[TMP3982+55];
 }
-TMP461[75].len = 20; TMP461[75].kind = 2; TMP461[75].sons = &TMP3979[0];
+TMP461[75].len = 20; TMP461[75].kind = 2; TMP461[75].sons = &TMP3980[0];
 NTI152022.node = &TMP461[75];
 }
 

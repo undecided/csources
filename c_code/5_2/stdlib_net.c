@@ -225,7 +225,7 @@ struct TY511647 {
   TGenericSeq Sup;
   int data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(void, TMP10640)(void* p, NI op);
+N_NIMCALL(void, TMP10641)(void* p, NI op);
 N_NIMCALL(int, newrawsocket_509004)(NU8 domain, NU8 typ, NU8 protocol);
 N_NIMCALL(void, raiseoserror_116809)(NI32 errorcode);
 N_NIMCALL(NI32, oslasterror_116833)(void);
@@ -265,7 +265,7 @@ N_NIMCALL(NI, waitfor_516818)(Socketimpl513407* socket, NF* waited, NI timeout, 
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10659)(void* p, NI op);
+N_NIMCALL(void, TMP10660)(void* p, NI op);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
@@ -288,20 +288,20 @@ static N_INLINE(void, setFrame)(TFrame* s);
 N_NIMCALL(void, close_509028)(int socket);
 N_NIMCALL(void, reraiseException)(void);
 TNimNode* NimDT_513407_isbuffered[3];
-STRING_LITERAL(TMP10646, "not (fd == osInvalidSocket) ", 28);
-STRING_LITERAL(TMP10647, "currPos", 7);
-STRING_LITERAL(TMP10650, "No valid socket error code available", 36);
-STRING_LITERAL(TMP10651, "Could not send all data.", 24);
-STRING_LITERAL(TMP10653, "", 0);
-STRING_LITERAL(TMP10654, "not (client == nil) ", 20);
-STRING_LITERAL(TMP10655, "false ", 6);
-STRING_LITERAL(TMP10656, "bufLen", 6);
-STRING_LITERAL(TMP10660, "Call to \'", 9);
-STRING_LITERAL(TMP10661, "\' timed out.", 12);
-STRING_LITERAL(TMP10664, "readLine", 8);
-STRING_LITERAL(TMP10665, "buffer", 6);
-STRING_LITERAL(TMP10669, "chunk <= size - read ", 21);
-STRING_LITERAL(TMP10673, "\015\012", 2);
+STRING_LITERAL(TMP10647, "not (fd == osInvalidSocket) ", 28);
+STRING_LITERAL(TMP10648, "currPos", 7);
+STRING_LITERAL(TMP10651, "No valid socket error code available", 36);
+STRING_LITERAL(TMP10652, "Could not send all data.", 24);
+STRING_LITERAL(TMP10654, "", 0);
+STRING_LITERAL(TMP10655, "not (client == nil) ", 20);
+STRING_LITERAL(TMP10656, "false ", 6);
+STRING_LITERAL(TMP10657, "bufLen", 6);
+STRING_LITERAL(TMP10661, "Call to \'", 9);
+STRING_LITERAL(TMP10662, "\' timed out.", 12);
+STRING_LITERAL(TMP10665, "readLine", 8);
+STRING_LITERAL(TMP10666, "buffer", 6);
+STRING_LITERAL(TMP10670, "chunk <= size - read ", 21);
+STRING_LITERAL(TMP10674, "\015\012", 2);
 TNimType NTI513407; /* SocketImpl */
 extern TNimType NTI5811; /* cint */
 extern TNimType NTI138; /* bool */
@@ -321,7 +321,7 @@ TNimType NTI513415; /* TimeoutError */
 TNimType NTI517014; /* ref TimeoutError */
 extern TNimType NTI511647; /* seq[SocketHandle] */
 extern TSafePoint* exchandler_17043;
-N_NIMCALL(void, TMP10640)(void* p, NI op) {
+N_NIMCALL(void, TMP10641)(void* p, NI op) {
 	Socketimpl513407* a;
 	NI LOC1;
 	a = (Socketimpl513407*)p;
@@ -371,7 +371,7 @@ N_NIMCALL(Socketimpl513407*, newsocket_513708)(int fd, NIM_BOOL isbuff) {
 	nimln(123, "net.nim");
 	{
 		if (!!(!((fd == osinvalidsocket_508651)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP10646));
+		failedassertimpl_87017(((NimStringDesc*) &TMP10647));
 	}
 	LA3: ;
 	nimln(124, "net.nim");
@@ -387,7 +387,7 @@ N_NIMCALL(Socketimpl513407*, newsocket_513708)(int fd, NIM_BOOL isbuff) {
 	{
 		if (!isbuff) goto LA8;
 		nimln(128, "net.nim");
-		if (!(((2 &(1<<(((*result).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+		if (!(((2 &(1<<(((*result).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 		(*result).isbufferedU.S1.currpos = ((NI) 0);
 	}
 	LA8: ;
@@ -605,7 +605,7 @@ N_NIMCALL(NI32, getsocketerror_514001)(Socketimpl513407* socket) {
 		(*e_514008).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC9 = 0;
-		LOC9 = (*e_514008).Sup.Sup.message; (*e_514008).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10650));
+		LOC9 = (*e_514008).Sup.Sup.message; (*e_514008).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10651));
 		if (LOC9) nimGCunrefNoCycle(LOC9);
 		nimln(259, "net.nim");
 		raiseException((Exception*)e_514008, "OSError");
@@ -709,7 +709,7 @@ N_NIMCALL(void, send_518208)(Socketimpl513407* socket, NimStringDesc* data, NU8 
 		(*e_518219).Sup.Sup.Sup.m_type = (&NTI3433);
 		nimln(2266, "system.nim");
 		LOC14 = 0;
-		LOC14 = (*e_518219).Sup.Sup.message; (*e_518219).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10651));
+		LOC14 = (*e_518219).Sup.Sup.message; (*e_518219).Sup.Sup.message = copyStringRC1(((NimStringDesc*) &TMP10652));
 		if (LOC14) nimGCunrefNoCycle(LOC14);
 		nimln(886, "net.nim");
 		raiseException((Exception*)e_518219, "OSError");
@@ -727,7 +727,7 @@ N_NIMCALL(void, acceptaddr_514813)(Socketimpl513407* server, Socketimpl513407** 
 	nimln(369, "net.nim");
 	{
 		if (!!(!(((*client) == NIM_NIL)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP10654));
+		failedassertimpl_87017(((NimStringDesc*) &TMP10655));
 	}
 	LA3: ;
 	memset((void*)(&sockaddress), 0, sizeof(sockaddress));
@@ -779,7 +779,7 @@ N_NIMCALL(void, accept_515401)(Socketimpl513407* server, Socketimpl513407** clie
 	NimStringDesc* addrdummy;
 	nimfr("accept", "net.nim")
 	nimln(460, "net.nim");
-	addrdummy = copyString(((NimStringDesc*) &TMP10653));
+	addrdummy = copyString(((NimStringDesc*) &TMP10654));
 	nimln(461, "net.nim");
 	acceptaddr_514813(server, client, (&addrdummy), flags);
 	popFrame();
@@ -804,7 +804,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP10659)(void* p, NI op) {
+N_NIMCALL(void, TMP10660)(void* p, NI op) {
 	Timeouterror513415* a;
 	a = (Timeouterror513415*)p;
 	nimGCvisit((void*)(*a).Sup.parent, op);
@@ -864,11 +864,11 @@ N_NIMCALL(NIM_BOOL, hasdatabuffered_516001)(Socketimpl513407* s) {
 		if (!(*s).isbuffered) goto LA3;
 		nimln(585, "net.nim");
 		LOC5 = 0;
-		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 		LOC5 = (((NI) 0) < (*s).isbufferedU.S1.buflen);
 		if (!(LOC5)) goto LA6;
-		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
-		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
+		if (!(((2 &(1<<(((*s).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 		LOC5 = !(((*s).isbufferedU.S1.currpos == (*s).isbufferedU.S1.buflen));
 		LA6: ;
 		result = LOC5;
@@ -924,7 +924,7 @@ N_NIMCALL(NI, waitfor_516818)(Socketimpl513407* socket, NF* waited, NI timeout, 
 		if (!(size <= ((NI) 0))) goto LA3;
 		{
 			if (!NIM_TRUE) goto LA7;
-			failedassertimpl_87017(((NimStringDesc*) &TMP10655));
+			failedassertimpl_87017(((NimStringDesc*) &TMP10656));
 		}
 		LA7: ;
 	}
@@ -940,26 +940,26 @@ N_NIMCALL(NI, waitfor_516818)(Socketimpl513407* socket, NF* waited, NI timeout, 
 	{
 		NIM_BOOL LOC15;
 		NIM_BOOL LOC16;
-		NI TMP10657;
+		NI TMP10658;
 		LOC15 = 0;
 		LOC16 = 0;
 		LOC16 = (*socket).isbuffered;
 		if (!(LOC16)) goto LA17;
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 		LOC16 = !(((*socket).isbufferedU.S1.buflen == ((NI) 0)));
 		LA17: ;
 		LOC15 = LOC16;
 		if (!(LOC15)) goto LA18;
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 		LOC15 = !(((*socket).isbufferedU.S1.buflen == (*socket).isbufferedU.S1.currpos));
 		LA18: ;
 		if (!LOC15) goto LA19;
 		nimln(683, "net.nim");
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
-		TMP10657 = subInt((*socket).isbufferedU.S1.buflen, (*socket).isbufferedU.S1.currpos);
-		result = (NI)(TMP10657);
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
+		TMP10658 = subInt((*socket).isbufferedU.S1.buflen, (*socket).isbufferedU.S1.currpos);
+		result = (NI)(TMP10658);
 		nimln(684, "net.nim");
 		result = ((result <= size) ? result : size);
 	}
@@ -968,15 +968,15 @@ N_NIMCALL(NI, waitfor_516818)(Socketimpl513407* socket, NF* waited, NI timeout, 
 	{
 		NF starttime;
 		NI selret;
-		NI TMP10663;
+		NI TMP10664;
 		NF LOC37;
 		nimln(686, "net.nim");
 		{
-			NI TMP10658;
+			NI TMP10659;
 			Timeouterror513415* e_517013;
 			NimStringDesc* LOC26;
-			TMP10658 = subInt(timeout, ((NI) (((NF)((*waited)) * (NF)(1.0000000000000000e+03)))));
-			if (!((NI)(TMP10658) < ((NI) 1))) goto LA24;
+			TMP10659 = subInt(timeout, ((NI) (((NF)((*waited)) * (NF)(1.0000000000000000e+03)))));
+			if (!((NI)(TMP10659) < ((NI) 1))) goto LA24;
 			e_517013 = 0;
 			nimln(2265, "system.nim");
 			e_517013 = (Timeouterror513415*) newObj((&NTI517014), sizeof(Timeouterror513415));
@@ -985,9 +985,9 @@ N_NIMCALL(NI, waitfor_516818)(Socketimpl513407* socket, NF* waited, NI timeout, 
 			nimln(687, "net.nim");
 			LOC26 = 0;
 			LOC26 = rawNewString(funcname->Sup.len + 21);
-appendString(LOC26, ((NimStringDesc*) &TMP10660));
-appendString(LOC26, funcname);
 appendString(LOC26, ((NimStringDesc*) &TMP10661));
+appendString(LOC26, funcname);
+appendString(LOC26, ((NimStringDesc*) &TMP10662));
 			asgnRefNoCycle((void**) (&(*e_517013).Sup.message), LOC26);
 			raiseException((Exception*)e_517013, "TimeoutError");
 		}
@@ -995,8 +995,8 @@ appendString(LOC26, ((NimStringDesc*) &TMP10661));
 		nimln(698, "net.nim");
 		starttime = ntepochTime();
 		nimln(699, "net.nim");
-		TMP10663 = subInt(timeout, ((NI) (((NF)((*waited)) * (NF)(1.0000000000000000e+03)))));
-		selret = select_516207(socket, (NI)(TMP10663));
+		TMP10664 = subInt(timeout, ((NI) (((NF)((*waited)) * (NF)(1.0000000000000000e+03)))));
+		selret = select_516207(socket, (NI)(TMP10664));
 		nimln(700, "net.nim");
 		{
 			NI32 LOC31;
@@ -1019,9 +1019,9 @@ appendString(LOC26, ((NimStringDesc*) &TMP10661));
 			nimln(702, "net.nim");
 			LOC36 = 0;
 			LOC36 = rawNewString(funcname->Sup.len + 21);
-appendString(LOC36, ((NimStringDesc*) &TMP10660));
-appendString(LOC36, funcname);
 appendString(LOC36, ((NimStringDesc*) &TMP10661));
+appendString(LOC36, funcname);
+appendString(LOC36, ((NimStringDesc*) &TMP10662));
 			asgnRefNoCycle((void**) (&(*e_517206).Sup.message), LOC36);
 			raiseException((Exception*)e_517206, "TimeoutError");
 		}
@@ -1044,7 +1044,7 @@ N_NIMCALL(NI, readintobuf_516235)(Socketimpl513407* socket, NI32 flags) {
 	nimln(600, "net.nim");
 	result = ((NI) 0);
 	nimln(607, "net.nim");
-	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10665));
+	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10666));
 	result = recv((*socket).fd, ((void*) ((*socket).isbufferedU.S1.buffer)), ((NI) 4000), flags);
 	nimln(608, "net.nim");
 	{
@@ -1057,20 +1057,20 @@ N_NIMCALL(NI, readintobuf_516235)(Socketimpl513407* socket, NI32 flags) {
 	{
 		if (!(result <= ((NI) 0))) goto LA7;
 		nimln(613, "net.nim");
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 		(*socket).isbufferedU.S1.buflen = ((NI) 0);
 		nimln(614, "net.nim");
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 		(*socket).isbufferedU.S1.currpos = ((NI) 0);
 		nimln(615, "net.nim");
 		goto BeforeRet;
 	}
 	LA7: ;
 	nimln(616, "net.nim");
-	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 	(*socket).isbufferedU.S1.buflen = result;
 	nimln(617, "net.nim");
-	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+	if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 	(*socket).isbufferedU.S1.currpos = ((NI) 0);
 	}BeforeRet: ;
 	popFrame();
@@ -1114,7 +1114,7 @@ N_NIMCALL(NI, recv_516425)(Socketimpl513407* socket, void* data, NI size) {
 		nimln(634, "net.nim");
 		{
 			NI res;
-			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 			if (!((*socket).isbufferedU.S1.buflen == ((NI) 0))) goto LA11;
 			nimln(620, "net.nim");
 			res = readintobuf_516235(socket, ((NI32) 0));
@@ -1147,17 +1147,17 @@ N_NIMCALL(NI, recv_516425)(Socketimpl513407* socket, void* data, NI size) {
 			nimln(638, "net.nim");
 			while (1) {
 				NI chunk;
-				NI TMP10666;
 				NI TMP10667;
+				NI TMP10668;
 				NCSTRING d;
-				NI TMP10670;
 				NI TMP10671;
+				NI TMP10672;
 				if (!(read < size)) goto LA23;
 				nimln(639, "net.nim");
 				{
 					NI res;
-					if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
-					if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+					if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
+					if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 					if (!((*socket).isbufferedU.S1.buflen <= (*socket).isbufferedU.S1.currpos)) goto LA26;
 					nimln(620, "net.nim");
 					res = readintobuf_516235(socket, ((NI32) 0));
@@ -1185,33 +1185,33 @@ N_NIMCALL(NI, recv_516425)(Socketimpl513407* socket, void* data, NI size) {
 				}
 				LA26: ;
 				nimln(642, "net.nim");
-				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
-				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
-				TMP10666 = subInt((*socket).isbufferedU.S1.buflen, (*socket).isbufferedU.S1.currpos);
-				TMP10667 = subInt(size, read);
-				chunk = (((NI)(TMP10666) <= (NI)(TMP10667)) ? (NI)(TMP10666) : (NI)(TMP10667));
+				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
+				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
+				TMP10667 = subInt((*socket).isbufferedU.S1.buflen, (*socket).isbufferedU.S1.currpos);
+				TMP10668 = subInt(size, read);
+				chunk = (((NI)(TMP10667) <= (NI)(TMP10668)) ? (NI)(TMP10667) : (NI)(TMP10668));
 				nimln(643, "net.nim");
 				d = ((NCSTRING) (data));
 				nimln(644, "net.nim");
 				{
-					NI TMP10668;
-					TMP10668 = subInt(size, read);
-					if (!!((chunk <= (NI)(TMP10668)))) goto LA39;
-					failedassertimpl_87017(((NimStringDesc*) &TMP10669));
+					NI TMP10669;
+					TMP10669 = subInt(size, read);
+					if (!!((chunk <= (NI)(TMP10669)))) goto LA39;
+					failedassertimpl_87017(((NimStringDesc*) &TMP10670));
 				}
 				LA39: ;
 				nimln(645, "net.nim");
-				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10665));
-				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10666));
+				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 				if ((NU)((*socket).isbufferedU.S1.currpos) > (NU)(4000)) raiseIndexError();
 				memcpy(((void*) ((&d[read]))), ((void*) ((&(*socket).isbufferedU.S1.buffer[((*socket).isbufferedU.S1.currpos)- 0]))), ((NI)chckRange(chunk, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 				nimln(646, "net.nim");
-				TMP10670 = addInt(read, chunk);
-				read = (NI)(TMP10670);
+				TMP10671 = addInt(read, chunk);
+				read = (NI)(TMP10671);
 				nimln(647, "net.nim");
-				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
-				TMP10671 = addInt((*socket).isbufferedU.S1.currpos, chunk);
-				(*socket).isbufferedU.S1.currpos = (NI)(TMP10671);
+				if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
+				TMP10672 = addInt((*socket).isbufferedU.S1.currpos, chunk);
+				(*socket).isbufferedU.S1.currpos = (NI)(TMP10672);
 			} LA23: ;
 		}
 		nimln(649, "net.nim");
@@ -1248,16 +1248,16 @@ N_NIMCALL(NI, peekchar_517444)(Socketimpl513407* socket, NIM_CHAR* c) {
 		nimln(750, "net.nim");
 		{
 			NIM_BOOL LOC7;
-			NI TMP10672;
+			NI TMP10673;
 			NI res;
 			LOC7 = 0;
-			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
+			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
 			LOC7 = ((*socket).isbufferedU.S1.buflen == ((NI) 0));
 			if (LOC7) goto LA8;
-			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10656));
-			TMP10672 = subInt((*socket).isbufferedU.S1.buflen, ((NI) 1));
-			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
-			LOC7 = ((NI)(TMP10672) < (*socket).isbufferedU.S1.currpos);
+			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10657));
+			TMP10673 = subInt((*socket).isbufferedU.S1.buflen, ((NI) 1));
+			if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
+			LOC7 = ((NI)(TMP10673) < (*socket).isbufferedU.S1.currpos);
 			LA8: ;
 			if (!LOC7) goto LA9;
 			nimln(751, "net.nim");
@@ -1272,8 +1272,8 @@ N_NIMCALL(NI, peekchar_517444)(Socketimpl513407* socket, NIM_CHAR* c) {
 		}
 		LA9: ;
 		nimln(755, "net.nim");
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10665));
-		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10647));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10666));
+		if (!(((2 &(1<<(((*socket).isbuffered)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10648));
 		if ((NU)((*socket).isbufferedU.S1.currpos) > (NU)(4000)) raiseIndexError();
 		(*c) = (*socket).isbufferedU.S1.buffer[((*socket).isbufferedU.S1.currpos)- 0];
 	}
@@ -1304,7 +1304,7 @@ N_NIMCALL(void, readline_517608)(Socketimpl513407* socket, NimStringDesc** line,
 			c = 0;
 			nimln(799, "net.nim");
 			LOC3 = 0;
-			LOC3 = waitfor_516818(socket, (&waited), timeout, ((NI) 1), ((NimStringDesc*) &TMP10664));
+			LOC3 = waitfor_516818(socket, (&waited), timeout, ((NI) 1), ((NimStringDesc*) &TMP10665));
 			nimln(800, "net.nim");
 			n = recv_516425(socket, ((void*) ((&c))), ((NI) 1));
 			nimln(801, "net.nim");
@@ -1343,7 +1343,7 @@ N_NIMCALL(void, readline_517608)(Socketimpl513407* socket, NimStringDesc** line,
 				if (!((NU8)(c) == (NU8)(13))) goto LA18;
 				nimln(804, "net.nim");
 				LOC20 = 0;
-				LOC20 = waitfor_516818(socket, (&waited), timeout, ((NI) 1), ((NimStringDesc*) &TMP10664));
+				LOC20 = waitfor_516818(socket, (&waited), timeout, ((NI) 1), ((NimStringDesc*) &TMP10665));
 				nimln(805, "net.nim");
 				n = peekchar_517444(socket, (&c));
 				nimln(806, "net.nim");
@@ -1389,7 +1389,7 @@ N_NIMCALL(void, readline_517608)(Socketimpl513407* socket, NimStringDesc** line,
 					if (!(((*line) ? (*line)->Sup.len : 0) == ((NI) 0))) goto LA38;
 					nimln(787, "net.nim");
 					(*line) = resizeString((*line), 2);
-appendString((*line), ((NimStringDesc*) &TMP10673));
+appendString((*line), ((NimStringDesc*) &TMP10674));
 				}
 				LA38: ;
 				nimln(810, "net.nim");
@@ -1405,7 +1405,7 @@ appendString((*line), ((NimStringDesc*) &TMP10673));
 					if (!(((*line) ? (*line)->Sup.len : 0) == ((NI) 0))) goto LA45;
 					nimln(787, "net.nim");
 					(*line) = resizeString((*line), 2);
-appendString((*line), ((NimStringDesc*) &TMP10673));
+appendString((*line), ((NimStringDesc*) &TMP10674));
 				}
 				LA45: ;
 				nimln(813, "net.nim");
@@ -1437,12 +1437,12 @@ static N_INLINE(void, setFrame)(TFrame* s) {
 }
 
 N_NIMCALL(void, close_515417)(Socketimpl513407* socket) {
-	TSafePoint TMP10674;
+	TSafePoint TMP10675;
 	nimfr("close", "net.nim")
 	nimln(465, "net.nim");
-	pushSafePoint(&TMP10674);
-	TMP10674.status = _setjmp(TMP10674.context);
-	if (TMP10674.status == 0) {
+	pushSafePoint(&TMP10675);
+	TMP10675.status = _setjmp(TMP10675.context);
+	if (TMP10675.status == 0) {
 		popSafePoint();
 	}
 	else {
@@ -1453,7 +1453,7 @@ N_NIMCALL(void, close_515417)(Socketimpl513407* socket) {
 		nimln(481, "net.nim");
 		close_509028((*socket).fd);
 	}
-	if (TMP10674.status != 0) reraiseException();
+	if (TMP10675.status != 0) reraiseException();
 	popFrame();
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_netInit)(void) {
@@ -1462,68 +1462,68 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_netInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_netDatInit)(void) {
-static TNimNode* TMP10638[3];
 static TNimNode* TMP10639[3];
-static TNimNode TMP10610[10];
+static TNimNode* TMP10640[3];
+static TNimNode TMP10611[10];
 NTI513407.size = sizeof(Socketimpl513407);
 NTI513407.kind = 18;
 NTI513407.base = 0;
 NTI513407.flags = 3;
-TMP10638[0] = &TMP10610[1];
-TMP10610[1].kind = 1;
-TMP10610[1].offset = offsetof(Socketimpl513407, fd);
-TMP10610[1].typ = (&NTI5811);
-TMP10610[1].name = "fd";
-TMP10638[1] = &TMP10610[2];
-TMP10610[2].kind = 3;
-TMP10610[2].offset = offsetof(Socketimpl513407, isbuffered);
-TMP10610[2].typ = (&NTI138);
-TMP10610[2].name = "isBuffered";
-TMP10610[2].sons = &NimDT_513407_isbuffered[0];
-TMP10610[2].len = 2;
-TMP10639[0] = &TMP10610[4];
+TMP10639[0] = &TMP10611[1];
+TMP10611[1].kind = 1;
+TMP10611[1].offset = offsetof(Socketimpl513407, fd);
+TMP10611[1].typ = (&NTI5811);
+TMP10611[1].name = "fd";
+TMP10639[1] = &TMP10611[2];
+TMP10611[2].kind = 3;
+TMP10611[2].offset = offsetof(Socketimpl513407, isbuffered);
+TMP10611[2].typ = (&NTI138);
+TMP10611[2].name = "isBuffered";
+TMP10611[2].sons = &NimDT_513407_isbuffered[0];
+TMP10611[2].len = 2;
+TMP10640[0] = &TMP10611[4];
 NTI513420.size = sizeof(TY513420);
 NTI513420.kind = 16;
 NTI513420.base = (&NTI147);
 NTI513420.flags = 3;
-TMP10610[4].kind = 1;
-TMP10610[4].offset = offsetof(Socketimpl513407, isbufferedU.S1.buffer);
-TMP10610[4].typ = (&NTI513420);
-TMP10610[4].name = "buffer";
-TMP10639[1] = &TMP10610[5];
-TMP10610[5].kind = 1;
-TMP10610[5].offset = offsetof(Socketimpl513407, isbufferedU.S1.currpos);
-TMP10610[5].typ = (&NTI108);
-TMP10610[5].name = "currPos";
-TMP10639[2] = &TMP10610[6];
-TMP10610[6].kind = 1;
-TMP10610[6].offset = offsetof(Socketimpl513407, isbufferedU.S1.buflen);
-TMP10610[6].typ = (&NTI108);
-TMP10610[6].name = "bufLen";
-TMP10610[3].len = 3; TMP10610[3].kind = 2; TMP10610[3].sons = &TMP10639[0];
-NimDT_513407_isbuffered[1] = &TMP10610[3];
-TMP10610[7].len = 0; TMP10610[7].kind = 2;
-NimDT_513407_isbuffered[0] = &TMP10610[7];
-TMP10638[2] = &TMP10610[8];
-TMP10610[8].kind = 1;
-TMP10610[8].offset = offsetof(Socketimpl513407, lasterror);
-TMP10610[8].typ = (&NTI114);
-TMP10610[8].name = "lastError";
-TMP10610[0].len = 3; TMP10610[0].kind = 2; TMP10610[0].sons = &TMP10638[0];
-NTI513407.node = &TMP10610[0];
+TMP10611[4].kind = 1;
+TMP10611[4].offset = offsetof(Socketimpl513407, isbufferedU.S1.buffer);
+TMP10611[4].typ = (&NTI513420);
+TMP10611[4].name = "buffer";
+TMP10640[1] = &TMP10611[5];
+TMP10611[5].kind = 1;
+TMP10611[5].offset = offsetof(Socketimpl513407, isbufferedU.S1.currpos);
+TMP10611[5].typ = (&NTI108);
+TMP10611[5].name = "currPos";
+TMP10640[2] = &TMP10611[6];
+TMP10611[6].kind = 1;
+TMP10611[6].offset = offsetof(Socketimpl513407, isbufferedU.S1.buflen);
+TMP10611[6].typ = (&NTI108);
+TMP10611[6].name = "bufLen";
+TMP10611[3].len = 3; TMP10611[3].kind = 2; TMP10611[3].sons = &TMP10640[0];
+NimDT_513407_isbuffered[1] = &TMP10611[3];
+TMP10611[7].len = 0; TMP10611[7].kind = 2;
+NimDT_513407_isbuffered[0] = &TMP10611[7];
+TMP10639[2] = &TMP10611[8];
+TMP10611[8].kind = 1;
+TMP10611[8].offset = offsetof(Socketimpl513407, lasterror);
+TMP10611[8].typ = (&NTI114);
+TMP10611[8].name = "lastError";
+TMP10611[0].len = 3; TMP10611[0].kind = 2; TMP10611[0].sons = &TMP10639[0];
+NTI513407.node = &TMP10611[0];
 NTI513409.size = sizeof(Socketimpl513407*);
 NTI513409.kind = 22;
 NTI513409.base = (&NTI513407);
 NTI513409.flags = 2;
-NTI513409.marker = TMP10640;
+NTI513409.marker = TMP10641;
 NTI513415.size = sizeof(Timeouterror513415);
 NTI513415.kind = 17;
 NTI513415.base = (&NTI3427);
-TMP10610[9].len = 0; TMP10610[9].kind = 2;
-NTI513415.node = &TMP10610[9];
+TMP10611[9].len = 0; TMP10611[9].kind = 2;
+NTI513415.node = &TMP10611[9];
 NTI517014.size = sizeof(Timeouterror513415*);
 NTI517014.kind = 22;
 NTI517014.base = (&NTI513415);
-NTI517014.marker = TMP10659;
+NTI517014.marker = TMP10660;
 }
 

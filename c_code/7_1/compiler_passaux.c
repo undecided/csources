@@ -432,24 +432,24 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 static N_INLINE(Tcell46747*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
-STRING_LITERAL(TMP10580, "logpass: context is not nil", 27);
+STRING_LITERAL(TMP10581, "logpass: context is not nil", 27);
 NIM_CONST Tpass240017 verbosepass_504056 = {verboseopen_504012,
 NIM_NIL,
 verboseprocess_504023,
 NIM_NIL}
 ;
-static NIM_CONST TY190031 TMP10582 = {
+static NIM_CONST TY190031 TMP10583 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10583, "sons", 4);
-static NIM_CONST TY190031 TMP10585 = {
+STRING_LITERAL(TMP10584, "sons", 4);
+static NIM_CONST TY190031 TMP10586 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP10586, "sym", 3);
+STRING_LITERAL(TMP10587, "sym", 3);
 NIM_CONST Tpass240017 cleanuppass_504156 = {NIM_NIL,
 NIM_NIL,
 cleanup_504066,
@@ -515,7 +515,7 @@ N_NIMCALL(Tnode189813*, verboseprocess_504023)(Tpasscontext240005* context, Tnod
 	nimln(22, "passaux.nim");
 	{
 		if (!!((context == NIM_NIL))) goto LA3;
-		internalerror_163218(((NimStringDesc*) &TMP10580));
+		internalerror_163218(((NimStringDesc*) &TMP10581));
 	}
 	LA3: ;
 	nimln(23, "passaux.nim");
@@ -652,33 +652,33 @@ N_NIMCALL(Tnode189813*, cleanup_504066)(Tpasscontext240005* c, Tnode189813* n) {
 			NI i_504105;
 			NI HEX3Atmp_504134;
 			NI LOC9;
-			NI TMP10581;
+			NI TMP10582;
 			NI res_504137;
 			i_504105 = 0;
 			HEX3Atmp_504134 = 0;
 			nimln(37, "passaux.nim");
 			LOC9 = 0;
 			LOC9 = sonslen_192403(n);
-			TMP10581 = subInt(LOC9, ((NI) 1));
-			HEX3Atmp_504134 = (NI)(TMP10581);
+			TMP10582 = subInt(LOC9, ((NI) 1));
+			HEX3Atmp_504134 = (NI)(TMP10582);
 			nimln(1598, "system.nim");
 			res_504137 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					Tnode189813* LOC12;
-					NI TMP10584;
+					NI TMP10585;
 					if (!(res_504137 <= HEX3Atmp_504134)) goto LA11;
 					nimln(1600, "system.nim");
 					i_504105 = res_504137;
 					nimln(37, "passaux.nim");
-					if (((TMP10582[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10583));
+					if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
 					if ((NU)(i_504105) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC12 = 0;
 					LOC12 = cleanup_504066(c, (*n).kindU.S6.sons->data[i_504105]);
 					nimln(1614, "system.nim");
-					TMP10584 = addInt(res_504137, ((NI) 1));
-					res_504137 = (NI)(TMP10584);
+					TMP10585 = addInt(res_504137, ((NI) 1));
+					res_504137 = (NI)(TMP10585);
 				} LA11: ;
 			}
 		}
@@ -690,13 +690,13 @@ N_NIMCALL(Tnode189813*, cleanup_504066)(Tpasscontext240005* c, Tnode189813* n) {
 		nimln(39, "passaux.nim");
 		{
 			Tsym189843* s;
-			if (((TMP10582[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10583));
+			if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3))) goto LA16;
 			nimln(40, "passaux.nim");
-			if (((TMP10582[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10583));
+			if (((TMP10583[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (!(((TMP10585[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10586));
+			if (!(((TMP10586[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10587));
 			s = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 			nimln(41, "passaux.nim");
 			{
@@ -714,7 +714,7 @@ N_NIMCALL(Tnode189813*, cleanup_504066)(Tpasscontext240005* c, Tnode189813* n) {
 				LA22: ;
 				if (!LOC20) goto LA24;
 				nimln(42, "passaux.nim");
-				if (((TMP10582[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10583));
+				if (((TMP10583[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP10584));
 				if ((NU)(((NI) 6)) >= (NU)((*(*s).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*(*s).ast).kindU.S6.sons->data[((NI) 6)]), emptynode_190807);
 			}

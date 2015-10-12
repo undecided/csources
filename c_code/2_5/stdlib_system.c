@@ -933,7 +933,7 @@ N_NIMCALL(NI, xlen_89839)(NimStringDesc* x);
 N_NIMCALL(void, TMP497)(void* p, NI op);
 N_NIMCALL(void, TMP631)(void* p, NI op);
 N_NIMCALL(void, TMP832)(void* p, NI op);
-N_NIMCALL(void, TMP2642)(void* p, NI op);
+N_NIMCALL(void, TMP2643)(void* p, NI op);
 static N_INLINE(void*, seqtoptr_194881)(TY191944* x);
 static N_INLINE(void*, seqtoptr_230750)(Ttypeseq191845* x);
 N_NIMCALL(NimStringDesc*, collectiontostring_237238)(NU32 x, NimStringDesc* b, NimStringDesc* e);
@@ -11498,7 +11498,7 @@ appendString(result, ((NimStringDesc*) &TMP1289));
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2642)(void* p, NI op) {
+N_NIMCALL(void, TMP2643)(void* p, NI op) {
 	TNimObject* a;
 	a = (TNimObject*)p;
 }
@@ -11557,19 +11557,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_194870)(TY191944* x, TY191944* y) {
 		{
 			NI i_194950;
 			NI HEX3Atmp_194963;
-			NI TMP2659;
+			NI TMP2660;
 			NI res_194966;
 			i_194950 = 0;
 			HEX3Atmp_194963 = 0;
 			nimln(1906, "system.nim");
-			TMP2659 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_194963 = (NI)(TMP2659);
+			TMP2660 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_194963 = (NI)(TMP2660);
 			nimln(1598, "system.nim");
 			res_194966 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP2660;
+					NI TMP2661;
 					if (!(res_194966 <= HEX3Atmp_194963)) goto LA19;
 					nimln(1600, "system.nim");
 					i_194950 = res_194966;
@@ -11583,8 +11583,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_194870)(TY191944* x, TY191944* y) {
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP2660 = addInt(res_194966, ((NI) 1));
-					res_194966 = (NI)(TMP2660);
+					TMP2661 = addInt(res_194966, ((NI) 1));
+					res_194966 = (NI)(TMP2661);
 				} LA19: ;
 			}
 		}
@@ -11678,19 +11678,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_230739)(Ttypeseq191845* x, Ttypeseq191845* y) {
 		{
 			NI i_230819;
 			NI HEX3Atmp_230832;
-			NI TMP3730;
+			NI TMP3731;
 			NI res_230835;
 			i_230819 = 0;
 			HEX3Atmp_230832 = 0;
 			nimln(1906, "system.nim");
-			TMP3730 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_230832 = (NI)(TMP3730);
+			TMP3731 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_230832 = (NI)(TMP3731);
 			nimln(1598, "system.nim");
 			res_230835 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP3731;
+					NI TMP3732;
 					if (!(res_230835 <= HEX3Atmp_230832)) goto LA19;
 					nimln(1600, "system.nim");
 					i_230819 = res_230835;
@@ -11704,8 +11704,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_230739)(Ttypeseq191845* x, Ttypeseq191845* y) {
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP3731 = addInt(res_230835, ((NI) 1));
-					res_230835 = (NI)(TMP3731);
+					TMP3732 = addInt(res_230835, ((NI) 1));
+					res_230835 = (NI)(TMP3732);
 				} LA19: ;
 			}
 		}
@@ -11738,7 +11738,7 @@ N_NIMCALL(NimStringDesc*, collectiontostring_237238)(NU32 x, NimStringDesc* b, N
 		{
 			nimln(1724, "system.nim");
 			while (1) {
-				NI TMP3957;
+				NI TMP3958;
 				if (!(i_237268 <= ((NI) 31))) goto LA3;
 				nimln(1725, "system.nim");
 				{
@@ -11759,8 +11759,8 @@ appendString(result, reprEnum(value_237257, (&NTI191195)));
 				}
 				LA6: ;
 				nimln(1726, "system.nim");
-				TMP3957 = addInt(i_237268, ((NI) 1));
-				i_237268 = (NI)(TMP3957);
+				TMP3958 = addInt(i_237268, ((NI) 1));
+				i_237268 = (NI)(TMP3958);
 			} LA3: ;
 		}
 	}
@@ -11800,7 +11800,7 @@ N_NIMCALL(NimStringDesc*, collectiontostring_237332)(NU32 x, NimStringDesc* b, N
 		{
 			nimln(1724, "system.nim");
 			while (1) {
-				NI TMP3958;
+				NI TMP3959;
 				if (!(i_237362 <= ((NI) 21))) goto LA3;
 				nimln(1725, "system.nim");
 				{
@@ -11821,8 +11821,8 @@ appendString(result, reprEnum(value_237351, (&NTI154014)));
 				}
 				LA6: ;
 				nimln(1726, "system.nim");
-				TMP3958 = addInt(i_237362, ((NI) 1));
-				i_237362 = (NI)(TMP3958);
+				TMP3959 = addInt(i_237362, ((NI) 1));
+				i_237362 = (NI)(TMP3959);
 			} LA3: ;
 		}
 	}
@@ -11862,7 +11862,7 @@ N_NIMCALL(NimStringDesc*, collectiontostring_237500)(NU32 x, NimStringDesc* b, N
 		{
 			nimln(1724, "system.nim");
 			while (1) {
-				NI TMP3962;
+				NI TMP3963;
 				if (!(i_237530 <= ((NI) 27))) goto LA3;
 				nimln(1725, "system.nim");
 				{
@@ -11883,8 +11883,8 @@ appendString(result, reprEnum(value_237519, (&NTI191437)));
 				}
 				LA6: ;
 				nimln(1726, "system.nim");
-				TMP3962 = addInt(i_237530, ((NI) 1));
-				i_237530 = (NI)(TMP3962);
+				TMP3963 = addInt(i_237530, ((NI) 1));
+				i_237530 = (NI)(TMP3963);
 			} LA3: ;
 		}
 	}
@@ -11924,7 +11924,7 @@ N_NIMCALL(NimStringDesc*, collectiontostring_237807)(NU32 x, NimStringDesc* b, N
 		{
 			nimln(1724, "system.nim");
 			while (1) {
-				NI TMP3971;
+				NI TMP3972;
 				if (!(i_237875 <= ((NI) 29))) goto LA3;
 				nimln(1725, "system.nim");
 				{
@@ -11945,8 +11945,8 @@ appendString(result, reprEnum(value_237864, (&NTI154018)));
 				}
 				LA6: ;
 				nimln(1726, "system.nim");
-				TMP3971 = addInt(i_237875, ((NI) 1));
-				i_237875 = (NI)(TMP3971);
+				TMP3972 = addInt(i_237875, ((NI) 1));
+				i_237875 = (NI)(TMP3972);
 			} LA3: ;
 		}
 	}
@@ -12022,19 +12022,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_264718)(Tnodeseq191807* x, Tnodeseq191807* y) {
 		{
 			NI i_264798;
 			NI HEX3Atmp_264811;
-			NI TMP4632;
+			NI TMP4633;
 			NI res_264814;
 			i_264798 = 0;
 			HEX3Atmp_264811 = 0;
 			nimln(1906, "system.nim");
-			TMP4632 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_264811 = (NI)(TMP4632);
+			TMP4633 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_264811 = (NI)(TMP4633);
 			nimln(1598, "system.nim");
 			res_264814 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4633;
+					NI TMP4634;
 					if (!(res_264814 <= HEX3Atmp_264811)) goto LA19;
 					nimln(1600, "system.nim");
 					i_264798 = res_264814;
@@ -12048,8 +12048,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_264718)(Tnodeseq191807* x, Tnodeseq191807* y) {
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP4633 = addInt(res_264814, ((NI) 1));
-					res_264814 = (NI)(TMP4633);
+					TMP4634 = addInt(res_264814, ((NI) 1));
+					res_264814 = (NI)(TMP4634);
 				} LA19: ;
 			}
 		}
@@ -12107,7 +12107,7 @@ N_NIMCALL(NimStringDesc*, collectiontostring_286515)(TY285282 x, NimStringDesc* 
 		{
 			nimln(1724, "system.nim");
 			while (1) {
-				NI TMP4821;
+				NI TMP4822;
 				if (!(i_286583 <= ((NI) 154))) goto LA3;
 				nimln(1725, "system.nim");
 				{
@@ -12128,8 +12128,8 @@ appendString(result, reprEnum(value_286572, (&NTI285012)));
 				}
 				LA6: ;
 				nimln(1726, "system.nim");
-				TMP4821 = addInt(i_286583, ((NI) 1));
-				i_286583 = (NI)(TMP4821);
+				TMP4822 = addInt(i_286583, ((NI) 1));
+				i_286583 = (NI)(TMP4822);
 			} LA3: ;
 		}
 	}
@@ -12243,19 +12243,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_291817)(TY290741* x, TY290741* y) {
 		{
 			NI i_291897;
 			NI HEX3Atmp_291920;
-			NI TMP4933;
+			NI TMP4934;
 			NI res_291923;
 			i_291897 = 0;
 			HEX3Atmp_291920 = 0;
 			nimln(1906, "system.nim");
-			TMP4933 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_291920 = (NI)(TMP4933);
+			TMP4934 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_291920 = (NI)(TMP4934);
 			nimln(1598, "system.nim");
 			res_291923 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4934;
+					NI TMP4935;
 					if (!(res_291923 <= HEX3Atmp_291920)) goto LA19;
 					nimln(1600, "system.nim");
 					i_291897 = res_291923;
@@ -12272,8 +12272,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_291817)(TY290741* x, TY290741* y) {
 					}
 					LA23: ;
 					nimln(1619, "system.nim");
-					TMP4934 = addInt(res_291923, ((NI) 1));
-					res_291923 = (NI)(TMP4934);
+					TMP4935 = addInt(res_291923, ((NI) 1));
+					res_291923 = (NI)(TMP4935);
 				} LA19: ;
 			}
 		}
@@ -12332,19 +12332,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_291713)(TY290746* x, TY290746* y) {
 		{
 			NI i_291793;
 			NI HEX3Atmp_291795;
-			NI TMP4932;
+			NI TMP4933;
 			NI res_291798;
 			i_291793 = 0;
 			HEX3Atmp_291795 = 0;
 			nimln(1906, "system.nim");
-			TMP4932 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_291795 = (NI)(TMP4932);
+			TMP4933 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_291795 = (NI)(TMP4933);
 			nimln(1598, "system.nim");
 			res_291798 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4935;
+					NI TMP4936;
 					if (!(res_291798 <= HEX3Atmp_291795)) goto LA19;
 					nimln(1600, "system.nim");
 					i_291793 = res_291798;
@@ -12361,8 +12361,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_291713)(TY290746* x, TY290746* y) {
 					}
 					LA23: ;
 					nimln(1619, "system.nim");
-					TMP4935 = addInt(res_291798, ((NI) 1));
-					res_291798 = (NI)(TMP4935);
+					TMP4936 = addInt(res_291798, ((NI) 1));
+					res_291798 = (NI)(TMP4936);
 				} LA19: ;
 			}
 		}
@@ -12379,45 +12379,45 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_291713)(TY290746* x, TY290746* y) {
 
 N_NIMCALL(void, delete_294024)(TY290741** x, NI i) {
 	NI xl;
-	NI TMP4955;
+	NI TMP4956;
 	nimfr("delete", "system.nim")
 	nimln(1169, "system.nim");
 	xl = ((*x) ? (*x)->Sup.len : 0);
 	{
 		NI j_294052;
 		NI HEX3Atmp_294064;
-		NI TMP4952;
+		NI TMP4953;
 		NI res_294067;
 		j_294052 = 0;
 		HEX3Atmp_294064 = 0;
 		nimln(1170, "system.nim");
-		TMP4952 = subInt(xl, ((NI) 2));
-		HEX3Atmp_294064 = (NI)(TMP4952);
+		TMP4953 = subInt(xl, ((NI) 2));
+		HEX3Atmp_294064 = (NI)(TMP4953);
 		nimln(1598, "system.nim");
 		res_294067 = ((NI) (i));
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4953;
 				NI TMP4954;
+				NI TMP4955;
 				if (!(res_294067 <= HEX3Atmp_294064)) goto LA3;
 				nimln(1600, "system.nim");
 				j_294052 = res_294067;
 				nimln(1170, "system.nim");
 				if ((NU)(j_294052) >= (NU)((*x)->Sup.len)) raiseIndexError();
-				TMP4953 = addInt(j_294052, ((NI) 1));
-				if ((NU)((NI)(TMP4953)) >= (NU)((*x)->Sup.len)) raiseIndexError();
-				asgnRefNoCycle((void**) (&(*x)->data[j_294052].Field0), (*x)->data[(NI)(TMP4953)].Field0);
-				asgnRefNoCycle((void**) (&(*x)->data[j_294052].Field1), (*x)->data[(NI)(TMP4953)].Field1);
+				TMP4954 = addInt(j_294052, ((NI) 1));
+				if ((NU)((NI)(TMP4954)) >= (NU)((*x)->Sup.len)) raiseIndexError();
+				asgnRefNoCycle((void**) (&(*x)->data[j_294052].Field0), (*x)->data[(NI)(TMP4954)].Field0);
+				asgnRefNoCycle((void**) (&(*x)->data[j_294052].Field1), (*x)->data[(NI)(TMP4954)].Field1);
 				nimln(1619, "system.nim");
-				TMP4954 = addInt(res_294067, ((NI) 1));
-				res_294067 = (NI)(TMP4954);
+				TMP4955 = addInt(res_294067, ((NI) 1));
+				res_294067 = (NI)(TMP4955);
 			} LA3: ;
 		}
 	}
 	nimln(1171, "system.nim");
-	TMP4955 = subInt(xl, ((NI) 1));
-	(*x) = (TY290741*) setLengthSeq(&((*x))->Sup, sizeof(TY290742), ((NI)chckRange((NI)(TMP4955), ((NI) 0), ((NI) 2147483647))));
+	TMP4956 = subInt(xl, ((NI) 1));
+	(*x) = (TY290741*) setLengthSeq(&((*x))->Sup, sizeof(TY290742), ((NI)chckRange((NI)(TMP4956), ((NI) 0), ((NI) 2147483647))));
 	popFrame();
 }
 
@@ -12475,19 +12475,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_297505)(Trstnodeseq297009* x, Trstnodeseq297009* 
 		{
 			NI i_297585;
 			NI HEX3Atmp_297598;
-			NI TMP5064;
+			NI TMP5065;
 			NI res_297601;
 			i_297585 = 0;
 			HEX3Atmp_297598 = 0;
 			nimln(1906, "system.nim");
-			TMP5064 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_297598 = (NI)(TMP5064);
+			TMP5065 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_297598 = (NI)(TMP5065);
 			nimln(1598, "system.nim");
 			res_297601 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP5065;
+					NI TMP5066;
 					if (!(res_297601 <= HEX3Atmp_297598)) goto LA19;
 					nimln(1600, "system.nim");
 					i_297585 = res_297601;
@@ -12501,8 +12501,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_297505)(Trstnodeseq297009* x, Trstnodeseq297009* 
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP5065 = addInt(res_297601, ((NI) 1));
-					res_297601 = (NI)(TMP5065);
+					TMP5066 = addInt(res_297601, ((NI) 1));
+					res_297601 = (NI)(TMP5066);
 				} LA19: ;
 			}
 		}
@@ -12653,19 +12653,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_413853)(Tsymseq191815* x, Tsymseq191815* y) {
 		{
 			NI i_413933;
 			NI HEX3Atmp_413946;
-			NI TMP8111;
+			NI TMP8112;
 			NI res_413949;
 			i_413933 = 0;
 			HEX3Atmp_413946 = 0;
 			nimln(1906, "system.nim");
-			TMP8111 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_413946 = (NI)(TMP8111);
+			TMP8112 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_413946 = (NI)(TMP8112);
 			nimln(1598, "system.nim");
 			res_413949 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8112;
+					NI TMP8113;
 					if (!(res_413949 <= HEX3Atmp_413946)) goto LA19;
 					nimln(1600, "system.nim");
 					i_413933 = res_413949;
@@ -12679,8 +12679,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_413853)(Tsymseq191815* x, Tsymseq191815* y) {
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP8112 = addInt(res_413949, ((NI) 1));
-					res_413949 = (NI)(TMP8112);
+					TMP8113 = addInt(res_413949, ((NI) 1));
+					res_413949 = (NI)(TMP8113);
 				} LA19: ;
 			}
 		}
@@ -12747,32 +12747,32 @@ N_NIMCALL(void, safeadd_414279)(Tnodeseq191807** x, Tnode191813* y) {
 
 N_NIMCALL(void, insert_414412)(Tnodeseq191807** x, Tnode191813* item, NI i) {
 	NI xl;
-	NI TMP8113;
-	NI j;
 	NI TMP8114;
+	NI j;
+	NI TMP8115;
 	nimfr("insert", "system.nim")
 	nimln(1175, "system.nim");
 	xl = ((*x) ? (*x)->Sup.len : 0);
 	nimln(1176, "system.nim");
-	TMP8113 = addInt(xl, ((NI) 1));
-	(*x) = (Tnodeseq191807*) setLengthSeq(&((*x))->Sup, sizeof(Tnode191813*), ((NI)chckRange((NI)(TMP8113), ((NI) 0), ((NI) 2147483647))));
+	TMP8114 = addInt(xl, ((NI) 1));
+	(*x) = (Tnodeseq191807*) setLengthSeq(&((*x))->Sup, sizeof(Tnode191813*), ((NI)chckRange((NI)(TMP8114), ((NI) 0), ((NI) 2147483647))));
 	nimln(1177, "system.nim");
-	TMP8114 = subInt(xl, ((NI) 1));
-	j = (NI)(TMP8114);
+	TMP8115 = subInt(xl, ((NI) 1));
+	j = (NI)(TMP8115);
 	{
 		nimln(1178, "system.nim");
 		while (1) {
-			NI TMP8115;
 			NI TMP8116;
+			NI TMP8117;
 			if (!(((NI) (i)) <= j)) goto LA2;
 			nimln(1179, "system.nim");
-			TMP8115 = addInt(j, ((NI) 1));
-			if ((NU)((NI)(TMP8115)) >= (NU)((*x)->Sup.len)) raiseIndexError();
+			TMP8116 = addInt(j, ((NI) 1));
+			if ((NU)((NI)(TMP8116)) >= (NU)((*x)->Sup.len)) raiseIndexError();
 			if ((NU)(j) >= (NU)((*x)->Sup.len)) raiseIndexError();
-			asgnRefNoCycle((void**) (&(*x)->data[(NI)(TMP8115)]), (*x)->data[j]);
+			asgnRefNoCycle((void**) (&(*x)->data[(NI)(TMP8116)]), (*x)->data[j]);
 			nimln(1180, "system.nim");
-			TMP8116 = subInt(j, ((NI) 1));
-			j = (NI)(TMP8116);
+			TMP8117 = subInt(j, ((NI) 1));
+			j = (NI)(TMP8117);
 		} LA2: ;
 	}
 	nimln(1181, "system.nim");
@@ -12783,59 +12783,59 @@ N_NIMCALL(void, insert_414412)(Tnodeseq191807** x, Tnode191813* item, NI i) {
 
 N_NIMCALL(void, delete_414490)(Tnodeseq191807** x, NI i) {
 	NI xl;
-	NI TMP8120;
+	NI TMP8121;
 	nimfr("delete", "system.nim")
 	nimln(1169, "system.nim");
 	xl = ((*x) ? (*x)->Sup.len : 0);
 	{
 		NI j_414518;
 		NI HEX3Atmp_414530;
-		NI TMP8117;
+		NI TMP8118;
 		NI res_414533;
 		j_414518 = 0;
 		HEX3Atmp_414530 = 0;
 		nimln(1170, "system.nim");
-		TMP8117 = subInt(xl, ((NI) 2));
-		HEX3Atmp_414530 = (NI)(TMP8117);
+		TMP8118 = subInt(xl, ((NI) 2));
+		HEX3Atmp_414530 = (NI)(TMP8118);
 		nimln(1598, "system.nim");
 		res_414533 = ((NI) (i));
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP8118;
 				NI TMP8119;
+				NI TMP8120;
 				if (!(res_414533 <= HEX3Atmp_414530)) goto LA3;
 				nimln(1600, "system.nim");
 				j_414518 = res_414533;
 				nimln(1170, "system.nim");
 				if ((NU)(j_414518) >= (NU)((*x)->Sup.len)) raiseIndexError();
-				TMP8118 = addInt(j_414518, ((NI) 1));
-				if ((NU)((NI)(TMP8118)) >= (NU)((*x)->Sup.len)) raiseIndexError();
-				asgnRefNoCycle((void**) (&(*x)->data[j_414518]), (*x)->data[(NI)(TMP8118)]);
+				TMP8119 = addInt(j_414518, ((NI) 1));
+				if ((NU)((NI)(TMP8119)) >= (NU)((*x)->Sup.len)) raiseIndexError();
+				asgnRefNoCycle((void**) (&(*x)->data[j_414518]), (*x)->data[(NI)(TMP8119)]);
 				nimln(1619, "system.nim");
-				TMP8119 = addInt(res_414533, ((NI) 1));
-				res_414533 = (NI)(TMP8119);
+				TMP8120 = addInt(res_414533, ((NI) 1));
+				res_414533 = (NI)(TMP8120);
 			} LA3: ;
 		}
 	}
 	nimln(1171, "system.nim");
-	TMP8120 = subInt(xl, ((NI) 1));
-	(*x) = (Tnodeseq191807*) setLengthSeq(&((*x))->Sup, sizeof(Tnode191813*), ((NI)chckRange((NI)(TMP8120), ((NI) 0), ((NI) 2147483647))));
+	TMP8121 = subInt(xl, ((NI) 1));
+	(*x) = (Tnodeseq191807*) setLengthSeq(&((*x))->Sup, sizeof(Tnode191813*), ((NI)chckRange((NI)(TMP8121), ((NI) 0), ((NI) 2147483647))));
 	popFrame();
 }
 
 N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode191813** b, NI bLen0) {
 	NI a;
 	NI L;
-	NI TMP8121;
 	NI TMP8122;
+	NI TMP8123;
 	nimfr("[]=", "system.nim")
 	nimln(2943, "system.nim");
 	a = x.a;
 	nimln(2944, "system.nim");
-	TMP8121 = subInt(x.b, a);
-	TMP8122 = addInt((NI)(TMP8121), ((NI) 1));
-	L = (NI)(TMP8122);
+	TMP8122 = subInt(x.b, a);
+	TMP8123 = addInt((NI)(TMP8122), ((NI) 1));
+	L = (NI)(TMP8123);
 	nimln(2945, "system.nim");
 	{
 		if (!(L == bLen0)) goto LA3;
@@ -12852,19 +12852,19 @@ N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode1
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8123;
 					NI TMP8124;
+					NI TMP8125;
 					if (!(res_414774 <= HEX3Atmp_414771)) goto LA7;
 					nimln(1600, "system.nim");
 					i_414671 = res_414774;
 					nimln(2946, "system.nim");
-					TMP8123 = addInt(i_414671, a);
-					if ((NU)((NI)(TMP8123)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+					TMP8124 = addInt(i_414671, a);
+					if ((NU)((NI)(TMP8124)) >= (NU)((*s)->Sup.len)) raiseIndexError();
 					if ((NU)(i_414671) >= (NU)(bLen0)) raiseIndexError();
-					asgnRefNoCycle((void**) (&(*s)->data[(NI)(TMP8123)]), b[i_414671]);
+					asgnRefNoCycle((void**) (&(*s)->data[(NI)(TMP8124)]), b[i_414671]);
 					nimln(1619, "system.nim");
-					TMP8124 = addInt(res_414774, ((NI) 1));
-					res_414774 = (NI)(TMP8124);
+					TMP8125 = addInt(res_414774, ((NI) 1));
+					res_414774 = (NI)(TMP8125);
 				} LA7: ;
 			}
 		}
@@ -12874,17 +12874,17 @@ N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode1
 	{
 		NI slen_414633;
 		NI shift_414635;
-		NI TMP8125;
-		NI newlen_414637;
 		NI TMP8126;
+		NI newlen_414637;
+		NI TMP8127;
 		nimln(2863, "system.nim");
 		slen_414633 = ((*s) ? (*s)->Sup.len : 0);
 		nimln(2864, "system.nim");
-		TMP8125 = subInt(bLen0, L);
-		shift_414635 = (NI)(TMP8125);
+		TMP8126 = subInt(bLen0, L);
+		shift_414635 = (NI)(TMP8126);
 		nimln(2865, "system.nim");
-		TMP8126 = addInt(slen_414633, shift_414635);
-		newlen_414637 = (NI)(TMP8126);
+		TMP8127 = addInt(slen_414633, shift_414635);
+		newlen_414637 = (NI)(TMP8127);
 		nimln(2866, "system.nim");
 		{
 			if (!(((NI) 0) < shift_414635)) goto LA11;
@@ -12894,37 +12894,37 @@ N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode1
 				NI i_414639;
 				NI HEX3Atmp_414779;
 				NI HEX3Atmp_414780;
-				NI TMP8127;
 				NI TMP8128;
 				NI TMP8129;
+				NI TMP8130;
 				NI res_414783;
 				i_414639 = 0;
 				HEX3Atmp_414779 = 0;
 				HEX3Atmp_414780 = 0;
 				nimln(2869, "system.nim");
-				TMP8127 = subInt(newlen_414637, ((NI) 1));
-				HEX3Atmp_414779 = (NI)(TMP8127);
-				TMP8128 = addInt(a, shift_414635);
-				TMP8129 = addInt((NI)(TMP8128), ((NI) 1));
-				HEX3Atmp_414780 = (NI)(TMP8129);
+				TMP8128 = subInt(newlen_414637, ((NI) 1));
+				HEX3Atmp_414779 = (NI)(TMP8128);
+				TMP8129 = addInt(a, shift_414635);
+				TMP8130 = addInt((NI)(TMP8129), ((NI) 1));
+				HEX3Atmp_414780 = (NI)(TMP8130);
 				nimln(1586, "system.nim");
 				res_414783 = HEX3Atmp_414779;
 				{
 					nimln(1587, "system.nim");
 					while (1) {
-						NI TMP8130;
 						NI TMP8131;
+						NI TMP8132;
 						if (!(HEX3Atmp_414780 <= res_414783)) goto LA15;
 						nimln(1588, "system.nim");
 						i_414639 = res_414783;
 						nimln(2869, "system.nim");
 						if ((NU)(i_414639) >= (NU)((*s)->Sup.len)) raiseIndexError();
-						TMP8130 = subInt(i_414639, shift_414635);
-						if ((NU)((NI)(TMP8130)) >= (NU)((*s)->Sup.len)) raiseIndexError();
-						asgnRefNoCycle((void**) (&(*s)->data[i_414639]), (*s)->data[(NI)(TMP8130)]);
+						TMP8131 = subInt(i_414639, shift_414635);
+						if ((NU)((NI)(TMP8131)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+						asgnRefNoCycle((void**) (&(*s)->data[i_414639]), (*s)->data[(NI)(TMP8131)]);
 						nimln(1589, "system.nim");
-						TMP8131 = subInt(res_414783, ((NI) 1));
-						res_414783 = (NI)(TMP8131);
+						TMP8132 = subInt(res_414783, ((NI) 1));
+						res_414783 = (NI)(TMP8132);
 					} LA15: ;
 				}
 			}
@@ -12936,37 +12936,37 @@ N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode1
 				NI i_414641;
 				NI HEX3Atmp_414788;
 				NI HEX3Atmp_414789;
-				NI TMP8132;
 				NI TMP8133;
 				NI TMP8134;
+				NI TMP8135;
 				NI res_414792;
 				i_414641 = 0;
 				HEX3Atmp_414788 = 0;
 				HEX3Atmp_414789 = 0;
 				nimln(2871, "system.nim");
-				TMP8132 = addInt(a, bLen0);
-				HEX3Atmp_414788 = (NI)(TMP8132);
-				TMP8133 = subInt(((*s) ? (*s)->Sup.len : 0), ((NI) 1));
-				TMP8134 = addInt((NI)(TMP8133), shift_414635);
-				HEX3Atmp_414789 = (NI)(TMP8134);
+				TMP8133 = addInt(a, bLen0);
+				HEX3Atmp_414788 = (NI)(TMP8133);
+				TMP8134 = subInt(((*s) ? (*s)->Sup.len : 0), ((NI) 1));
+				TMP8135 = addInt((NI)(TMP8134), shift_414635);
+				HEX3Atmp_414789 = (NI)(TMP8135);
 				nimln(1598, "system.nim");
 				res_414792 = HEX3Atmp_414788;
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP8135;
 						NI TMP8136;
+						NI TMP8137;
 						if (!(res_414792 <= HEX3Atmp_414789)) goto LA19;
 						nimln(1600, "system.nim");
 						i_414641 = res_414792;
 						nimln(2871, "system.nim");
 						if ((NU)(i_414641) >= (NU)((*s)->Sup.len)) raiseIndexError();
-						TMP8135 = subInt(i_414641, shift_414635);
-						if ((NU)((NI)(TMP8135)) >= (NU)((*s)->Sup.len)) raiseIndexError();
-						asgnRefNoCycle((void**) (&(*s)->data[i_414641]), (*s)->data[(NI)(TMP8135)]);
+						TMP8136 = subInt(i_414641, shift_414635);
+						if ((NU)((NI)(TMP8136)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+						asgnRefNoCycle((void**) (&(*s)->data[i_414641]), (*s)->data[(NI)(TMP8136)]);
 						nimln(1614, "system.nim");
-						TMP8136 = addInt(res_414792, ((NI) 1));
-						res_414792 = (NI)(TMP8136);
+						TMP8137 = addInt(res_414792, ((NI) 1));
+						res_414792 = (NI)(TMP8137);
 					} LA19: ;
 				}
 			}
@@ -12987,19 +12987,19 @@ N_NIMCALL(void, HEX5BHEX5DHEX3D_414619)(Tnodeseq191807** s, Slice86460 x, Tnode1
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8137;
 					NI TMP8138;
+					NI TMP8139;
 					if (!(res_414800 <= HEX3Atmp_414797)) goto LA22;
 					nimln(1600, "system.nim");
 					i_414643 = res_414800;
 					nimln(2875, "system.nim");
-					TMP8137 = addInt(i_414643, a);
-					if ((NU)((NI)(TMP8137)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+					TMP8138 = addInt(i_414643, a);
+					if ((NU)((NI)(TMP8138)) >= (NU)((*s)->Sup.len)) raiseIndexError();
 					if ((NU)(i_414643) >= (NU)(bLen0)) raiseIndexError();
-					asgnRefNoCycle((void**) (&(*s)->data[(NI)(TMP8137)]), b[i_414643]);
+					asgnRefNoCycle((void**) (&(*s)->data[(NI)(TMP8138)]), b[i_414643]);
 					nimln(1619, "system.nim");
-					TMP8138 = addInt(res_414800, ((NI) 1));
-					res_414800 = (NI)(TMP8138);
+					TMP8139 = addInt(res_414800, ((NI) 1));
+					res_414800 = (NI)(TMP8139);
 				} LA22: ;
 			}
 		}
@@ -13012,16 +13012,16 @@ N_NIMCALL(Tnodeseq191807*, HEX5BHEX5D_432717)(Tnodeseq191807* s, Slice86460 x) {
 	Tnodeseq191807* result;
 	NI a;
 	NI L;
-	NI TMP8222;
 	NI TMP8223;
+	NI TMP8224;
 	nimfr("[]", "system.nim")
 	result = 0;
 	nimln(2934, "system.nim");
 	a = x.a;
 	nimln(2935, "system.nim");
-	TMP8222 = subInt(x.b, a);
-	TMP8223 = addInt((NI)(TMP8222), ((NI) 1));
-	L = (NI)(TMP8223);
+	TMP8223 = subInt(x.b, a);
+	TMP8224 = addInt((NI)(TMP8223), ((NI) 1));
+	L = (NI)(TMP8224);
 	nimln(2936, "system.nim");
 	result = (Tnodeseq191807*) newSeq((&NTI191807), ((NI)chckRange(L, ((NI) 0), ((NI) 2147483647))));
 	{
@@ -13037,19 +13037,19 @@ N_NIMCALL(Tnodeseq191807*, HEX5BHEX5D_432717)(Tnodeseq191807* s, Slice86460 x) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP8224;
 				NI TMP8225;
+				NI TMP8226;
 				if (!(res_432763 <= HEX3Atmp_432760)) goto LA3;
 				nimln(1600, "system.nim");
 				i_432758 = res_432763;
 				nimln(2937, "system.nim");
 				if ((NU)(i_432758) >= (NU)(result->Sup.len)) raiseIndexError();
-				TMP8224 = addInt(i_432758, a);
-				if ((NU)((NI)(TMP8224)) >= (NU)(s->Sup.len)) raiseIndexError();
-				asgnRefNoCycle((void**) (&result->data[i_432758]), s->data[(NI)(TMP8224)]);
+				TMP8225 = addInt(i_432758, a);
+				if ((NU)((NI)(TMP8225)) >= (NU)(s->Sup.len)) raiseIndexError();
+				asgnRefNoCycle((void**) (&result->data[i_432758]), s->data[(NI)(TMP8225)]);
 				nimln(1619, "system.nim");
-				TMP8225 = addInt(res_432763, ((NI) 1));
-				res_432763 = (NI)(TMP8225);
+				TMP8226 = addInt(res_432763, ((NI) 1));
+				res_432763 = (NI)(TMP8226);
 			} LA3: ;
 		}
 	}
@@ -13121,19 +13121,19 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_523183)(TY191933* x, TY191933* y) {
 		{
 			NI i_523263;
 			NI HEX3Atmp_523265;
-			NI TMP10690;
+			NI TMP10691;
 			NI res_523268;
 			i_523263 = 0;
 			HEX3Atmp_523265 = 0;
 			nimln(1906, "system.nim");
-			TMP10690 = subInt((x ? x->Sup.len : 0), ((NI) 1));
-			HEX3Atmp_523265 = (NI)(TMP10690);
+			TMP10691 = subInt((x ? x->Sup.len : 0), ((NI) 1));
+			HEX3Atmp_523265 = (NI)(TMP10691);
 			nimln(1598, "system.nim");
 			res_523268 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP10691;
+					NI TMP10692;
 					if (!(res_523268 <= HEX3Atmp_523265)) goto LA19;
 					nimln(1600, "system.nim");
 					i_523263 = res_523268;
@@ -13147,8 +13147,8 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3D_523183)(TY191933* x, TY191933* y) {
 					}
 					LA22: ;
 					nimln(1619, "system.nim");
-					TMP10691 = addInt(res_523268, ((NI) 1));
-					res_523268 = (NI)(TMP10691);
+					TMP10692 = addInt(res_523268, ((NI) 1));
+					res_523268 = (NI)(TMP10692);
 				} LA19: ;
 			}
 		}
@@ -13472,7 +13472,7 @@ NTI5712.flags = 3;
 NTI3413.size = sizeof(TNimObject*);
 NTI3413.kind = 22;
 NTI3413.base = (&NTI3411);
-NTI3413.marker = TMP2642;
+NTI3413.marker = TMP2643;
 NTI110.size = sizeof(NI8);
 NTI110.kind = 32;
 NTI110.base = 0;

@@ -375,10 +375,10 @@ static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
 N_NIMCALL(void, initanalysisctx_402059)(Analysisctx402026* Result);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP8010)(void* p, NI op);
+N_NIMCALL(void, TMP8011)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(void, TMP8012)(void* p, NI op);
+N_NIMCALL(void, TMP8013)(void* p, NI op);
 N_NIMCALL(NI, lookupslot_402132)(Analysisctx402026* c, Tsym189843* s);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
@@ -462,46 +462,46 @@ N_NIMCALL(Tsym189843*, getcompilerproc_237036)(NimStringDesc* name);
 N_NIMCALL(void, addvar_356047)(Tnode189813* father, Tnode189813* v);
 N_NIMCALL(Tnode189813*, genaddrof_357864)(Tnode189813* n);
 N_NIMCALL(Tnode189813*, callcodegenproc_357886)(NimStringDesc* name, Tnode189813* arg1, Tnode189813* arg2, Tnode189813* arg3);
-STRING_LITERAL(TMP8005, "slice", 5);
-static NIM_CONST TY190031 TMP8015 = {
+STRING_LITERAL(TMP8006, "slice", 5);
+static NIM_CONST TY190031 TMP8016 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP8016, "sons", 4);
-STRING_LITERAL(TMP8018, "len(a) == L seq modified while iterating over it", 48);
-static NIM_CONST TY190031 TMP8020 = {
+STRING_LITERAL(TMP8017, "sons", 4);
+STRING_LITERAL(TMP8019, "len(a) == L seq modified while iterating over it", 48);
+static NIM_CONST TY190031 TMP8021 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP8021, "sym", 3);
-STRING_LITERAL(TMP8022, "invalid usage of counter after increment", 40);
-STRING_LITERAL(TMP8024, "cannot prove: ", 14);
-STRING_LITERAL(TMP8025, " <= ", 4);
-STRING_LITERAL(TMP8026, "can prove: ", 11);
-STRING_LITERAL(TMP8027, " > ", 3);
-STRING_LITERAL(TMP8029, "cannot prove: $# > $#; required for ($#)..($#) disjoint from ($"
+STRING_LITERAL(TMP8022, "sym", 3);
+STRING_LITERAL(TMP8023, "invalid usage of counter after increment", 40);
+STRING_LITERAL(TMP8025, "cannot prove: ", 14);
+STRING_LITERAL(TMP8026, " <= ", 4);
+STRING_LITERAL(TMP8027, "can prove: ", 11);
+STRING_LITERAL(TMP8028, " > ", 3);
+STRING_LITERAL(TMP8030, "cannot prove: $# > $#; required for ($#)..($#) disjoint from ($"
 "#)..($#)", 71);
-STRING_LITERAL(TMP8030, "($#)..($#) not disjoint from ($#)..($#)", 39);
-static NIM_CONST TY190031 TMP8031 = {
+STRING_LITERAL(TMP8031, "($#)..($#) not disjoint from ($#)..($#)", 39);
+static NIM_CONST TY190031 TMP8032 = {
 0xE0, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP8032, "intVal", 6);
-STRING_LITERAL(TMP8038, "cannot prove ($#)..($#) disjoint from ($#)..($#)", 48);
-STRING_LITERAL(TMP8043, "+=", 2);
-STRING_LITERAL(TMP8044, "[]", 2);
-STRING_LITERAL(TMP8045, "[]=", 3);
-STRING_LITERAL(TMP8053, "invalid control flow for \'parallel\'", 35);
-STRING_LITERAL(TMP8056, "slot already has a lower bound", 30);
-STRING_LITERAL(TMP8063, "invalid context for \'spawn\'", 27);
-STRING_LITERAL(TMP8067, "\'parallel\' section without \'spawn\'", 34);
-STRING_LITERAL(TMP8068, "barrier", 7);
-STRING_LITERAL(TMP8069, "Barrier", 7);
-STRING_LITERAL(TMP8070, "openBarrier", 11);
-STRING_LITERAL(TMP8071, "closeBarrier", 12);
+STRING_LITERAL(TMP8033, "intVal", 6);
+STRING_LITERAL(TMP8039, "cannot prove ($#)..($#) disjoint from ($#)..($#)", 48);
+STRING_LITERAL(TMP8044, "+=", 2);
+STRING_LITERAL(TMP8045, "[]", 2);
+STRING_LITERAL(TMP8046, "[]=", 3);
+STRING_LITERAL(TMP8054, "invalid control flow for \'parallel\'", 35);
+STRING_LITERAL(TMP8057, "slot already has a lower bound", 30);
+STRING_LITERAL(TMP8064, "invalid context for \'spawn\'", 27);
+STRING_LITERAL(TMP8068, "\'parallel\' section without \'spawn\'", 34);
+STRING_LITERAL(TMP8069, "barrier", 7);
+STRING_LITERAL(TMP8070, "Barrier", 7);
+STRING_LITERAL(TMP8071, "openBarrier", 11);
+STRING_LITERAL(TMP8072, "closeBarrier", 12);
 Tsym189843* opslice_402055;
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
@@ -596,7 +596,7 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	(*dest) = src;
 	popFrame();
 }
-N_NIMCALL(void, TMP8010)(void* p, NI op) {
+N_NIMCALL(void, TMP8011)(void* p, NI op) {
 	TY402036* a;
 	NI LOC1;
 	a = (TY402036*)p;
@@ -609,7 +609,7 @@ N_NIMCALL(void, TMP8010)(void* p, NI op) {
 	nimGCvisit((void*)a->data[LOC1].stride, op);
 	}
 }
-N_NIMCALL(void, TMP8012)(void* p, NI op) {
+N_NIMCALL(void, TMP8013)(void* p, NI op) {
 	TY402038* a;
 	NI LOC1;
 	a = (TY402038*)p;
@@ -691,7 +691,7 @@ N_NIMCALL(NI, lookupslot_402132)(Analysisctx402026* c, Tsym189843* s) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP8013;
+				NI TMP8014;
 				if (!(res_402190 <= HEX3Atmp_402187)) goto LA3;
 				nimln(1600, "system.nim");
 				i_402163 = res_402190;
@@ -711,8 +711,8 @@ N_NIMCALL(NI, lookupslot_402132)(Analysisctx402026* c, Tsym189843* s) {
 				}
 				LA8: ;
 				nimln(1619, "system.nim");
-				TMP8013 = addInt(res_402190, ((NI) 1));
-				res_402190 = (NI)(TMP8013);
+				TMP8014 = addInt(res_402190, ((NI) 1));
+				res_402190 = (NI)(TMP8014);
 			} LA3: ;
 		}
 	}
@@ -752,7 +752,7 @@ N_NIMCALL(Monotonicvar402024*, getslot_402209)(Analysisctx402026* c, Tsym189843*
 	Monotonicvar402024* result;
 	NI s;
 	NI L;
-	NI TMP8014;
+	NI TMP8015;
 	nimfr("getSlot", "semparallel.nim")
 {	result = 0;
 	nimln(91, "semparallel.nim");
@@ -768,8 +768,8 @@ N_NIMCALL(Monotonicvar402024*, getslot_402209)(Analysisctx402026* c, Tsym189843*
 	nimln(93, "semparallel.nim");
 	L = ((*c).locals ? (*c).locals->Sup.len : 0);
 	nimln(94, "semparallel.nim");
-	TMP8014 = addInt(L, ((NI) 1));
-	(*c).locals = (TY402036*) setLengthSeq(&((*c).locals)->Sup, sizeof(Monotonicvar402024), ((NI)chckRange((NI)(TMP8014), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP8015 = addInt(L, ((NI) 1));
+	(*c).locals = (TY402036*) setLengthSeq(&((*c).locals)->Sup, sizeof(Monotonicvar402024), ((NI)chckRange((NI)(TMP8015), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(95, "semparallel.nim");
 	if ((NU)(L) >= (NU)((*c).locals->Sup.len)) raiseIndexError();
 	asgnRefNoCycle((void**) (&(*c).locals->data[L].v), v);
@@ -792,7 +792,7 @@ static N_INLINE(NI, safelen_190125)(Tnode189813* n) {
 		LOC3 = 0;
 		LOC3 = ((*n).kind >= ((NU8) 0) && (*n).kind <= ((NU8) 23));
 		if (LOC3) goto LA4;
-		if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+		if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 		LOC3 = (*n).kindU.S6.sons == 0;
 		LA4: ;
 		if (!LOC3) goto LA5;
@@ -802,7 +802,7 @@ static N_INLINE(NI, safelen_190125)(Tnode189813* n) {
 	LA5: ;
 	{
 		nimln(940, "ast.nim");
-		if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+		if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -815,7 +815,7 @@ static N_INLINE(Tnode189813*, HEX5BHEX5D_190244)(Tnode189813* n, NI i) {
 	nimfr("[]", "ast.nim")
 	result = 0;
 	nimln(948, "ast.nim");
-	if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(i) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	result = (*n).kindU.S6.sons->data[i];
 	popFrame();
@@ -843,7 +843,7 @@ N_NIMCALL(void, gatherargs_402244)(Analysisctx402026* c, Tnode189813* n) {
 				Tsym189843* root;
 				Tnode189813* LOC5;
 				Tnode189813* LOC22;
-				NI TMP8019;
+				NI TMP8020;
 				if (!(res_402325 <= HEX3Atmp_402322)) goto LA4;
 				nimln(1600, "system.nim");
 				i_402268 = res_402325;
@@ -871,7 +871,7 @@ N_NIMCALL(void, gatherargs_402244)(Analysisctx402026* c, Tnode189813* n) {
 							{
 								nimln(3086, "system.nim");
 								while (1) {
-									NI TMP8017;
+									NI TMP8018;
 									if (!(i_402319 < L_402321)) goto LA13;
 									nimln(3087, "system.nim");
 									if ((NU)(i_402319) >= (NU)(HEX3Atmp_402316->Sup.len)) raiseIndexError();
@@ -883,12 +883,12 @@ N_NIMCALL(void, gatherargs_402244)(Analysisctx402026* c, Tnode189813* n) {
 									}
 									LA16: ;
 									nimln(3088, "system.nim");
-									TMP8017 = addInt(i_402319, ((NI) 1));
-									i_402319 = (NI)(TMP8017);
+									TMP8018 = addInt(i_402319, ((NI) 1));
+									i_402319 = (NI)(TMP8018);
 									nimln(3089, "system.nim");
 									{
 										if (!!(((HEX3Atmp_402316 ? HEX3Atmp_402316->Sup.len : 0) == L_402321))) goto LA20;
-										failedassertimpl_87017(((NimStringDesc*) &TMP8018));
+										failedassertimpl_87017(((NimStringDesc*) &TMP8019));
 									}
 									LA20: ;
 								} LA13: ;
@@ -905,8 +905,8 @@ N_NIMCALL(void, gatherargs_402244)(Analysisctx402026* c, Tnode189813* n) {
 				LOC22 = HEX5BHEX5D_190244(n, i_402268);
 				gatherargs_402244(c, LOC22);
 				nimln(1619, "system.nim");
-				TMP8019 = addInt(res_402325, ((NI) 1));
-				res_402325 = (NI)(TMP8019);
+				TMP8020 = addInt(res_402325, ((NI) 1));
+				res_402325 = (NI)(TMP8020);
 			} LA4: ;
 		}
 	}
@@ -924,7 +924,7 @@ N_NIMCALL(NIM_BOOL, issingleassignable_402356)(Tnode189813* n) {
 	LOC1 = 0;
 	LOC1 = ((*n).kind == ((NU8) 3));
 	if (!(LOC1)) goto LA2;
-	if (!(((TMP8020[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+	if (!(((TMP8021[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 	s = (*n).kindU.S4.sym;
 	nimln(110, "semparallel.nim");
 	LOC3 = 0;
@@ -951,7 +951,7 @@ N_NIMCALL(NIM_BOOL, islocal_402416)(Tnode189813* n) {
 	LOC1 = 0;
 	LOC1 = ((*n).kind == ((NU8) 3));
 	if (!(LOC1)) goto LA2;
-	if (!(((TMP8020[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+	if (!(((TMP8021[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 	s = (*n).kindU.S4.sym;
 	nimln(115, "semparallel.nim");
 	LOC3 = 0;
@@ -977,7 +977,7 @@ N_NIMCALL(void, checklocal_402476)(Analysisctx402026* c, Tnode189813* n) {
 		LOC3 = islocal_402416(n);
 		if (!LOC3) goto LA4;
 		nimln(120, "semparallel.nim");
-		if (!(((TMP8020[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+		if (!(((TMP8021[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 		s = lookupslot_402132(c, (*n).kindU.S4.sym);
 		nimln(121, "semparallel.nim");
 		{
@@ -990,7 +990,7 @@ N_NIMCALL(void, checklocal_402476)(Analysisctx402026* c, Tnode189813* n) {
 			LA9: ;
 			if (!LOC8) goto LA10;
 			nimln(122, "semparallel.nim");
-			localerror_163166((*n).info, ((NimStringDesc*) &TMP8022));
+			localerror_163166((*n).info, ((NimStringDesc*) &TMP8023));
 		}
 		LA10: ;
 	}
@@ -1013,17 +1013,17 @@ N_NIMCALL(void, checklocal_402476)(Analysisctx402026* c, Tnode189813* n) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8023;
+					NI TMP8024;
 					if (!(res_402519 <= HEX3Atmp_402516)) goto LA16;
 					nimln(1600, "system.nim");
 					i_402513 = res_402519;
 					nimln(124, "semparallel.nim");
-					if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_402513) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					checklocal_402476(c, (*n).kindU.S6.sons->data[i_402513]);
 					nimln(1619, "system.nim");
-					TMP8023 = addInt(res_402519, ((NI) 1));
-					res_402519 = (NI)(TMP8023);
+					TMP8024 = addInt(res_402519, ((NI) 1));
+					res_402519 = (NI)(TMP8024);
 				} LA16: ;
 			}
 		}
@@ -1056,9 +1056,9 @@ N_NIMCALL(void, checkle_402545)(Analysisctx402026* c, Tnode189813* a, Tnode18981
 		LOC5 = 0;
 		LOC5 = rendertree_211058(b, 0);
 		LOC3 = rawNewString(LOC4->Sup.len + LOC5->Sup.len + 18);
-appendString(LOC3, ((NimStringDesc*) &TMP8024));
-appendString(LOC3, LOC4);
 appendString(LOC3, ((NimStringDesc*) &TMP8025));
+appendString(LOC3, LOC4);
+appendString(LOC3, ((NimStringDesc*) &TMP8026));
 appendString(LOC3, LOC5);
 		localerror_163166((*a).info, LOC3);
 	}
@@ -1079,9 +1079,9 @@ appendString(LOC3, LOC5);
 		LOC10 = 0;
 		LOC10 = rendertree_211058(b, 0);
 		LOC8 = rawNewString(LOC9->Sup.len + LOC10->Sup.len + 14);
-appendString(LOC8, ((NimStringDesc*) &TMP8026));
-appendString(LOC8, LOC9);
 appendString(LOC8, ((NimStringDesc*) &TMP8027));
+appendString(LOC8, LOC9);
+appendString(LOC8, ((NimStringDesc*) &TMP8028));
 appendString(LOC8, LOC10);
 		localerror_163166((*a).info, LOC8);
 	}
@@ -1123,7 +1123,7 @@ N_NIMCALL(void, addlowerboundasfacts_402573)(Analysisctx402026* c) {
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP8028;
+				NI TMP8029;
 				if (!(i_402817 < L_402819)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_402817) >= (NU)(HEX3Atmp_402814->Sup.len)) raiseIndexError();
@@ -1139,12 +1139,12 @@ N_NIMCALL(void, addlowerboundasfacts_402573)(Analysisctx402026* c) {
 				}
 				LA6: ;
 				nimln(3088, "system.nim");
-				TMP8028 = addInt(i_402817, ((NI) 1));
-				i_402817 = (NI)(TMP8028);
+				TMP8029 = addInt(i_402817, ((NI) 1));
+				i_402817 = (NI)(TMP8029);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((HEX3Atmp_402814 ? HEX3Atmp_402814->Sup.len : 0) == L_402819))) goto LA11;
-					failedassertimpl_87017(((NimStringDesc*) &TMP8018));
+					failedassertimpl_87017(((NimStringDesc*) &TMP8019));
 				}
 				LA11: ;
 			} LA3: ;
@@ -1209,7 +1209,7 @@ N_NIMCALL(void, overlap_402883)(Tnodeseq189807* m, Tnode189813* x, Tnode189813* 
 		LOC3[4] = rendertree_211058(c, 0);
 		LOC3[5] = rendertree_211058(d, 0);
 		LOC4 = 0;
-		LOC4 = nsuFormatOpenArray(((NimStringDesc*) &TMP8029), LOC3, 6);
+		LOC4 = nsuFormatOpenArray(((NimStringDesc*) &TMP8030), LOC3, 6);
 		localerror_163166((*x).info, LOC4);
 	}
 	break;
@@ -1235,7 +1235,7 @@ N_NIMCALL(void, overlap_402883)(Tnodeseq189807* m, Tnode189813* x, Tnode189813* 
 			LOC8[4] = rendertree_211058(c, 0);
 			LOC8[5] = rendertree_211058(d, 0);
 			LOC9 = 0;
-			LOC9 = nsuFormatOpenArray(((NimStringDesc*) &TMP8029), LOC8, 6);
+			LOC9 = nsuFormatOpenArray(((NimStringDesc*) &TMP8030), LOC8, 6);
 			localerror_163166((*x).info, LOC9);
 		}
 		break;
@@ -1250,7 +1250,7 @@ N_NIMCALL(void, overlap_402883)(Tnodeseq189807* m, Tnode189813* x, Tnode189813* 
 			LOC11[2] = rendertree_211058(c, 0);
 			LOC11[3] = rendertree_211058(d, 0);
 			LOC12 = 0;
-			LOC12 = nsuFormatOpenArray(((NimStringDesc*) &TMP8030), LOC11, 4);
+			LOC12 = nsuFormatOpenArray(((NimStringDesc*) &TMP8031), LOC11, 4);
 			localerror_163166((*x).info, LOC12);
 		}
 		break;
@@ -1301,7 +1301,7 @@ N_NIMCALL(NI64, stride_402918)(Analysisctx402026* c, Tnode189813* n) {
 		LOC3 = islocal_402416(n);
 		if (!LOC3) goto LA4;
 		nimln(177, "semparallel.nim");
-		if (!(((TMP8020[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+		if (!(((TMP8021[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 		s = lookupslot_402132(c, (*n).kindU.S4.sym);
 		nimln(178, "semparallel.nim");
 		{
@@ -1315,7 +1315,7 @@ N_NIMCALL(NI64, stride_402918)(Analysisctx402026* c, Tnode189813* n) {
 			if (!LOC8) goto LA10;
 			nimln(179, "semparallel.nim");
 			if ((NU)(s) >= (NU)((*c).locals->Sup.len)) raiseIndexError();
-			if (!(((TMP8031[(*(*c).locals->data[s].stride).kind/8] &(1<<((*(*c).locals->data[s].stride).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8032));
+			if (!(((TMP8032[(*(*c).locals->data[s].stride).kind/8] &(1<<((*(*c).locals->data[s].stride).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8033));
 			result = (*(*c).locals->data[s].stride).kindU.S1.intval;
 		}
 		LA10: ;
@@ -1340,21 +1340,21 @@ N_NIMCALL(NI64, stride_402918)(Analysisctx402026* c, Tnode189813* n) {
 				nimln(1599, "system.nim");
 				while (1) {
 					NI64 LOC17;
-					NI64 TMP8033;
-					NI TMP8034;
+					NI64 TMP8034;
+					NI TMP8035;
 					if (!(res_402972 <= HEX3Atmp_402969)) goto LA16;
 					nimln(1600, "system.nim");
 					i_402957 = res_402972;
 					nimln(181, "semparallel.nim");
-					if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_402957) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC17 = 0;
 					LOC17 = stride_402918(c, (*n).kindU.S6.sons->data[i_402957]);
-					TMP8033 = addInt64(result, LOC17);
-					result = (NI64)(TMP8033);
+					TMP8034 = addInt64(result, LOC17);
+					result = (NI64)(TMP8034);
 					nimln(1619, "system.nim");
-					TMP8034 = addInt(res_402972, ((NI) 1));
-					res_402972 = (NI)(TMP8034);
+					TMP8035 = addInt(res_402972, ((NI) 1));
+					res_402972 = (NI)(TMP8035);
 				} LA16: ;
 			}
 		}
@@ -1370,7 +1370,7 @@ static N_INLINE(NI, len_190097)(Tnode189813* n) {
 	result = 0;
 	nimln(934, "ast.nim");
 	{
-		if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+		if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 		if (!(*n).kindU.S6.sons == 0) goto LA3;
 		result = ((NI) 0);
 	}
@@ -1378,7 +1378,7 @@ static N_INLINE(NI, len_190097)(Tnode189813* n) {
 	LA3: ;
 	{
 		nimln(935, "ast.nim");
-		if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+		if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -1398,7 +1398,7 @@ N_NIMCALL(Tnode189813*, substride_402991)(Analysisctx402026* c, Tnode189813* n) 
 		LOC3 = islocal_402416(n);
 		if (!LOC3) goto LA4;
 		nimln(186, "semparallel.nim");
-		if (!(((TMP8020[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+		if (!(((TMP8021[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 		s = lookupslot_402132(c, (*n).kindU.S4.sym);
 		nimln(187, "semparallel.nim");
 		{
@@ -1412,7 +1412,7 @@ N_NIMCALL(Tnode189813*, substride_402991)(Analysisctx402026* c, Tnode189813* n) 
 			if (!LOC8) goto LA10;
 			nimln(188, "semparallel.nim");
 			if ((NU)(s) >= (NU)((*c).locals->Sup.len)) raiseIndexError();
-			if (!(((TMP8031[(*(*c).locals->data[s].stride).kind/8] &(1<<((*(*c).locals->data[s].stride).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8032));
+			if (!(((TMP8032[(*(*c).locals->data[s].stride).kind/8] &(1<<((*(*c).locals->data[s].stride).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8033));
 			result = HEX2BHEX40_320010(n, (*(*c).locals->data[s].stride).kindU.S1.intval);
 		}
 		goto LA6;
@@ -1449,19 +1449,19 @@ N_NIMCALL(Tnode189813*, substride_402991)(Analysisctx402026* c, Tnode189813* n) 
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8035;
+					NI TMP8036;
 					if (!(res_403038 <= HEX3Atmp_403035)) goto LA20;
 					nimln(1600, "system.nim");
 					i_403031 = res_403038;
 					nimln(193, "semparallel.nim");
-					if (((TMP8015[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_403031) >= (NU)((*result).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_403031) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					asgnRefNoCycle((void**) (&(*result).kindU.S6.sons->data[i_403031]), substride_402991(c, (*n).kindU.S6.sons->data[i_403031]));
 					nimln(1619, "system.nim");
-					TMP8035 = addInt(res_403038, ((NI) 1));
-					res_403038 = (NI)(TMP8035);
+					TMP8036 = addInt(res_403038, ((NI) 1));
+					res_403038 = (NI)(TMP8036);
 				} LA20: ;
 			}
 		}
@@ -1505,7 +1505,7 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP8036;
+				NI TMP8037;
 				if (!(i_403263 < L_403265)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_403263) >= (NU)(HEX3Atmp_403260->Sup.len)) raiseIndexError();
@@ -1531,12 +1531,12 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 				}
 				LA6: ;
 				nimln(3088, "system.nim");
-				TMP8036 = addInt(i_403263, ((NI) 1));
-				i_403263 = (NI)(TMP8036);
+				TMP8037 = addInt(i_403263, ((NI) 1));
+				i_403263 = (NI)(TMP8037);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((HEX3Atmp_403260 ? HEX3Atmp_403260->Sup.len : 0) == L_403265))) goto LA12;
-					failedassertimpl_87017(((NimStringDesc*) &TMP8018));
+					failedassertimpl_87017(((NimStringDesc*) &TMP8019));
 				}
 				LA12: ;
 			} LA3: ;
@@ -1555,7 +1555,7 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP8040;
+				NI TMP8041;
 				if (!(res_403279 <= HEX3Atmp_403276)) goto LA16;
 				nimln(1600, "system.nim");
 				i_403226 = res_403279;
@@ -1563,14 +1563,14 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 					NI j_403237;
 					NI HEX3Atmp_403268;
 					NI HEX3Atmp_403269;
-					NI TMP8037;
+					NI TMP8038;
 					NI res_403272;
 					j_403237 = 0;
 					HEX3Atmp_403268 = 0;
 					HEX3Atmp_403269 = 0;
 					nimln(224, "semparallel.nim");
-					TMP8037 = addInt(i_403226, ((NI) 1));
-					HEX3Atmp_403268 = (NI)(TMP8037);
+					TMP8038 = addInt(i_403226, ((NI) 1));
+					HEX3Atmp_403268 = (NI)(TMP8038);
 					HEX3Atmp_403269 = ((*c).slices ? ((*c).slices->Sup.len-1) : -1);
 					nimln(1598, "system.nim");
 					res_403272 = HEX3Atmp_403268;
@@ -1579,7 +1579,7 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 						while (1) {
 							TY402039 x;
 							TY402039 y;
-							NI TMP8039;
+							NI TMP8040;
 							if (!(res_403272 <= HEX3Atmp_403269)) goto LA19;
 							nimln(1600, "system.nim");
 							j_403237 = res_403272;
@@ -1662,7 +1662,7 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 										LOC46[2] = rendertree_211058(y.Field1, 0);
 										LOC46[3] = rendertree_211058(y.Field2, 0);
 										LOC47 = 0;
-										LOC47 = nsuFormatOpenArray(((NimStringDesc*) &TMP8038), LOC46, 4);
+										LOC47 = nsuFormatOpenArray(((NimStringDesc*) &TMP8039), LOC46, 4);
 										localerror_163166((*x.Field0).info, LOC47);
 									}
 									LA39: ;
@@ -1680,20 +1680,20 @@ N_NIMCALL(void, checkslicesaredisjoint_403057)(Analysisctx402026* c) {
 									LOC49[2] = rendertree_211058(y.Field1, 0);
 									LOC49[3] = rendertree_211058(y.Field2, 0);
 									LOC50 = 0;
-									LOC50 = nsuFormatOpenArray(((NimStringDesc*) &TMP8038), LOC49, 4);
+									LOC50 = nsuFormatOpenArray(((NimStringDesc*) &TMP8039), LOC49, 4);
 									localerror_163166((*x.Field0).info, LOC50);
 								}
 								LA26: ;
 							}
 							LA24: ;
 							nimln(1619, "system.nim");
-							TMP8039 = addInt(res_403272, ((NI) 1));
-							res_403272 = (NI)(TMP8039);
+							TMP8040 = addInt(res_403272, ((NI) 1));
+							res_403272 = (NI)(TMP8040);
 						} LA19: ;
 					}
 				}
-				TMP8040 = addInt(res_403279, ((NI) 1));
-				res_403279 = (NI)(TMP8040);
+				TMP8041 = addInt(res_403279, ((NI) 1));
+				res_403279 = (NI)(TMP8041);
 			} LA16: ;
 		}
 	}
@@ -1719,7 +1719,7 @@ N_NIMCALL(void, analysesons_403324)(Analysisctx402026* c, Tnode189813* n) {
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode189813* LOC5;
-				NI TMP8041;
+				NI TMP8042;
 				if (!(res_403352 <= HEX3Atmp_403349)) goto LA4;
 				nimln(1600, "system.nim");
 				i_403347 = res_403352;
@@ -1728,8 +1728,8 @@ N_NIMCALL(void, analysesons_403324)(Analysisctx402026* c, Tnode189813* n) {
 				LOC5 = HEX5BHEX5D_190244(n, i_403347);
 				analyse_403316(c, LOC5);
 				nimln(1619, "system.nim");
-				TMP8041 = addInt(res_403352, ((NI) 1));
-				res_403352 = (NI)(TMP8041);
+				TMP8042 = addInt(res_403352, ((NI) 1));
+				res_403352 = (NI)(TMP8042);
 			} LA4: ;
 		}
 	}
@@ -1749,8 +1749,8 @@ N_NIMCALL(Tnode189813*, min_403371)(Tnode189813* a, Tnode189813* b) {
 	LA3: ;
 	{
 		nimln(256, "semparallel.nim");
-		if (!(((TMP8031[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8032));
-		if (!(((TMP8031[(*b).kind/8] &(1<<((*b).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8032));
+		if (!(((TMP8032[(*a).kind/8] &(1<<((*a).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8033));
+		if (!(((TMP8032[(*b).kind/8] &(1<<((*b).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8033));
 		if (!((*a).kindU.S1.intval < (*b).kindU.S1.intval)) goto LA6;
 		result = a;
 	}
@@ -1818,13 +1818,13 @@ N_NIMCALL(void, analysecall_403422)(Analysisctx402026* c, Tnode189813* n, Tsym18
 	nimfr("analyseCall", "semparallel.nim")
 	nimln(269, "semparallel.nim");
 	{
-		NI TMP8042;
+		NI TMP8043;
 		NI oldspawnid;
 		Tnode189813* LOC5;
 		if (!((*op).magic == ((NU16) 213))) goto LA3;
 		nimln(262, "semparallel.nim");
-		TMP8042 = addInt((*c).spawns, ((NI) 1));
-		(*c).spawns = (NI)(TMP8042);
+		TMP8043 = addInt((*c).spawns, ((NI) 1));
+		(*c).spawns = (NI)(TMP8043);
 		nimln(263, "semparallel.nim");
 		oldspawnid = (*c).currentspawnid;
 		nimln(264, "semparallel.nim");
@@ -1848,7 +1848,7 @@ N_NIMCALL(void, analysecall_403422)(Analysisctx402026* c, Tnode189813* n, Tsym18
 		LOC7 = ((*op).magic == ((NU16) 23));
 		if (LOC7) goto LA8;
 		LOC9 = 0;
-		LOC9 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8043));
+		LOC9 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8044));
 		if (!(LOC9)) goto LA10;
 		LOC9 = fromsystem_403393(op);
 		LA10: ;
@@ -1878,14 +1878,14 @@ N_NIMCALL(void, analysecall_403422)(Analysisctx402026* c, Tnode189813* n, Tsym18
 				LOC22 = 0;
 				LOC22 = ((*incr).kind >= ((NU8) 5) && (*incr).kind <= ((NU8) 14));
 				if (!(LOC22)) goto LA23;
-				if (!(((TMP8031[(*incr).kind/8] &(1<<((*incr).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8032));
+				if (!(((TMP8032[(*incr).kind/8] &(1<<((*incr).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8033));
 				LOC22 = (IL64(0) < (*incr).kindU.S1.intval);
 				LA23: ;
 				if (!LOC22) goto LA24;
 				nimln(277, "semparallel.nim");
 				LOC26 = 0;
 				LOC26 = HEX5BHEX5D_190244(n, ((NI) 1));
-				if (!(((TMP8020[(*LOC26).kind/8] &(1<<((*LOC26).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+				if (!(((TMP8021[(*LOC26).kind/8] &(1<<((*LOC26).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 				slot = getslot_402209(c, (*LOC26).kindU.S4.sym);
 				nimln(278, "semparallel.nim");
 				unsureAsgnRef((void**) (&(*slot).stride), min_403371((*slot).stride, incr));
@@ -1907,7 +1907,7 @@ N_NIMCALL(void, analysecall_403422)(Analysisctx402026* c, Tnode189813* n, Tsym18
 		Tnode189813* LOC36;
 		nimln(280, "semparallel.nim");
 		LOC28 = 0;
-		LOC28 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8044));
+		LOC28 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8045));
 		if (!(LOC28)) goto LA29;
 		LOC28 = fromsystem_403393(op);
 		LA29: ;
@@ -1938,7 +1938,7 @@ N_NIMCALL(void, analysecall_403422)(Analysisctx402026* c, Tnode189813* n, Tsym18
 		Tnode189813* LOC46;
 		nimln(283, "semparallel.nim");
 		LOC38 = 0;
-		LOC38 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8045));
+		LOC38 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8046));
 		if (!(LOC38)) goto LA39;
 		LOC38 = fromsystem_403393(op);
 		LA39: ;
@@ -1972,7 +1972,7 @@ N_NIMCALL(void, analysecase_403491)(Analysisctx402026* c, Tnode189813* n) {
 	NI oldfacts;
 	nimfr("analyseCase", "semparallel.nim")
 	nimln(290, "semparallel.nim");
-	if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	analyse_403316(c, (*n).kindU.S6.sons->data[((NI) 0)]);
 	nimln(291, "semparallel.nim");
@@ -1994,12 +1994,12 @@ N_NIMCALL(void, analysecase_403491)(Analysisctx402026* c, Tnode189813* n) {
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode189813* branch;
-				NI TMP8047;
+				NI TMP8048;
 				if (!(res_403582 <= HEX3Atmp_403579)) goto LA4;
 				nimln(1600, "system.nim");
 				i_403525 = res_403582;
 				nimln(293, "semparallel.nim");
-				if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(i_403525) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				branch = (*n).kindU.S6.sons->data[i_403525];
 				nimln(294, "semparallel.nim");
@@ -2022,22 +2022,22 @@ N_NIMCALL(void, analysecase_403491)(Analysisctx402026* c, Tnode189813* n) {
 					{
 						nimln(1599, "system.nim");
 						while (1) {
-							NI TMP8046;
+							NI TMP8047;
 							if (!(res_403575 <= HEX3Atmp_403572)) goto LA8;
 							nimln(1600, "system.nim");
 							i_403558 = res_403575;
 							nimln(297, "semparallel.nim");
-							if (((TMP8015[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+							if (((TMP8016[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 							if ((NU)(i_403558) >= (NU)((*branch).kindU.S6.sons->Sup.len)) raiseIndexError();
 							analyse_403316(c, (*branch).kindU.S6.sons->data[i_403558]);
 							nimln(1619, "system.nim");
-							TMP8046 = addInt(res_403575, ((NI) 1));
-							res_403575 = (NI)(TMP8046);
+							TMP8047 = addInt(res_403575, ((NI) 1));
+							res_403575 = (NI)(TMP8047);
 						} LA8: ;
 					}
 				}
-				TMP8047 = addInt(res_403582, ((NI) 1));
-				res_403582 = (NI)(TMP8047);
+				TMP8048 = addInt(res_403582, ((NI) 1));
+				res_403582 = (NI)(TMP8048);
 			} LA4: ;
 		}
 	}
@@ -2051,25 +2051,25 @@ N_NIMCALL(void, analyseif_403610)(Analysisctx402026* c, Tnode189813* n) {
 	Tnode189813* LOC1;
 	nimfr("analyseIf", "semparallel.nim")
 	nimln(301, "semparallel.nim");
-	if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (((TMP8015[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->Sup.len)) raiseIndexError();
 	analyse_403316(c, (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->data[((NI) 0)]);
 	nimln(302, "semparallel.nim");
 	oldfacts = ((*c).guards ? (*c).guards->Sup.len : 0);
 	nimln(303, "semparallel.nim");
-	if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (((TMP8015[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = 0;
 	LOC1 = canon_319735((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->data[((NI) 0)]);
 	addfact_320220((&(*c).guards), LOC1);
 	nimln(305, "semparallel.nim");
-	if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-	if (((TMP8015[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+	if (((TMP8016[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 	if ((NU)(((NI) 1)) >= (NU)((*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->Sup.len)) raiseIndexError();
 	analyse_403316(c, (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S6.sons->data[((NI) 1)]);
 	{
@@ -2089,12 +2089,12 @@ N_NIMCALL(void, analyseif_403610)(Analysisctx402026* c, Tnode189813* n) {
 			nimln(1599, "system.nim");
 			while (1) {
 				Tnode189813* branch;
-				NI TMP8051;
+				NI TMP8052;
 				if (!(res_403731 <= HEX3Atmp_403728)) goto LA5;
 				nimln(1600, "system.nim");
 				i_403650 = res_403731;
 				nimln(307, "semparallel.nim");
-				if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(i_403650) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				branch = (*n).kindU.S6.sons->data[i_403650];
 				nimln(308, "semparallel.nim");
@@ -2102,34 +2102,34 @@ N_NIMCALL(void, analyseif_403610)(Analysisctx402026* c, Tnode189813* n) {
 				{
 					NI j_403673;
 					NI HEX3Atmp_403713;
-					NI TMP8048;
+					NI TMP8049;
 					NI res_403716;
 					j_403673 = 0;
 					HEX3Atmp_403713 = 0;
 					nimln(309, "semparallel.nim");
-					TMP8048 = subInt(i_403650, ((NI) 1));
-					HEX3Atmp_403713 = (NI)(TMP8048);
+					TMP8049 = subInt(i_403650, ((NI) 1));
+					HEX3Atmp_403713 = (NI)(TMP8049);
 					nimln(1598, "system.nim");
 					res_403716 = ((NI) 0);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
 							Tnode189813* LOC9;
-							NI TMP8049;
+							NI TMP8050;
 							if (!(res_403716 <= HEX3Atmp_403713)) goto LA8;
 							nimln(1600, "system.nim");
 							j_403673 = res_403716;
 							nimln(310, "semparallel.nim");
-							if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+							if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 							if ((NU)(j_403673) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-							if (((TMP8015[(*(*n).kindU.S6.sons->data[j_403673]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[j_403673]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+							if (((TMP8016[(*(*n).kindU.S6.sons->data[j_403673]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[j_403673]).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 							if ((NU)(((NI) 0)) >= (NU)((*(*n).kindU.S6.sons->data[j_403673]).kindU.S6.sons->Sup.len)) raiseIndexError();
 							LOC9 = 0;
 							LOC9 = canon_319735((*(*n).kindU.S6.sons->data[j_403673]).kindU.S6.sons->data[((NI) 0)]);
 							addfactneg_320254((&(*c).guards), LOC9);
 							nimln(1619, "system.nim");
-							TMP8049 = addInt(res_403716, ((NI) 1));
-							res_403716 = (NI)(TMP8049);
+							TMP8050 = addInt(res_403716, ((NI) 1));
+							res_403716 = (NI)(TMP8050);
 						} LA8: ;
 					}
 				}
@@ -2141,7 +2141,7 @@ N_NIMCALL(void, analyseif_403610)(Analysisctx402026* c, Tnode189813* n) {
 					LOC12 = len_190097(branch);
 					if (!(((NI) 1) < LOC12)) goto LA13;
 					nimln(312, "semparallel.nim");
-					if (((TMP8015[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(((NI) 0)) >= (NU)((*branch).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC15 = 0;
 					LOC15 = canon_319735((*branch).kindU.S6.sons->data[((NI) 0)]);
@@ -2164,22 +2164,22 @@ N_NIMCALL(void, analyseif_403610)(Analysisctx402026* c, Tnode189813* n) {
 					{
 						nimln(1599, "system.nim");
 						while (1) {
-							NI TMP8050;
+							NI TMP8051;
 							if (!(res_403724 <= HEX3Atmp_403721)) goto LA19;
 							nimln(1600, "system.nim");
 							i_403699 = res_403724;
 							nimln(314, "semparallel.nim");
-							if (((TMP8015[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+							if (((TMP8016[(*branch).kind/8] &(1<<((*branch).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 							if ((NU)(i_403699) >= (NU)((*branch).kindU.S6.sons->Sup.len)) raiseIndexError();
 							analyse_403316(c, (*branch).kindU.S6.sons->data[i_403699]);
 							nimln(1619, "system.nim");
-							TMP8050 = addInt(res_403724, ((NI) 1));
-							res_403724 = (NI)(TMP8050);
+							TMP8051 = addInt(res_403724, ((NI) 1));
+							res_403724 = (NI)(TMP8051);
 						} LA19: ;
 					}
 				}
-				TMP8051 = addInt(res_403731, ((NI) 1));
-				res_403731 = (NI)(TMP8051);
+				TMP8052 = addInt(res_403731, ((NI) 1));
+				res_403731 = (NI)(TMP8052);
 			} LA5: ;
 		}
 	}
@@ -2219,12 +2219,12 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			LA7: ;
 			if (!LOC5) goto LA8;
 			nimln(322, "semparallel.nim");
-			if (!(((TMP8020[(*y).kind/8] &(1<<((*y).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+			if (!(((TMP8021[(*y).kind/8] &(1<<((*y).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 			slot = getslot_402209(c, (*y).kindU.S4.sym);
 			nimln(323, "semparallel.nim");
 			LOC10 = 0;
 			LOC10 = HEX5BHEX5D_190244(n, ((NI) 0));
-			if (!(((TMP8020[(*LOC10).kind/8] &(1<<((*LOC10).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+			if (!(((TMP8021[(*LOC10).kind/8] &(1<<((*LOC10).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 			unsureAsgnRef((void**) (&(*slot).alias), (*LOC10).kindU.S4.sym);
 		}
 		goto LA3;
@@ -2243,7 +2243,7 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			nimln(327, "semparallel.nim");
 			LOC16 = 0;
 			LOC16 = HEX5BHEX5D_190244(n, ((NI) 0));
-			if (!(((TMP8020[(*LOC16).kind/8] &(1<<((*LOC16).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+			if (!(((TMP8021[(*LOC16).kind/8] &(1<<((*LOC16).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 			slot = getslot_402209(c, (*LOC16).kindU.S4.sym);
 			nimln(328, "semparallel.nim");
 			(*slot).blacklisted = NIM_TRUE;
@@ -2260,7 +2260,7 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 		nimln(331, "semparallel.nim");
 		{
 			NU16 LOC20;
-			NI TMP8052;
+			NI TMP8053;
 			NI oldspawnid;
 			Tnode189813* LOC23;
 			Tnode189813* LOC24;
@@ -2269,8 +2269,8 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			LOC20 = getmagic_218403(value);
 			if (!(LOC20 == ((NU16) 213))) goto LA21;
 			nimln(262, "semparallel.nim");
-			TMP8052 = addInt((*c).spawns, ((NI) 1));
-			(*c).spawns = (NI)(TMP8052);
+			TMP8053 = addInt((*c).spawns, ((NI) 1));
+			(*c).spawns = (NI)(TMP8053);
 			nimln(263, "semparallel.nim");
 			oldspawnid = (*c).currentspawnid;
 			nimln(264, "semparallel.nim");
@@ -2320,7 +2320,7 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			if (!((*LOC31).kind == ((NU8) 3))) goto LA32;
 			LOC34 = 0;
 			LOC34 = HEX5BHEX5D_190244(n, ((NI) 0));
-			if (!(((TMP8020[(*LOC34).kind/8] &(1<<((*LOC34).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+			if (!(((TMP8021[(*LOC34).kind/8] &(1<<((*LOC34).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 			analysecall_403422(c, n, (*LOC34).kindU.S4.sym);
 		}
 		goto LA29;
@@ -2354,7 +2354,7 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 	case ((NU8) 106):
 	{
 		nimln(347, "semparallel.nim");
-		localerror_163166((*n).info, ((NimStringDesc*) &TMP8053));
+		localerror_163166((*n).info, ((NimStringDesc*) &TMP8054));
 	}
 	break;
 	case ((NU8) 99):
@@ -2382,12 +2382,12 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 						Tnode189813* value;
 						NIM_BOOL isspawned;
 						NU16 LOC47;
-						NI TMP8058;
+						NI TMP8059;
 						if (!(res_403952 <= HEX3Atmp_403950)) goto LA46;
 						nimln(1600, "system.nim");
 						i_403948 = res_403952;
 						nimln(1537, "ast.nim");
-						if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+						if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 						if ((NU)(i_403948) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						it_403815 = (*n).kindU.S6.sons->data[i_403948];
 						nimln(352, "semparallel.nim");
@@ -2398,14 +2398,14 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 						isspawned = (LOC47 == ((NU16) 213));
 						nimln(354, "semparallel.nim");
 						{
-							NI TMP8054;
+							NI TMP8055;
 							NI oldspawnid;
 							Tnode189813* LOC52;
 							Tnode189813* LOC53;
 							if (!isspawned) goto LA50;
 							nimln(262, "semparallel.nim");
-							TMP8054 = addInt((*c).spawns, ((NI) 1));
-							(*c).spawns = (NI)(TMP8054);
+							TMP8055 = addInt((*c).spawns, ((NI) 1));
+							(*c).spawns = (NI)(TMP8055);
 							nimln(263, "semparallel.nim");
 							oldspawnid = (*c).currentspawnid;
 							nimln(264, "semparallel.nim");
@@ -2429,21 +2429,21 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 								NI j_403858;
 								NI HEX3Atmp_403938;
 								NI LOC59;
-								NI TMP8055;
+								NI TMP8056;
 								NI res_403941;
 								j_403858 = 0;
 								HEX3Atmp_403938 = 0;
 								nimln(359, "semparallel.nim");
 								LOC59 = 0;
 								LOC59 = len_190097(it_403815);
-								TMP8055 = subInt(LOC59, ((NI) 3));
-								HEX3Atmp_403938 = (NI)(TMP8055);
+								TMP8056 = subInt(LOC59, ((NI) 3));
+								HEX3Atmp_403938 = (NI)(TMP8056);
 								nimln(1598, "system.nim");
 								res_403941 = ((NI) 0);
 								{
 									nimln(1599, "system.nim");
 									while (1) {
-										NI TMP8057;
+										NI TMP8058;
 										if (!(res_403941 <= HEX3Atmp_403938)) goto LA61;
 										nimln(1600, "system.nim");
 										j_403858 = res_403941;
@@ -2461,7 +2461,7 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 											nimln(361, "semparallel.nim");
 											LOC68 = 0;
 											LOC68 = HEX5BHEX5D_190244(it_403815, j_403858);
-											if (!(((TMP8020[(*LOC68).kind/8] &(1<<((*LOC68).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+											if (!(((TMP8021[(*LOC68).kind/8] &(1<<((*LOC68).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 											slot = getslot_402209(c, (*LOC68).kindU.S4.sym);
 											nimln(362, "semparallel.nim");
 											{
@@ -2472,14 +2472,14 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 											LA71: ;
 											{
 												nimln(363, "semparallel.nim");
-												internalerror_163199((*it_403815).info, ((NimStringDesc*) &TMP8056));
+												internalerror_163199((*it_403815).info, ((NimStringDesc*) &TMP8057));
 											}
 											LA69: ;
 										}
 										LA66: ;
 										nimln(1619, "system.nim");
-										TMP8057 = addInt(res_403941, ((NI) 1));
-										res_403941 = (NI)(TMP8057);
+										TMP8058 = addInt(res_403941, ((NI) 1));
+										res_403941 = (NI)(TMP8058);
 									} LA61: ;
 								}
 							}
@@ -2492,8 +2492,8 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 						}
 						LA56: ;
 						nimln(1619, "system.nim");
-						TMP8058 = addInt(res_403952, ((NI) 1));
-						res_403952 = (NI)(TMP8058);
+						TMP8059 = addInt(res_403952, ((NI) 1));
+						res_403952 = (NI)(TMP8059);
 					} LA46: ;
 				}
 			}
@@ -2515,25 +2515,25 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 	break;
 	case ((NU8) 96):
 	{
-		NI TMP8059;
 		NI TMP8060;
+		NI TMP8061;
 		nimln(368, "semparallel.nim");
-		if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+		if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		analyse_403316(c, (*n).kindU.S6.sons->data[((NI) 0)]);
 		nimln(370, "semparallel.nim");
-		TMP8059 = addInt((*c).inloop, ((NI) 1));
-		(*c).inloop = (NI)(TMP8059);
+		TMP8060 = addInt((*c).inloop, ((NI) 1));
+		(*c).inloop = (NI)(TMP8060);
 		nimln(371, "semparallel.nim");
 		{
 			NIM_BOOL LOC83;
-			if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+			if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC83 = 0;
 			LOC83 = istrue_327188((*n).kindU.S6.sons->data[((NI) 0)]);
 			if (!LOC83) goto LA84;
 			nimln(372, "semparallel.nim");
-			if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+			if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			analysesons_403324(c, (*n).kindU.S6.sons->data[((NI) 1)]);
 		}
@@ -2548,13 +2548,13 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			nimln(376, "semparallel.nim");
 			oldfacts = ((*c).guards ? (*c).guards->Sup.len : 0);
 			nimln(377, "semparallel.nim");
-			if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+			if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC87 = 0;
 			LOC87 = canon_319735((*n).kindU.S6.sons->data[((NI) 0)]);
 			addfact_320220((&(*c).guards), LOC87);
 			nimln(378, "semparallel.nim");
-			if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+			if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			analyse_403316(c, (*n).kindU.S6.sons->data[((NI) 1)]);
 			nimln(379, "semparallel.nim");
@@ -2565,13 +2565,13 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 			{
 				NIM_BOOL LOC90;
 				Tnode189813* LOC93;
-				if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				LOC90 = 0;
 				LOC90 = hassubnodewith_194439((*n).kindU.S6.sons->data[((NI) 1)], ((NU8) 110));
 				if (!!(LOC90)) goto LA91;
 				nimln(383, "semparallel.nim");
-				if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				LOC93 = 0;
 				LOC93 = canon_319735((*n).kindU.S6.sons->data[((NI) 0)]);
@@ -2581,8 +2581,8 @@ N_NIMCALL(void, analyse_403316)(Analysisctx402026* c, Tnode189813* n) {
 		}
 		LA81: ;
 		nimln(384, "semparallel.nim");
-		TMP8060 = subInt((*c).inloop, ((NI) 1));
-		(*c).inloop = (NI)(TMP8060);
+		TMP8061 = subInt((*c).inloop, ((NI) 1));
+		(*c).inloop = (NI)(TMP8061);
 	}
 	break;
 	case ((NU8) 98):
@@ -2628,7 +2628,7 @@ N_NIMCALL(Tnode189813*, transformslices_403982)(Tnode189813* n) {
 		nimln(393, "semparallel.nim");
 		LOC8 = 0;
 		LOC8 = HEX5BHEX5D_190244(n, ((NI) 0));
-		if (!(((TMP8020[(*LOC8).kind/8] &(1<<((*LOC8).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8021));
+		if (!(((TMP8021[(*LOC8).kind/8] &(1<<((*LOC8).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP8022));
 		op = (*LOC8).kindU.S4.sym;
 		nimln(394, "semparallel.nim");
 		{
@@ -2640,7 +2640,7 @@ N_NIMCALL(Tnode189813*, transformslices_403982)(Tnode189813* n) {
 			Tnode189813* LOC19;
 			Tnode189813* LOC20;
 			LOC11 = 0;
-			LOC11 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8044));
+			LOC11 = eqStrings((*(*op).name).s, ((NimStringDesc*) &TMP8045));
 			if (!(LOC11)) goto LA12;
 			LOC11 = fromsystem_403393(op);
 			LA12: ;
@@ -2697,19 +2697,19 @@ N_NIMCALL(Tnode189813*, transformslices_403982)(Tnode189813* n) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8061;
+					NI TMP8062;
 					if (!(res_404041 <= HEX3Atmp_404038)) goto LA29;
 					nimln(1600, "system.nim");
 					i_404034 = res_404041;
 					nimln(404, "semparallel.nim");
-					if (((TMP8015[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_404034) >= (NU)((*result).kindU.S6.sons->Sup.len)) raiseIndexError();
-					if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+					if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 					if ((NU)(i_404034) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					asgnRefNoCycle((void**) (&(*result).kindU.S6.sons->data[i_404034]), transformslices_403982((*n).kindU.S6.sons->data[i_404034]));
 					nimln(1619, "system.nim");
-					TMP8061 = addInt(res_404041, ((NI) 1));
-					res_404041 = (NI)(TMP8061);
+					TMP8062 = addInt(res_404041, ((NI) 1));
+					res_404041 = (NI)(TMP8062);
 				} LA29: ;
 			}
 		}
@@ -2748,19 +2748,19 @@ N_NIMCALL(Tnode189813*, transformspawnsons_404068)(Tsym189843* owner, Tnode18981
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP8062;
+				NI TMP8063;
 				if (!(res_404100 <= HEX3Atmp_404097)) goto LA4;
 				nimln(1600, "system.nim");
 				i_404093 = res_404100;
 				nimln(412, "semparallel.nim");
-				if (((TMP8015[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*result).kind/8] &(1<<((*result).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(i_404093) >= (NU)((*result).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+				if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 				if ((NU)(i_404093) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*result).kindU.S6.sons->data[i_404093]), transformspawn_404060(owner, (*n).kindU.S6.sons->data[i_404093], barrier));
 				nimln(1619, "system.nim");
-				TMP8062 = addInt(res_404100, ((NI) 1));
-				res_404100 = (NI)(TMP8062);
+				TMP8063 = addInt(res_404100, ((NI) 1));
+				res_404100 = (NI)(TMP8063);
 			} LA4: ;
 		}
 	}
@@ -2799,12 +2799,12 @@ N_NIMCALL(Tnode189813*, transformspawn_404060)(Tsym189843* owner, Tnode189813* n
 					nimln(1599, "system.nim");
 					while (1) {
 						Tnode189813* b;
-						NI TMP8066;
+						NI TMP8067;
 						if (!(res_404212 <= HEX3Atmp_404210)) goto LA6;
 						nimln(1600, "system.nim");
 						i_404208 = res_404212;
 						nimln(1537, "ast.nim");
-						if (((TMP8015[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+						if (((TMP8016[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 						if ((NU)(i_404208) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						it_404125 = (*n).kindU.S6.sons->data[i_404208];
 						nimln(419, "semparallel.nim");
@@ -2825,7 +2825,7 @@ N_NIMCALL(Tnode189813*, transformspawn_404060)(Tsym189843* owner, Tnode189813* n
 								LOC14 = 0;
 								LOC14 = len_190097(it_404125);
 								if (!!((LOC14 == ((NI) 3)))) goto LA15;
-								localerror_163166((*it_404125).info, ((NimStringDesc*) &TMP8063));
+								localerror_163166((*it_404125).info, ((NimStringDesc*) &TMP8064));
 							}
 							LA15: ;
 							nimln(422, "semparallel.nim");
@@ -2852,7 +2852,7 @@ N_NIMCALL(Tnode189813*, transformspawn_404060)(Tsym189843* owner, Tnode189813* n
 								Tnode189813* LOC28;
 								Tnode189813* LOC29;
 								NI LOC30;
-								NI TMP8064;
+								NI TMP8065;
 								LOC25 = 0;
 								LOC25 = spawnresult_357965(t, NIM_TRUE);
 								if (!(LOC25 == ((NU8) 2))) goto LA26;
@@ -2863,32 +2863,32 @@ N_NIMCALL(Tnode189813*, transformspawn_404060)(Tsym189843* owner, Tnode189813* n
 								LOC29 = wrapprocforspawn_358607(owner, m, (*b).typ, barrier, LOC28);
 								add_190164(result, LOC29);
 								nimln(429, "semparallel.nim");
-								if (((TMP8015[(*it_404125).kind/8] &(1<<((*it_404125).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+								if (((TMP8016[(*it_404125).kind/8] &(1<<((*it_404125).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 								LOC30 = 0;
 								LOC30 = len_190097(it_404125);
-								TMP8064 = subInt(LOC30, ((NI) 1));
-								if ((NU)((NI)(TMP8064)) >= (NU)((*it_404125).kindU.S6.sons->Sup.len)) raiseIndexError();
-								asgnRefNoCycle((void**) (&(*it_404125).kindU.S6.sons->data[(NI)(TMP8064)]), emptynode_190807);
+								TMP8065 = subInt(LOC30, ((NI) 1));
+								if ((NU)((NI)(TMP8065)) >= (NU)((*it_404125).kindU.S6.sons->Sup.len)) raiseIndexError();
+								asgnRefNoCycle((void**) (&(*it_404125).kindU.S6.sons->data[(NI)(TMP8065)]), emptynode_190807);
 							}
 							goto LA23;
 							LA26: ;
 							{
 								NI LOC32;
-								NI TMP8065;
+								NI TMP8066;
 								nimln(431, "semparallel.nim");
-								if (((TMP8015[(*it_404125).kind/8] &(1<<((*it_404125).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8016));
+								if (((TMP8016[(*it_404125).kind/8] &(1<<((*it_404125).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP8017));
 								LOC32 = 0;
 								LOC32 = len_190097(it_404125);
-								TMP8065 = subInt(LOC32, ((NI) 1));
-								if ((NU)((NI)(TMP8065)) >= (NU)((*it_404125).kindU.S6.sons->Sup.len)) raiseIndexError();
-								asgnRefNoCycle((void**) (&(*it_404125).kindU.S6.sons->data[(NI)(TMP8065)]), wrapprocforspawn_358607(owner, m, (*b).typ, barrier, NIM_NIL));
+								TMP8066 = subInt(LOC32, ((NI) 1));
+								if ((NU)((NI)(TMP8066)) >= (NU)((*it_404125).kindU.S6.sons->Sup.len)) raiseIndexError();
+								asgnRefNoCycle((void**) (&(*it_404125).kindU.S6.sons->data[(NI)(TMP8066)]), wrapprocforspawn_358607(owner, m, (*b).typ, barrier, NIM_NIL));
 							}
 							LA23: ;
 						}
 						LA10: ;
 						nimln(1619, "system.nim");
-						TMP8066 = addInt(res_404212, ((NI) 1));
-						res_404212 = (NI)(TMP8066);
+						TMP8067 = addInt(res_404212, ((NI) 1));
+						res_404212 = (NI)(TMP8067);
 					} LA6: ;
 				}
 			}
@@ -3036,7 +3036,7 @@ N_NIMCALL(Tnode189813*, liftparallel_404254)(Tsym189843* owner, Tnode189813* n) 
 	{
 		if (!(a.spawns == ((NI) 0))) goto LA3;
 		nimln(469, "semparallel.nim");
-		localerror_163166((*n).info, ((NimStringDesc*) &TMP8067));
+		localerror_163166((*n).info, ((NimStringDesc*) &TMP8068));
 	}
 	LA3: ;
 	nimln(470, "semparallel.nim");
@@ -3047,11 +3047,11 @@ N_NIMCALL(Tnode189813*, liftparallel_404254)(Tsym189843* owner, Tnode189813* n) 
 	varsection = newnodei_191351(((NU8) 99), (*n).info);
 	nimln(474, "semparallel.nim");
 	LOC5 = 0;
-	LOC5 = getident_165463(((NimStringDesc*) &TMP8068));
+	LOC5 = getident_165463(((NimStringDesc*) &TMP8069));
 	temp = newsym_190655(((NU8) 5), LOC5, owner, (*n).info);
 	nimln(475, "semparallel.nim");
 	LOC6 = 0;
-	LOC6 = getcompilerproc_237036(((NimStringDesc*) &TMP8069));
+	LOC6 = getcompilerproc_237036(((NimStringDesc*) &TMP8070));
 	asgnRefNoCycle((void**) (&(*temp).typ), (*LOC6).typ);
 	nimln(476, "semparallel.nim");
 	(*temp).flags |= ((NI32)1)<<((((NU8) 2))%(sizeof(NI32)*8));
@@ -3069,7 +3069,7 @@ N_NIMCALL(Tnode189813*, liftparallel_404254)(Tsym189843* owner, Tnode189813* n) 
 	add_190164(result, varsection);
 	nimln(484, "semparallel.nim");
 	LOC7 = 0;
-	LOC7 = callcodegenproc_357886(((NimStringDesc*) &TMP8070), barrier, NIM_NIL, NIM_NIL);
+	LOC7 = callcodegenproc_357886(((NimStringDesc*) &TMP8071), barrier, NIM_NIL, NIM_NIL);
 	add_190164(result, LOC7);
 	nimln(485, "semparallel.nim");
 	LOC8 = 0;
@@ -3077,7 +3077,7 @@ N_NIMCALL(Tnode189813*, liftparallel_404254)(Tsym189843* owner, Tnode189813* n) 
 	add_190164(result, LOC8);
 	nimln(486, "semparallel.nim");
 	LOC9 = 0;
-	LOC9 = callcodegenproc_357886(((NimStringDesc*) &TMP8071), barrier, NIM_NIL, NIM_NIL);
+	LOC9 = callcodegenproc_357886(((NimStringDesc*) &TMP8072), barrier, NIM_NIL, NIM_NIL);
 	add_190164(result, LOC9);
 	popFrame();
 	return result;
@@ -3085,112 +3085,112 @@ N_NIMCALL(Tnode189813*, liftparallel_404254)(Tsym189843* owner, Tnode189813* n) 
 NIM_EXTERNC N_NOINLINE(void, compiler_semparallelInit)(void) {
 	nimfr("semparallel", "semparallel.nim")
 	nimln(77, "semparallel.nim");
-	asgnRefNoCycle((void**) (&opslice_402055), createmagic_194987(((NimStringDesc*) &TMP8005), ((NU16) 150)));
+	asgnRefNoCycle((void**) (&opslice_402055), createmagic_194987(((NimStringDesc*) &TMP8006), ((NU16) 150)));
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_semparallelDatInit)(void) {
-static TNimNode* TMP8006[7];
-static TNimNode* TMP8007[2];
-NI TMP8009;
-static char* NIM_CONST TMP8008[2] = {
+static TNimNode* TMP8007[7];
+static TNimNode* TMP8008[2];
+NI TMP8010;
+static char* NIM_CONST TMP8009[2] = {
 "ascending", 
 "descending"};
-static TNimNode* TMP8011[5];
-static TNimNode TMP8003[17];
+static TNimNode* TMP8012[5];
+static TNimNode TMP8004[17];
 NTI402024.size = sizeof(Monotonicvar402024);
 NTI402024.kind = 18;
 NTI402024.base = 0;
 NTI402024.flags = 2;
-TMP8006[0] = &TMP8003[1];
-TMP8003[1].kind = 1;
-TMP8003[1].offset = offsetof(Monotonicvar402024, v);
-TMP8003[1].typ = (&NTI189811);
-TMP8003[1].name = "v";
-TMP8006[1] = &TMP8003[2];
-TMP8003[2].kind = 1;
-TMP8003[2].offset = offsetof(Monotonicvar402024, alias);
-TMP8003[2].typ = (&NTI189811);
-TMP8003[2].name = "alias";
-TMP8006[2] = &TMP8003[3];
-TMP8003[3].kind = 1;
-TMP8003[3].offset = offsetof(Monotonicvar402024, lower);
-TMP8003[3].typ = (&NTI189805);
-TMP8003[3].name = "lower";
-TMP8006[3] = &TMP8003[4];
-TMP8003[4].kind = 1;
-TMP8003[4].offset = offsetof(Monotonicvar402024, upper);
-TMP8003[4].typ = (&NTI189805);
-TMP8003[4].name = "upper";
-TMP8006[4] = &TMP8003[5];
-TMP8003[5].kind = 1;
-TMP8003[5].offset = offsetof(Monotonicvar402024, stride);
-TMP8003[5].typ = (&NTI189805);
-TMP8003[5].name = "stride";
-TMP8006[5] = &TMP8003[6];
+TMP8007[0] = &TMP8004[1];
+TMP8004[1].kind = 1;
+TMP8004[1].offset = offsetof(Monotonicvar402024, v);
+TMP8004[1].typ = (&NTI189811);
+TMP8004[1].name = "v";
+TMP8007[1] = &TMP8004[2];
+TMP8004[2].kind = 1;
+TMP8004[2].offset = offsetof(Monotonicvar402024, alias);
+TMP8004[2].typ = (&NTI189811);
+TMP8004[2].name = "alias";
+TMP8007[2] = &TMP8004[3];
+TMP8004[3].kind = 1;
+TMP8004[3].offset = offsetof(Monotonicvar402024, lower);
+TMP8004[3].typ = (&NTI189805);
+TMP8004[3].name = "lower";
+TMP8007[3] = &TMP8004[4];
+TMP8004[4].kind = 1;
+TMP8004[4].offset = offsetof(Monotonicvar402024, upper);
+TMP8004[4].typ = (&NTI189805);
+TMP8004[4].name = "upper";
+TMP8007[4] = &TMP8004[5];
+TMP8004[5].kind = 1;
+TMP8004[5].offset = offsetof(Monotonicvar402024, stride);
+TMP8004[5].typ = (&NTI189805);
+TMP8004[5].name = "stride";
+TMP8007[5] = &TMP8004[6];
 NTI402022.size = sizeof(NU8);
 NTI402022.kind = 14;
 NTI402022.base = 0;
 NTI402022.flags = 3;
-for (TMP8009 = 0; TMP8009 < 2; TMP8009++) {
-TMP8003[TMP8009+7].kind = 1;
-TMP8003[TMP8009+7].offset = TMP8009;
-TMP8003[TMP8009+7].name = TMP8008[TMP8009];
-TMP8007[TMP8009] = &TMP8003[TMP8009+7];
+for (TMP8010 = 0; TMP8010 < 2; TMP8010++) {
+TMP8004[TMP8010+7].kind = 1;
+TMP8004[TMP8010+7].offset = TMP8010;
+TMP8004[TMP8010+7].name = TMP8009[TMP8010];
+TMP8008[TMP8010] = &TMP8004[TMP8010+7];
 }
-TMP8003[9].len = 2; TMP8003[9].kind = 2; TMP8003[9].sons = &TMP8007[0];
-NTI402022.node = &TMP8003[9];
-TMP8003[6].kind = 1;
-TMP8003[6].offset = offsetof(Monotonicvar402024, dir);
-TMP8003[6].typ = (&NTI402022);
-TMP8003[6].name = "dir";
-TMP8006[6] = &TMP8003[10];
-TMP8003[10].kind = 1;
-TMP8003[10].offset = offsetof(Monotonicvar402024, blacklisted);
-TMP8003[10].typ = (&NTI138);
-TMP8003[10].name = "blacklisted";
-TMP8003[0].len = 7; TMP8003[0].kind = 2; TMP8003[0].sons = &TMP8006[0];
-NTI402024.node = &TMP8003[0];
+TMP8004[9].len = 2; TMP8004[9].kind = 2; TMP8004[9].sons = &TMP8008[0];
+NTI402022.node = &TMP8004[9];
+TMP8004[6].kind = 1;
+TMP8004[6].offset = offsetof(Monotonicvar402024, dir);
+TMP8004[6].typ = (&NTI402022);
+TMP8004[6].name = "dir";
+TMP8007[6] = &TMP8004[10];
+TMP8004[10].kind = 1;
+TMP8004[10].offset = offsetof(Monotonicvar402024, blacklisted);
+TMP8004[10].typ = (&NTI138);
+TMP8004[10].name = "blacklisted";
+TMP8004[0].len = 7; TMP8004[0].kind = 2; TMP8004[0].sons = &TMP8007[0];
+NTI402024.node = &TMP8004[0];
 NTI402036.size = sizeof(TY402036*);
 NTI402036.kind = 24;
 NTI402036.base = (&NTI402024);
 NTI402036.flags = 2;
-NTI402036.marker = TMP8010;
+NTI402036.marker = TMP8011;
 NTI402039.size = sizeof(TY402039);
 NTI402039.kind = 18;
 NTI402039.base = 0;
 NTI402039.flags = 2;
-TMP8011[0] = &TMP8003[12];
-TMP8003[12].kind = 1;
-TMP8003[12].offset = offsetof(TY402039, Field0);
-TMP8003[12].typ = (&NTI189805);
-TMP8003[12].name = "Field0";
-TMP8011[1] = &TMP8003[13];
-TMP8003[13].kind = 1;
-TMP8003[13].offset = offsetof(TY402039, Field1);
-TMP8003[13].typ = (&NTI189805);
-TMP8003[13].name = "Field1";
-TMP8011[2] = &TMP8003[14];
-TMP8003[14].kind = 1;
-TMP8003[14].offset = offsetof(TY402039, Field2);
-TMP8003[14].typ = (&NTI189805);
-TMP8003[14].name = "Field2";
-TMP8011[3] = &TMP8003[15];
-TMP8003[15].kind = 1;
-TMP8003[15].offset = offsetof(TY402039, Field3);
-TMP8003[15].typ = (&NTI108);
-TMP8003[15].name = "Field3";
-TMP8011[4] = &TMP8003[16];
-TMP8003[16].kind = 1;
-TMP8003[16].offset = offsetof(TY402039, Field4);
-TMP8003[16].typ = (&NTI138);
-TMP8003[16].name = "Field4";
-TMP8003[11].len = 5; TMP8003[11].kind = 2; TMP8003[11].sons = &TMP8011[0];
-NTI402039.node = &TMP8003[11];
+TMP8012[0] = &TMP8004[12];
+TMP8004[12].kind = 1;
+TMP8004[12].offset = offsetof(TY402039, Field0);
+TMP8004[12].typ = (&NTI189805);
+TMP8004[12].name = "Field0";
+TMP8012[1] = &TMP8004[13];
+TMP8004[13].kind = 1;
+TMP8004[13].offset = offsetof(TY402039, Field1);
+TMP8004[13].typ = (&NTI189805);
+TMP8004[13].name = "Field1";
+TMP8012[2] = &TMP8004[14];
+TMP8004[14].kind = 1;
+TMP8004[14].offset = offsetof(TY402039, Field2);
+TMP8004[14].typ = (&NTI189805);
+TMP8004[14].name = "Field2";
+TMP8012[3] = &TMP8004[15];
+TMP8004[15].kind = 1;
+TMP8004[15].offset = offsetof(TY402039, Field3);
+TMP8004[15].typ = (&NTI108);
+TMP8004[15].name = "Field3";
+TMP8012[4] = &TMP8004[16];
+TMP8004[16].kind = 1;
+TMP8004[16].offset = offsetof(TY402039, Field4);
+TMP8004[16].typ = (&NTI138);
+TMP8004[16].name = "Field4";
+TMP8004[11].len = 5; TMP8004[11].kind = 2; TMP8004[11].sons = &TMP8012[0];
+NTI402039.node = &TMP8004[11];
 NTI402038.size = sizeof(TY402038*);
 NTI402038.kind = 24;
 NTI402038.base = (&NTI402039);
 NTI402038.flags = 2;
-NTI402038.marker = TMP8012;
+NTI402038.marker = TMP8013;
 }
 

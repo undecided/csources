@@ -325,12 +325,12 @@ N_NIMCALL(void, processswitch_176725)(NU8 pass, Optparser174011* p);
 static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
 N_NIMCALL(NIM_BOOL, processargument_176738)(NU8 pass, Optparser174011* p, NI* argscount);
 N_NIMCALL(NimStringDesc*, npocmdLineRest)(Optparser174011* p);
-STRING_LITERAL(TMP1855, "Nim Compiler Version $1 (2015-10-12) [$2: $3]\012Copyright (c) 200"
+STRING_LITERAL(TMP1856, "Nim Compiler Version $1 (2015-10-12) [$2: $3]\012Copyright (c) 200"
 "6-2015 by Andreas Rumpf\012", 87);
-STRING_LITERAL(TMP1856, "0.11.2", 6);
+STRING_LITERAL(TMP1857, "0.11.2", 6);
 extern NIM_CONST TY158071 Os_158070;
 extern NIM_CONST TY158497 Cpu_158496;
-STRING_LITERAL(TMP1857, "::\012\012    nim command [options] [projectfile] [arguments]\012\012Comman"
+STRING_LITERAL(TMP1858, "::\012\012    nim command [options] [projectfile] [arguments]\012\012Comman"
 "d:\012  compile, c                compile project with default code"
 " generator (C)\012  doc                       generate the document"
 "ation for inputfile\012  doc2                      generate the doc"
@@ -362,7 +362,7 @@ STRING_LITERAL(TMP1857, "::\012\012    nim command [options] [projectfile] [argu
 "nced                show advanced command line switches\012  -h, --"
 "help                show this help\012\012Note, single letter options "
 "that take an argument require a colon. E.g. -p:PATH.\012", 2036);
-STRING_LITERAL(TMP1858, "Advanced commands:\012  compileToC, cc          compile project wi"
+STRING_LITERAL(TMP1859, "Advanced commands:\012  compileToC, cc          compile project wi"
 "th C code generator\012  compileToCpp, cpp       compile project to"
 " C++ code\012  compileToOC, objc       compile project to Objective"
 " C code\012  js                      compile project to Javascript\012"
@@ -437,31 +437,30 @@ STRING_LITERAL(TMP1858, "Advanced commands:\012  compileToC, cc          compile
 "t Nim\'s verbosity level (1 is default)\012  --experimental         "
 "   enable experimental language features\012  -v, --version        "
 "     show detailed version information\012", 4774);
-STRING_LITERAL(TMP1859, "git hash: 25abdc2d153e3c0b03200781a48a4f12207eb43b", 50);
-STRING_LITERAL(TMP1860, "active boot switches:", 21);
-STRING_LITERAL(TMP1861, "-", 1);
-STRING_LITERAL(TMP1862, "--", 2);
-STRING_LITERAL(TMP1863, " ", 1);
-STRING_LITERAL(TMP1864, "", 0);
-STRING_LITERAL(TMP1873, "Success", 7);
-STRING_LITERAL(TMP1874, "SuccessX", 8);
-STRING_LITERAL(TMP1875, "LineTooLong", 11);
-STRING_LITERAL(TMP1876, "XDeclaredButNotUsed", 19);
-STRING_LITERAL(TMP1877, "ConvToBaseNotNeeded", 19);
-STRING_LITERAL(TMP1878, "ConvFromXtoItselfNotNeeded", 26);
-STRING_LITERAL(TMP1879, "ExprAlwaysX", 11);
-STRING_LITERAL(TMP1880, "QuitCalled", 10);
-STRING_LITERAL(TMP1881, "Processing", 10);
-STRING_LITERAL(TMP1882, "CodeBegin", 9);
-STRING_LITERAL(TMP1883, "CodeEnd", 7);
-STRING_LITERAL(TMP1884, "Conf", 4);
-STRING_LITERAL(TMP1885, "Path", 4);
-STRING_LITERAL(TMP1886, "CondTrue", 8);
-STRING_LITERAL(TMP1887, "Name", 4);
-STRING_LITERAL(TMP1888, "Pattern", 7);
-STRING_LITERAL(TMP1889, "User", 4);
-NIM_CONST TY162302 TMP1872 = {((NimStringDesc*) &TMP1873),
-((NimStringDesc*) &TMP1874),
+STRING_LITERAL(TMP1860, "git hash: 5ca2e7e6870744ac15ad7c62ced04a3f2c029ca1", 50);
+STRING_LITERAL(TMP1861, "active boot switches:", 21);
+STRING_LITERAL(TMP1862, "-", 1);
+STRING_LITERAL(TMP1863, "--", 2);
+STRING_LITERAL(TMP1864, " ", 1);
+STRING_LITERAL(TMP1865, "", 0);
+STRING_LITERAL(TMP1874, "Success", 7);
+STRING_LITERAL(TMP1875, "SuccessX", 8);
+STRING_LITERAL(TMP1876, "LineTooLong", 11);
+STRING_LITERAL(TMP1877, "XDeclaredButNotUsed", 19);
+STRING_LITERAL(TMP1878, "ConvToBaseNotNeeded", 19);
+STRING_LITERAL(TMP1879, "ConvFromXtoItselfNotNeeded", 26);
+STRING_LITERAL(TMP1880, "ExprAlwaysX", 11);
+STRING_LITERAL(TMP1881, "QuitCalled", 10);
+STRING_LITERAL(TMP1882, "Processing", 10);
+STRING_LITERAL(TMP1883, "CodeBegin", 9);
+STRING_LITERAL(TMP1884, "CodeEnd", 7);
+STRING_LITERAL(TMP1885, "Conf", 4);
+STRING_LITERAL(TMP1886, "Path", 4);
+STRING_LITERAL(TMP1887, "CondTrue", 8);
+STRING_LITERAL(TMP1888, "Name", 4);
+STRING_LITERAL(TMP1889, "Pattern", 7);
+STRING_LITERAL(TMP1890, "User", 4);
+NIM_CONST TY162302 TMP1873 = {((NimStringDesc*) &TMP1874),
 ((NimStringDesc*) &TMP1875),
 ((NimStringDesc*) &TMP1876),
 ((NimStringDesc*) &TMP1877),
@@ -476,41 +475,41 @@ NIM_CONST TY162302 TMP1872 = {((NimStringDesc*) &TMP1873),
 ((NimStringDesc*) &TMP1886),
 ((NimStringDesc*) &TMP1887),
 ((NimStringDesc*) &TMP1888),
-((NimStringDesc*) &TMP1889)}
+((NimStringDesc*) &TMP1889),
+((NimStringDesc*) &TMP1890)}
 ;
-STRING_LITERAL(TMP1891, "unknown hint: ", 14);
-STRING_LITERAL(TMP1893, "CannotOpenFile", 14);
-STRING_LITERAL(TMP1894, "OctalEscape", 11);
-STRING_LITERAL(TMP1895, "XIsNeverRead", 12);
-STRING_LITERAL(TMP1896, "XmightNotBeenInit", 17);
-STRING_LITERAL(TMP1897, "Deprecated", 10);
-STRING_LITERAL(TMP1898, "ConfigDeprecated", 16);
-STRING_LITERAL(TMP1899, "SmallLshouldNotBeUsed", 21);
-STRING_LITERAL(TMP1900, "UnknownMagic", 12);
-STRING_LITERAL(TMP1901, "RedefinitionOfLabel", 19);
-STRING_LITERAL(TMP1902, "UnknownSubstitutionX", 20);
-STRING_LITERAL(TMP1903, "LanguageXNotSupported", 21);
-STRING_LITERAL(TMP1904, "FieldXNotSupported", 18);
-STRING_LITERAL(TMP1905, "CommentXIgnored", 15);
-STRING_LITERAL(TMP1906, "NilStmt", 7);
-STRING_LITERAL(TMP1907, "TypelessParam", 13);
-STRING_LITERAL(TMP1908, "DifferentHeaps", 14);
-STRING_LITERAL(TMP1909, "WriteToForeignHeap", 18);
-STRING_LITERAL(TMP1910, "UnsafeCode", 10);
-STRING_LITERAL(TMP1911, "EachIdentIsTuple", 16);
-STRING_LITERAL(TMP1912, "ShadowIdent", 11);
-STRING_LITERAL(TMP1913, "ProveInit", 9);
-STRING_LITERAL(TMP1914, "ProveField", 10);
-STRING_LITERAL(TMP1915, "ProveIndex", 10);
-STRING_LITERAL(TMP1916, "GcUnsafe", 8);
-STRING_LITERAL(TMP1917, "GcUnsafe2", 9);
-STRING_LITERAL(TMP1918, "Uninit", 6);
-STRING_LITERAL(TMP1919, "GcMem", 5);
-STRING_LITERAL(TMP1920, "Destructor", 10);
-STRING_LITERAL(TMP1921, "LockLevel", 9);
-STRING_LITERAL(TMP1922, "ResultShadowed", 14);
-NIM_CONST TY162297 TMP1892 = {((NimStringDesc*) &TMP1893),
-((NimStringDesc*) &TMP1894),
+STRING_LITERAL(TMP1892, "unknown hint: ", 14);
+STRING_LITERAL(TMP1894, "CannotOpenFile", 14);
+STRING_LITERAL(TMP1895, "OctalEscape", 11);
+STRING_LITERAL(TMP1896, "XIsNeverRead", 12);
+STRING_LITERAL(TMP1897, "XmightNotBeenInit", 17);
+STRING_LITERAL(TMP1898, "Deprecated", 10);
+STRING_LITERAL(TMP1899, "ConfigDeprecated", 16);
+STRING_LITERAL(TMP1900, "SmallLshouldNotBeUsed", 21);
+STRING_LITERAL(TMP1901, "UnknownMagic", 12);
+STRING_LITERAL(TMP1902, "RedefinitionOfLabel", 19);
+STRING_LITERAL(TMP1903, "UnknownSubstitutionX", 20);
+STRING_LITERAL(TMP1904, "LanguageXNotSupported", 21);
+STRING_LITERAL(TMP1905, "FieldXNotSupported", 18);
+STRING_LITERAL(TMP1906, "CommentXIgnored", 15);
+STRING_LITERAL(TMP1907, "NilStmt", 7);
+STRING_LITERAL(TMP1908, "TypelessParam", 13);
+STRING_LITERAL(TMP1909, "DifferentHeaps", 14);
+STRING_LITERAL(TMP1910, "WriteToForeignHeap", 18);
+STRING_LITERAL(TMP1911, "UnsafeCode", 10);
+STRING_LITERAL(TMP1912, "EachIdentIsTuple", 16);
+STRING_LITERAL(TMP1913, "ShadowIdent", 11);
+STRING_LITERAL(TMP1914, "ProveInit", 9);
+STRING_LITERAL(TMP1915, "ProveField", 10);
+STRING_LITERAL(TMP1916, "ProveIndex", 10);
+STRING_LITERAL(TMP1917, "GcUnsafe", 8);
+STRING_LITERAL(TMP1918, "GcUnsafe2", 9);
+STRING_LITERAL(TMP1919, "Uninit", 6);
+STRING_LITERAL(TMP1920, "GcMem", 5);
+STRING_LITERAL(TMP1921, "Destructor", 10);
+STRING_LITERAL(TMP1922, "LockLevel", 9);
+STRING_LITERAL(TMP1923, "ResultShadowed", 14);
+NIM_CONST TY162297 TMP1893 = {((NimStringDesc*) &TMP1894),
 ((NimStringDesc*) &TMP1895),
 ((NimStringDesc*) &TMP1896),
 ((NimStringDesc*) &TMP1897),
@@ -539,150 +538,151 @@ NIM_CONST TY162297 TMP1892 = {((NimStringDesc*) &TMP1893),
 ((NimStringDesc*) &TMP1920),
 ((NimStringDesc*) &TMP1921),
 ((NimStringDesc*) &TMP1922),
-((NimStringDesc*) &TMP1889)}
+((NimStringDesc*) &TMP1923),
+((NimStringDesc*) &TMP1890)}
 ;
-STRING_LITERAL(TMP1924, "unknown warning: ", 17);
-STRING_LITERAL(TMP1925, "gc", 2);
-STRING_LITERAL(TMP1926, "opt", 3);
-STRING_LITERAL(TMP1927, "boehm", 5);
-STRING_LITERAL(TMP1928, "refc", 4);
-STRING_LITERAL(TMP1929, "v2", 2);
-STRING_LITERAL(TMP1930, "markandsweep", 12);
-STRING_LITERAL(TMP1931, "generational", 12);
-STRING_LITERAL(TMP1932, "none", 4);
-STRING_LITERAL(TMP1933, "speed", 5);
-STRING_LITERAL(TMP1934, "size", 4);
-STRING_LITERAL(TMP1935, "debuginfo", 9);
-STRING_LITERAL(TMP1936, "compileonly", 11);
-STRING_LITERAL(TMP1937, "c", 1);
-STRING_LITERAL(TMP1938, "nolinking", 9);
-STRING_LITERAL(TMP1939, "nomain", 6);
-STRING_LITERAL(TMP1940, "forcebuild", 10);
-STRING_LITERAL(TMP1941, "f", 1);
-STRING_LITERAL(TMP1942, "warnings", 8);
-STRING_LITERAL(TMP1943, "w", 1);
-STRING_LITERAL(TMP1944, "hints", 5);
-STRING_LITERAL(TMP1945, "threadanalysis", 14);
-STRING_LITERAL(TMP1946, "stacktrace", 10);
-STRING_LITERAL(TMP1947, "linetrace", 9);
-STRING_LITERAL(TMP1948, "debugger", 8);
-STRING_LITERAL(TMP1949, "profiler", 8);
-STRING_LITERAL(TMP1950, "checks", 6);
-STRING_LITERAL(TMP1951, "x", 1);
-STRING_LITERAL(TMP1952, "floatchecks", 11);
-STRING_LITERAL(TMP1953, "infchecks", 9);
-STRING_LITERAL(TMP1954, "nanchecks", 9);
-STRING_LITERAL(TMP1955, "objchecks", 9);
-STRING_LITERAL(TMP1956, "fieldchecks", 11);
-STRING_LITERAL(TMP1957, "rangechecks", 11);
-STRING_LITERAL(TMP1958, "boundchecks", 11);
-STRING_LITERAL(TMP1959, "overflowchecks", 14);
-STRING_LITERAL(TMP1960, "linedir", 7);
-STRING_LITERAL(TMP1961, "assertions", 10);
-STRING_LITERAL(TMP1962, "a", 1);
-STRING_LITERAL(TMP1963, "deadcodeelim", 12);
-STRING_LITERAL(TMP1964, "run", 3);
-STRING_LITERAL(TMP1965, "r", 1);
-STRING_LITERAL(TMP1966, "symbolfiles", 11);
-STRING_LITERAL(TMP1967, "genscript", 9);
-STRING_LITERAL(TMP1968, "threads", 7);
-STRING_LITERAL(TMP1969, "taintmode", 9);
-STRING_LITERAL(TMP1970, "tlsemulation", 12);
-STRING_LITERAL(TMP1971, "implicitstatic", 14);
-STRING_LITERAL(TMP1972, "patterns", 8);
-STRING_LITERAL(TMP1973, "experimental", 12);
-STRING_LITERAL(TMP1974, "nimrod", 6);
-STRING_LITERAL(TMP1975, "nim", 3);
-STRING_LITERAL(TMP1976, "lib", 3);
-STRING_LITERAL(TMP1977, "home", 4);
-STRING_LITERAL(TMP1978, "projectname", 11);
-STRING_LITERAL(TMP1979, "projectpath", 11);
-STRING_LITERAL(TMP1984, "DIRTY_BUFFER,ORIGINAL_FILE,LINE,COLUMN", 38);
-STRING_LITERAL(TMP1985, "FILE,LINE,COLUMN", 16);
-STRING_LITERAL(TMP1986, "path", 4);
-STRING_LITERAL(TMP1987, "p", 1);
-STRING_LITERAL(TMP1988, "nimblepath", 10);
-STRING_LITERAL(TMP1989, "babelpath", 9);
-STRING_LITERAL(TMP1990, "nonimblepath", 12);
-STRING_LITERAL(TMP1991, "nobabelpath", 11);
-STRING_LITERAL(TMP1992, "excludepath", 11);
-STRING_LITERAL(TMP1993, "nimcache", 8);
-STRING_LITERAL(TMP1994, "out", 3);
-STRING_LITERAL(TMP1995, "o", 1);
-STRING_LITERAL(TMP1996, "docseesrcurl", 12);
-STRING_LITERAL(TMP1997, "mainmodule", 10);
-STRING_LITERAL(TMP1998, "m", 1);
-STRING_LITERAL(TMP1999, "define", 6);
-STRING_LITERAL(TMP2000, "d", 1);
-STRING_LITERAL(TMP2001, "undef", 5);
-STRING_LITERAL(TMP2002, "u", 1);
-STRING_LITERAL(TMP2003, "symbol", 6);
-STRING_LITERAL(TMP2004, "compile", 7);
-STRING_LITERAL(TMP2005, "link", 4);
-STRING_LITERAL(TMP2006, "embedsrc", 8);
-STRING_LITERAL(TMP2007, "project", 7);
-STRING_LITERAL(TMP2008, "warning", 7);
-STRING_LITERAL(TMP2009, "hint", 4);
-STRING_LITERAL(TMP2010, "app", 3);
-STRING_LITERAL(TMP2011, "passc", 5);
-STRING_LITERAL(TMP2012, "t", 1);
-STRING_LITERAL(TMP2013, "passl", 5);
-STRING_LITERAL(TMP2014, "l", 1);
-STRING_LITERAL(TMP2015, "cincludes", 9);
-STRING_LITERAL(TMP2016, "clibdir", 7);
-STRING_LITERAL(TMP2017, "clib", 4);
-STRING_LITERAL(TMP2018, "header", 6);
-STRING_LITERAL(TMP2019, "index", 5);
-STRING_LITERAL(TMP2020, "import", 6);
-STRING_LITERAL(TMP2021, "include", 7);
-STRING_LITERAL(TMP2022, "listcmd", 7);
-STRING_LITERAL(TMP2023, "genmapping", 10);
-STRING_LITERAL(TMP2024, "os", 2);
-STRING_LITERAL(TMP2025, "cpu", 3);
-STRING_LITERAL(TMP2026, "verbosity", 9);
-STRING_LITERAL(TMP2027, "parallelbuild", 13);
-STRING_LITERAL(TMP2028, "version", 7);
-STRING_LITERAL(TMP2029, "v", 1);
-STRING_LITERAL(TMP2030, "advanced", 8);
-STRING_LITERAL(TMP2031, "help", 4);
-STRING_LITERAL(TMP2032, "h", 1);
-STRING_LITERAL(TMP2033, "skipcfg", 7);
-STRING_LITERAL(TMP2034, "skipprojcfg", 11);
-STRING_LITERAL(TMP2035, "skipusercfg", 11);
-STRING_LITERAL(TMP2036, "skipparentcfg", 13);
-STRING_LITERAL(TMP2037, "putenv", 6);
-STRING_LITERAL(TMP2038, "cc", 2);
-STRING_LITERAL(TMP2039, "track", 5);
-STRING_LITERAL(TMP2040, "trackdirty", 10);
-STRING_LITERAL(TMP2041, "suggest", 7);
-STRING_LITERAL(TMP2042, "def", 3);
-STRING_LITERAL(TMP2043, "eval", 4);
-STRING_LITERAL(TMP2044, "context", 7);
-STRING_LITERAL(TMP2045, "usages", 6);
-STRING_LITERAL(TMP2046, "stdout", 6);
-STRING_LITERAL(TMP2047, "listfullpaths", 13);
-STRING_LITERAL(TMP2048, "dynliboverride", 14);
-STRING_LITERAL(TMP2049, "cs", 2);
-STRING_LITERAL(TMP2052, "boehmgc", 7);
-STRING_LITERAL(TMP2053, "gcmarkandsweep", 14);
-STRING_LITERAL(TMP2054, "gcgenerational", 14);
-STRING_LITERAL(TMP2055, "nogc", 4);
-STRING_LITERAL(TMP2056, "on", 2);
-STRING_LITERAL(TMP2057, "endb", 4);
-STRING_LITERAL(TMP2058, "off", 3);
-STRING_LITERAL(TMP2059, "native", 6);
-STRING_LITERAL(TMP2060, "gdb", 3);
-STRING_LITERAL(TMP2061, "expected endb|gdb but found ", 28);
-STRING_LITERAL(TMP2062, "gui", 3);
-STRING_LITERAL(TMP2063, "console", 7);
-STRING_LITERAL(TMP2064, "staticlib", 9);
-STRING_LITERAL(TMP2065, "executable", 10);
-STRING_LITERAL(TMP2066, "guiapp", 6);
-STRING_LITERAL(TMP2067, "consoleapp", 10);
-STRING_LITERAL(TMP2068, "library", 7);
-STRING_LITERAL(TMP2069, "dll", 3);
-STRING_LITERAL(TMP2070, "partial", 7);
-STRING_LITERAL(TMP2071, "\'partial\' or \'none\' expected, but found ", 40);
+STRING_LITERAL(TMP1925, "unknown warning: ", 17);
+STRING_LITERAL(TMP1926, "gc", 2);
+STRING_LITERAL(TMP1927, "opt", 3);
+STRING_LITERAL(TMP1928, "boehm", 5);
+STRING_LITERAL(TMP1929, "refc", 4);
+STRING_LITERAL(TMP1930, "v2", 2);
+STRING_LITERAL(TMP1931, "markandsweep", 12);
+STRING_LITERAL(TMP1932, "generational", 12);
+STRING_LITERAL(TMP1933, "none", 4);
+STRING_LITERAL(TMP1934, "speed", 5);
+STRING_LITERAL(TMP1935, "size", 4);
+STRING_LITERAL(TMP1936, "debuginfo", 9);
+STRING_LITERAL(TMP1937, "compileonly", 11);
+STRING_LITERAL(TMP1938, "c", 1);
+STRING_LITERAL(TMP1939, "nolinking", 9);
+STRING_LITERAL(TMP1940, "nomain", 6);
+STRING_LITERAL(TMP1941, "forcebuild", 10);
+STRING_LITERAL(TMP1942, "f", 1);
+STRING_LITERAL(TMP1943, "warnings", 8);
+STRING_LITERAL(TMP1944, "w", 1);
+STRING_LITERAL(TMP1945, "hints", 5);
+STRING_LITERAL(TMP1946, "threadanalysis", 14);
+STRING_LITERAL(TMP1947, "stacktrace", 10);
+STRING_LITERAL(TMP1948, "linetrace", 9);
+STRING_LITERAL(TMP1949, "debugger", 8);
+STRING_LITERAL(TMP1950, "profiler", 8);
+STRING_LITERAL(TMP1951, "checks", 6);
+STRING_LITERAL(TMP1952, "x", 1);
+STRING_LITERAL(TMP1953, "floatchecks", 11);
+STRING_LITERAL(TMP1954, "infchecks", 9);
+STRING_LITERAL(TMP1955, "nanchecks", 9);
+STRING_LITERAL(TMP1956, "objchecks", 9);
+STRING_LITERAL(TMP1957, "fieldchecks", 11);
+STRING_LITERAL(TMP1958, "rangechecks", 11);
+STRING_LITERAL(TMP1959, "boundchecks", 11);
+STRING_LITERAL(TMP1960, "overflowchecks", 14);
+STRING_LITERAL(TMP1961, "linedir", 7);
+STRING_LITERAL(TMP1962, "assertions", 10);
+STRING_LITERAL(TMP1963, "a", 1);
+STRING_LITERAL(TMP1964, "deadcodeelim", 12);
+STRING_LITERAL(TMP1965, "run", 3);
+STRING_LITERAL(TMP1966, "r", 1);
+STRING_LITERAL(TMP1967, "symbolfiles", 11);
+STRING_LITERAL(TMP1968, "genscript", 9);
+STRING_LITERAL(TMP1969, "threads", 7);
+STRING_LITERAL(TMP1970, "taintmode", 9);
+STRING_LITERAL(TMP1971, "tlsemulation", 12);
+STRING_LITERAL(TMP1972, "implicitstatic", 14);
+STRING_LITERAL(TMP1973, "patterns", 8);
+STRING_LITERAL(TMP1974, "experimental", 12);
+STRING_LITERAL(TMP1975, "nimrod", 6);
+STRING_LITERAL(TMP1976, "nim", 3);
+STRING_LITERAL(TMP1977, "lib", 3);
+STRING_LITERAL(TMP1978, "home", 4);
+STRING_LITERAL(TMP1979, "projectname", 11);
+STRING_LITERAL(TMP1980, "projectpath", 11);
+STRING_LITERAL(TMP1985, "DIRTY_BUFFER,ORIGINAL_FILE,LINE,COLUMN", 38);
+STRING_LITERAL(TMP1986, "FILE,LINE,COLUMN", 16);
+STRING_LITERAL(TMP1987, "path", 4);
+STRING_LITERAL(TMP1988, "p", 1);
+STRING_LITERAL(TMP1989, "nimblepath", 10);
+STRING_LITERAL(TMP1990, "babelpath", 9);
+STRING_LITERAL(TMP1991, "nonimblepath", 12);
+STRING_LITERAL(TMP1992, "nobabelpath", 11);
+STRING_LITERAL(TMP1993, "excludepath", 11);
+STRING_LITERAL(TMP1994, "nimcache", 8);
+STRING_LITERAL(TMP1995, "out", 3);
+STRING_LITERAL(TMP1996, "o", 1);
+STRING_LITERAL(TMP1997, "docseesrcurl", 12);
+STRING_LITERAL(TMP1998, "mainmodule", 10);
+STRING_LITERAL(TMP1999, "m", 1);
+STRING_LITERAL(TMP2000, "define", 6);
+STRING_LITERAL(TMP2001, "d", 1);
+STRING_LITERAL(TMP2002, "undef", 5);
+STRING_LITERAL(TMP2003, "u", 1);
+STRING_LITERAL(TMP2004, "symbol", 6);
+STRING_LITERAL(TMP2005, "compile", 7);
+STRING_LITERAL(TMP2006, "link", 4);
+STRING_LITERAL(TMP2007, "embedsrc", 8);
+STRING_LITERAL(TMP2008, "project", 7);
+STRING_LITERAL(TMP2009, "warning", 7);
+STRING_LITERAL(TMP2010, "hint", 4);
+STRING_LITERAL(TMP2011, "app", 3);
+STRING_LITERAL(TMP2012, "passc", 5);
+STRING_LITERAL(TMP2013, "t", 1);
+STRING_LITERAL(TMP2014, "passl", 5);
+STRING_LITERAL(TMP2015, "l", 1);
+STRING_LITERAL(TMP2016, "cincludes", 9);
+STRING_LITERAL(TMP2017, "clibdir", 7);
+STRING_LITERAL(TMP2018, "clib", 4);
+STRING_LITERAL(TMP2019, "header", 6);
+STRING_LITERAL(TMP2020, "index", 5);
+STRING_LITERAL(TMP2021, "import", 6);
+STRING_LITERAL(TMP2022, "include", 7);
+STRING_LITERAL(TMP2023, "listcmd", 7);
+STRING_LITERAL(TMP2024, "genmapping", 10);
+STRING_LITERAL(TMP2025, "os", 2);
+STRING_LITERAL(TMP2026, "cpu", 3);
+STRING_LITERAL(TMP2027, "verbosity", 9);
+STRING_LITERAL(TMP2028, "parallelbuild", 13);
+STRING_LITERAL(TMP2029, "version", 7);
+STRING_LITERAL(TMP2030, "v", 1);
+STRING_LITERAL(TMP2031, "advanced", 8);
+STRING_LITERAL(TMP2032, "help", 4);
+STRING_LITERAL(TMP2033, "h", 1);
+STRING_LITERAL(TMP2034, "skipcfg", 7);
+STRING_LITERAL(TMP2035, "skipprojcfg", 11);
+STRING_LITERAL(TMP2036, "skipusercfg", 11);
+STRING_LITERAL(TMP2037, "skipparentcfg", 13);
+STRING_LITERAL(TMP2038, "putenv", 6);
+STRING_LITERAL(TMP2039, "cc", 2);
+STRING_LITERAL(TMP2040, "track", 5);
+STRING_LITERAL(TMP2041, "trackdirty", 10);
+STRING_LITERAL(TMP2042, "suggest", 7);
+STRING_LITERAL(TMP2043, "def", 3);
+STRING_LITERAL(TMP2044, "eval", 4);
+STRING_LITERAL(TMP2045, "context", 7);
+STRING_LITERAL(TMP2046, "usages", 6);
+STRING_LITERAL(TMP2047, "stdout", 6);
+STRING_LITERAL(TMP2048, "listfullpaths", 13);
+STRING_LITERAL(TMP2049, "dynliboverride", 14);
+STRING_LITERAL(TMP2050, "cs", 2);
+STRING_LITERAL(TMP2053, "boehmgc", 7);
+STRING_LITERAL(TMP2054, "gcmarkandsweep", 14);
+STRING_LITERAL(TMP2055, "gcgenerational", 14);
+STRING_LITERAL(TMP2056, "nogc", 4);
+STRING_LITERAL(TMP2057, "on", 2);
+STRING_LITERAL(TMP2058, "endb", 4);
+STRING_LITERAL(TMP2059, "off", 3);
+STRING_LITERAL(TMP2060, "native", 6);
+STRING_LITERAL(TMP2061, "gdb", 3);
+STRING_LITERAL(TMP2062, "expected endb|gdb but found ", 28);
+STRING_LITERAL(TMP2063, "gui", 3);
+STRING_LITERAL(TMP2064, "console", 7);
+STRING_LITERAL(TMP2065, "staticlib", 9);
+STRING_LITERAL(TMP2066, "executable", 10);
+STRING_LITERAL(TMP2067, "guiapp", 6);
+STRING_LITERAL(TMP2068, "consoleapp", 10);
+STRING_LITERAL(TMP2069, "library", 7);
+STRING_LITERAL(TMP2070, "dll", 3);
+STRING_LITERAL(TMP2071, "partial", 7);
+STRING_LITERAL(TMP2072, "\'partial\' or \'none\' expected, but found ", 40);
 extern NU8 hostos_158603;
 extern NU8 hostcpu_158601;
 extern TFrame* frameptr_17042;
@@ -767,16 +767,16 @@ N_NIMCALL(NimStringDesc*, getcommandlinedesc_175058)(void) {
 	LOC1 = 0;
 	nimln(62, "commands.nim");
 	memset((void*)LOC2, 0, sizeof(LOC2));
-	LOC2[0] = copyString(((NimStringDesc*) &TMP1856));
+	LOC2[0] = copyString(((NimStringDesc*) &TMP1857));
 	if (hostos_158603 < 1 || hostos_158603 > 24) raiseIndexError();
 	LOC2[1] = copyString(Os_158070[(hostos_158603)- 1].Field0);
 	if (hostcpu_158601 < 1 || hostcpu_158601 > 14) raiseIndexError();
 	LOC2[2] = copyString(Cpu_158496[(hostcpu_158601)- 1].Field0);
 	LOC3 = 0;
-	LOC3 = nsuFormatOpenArray(((NimStringDesc*) &TMP1855), LOC2, 3);
+	LOC3 = nsuFormatOpenArray(((NimStringDesc*) &TMP1856), LOC2, 3);
 	LOC1 = rawNewString(LOC3->Sup.len + 2036);
 appendString(LOC1, LOC3);
-appendString(LOC1, ((NimStringDesc*) &TMP1857));
+appendString(LOC1, ((NimStringDesc*) &TMP1858));
 	result = LOC1;
 	popFrame();
 	return result;
@@ -812,16 +812,16 @@ N_NIMCALL(void, writeadvancedusage_175087)(NU8 pass) {
 		LOC5 = 0;
 		nimln(72, "commands.nim");
 		memset((void*)LOC6, 0, sizeof(LOC6));
-		LOC6[0] = copyString(((NimStringDesc*) &TMP1856));
+		LOC6[0] = copyString(((NimStringDesc*) &TMP1857));
 		if (hostos_158603 < 1 || hostos_158603 > 24) raiseIndexError();
 		LOC6[1] = copyString(Os_158070[(hostos_158603)- 1].Field0);
 		if (hostcpu_158601 < 1 || hostcpu_158601 > 14) raiseIndexError();
 		LOC6[2] = copyString(Cpu_158496[(hostcpu_158601)- 1].Field0);
 		LOC7 = 0;
-		LOC7 = nsuFormatOpenArray(((NimStringDesc*) &TMP1855), LOC6, 3);
+		LOC7 = nsuFormatOpenArray(((NimStringDesc*) &TMP1856), LOC6, 3);
 		LOC5 = rawNewString(LOC7->Sup.len + 4774);
 appendString(LOC5, LOC7);
-appendString(LOC5, ((NimStringDesc*) &TMP1858));
+appendString(LOC5, ((NimStringDesc*) &TMP1859));
 		msgwriteln_163536(LOC5);
 		nimln(75, "commands.nim");
 		msgquit_163104(((NI8) 0));
@@ -839,18 +839,18 @@ N_NIMCALL(void, writeversioninfo_175107)(NU8 pass) {
 		if (!(pass == ((NU8) 0))) goto LA3;
 		nimln(79, "commands.nim");
 		memset((void*)LOC5, 0, sizeof(LOC5));
-		LOC5[0] = copyString(((NimStringDesc*) &TMP1856));
+		LOC5[0] = copyString(((NimStringDesc*) &TMP1857));
 		if (hostos_158603 < 1 || hostos_158603 > 24) raiseIndexError();
 		LOC5[1] = copyString(Os_158070[(hostos_158603)- 1].Field0);
 		if (hostcpu_158601 < 1 || hostcpu_158601 > 14) raiseIndexError();
 		LOC5[2] = copyString(Cpu_158496[(hostcpu_158601)- 1].Field0);
 		LOC6 = 0;
-		LOC6 = nsuFormatOpenArray(((NimStringDesc*) &TMP1855), LOC5, 3);
+		LOC6 = nsuFormatOpenArray(((NimStringDesc*) &TMP1856), LOC5, 3);
 		msgwriteln_163536(LOC6);
 		nimln(85, "commands.nim");
-		msgwriteln_163536(((NimStringDesc*) &TMP1859));
-		nimln(87, "commands.nim");
 		msgwriteln_163536(((NimStringDesc*) &TMP1860));
+		nimln(87, "commands.nim");
+		msgwriteln_163536(((NimStringDesc*) &TMP1861));
 		nimln(90, "commands.nim");
 		msgquit_163104(((NI8) 0));
 	}
@@ -885,7 +885,7 @@ N_NIMCALL(NimStringDesc*, addprefix_175220)(NimStringDesc* switch_175222) {
 		if (!((switch_175222 ? switch_175222->Sup.len : 0) == ((NI) 1))) goto LA3;
 		LOC5 = 0;
 		LOC5 = rawNewString(switch_175222->Sup.len + 1);
-appendString(LOC5, ((NimStringDesc*) &TMP1861));
+appendString(LOC5, ((NimStringDesc*) &TMP1862));
 appendString(LOC5, switch_175222);
 		result = LOC5;
 	}
@@ -896,7 +896,7 @@ appendString(LOC5, switch_175222);
 		nimln(102, "commands.nim");
 		LOC7 = 0;
 		LOC7 = rawNewString(switch_175222->Sup.len + 2);
-appendString(LOC7, ((NimStringDesc*) &TMP1862));
+appendString(LOC7, ((NimStringDesc*) &TMP1863));
 appendString(LOC7, switch_175222);
 		result = LOC7;
 	}
@@ -945,8 +945,8 @@ N_NIMCALL(void, invalidcmdlineoption_175230)(NU8 pass, NimStringDesc* switch_175
 	nimfr("invalidCmdLineOption", "commands.nim")
 	nimln(105, "commands.nim");
 	{
-		if (!eqStrings(switch_175233, ((NimStringDesc*) &TMP1863))) goto LA3;
-		localerror_164155(info, ((NU16) 44), ((NimStringDesc*) &TMP1861));
+		if (!eqStrings(switch_175233, ((NimStringDesc*) &TMP1864))) goto LA3;
+		localerror_164155(info, ((NU16) 44), ((NimStringDesc*) &TMP1862));
 	}
 	goto LA1;
 	LA3: ;
@@ -985,13 +985,13 @@ N_NIMCALL(void, splitswitch_175241)(NimStringDesc* switch_175243, NimStringDesc*
 	NI i;
 	nimfr("splitSwitch", "commands.nim")
 	nimln(110, "commands.nim");
-	unsureAsgnRef((void**) (&(*cmd)), copyString(((NimStringDesc*) &TMP1864)));
+	unsureAsgnRef((void**) (&(*cmd)), copyString(((NimStringDesc*) &TMP1865)));
 	nimln(111, "commands.nim");
 	i = ((NI) 0);
 	nimln(112, "commands.nim");
 	{
 		NIM_BOOL LOC3;
-		NI TMP1865;
+		NI TMP1866;
 		LOC3 = 0;
 		LOC3 = (i < (switch_175243 ? switch_175243->Sup.len : 0));
 		if (!(LOC3)) goto LA4;
@@ -999,14 +999,14 @@ N_NIMCALL(void, splitswitch_175241)(NimStringDesc* switch_175243, NimStringDesc*
 		LOC3 = ((NU8)(switch_175243->data[i]) == (NU8)(45));
 		LA4: ;
 		if (!LOC3) goto LA5;
-		TMP1865 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1865);
+		TMP1866 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1866);
 	}
 	LA5: ;
 	nimln(113, "commands.nim");
 	{
 		NIM_BOOL LOC9;
-		NI TMP1866;
+		NI TMP1867;
 		LOC9 = 0;
 		LOC9 = (i < (switch_175243 ? switch_175243->Sup.len : 0));
 		if (!(LOC9)) goto LA10;
@@ -1014,14 +1014,14 @@ N_NIMCALL(void, splitswitch_175241)(NimStringDesc* switch_175243, NimStringDesc*
 		LOC9 = ((NU8)(switch_175243->data[i]) == (NU8)(45));
 		LA10: ;
 		if (!LOC9) goto LA11;
-		TMP1866 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1866);
+		TMP1867 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1867);
 	}
 	LA11: ;
 	{
 		nimln(114, "commands.nim");
 		while (1) {
-			NI TMP1867;
+			NI TMP1868;
 			if (!(i < (switch_175243 ? switch_175243->Sup.len : 0))) goto LA14;
 			nimln(115, "commands.nim");
 			if ((NU)(i) > (NU)(switch_175243->Sup.len)) raiseIndexError();
@@ -1045,24 +1045,24 @@ N_NIMCALL(void, splitswitch_175241)(NimStringDesc* switch_175243, NimStringDesc*
 			break;
 			}
 			nimln(118, "commands.nim");
-			TMP1867 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1867);
+			TMP1868 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1868);
 		} LA14: ;
 	} LA13: ;
 	nimln(119, "commands.nim");
 	{
 		if (!((switch_175243 ? switch_175243->Sup.len : 0) <= i)) goto LA19;
-		unsureAsgnRef((void**) (&(*arg)), copyString(((NimStringDesc*) &TMP1864)));
+		unsureAsgnRef((void**) (&(*arg)), copyString(((NimStringDesc*) &TMP1865)));
 	}
 	goto LA17;
 	LA19: ;
 	{
-		NI TMP1868;
+		NI TMP1869;
 		nimln(120, "commands.nim");
 		if ((NU)(i) > (NU)(switch_175243->Sup.len)) raiseIndexError();
 		if (!(((NU8)(switch_175243->data[i])) == ((NU8)(58)) || ((NU8)(switch_175243->data[i])) == ((NU8)(61)) || ((NU8)(switch_175243->data[i])) == ((NU8)(91)))) goto LA22;
-		TMP1868 = addInt(i, ((NI) 1));
-		unsureAsgnRef((void**) (&(*arg)), copyStr(switch_175243, (NI)(TMP1868)));
+		TMP1869 = addInt(i, ((NI) 1));
+		unsureAsgnRef((void**) (&(*arg)), copyStr(switch_175243, (NI)(TMP1869)));
 	}
 	goto LA17;
 	LA22: ;
@@ -1192,7 +1192,7 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 	NU16 LOC37;
 	nimfr("processSpecificNote", "commands.nim")
 	nimln(145, "commands.nim");
-	id = copyString(((NimStringDesc*) &TMP1864));
+	id = copyString(((NimStringDesc*) &TMP1865));
 	nimln(146, "commands.nim");
 	i = ((NI) 0);
 	nimln(147, "commands.nim");
@@ -1201,7 +1201,7 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 		nimln(148, "commands.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP1869;
+			NI TMP1870;
 			LOC3 = 0;
 			LOC3 = (i < (arg ? arg->Sup.len : 0));
 			if (!(LOC3)) goto LA4;
@@ -1213,14 +1213,14 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 			if ((NU)(i) > (NU)(arg->Sup.len)) raiseIndexError();
 			id = addChar(id, arg->data[i]);
 			nimln(150, "commands.nim");
-			TMP1869 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1869);
+			TMP1870 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1870);
 		} LA2: ;
 	}
 	nimln(151, "commands.nim");
 	{
 		NIM_BOOL LOC7;
-		NI TMP1870;
+		NI TMP1871;
 		LOC7 = 0;
 		LOC7 = (i < (arg ? arg->Sup.len : 0));
 		if (!(LOC7)) goto LA8;
@@ -1228,8 +1228,8 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 		LOC7 = ((NU8)(arg->data[i]) == (NU8)(93));
 		LA8: ;
 		if (!LOC7) goto LA9;
-		TMP1870 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1870);
+		TMP1871 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1871);
 	}
 	goto LA5;
 	LA9: ;
@@ -1241,7 +1241,7 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 	nimln(153, "commands.nim");
 	{
 		NIM_BOOL LOC14;
-		NI TMP1871;
+		NI TMP1872;
 		LOC14 = 0;
 		LOC14 = (i < (arg ? arg->Sup.len : 0));
 		if (!(LOC14)) goto LA15;
@@ -1249,8 +1249,8 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 		LOC14 = (((NU8)(arg->data[i])) == ((NU8)(58)) || ((NU8)(arg->data[i])) == ((NU8)(61)));
 		LA15: ;
 		if (!LOC14) goto LA16;
-		TMP1871 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1871);
+		TMP1872 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1872);
 	}
 	goto LA12;
 	LA16: ;
@@ -1264,13 +1264,13 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 		NI x;
 		if (!(state == ((NU16) 112))) goto LA21;
 		nimln(156, "commands.nim");
-		x = findstr_171344(TMP1872, 17, id);
+		x = findstr_171344(TMP1873, 17, id);
 		nimln(157, "commands.nim");
 		{
-			NI TMP1890;
+			NI TMP1891;
 			if (!(((NI) 0) <= x)) goto LA25;
-			TMP1890 = addInt(x, ((NI) 261));
-			n = ((NU16) (((NU16)chckRange((NI)(TMP1890), ((NU16) 230), ((NU16) 277)))));
+			TMP1891 = addInt(x, ((NI) 261));
+			n = ((NU16) (((NU16)chckRange((NI)(TMP1891), ((NU16) 230), ((NU16) 277)))));
 		}
 		goto LA23;
 		LA25: ;
@@ -1279,7 +1279,7 @@ N_NIMCALL(void, processspecificnote_175397)(NimStringDesc* arg, NU16 state, NU8 
 			nimln(158, "commands.nim");
 			LOC28 = 0;
 			LOC28 = rawNewString(id->Sup.len + 14);
-appendString(LOC28, ((NimStringDesc*) &TMP1891));
+appendString(LOC28, ((NimStringDesc*) &TMP1892));
 appendString(LOC28, id);
 			localerror_164166(info, LOC28);
 		}
@@ -1290,13 +1290,13 @@ appendString(LOC28, id);
 	{
 		NI x;
 		nimln(160, "commands.nim");
-		x = findstr_171344(TMP1892, 31, id);
+		x = findstr_171344(TMP1893, 31, id);
 		nimln(161, "commands.nim");
 		{
-			NI TMP1923;
+			NI TMP1924;
 			if (!(((NI) 0) <= x)) goto LA32;
-			TMP1923 = addInt(x, ((NI) 230));
-			n = ((NU16) (((NU16)chckRange((NI)(TMP1923), ((NU16) 230), ((NU16) 277)))));
+			TMP1924 = addInt(x, ((NI) 230));
+			n = ((NU16) (((NU16)chckRange((NI)(TMP1924), ((NU16) 230), ((NU16) 277)))));
 		}
 		goto LA30;
 		LA32: ;
@@ -1305,7 +1305,7 @@ appendString(LOC28, id);
 			nimln(162, "commands.nim");
 			LOC35 = 0;
 			LOC35 = rawNewString(id->Sup.len + 17);
-appendString(LOC35, ((NimStringDesc*) &TMP1924));
+appendString(LOC35, ((NimStringDesc*) &TMP1925));
 appendString(LOC35, id);
 			localerror_164166(info, LOC35);
 		}
@@ -1354,7 +1354,7 @@ N_NIMCALL(void, processcompile_175507)(NimStringDesc* filename) {
 	}
 	LA3: ;
 	nimln(171, "commands.nim");
-	trunc = noschangeFileExt(found, ((NimStringDesc*) &TMP1864));
+	trunc = noschangeFileExt(found, ((NimStringDesc*) &TMP1865));
 	nimln(172, "commands.nim");
 	addexternalfiletocompile_170465(found);
 	nimln(173, "commands.nim");
@@ -1372,8 +1372,8 @@ N_NIMCALL(NIM_BOOL, testcompileoptionarg_175518)(NimStringDesc* switch_175520, N
 	nimln(176, "commands.nim");
 	LOC1 = 0;
 	LOC1 = nsuNormalize(switch_175520);
-	if (eqStrings(LOC1, ((NimStringDesc*) &TMP1925))) goto LA2;
-	if (eqStrings(LOC1, ((NimStringDesc*) &TMP1926))) goto LA3;
+	if (eqStrings(LOC1, ((NimStringDesc*) &TMP1926))) goto LA2;
+	if (eqStrings(LOC1, ((NimStringDesc*) &TMP1927))) goto LA3;
 	goto LA4;
 	LA2: ;
 	{
@@ -1381,12 +1381,12 @@ N_NIMCALL(NIM_BOOL, testcompileoptionarg_175518)(NimStringDesc* switch_175520, N
 		nimln(178, "commands.nim");
 		LOC7 = 0;
 		LOC7 = nsuNormalize(arg);
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1927))) goto LA8;
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1928))) goto LA9;
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1929))) goto LA10;
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1930))) goto LA11;
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1931))) goto LA12;
-		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1932))) goto LA13;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1928))) goto LA8;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1929))) goto LA9;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1930))) goto LA10;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1931))) goto LA11;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1932))) goto LA12;
+		if (eqStrings(LOC7, ((NimStringDesc*) &TMP1933))) goto LA13;
 		goto LA14;
 		LA8: ;
 		{
@@ -1438,9 +1438,9 @@ N_NIMCALL(NIM_BOOL, testcompileoptionarg_175518)(NimStringDesc* switch_175520, N
 		nimln(187, "commands.nim");
 		LOC24 = 0;
 		LOC24 = nsuNormalize(arg);
-		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1933))) goto LA25;
-		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1934))) goto LA26;
-		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1932))) goto LA27;
+		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1934))) goto LA25;
+		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1935))) goto LA26;
+		if (eqStrings(LOC24, ((NimStringDesc*) &TMP1933))) goto LA27;
 		goto LA28;
 		LA25: ;
 		{
@@ -1488,101 +1488,101 @@ N_NIMCALL(NIM_BOOL, testcompileoption_175631)(NimStringDesc* switch_175633, Tlin
 	LOC1 = nsuNormalize(switch_175633);
 	switch (hashString(LOC1) & 63) {
 	case 0: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1950))) goto LA14;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1951))) goto LA14;
 break;
 	case 2: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1954))) goto LA17;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1962))) goto LA24;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1955))) goto LA17;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1963))) goto LA24;
 break;
 	case 3: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1947))) goto LA11;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1948))) goto LA11;
 break;
 	case 4: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1949))) goto LA13;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1950))) goto LA13;
 break;
 	case 6: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1959))) goto LA22;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1960))) goto LA22;
 break;
 	case 8: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1939))) goto LA5;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1945))) goto LA9;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1940))) goto LA5;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1946))) goto LA9;
 break;
 	case 12: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1961))) goto LA24;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1962))) goto LA24;
 break;
 	case 14: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1957))) goto LA20;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1972))) goto LA33;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1958))) goto LA20;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1973))) goto LA33;
 break;
 	case 20: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1969))) goto LA30;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1970))) goto LA30;
 break;
 	case 25: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1937))) goto LA3;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1942))) goto LA7;
-break;
-	case 26: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1953))) goto LA16;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1973))) goto LA34;
-break;
-	case 30: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1966))) goto LA27;
-break;
-	case 32: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1938))) goto LA3;
 if (eqStrings(LOC1, ((NimStringDesc*) &TMP1943))) goto LA7;
 break;
+	case 26: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1954))) goto LA16;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1974))) goto LA34;
+break;
+	case 30: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1967))) goto LA27;
+break;
+	case 32: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1944))) goto LA7;
+break;
 	case 33: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1952))) goto LA15;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1953))) goto LA15;
 break;
 	case 34: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1963))) goto LA25;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1965))) goto LA26;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1964))) goto LA25;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1966))) goto LA26;
 break;
 	case 35: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1944))) goto LA8;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1945))) goto LA8;
 break;
 	case 37: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1951))) goto LA14;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1970))) goto LA31;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1952))) goto LA14;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1971))) goto LA31;
 break;
 	case 41: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1964))) goto LA26;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1965))) goto LA26;
 break;
 	case 43: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1971))) goto LA32;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1972))) goto LA32;
 break;
 	case 44: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1967))) goto LA28;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1968))) goto LA28;
 break;
 	case 45: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1938))) goto LA4;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1939))) goto LA4;
 break;
 	case 46: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1941))) goto LA6;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1968))) goto LA29;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1942))) goto LA6;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1969))) goto LA29;
 break;
 	case 47: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1948))) goto LA12;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1949))) goto LA12;
 break;
 	case 51: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1946))) goto LA10;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1947))) goto LA10;
 break;
 	case 56: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1958))) goto LA21;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1959))) goto LA21;
 break;
 	case 58: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1940))) goto LA6;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1955))) goto LA18;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1941))) goto LA6;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1956))) goto LA18;
 break;
 	case 60: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1936))) goto LA3;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1937))) goto LA3;
 break;
 	case 61: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1956))) goto LA19;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1957))) goto LA19;
 break;
 	case 62: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1935))) goto LA2;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1960))) goto LA23;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1936))) goto LA2;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1961))) goto LA23;
 break;
 	}
 	goto LA35;
@@ -1838,25 +1838,25 @@ N_NIMCALL(NimStringDesc*, processpath_175990)(NimStringDesc* path, NIM_BOOL notr
 	LA1: ;
 	nimln(238, "commands.nim");
 	memset((void*)LOC12, 0, sizeof(LOC12));
-	LOC12[0] = copyString(((NimStringDesc*) &TMP1974));
+	LOC12[0] = copyString(((NimStringDesc*) &TMP1975));
 	LOC12[1] = getprefixdir_153365();
-	LOC12[2] = copyString(((NimStringDesc*) &TMP1975));
+	LOC12[2] = copyString(((NimStringDesc*) &TMP1976));
 	nimln(239, "commands.nim");
 	LOC12[3] = getprefixdir_153365();
-	LOC12[4] = copyString(((NimStringDesc*) &TMP1976));
+	LOC12[4] = copyString(((NimStringDesc*) &TMP1977));
 	LOC12[5] = copyString(libpath_153233);
-	LOC12[6] = copyString(((NimStringDesc*) &TMP1977));
+	LOC12[6] = copyString(((NimStringDesc*) &TMP1978));
 	nimln(241, "commands.nim");
 	LOC13 = 0;
 	LOC13 = nosgetHomeDir();
 	LOC12[7] = removetrailingdirsep_153418(LOC13);
-	LOC12[8] = copyString(((NimStringDesc*) &TMP1978));
+	LOC12[8] = copyString(((NimStringDesc*) &TMP1979));
 	LOC12[9] = copyString(gprojectname_153234);
-	LOC12[10] = copyString(((NimStringDesc*) &TMP1979));
+	LOC12[10] = copyString(((NimStringDesc*) &TMP1980));
 	LOC12[11] = copyString(gprojectpath_153235);
 	LOC14 = 0;
 	LOC14 = nsuFormatOpenArray(p, LOC12, 12);
-	result = nosunixToNativePath(LOC14, ((NimStringDesc*) &TMP1864));
+	result = nosunixToNativePath(LOC14, ((NimStringDesc*) &TMP1865));
 	popFrame();
 	return result;
 }
@@ -1872,7 +1872,7 @@ N_NIMCALL(void, trackdirty_176004)(NimStringDesc* arg, Tlineinfo162338 info) {
 	nimln(247, "commands.nim");
 	{
 		if (!!(((a ? a->Sup.len : 0) == ((NI) 4)))) goto LA3;
-		localerror_164155(info, ((NU16) 23), ((NimStringDesc*) &TMP1984));
+		localerror_164155(info, ((NU16) 23), ((NimStringDesc*) &TMP1985));
 	}
 	LA3: ;
 	line = 0;
@@ -1940,7 +1940,7 @@ N_NIMCALL(void, track_176030)(NimStringDesc* arg, Tlineinfo162338 info) {
 	nimln(263, "commands.nim");
 	{
 		if (!!(((a ? a->Sup.len : 0) == ((NI) 3)))) goto LA3;
-		localerror_164155(info, ((NU16) 23), ((NimStringDesc*) &TMP1985));
+		localerror_164155(info, ((NU16) 23), ((NimStringDesc*) &TMP1986));
 	}
 	LA3: ;
 	line = 0;
@@ -2117,270 +2117,270 @@ N_NIMCALL(void, processswitch_175040)(NimStringDesc* switch_175042, NimStringDes
 	LOC1 = nsuNormalize(switch_175042);
 	switch (hashString(LOC1) & 127) {
 	case 0: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1950))) goto LA32;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2037))) goto LA77;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1951))) goto LA32;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2038))) goto LA77;
 break;
 	case 1: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2026))) goto LA65;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2027))) goto LA65;
 break;
 	case 2: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1954))) goto LA35;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1955))) goto LA35;
 break;
 	case 3: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1947))) goto LA29;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1948))) goto LA29;
 break;
 	case 4: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1999))) goto LA10;
-break;
-	case 5: 
 if (eqStrings(LOC1, ((NimStringDesc*) &TMP2000))) goto LA10;
 break;
+	case 5: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2001))) goto LA10;
+break;
 	case 6: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1959))) goto LA40;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1960))) goto LA40;
 break;
 	case 8: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1945))) goto LA27;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2035))) goto LA73;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1946))) goto LA27;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2036))) goto LA73;
 break;
 	case 11: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2001))) goto LA11;
-break;
-	case 12: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1961))) goto LA42;
-break;
-	case 14: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1957))) goto LA38;
-break;
-	case 16: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1994))) goto LA7;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2008))) goto LA24;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2021))) goto LA59;
-break;
-	case 17: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2010))) goto LA50;
-break;
-	case 20: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2044))) goto LA84;
-break;
-	case 23: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1989))) goto LA3;
-break;
-	case 25: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1942))) goto LA23;
-break;
-	case 27: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2009))) goto LA25;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2039))) goto LA79;
-break;
-	case 28: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2011))) goto LA51;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2049))) goto LA89;
-break;
-	case 29: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2022))) goto LA60;
-break;
-	case 32: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1943))) goto LA23;
-break;
-	case 34: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2023))) goto LA61;
-break;
-	case 35: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1944))) goto LA26;
-break;
-	case 36: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1996))) goto LA8;
-break;
-	case 37: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1970))) goto LA45;
-break;
-	case 41: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2019))) goto LA57;
-break;
-	case 43: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1971))) goto LA47;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2042))) goto LA82;
-break;
-	case 44: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1967))) goto LA75;
-break;
-	case 45: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1925))) goto LA22;
-break;
-	case 46: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1968))) goto LA44;
-break;
-	case 47: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1948))) goto LA30;
-break;
-	case 48: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1988))) goto LA3;
-break;
-	case 51: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1946))) goto LA28;
-break;
-	case 53: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1986))) goto LA2;
-break;
-	case 55: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2041))) goto LA81;
-break;
-	case 56: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1992))) goto LA5;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1958))) goto LA39;
-break;
-	case 57: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2045))) goto LA85;
-break;
-	case 58: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1940))) goto LA20;
-break;
-	case 61: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2006))) goto LA16;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1956))) goto LA37;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2046))) goto LA86;
-break;
-	case 62: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1935))) goto LA15;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1960))) goto LA41;
-break;
-	case 66: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1962))) goto LA42;
-break;
-	case 67: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2018))) goto LA56;
-break;
-	case 68: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1949))) goto LA31;
-break;
-	case 69: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1926))) goto LA49;
-break;
-	case 70: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1991))) goto LA4;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2028))) goto LA67;
-break;
-	case 71: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2024))) goto LA62;
-break;
-	case 72: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1939))) goto LA19;
-break;
-	case 73: 
 if (eqStrings(LOC1, ((NimStringDesc*) &TMP2002))) goto LA11;
 break;
-	case 74: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2038))) goto LA78;
+	case 12: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1962))) goto LA42;
 break;
-	case 76: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2016))) goto LA54;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2048))) goto LA88;
+	case 14: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1958))) goto LA38;
 break;
-	case 78: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1972))) goto LA48;
+	case 16: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1995))) goto LA7;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2009))) goto LA24;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2022))) goto LA59;
 break;
-	case 79: 
+	case 17: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2011))) goto LA50;
+break;
+	case 20: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2045))) goto LA84;
+break;
+	case 23: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1990))) goto LA3;
+break;
+	case 25: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1943))) goto LA23;
+break;
+	case 27: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2010))) goto LA25;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2040))) goto LA79;
+break;
+	case 28: 
 if (eqStrings(LOC1, ((NimStringDesc*) &TMP2012))) goto LA51;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2050))) goto LA89;
 break;
-	case 82: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2004))) goto LA13;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2025))) goto LA63;
+	case 29: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2023))) goto LA60;
 break;
-	case 83: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2007))) goto LA21;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2034))) goto LA72;
+	case 32: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1944))) goto LA23;
 break;
-	case 84: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1969))) goto LA46;
+	case 34: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2024))) goto LA61;
 break;
-	case 85: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2029))) goto LA67;
+	case 35: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1945))) goto LA26;
 break;
-	case 89: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1937))) goto LA17;
+	case 36: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1997))) goto LA8;
 break;
-	case 90: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1953))) goto LA34;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1973))) goto LA90;
+	case 37: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1971))) goto LA45;
 break;
-	case 91: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2036))) goto LA74;
+	case 41: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2020))) goto LA57;
 break;
-	case 94: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1966))) goto LA70;
+	case 43: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1972))) goto LA47;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2043))) goto LA82;
 break;
-	case 97: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1952))) goto LA33;
+	case 44: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1968))) goto LA75;
 break;
-	case 98: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1963))) goto LA43;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1965))) goto LA64;
+	case 45: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1926))) goto LA22;
 break;
-	case 101: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1951))) goto LA32;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2013))) goto LA52;
+	case 46: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1969))) goto LA44;
 break;
-	case 102: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1997))) goto LA9;
+	case 47: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1949))) goto LA30;
 break;
-	case 105: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1964))) goto LA64;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2033))) goto LA71;
+	case 48: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1989))) goto LA3;
 break;
-	case 106: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2032))) goto LA69;
+	case 51: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1947))) goto LA28;
 break;
-	case 108: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2020))) goto LA58;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2031))) goto LA69;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1976))) goto LA76;
-break;
-	case 109: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1938))) goto LA18;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2015))) goto LA53;
-break;
-	case 110: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1941))) goto LA20;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2030))) goto LA68;
-break;
-	case 111: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2043))) goto LA83;
-break;
-	case 112: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2005))) goto LA14;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2047))) goto LA87;
-break;
-	case 115: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1993))) goto LA6;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2017))) goto LA55;
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2040))) goto LA80;
-break;
-	case 117: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1998))) goto LA9;
-break;
-	case 118: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2003))) goto LA12;
-break;
-	case 120: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2014))) goto LA52;
-break;
-	case 121: 
+	case 53: 
 if (eqStrings(LOC1, ((NimStringDesc*) &TMP1987))) goto LA2;
 break;
+	case 55: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2042))) goto LA81;
+break;
+	case 56: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1993))) goto LA5;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1959))) goto LA39;
+break;
+	case 57: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2046))) goto LA85;
+break;
+	case 58: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1941))) goto LA20;
+break;
+	case 61: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2007))) goto LA16;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1957))) goto LA37;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2047))) goto LA86;
+break;
+	case 62: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1936))) goto LA15;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1961))) goto LA41;
+break;
+	case 66: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1963))) goto LA42;
+break;
+	case 67: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2019))) goto LA56;
+break;
+	case 68: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1950))) goto LA31;
+break;
+	case 69: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1927))) goto LA49;
+break;
+	case 70: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1992))) goto LA4;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2029))) goto LA67;
+break;
+	case 71: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2025))) goto LA62;
+break;
+	case 72: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1940))) goto LA19;
+break;
+	case 73: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2003))) goto LA11;
+break;
+	case 74: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2039))) goto LA78;
+break;
+	case 76: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2017))) goto LA54;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2049))) goto LA88;
+break;
+	case 78: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1973))) goto LA48;
+break;
+	case 79: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2013))) goto LA51;
+break;
+	case 82: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2005))) goto LA13;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2026))) goto LA63;
+break;
+	case 83: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2008))) goto LA21;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2035))) goto LA72;
+break;
+	case 84: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1970))) goto LA46;
+break;
+	case 85: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2030))) goto LA67;
+break;
+	case 89: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1938))) goto LA17;
+break;
+	case 90: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1954))) goto LA34;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1974))) goto LA90;
+break;
+	case 91: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2037))) goto LA74;
+break;
+	case 94: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1967))) goto LA70;
+break;
+	case 97: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1953))) goto LA33;
+break;
+	case 98: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1964))) goto LA43;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1966))) goto LA64;
+break;
+	case 101: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1952))) goto LA32;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2014))) goto LA52;
+break;
+	case 102: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1998))) goto LA9;
+break;
+	case 105: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1965))) goto LA64;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2034))) goto LA71;
+break;
+	case 106: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2033))) goto LA69;
+break;
+	case 108: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2021))) goto LA58;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2032))) goto LA69;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1977))) goto LA76;
+break;
+	case 109: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1939))) goto LA18;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2016))) goto LA53;
+break;
+	case 110: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1942))) goto LA20;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2031))) goto LA68;
+break;
+	case 111: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2044))) goto LA83;
+break;
+	case 112: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2006))) goto LA14;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2048))) goto LA87;
+break;
+	case 115: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1994))) goto LA6;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2018))) goto LA55;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2041))) goto LA80;
+break;
+	case 117: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1999))) goto LA9;
+break;
+	case 118: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2004))) goto LA12;
+break;
+	case 120: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2015))) goto LA52;
+break;
+	case 121: 
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1988))) goto LA2;
+break;
 	case 122: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1955))) goto LA36;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1956))) goto LA36;
 break;
 	case 123: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP2027))) goto LA66;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP2028))) goto LA66;
 break;
 	case 124: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1936))) goto LA17;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1937))) goto LA17;
 break;
 	case 125: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1990))) goto LA4;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1991))) goto LA4;
 break;
 	case 127: 
-if (eqStrings(LOC1, ((NimStringDesc*) &TMP1995))) goto LA7;
+if (eqStrings(LOC1, ((NimStringDesc*) &TMP1996))) goto LA7;
 break;
 	}
 	goto LA91;
@@ -2439,21 +2439,21 @@ break;
 		nimln(299, "commands.nim");
 		{
 			NIM_BOOL LOC106;
-			NI TMP2050;
-			NimStringDesc* strippedpath;
 			NI TMP2051;
+			NimStringDesc* strippedpath;
+			NI TMP2052;
 			Slice86255 LOC110;
 			LOC106 = 0;
 			LOC106 = (((NI) 0) < (path ? path->Sup.len : 0));
 			if (!(LOC106)) goto LA107;
-			TMP2050 = subInt((path ? path->Sup.len : 0), ((NI) 1));
-			if ((NU)((NI)(TMP2050)) > (NU)(path->Sup.len)) raiseIndexError();
-			LOC106 = ((NU8)(path->data[(NI)(TMP2050)]) == (NU8)(47));
+			TMP2051 = subInt((path ? path->Sup.len : 0), ((NI) 1));
+			if ((NU)((NI)(TMP2051)) > (NU)(path->Sup.len)) raiseIndexError();
+			LOC106 = ((NU8)(path->data[(NI)(TMP2051)]) == (NU8)(47));
 			LA107: ;
 			if (!LOC106) goto LA108;
 			nimln(300, "commands.nim");
-			TMP2051 = subInt((path ? path->Sup.len : 0), ((NI) 2));
-			LOC110 = HEX2EHEX2E_105273(((NI) 0), (NI)(TMP2051));
+			TMP2052 = subInt((path ? path->Sup.len : 0), ((NI) 2));
+			LOC110 = HEX2EHEX2E_105273(((NI) 0), (NI)(TMP2052));
 			strippedpath = HEX5BHEX5D_86248(path, LOC110);
 			nimln(301, "commands.nim");
 			excludepath_130807((&searchpaths_153132), strippedpath);
@@ -2607,19 +2607,19 @@ break;
 		nimln(352, "commands.nim");
 		LOC138 = 0;
 		LOC138 = nsuNormalize(arg);
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1927))) goto LA139;
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1928))) goto LA140;
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1929))) goto LA141;
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1930))) goto LA142;
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1931))) goto LA143;
-		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1932))) goto LA144;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1928))) goto LA139;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1929))) goto LA140;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1930))) goto LA141;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1931))) goto LA142;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1932))) goto LA143;
+		if (eqStrings(LOC138, ((NimStringDesc*) &TMP1933))) goto LA144;
 		goto LA145;
 		LA139: ;
 		{
 			nimln(354, "commands.nim");
 			gselectedgc_153131 = ((NU8) 1);
 			nimln(355, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2052));
+			definesymbol_167013(((NimStringDesc*) &TMP2053));
 		}
 		goto LA146;
 		LA140: ;
@@ -2639,7 +2639,7 @@ break;
 			nimln(361, "commands.nim");
 			gselectedgc_153131 = ((NU8) 2);
 			nimln(362, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2053));
+			definesymbol_167013(((NimStringDesc*) &TMP2054));
 		}
 		goto LA146;
 		LA143: ;
@@ -2647,7 +2647,7 @@ break;
 			nimln(364, "commands.nim");
 			gselectedgc_153131 = ((NU8) 5);
 			nimln(365, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2054));
+			definesymbol_167013(((NimStringDesc*) &TMP2055));
 		}
 		goto LA146;
 		LA144: ;
@@ -2655,7 +2655,7 @@ break;
 			nimln(367, "commands.nim");
 			gselectedgc_153131 = ((NU8) 0);
 			nimln(368, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2055));
+			definesymbol_167013(((NimStringDesc*) &TMP2056));
 		}
 		goto LA146;
 		LA145: ;
@@ -2714,18 +2714,18 @@ break;
 		nimln(378, "commands.nim");
 		LOC162 = 0;
 		LOC162 = nsuNormalize(arg);
-		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2056))) goto LA163;
 		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2057))) goto LA163;
-		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2058))) goto LA164;
-		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2059))) goto LA165;
+		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2058))) goto LA163;
+		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2059))) goto LA164;
 		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2060))) goto LA165;
+		if (eqStrings(LOC162, ((NimStringDesc*) &TMP2061))) goto LA165;
 		goto LA166;
 		LA163: ;
 		{
 			nimln(380, "commands.nim");
 			goptions_153126 |= ((NI32)1)<<((((NU8) 17))%(sizeof(NI32)*8));
 			nimln(381, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2057));
+			definesymbol_167013(((NimStringDesc*) &TMP2058));
 		}
 		goto LA167;
 		LA164: ;
@@ -2733,7 +2733,7 @@ break;
 			nimln(383, "commands.nim");
 			goptions_153126 &= ~(((NI32)1) << ((((NU8) 17)) % (sizeof(NI32)*8)));
 			nimln(384, "commands.nim");
-			undefsymbol_167022(((NimStringDesc*) &TMP2057));
+			undefsymbol_167022(((NimStringDesc*) &TMP2058));
 		}
 		goto LA167;
 		LA165: ;
@@ -2743,7 +2743,7 @@ break;
 			nimln(387, "commands.nim");
 			goptions_153126 = ((goptions_153126 | 1024) & ~ 131072);
 			nimln(388, "commands.nim");
-			undefsymbol_167022(((NimStringDesc*) &TMP2057));
+			undefsymbol_167022(((NimStringDesc*) &TMP2058));
 		}
 		goto LA167;
 		LA166: ;
@@ -2752,7 +2752,7 @@ break;
 			nimln(390, "commands.nim");
 			LOC172 = 0;
 			LOC172 = rawNewString(arg->Sup.len + 28);
-appendString(LOC172, ((NimStringDesc*) &TMP2061));
+appendString(LOC172, ((NimStringDesc*) &TMP2062));
 appendString(LOC172, arg);
 			localerror_164166(info, LOC172);
 		}
@@ -2766,13 +2766,13 @@ appendString(LOC172, arg);
 		nimln(393, "commands.nim");
 		{
 			if (!((goptions_153126 &(1<<((((NU8) 19))&31)))!=0)) goto LA176;
-			definesymbol_167013(((NimStringDesc*) &TMP1949));
+			definesymbol_167013(((NimStringDesc*) &TMP1950));
 		}
 		goto LA174;
 		LA176: ;
 		{
 			nimln(394, "commands.nim");
-			undefsymbol_167022(((NimStringDesc*) &TMP1949));
+			undefsymbol_167022(((NimStringDesc*) &TMP1950));
 		}
 		LA174: ;
 	}
@@ -2887,9 +2887,9 @@ appendString(LOC172, arg);
 		nimln(419, "commands.nim");
 		LOC197 = 0;
 		LOC197 = nsuNormalize(arg);
-		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1933))) goto LA198;
-		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1934))) goto LA199;
-		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1932))) goto LA200;
+		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1934))) goto LA198;
+		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1935))) goto LA199;
+		if (eqStrings(LOC197, ((NimStringDesc*) &TMP1933))) goto LA200;
 		goto LA201;
 		LA198: ;
 		{
@@ -2931,19 +2931,19 @@ appendString(LOC172, arg);
 		nimln(432, "commands.nim");
 		LOC208 = 0;
 		LOC208 = nsuNormalize(arg);
-		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2062))) goto LA209;
-		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2063))) goto LA210;
-		if (eqStrings(LOC208, ((NimStringDesc*) &TMP1976))) goto LA211;
-		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2064))) goto LA212;
+		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2063))) goto LA209;
+		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2064))) goto LA210;
+		if (eqStrings(LOC208, ((NimStringDesc*) &TMP1977))) goto LA211;
+		if (eqStrings(LOC208, ((NimStringDesc*) &TMP2065))) goto LA212;
 		goto LA213;
 		LA209: ;
 		{
 			nimln(434, "commands.nim");
 			gglobaloptions_153128 |= ((NI32)1)<<((((NU8) 10))%(sizeof(NI32)*8));
 			nimln(435, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2065));
-			nimln(436, "commands.nim");
 			definesymbol_167013(((NimStringDesc*) &TMP2066));
+			nimln(436, "commands.nim");
+			definesymbol_167013(((NimStringDesc*) &TMP2067));
 		}
 		goto LA214;
 		LA210: ;
@@ -2951,9 +2951,9 @@ appendString(LOC172, arg);
 			nimln(438, "commands.nim");
 			gglobaloptions_153128 &= ~(((NI32)1) << ((((NU8) 10)) % (sizeof(NI32)*8)));
 			nimln(439, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2065));
+			definesymbol_167013(((NimStringDesc*) &TMP2066));
 			nimln(440, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2067));
+			definesymbol_167013(((NimStringDesc*) &TMP2068));
 		}
 		goto LA214;
 		LA211: ;
@@ -2963,9 +2963,9 @@ appendString(LOC172, arg);
 			nimln(443, "commands.nim");
 			gglobaloptions_153128 &= ~(((NI32)1) << ((((NU8) 10)) % (sizeof(NI32)*8)));
 			nimln(444, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2068));
-			nimln(445, "commands.nim");
 			definesymbol_167013(((NimStringDesc*) &TMP2069));
+			nimln(445, "commands.nim");
+			definesymbol_167013(((NimStringDesc*) &TMP2070));
 		}
 		goto LA214;
 		LA212: ;
@@ -2975,9 +2975,9 @@ appendString(LOC172, arg);
 			nimln(448, "commands.nim");
 			gglobaloptions_153128 &= ~(((NI32)1) << ((((NU8) 10)) % (sizeof(NI32)*8)));
 			nimln(449, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2068));
+			definesymbol_167013(((NimStringDesc*) &TMP2069));
 			nimln(450, "commands.nim");
-			definesymbol_167013(((NimStringDesc*) &TMP2064));
+			definesymbol_167013(((NimStringDesc*) &TMP2065));
 		}
 		goto LA214;
 		LA213: ;
@@ -3398,8 +3398,8 @@ appendString(LOC172, arg);
 		nimln(573, "commands.nim");
 		expectarg_175373(switch_175042, arg, pass, info);
 		nimln(574, "commands.nim");
-		if (eqStrings(arg, ((NimStringDesc*) &TMP2070))) goto LA319;
-		if (eqStrings(arg, ((NimStringDesc*) &TMP1932))) goto LA320;
+		if (eqStrings(arg, ((NimStringDesc*) &TMP2071))) goto LA319;
+		if (eqStrings(arg, ((NimStringDesc*) &TMP1933))) goto LA320;
 		goto LA321;
 		LA319: ;
 		{
@@ -3420,7 +3420,7 @@ appendString(LOC172, arg);
 			nimln(578, "commands.nim");
 			LOC326 = 0;
 			LOC326 = rawNewString(arg->Sup.len + 40);
-appendString(LOC326, ((NimStringDesc*) &TMP2071));
+appendString(LOC326, ((NimStringDesc*) &TMP2072));
 appendString(LOC326, arg);
 			localerror_164155(info, ((NU16) 4), LOC326);
 		}
@@ -3484,20 +3484,20 @@ N_NIMCALL(void, processswitch_176725)(NU8 pass, Optparser174011* p) {
 	nimln(601, "commands.nim");
 	{
 		NimStringDesc* key;
-		NI TMP2072;
+		NI TMP2073;
 		NimStringDesc* val;
 		NimStringDesc* LOC5;
-		NI TMP2073;
+		NI TMP2074;
 		NimStringDesc* LOC6;
 		if (!(((NI) 0) <= bracketle)) goto LA3;
 		nimln(602, "commands.nim");
-		TMP2072 = subInt(bracketle, ((NI) 1));
-		key = copyStrLast((*p).key, ((NI) 0), (NI)(TMP2072));
+		TMP2073 = subInt(bracketle, ((NI) 1));
+		key = copyStrLast((*p).key, ((NI) 0), (NI)(TMP2073));
 		nimln(603, "commands.nim");
 		LOC5 = 0;
-		TMP2073 = addInt(bracketle, ((NI) 1));
+		TMP2074 = addInt(bracketle, ((NI) 1));
 		LOC6 = 0;
-		LOC6 = copyStr((*p).key, (NI)(TMP2073));
+		LOC6 = copyStr((*p).key, (NI)(TMP2074));
 		LOC5 = rawNewString(LOC6->Sup.len + (*p).val->Sup.len + 1);
 appendString(LOC5, LOC6);
 appendChar(LOC5, 58);
@@ -3518,7 +3518,7 @@ appendString(LOC5, (*p).val);
 
 N_NIMCALL(NIM_BOOL, processargument_176738)(NU8 pass, Optparser174011* p, NI* argscount) {
 	NIM_BOOL result;
-	NI TMP2074;
+	NI TMP2075;
 	nimfr("processArgument", "commands.nim")
 	result = 0;
 	nimln(610, "commands.nim");
@@ -3547,7 +3547,7 @@ N_NIMCALL(NIM_BOOL, processargument_176738)(NU8 pass, Optparser174011* p, NI* ar
 		{
 			if (!((*argscount) == ((NI) 1))) goto LA14;
 			nimln(616, "commands.nim");
-			asgnRefNoCycle((void**) (&gprojectname_153234), nosunixToNativePath((*p).key, ((NimStringDesc*) &TMP1864)));
+			asgnRefNoCycle((void**) (&gprojectname_153234), nosunixToNativePath((*p).key, ((NimStringDesc*) &TMP1865)));
 			nimln(617, "commands.nim");
 			asgnRefNoCycle((void**) (&arguments_176721), npocmdLineRest(p));
 			nimln(618, "commands.nim");
@@ -3557,8 +3557,8 @@ N_NIMCALL(NIM_BOOL, processargument_176738)(NU8 pass, Optparser174011* p, NI* ar
 	}
 	LA1: ;
 	nimln(619, "commands.nim");
-	TMP2074 = addInt((*argscount), ((NI) 1));
-	(*argscount) = (NI)(TMP2074);
+	TMP2075 = addInt((*argscount), ((NI) 1));
+	(*argscount) = (NI)(TMP2075);
 	popFrame();
 	return result;
 }
@@ -3567,7 +3567,7 @@ NIM_EXTERNC N_NOINLINE(void, compiler_commandsInit)(void) {
 	nimfr("commands", "commands.nim")
 	nimln(593, "commands.nim");
 	LOC1 = 0;
-	LOC1 = arguments_176721; arguments_176721 = copyStringRC1(((NimStringDesc*) &TMP1864));
+	LOC1 = arguments_176721; arguments_176721 = copyStringRC1(((NimStringDesc*) &TMP1865));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	popFrame();
 }

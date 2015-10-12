@@ -553,12 +553,12 @@ N_NIMCALL(Tnode189813*, processnode_506057)(Tpasscontext240005* c, Tnode189813* 
 N_NIMCALL(void, generatedoc_340218)(Tdocumentor339007* d, Tnode189813* n);
 N_NIMCALL(Tpasscontext240005*, myopen_506069)(Tsym189843* module);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10594)(void* p, NI op);
+N_NIMCALL(void, TMP10595)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 N_NIMCALL(Tdocumentor339007*, newdocumentor_339065)(NimStringDesc* filename, Stringtableobj133012* config);
 N_NIMCALL(void, finishdoc2pass_506108)(NimStringDesc* project);
-STRING_LITERAL(TMP10592, "html", 4);
+STRING_LITERAL(TMP10593, "html", 4);
 NIM_CONST Tpass240017 docgen2pass_506094 = {myopen_506069,
 NIM_NIL,
 processnode_506057,
@@ -758,7 +758,7 @@ N_NIMCALL(Tnode189813*, close_506018)(Tpasscontext240005* p, Tnode189813* n) {
 	{
 		NIM_BOOL LOC3;
 		NimStringDesc* LOC7;
-		TSafePoint TMP10593;
+		TSafePoint TMP10594;
 		LOC3 = 0;
 		LOC3 = gwholeproject_152139;
 		if (LOC3) goto LA4;
@@ -768,11 +768,11 @@ N_NIMCALL(Tnode189813*, close_506018)(Tpasscontext240005* p, Tnode189813* n) {
 		nimln(26, "docgen2.nim");
 		LOC7 = 0;
 		LOC7 = tofilename_162266(((NI32) ((*(*g).module).position)));
-		writeoutput_342337((*g).doc, LOC7, ((NimStringDesc*) &TMP10592), usewarning);
+		writeoutput_342337((*g).doc, LOC7, ((NimStringDesc*) &TMP10593), usewarning);
 		nimln(27, "docgen2.nim");
-		pushSafePoint(&TMP10593);
-		TMP10593.status = setjmp(TMP10593.context);
-		if (TMP10593.status == 0) {
+		pushSafePoint(&TMP10594);
+		TMP10594.status = setjmp(TMP10594.context);
+		if (TMP10594.status == 0) {
 			nimln(28, "docgen2.nim");
 			generateindex_342318((*g).doc);
 			popSafePoint();
@@ -781,11 +781,11 @@ N_NIMCALL(Tnode189813*, close_506018)(Tpasscontext240005* p, Tnode189813* n) {
 			popSafePoint();
 			setFrame((TFrame*)&FR);
 			if (isObj(getCurrentException()->Sup.m_type, (&NTI3431))) {
-				TMP10593.status = 0;
+				TMP10594.status = 0;
 				popCurrentException();
 			}
 		}
-		if (TMP10593.status != 0) reraiseException();
+		if (TMP10594.status != 0) reraiseException();
 	}
 	LA5: ;
 	popFrame();
@@ -807,7 +807,7 @@ N_NIMCALL(Tnode189813*, processnode_506057)(Tpasscontext240005* c, Tnode189813* 
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP10594)(void* p, NI op) {
+N_NIMCALL(void, TMP10595)(void* p, NI op) {
 	Tgen506010* a;
 	a = (Tgen506010*)p;
 	nimGCvisit((void*)(*a).doc, op);
@@ -886,26 +886,26 @@ NIM_EXTERNC N_NOINLINE(void, compiler_docgen2Init)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_docgen2DatInit)(void) {
-static TNimNode* TMP10591[2];
-static TNimNode TMP10589[3];
+static TNimNode* TMP10592[2];
+static TNimNode TMP10590[3];
 NTI506010.size = sizeof(Tgen506010);
 NTI506010.kind = 17;
 NTI506010.base = (&NTI240005);
-TMP10591[0] = &TMP10589[1];
-TMP10589[1].kind = 1;
-TMP10589[1].offset = offsetof(Tgen506010, doc);
-TMP10589[1].typ = (&NTI339009);
-TMP10589[1].name = "doc";
-TMP10591[1] = &TMP10589[2];
-TMP10589[2].kind = 1;
-TMP10589[2].offset = offsetof(Tgen506010, module);
-TMP10589[2].typ = (&NTI189811);
-TMP10589[2].name = "module";
-TMP10589[0].len = 2; TMP10589[0].kind = 2; TMP10589[0].sons = &TMP10591[0];
-NTI506010.node = &TMP10589[0];
+TMP10592[0] = &TMP10590[1];
+TMP10590[1].kind = 1;
+TMP10590[1].offset = offsetof(Tgen506010, doc);
+TMP10590[1].typ = (&NTI339009);
+TMP10590[1].name = "doc";
+TMP10592[1] = &TMP10590[2];
+TMP10590[2].kind = 1;
+TMP10590[2].offset = offsetof(Tgen506010, module);
+TMP10590[2].typ = (&NTI189811);
+TMP10590[2].name = "module";
+TMP10590[0].len = 2; TMP10590[0].kind = 2; TMP10590[0].sons = &TMP10592[0];
+NTI506010.node = &TMP10590[0];
 NTI506012.size = sizeof(Tgen506010*);
 NTI506012.kind = 22;
 NTI506012.base = (&NTI506010);
-NTI506012.marker = TMP10594;
+NTI506012.marker = TMP10595;
 }
 

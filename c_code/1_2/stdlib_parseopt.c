@@ -77,15 +77,15 @@ N_NIMCALL(NimStringDesc*, nsuStrip)(NimStringDesc* s, NIM_BOOL leading, NIM_BOOL
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
 static N_INLINE(NI, subInt)(NI a, NI b);
-STRING_LITERAL(TMP1799, "", 0);
-STRING_LITERAL(TMP1816, "", 0);
-static NIM_CONST TY77659 TMP1825 = {
+STRING_LITERAL(TMP1800, "", 0);
+STRING_LITERAL(TMP1817, "", 0);
+static NIM_CONST TY77659 TMP1826 = {
 0x01, 0x02, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-static NIM_CONST TY77659 TMP1829 = {
+static NIM_CONST TY77659 TMP1830 = {
 0x01, 0x02, 0x00, 0x00, 0x01, 0x00, 0x00, 0x24,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -173,7 +173,7 @@ N_NIMCALL(void, initoptparser_177030)(NimStringDesc* cmdline, Optparser177011* R
 	LA3: ;
 	{
 		nimln(57, "parseopt.nim");
-		unsureAsgnRef((void**) (&(*Result).cmd), copyString(((NimStringDesc*) &TMP1799)));
+		unsureAsgnRef((void**) (&(*Result).cmd), copyString(((NimStringDesc*) &TMP1800)));
 		{
 			NI i_177046;
 			NI HEX3Atmp_177049;
@@ -190,7 +190,7 @@ N_NIMCALL(void, initoptparser_177030)(NimStringDesc* cmdline, Optparser177011* R
 					NimStringDesc* LOC9;
 					NimStringDesc* LOC10;
 					NimStringDesc* LOC11;
-					NI TMP1815;
+					NI TMP1816;
 					if (!(res_177052 <= HEX3Atmp_177049)) goto LA8;
 					nimln(1600, "system.nim");
 					i_177046 = res_177052;
@@ -206,8 +206,8 @@ appendString(LOC9, LOC11);
 appendChar(LOC9, 32);
 					unsureAsgnRef((void**) (&(*Result).cmd), LOC9);
 					nimln(1614, "system.nim");
-					TMP1815 = addInt(res_177052, ((NI) 1));
-					res_177052 = (NI)(TMP1815);
+					TMP1816 = addInt(res_177052, ((NI) 1));
+					res_177052 = (NI)(TMP1816);
 				} LA8: ;
 			}
 		}
@@ -216,9 +216,9 @@ appendChar(LOC9, 32);
 	nimln(60, "parseopt.nim");
 	(*Result).kind = ((NU8) 0);
 	nimln(61, "parseopt.nim");
-	unsureAsgnRef((void**) (&(*Result).key), copyString(((NimStringDesc*) &TMP1816)));
+	unsureAsgnRef((void**) (&(*Result).key), copyString(((NimStringDesc*) &TMP1817)));
 	nimln(62, "parseopt.nim");
-	unsureAsgnRef((void**) (&(*Result).val), copyString(((NimStringDesc*) &TMP1816)));
+	unsureAsgnRef((void**) (&(*Result).val), copyString(((NimStringDesc*) &TMP1817)));
 	popFrame();
 }
 
@@ -230,33 +230,33 @@ N_NIMCALL(NI, parseword_177204)(NimStringDesc* s, NI i, NimStringDesc** w, TY776
 	result = i;
 	nimln(67, "parseopt.nim");
 	{
-		NI TMP1817;
+		NI TMP1818;
 		if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 		if (!((NU8)(s->data[result]) == (NU8)(34))) goto LA3;
 		nimln(68, "parseopt.nim");
-		TMP1817 = addInt(result, ((NI) 1));
-		result = (NI)(TMP1817);
+		TMP1818 = addInt(result, ((NI) 1));
+		result = (NI)(TMP1818);
 		{
 			nimln(69, "parseopt.nim");
 			while (1) {
-				NI TMP1818;
+				NI TMP1819;
 				if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 				if (!!((((NU8)(s->data[result])) == ((NU8)(0)) || ((NU8)(s->data[result])) == ((NU8)(34))))) goto LA6;
 				nimln(70, "parseopt.nim");
 				if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 				(*w) = addChar((*w), s->data[result]);
 				nimln(71, "parseopt.nim");
-				TMP1818 = addInt(result, ((NI) 1));
-				result = (NI)(TMP1818);
+				TMP1819 = addInt(result, ((NI) 1));
+				result = (NI)(TMP1819);
 			} LA6: ;
 		}
 		nimln(72, "parseopt.nim");
 		{
-			NI TMP1819;
+			NI TMP1820;
 			if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 			if (!((NU8)(s->data[result]) == (NU8)(34))) goto LA9;
-			TMP1819 = addInt(result, ((NI) 1));
-			result = (NI)(TMP1819);
+			TMP1820 = addInt(result, ((NI) 1));
+			result = (NI)(TMP1820);
 		}
 		LA9: ;
 	}
@@ -266,15 +266,15 @@ N_NIMCALL(NI, parseword_177204)(NimStringDesc* s, NI i, NimStringDesc** w, TY776
 		{
 			nimln(74, "parseopt.nim");
 			while (1) {
-				NI TMP1820;
+				NI TMP1821;
 				if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 				if (!!(((delim[((NU8)(s->data[result]))/8] &(1<<(((NU8)(s->data[result]))%8)))!=0))) goto LA13;
 				nimln(75, "parseopt.nim");
 				if ((NU)(result) > (NU)(s->Sup.len)) raiseIndexError();
 				(*w) = addChar((*w), s->data[result]);
 				nimln(76, "parseopt.nim");
-				TMP1820 = addInt(result, ((NI) 1));
-				result = (NI)(TMP1820);
+				TMP1821 = addInt(result, ((NI) 1));
+				result = (NI)(TMP1821);
 			} LA13: ;
 		}
 	}
@@ -285,7 +285,7 @@ N_NIMCALL(NI, parseword_177204)(NimStringDesc* s, NI i, NimStringDesc** w, TY776
 
 N_NIMCALL(void, handleshortoption_177291)(Optparser177011* p) {
 	NI i;
-	NI TMP1821;
+	NI TMP1822;
 	nimfr("handleShortOption", "parseopt.nim")
 	nimln(79, "parseopt.nim");
 	i = (*p).pos;
@@ -295,45 +295,45 @@ N_NIMCALL(void, handleshortoption_177291)(Optparser177011* p) {
 	if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 	(*p).key = addChar((*p).key, (*p).cmd->data[i]);
 	nimln(82, "parseopt.nim");
-	TMP1821 = addInt(i, ((NI) 1));
-	i = (NI)(TMP1821);
+	TMP1822 = addInt(i, ((NI) 1));
+	i = (NI)(TMP1822);
 	nimln(83, "parseopt.nim");
 	(*p).inshortstate = NIM_TRUE;
 	{
 		nimln(84, "parseopt.nim");
 		while (1) {
-			NI TMP1822;
+			NI TMP1823;
 			if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 			if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(9)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(32)))) goto LA2;
 			nimln(85, "parseopt.nim");
-			TMP1822 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1822);
+			TMP1823 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1823);
 			nimln(86, "parseopt.nim");
 			(*p).inshortstate = NIM_FALSE;
 		} LA2: ;
 	}
 	nimln(87, "parseopt.nim");
 	{
-		NI TMP1823;
+		NI TMP1824;
 		if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 		if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(58)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(61)))) goto LA5;
 		nimln(88, "parseopt.nim");
-		TMP1823 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1823);
+		TMP1824 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1824);
 		nimln(89, "parseopt.nim");
 		(*p).inshortstate = NIM_FALSE;
 		{
 			nimln(90, "parseopt.nim");
 			while (1) {
-				NI TMP1824;
+				NI TMP1825;
 				if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 				if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(9)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(32)))) goto LA8;
-				TMP1824 = addInt(i, ((NI) 1));
-				i = (NI)(TMP1824);
+				TMP1825 = addInt(i, ((NI) 1));
+				i = (NI)(TMP1825);
 			} LA8: ;
 		}
 		nimln(91, "parseopt.nim");
-		i = parseword_177204((*p).cmd, i, (&(*p).val), TMP1825);
+		i = parseword_177204((*p).cmd, i, (&(*p).val), TMP1826);
 	}
 	LA5: ;
 	nimln(92, "parseopt.nim");
@@ -356,11 +356,11 @@ N_NIMCALL(void, nponext)(Optparser177011* p) {
 	{
 		nimln(99, "parseopt.nim");
 		while (1) {
-			NI TMP1826;
+			NI TMP1827;
 			if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 			if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(9)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(32)))) goto LA2;
-			TMP1826 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1826);
+			TMP1827 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1827);
 		} LA2: ;
 	}
 	nimln(100, "parseopt.nim");
@@ -389,52 +389,52 @@ N_NIMCALL(void, nponext)(Optparser177011* p) {
 	break;
 	case 45:
 	{
-		NI TMP1827;
+		NI TMP1828;
 		nimln(110, "parseopt.nim");
-		TMP1827 = addInt(i, ((NI) 1));
-		i = (NI)(TMP1827);
+		TMP1828 = addInt(i, ((NI) 1));
+		i = (NI)(TMP1828);
 		nimln(111, "parseopt.nim");
 		{
-			NI TMP1828;
+			NI TMP1829;
 			if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 			if (!((NU8)((*p).cmd->data[i]) == (NU8)(45))) goto LA11;
 			nimln(112, "parseopt.nim");
 			(*p).kind = ((NU8) 2);
 			nimln(113, "parseopt.nim");
-			TMP1828 = addInt(i, ((NI) 1));
-			i = (NI)(TMP1828);
+			TMP1829 = addInt(i, ((NI) 1));
+			i = (NI)(TMP1829);
 			nimln(114, "parseopt.nim");
-			i = parseword_177204((*p).cmd, i, (&(*p).key), TMP1829);
+			i = parseword_177204((*p).cmd, i, (&(*p).key), TMP1830);
 			{
 				nimln(115, "parseopt.nim");
 				while (1) {
-					NI TMP1830;
+					NI TMP1831;
 					if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 					if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(9)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(32)))) goto LA14;
-					TMP1830 = addInt(i, ((NI) 1));
-					i = (NI)(TMP1830);
+					TMP1831 = addInt(i, ((NI) 1));
+					i = (NI)(TMP1831);
 				} LA14: ;
 			}
 			nimln(116, "parseopt.nim");
 			{
-				NI TMP1831;
+				NI TMP1832;
 				if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 				if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(58)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(61)))) goto LA17;
 				nimln(117, "parseopt.nim");
-				TMP1831 = addInt(i, ((NI) 1));
-				i = (NI)(TMP1831);
+				TMP1832 = addInt(i, ((NI) 1));
+				i = (NI)(TMP1832);
 				{
 					nimln(118, "parseopt.nim");
 					while (1) {
-						NI TMP1832;
+						NI TMP1833;
 						if ((NU)(i) > (NU)((*p).cmd->Sup.len)) raiseIndexError();
 						if (!(((NU8)((*p).cmd->data[i])) == ((NU8)(9)) || ((NU8)((*p).cmd->data[i])) == ((NU8)(32)))) goto LA20;
-						TMP1832 = addInt(i, ((NI) 1));
-						i = (NI)(TMP1832);
+						TMP1833 = addInt(i, ((NI) 1));
+						i = (NI)(TMP1833);
 					} LA20: ;
 				}
 				nimln(119, "parseopt.nim");
-				(*p).pos = parseword_177204((*p).cmd, i, (&(*p).val), TMP1825);
+				(*p).pos = parseword_177204((*p).cmd, i, (&(*p).val), TMP1826);
 			}
 			goto LA15;
 			LA17: ;
@@ -460,7 +460,7 @@ N_NIMCALL(void, nponext)(Optparser177011* p) {
 		nimln(126, "parseopt.nim");
 		(*p).kind = ((NU8) 1);
 		nimln(127, "parseopt.nim");
-		(*p).pos = parseword_177204((*p).cmd, i, (&(*p).key), TMP1825);
+		(*p).pos = parseword_177204((*p).cmd, i, (&(*p).key), TMP1826);
 	}
 	break;
 	}
@@ -490,14 +490,14 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 
 N_NIMCALL(NimStringDesc*, npocmdLineRest)(Optparser177011* p) {
 	NimStringDesc* result;
-	NI TMP1836;
+	NI TMP1837;
 	NimStringDesc* LOC1;
 	nimfr("cmdLineRest", "parseopt.nim")
 	result = 0;
 	nimln(131, "parseopt.nim");
-	TMP1836 = subInt(((*p).cmd ? (*p).cmd->Sup.len : 0), ((NI) 1));
+	TMP1837 = subInt(((*p).cmd ? (*p).cmd->Sup.len : 0), ((NI) 1));
 	LOC1 = 0;
-	LOC1 = copyStrLast((*p).cmd, (*p).pos, (NI)(TMP1836));
+	LOC1 = copyStrLast((*p).cmd, (*p).pos, (NI)(TMP1837));
 	result = nsuStrip(LOC1, NIM_TRUE, NIM_TRUE);
 	popFrame();
 	return result;
@@ -508,61 +508,61 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_parseoptInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_parseoptDatInit)(void) {
-static TNimNode* TMP10614[6];
-static TNimNode* TMP10615[4];
-NI TMP10617;
-static char* NIM_CONST TMP10616[4] = {
+static TNimNode* TMP10615[6];
+static TNimNode* TMP10616[4];
+NI TMP10618;
+static char* NIM_CONST TMP10617[4] = {
 "cmdEnd", 
 "cmdArgument", 
 "cmdLongOption", 
 "cmdShortOption"};
-static TNimNode TMP1797[12];
+static TNimNode TMP1798[12];
 NTI177011.size = sizeof(Optparser177011);
 NTI177011.kind = 17;
 NTI177011.base = (&NTI3411);
-TMP10614[0] = &TMP1797[1];
-TMP1797[1].kind = 1;
-TMP1797[1].offset = offsetof(Optparser177011, cmd);
-TMP1797[1].typ = (&NTI149);
-TMP1797[1].name = "cmd";
-TMP10614[1] = &TMP1797[2];
-TMP1797[2].kind = 1;
-TMP1797[2].offset = offsetof(Optparser177011, pos);
-TMP1797[2].typ = (&NTI108);
-TMP1797[2].name = "pos";
-TMP10614[2] = &TMP1797[3];
-TMP1797[3].kind = 1;
-TMP1797[3].offset = offsetof(Optparser177011, inshortstate);
-TMP1797[3].typ = (&NTI138);
-TMP1797[3].name = "inShortState";
-TMP10614[3] = &TMP1797[4];
+TMP10615[0] = &TMP1798[1];
+TMP1798[1].kind = 1;
+TMP1798[1].offset = offsetof(Optparser177011, cmd);
+TMP1798[1].typ = (&NTI149);
+TMP1798[1].name = "cmd";
+TMP10615[1] = &TMP1798[2];
+TMP1798[2].kind = 1;
+TMP1798[2].offset = offsetof(Optparser177011, pos);
+TMP1798[2].typ = (&NTI108);
+TMP1798[2].name = "pos";
+TMP10615[2] = &TMP1798[3];
+TMP1798[3].kind = 1;
+TMP1798[3].offset = offsetof(Optparser177011, inshortstate);
+TMP1798[3].typ = (&NTI138);
+TMP1798[3].name = "inShortState";
+TMP10615[3] = &TMP1798[4];
 NTI177009.size = sizeof(NU8);
 NTI177009.kind = 14;
 NTI177009.base = 0;
 NTI177009.flags = 3;
-for (TMP10617 = 0; TMP10617 < 4; TMP10617++) {
-TMP1797[TMP10617+5].kind = 1;
-TMP1797[TMP10617+5].offset = TMP10617;
-TMP1797[TMP10617+5].name = TMP10616[TMP10617];
-TMP10615[TMP10617] = &TMP1797[TMP10617+5];
+for (TMP10618 = 0; TMP10618 < 4; TMP10618++) {
+TMP1798[TMP10618+5].kind = 1;
+TMP1798[TMP10618+5].offset = TMP10618;
+TMP1798[TMP10618+5].name = TMP10617[TMP10618];
+TMP10616[TMP10618] = &TMP1798[TMP10618+5];
 }
-TMP1797[9].len = 4; TMP1797[9].kind = 2; TMP1797[9].sons = &TMP10615[0];
-NTI177009.node = &TMP1797[9];
-TMP1797[4].kind = 1;
-TMP1797[4].offset = offsetof(Optparser177011, kind);
-TMP1797[4].typ = (&NTI177009);
-TMP1797[4].name = "kind";
-TMP10614[4] = &TMP1797[10];
-TMP1797[10].kind = 1;
-TMP1797[10].offset = offsetof(Optparser177011, key);
-TMP1797[10].typ = (&NTI149);
-TMP1797[10].name = "key";
-TMP10614[5] = &TMP1797[11];
-TMP1797[11].kind = 1;
-TMP1797[11].offset = offsetof(Optparser177011, val);
-TMP1797[11].typ = (&NTI149);
-TMP1797[11].name = "val";
-TMP1797[0].len = 6; TMP1797[0].kind = 2; TMP1797[0].sons = &TMP10614[0];
-NTI177011.node = &TMP1797[0];
+TMP1798[9].len = 4; TMP1798[9].kind = 2; TMP1798[9].sons = &TMP10616[0];
+NTI177009.node = &TMP1798[9];
+TMP1798[4].kind = 1;
+TMP1798[4].offset = offsetof(Optparser177011, kind);
+TMP1798[4].typ = (&NTI177009);
+TMP1798[4].name = "kind";
+TMP10615[4] = &TMP1798[10];
+TMP1798[10].kind = 1;
+TMP1798[10].offset = offsetof(Optparser177011, key);
+TMP1798[10].typ = (&NTI149);
+TMP1798[10].name = "key";
+TMP10615[5] = &TMP1798[11];
+TMP1798[11].kind = 1;
+TMP1798[11].offset = offsetof(Optparser177011, val);
+TMP1798[11].typ = (&NTI149);
+TMP1798[11].name = "val";
+TMP1798[0].len = 6; TMP1798[0].kind = 2; TMP1798[0].sons = &TMP10615[0];
+NTI177011.node = &TMP1798[0];
 }
 

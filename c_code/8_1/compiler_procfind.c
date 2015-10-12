@@ -443,21 +443,21 @@ N_NIMCALL(NimStringDesc*, nsuFormatOpenArray)(NimStringDesc* formatstr, NimStrin
 N_NIMCALL(NimStringDesc*, getprocheader_219447)(Tsym189843* sym, NU8 prefer);
 N_NIMCALL(NimStringDesc*, HEX24_162479)(Tlineinfo161338 info);
 N_NIMCALL(Tsym189843*, searchforproc_258278)(Tcontext243023* c, Tscope189837* scope, Tsym189843* fn);
-static NIM_CONST TY190031 TMP4506 = {
+static NIM_CONST TY190031 TMP4507 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4507, "sons", 4);
-STRING_LITERAL(TMP4508, "equalGenericParams", 18);
-static NIM_CONST TY190031 TMP4509 = {
+STRING_LITERAL(TMP4508, "sons", 4);
+STRING_LITERAL(TMP4509, "equalGenericParams", 18);
+static NIM_CONST TY190031 TMP4510 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4510, "sym", 3);
+STRING_LITERAL(TMP4511, "sym", 3);
 NIM_CONST NU8 flags_258203 = 30;
-STRING_LITERAL(TMP4512, "public implementation \'$1\' has non-public forward declaration i"
+STRING_LITERAL(TMP4513, "public implementation \'$1\' has non-public forward declaration i"
 "n $2", 67);
 extern TFrame* frameptr_17042;
 
@@ -548,15 +548,15 @@ N_NIMCALL(NIM_BOOL, equalgenericparams_258009)(Tnode189813* proca, Tnode189813* 
 		NI i_258026;
 		NI HEX3Atmp_258087;
 		NI LOC8;
-		NI TMP4505;
+		NI TMP4506;
 		NI res_258090;
 		i_258026 = 0;
 		HEX3Atmp_258087 = 0;
 		nimln(18, "procfind.nim");
 		LOC8 = 0;
 		LOC8 = sonslen_192403(proca);
-		TMP4505 = subInt(LOC8, ((NI) 1));
-		HEX3Atmp_258087 = (NI)(TMP4505);
+		TMP4506 = subInt(LOC8, ((NI) 1));
+		HEX3Atmp_258087 = (NI)(TMP4506);
 		nimln(1598, "system.nim");
 		res_258090 = ((NI) 0);
 		{
@@ -564,41 +564,41 @@ N_NIMCALL(NIM_BOOL, equalgenericparams_258009)(Tnode189813* proca, Tnode189813* 
 			while (1) {
 				Tsym189843* a;
 				Tsym189843* b;
-				NI TMP4511;
+				NI TMP4512;
 				if (!(res_258090 <= HEX3Atmp_258087)) goto LA10;
 				nimln(1600, "system.nim");
 				i_258026 = res_258090;
 				nimln(19, "procfind.nim");
 				{
-					if (((TMP4506[(*proca).kind/8] &(1<<((*proca).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+					if (((TMP4507[(*proca).kind/8] &(1<<((*proca).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 					if ((NU)(i_258026) >= (NU)((*proca).kindU.S6.sons->Sup.len)) raiseIndexError();
 					if (!!(((*(*proca).kindU.S6.sons->data[i_258026]).kind == ((NU8) 3)))) goto LA13;
 					nimln(20, "procfind.nim");
-					internalerror_163199((*proca).info, ((NimStringDesc*) &TMP4508));
+					internalerror_163199((*proca).info, ((NimStringDesc*) &TMP4509));
 					nimln(21, "procfind.nim");
 					goto BeforeRet;
 				}
 				LA13: ;
 				nimln(22, "procfind.nim");
 				{
-					if (((TMP4506[(*procb).kind/8] &(1<<((*procb).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+					if (((TMP4507[(*procb).kind/8] &(1<<((*procb).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 					if ((NU)(i_258026) >= (NU)((*procb).kindU.S6.sons->Sup.len)) raiseIndexError();
 					if (!!(((*(*procb).kindU.S6.sons->data[i_258026]).kind == ((NU8) 3)))) goto LA17;
 					nimln(23, "procfind.nim");
-					internalerror_163199((*procb).info, ((NimStringDesc*) &TMP4508));
+					internalerror_163199((*procb).info, ((NimStringDesc*) &TMP4509));
 					nimln(24, "procfind.nim");
 					goto BeforeRet;
 				}
 				LA17: ;
 				nimln(25, "procfind.nim");
-				if (((TMP4506[(*proca).kind/8] &(1<<((*proca).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+				if (((TMP4507[(*proca).kind/8] &(1<<((*proca).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 				if ((NU)(i_258026) >= (NU)((*proca).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (!(((TMP4509[(*(*proca).kindU.S6.sons->data[i_258026]).kind/8] &(1<<((*(*proca).kindU.S6.sons->data[i_258026]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4510));
+				if (!(((TMP4510[(*(*proca).kindU.S6.sons->data[i_258026]).kind/8] &(1<<((*(*proca).kindU.S6.sons->data[i_258026]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4511));
 				a = (*(*proca).kindU.S6.sons->data[i_258026]).kindU.S4.sym;
 				nimln(26, "procfind.nim");
-				if (((TMP4506[(*procb).kind/8] &(1<<((*procb).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+				if (((TMP4507[(*procb).kind/8] &(1<<((*procb).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 				if ((NU)(i_258026) >= (NU)((*procb).kindU.S6.sons->Sup.len)) raiseIndexError();
-				if (!(((TMP4509[(*(*procb).kindU.S6.sons->data[i_258026]).kind/8] &(1<<((*(*procb).kindU.S6.sons->data[i_258026]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4510));
+				if (!(((TMP4510[(*(*procb).kindU.S6.sons->data[i_258026]).kind/8] &(1<<((*(*procb).kindU.S6.sons->data[i_258026]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4511));
 				b = (*(*procb).kindU.S6.sons->data[i_258026]).kindU.S4.sym;
 				nimln(27, "procfind.nim");
 				{
@@ -637,8 +637,8 @@ N_NIMCALL(NIM_BOOL, equalgenericparams_258009)(Tnode189813* proca, Tnode189813* 
 				}
 				LA30: ;
 				nimln(1614, "system.nim");
-				TMP4511 = addInt(res_258090, ((NI) 1));
-				res_258090 = (NI)(TMP4511);
+				TMP4512 = addInt(res_258090, ((NI) 1));
+				res_258090 = (NI)(TMP4512);
 			} LA10: ;
 		}
 	}
@@ -679,11 +679,11 @@ N_NIMCALL(Tsym189843*, searchforprocold_258109)(Tcontext243023* c, Tscope189837*
 					LA11: ;
 					if (!LOC10) goto LA12;
 					nimln(45, "procfind.nim");
-					if (((TMP4506[(*(*result).ast).kind/8] &(1<<((*(*result).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+					if (((TMP4507[(*(*result).ast).kind/8] &(1<<((*(*result).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 					if ((NU)(((NI) 2)) >= (NU)((*(*result).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 					genr = (*(*result).ast).kindU.S6.sons->data[((NI) 2)];
 					nimln(46, "procfind.nim");
-					if (((TMP4506[(*(*fn).ast).kind/8] &(1<<((*(*fn).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+					if (((TMP4507[(*(*fn).ast).kind/8] &(1<<((*(*fn).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 					if ((NU)(((NI) 2)) >= (NU)((*(*fn).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 					genf = (*(*fn).ast).kindU.S6.sons->data[((NI) 2)];
 					nimln(47, "procfind.nim");
@@ -697,9 +697,9 @@ N_NIMCALL(Tsym189843*, searchforprocold_258109)(Tcontext243023* c, Tscope189837*
 						LOC17 = exprstructuralequivalent_218149(genr, genf);
 						if (!(LOC17)) goto LA18;
 						nimln(48, "procfind.nim");
-						if (((TMP4506[(*(*result).ast).kind/8] &(1<<((*(*result).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+						if (((TMP4507[(*(*result).ast).kind/8] &(1<<((*(*result).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 						if ((NU)(((NI) 3)) >= (NU)((*(*result).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
-						if (((TMP4506[(*(*fn).ast).kind/8] &(1<<((*(*fn).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4507));
+						if (((TMP4507[(*(*fn).ast).kind/8] &(1<<((*(*fn).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4508));
 						if ((NU)(((NI) 3)) >= (NU)((*(*fn).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 						LOC17 = exprstructuralequivalent_218149((*(*result).ast).kindU.S6.sons->data[((NI) 3)], (*(*fn).ast).kindU.S6.sons->data[((NI) 3)]);
 						LA18: ;
@@ -820,7 +820,7 @@ N_NIMCALL(Tsym189843*, searchforprocnew_258197)(Tcontext243023* c, Tscope189837*
 						nimln(80, "procfind.nim");
 						LOC17[0] = getprocheader_219447(result, ((NU8) 0));
 						LOC17[1] = HEX24_162479((*result).info);
-						message = nsuFormatOpenArray(((NimStringDesc*) &TMP4512), LOC17, 2);
+						message = nsuFormatOpenArray(((NimStringDesc*) &TMP4513), LOC17, 2);
 						nimln(81, "procfind.nim");
 						localerror_163155((*fn).info, ((NU16) 4), message);
 					}

@@ -209,10 +209,10 @@ N_NIMCALL(NI64, HEX7CdivHEX7C_254051)(NI64 a, NI64 b) {
 	goto LA1;
 	LA8: ;
 	{
-		NI64 TMP4432;
+		NI64 TMP4433;
 		nimln(46, "saturate.nim");
-		TMP4432 = divInt64(a, b);
-		result = (NI64)(TMP4432);
+		TMP4433 = divInt64(a, b);
+		result = (NI64)(TMP4433);
 	}
 	LA1: ;
 	popFrame();
@@ -246,10 +246,10 @@ N_NIMCALL(NI64, HEX7CmodHEX7C_254062)(NI64 a, NI64 b) {
 	goto LA1;
 	LA3: ;
 	{
-		NI64 TMP4433;
+		NI64 TMP4434;
 		nimln(52, "saturate.nim");
-		TMP4433 = modInt64(a, b);
-		result = (NI64)(TMP4433);
+		TMP4434 = modInt64(a, b);
+		result = (NI64)(TMP4434);
 	}
 	LA1: ;
 	popFrame();

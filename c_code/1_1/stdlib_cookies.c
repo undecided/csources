@@ -92,15 +92,15 @@ N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, setcookie_337124)(NimStringDesc* key, NimStringDesc* value, Timeinfo108405* expires, NimStringDesc* domain, NimStringDesc* path, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly);
 N_NIMCALL(NimStringDesc*, format_110392)(Timeinfo108405* info, NimStringDesc* f);
-STRING_LITERAL(TMP6498, "", 0);
-STRING_LITERAL(TMP6499, "Set-Cookie: ", 12);
-STRING_LITERAL(TMP6500, "=", 1);
-STRING_LITERAL(TMP6501, "; Domain=", 9);
-STRING_LITERAL(TMP6502, "; Path=", 7);
-STRING_LITERAL(TMP6503, "; Expires=", 10);
-STRING_LITERAL(TMP6504, "; secure", 8);
-STRING_LITERAL(TMP6505, "; HttpOnly", 10);
-STRING_LITERAL(TMP6506, "ddd\',\' dd MMM yyyy HH:mm:ss \'UTC\'", 33);
+STRING_LITERAL(TMP6499, "", 0);
+STRING_LITERAL(TMP6500, "Set-Cookie: ", 12);
+STRING_LITERAL(TMP6501, "=", 1);
+STRING_LITERAL(TMP6502, "; Domain=", 9);
+STRING_LITERAL(TMP6503, "; Path=", 7);
+STRING_LITERAL(TMP6504, "; Expires=", 10);
+STRING_LITERAL(TMP6505, "; secure", 8);
+STRING_LITERAL(TMP6506, "; HttpOnly", 10);
+STRING_LITERAL(TMP6507, "ddd\',\' dd MMM yyyy HH:mm:ss \'UTC\'", 33);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(NI, addInt)(NI a, NI b) {
@@ -184,18 +184,18 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 		while (1) {
 			NI keystart;
 			NI keyend;
-			NI TMP6493;
 			NI TMP6494;
+			NI TMP6495;
 			NI valstart;
 			NimStringDesc* LOC19;
-			NI TMP6496;
-			NimStringDesc* LOC20;
 			NI TMP6497;
+			NimStringDesc* LOC20;
+			NI TMP6498;
 			{
 				nimln(19, "cookies.nim");
 				while (1) {
 					NIM_BOOL LOC5;
-					NI TMP6491;
+					NI TMP6492;
 					LOC5 = 0;
 					if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 					LOC5 = ((NU8)(s->data[i]) == (NU8)(32));
@@ -204,8 +204,8 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 					LOC5 = ((NU8)(s->data[i]) == (NU8)(9));
 					LA6: ;
 					if (!LOC5) goto LA4;
-					TMP6491 = addInt(i, ((NI) 1));
-					i = (NI)(TMP6491);
+					TMP6492 = addInt(i, ((NI) 1));
+					i = (NI)(TMP6492);
 				} LA4: ;
 			}
 			nimln(20, "cookies.nim");
@@ -214,7 +214,7 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 				nimln(21, "cookies.nim");
 				while (1) {
 					NIM_BOOL LOC9;
-					NI TMP6492;
+					NI TMP6493;
 					LOC9 = 0;
 					if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 					LOC9 = !(((NU8)(s->data[i]) == (NU8)(61)));
@@ -223,13 +223,13 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 					LOC9 = !(((NU8)(s->data[i]) == (NU8)(0)));
 					LA10: ;
 					if (!LOC9) goto LA8;
-					TMP6492 = addInt(i, ((NI) 1));
-					i = (NI)(TMP6492);
+					TMP6493 = addInt(i, ((NI) 1));
+					i = (NI)(TMP6493);
 				} LA8: ;
 			}
 			nimln(22, "cookies.nim");
-			TMP6493 = subInt(i, ((NI) 1));
-			keyend = (NI)(TMP6493);
+			TMP6494 = subInt(i, ((NI) 1));
+			keyend = (NI)(TMP6494);
 			nimln(23, "cookies.nim");
 			{
 				if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
@@ -238,15 +238,15 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 			}
 			LA13: ;
 			nimln(24, "cookies.nim");
-			TMP6494 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6494);
+			TMP6495 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6495);
 			nimln(25, "cookies.nim");
 			valstart = i;
 			{
 				nimln(26, "cookies.nim");
 				while (1) {
 					NIM_BOOL LOC17;
-					NI TMP6495;
+					NI TMP6496;
 					LOC17 = 0;
 					if ((NU)(i) > (NU)(s->Sup.len)) raiseIndexError();
 					LOC17 = !(((NU8)(s->data[i]) == (NU8)(59)));
@@ -255,16 +255,16 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 					LOC17 = !(((NU8)(s->data[i]) == (NU8)(0)));
 					LA18: ;
 					if (!LOC17) goto LA16;
-					TMP6495 = addInt(i, ((NI) 1));
-					i = (NI)(TMP6495);
+					TMP6496 = addInt(i, ((NI) 1));
+					i = (NI)(TMP6496);
 				} LA16: ;
 			}
 			nimln(27, "cookies.nim");
 			LOC19 = 0;
 			LOC19 = copyStrLast(s, keystart, keyend);
-			TMP6496 = subInt(i, ((NI) 1));
+			TMP6497 = subInt(i, ((NI) 1));
 			LOC20 = 0;
-			LOC20 = copyStrLast(s, valstart, (NI)(TMP6496));
+			LOC20 = copyStrLast(s, valstart, (NI)(TMP6497));
 			nstPut(result, LOC19, LOC20);
 			nimln(28, "cookies.nim");
 			{
@@ -274,8 +274,8 @@ N_NIMCALL(Stringtableobj137012*, parsecookies_337020)(NimStringDesc* s) {
 			}
 			LA23: ;
 			nimln(29, "cookies.nim");
-			TMP6497 = addInt(i, ((NI) 1));
-			i = (NI)(TMP6497);
+			TMP6498 = addInt(i, ((NI) 1));
+			i = (NI)(TMP6498);
 		}
 	} LA1: ;
 	popFrame();
@@ -293,19 +293,19 @@ N_NIMCALL(NimStringDesc*, setcookie_337107)(NimStringDesc* key, NimStringDesc* v
 	nimfr("setCookie", "cookies.nim")
 	result = 0;
 	nimln(36, "cookies.nim");
-	result = copyString(((NimStringDesc*) &TMP6498));
+	result = copyString(((NimStringDesc*) &TMP6499));
 	nimln(37, "cookies.nim");
 	{
 		if (!!(noname)) goto LA3;
 		result = resizeString(result, 12);
-appendString(result, ((NimStringDesc*) &TMP6499));
+appendString(result, ((NimStringDesc*) &TMP6500));
 	}
 	LA3: ;
 	nimln(38, "cookies.nim");
 	LOC5 = 0;
 	LOC5 = rawNewString(key->Sup.len + value->Sup.len + 1);
 appendString(LOC5, key);
-appendString(LOC5, ((NimStringDesc*) &TMP6500));
+appendString(LOC5, ((NimStringDesc*) &TMP6501));
 appendString(LOC5, value);
 	result = resizeString(result, LOC5->Sup.len + 0);
 appendString(result, LOC5);
@@ -315,7 +315,7 @@ appendString(result, LOC5);
 		if (!!(((domain) && (domain)->Sup.len == 0))) goto LA8;
 		LOC10 = 0;
 		LOC10 = rawNewString(domain->Sup.len + 9);
-appendString(LOC10, ((NimStringDesc*) &TMP6501));
+appendString(LOC10, ((NimStringDesc*) &TMP6502));
 appendString(LOC10, domain);
 		result = resizeString(result, LOC10->Sup.len + 0);
 appendString(result, LOC10);
@@ -327,7 +327,7 @@ appendString(result, LOC10);
 		if (!!(((path) && (path)->Sup.len == 0))) goto LA13;
 		LOC15 = 0;
 		LOC15 = rawNewString(path->Sup.len + 7);
-appendString(LOC15, ((NimStringDesc*) &TMP6502));
+appendString(LOC15, ((NimStringDesc*) &TMP6503));
 appendString(LOC15, path);
 		result = resizeString(result, LOC15->Sup.len + 0);
 appendString(result, LOC15);
@@ -339,7 +339,7 @@ appendString(result, LOC15);
 		if (!!(((expires) && (expires)->Sup.len == 0))) goto LA18;
 		LOC20 = 0;
 		LOC20 = rawNewString(expires->Sup.len + 10);
-appendString(LOC20, ((NimStringDesc*) &TMP6503));
+appendString(LOC20, ((NimStringDesc*) &TMP6504));
 appendString(LOC20, expires);
 		result = resizeString(result, LOC20->Sup.len + 0);
 appendString(result, LOC20);
@@ -349,14 +349,14 @@ appendString(result, LOC20);
 	{
 		if (!secure) goto LA23;
 		result = resizeString(result, 8);
-appendString(result, ((NimStringDesc*) &TMP6504));
+appendString(result, ((NimStringDesc*) &TMP6505));
 	}
 	LA23: ;
 	nimln(43, "cookies.nim");
 	{
 		if (!httponly) goto LA27;
 		result = resizeString(result, 10);
-appendString(result, ((NimStringDesc*) &TMP6505));
+appendString(result, ((NimStringDesc*) &TMP6506));
 	}
 	LA27: ;
 	popFrame();
@@ -371,7 +371,7 @@ N_NIMCALL(NimStringDesc*, setcookie_337124)(NimStringDesc* key, NimStringDesc* v
 	nimln(52, "cookies.nim");
 	nimln(53, "cookies.nim");
 	LOC1 = 0;
-	LOC1 = format_110392(expires, ((NimStringDesc*) &TMP6506));
+	LOC1 = format_110392(expires, ((NimStringDesc*) &TMP6507));
 	result = setcookie_337107(key, value, domain, path, LOC1, noname, secure, httponly);
 	goto BeforeRet;
 	}BeforeRet: ;

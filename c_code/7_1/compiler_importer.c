@@ -606,45 +606,45 @@ N_NIMCALL(Tnode189813*, newsymnode_191325)(Tsym189843* sym);
 N_NIMCALL(Tnode189813*, evalimportexcept_250857)(Tcontext243023* c, Tnode189813* n);
 N_NIMCALL(void, initintset_186927)(Intset186056* Result);
 N_NOINLINE(void, chckNil)(void* p);
-static NIM_CONST TY190031 TMP4314 = {
+static NIM_CONST TY190031 TMP4315 = {
 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4315, "strVal", 6);
-STRING_LITERAL(TMP4316, "", 0);
-static NIM_CONST TY190031 TMP4317 = {
+STRING_LITERAL(TMP4316, "strVal", 6);
+STRING_LITERAL(TMP4317, "", 0);
+static NIM_CONST TY190031 TMP4318 = {
 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4318, "ident", 5);
-static NIM_CONST TY190031 TMP4319 = {
+STRING_LITERAL(TMP4319, "ident", 5);
+static NIM_CONST TY190031 TMP4320 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4320, "sym", 3);
-static NIM_CONST TY190031 TMP4321 = {
+STRING_LITERAL(TMP4321, "sym", 3);
+static NIM_CONST TY190031 TMP4322 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4322, "sons", 4);
-STRING_LITERAL(TMP4323, "as", 2);
-STRING_LITERAL(TMP4324, " ", 1);
-STRING_LITERAL(TMP4325, ".", 1);
-STRING_LITERAL(TMP4326, "/", 1);
-STRING_LITERAL(TMP4327, "invalid module name: \'$1\'", 25);
-STRING_LITERAL(TMP4329, "rawImportSymbol", 15);
-STRING_LITERAL(TMP4331, "tab", 3);
-STRING_LITERAL(TMP4332, "importSymbol: 2", 15);
-STRING_LITERAL(TMP4333, "importSymbol: 3", 15);
-STRING_LITERAL(TMP4334, "importAllSymbols: ", 18);
-STRING_LITERAL(TMP4335, "a.kind == nkSym ", 16);
-STRING_LITERAL(TMP4337, "\'export except\' not implemented", 31);
-STRING_LITERAL(TMP4340, "module alias must be an identifier", 34);
-STRING_LITERAL(TMP4341, "A module cannot import itself", 29);
+STRING_LITERAL(TMP4323, "sons", 4);
+STRING_LITERAL(TMP4324, "as", 2);
+STRING_LITERAL(TMP4325, " ", 1);
+STRING_LITERAL(TMP4326, ".", 1);
+STRING_LITERAL(TMP4327, "/", 1);
+STRING_LITERAL(TMP4328, "invalid module name: \'$1\'", 25);
+STRING_LITERAL(TMP4330, "rawImportSymbol", 15);
+STRING_LITERAL(TMP4332, "tab", 3);
+STRING_LITERAL(TMP4333, "importSymbol: 2", 15);
+STRING_LITERAL(TMP4334, "importSymbol: 3", 15);
+STRING_LITERAL(TMP4335, "importAllSymbols: ", 18);
+STRING_LITERAL(TMP4336, "a.kind == nkSym ", 16);
+STRING_LITERAL(TMP4338, "\'export except\' not implemented", 31);
+STRING_LITERAL(TMP4341, "module alias must be an identifier", 34);
+STRING_LITERAL(TMP4342, "A module cannot import itself", 29);
 extern TNimType NTI189813; /* TNode */
 extern TNimNode* NimDT_189813_kind[160];
 extern TFrame* frameptr_17042;
@@ -742,21 +742,21 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 	case ((NU8) 22):
 	{
 		nimln(25, "importer.nim");
-		if (!(((TMP4314[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4315));
-		result = nosunixToNativePath((*n).kindU.S3.strval, ((NimStringDesc*) &TMP4316));
+		if (!(((TMP4315[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4316));
+		result = nosunixToNativePath((*n).kindU.S3.strval, ((NimStringDesc*) &TMP4317));
 	}
 	break;
 	case ((NU8) 2):
 	{
 		nimln(27, "importer.nim");
-		if (!(((TMP4317[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4318));
+		if (!(((TMP4318[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4319));
 		result = copyString((*(*n).kindU.S5.ident).s);
 	}
 	break;
 	case ((NU8) 3):
 	{
 		nimln(29, "importer.nim");
-		if (!(((TMP4319[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4320));
+		if (!(((TMP4320[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4321));
 		result = copyString((*(*(*n).kindU.S4.sym).name).s);
 	}
 	break;
@@ -770,15 +770,15 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 			Tident165021* LOC9;
 			NU8 LOC12;
 			LOC7 = 0;
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC7 = ((*(*n).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 2));
 			if (!(LOC7)) goto LA8;
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (!(((TMP4317[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4318));
+			if (!(((TMP4318[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4319));
 			LOC9 = 0;
-			LOC9 = getident_165463(((NimStringDesc*) &TMP4323));
+			LOC9 = getident_165463(((NimStringDesc*) &TMP4324));
 			LOC7 = ((*(*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S5.ident).Sup.id == (*LOC9).Sup.id);
 			LA8: ;
 			if (!LOC7) goto LA10;
@@ -788,22 +788,22 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 			FieldDiscriminantCheck((NI)(NU)((*n).kind), (NI)(NU)(LOC12), NimDT_189813_kind, 160);
 			(*n).kind = LOC12;
 			nimln(34, "importer.nim");
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			asgnRefNoCycle((void**) (&(*n).kindU.S6.sons->data[((NI) 0)]), (*n).kindU.S6.sons->data[((NI) 1)]);
 			nimln(35, "importer.nim");
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 2)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			asgnRefNoCycle((void**) (&(*n).kindU.S6.sons->data[((NI) 1)]), (*n).kindU.S6.sons->data[((NI) 2)]);
 			nimln(36, "importer.nim");
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			(*n).kindU.S6.sons = (Tnodeseq189807*) setLengthSeq(&((*n).kindU.S6.sons)->Sup, sizeof(Tnode189813*), ((NI) 2));
 			nimln(37, "importer.nim");
-			if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+			if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 			if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			result = getmodulename_250018((*n).kindU.S6.sons->data[((NI) 0)]);
 			goto BeforeRet;
@@ -812,7 +812,7 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 		nimln(39, "importer.nim");
 		LOC13 = 0;
 		LOC13 = rendertree_211058(n, 4);
-		result = nsuReplaceStr(LOC13, ((NimStringDesc*) &TMP4324), ((NimStringDesc*) &TMP4316));
+		result = nsuReplaceStr(LOC13, ((NimStringDesc*) &TMP4325), ((NimStringDesc*) &TMP4317));
 	}
 	break;
 	case ((NU8) 45):
@@ -821,13 +821,13 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 		nimln(41, "importer.nim");
 		LOC15 = 0;
 		LOC15 = rendertree_211058(n, 4);
-		result = nsuReplaceStr(LOC15, ((NimStringDesc*) &TMP4325), ((NimStringDesc*) &TMP4326));
+		result = nsuReplaceStr(LOC15, ((NimStringDesc*) &TMP4326), ((NimStringDesc*) &TMP4327));
 	}
 	break;
 	case ((NU8) 78):
 	{
 		nimln(43, "importer.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		result = getmodulename_250018((*n).kindU.S6.sons->data[((NI) 0)]);
 	}
@@ -840,10 +840,10 @@ N_NIMCALL(NimStringDesc*, getmodulename_250018)(Tnode189813* n) {
 		LOC18 = 0;
 		LOC18 = rendertree_211058(n, 0);
 		LOC19 = 0;
-		LOC19 = nsuFormatSingleElem(((NimStringDesc*) &TMP4327), LOC18);
+		LOC19 = nsuFormatSingleElem(((NimStringDesc*) &TMP4328), LOC18);
 		localerror_163155((*n).info, ((NU16) 4), LOC19);
 		nimln(46, "importer.nim");
-		result = copyString(((NimStringDesc*) &TMP4316));
+		result = copyString(((NimStringDesc*) &TMP4317));
 	}
 	break;
 	}
@@ -943,7 +943,7 @@ static N_INLINE(NIM_BOOL, haspattern_194784)(Tsym189843* s) {
 	LOC1 = 0;
 	LOC1 = isroutine_194764(s);
 	if (!(LOC1)) goto LA2;
-	if (((TMP4321[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+	if (((TMP4322[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 	if ((NU)(((NI) 1)) >= (NU)((*(*s).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = !(((*(*(*s).ast).kindU.S6.sons->data[((NI) 1)]).kind == ((NU8) 1)));
 	LA2: ;
@@ -998,15 +998,15 @@ N_NIMCALL(void, rawimportsymbol_250077)(Tcontext243023* c, Tsym189843* s) {
 				NI j_250157;
 				NI HEX3Atmp_250213;
 				NI LOC22;
-				NI TMP4328;
+				NI TMP4329;
 				NI res_250216;
 				j_250157 = 0;
 				HEX3Atmp_250213 = 0;
 				nimln(74, "importer.nim");
 				LOC22 = 0;
 				LOC22 = sonslen_192403((*etyp).n);
-				TMP4328 = subInt(LOC22, ((NI) 1));
-				HEX3Atmp_250213 = (NI)(TMP4328);
+				TMP4329 = subInt(LOC22, ((NI) 1));
+				HEX3Atmp_250213 = (NI)(TMP4329);
 				nimln(1598, "system.nim");
 				res_250216 = ((NI) 0);
 				{
@@ -1014,20 +1014,20 @@ N_NIMCALL(void, rawimportsymbol_250077)(Tcontext243023* c, Tsym189843* s) {
 					while (1) {
 						Tsym189843* e;
 						Tidentiter197141 it;
-						NI TMP4330;
+						NI TMP4331;
 						if (!(res_250216 <= HEX3Atmp_250213)) goto LA24;
 						nimln(1600, "system.nim");
 						j_250157 = res_250216;
 						nimln(75, "importer.nim");
-						if (((TMP4321[(*(*etyp).n).kind/8] &(1<<((*(*etyp).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+						if (((TMP4322[(*(*etyp).n).kind/8] &(1<<((*(*etyp).n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 						if ((NU)(j_250157) >= (NU)((*(*etyp).n).kindU.S6.sons->Sup.len)) raiseIndexError();
-						if (!(((TMP4319[(*(*(*etyp).n).kindU.S6.sons->data[j_250157]).kind/8] &(1<<((*(*(*etyp).n).kindU.S6.sons->data[j_250157]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4320));
+						if (!(((TMP4320[(*(*(*etyp).n).kindU.S6.sons->data[j_250157]).kind/8] &(1<<((*(*(*etyp).n).kindU.S6.sons->data[j_250157]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4321));
 						e = (*(*(*etyp).n).kindU.S6.sons->data[j_250157]).kindU.S4.sym;
 						nimln(76, "importer.nim");
 						{
 							if (!!(((*e).kind == ((NU8) 20)))) goto LA27;
 							nimln(77, "importer.nim");
-							internalerror_163199((*s).info, ((NimStringDesc*) &TMP4329));
+							internalerror_163199((*s).info, ((NimStringDesc*) &TMP4330));
 						}
 						LA27: ;
 						memset((void*)(&it), 0, sizeof(it));
@@ -1058,8 +1058,8 @@ N_NIMCALL(void, rawimportsymbol_250077)(Tcontext243023* c, Tsym189843* s) {
 						}
 						LA37: ;
 						nimln(1614, "system.nim");
-						TMP4330 = addInt(res_250216, ((NI) 1));
-						res_250216 = (NI)(TMP4330);
+						TMP4331 = addInt(res_250216, ((NI) 1));
+						res_250216 = (NI)(TMP4331);
 					} LA24: ;
 				}
 			}
@@ -1096,7 +1096,7 @@ N_NIMCALL(void, importsymbol_250241)(Tcontext243023* c, Tnode189813* n, Tsym1898
 	nimln(96, "importer.nim");
 	ident = considerquotedident_248010(n);
 	nimln(97, "importer.nim");
-	if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4331));
+	if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4332));
 	s = strtableget_197111((*frommod).kindU.S3.tab, ident);
 	nimln(98, "importer.nim");
 	{
@@ -1117,7 +1117,7 @@ N_NIMCALL(void, importsymbol_250241)(Tcontext243023* c, Tnode189813* n, Tsym1898
 		{
 			if (!!(((43513728 &(1<<(((*s).kind)&31)))!=0))) goto LA12;
 			nimln(103, "importer.nim");
-			internalerror_163199((*n).info, ((NimStringDesc*) &TMP4332));
+			internalerror_163199((*n).info, ((NimStringDesc*) &TMP4333));
 		}
 		LA12: ;
 		nimln(105, "importer.nim");
@@ -1134,7 +1134,7 @@ N_NIMCALL(void, importsymbol_250241)(Tcontext243023* c, Tnode189813* n, Tsym1898
 			Tsym189843* e;
 			memset((void*)(&it), 0, sizeof(it));
 			nimln(109, "importer.nim");
-			if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4331));
+			if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4332));
 			e = initidentiter_197147((&it), (*frommod).kindU.S3.tab, (*s).name);
 			{
 				nimln(110, "importer.nim");
@@ -1143,13 +1143,13 @@ N_NIMCALL(void, importsymbol_250241)(Tcontext243023* c, Tnode189813* n, Tsym1898
 					nimln(111, "importer.nim");
 					{
 						if (!!(((*(*e).name).Sup.id == (*(*s).name).Sup.id))) goto LA19;
-						internalerror_163199((*n).info, ((NimStringDesc*) &TMP4333));
+						internalerror_163199((*n).info, ((NimStringDesc*) &TMP4334));
 					}
 					LA19: ;
 					nimln(112, "importer.nim");
 					rawimportsymbol_250077(c, e);
 					nimln(113, "importer.nim");
-					if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4331));
+					if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4332));
 					e = nextidentiter_197156((&it), (*frommod).kindU.S3.tab);
 				} LA16: ;
 			}
@@ -1188,7 +1188,7 @@ N_NIMCALL(void, importallsymbolsexcept_250315)(Tcontext243023* c, Tsym189843* fr
 	nimfr("importAllSymbolsExcept", "importer.nim")
 	memset((void*)(&i), 0, sizeof(i));
 	nimln(118, "importer.nim");
-	if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4331));
+	if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4332));
 	s = inittabiter_197124((&i), (*frommod).kindU.S3.tab);
 	{
 		nimln(119, "importer.nim");
@@ -1207,7 +1207,7 @@ N_NIMCALL(void, importallsymbolsexcept_250315)(Tcontext243023* c, Tsym189843* fr
 						nimln(123, "importer.nim");
 						LOC15 = 0;
 						LOC15 = rawNewString(reprEnum((*s).kind, (&NTI189441))->Sup.len + 18);
-appendString(LOC15, ((NimStringDesc*) &TMP4334));
+appendString(LOC15, ((NimStringDesc*) &TMP4335));
 appendString(LOC15, reprEnum((*s).kind, (&NTI189441)));
 						internalerror_163199((*s).info, LOC15);
 					}
@@ -1233,7 +1233,7 @@ appendString(LOC15, reprEnum((*s).kind, (&NTI189441)));
 			}
 			LA5: ;
 			nimln(126, "importer.nim");
-			if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4331));
+			if (!(((64 &(1<<(((*frommod).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4332));
 			s = nextiter_197132((&i), (*frommod).kindU.S3.tab);
 		} LA2: ;
 	}
@@ -1255,7 +1255,7 @@ static N_INLINE(NI, len_190097)(Tnode189813* n) {
 	result = 0;
 	nimln(934, "ast.nim");
 	{
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if (!(*n).kindU.S6.sons == 0) goto LA3;
 		result = ((NI) 0);
 	}
@@ -1263,7 +1263,7 @@ static N_INLINE(NI, len_190097)(Tnode189813* n) {
 	LA3: ;
 	{
 		nimln(935, "ast.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -1281,7 +1281,7 @@ static N_INLINE(NI, safelen_190125)(Tnode189813* n) {
 		LOC3 = 0;
 		LOC3 = ((*n).kind >= ((NU8) 0) && (*n).kind <= ((NU8) 23));
 		if (LOC3) goto LA4;
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		LOC3 = (*n).kindU.S6.sons == 0;
 		LA4: ;
 		if (!LOC3) goto LA5;
@@ -1291,7 +1291,7 @@ static N_INLINE(NI, safelen_190125)(Tnode189813* n) {
 	LA5: ;
 	{
 		nimln(940, "ast.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		result = ((*n).kindU.S6.sons ? (*n).kindU.S6.sons->Sup.len : 0);
 	}
 	LA1: ;
@@ -1331,22 +1331,22 @@ N_NIMCALL(void, importforwarded_250401)(Tcontext243023* c, Tnode189813* n, Intse
 					nimln(1599, "system.nim");
 					while (1) {
 						Tsym189843* s;
-						NI TMP4336;
+						NI TMP4337;
 						if (!(res_250633 <= HEX3Atmp_250631)) goto LA10;
 						nimln(1600, "system.nim");
 						i_250629 = res_250633;
 						nimln(1537, "ast.nim");
-						if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+						if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 						if ((NU)(i_250629) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						a_250415 = (*n).kindU.S6.sons->data[i_250629];
 						nimln(137, "importer.nim");
 						{
 							if (!!(((*a_250415).kind == ((NU8) 3)))) goto LA13;
-							failedassertimpl_87017(((NimStringDesc*) &TMP4335));
+							failedassertimpl_87017(((NimStringDesc*) &TMP4336));
 						}
 						LA13: ;
 						nimln(138, "importer.nim");
-						if (!(((TMP4319[(*a_250415).kind/8] &(1<<((*a_250415).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4320));
+						if (!(((TMP4320[(*a_250415).kind/8] &(1<<((*a_250415).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4321));
 						s = (*a_250415).kindU.S4.sym;
 						nimln(139, "importer.nim");
 						{
@@ -1375,8 +1375,8 @@ N_NIMCALL(void, importforwarded_250401)(Tcontext243023* c, Tnode189813* n, Intse
 						LA23: ;
 						LA15: ;
 						nimln(1619, "system.nim");
-						TMP4336 = addInt(res_250633, ((NI) 1));
-						res_250633 = (NI)(TMP4336);
+						TMP4337 = addInt(res_250633, ((NI) 1));
+						res_250633 = (NI)(TMP4337);
 					} LA10: ;
 				}
 			}
@@ -1386,7 +1386,7 @@ N_NIMCALL(void, importforwarded_250401)(Tcontext243023* c, Tnode189813* n, Intse
 	case ((NU8) 119):
 	{
 		nimln(144, "importer.nim");
-		localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4337));
+		localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4338));
 	}
 	break;
 	default:
@@ -1395,31 +1395,31 @@ N_NIMCALL(void, importforwarded_250401)(Tcontext243023* c, Tnode189813* n, Intse
 			NI i_250623;
 			NI HEX3Atmp_250637;
 			NI LOC28;
-			NI TMP4338;
+			NI TMP4339;
 			NI res_250640;
 			i_250623 = 0;
 			HEX3Atmp_250637 = 0;
 			nimln(146, "importer.nim");
 			LOC28 = 0;
 			LOC28 = safelen_190125(n);
-			TMP4338 = subInt(LOC28, ((NI) 1));
-			HEX3Atmp_250637 = (NI)(TMP4338);
+			TMP4339 = subInt(LOC28, ((NI) 1));
+			HEX3Atmp_250637 = (NI)(TMP4339);
 			nimln(1598, "system.nim");
 			res_250640 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4339;
+					NI TMP4340;
 					if (!(res_250640 <= HEX3Atmp_250637)) goto LA30;
 					nimln(1600, "system.nim");
 					i_250623 = res_250640;
 					nimln(147, "importer.nim");
-					if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+					if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 					if ((NU)(i_250623) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					importforwarded_250401(c, (*n).kindU.S6.sons->data[i_250623], exceptset);
 					nimln(1619, "system.nim");
-					TMP4339 = addInt(res_250640, ((NI) 1));
-					res_250640 = (NI)(TMP4339);
+					TMP4340 = addInt(res_250640, ((NI) 1));
+					res_250640 = (NI)(TMP4340);
 				} LA30: ;
 			}
 		}
@@ -1451,26 +1451,26 @@ N_NIMCALL(Tsym189843*, importmoduleas_250671)(Tnode189813* n, Tsym189843* realmo
 		LOC7 = len_190097(n);
 		LOC6 = !((LOC7 == ((NI) 2)));
 		if (LOC6) goto LA8;
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC6 = !(((*(*n).kindU.S6.sons->data[((NI) 1)]).kind == ((NU8) 2)));
 		LA8: ;
 		if (!LOC6) goto LA9;
 		nimln(153, "importer.nim");
-		localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4340));
+		localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4341));
 	}
 	goto LA1;
 	LA9: ;
 	{
 		nimln(154, "importer.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP4317[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4318));
+		if (!(((TMP4318[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4319));
 		if (!!(((*(*(*n).kindU.S6.sons->data[((NI) 1)]).kindU.S5.ident).Sup.id == (*(*realmodule).name).Sup.id))) goto LA12;
 		nimln(156, "importer.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 1)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP4317[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4318));
+		if (!(((TMP4318[(*(*n).kindU.S6.sons->data[((NI) 1)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 1)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4319));
 		result = createmodulealias_192844(realmodule, (*(*n).kindU.S6.sons->data[((NI) 1)]).kindU.S5.ident, (*realmodule).info);
 	}
 	goto LA1;
@@ -1499,7 +1499,7 @@ N_NIMCALL(Tsym189843*, myimportmodule_250708)(Tcontext243023* c, Tnode189813* n)
 		{
 			if (!((*result).info.fileindex == (*n).info.fileindex)) goto LA8;
 			nimln(163, "importer.nim");
-			localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4341));
+			localerror_163155((*n).info, ((NU16) 4), ((NimStringDesc*) &TMP4342));
 		}
 		LA8: ;
 		nimln(164, "importer.nim");
@@ -1527,27 +1527,27 @@ N_NIMCALL(Tnode189813*, evalimport_250004)(Tcontext243023* c, Tnode189813* n) {
 		NI i_250751;
 		NI HEX3Atmp_250768;
 		NI LOC2;
-		NI TMP4342;
+		NI TMP4343;
 		NI res_250771;
 		i_250751 = 0;
 		HEX3Atmp_250768 = 0;
 		nimln(170, "importer.nim");
 		LOC2 = 0;
 		LOC2 = sonslen_192403(n);
-		TMP4342 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_250768 = (NI)(TMP4342);
+		TMP4343 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_250768 = (NI)(TMP4343);
 		nimln(1598, "system.nim");
 		res_250771 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				Tsym189843* m;
-				NI TMP4343;
+				NI TMP4344;
 				if (!(res_250771 <= HEX3Atmp_250768)) goto LA4;
 				nimln(1600, "system.nim");
 				i_250751 = res_250771;
 				nimln(171, "importer.nim");
-				if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+				if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 				if ((NU)(i_250751) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 				m = myimportmodule_250708(c, (*n).kindU.S6.sons->data[i_250751]);
 				nimln(172, "importer.nim");
@@ -1560,8 +1560,8 @@ N_NIMCALL(Tnode189813*, evalimport_250004)(Tcontext243023* c, Tnode189813* n) {
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP4343 = addInt(res_250771, ((NI) 1));
-				res_250771 = (NI)(TMP4343);
+				TMP4344 = addInt(res_250771, ((NI) 1));
+				res_250771 = (NI)(TMP4344);
 			} LA4: ;
 		}
 	}
@@ -1579,14 +1579,14 @@ N_NIMCALL(Tnode189813*, evalfrom_250011)(Tcontext243023* c, Tnode189813* n) {
 	nimln(180, "importer.nim");
 	checkminsonslen_244259(n, ((NI) 2));
 	nimln(181, "importer.nim");
-	if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+	if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	m = myimportmodule_250708(c, (*n).kindU.S6.sons->data[((NI) 0)]);
 	nimln(182, "importer.nim");
 	{
 		if (!!((m == NIM_NIL))) goto LA3;
 		nimln(183, "importer.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		asgnRefNoCycle((void**) (&(*n).kindU.S6.sons->data[((NI) 0)]), newsymnode_191325(m));
 		nimln(184, "importer.nim");
@@ -1595,38 +1595,38 @@ N_NIMCALL(Tnode189813*, evalfrom_250011)(Tcontext243023* c, Tnode189813* n) {
 			NI i_250822;
 			NI HEX3Atmp_250835;
 			NI LOC6;
-			NI TMP4344;
+			NI TMP4345;
 			NI res_250838;
 			i_250822 = 0;
 			HEX3Atmp_250835 = 0;
 			nimln(185, "importer.nim");
 			LOC6 = 0;
 			LOC6 = sonslen_192403(n);
-			TMP4344 = subInt(LOC6, ((NI) 1));
-			HEX3Atmp_250835 = (NI)(TMP4344);
+			TMP4345 = subInt(LOC6, ((NI) 1));
+			HEX3Atmp_250835 = (NI)(TMP4345);
 			nimln(1598, "system.nim");
 			res_250838 = ((NI) 1);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4345;
+					NI TMP4346;
 					if (!(res_250838 <= HEX3Atmp_250835)) goto LA8;
 					nimln(1600, "system.nim");
 					i_250822 = res_250838;
 					nimln(186, "importer.nim");
 					{
-						if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+						if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 						if ((NU)(i_250822) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						if (!!(((*(*n).kindU.S6.sons->data[i_250822]).kind == ((NU8) 23)))) goto LA11;
 						nimln(187, "importer.nim");
-						if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+						if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 						if ((NU)(i_250822) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						importsymbol_250241(c, (*n).kindU.S6.sons->data[i_250822], m);
 					}
 					LA11: ;
 					nimln(1614, "system.nim");
-					TMP4345 = addInt(res_250838, ((NI) 1));
-					res_250838 = (NI)(TMP4345);
+					TMP4346 = addInt(res_250838, ((NI) 1));
+					res_250838 = (NI)(TMP4346);
 				} LA8: ;
 			}
 		}
@@ -1646,7 +1646,7 @@ N_NIMCALL(Tnode189813*, evalimportexcept_250857)(Tcontext243023* c, Tnode189813*
 	nimln(191, "importer.nim");
 	checkminsonslen_244259(n, ((NI) 2));
 	nimln(192, "importer.nim");
-	if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+	if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 	if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 	m = myimportmodule_250708(c, (*n).kindU.S6.sons->data[((NI) 0)]);
 	nimln(193, "importer.nim");
@@ -1654,7 +1654,7 @@ N_NIMCALL(Tnode189813*, evalimportexcept_250857)(Tcontext243023* c, Tnode189813*
 		Intset186056 exceptset;
 		if (!!((m == NIM_NIL))) goto LA3;
 		nimln(194, "importer.nim");
-		if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+		if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		asgnRefNoCycle((void**) (&(*n).kindU.S6.sons->data[((NI) 0)]), newsymnode_191325(m));
 		nimln(195, "importer.nim");
@@ -1668,34 +1668,34 @@ N_NIMCALL(Tnode189813*, evalimportexcept_250857)(Tcontext243023* c, Tnode189813*
 			NI i_250890;
 			NI HEX3Atmp_250895;
 			NI LOC6;
-			NI TMP4346;
+			NI TMP4347;
 			NI res_250898;
 			i_250890 = 0;
 			HEX3Atmp_250895 = 0;
 			nimln(197, "importer.nim");
 			LOC6 = 0;
 			LOC6 = sonslen_192403(n);
-			TMP4346 = subInt(LOC6, ((NI) 1));
-			HEX3Atmp_250895 = (NI)(TMP4346);
+			TMP4347 = subInt(LOC6, ((NI) 1));
+			HEX3Atmp_250895 = (NI)(TMP4347);
 			nimln(1598, "system.nim");
 			res_250898 = ((NI) 1);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					Tident165021* ident;
-					NI TMP4347;
+					NI TMP4348;
 					if (!(res_250898 <= HEX3Atmp_250895)) goto LA8;
 					nimln(1600, "system.nim");
 					i_250890 = res_250898;
 					nimln(198, "importer.nim");
-					if (((TMP4321[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4322));
+					if (((TMP4322[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4323));
 					if ((NU)(i_250890) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					ident = considerquotedident_248010((*n).kindU.S6.sons->data[i_250890]);
 					nimln(199, "importer.nim");
 					incl_186856((&exceptset), (*ident).Sup.id);
 					nimln(1614, "system.nim");
-					TMP4347 = addInt(res_250898, ((NI) 1));
-					res_250898 = (NI)(TMP4347);
+					TMP4348 = addInt(res_250898, ((NI) 1));
+					res_250898 = (NI)(TMP4348);
 				} LA8: ;
 			}
 		}

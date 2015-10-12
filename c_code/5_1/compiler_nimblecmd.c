@@ -119,10 +119,10 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(void, nimblepath_172368)(NimStringDesc* path, Tlineinfo162338 info);
-STRING_LITERAL(TMP1807, "head", 4);
-STRING_LITERAL(TMP1814, ".", 1);
-STRING_LITERAL(TMP1815, "..", 2);
-STRING_LITERAL(TMP1821, ".nim", 4);
+STRING_LITERAL(TMP1808, "head", 4);
+STRING_LITERAL(TMP1815, ".", 1);
+STRING_LITERAL(TMP1816, "..", 2);
+STRING_LITERAL(TMP1822, ".nim", 4);
 extern Tlinkedlist130028 searchpaths_153132;
 extern TFrame* frameptr_17042;
 extern NI gverbosity_153137;
@@ -192,17 +192,17 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 
 N_NIMCALL(NI, versionsplitpos_172023)(NimStringDesc* s) {
 	NI result;
-	NI TMP1805;
+	NI TMP1806;
 	nimfr("versionSplitPos", "nimblecmd.nim")
 	result = 0;
 	nimln(19, "nimblecmd.nim");
-	TMP1805 = subInt((s ? s->Sup.len : 0), ((NI) 2));
-	result = (NI)(TMP1805);
+	TMP1806 = subInt((s ? s->Sup.len : 0), ((NI) 2));
+	result = (NI)(TMP1806);
 	{
 		nimln(20, "nimblecmd.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP1806;
+			NI TMP1807;
 			LOC3 = 0;
 			LOC3 = (((NI) 1) < result);
 			if (!(LOC3)) goto LA4;
@@ -210,8 +210,8 @@ N_NIMCALL(NI, versionsplitpos_172023)(NimStringDesc* s) {
 			LOC3 = (((NU8)(s->data[result])) >= ((NU8)(48)) && ((NU8)(s->data[result])) <= ((NU8)(57)) || ((NU8)(s->data[result])) == ((NU8)(46)));
 			LA4: ;
 			if (!LOC3) goto LA2;
-			TMP1806 = subInt(result, ((NI) 1));
-			result = (NI)(TMP1806);
+			TMP1807 = subInt(result, ((NI) 1));
+			result = (NI)(TMP1807);
 		} LA2: ;
 	}
 	nimln(21, "nimblecmd.nim");
@@ -291,7 +291,7 @@ N_NIMCALL(NIM_BOOL, HEX3CHEX2E_172064)(NimStringDesc* a, NimStringDesc* b) {
 {	result = 0;
 	nimln(28, "nimblecmd.nim");
 	{
-		if (!eqStrings(a, ((NimStringDesc*) &TMP1807))) goto LA3;
+		if (!eqStrings(a, ((NimStringDesc*) &TMP1808))) goto LA3;
 		result = NIM_FALSE;
 		goto BeforeRet;
 	}
@@ -309,8 +309,8 @@ N_NIMCALL(NIM_BOOL, HEX3CHEX2E_172064)(NimStringDesc* a, NimStringDesc* b) {
 		while (1) {
 			NI ii;
 			NI jj;
-			NI TMP1808;
 			NI TMP1809;
+			NI TMP1810;
 			nimln(34, "nimblecmd.nim");
 			ii = npuParseInt(a, (&vera), i);
 			nimln(35, "nimblecmd.nim");
@@ -346,27 +346,27 @@ N_NIMCALL(NIM_BOOL, HEX3CHEX2E_172064)(NimStringDesc* a, NimStringDesc* b) {
 			LA18: ;
 			LA13: ;
 			nimln(41, "nimblecmd.nim");
-			TMP1808 = addInt(i, ii);
-			i = (NI)(TMP1808);
+			TMP1809 = addInt(i, ii);
+			i = (NI)(TMP1809);
 			nimln(42, "nimblecmd.nim");
-			TMP1809 = addInt(j, jj);
-			j = (NI)(TMP1809);
+			TMP1810 = addInt(j, jj);
+			j = (NI)(TMP1810);
 			nimln(43, "nimblecmd.nim");
 			{
-				NI TMP1810;
+				NI TMP1811;
 				if ((NU)(i) > (NU)(a->Sup.len)) raiseIndexError();
 				if (!((NU8)(a->data[i]) == (NU8)(46))) goto LA22;
-				TMP1810 = addInt(i, ((NI) 1));
-				i = (NI)(TMP1810);
+				TMP1811 = addInt(i, ((NI) 1));
+				i = (NI)(TMP1811);
 			}
 			LA22: ;
 			nimln(44, "nimblecmd.nim");
 			{
-				NI TMP1811;
+				NI TMP1812;
 				if ((NU)(j) > (NU)(b->Sup.len)) raiseIndexError();
 				if (!((NU8)(b->data[j]) == (NU8)(46))) goto LA26;
-				TMP1811 = addInt(j, ((NI) 1));
-				j = (NI)(TMP1811);
+				TMP1812 = addInt(j, ((NI) 1));
+				j = (NI)(TMP1812);
 			}
 			LA26: ;
 		}
@@ -379,21 +379,21 @@ N_NIMCALL(NIM_BOOL, HEX3CHEX2E_172064)(NimStringDesc* a, NimStringDesc* b) {
 N_NIMCALL(void, addpackage_172126)(Stringtableobj134012* packages, NimStringDesc* p) {
 	NI x;
 	NimStringDesc* name;
-	NI TMP1812;
+	NI TMP1813;
 	nimfr("addPackage", "nimblecmd.nim")
 	nimln(47, "nimblecmd.nim");
 	x = versionsplitpos_172023(p);
 	nimln(48, "nimblecmd.nim");
-	TMP1812 = subInt(x, ((NI) 1));
-	name = copyStrLast(p, ((NI) 0), (NI)(TMP1812));
+	TMP1813 = subInt(x, ((NI) 1));
+	name = copyStrLast(p, ((NI) 0), (NI)(TMP1813));
 	nimln(49, "nimblecmd.nim");
 	{
 		NimStringDesc* version;
-		NI TMP1813;
+		NI TMP1814;
 		if (!(x < (p ? p->Sup.len : 0))) goto LA3;
 		nimln(50, "nimblecmd.nim");
-		TMP1813 = addInt(x, ((NI) 1));
-		version = copyStr(p, (NI)(TMP1813));
+		TMP1814 = addInt(x, ((NI) 1));
+		version = copyStr(p, (NI)(TMP1814));
 		nimln(51, "nimblecmd.nim");
 		{
 			NimStringDesc* LOC7;
@@ -412,7 +412,7 @@ N_NIMCALL(void, addpackage_172126)(Stringtableobj134012* packages, NimStringDesc
 	LA3: ;
 	{
 		nimln(54, "nimblecmd.nim");
-		nstPut(packages, name, ((NimStringDesc*) &TMP1807));
+		nstPut(packages, name, ((NimStringDesc*) &TMP1808));
 	}
 	LA1: ;
 	popFrame();
@@ -477,9 +477,9 @@ N_NIMCALL(NIM_BOOL, hasnimfile_172190)(NimStringDesc* dir) {
 							struct stat s_172215;
 							NU8 k_172217;
 							LOC15 = 0;
-							LOC15 = !(eqStrings(y_172213, ((NimStringDesc*) &TMP1814)));
-							if (!(LOC15)) goto LA16;
 							LOC15 = !(eqStrings(y_172213, ((NimStringDesc*) &TMP1815)));
+							if (!(LOC15)) goto LA16;
+							LOC15 = !(eqStrings(y_172213, ((NimStringDesc*) &TMP1816)));
 							LA16: ;
 							if (!LOC15) goto LA17;
 							memset((void*)(&s_172215), 0, sizeof(s_172215));
@@ -498,11 +498,11 @@ N_NIMCALL(NIM_BOOL, hasnimfile_172190)(NimStringDesc* dir) {
 								LA25: ;
 								nimln(1307, "os.nim");
 								{
-									NI TMP1816;
+									NI TMP1817;
 									if (!((*x_172211).d_type == ((NI8) 10))) goto LA29;
-									TMP1816 = addInt(k_172217, ((NI) 1));
-									if (TMP1816 < 0 || TMP1816 > 3) raiseOverflow();
-									k_172217 = (NU8)(TMP1816);
+									TMP1817 = addInt(k_172217, ((NI) 1));
+									if (TMP1817 < 0 || TMP1817 > 3) raiseOverflow();
+									k_172217 = (NU8)(TMP1817);
 								}
 								LA29: ;
 								nimln(1302, "os.nim");
@@ -515,7 +515,7 @@ N_NIMCALL(NIM_BOOL, hasnimfile_172190)(NimStringDesc* dir) {
 									LOC33 = 0;
 									LOC33 = (kind_172194 == ((NU8) 0));
 									if (!(LOC33)) goto LA34;
-									LOC33 = nsuEndsWith(path_172195, ((NimStringDesc*) &TMP1821));
+									LOC33 = nsuEndsWith(path_172195, ((NimStringDesc*) &TMP1822));
 									LA34: ;
 									if (!LOC33) goto LA35;
 									nimln(70, "nimblecmd.nim");
@@ -549,13 +549,13 @@ N_NIMCALL(NIM_BOOL, hasnimfile_172190)(NimStringDesc* dir) {
 							nimln(1313, "os.nim");
 							{
 								NIM_BOOL LOC49;
-								NI TMP1822;
+								NI TMP1823;
 								LOC49 = 0;
 								LOC49 = S_ISLNK(s_172215.st_mode);
 								if (!LOC49) goto LA50;
-								TMP1822 = addInt(k_172217, ((NI) 1));
-								if (TMP1822 < 0 || TMP1822 > 3) raiseOverflow();
-								k_172217 = (NU8)(TMP1822);
+								TMP1823 = addInt(k_172217, ((NI) 1));
+								if (TMP1823 < 0 || TMP1823 > 3) raiseOverflow();
+								k_172217 = (NU8)(TMP1823);
 							}
 							LA50: ;
 							nimln(1302, "os.nim");
@@ -568,7 +568,7 @@ N_NIMCALL(NIM_BOOL, hasnimfile_172190)(NimStringDesc* dir) {
 								LOC54 = 0;
 								LOC54 = (kind_172194 == ((NU8) 0));
 								if (!(LOC54)) goto LA55;
-								LOC54 = nsuEndsWith(path_172195, ((NimStringDesc*) &TMP1821));
+								LOC54 = nsuEndsWith(path_172195, ((NimStringDesc*) &TMP1822));
 								LA55: ;
 								if (!LOC54) goto LA56;
 								nimln(70, "nimblecmd.nim");
@@ -640,9 +640,9 @@ N_NIMCALL(void, addpathwithnimfiles_172186)(NimStringDesc* p, Tlineinfo162338 in
 								struct stat s_172230;
 								NU8 k_172232;
 								LOC21 = 0;
-								LOC21 = !(eqStrings(y_172228, ((NimStringDesc*) &TMP1814)));
-								if (!(LOC21)) goto LA22;
 								LOC21 = !(eqStrings(y_172228, ((NimStringDesc*) &TMP1815)));
+								if (!(LOC21)) goto LA22;
+								LOC21 = !(eqStrings(y_172228, ((NimStringDesc*) &TMP1816)));
 								LA22: ;
 								if (!LOC21) goto LA23;
 								memset((void*)(&s_172230), 0, sizeof(s_172230));
@@ -661,11 +661,11 @@ N_NIMCALL(void, addpathwithnimfiles_172186)(NimStringDesc* p, Tlineinfo162338 in
 									LA31: ;
 									nimln(1307, "os.nim");
 									{
-										NI TMP1823;
+										NI TMP1824;
 										if (!((*x_172226).d_type == ((NI8) 10))) goto LA35;
-										TMP1823 = addInt(k_172232, ((NI) 1));
-										if (TMP1823 < 0 || TMP1823 > 3) raiseOverflow();
-										k_172232 = (NU8)(TMP1823);
+										TMP1824 = addInt(k_172232, ((NI) 1));
+										if (TMP1824 < 0 || TMP1824 > 3) raiseOverflow();
+										k_172232 = (NU8)(TMP1824);
 									}
 									LA35: ;
 									nimln(1302, "os.nim");
@@ -706,13 +706,13 @@ N_NIMCALL(void, addpathwithnimfiles_172186)(NimStringDesc* p, Tlineinfo162338 in
 								nimln(1313, "os.nim");
 								{
 									NIM_BOOL LOC54;
-									NI TMP1824;
+									NI TMP1825;
 									LOC54 = 0;
 									LOC54 = S_ISLNK(s_172230.st_mode);
 									if (!LOC54) goto LA55;
-									TMP1824 = addInt(k_172232, ((NI) 1));
-									if (TMP1824 < 0 || TMP1824 > 3) raiseOverflow();
-									k_172232 = (NU8)(TMP1824);
+									TMP1825 = addInt(k_172232, ((NI) 1));
+									if (TMP1825 < 0 || TMP1825 > 3) raiseOverflow();
+									k_172232 = (NU8)(TMP1825);
 								}
 								LA55: ;
 								nimln(1302, "os.nim");
@@ -758,20 +758,20 @@ static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c) {
 N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 	Stringtableobj134012* packages;
 	NI pos;
-	NI TMP1825;
+	NI TMP1826;
 	nimfr("addPathRec", "nimblecmd.nim")
 	nimln(79, "nimblecmd.nim");
 	packages = nstnewStringTable(((NU8) 2));
 	nimln(80, "nimblecmd.nim");
-	TMP1825 = subInt((dir ? dir->Sup.len : 0), ((NI) 1));
-	pos = (NI)(TMP1825);
+	TMP1826 = subInt((dir ? dir->Sup.len : 0), ((NI) 1));
+	pos = (NI)(TMP1826);
 	nimln(81, "nimblecmd.nim");
 	{
-		NI TMP1826;
+		NI TMP1827;
 		if ((NU)(pos) > (NU)(dir->Sup.len)) raiseIndexError();
 		if (!(((NU8)(dir->data[pos])) == ((NU8)(47)) || ((NU8)(dir->data[pos])) == ((NU8)(47)))) goto LA3;
-		TMP1826 = addInt(pos, ((NI) 1));
-		pos = (NI)(TMP1826);
+		TMP1827 = addInt(pos, ((NI) 1));
+		pos = (NI)(TMP1827);
 	}
 	LA3: ;
 	{
@@ -808,9 +808,9 @@ N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 							struct stat s_172314;
 							NU8 k_172316;
 							LOC19 = 0;
-							LOC19 = !(eqStrings(y_172312, ((NimStringDesc*) &TMP1814)));
-							if (!(LOC19)) goto LA20;
 							LOC19 = !(eqStrings(y_172312, ((NimStringDesc*) &TMP1815)));
+							if (!(LOC19)) goto LA20;
+							LOC19 = !(eqStrings(y_172312, ((NimStringDesc*) &TMP1816)));
 							LA20: ;
 							if (!LOC19) goto LA21;
 							memset((void*)(&s_172314), 0, sizeof(s_172314));
@@ -829,11 +829,11 @@ N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 								LA29: ;
 								nimln(1307, "os.nim");
 								{
-									NI TMP1827;
+									NI TMP1828;
 									if (!((*x_172310).d_type == ((NI8) 10))) goto LA33;
-									TMP1827 = addInt(k_172316, ((NI) 1));
-									if (TMP1827 < 0 || TMP1827 > 3) raiseOverflow();
-									k_172316 = (NU8)(TMP1827);
+									TMP1828 = addInt(k_172316, ((NI) 1));
+									if (TMP1828 < 0 || TMP1828 > 3) raiseOverflow();
+									k_172316 = (NU8)(TMP1828);
 								}
 								LA33: ;
 								nimln(1302, "os.nim");
@@ -879,13 +879,13 @@ N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 							nimln(1313, "os.nim");
 							{
 								NIM_BOOL LOC53;
-								NI TMP1828;
+								NI TMP1829;
 								LOC53 = 0;
 								LOC53 = S_ISLNK(s_172314.st_mode);
 								if (!LOC53) goto LA54;
-								TMP1828 = addInt(k_172316, ((NI) 1));
-								if (TMP1828 < 0 || TMP1828 > 3) raiseOverflow();
-								k_172316 = (NU8)(TMP1828);
+								TMP1829 = addInt(k_172316, ((NI) 1));
+								if (TMP1829 < 0 || TMP1829 > 3) raiseOverflow();
+								k_172316 = (NU8)(TMP1829);
 							}
 							LA54: ;
 							nimln(1302, "os.nim");
@@ -938,7 +938,7 @@ N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP1829;
+						NI TMP1830;
 						if (!(res_172330 <= HEX3Atmp_172328)) goto LA67;
 						nimln(1600, "system.nim");
 						h_172326 = res_172330;
@@ -954,7 +954,7 @@ N_NIMCALL(void, addpathrec_172266)(NimStringDesc* dir, Tlineinfo162338 info) {
 							val_172324 = (*packages).data->data[h_172326].Field1;
 							nimln(58, "nimblecmd.nim");
 							{
-								if (!eqStrings(val_172324, ((NimStringDesc*) &TMP1807))) goto LA74;
+								if (!eqStrings(val_172324, ((NimStringDesc*) &TMP1808))) goto LA74;
 								res_172334 = key_172322;
 							}
 							goto LA72;
@@ -975,8 +975,8 @@ appendString(LOC77, val_172324);
 						}
 						LA70: ;
 						nimln(1619, "system.nim");
-						TMP1829 = addInt(res_172330, ((NI) 1));
-						res_172330 = (NI)(TMP1829);
+						TMP1830 = addInt(res_172330, ((NI) 1));
+						res_172330 = (NI)(TMP1830);
 					} LA67: ;
 				}
 			}

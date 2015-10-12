@@ -553,26 +553,25 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 static N_INLINE(Tcell46747*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
-STRING_LITERAL(TMP8935, "", 0);
-STRING_LITERAL(TMP8936, "NIM_merge_HEADERS", 17);
-STRING_LITERAL(TMP8937, "NIM_merge_FORWARD_TYPES", 23);
-STRING_LITERAL(TMP8938, "NIM_merge_TYPES", 15);
-STRING_LITERAL(TMP8939, "NIM_merge_SEQ_TYPES", 19);
-STRING_LITERAL(TMP8940, "NIM_merge_FIELD_INFO", 20);
-STRING_LITERAL(TMP8941, "NIM_merge_TYPE_INFO", 19);
-STRING_LITERAL(TMP8942, "NIM_merge_PROC_HEADERS", 22);
-STRING_LITERAL(TMP8943, "NIM_merge_DATA", 14);
-STRING_LITERAL(TMP8944, "NIM_merge_VARS", 14);
-STRING_LITERAL(TMP8945, "NIM_merge_PROCS", 15);
-STRING_LITERAL(TMP8946, "NIM_merge_INIT_PROC", 19);
-STRING_LITERAL(TMP8947, "NIM_merge_TYPE_INIT1", 20);
-STRING_LITERAL(TMP8948, "NIM_merge_TYPE_INIT2", 20);
-STRING_LITERAL(TMP8949, "NIM_merge_TYPE_INIT3", 20);
-STRING_LITERAL(TMP8950, "NIM_merge_DEBUG_INIT", 20);
-STRING_LITERAL(TMP8951, "NIM_merge_DYNLIB_INIT", 21);
-STRING_LITERAL(TMP8952, "NIM_merge_DYNLIB_DEINIT", 23);
-NIM_CONST TY456013 Cfilesectionnames_456012 = {((NimStringDesc*) &TMP8935),
-((NimStringDesc*) &TMP8936),
+STRING_LITERAL(TMP8936, "", 0);
+STRING_LITERAL(TMP8937, "NIM_merge_HEADERS", 17);
+STRING_LITERAL(TMP8938, "NIM_merge_FORWARD_TYPES", 23);
+STRING_LITERAL(TMP8939, "NIM_merge_TYPES", 15);
+STRING_LITERAL(TMP8940, "NIM_merge_SEQ_TYPES", 19);
+STRING_LITERAL(TMP8941, "NIM_merge_FIELD_INFO", 20);
+STRING_LITERAL(TMP8942, "NIM_merge_TYPE_INFO", 19);
+STRING_LITERAL(TMP8943, "NIM_merge_PROC_HEADERS", 22);
+STRING_LITERAL(TMP8944, "NIM_merge_DATA", 14);
+STRING_LITERAL(TMP8945, "NIM_merge_VARS", 14);
+STRING_LITERAL(TMP8946, "NIM_merge_PROCS", 15);
+STRING_LITERAL(TMP8947, "NIM_merge_INIT_PROC", 19);
+STRING_LITERAL(TMP8948, "NIM_merge_TYPE_INIT1", 20);
+STRING_LITERAL(TMP8949, "NIM_merge_TYPE_INIT2", 20);
+STRING_LITERAL(TMP8950, "NIM_merge_TYPE_INIT3", 20);
+STRING_LITERAL(TMP8951, "NIM_merge_DEBUG_INIT", 20);
+STRING_LITERAL(TMP8952, "NIM_merge_DYNLIB_INIT", 21);
+STRING_LITERAL(TMP8953, "NIM_merge_DYNLIB_DEINIT", 23);
+NIM_CONST TY456013 Cfilesectionnames_456012 = {((NimStringDesc*) &TMP8936),
 ((NimStringDesc*) &TMP8937),
 ((NimStringDesc*) &TMP8938),
 ((NimStringDesc*) &TMP8939),
@@ -588,37 +587,38 @@ NIM_CONST TY456013 Cfilesectionnames_456012 = {((NimStringDesc*) &TMP8935),
 ((NimStringDesc*) &TMP8949),
 ((NimStringDesc*) &TMP8950),
 ((NimStringDesc*) &TMP8951),
-((NimStringDesc*) &TMP8952)}
+((NimStringDesc*) &TMP8952),
+((NimStringDesc*) &TMP8953)}
 ;
-STRING_LITERAL(TMP8953, "NIM_merge_PROC_LOCALS", 21);
-STRING_LITERAL(TMP8954, "NIM_merge_PROC_INIT", 19);
-STRING_LITERAL(TMP8955, "NIM_merge_PROC_BODY", 19);
-NIM_CONST TY456019 Cprocsectionnames_456018 = {((NimStringDesc*) &TMP8953),
-((NimStringDesc*) &TMP8954),
-((NimStringDesc*) &TMP8955)}
+STRING_LITERAL(TMP8954, "NIM_merge_PROC_LOCALS", 21);
+STRING_LITERAL(TMP8955, "NIM_merge_PROC_INIT", 19);
+STRING_LITERAL(TMP8956, "NIM_merge_PROC_BODY", 19);
+NIM_CONST TY456019 Cprocsectionnames_456018 = {((NimStringDesc*) &TMP8954),
+((NimStringDesc*) &TMP8955),
+((NimStringDesc*) &TMP8956)}
 ;
-STRING_LITERAL(TMP8956, "/*\011", 3);
-STRING_LITERAL(TMP8957, ":*/", 3);
-STRING_LITERAL(TMP8958, "/*\011NIM_merge_END:*/", 19);
-STRING_LITERAL(TMP8964, "/*\011NIM_merge_INFO:", 18);
-STRING_LITERAL(TMP8965, "typeCache:{", 11);
-STRING_LITERAL(TMP8966, "declared:{", 10);
-STRING_LITERAL(TMP8967, "typeInfo:{", 10);
-STRING_LITERAL(TMP8968, "labels:", 7);
-STRING_LITERAL(TMP8969, " hasframe:", 10);
-STRING_LITERAL(TMP8970, "*/", 2);
-STRING_LITERAL(TMP8979, "ccgmerge: expected: /*\011NIM_merge_END:*/", 39);
-STRING_LITERAL(TMP8983, "ccgmerge: \':\' expected", 22);
-STRING_LITERAL(TMP8985, "ccgmerge: \'{\' expected", 22);
-STRING_LITERAL(TMP8993, "typeCache", 9);
-STRING_LITERAL(TMP8994, "declared", 8);
-STRING_LITERAL(TMP8995, "typeInfo", 8);
-STRING_LITERAL(TMP8996, "labels", 6);
-STRING_LITERAL(TMP8997, "hasframe", 8);
-STRING_LITERAL(TMP8998, "ccgmerge: unknown key: ", 23);
-STRING_LITERAL(TMP8999, "NIM_merge_INFO", 14);
-STRING_LITERAL(TMP9006, "ccgmerge: unknown section: ", 27);
-STRING_LITERAL(TMP9007, "ccgmerge: \'*/\' expected", 23);
+STRING_LITERAL(TMP8957, "/*\011", 3);
+STRING_LITERAL(TMP8958, ":*/", 3);
+STRING_LITERAL(TMP8959, "/*\011NIM_merge_END:*/", 19);
+STRING_LITERAL(TMP8965, "/*\011NIM_merge_INFO:", 18);
+STRING_LITERAL(TMP8966, "typeCache:{", 11);
+STRING_LITERAL(TMP8967, "declared:{", 10);
+STRING_LITERAL(TMP8968, "typeInfo:{", 10);
+STRING_LITERAL(TMP8969, "labels:", 7);
+STRING_LITERAL(TMP8970, " hasframe:", 10);
+STRING_LITERAL(TMP8971, "*/", 2);
+STRING_LITERAL(TMP8980, "ccgmerge: expected: /*\011NIM_merge_END:*/", 39);
+STRING_LITERAL(TMP8984, "ccgmerge: \':\' expected", 22);
+STRING_LITERAL(TMP8986, "ccgmerge: \'{\' expected", 22);
+STRING_LITERAL(TMP8994, "typeCache", 9);
+STRING_LITERAL(TMP8995, "declared", 8);
+STRING_LITERAL(TMP8996, "typeInfo", 8);
+STRING_LITERAL(TMP8997, "labels", 6);
+STRING_LITERAL(TMP8998, "hasframe", 8);
+STRING_LITERAL(TMP8999, "ccgmerge: unknown key: ", 23);
+STRING_LITERAL(TMP9000, "NIM_merge_INFO", 14);
+STRING_LITERAL(TMP9007, "ccgmerge: unknown section: ", 27);
+STRING_LITERAL(TMP9008, "ccgmerge: \'*/\' expected", 23);
 extern NU32 gglobaloptions_152128;
 extern NimStringDesc* tnl_157626;
 extern TFrame* frameptr_17042;
@@ -665,11 +665,11 @@ N_NIMCALL(Ropeobj159009*, gensectionstart_456028)(NU8 fs) {
 		nimln(50, "ccgmerge.nim");
 		result = rope_159320(tnl_157626);
 		nimln(51, "ccgmerge.nim");
-		add_159545(&result, ((NimStringDesc*) &TMP8956));
+		add_159545(&result, ((NimStringDesc*) &TMP8957));
 		nimln(52, "ccgmerge.nim");
 		add_159545(&result, Cfilesectionnames_456012[(fs)- 0]);
 		nimln(53, "ccgmerge.nim");
-		add_159545(&result, ((NimStringDesc*) &TMP8957));
+		add_159545(&result, ((NimStringDesc*) &TMP8958));
 		nimln(54, "ccgmerge.nim");
 		add_159545(&result, tnl_157626);
 	}
@@ -694,7 +694,7 @@ N_NIMCALL(Ropeobj159009*, gensectionend_456069)(NU8 fs) {
 		nimln(58, "ccgmerge.nim");
 		LOC5 = 0;
 		LOC5 = rawNewString(tnl_157626->Sup.len + 19);
-appendString(LOC5, ((NimStringDesc*) &TMP8958));
+appendString(LOC5, ((NimStringDesc*) &TMP8959));
 appendString(LOC5, tnl_157626);
 		result = rope_159320(LOC5);
 	}
@@ -713,11 +713,11 @@ N_NIMCALL(Ropeobj159009*, gensectionstart_456106)(NU8 ps) {
 		nimln(62, "ccgmerge.nim");
 		result = rope_159320(tnl_157626);
 		nimln(63, "ccgmerge.nim");
-		add_159545(&result, ((NimStringDesc*) &TMP8956));
+		add_159545(&result, ((NimStringDesc*) &TMP8957));
 		nimln(64, "ccgmerge.nim");
 		add_159545(&result, Cprocsectionnames_456018[(ps)- 0]);
 		nimln(65, "ccgmerge.nim");
-		add_159545(&result, ((NimStringDesc*) &TMP8957));
+		add_159545(&result, ((NimStringDesc*) &TMP8958));
 		nimln(66, "ccgmerge.nim");
 		add_159545(&result, tnl_157626);
 	}
@@ -737,7 +737,7 @@ N_NIMCALL(Ropeobj159009*, gensectionend_456147)(NU8 ps) {
 		nimln(70, "ccgmerge.nim");
 		LOC5 = 0;
 		LOC5 = rawNewString(tnl_157626->Sup.len + 19);
-appendString(LOC5, ((NimStringDesc*) &TMP8958));
+appendString(LOC5, ((NimStringDesc*) &TMP8959));
 appendString(LOC5, tnl_157626);
 		result = rope_159320(LOC5);
 	}
@@ -789,14 +789,14 @@ N_NIMCALL(void, writetypecache_456184)(Tidtable189861 a, NimStringDesc** s) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP8960;
+					NI TMP8961;
 					if (!(res_456209 <= HEX3Atmp_456207)) goto LA4;
 					nimln(1600, "system.nim");
 					i_456205 = res_456209;
 					nimln(771, "astalgo.nim");
 					{
 						NimStringDesc* LOC14;
-						NI TMP8959;
+						NI TMP8960;
 						if ((NU)(i_456205) >= (NU)(a.data->Sup.len)) raiseIndexError();
 						if (!!((a.data->data[i_456205].key == NIM_NIL))) goto LA7;
 						nimln(772, "astalgo.nim");
@@ -830,13 +830,13 @@ appendString((*s), tnl_157626);
 						LOC14 = HEX24_160131(((Ropeobj159009*) (value_456191)));
 						encodestr_196042(LOC14, s);
 						nimln(83, "ccgmerge.nim");
-						TMP8959 = addInt(i, ((NI) 1));
-						i = (NI)(TMP8959);
+						TMP8960 = addInt(i, ((NI) 1));
+						i = (NI)(TMP8960);
 					}
 					LA7: ;
 					nimln(1619, "system.nim");
-					TMP8960 = addInt(res_456209, ((NI) 1));
-					res_456209 = (NI)(TMP8960);
+					TMP8961 = addInt(res_456209, ((NI) 1));
+					res_456209 = (NI)(TMP8961);
 				} LA4: ;
 			}
 		}
@@ -869,7 +869,7 @@ N_NIMCALL(void, writeintset_456230)(Intset186056* a, NimStringDesc** s) {
 					while (1) {
 						NI w_456255;
 						NI j_456257;
-						NI TMP8963;
+						NI TMP8964;
 						if (!(i_456253 <= ((NI) 7))) goto LA5;
 						nimln(171, "intsets.nim");
 						if ((NU)(i_456253) > (NU)(7)) raiseIndexError();
@@ -879,11 +879,11 @@ N_NIMCALL(void, writeintset_456230)(Intset186056* a, NimStringDesc** s) {
 						{
 							nimln(175, "intsets.nim");
 							while (1) {
-								NI TMP8962;
+								NI TMP8963;
 								if (!!((w_456255 == ((NI) 0)))) goto LA7;
 								nimln(176, "intsets.nim");
 								{
-									NI TMP8961;
+									NI TMP8962;
 									if (!!((((NI) ((NI)(w_456255 & ((NI) 1)))) == ((NI) 0)))) goto LA10;
 									nimln(177, "intsets.nim");
 									x_456236 = (NI)((NI)((NU64)((*r_456251).key) << (NU64)(((NI) 9))) | (NI)((NU64)((NI)((NU64)(i_456253) << (NU64)(((NI) 6)))) + (NU64)(j_456257)));
@@ -906,20 +906,20 @@ appendString((*s), tnl_157626);
 									nimln(94, "ccgmerge.nim");
 									encodevint_196296(x_456236, s);
 									nimln(95, "ccgmerge.nim");
-									TMP8961 = addInt(i, ((NI) 1));
-									i = (NI)(TMP8961);
+									TMP8962 = addInt(i, ((NI) 1));
+									i = (NI)(TMP8962);
 								}
 								LA10: ;
 								nimln(178, "intsets.nim");
-								TMP8962 = addInt(j_456257, ((NI) 1));
-								j_456257 = (NI)(TMP8962);
+								TMP8963 = addInt(j_456257, ((NI) 1));
+								j_456257 = (NI)(TMP8963);
 								nimln(179, "intsets.nim");
 								w_456255 = (NI)((NU64)(w_456255) >> (NU64)(((NI) 1)));
 							} LA7: ;
 						}
 						nimln(180, "intsets.nim");
-						TMP8963 = addInt(i_456253, ((NI) 1));
-						i_456253 = (NI)(TMP8963);
+						TMP8964 = addInt(i_456253, ((NI) 1));
+						i_456253 = (NI)(TMP8964);
 					} LA5: ;
 				}
 				nimln(181, "intsets.nim");
@@ -945,33 +945,33 @@ N_NIMCALL(Ropeobj159009*, genmergeinfo_456285)(Tcgen455038* m) {
 	}
 	LA3: ;
 	nimln(100, "ccgmerge.nim");
-	s = copyString(((NimStringDesc*) &TMP8964));
+	s = copyString(((NimStringDesc*) &TMP8965));
 	nimln(101, "ccgmerge.nim");
 	s = resizeString(s, tnl_157626->Sup.len + 0);
 appendString(s, tnl_157626);
 	nimln(102, "ccgmerge.nim");
 	s = resizeString(s, 11);
-appendString(s, ((NimStringDesc*) &TMP8965));
+appendString(s, ((NimStringDesc*) &TMP8966));
 	nimln(103, "ccgmerge.nim");
 	writetypecache_456184((*m).typecache, (&s));
 	nimln(104, "ccgmerge.nim");
 	s = resizeString(s, 10);
-appendString(s, ((NimStringDesc*) &TMP8966));
+appendString(s, ((NimStringDesc*) &TMP8967));
 	nimln(105, "ccgmerge.nim");
 	writeintset_456230((&(*m).declaredthings), (&s));
 	nimln(106, "ccgmerge.nim");
 	s = resizeString(s, 10);
-appendString(s, ((NimStringDesc*) &TMP8967));
+appendString(s, ((NimStringDesc*) &TMP8968));
 	nimln(107, "ccgmerge.nim");
 	writeintset_456230((&(*m).typeinfomarker), (&s));
 	nimln(108, "ccgmerge.nim");
 	s = resizeString(s, 7);
-appendString(s, ((NimStringDesc*) &TMP8968));
+appendString(s, ((NimStringDesc*) &TMP8969));
 	nimln(109, "ccgmerge.nim");
 	encodevint_196296(((NI) ((*m).labels)), (&s));
 	nimln(110, "ccgmerge.nim");
 	s = resizeString(s, 10);
-appendString(s, ((NimStringDesc*) &TMP8969));
+appendString(s, ((NimStringDesc*) &TMP8970));
 	nimln(111, "ccgmerge.nim");
 	encodevint_196296(((NI) ((*m).framedeclared)), (&s));
 	nimln(112, "ccgmerge.nim");
@@ -979,7 +979,7 @@ appendString(s, ((NimStringDesc*) &TMP8969));
 appendString(s, tnl_157626);
 	nimln(113, "ccgmerge.nim");
 	s = resizeString(s, 2);
-appendString(s, ((NimStringDesc*) &TMP8970));
+appendString(s, ((NimStringDesc*) &TMP8971));
 	nimln(114, "ccgmerge.nim");
 	result = rope_159320(s);
 	}BeforeRet: ;
@@ -1011,10 +1011,10 @@ N_NIMCALL(void, skipwhite_456325)(Tbaselexer177024* L) {
 			break;
 			case 32:
 			{
-				NI TMP8971;
+				NI TMP8972;
 				nimln(124, "ccgmerge.nim");
-				TMP8971 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP8971);
+				TMP8972 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP8972);
 			}
 			break;
 			default:
@@ -1061,39 +1061,39 @@ N_NIMCALL(void, skipuntilcmd_456352)(Tbaselexer177024* L) {
 			break;
 			case 47:
 			{
-				NI TMP8975;
+				NI TMP8976;
 				nimln(136, "ccgmerge.nim");
 				{
 					NIM_BOOL LOC9;
-					NI TMP8972;
 					NI TMP8973;
 					NI TMP8974;
+					NI TMP8975;
 					LOC9 = 0;
-					TMP8972 = addInt(pos, ((NI) 1));
-					LOC9 = ((NU8)((*L).buf[(NI)(TMP8972)]) == (NU8)(42));
+					TMP8973 = addInt(pos, ((NI) 1));
+					LOC9 = ((NU8)((*L).buf[(NI)(TMP8973)]) == (NU8)(42));
 					if (!(LOC9)) goto LA10;
-					TMP8973 = addInt(pos, ((NI) 2));
-					LOC9 = ((NU8)((*L).buf[(NI)(TMP8973)]) == (NU8)(9));
+					TMP8974 = addInt(pos, ((NI) 2));
+					LOC9 = ((NU8)((*L).buf[(NI)(TMP8974)]) == (NU8)(9));
 					LA10: ;
 					if (!LOC9) goto LA11;
 					nimln(137, "ccgmerge.nim");
-					TMP8974 = addInt(pos, ((NI) 3));
-					pos = (NI)(TMP8974);
+					TMP8975 = addInt(pos, ((NI) 3));
+					pos = (NI)(TMP8975);
 					nimln(138, "ccgmerge.nim");
 					goto LA1;
 				}
 				LA11: ;
 				nimln(139, "ccgmerge.nim");
-				TMP8975 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP8975);
+				TMP8976 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP8976);
 			}
 			break;
 			default:
 			{
-				NI TMP8976;
+				NI TMP8977;
 				nimln(140, "ccgmerge.nim");
-				TMP8976 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP8976);
+				TMP8977 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP8977);
 			}
 			break;
 			}
@@ -1115,18 +1115,18 @@ N_NIMCALL(NIM_BOOL, atendmark_456397)(NCSTRING buf, NI pos) {
 		nimln(145, "ccgmerge.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP8977;
 			NI TMP8978;
+			NI TMP8979;
 			LOC3 = 0;
 			LOC3 = (s < ((NI) 19));
 			if (!(LOC3)) goto LA4;
-			TMP8977 = addInt(pos, s);
-			if ((NU)(s) > (NU)(((NimStringDesc*) &TMP8958)->Sup.len)) raiseIndexError();
-			LOC3 = ((NU8)(buf[(NI)(TMP8977)]) == (NU8)(((NimStringDesc*) &TMP8958)->data[s]));
+			TMP8978 = addInt(pos, s);
+			if ((NU)(s) > (NU)(((NimStringDesc*) &TMP8959)->Sup.len)) raiseIndexError();
+			LOC3 = ((NU8)(buf[(NI)(TMP8978)]) == (NU8)(((NimStringDesc*) &TMP8959)->data[s]));
 			LA4: ;
 			if (!LOC3) goto LA2;
-			TMP8978 = addInt(s, ((NI) 1));
-			s = (NI)(TMP8978);
+			TMP8979 = addInt(s, ((NI) 1));
+			s = (NI)(TMP8979);
 		} LA2: ;
 	}
 	nimln(146, "ccgmerge.nim");
@@ -1178,24 +1178,24 @@ appendString(r, tnl_157626);
 			case 0:
 			{
 				nimln(163, "ccgmerge.nim");
-				internalerror_163218(((NimStringDesc*) &TMP8979));
+				internalerror_163218(((NimStringDesc*) &TMP8980));
 				nimln(164, "ccgmerge.nim");
 				goto LA1;
 			}
 			break;
 			default:
 			{
-				NI TMP8981;
+				NI TMP8982;
 				nimln(166, "ccgmerge.nim");
 				{
 					NIM_BOOL LOC9;
-					NI TMP8980;
+					NI TMP8981;
 					LOC9 = 0;
 					LOC9 = atendmark_456397(buf, pos);
 					if (!LOC9) goto LA10;
 					nimln(167, "ccgmerge.nim");
-					TMP8980 = addInt(pos, ((NI) 19));
-					pos = (NI)(TMP8980);
+					TMP8981 = addInt(pos, ((NI) 19));
+					pos = (NI)(TMP8981);
 					nimln(168, "ccgmerge.nim");
 					goto LA1;
 				}
@@ -1203,8 +1203,8 @@ appendString(r, tnl_157626);
 				nimln(169, "ccgmerge.nim");
 				r = addChar(r, buf[pos]);
 				nimln(170, "ccgmerge.nim");
-				TMP8981 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP8981);
+				TMP8982 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP8982);
 			}
 			break;
 			}
@@ -1221,7 +1221,7 @@ appendString(r, tnl_157626);
 N_NIMCALL(void, readkey_456466)(Tbaselexer177024* L, NimStringDesc** result) {
 	NI pos;
 	NCSTRING buf;
-	NI TMP8984;
+	NI TMP8985;
 	nimfr("readKey", "ccgmerge.nim")
 	nimln(175, "ccgmerge.nim");
 	pos = (*L).bufpos;
@@ -1232,24 +1232,24 @@ N_NIMCALL(void, readkey_456466)(Tbaselexer177024* L, NimStringDesc** result) {
 	{
 		nimln(178, "ccgmerge.nim");
 		while (1) {
-			NI TMP8982;
+			NI TMP8983;
 			if (!(((NU8)(buf[pos])) >= ((NU8)(97)) && ((NU8)(buf[pos])) <= ((NU8)(122)) || ((NU8)(buf[pos])) >= ((NU8)(65)) && ((NU8)(buf[pos])) <= ((NU8)(90)) || ((NU8)(buf[pos])) >= ((NU8)(48)) && ((NU8)(buf[pos])) <= ((NU8)(57)) || ((NU8)(buf[pos])) == ((NU8)(95)))) goto LA2;
 			nimln(179, "ccgmerge.nim");
 			(*result) = addChar((*result), buf[pos]);
 			nimln(180, "ccgmerge.nim");
-			TMP8982 = addInt(pos, ((NI) 1));
-			pos = (NI)(TMP8982);
+			TMP8983 = addInt(pos, ((NI) 1));
+			pos = (NI)(TMP8983);
 		} LA2: ;
 	}
 	nimln(181, "ccgmerge.nim");
 	{
 		if (!!(((NU8)(buf[pos]) == (NU8)(58)))) goto LA5;
-		internalerror_163218(((NimStringDesc*) &TMP8983));
+		internalerror_163218(((NimStringDesc*) &TMP8984));
 	}
 	LA5: ;
 	nimln(182, "ccgmerge.nim");
-	TMP8984 = addInt(pos, ((NI) 1));
-	(*L).bufpos = (NI)(TMP8984);
+	TMP8985 = addInt(pos, ((NI) 1));
+	(*L).bufpos = (NI)(TMP8985);
 	popFrame();
 }
 
@@ -1267,23 +1267,23 @@ N_NIMCALL(Ttype189849*, newfaketype_456506)(NI id) {
 }
 
 N_NIMCALL(void, readtypecache_456524)(Tbaselexer177024* L, Tidtable189861* result) {
-	NI TMP8986;
-	NI TMP8988;
+	NI TMP8987;
+	NI TMP8989;
 	nimfr("readTypeCache", "ccgmerge.nim")
 	nimln(189, "ccgmerge.nim");
 	{
 		if (!!(((NU8)((*L).buf[(*L).bufpos]) == (NU8)(123)))) goto LA3;
-		internalerror_163218(((NimStringDesc*) &TMP8985));
+		internalerror_163218(((NimStringDesc*) &TMP8986));
 	}
 	LA3: ;
 	nimln(190, "ccgmerge.nim");
-	TMP8986 = addInt((*L).bufpos, ((NI) 1));
-	(*L).bufpos = (NI)(TMP8986);
+	TMP8987 = addInt((*L).bufpos, ((NI) 1));
+	(*L).bufpos = (NI)(TMP8987);
 	{
 		nimln(191, "ccgmerge.nim");
 		while (1) {
 			NI key;
-			NI TMP8987;
+			NI TMP8988;
 			NimStringDesc* value;
 			Ttype189849* LOC11;
 			Tidobj165015* LOC12;
@@ -1297,12 +1297,12 @@ N_NIMCALL(void, readtypecache_456524)(Tbaselexer177024* L, Tidtable189861* resul
 			nimln(194, "ccgmerge.nim");
 			{
 				if (!!(((NU8)((*L).buf[(*L).bufpos]) == (NU8)(58)))) goto LA9;
-				internalerror_163218(((NimStringDesc*) &TMP8983));
+				internalerror_163218(((NimStringDesc*) &TMP8984));
 			}
 			LA9: ;
 			nimln(195, "ccgmerge.nim");
-			TMP8987 = addInt((*L).bufpos, ((NI) 1));
-			(*L).bufpos = (NI)(TMP8987);
+			TMP8988 = addInt((*L).bufpos, ((NI) 1));
+			(*L).bufpos = (NI)(TMP8988);
 			nimln(196, "ccgmerge.nim");
 			value = decodestr_196157((*L).buf, (&(*L).bufpos));
 			nimln(200, "ccgmerge.nim");
@@ -1318,24 +1318,24 @@ N_NIMCALL(void, readtypecache_456524)(Tbaselexer177024* L, Tidtable189861* resul
 		} LA6: ;
 	}
 	nimln(201, "ccgmerge.nim");
-	TMP8988 = addInt((*L).bufpos, ((NI) 1));
-	(*L).bufpos = (NI)(TMP8988);
+	TMP8989 = addInt((*L).bufpos, ((NI) 1));
+	(*L).bufpos = (NI)(TMP8989);
 	popFrame();
 }
 
 N_NIMCALL(void, readintset_456574)(Tbaselexer177024* L, Intset186056* result) {
-	NI TMP8989;
 	NI TMP8990;
+	NI TMP8991;
 	nimfr("readIntSet", "ccgmerge.nim")
 	nimln(204, "ccgmerge.nim");
 	{
 		if (!!(((NU8)((*L).buf[(*L).bufpos]) == (NU8)(123)))) goto LA3;
-		internalerror_163218(((NimStringDesc*) &TMP8985));
+		internalerror_163218(((NimStringDesc*) &TMP8986));
 	}
 	LA3: ;
 	nimln(205, "ccgmerge.nim");
-	TMP8989 = addInt((*L).bufpos, ((NI) 1));
-	(*L).bufpos = (NI)(TMP8989);
+	TMP8990 = addInt((*L).bufpos, ((NI) 1));
+	(*L).bufpos = (NI)(TMP8990);
 	{
 		nimln(206, "ccgmerge.nim");
 		while (1) {
@@ -1350,8 +1350,8 @@ N_NIMCALL(void, readintset_456574)(Tbaselexer177024* L, Intset186056* result) {
 		} LA6: ;
 	}
 	nimln(210, "ccgmerge.nim");
-	TMP8990 = addInt((*L).bufpos, ((NI) 1));
-	(*L).bufpos = (NI)(TMP8990);
+	TMP8991 = addInt((*L).bufpos, ((NI) 1));
+	(*L).bufpos = (NI)(TMP8991);
 	popFrame();
 }
 
@@ -1428,18 +1428,18 @@ N_NIMCALL(void, processmergeinfo_456613)(Tbaselexer177024* L, Tcgen455038* m) {
 			nimln(216, "ccgmerge.nim");
 			{
 				NIM_BOOL LOC5;
-				NI TMP8991;
 				NI TMP8992;
+				NI TMP8993;
 				LOC5 = 0;
 				LOC5 = ((NU8)((*L).buf[(*L).bufpos]) == (NU8)(42));
 				if (!(LOC5)) goto LA6;
-				TMP8991 = addInt((*L).bufpos, ((NI) 1));
-				LOC5 = ((NU8)((*L).buf[(NI)(TMP8991)]) == (NU8)(47));
+				TMP8992 = addInt((*L).bufpos, ((NI) 1));
+				LOC5 = ((NU8)((*L).buf[(NI)(TMP8992)]) == (NU8)(47));
 				LA6: ;
 				if (!LOC5) goto LA7;
 				nimln(217, "ccgmerge.nim");
-				TMP8992 = addInt((*L).bufpos, ((NI) 2));
-				(*L).bufpos = (NI)(TMP8992);
+				TMP8993 = addInt((*L).bufpos, ((NI) 2));
+				(*L).bufpos = (NI)(TMP8993);
 				nimln(218, "ccgmerge.nim");
 				goto LA1;
 			}
@@ -1447,11 +1447,11 @@ N_NIMCALL(void, processmergeinfo_456613)(Tbaselexer177024* L, Tcgen455038* m) {
 			nimln(219, "ccgmerge.nim");
 			readkey_456466(L, (&k));
 			nimln(220, "ccgmerge.nim");
-			if (eqStrings(k, ((NimStringDesc*) &TMP8993))) goto LA9;
-			if (eqStrings(k, ((NimStringDesc*) &TMP8994))) goto LA10;
-			if (eqStrings(k, ((NimStringDesc*) &TMP8995))) goto LA11;
-			if (eqStrings(k, ((NimStringDesc*) &TMP8996))) goto LA12;
-			if (eqStrings(k, ((NimStringDesc*) &TMP8997))) goto LA13;
+			if (eqStrings(k, ((NimStringDesc*) &TMP8994))) goto LA9;
+			if (eqStrings(k, ((NimStringDesc*) &TMP8995))) goto LA10;
+			if (eqStrings(k, ((NimStringDesc*) &TMP8996))) goto LA11;
+			if (eqStrings(k, ((NimStringDesc*) &TMP8997))) goto LA12;
+			if (eqStrings(k, ((NimStringDesc*) &TMP8998))) goto LA13;
 			goto LA14;
 			LA9: ;
 			{
@@ -1495,7 +1495,7 @@ N_NIMCALL(void, processmergeinfo_456613)(Tbaselexer177024* L, Tcgen455038* m) {
 				nimln(226, "ccgmerge.nim");
 				LOC24 = 0;
 				LOC24 = rawNewString(k->Sup.len + 23);
-appendString(LOC24, ((NimStringDesc*) &TMP8998));
+appendString(LOC24, ((NimStringDesc*) &TMP8999));
 appendString(LOC24, k);
 				internalerror_163218(LOC24);
 			}
@@ -1539,7 +1539,7 @@ N_NIMCALL(void, readmergeinfo_456816)(NimStringDesc* cfilename, Tcgen455038* m) 
 			readkey_456466((&L), (&k));
 			nimln(247, "ccgmerge.nim");
 			{
-				if (!eqStrings(k, ((NimStringDesc*) &TMP8999))) goto LA13;
+				if (!eqStrings(k, ((NimStringDesc*) &TMP9000))) goto LA13;
 				nimln(248, "ccgmerge.nim");
 				processmergeinfo_456613((&L), m);
 				nimln(249, "ccgmerge.nim");
@@ -1570,8 +1570,8 @@ static N_INLINE(NI, find_456902)(TY456013 a, NimStringDesc* item) {
 			{
 				nimln(1705, "system.nim");
 				while (1) {
-					NI TMP9000;
 					NI TMP9001;
+					NI TMP9002;
 					nimln(1706, "system.nim");
 					i_456965 = a[(i_456978)- 0];
 					nimln(1914, "system.nim");
@@ -1581,8 +1581,8 @@ static N_INLINE(NI, find_456902)(TY456013 a, NimStringDesc* item) {
 					}
 					LA10: ;
 					nimln(1915, "system.nim");
-					TMP9000 = addInt(result, ((NI) 1));
-					result = (NI)(TMP9000);
+					TMP9001 = addInt(result, ((NI) 1));
+					result = (NI)(TMP9001);
 					nimln(1707, "system.nim");
 					{
 						if (!(((NU8) 17) <= i_456978)) goto LA14;
@@ -1590,9 +1590,9 @@ static N_INLINE(NI, find_456902)(TY456013 a, NimStringDesc* item) {
 					}
 					LA14: ;
 					nimln(1708, "system.nim");
-					TMP9001 = addInt(i_456978, ((NI) 1));
-					if (TMP9001 < 0 || TMP9001 > 17) raiseOverflow();
-					i_456978 = (NU8)(TMP9001);
+					TMP9002 = addInt(i_456978, ((NI) 1));
+					if (TMP9002 < 0 || TMP9002 > 17) raiseOverflow();
+					i_456978 = (NU8)(TMP9002);
 				}
 			} LA6: ;
 		}
@@ -1621,8 +1621,8 @@ static N_INLINE(NI, find_456995)(TY456019 a, NimStringDesc* item) {
 			{
 				nimln(1705, "system.nim");
 				while (1) {
-					NI TMP9002;
 					NI TMP9003;
+					NI TMP9004;
 					nimln(1706, "system.nim");
 					i_457058 = a[(i_457071)- 0];
 					nimln(1914, "system.nim");
@@ -1632,8 +1632,8 @@ static N_INLINE(NI, find_456995)(TY456019 a, NimStringDesc* item) {
 					}
 					LA10: ;
 					nimln(1915, "system.nim");
-					TMP9002 = addInt(result, ((NI) 1));
-					result = (NI)(TMP9002);
+					TMP9003 = addInt(result, ((NI) 1));
+					result = (NI)(TMP9003);
 					nimln(1707, "system.nim");
 					{
 						if (!(((NU8) 2) <= i_457071)) goto LA14;
@@ -1641,9 +1641,9 @@ static N_INLINE(NI, find_456995)(TY456019 a, NimStringDesc* item) {
 					}
 					LA14: ;
 					nimln(1708, "system.nim");
-					TMP9003 = addInt(i_457071, ((NI) 1));
-					if (TMP9003 < 0 || TMP9003 > 2) raiseOverflow();
-					i_457071 = (NU8)(TMP9003);
+					TMP9004 = addInt(i_457071, ((NI) 1));
+					if (TMP9004 < 0 || TMP9004 > 2) raiseOverflow();
+					i_457071 = (NU8)(TMP9004);
 				}
 			} LA6: ;
 		}
@@ -1690,27 +1690,27 @@ N_NIMCALL(void, readmergesections_456863)(NimStringDesc* cfilename, Tmergesectio
 			readkey_456466((&L), (&k));
 			nimln(260, "ccgmerge.nim");
 			{
-				if (!eqStrings(k, ((NimStringDesc*) &TMP8999))) goto LA13;
+				if (!eqStrings(k, ((NimStringDesc*) &TMP9000))) goto LA13;
 			}
 			goto LA11;
 			LA13: ;
 			{
 				NIM_BOOL LOC16;
-				NI TMP9004;
 				NI TMP9005;
+				NI TMP9006;
 				Ropeobj159009* verbatim;
 				NI sectiona;
 				nimln(262, "ccgmerge.nim");
 				LOC16 = 0;
 				LOC16 = ((NU8)(L.buf[L.bufpos]) == (NU8)(42));
 				if (!(LOC16)) goto LA17;
-				TMP9004 = addInt(L.bufpos, ((NI) 1));
-				LOC16 = ((NU8)(L.buf[(NI)(TMP9004)]) == (NU8)(47));
+				TMP9005 = addInt(L.bufpos, ((NI) 1));
+				LOC16 = ((NU8)(L.buf[(NI)(TMP9005)]) == (NU8)(47));
 				LA17: ;
 				if (!LOC16) goto LA18;
 				nimln(263, "ccgmerge.nim");
-				TMP9005 = addInt(L.bufpos, ((NI) 2));
-				L.bufpos = (NI)(TMP9005);
+				TMP9006 = addInt(L.bufpos, ((NI) 2));
+				L.bufpos = (NI)(TMP9006);
 				nimln(265, "ccgmerge.nim");
 				skipwhite_456325((&L));
 				nimln(266, "ccgmerge.nim");
@@ -1758,7 +1758,7 @@ N_NIMCALL(void, readmergesections_456863)(NimStringDesc* cfilename, Tmergesectio
 						nimln(276, "ccgmerge.nim");
 						LOC34 = 0;
 						LOC34 = rawNewString(k->Sup.len + 27);
-appendString(LOC34, ((NimStringDesc*) &TMP9006));
+appendString(LOC34, ((NimStringDesc*) &TMP9007));
 appendString(LOC34, k);
 						internalerror_163218(LOC34);
 					}
@@ -1770,7 +1770,7 @@ appendString(LOC34, k);
 			LA18: ;
 			{
 				nimln(278, "ccgmerge.nim");
-				internalerror_163218(((NimStringDesc*) &TMP9007));
+				internalerror_163218(((NimStringDesc*) &TMP9008));
 			}
 			LA11: ;
 		}
@@ -1803,13 +1803,13 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 
 static N_INLINE(Ropeobj159009**, s_455184)(Tcproc455034* p, NU8 s) {
 	Ropeobj159009** result;
-	NI TMP9009;
+	NI TMP9010;
 	nimfr("s", "cgendata.nim")
 	result = 0;
 	nimln(136, "cgendata.nim");
-	TMP9009 = subInt(((*p).blocks ? (*p).blocks->Sup.len : 0), ((NI) 1));
-	if ((NU)((NI)(TMP9009)) >= (NU)((*p).blocks->Sup.len)) raiseIndexError();
-	result = &(*p).blocks->data[(NI)(TMP9009)].sections[(s)- 0];
+	TMP9010 = subInt(((*p).blocks ? (*p).blocks->Sup.len : 0), ((NI) 1));
+	if ((NU)((NI)(TMP9010)) >= (NU)((*p).blocks->Sup.len)) raiseIndexError();
+	result = &(*p).blocks->data[(NI)(TMP9010)].sections[(s)- 0];
 	popFrame();
 	return result;
 }
@@ -1827,7 +1827,7 @@ N_NIMCALL(NIM_BOOL, mergerequired_457106)(Tcgen455038* m) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP9008;
+				NI TMP9009;
 				if (!(res_457439 <= ((NI) 10))) goto LA3;
 				nimln(1600, "system.nim");
 				i_457223 = ((NU8)chckRange(res_457439, ((NU8) 0), ((NU8) 17)));
@@ -1840,8 +1840,8 @@ N_NIMCALL(NIM_BOOL, mergerequired_457106)(Tcgen455038* m) {
 				}
 				LA6: ;
 				nimln(1619, "system.nim");
-				TMP9008 = addInt(res_457439, ((NI) 1));
-				res_457439 = (NI)(TMP9008);
+				TMP9009 = addInt(res_457439, ((NI) 1));
+				res_457439 = (NI)(TMP9009);
 			} LA3: ;
 		}
 	}
@@ -1854,7 +1854,7 @@ N_NIMCALL(NIM_BOOL, mergerequired_457106)(Tcgen455038* m) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP9010;
+				NI TMP9011;
 				if (!(res_457447 <= ((NI) 2))) goto LA10;
 				nimln(1600, "system.nim");
 				i_457423 = ((NU8)chckRange(res_457447, ((NU8) 0), ((NU8) 2)));
@@ -1870,8 +1870,8 @@ N_NIMCALL(NIM_BOOL, mergerequired_457106)(Tcgen455038* m) {
 				}
 				LA14: ;
 				nimln(1619, "system.nim");
-				TMP9010 = addInt(res_457447, ((NI) 1));
-				res_457447 = (NI)(TMP9010);
+				TMP9011 = addInt(res_457447, ((NI) 1));
+				res_457447 = (NI)(TMP9011);
 			} LA10: ;
 		}
 	}
@@ -1947,15 +1947,15 @@ N_NIMCALL(void, mergefiles_457474)(NimStringDesc* cfilename, Tcgen455038* m) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP9011;
+				NI TMP9012;
 				if (!(res_457512 <= ((NI) 17))) goto LA3;
 				nimln(1600, "system.nim");
 				i_457492 = ((NU8)chckRange(res_457512, ((NU8) 0), ((NU8) 17)));
 				nimln(296, "ccgmerge.nim");
 				asgnRefNoCycle((void**) (&(*m).s[(i_457492)- 0]), HEX26_159436(old.f[(i_457492)- 0], (*m).s[(i_457492)- 0]));
 				nimln(1619, "system.nim");
-				TMP9011 = addInt(res_457512, ((NI) 1));
-				res_457512 = (NI)(TMP9011);
+				TMP9012 = addInt(res_457512, ((NI) 1));
+				res_457512 = (NI)(TMP9012);
 			} LA3: ;
 		}
 	}
@@ -1970,7 +1970,7 @@ N_NIMCALL(void, mergefiles_457474)(NimStringDesc* cfilename, Tcgen455038* m) {
 			while (1) {
 				Ropeobj159009** LOC7;
 				Ropeobj159009** LOC8;
-				NI TMP9012;
+				NI TMP9013;
 				if (!(res_457520 <= ((NI) 2))) goto LA6;
 				nimln(1600, "system.nim");
 				i_457505 = ((NU8)chckRange(res_457520, ((NU8) 0), ((NU8) 2)));
@@ -1981,8 +1981,8 @@ N_NIMCALL(void, mergefiles_457474)(NimStringDesc* cfilename, Tcgen455038* m) {
 				LOC8 = s_455184((*m).initproc, i_457505);
 				unsureAsgnRef((void**) (&(*LOC7)), HEX26_159436(old.p[(i_457505)- 0], (*LOC8)));
 				nimln(1619, "system.nim");
-				TMP9012 = addInt(res_457520, ((NI) 1));
-				res_457520 = (NI)(TMP9012);
+				TMP9013 = addInt(res_457520, ((NI) 1));
+				res_457520 = (NI)(TMP9013);
 			} LA6: ;
 		}
 	}

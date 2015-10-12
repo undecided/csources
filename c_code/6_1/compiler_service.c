@@ -220,7 +220,7 @@ N_NIMCALL(NimStringDesc*, nsuNormalize)(NimStringDesc* s);
 N_NIMCALL(void, rawmessage_163888)(NU16 msg, NimStringDesc** args, NI argsLen0);
 N_NIMCALL(void, serve_521254)(TY521256 action);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10639)(void* p, NI op);
+N_NIMCALL(void, TMP10640)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, getconfigvar_153334)(NimStringDesc* key);
 N_NIMCALL(NimStringDesc*, readline_13478)(FILE* f);
@@ -243,18 +243,18 @@ N_NIMCALL(void, accept_515401)(Socketimpl513407* server, Socketimpl513407** clie
 N_NIMCALL(void, readline_517608)(Socketimpl513407* socket, NimStringDesc** line, NI timeout, NU8 flags);
 N_NIMCALL(void, close_515417)(Socketimpl513407* socket);
 N_NIMCALL(void, msgquit_163107)(NI8 x);
-STRING_LITERAL(TMP10627, "", 0);
-STRING_LITERAL(TMP10632, " ", 1);
-STRING_LITERAL(TMP10633, "-", 1);
-STRING_LITERAL(TMP10634, "run", 3);
-STRING_LITERAL(TMP10640, "server.type", 11);
-STRING_LITERAL(TMP10641, "stdin", 5);
-STRING_LITERAL(TMP10642, "tcp", 3);
-STRING_LITERAL(TMP10643, "quit", 4);
-STRING_LITERAL(TMP10646, "server.port", 11);
-STRING_LITERAL(TMP10647, "server.address", 14);
-STRING_LITERAL(TMP10650, "\015\012", 2);
-STRING_LITERAL(TMP10673, "Invalid server.type:", 20);
+STRING_LITERAL(TMP10628, "", 0);
+STRING_LITERAL(TMP10633, " ", 1);
+STRING_LITERAL(TMP10634, "-", 1);
+STRING_LITERAL(TMP10635, "run", 3);
+STRING_LITERAL(TMP10641, "server.type", 11);
+STRING_LITERAL(TMP10642, "stdin", 5);
+STRING_LITERAL(TMP10643, "tcp", 3);
+STRING_LITERAL(TMP10644, "quit", 4);
+STRING_LITERAL(TMP10647, "server.port", 11);
+STRING_LITERAL(TMP10648, "server.address", 14);
+STRING_LITERAL(TMP10651, "\015\012", 2);
+STRING_LITERAL(TMP10674, "Invalid server.type:", 20);
 NimStringDesc* curcaascmd_521204;
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
@@ -399,9 +399,9 @@ N_NIMCALL(void, processcmdline_521209)(NU8 pass, NimStringDesc* cmd) {
 			{
 				nimln(37, "service.nim");
 				{
-					if (!eqStrings(p.key, ((NimStringDesc*) &TMP10632))) goto LA7;
+					if (!eqStrings(p.key, ((NimStringDesc*) &TMP10633))) goto LA7;
 					nimln(38, "service.nim");
-					p.key = copyString(((NimStringDesc*) &TMP10633));
+					p.key = copyString(((NimStringDesc*) &TMP10634));
 					nimln(39, "service.nim");
 					{
 						NIM_BOOL LOC11;
@@ -456,7 +456,7 @@ N_NIMCALL(void, processcmdline_521209)(NU8 pass, NimStringDesc* cmd) {
 			if (!(LOC27)) goto LA30;
 			LOC31 = 0;
 			LOC31 = nsuNormalize(command_153239);
-			LOC27 = !(eqStrings(LOC31, ((NimStringDesc*) &TMP10634)));
+			LOC27 = !(eqStrings(LOC31, ((NimStringDesc*) &TMP10635)));
 			LA30: ;
 			if (!LOC27) goto LA32;
 			nimln(46, "service.nim");
@@ -468,7 +468,7 @@ N_NIMCALL(void, processcmdline_521209)(NU8 pass, NimStringDesc* cmd) {
 	LA23: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP10639)(void* p, NI op) {
+N_NIMCALL(void, TMP10640)(void* p, NI op) {
 	TY521426* a;
 	a = (TY521426*)p;
 	nimGCvisit((void*)(*a).stdoutsocket521408, op);
@@ -523,7 +523,7 @@ N_CLOSURE(void, HEX3Aanonymous_521409)(NimStringDesc* line, void* ClEnv) {
 	LOC1 = 0;
 	LOC1 = rawNewString(line->Sup.len + 2);
 appendString(LOC1, line);
-appendString(LOC1, ((NimStringDesc*) &TMP10650));
+appendString(LOC1, ((NimStringDesc*) &TMP10651));
 	send_518208((*HEX3Aenvp_521438).stdoutsocket521408, LOC1, 2);
 	popFrame();
 }
@@ -630,11 +630,11 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 	nimln(180, "system.nim");
 	HEX3Aenv_521447 = (TY521426*) newObj((&NTI521448), sizeof(TY521426));
 	nimln(55, "service.nim");
-	typ = getconfigvar_153334(((NimStringDesc*) &TMP10640));
+	typ = getconfigvar_153334(((NimStringDesc*) &TMP10641));
 	nimln(56, "service.nim");
-	if (eqStrings(typ, ((NimStringDesc*) &TMP10641))) goto LA1;
-	if (eqStrings(typ, ((NimStringDesc*) &TMP10642))) goto LA2;
-	if (eqStrings(typ, ((NimStringDesc*) &TMP10627))) goto LA2;
+	if (eqStrings(typ, ((NimStringDesc*) &TMP10642))) goto LA1;
+	if (eqStrings(typ, ((NimStringDesc*) &TMP10643))) goto LA2;
+	if (eqStrings(typ, ((NimStringDesc*) &TMP10628))) goto LA2;
 	goto LA3;
 	LA1: ;
 	{
@@ -647,7 +647,7 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 				line = readline_13478(stdin);
 				nimln(60, "service.nim");
 				{
-					if (!eqStrings(line, ((NimStringDesc*) &TMP10643))) goto LA10;
+					if (!eqStrings(line, ((NimStringDesc*) &TMP10644))) goto LA10;
 					exit(((NI) 0));
 				}
 				LA10: ;
@@ -662,7 +662,7 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 				nimln(53, "service.nim");
 				gerrorcounter_163015 = ((NI) 0);
 				nimln(62, "service.nim");
-				printf("%s\012", ((NimStringDesc*) &TMP10627)? (((NimStringDesc*) &TMP10627))->data:"nil");
+				printf("%s\012", ((NimStringDesc*) &TMP10628)? (((NimStringDesc*) &TMP10628))->data:"nil");
 				nimln(63, "service.nim");
 				fflush(stdout);
 			}
@@ -680,7 +680,7 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 		nimln(67, "service.nim");
 		server = newsocket_513830(((NU8) 2), ((NU8) 1), ((NU8) 6), NIM_TRUE);
 		nimln(68, "service.nim");
-		p = getconfigvar_153334(((NimStringDesc*) &TMP10646));
+		p = getconfigvar_153334(((NimStringDesc*) &TMP10647));
 		nimln(69, "service.nim");
 		{
 			NI LOC18;
@@ -697,10 +697,10 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 		LA14: ;
 		nimln(70, "service.nim");
 		LOC20 = 0;
-		LOC20 = getconfigvar_153334(((NimStringDesc*) &TMP10647));
+		LOC20 = getconfigvar_153334(((NimStringDesc*) &TMP10648));
 		bindaddr_514620(server, port, LOC20);
 		nimln(71, "service.nim");
-		inp = copyString(((NimStringDesc*) &TMP10627));
+		inp = copyString(((NimStringDesc*) &TMP10628));
 		nimln(72, "service.nim");
 		listen_514610(server, SOMAXCONN);
 		nimln(73, "service.nim");
@@ -729,7 +729,7 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 				nimln(53, "service.nim");
 				gerrorcounter_163015 = ((NI) 0);
 				nimln(81, "service.nim");
-				send_518208((*HEX3Aenv_521447).stdoutsocket521408, ((NimStringDesc*) &TMP10650), 2);
+				send_518208((*HEX3Aenv_521447).stdoutsocket521408, ((NimStringDesc*) &TMP10651), 2);
 				nimln(82, "service.nim");
 				close_515417((*HEX3Aenv_521447).stdoutsocket521408);
 			}
@@ -739,7 +739,7 @@ N_NIMCALL(void, serve_521254)(TY521256 action) {
 	LA3: ;
 	{
 		nimln(86, "service.nim");
-		printf("%s%s\012", ((NimStringDesc*) &TMP10673)? (((NimStringDesc*) &TMP10673))->data:"nil", typ? (typ)->data:"nil");
+		printf("%s%s\012", ((NimStringDesc*) &TMP10674)? (((NimStringDesc*) &TMP10674))->data:"nil", typ? (typ)->data:"nil");
 		nimln(87, "service.nim");
 		msgquit_163107(((NI8) 1));
 	}
@@ -752,38 +752,38 @@ NIM_EXTERNC N_NOINLINE(void, compiler_serviceInit)(void) {
 	nimfr("service", "service.nim")
 	nimln(24, "service.nim");
 	LOC1 = 0;
-	LOC1 = curcaascmd_521204; curcaascmd_521204 = copyStringRC1(((NimStringDesc*) &TMP10627));
+	LOC1 = curcaascmd_521204; curcaascmd_521204 = copyStringRC1(((NimStringDesc*) &TMP10628));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(25, "service.nim");
 	LOC2 = 0;
-	LOC2 = lastcaascmd_521205; lastcaascmd_521205 = copyStringRC1(((NimStringDesc*) &TMP10627));
+	LOC2 = lastcaascmd_521205; lastcaascmd_521205 = copyStringRC1(((NimStringDesc*) &TMP10628));
 	if (LOC2) nimGCunrefNoCycle(LOC2);
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_serviceDatInit)(void) {
-static TNimNode* TMP10635[2];
-static TNimNode TMP10606[3];
+static TNimNode* TMP10636[2];
+static TNimNode TMP10607[3];
 NTI521426.size = sizeof(TY521426);
 NTI521426.kind = 18;
 NTI521426.base = 0;
 NTI521426.flags = 2;
-TMP10635[0] = &TMP10606[1];
-TMP10606[1].kind = 1;
-TMP10606[1].offset = offsetof(TY521426, HEX3Astate);
-TMP10606[1].typ = (&NTI170807);
-TMP10606[1].name = ":state";
-TMP10635[1] = &TMP10606[2];
-TMP10606[2].kind = 1;
-TMP10606[2].offset = offsetof(TY521426, stdoutsocket521408);
-TMP10606[2].typ = (&NTI513409);
-TMP10606[2].name = "stdoutSocket521408";
-TMP10606[0].len = 2; TMP10606[0].kind = 2; TMP10606[0].sons = &TMP10635[0];
-NTI521426.node = &TMP10606[0];
+TMP10636[0] = &TMP10607[1];
+TMP10607[1].kind = 1;
+TMP10607[1].offset = offsetof(TY521426, HEX3Astate);
+TMP10607[1].typ = (&NTI170807);
+TMP10607[1].name = ":state";
+TMP10636[1] = &TMP10607[2];
+TMP10607[2].kind = 1;
+TMP10607[2].offset = offsetof(TY521426, stdoutsocket521408);
+TMP10607[2].typ = (&NTI513409);
+TMP10607[2].name = "stdoutSocket521408";
+TMP10607[0].len = 2; TMP10607[0].kind = 2; TMP10607[0].sons = &TMP10636[0];
+NTI521426.node = &TMP10607[0];
 NTI521448.size = sizeof(TY521426*);
 NTI521448.kind = 22;
 NTI521448.base = (&NTI521426);
 NTI521448.flags = 2;
-NTI521448.marker = TMP10639;
+NTI521448.marker = TMP10640;
 }
 

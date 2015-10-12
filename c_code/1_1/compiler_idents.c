@@ -197,7 +197,7 @@ N_NIMCALL(Tident169021*, getident_169463)(NimStringDesc* identifier);
 N_NIMCALL(NI, hashignorestyle_134887)(NimStringDesc* x);
 N_NIMCALL(Tident169021*, getident_169473)(NimStringDesc* identifier, NI h);
 N_NIMCALL(NIM_BOOL, identeq_169484)(Tident169021* id, NimStringDesc* name);
-N_NIMCALL(void, TMP2621)(void* p, NI op);
+N_NIMCALL(void, TMP2622)(void* p, NI op);
 STRING_LITERAL(TMP1282, "id == 0 or id == result.id ", 27);
 STRING_LITERAL(TMP1288, ":anonymous", 10);
 STRING_LITERAL(TMP1289, ":delegator", 10);
@@ -720,7 +720,7 @@ N_NIMCALL(NIM_BOOL, identeq_169484)(Tident169021* id, NimStringDesc* name) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP2621)(void* p, NI op) {
+N_NIMCALL(void, TMP2622)(void* p, NI op) {
 	Tidobj169015* a;
 	a = (Tidobj169015*)p;
 }
@@ -778,6 +778,6 @@ NTI169019.marker = TMP1284;
 NTI169017.size = sizeof(Tidobj169015*);
 NTI169017.kind = 22;
 NTI169017.base = (&NTI169015);
-NTI169017.marker = TMP2621;
+NTI169017.marker = TMP2622;
 }
 

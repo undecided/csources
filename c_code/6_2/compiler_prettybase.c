@@ -393,7 +393,7 @@ struct TY190933 {
   NI32 data[SEQ_DECL_SIZE];
 };
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP4266)(void* p, NI op);
+N_NIMCALL(void, TMP4267)(void* p, NI op);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46747*, usrtocell_50246)(void* usr);
 static N_INLINE(void, nimFrame)(TFrame* s);
@@ -437,17 +437,17 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
 N_NIMCALL(void, replacedeprecated_248273)(Tlineinfo162338 info, Tsym190843* oldsym, Tsym190843* newsym);
 N_NIMCALL(void, replacecomment_248286)(Tlineinfo162338 info);
 N_NIMCALL(NimStringDesc*, nsuEscape)(NimStringDesc* s, NimStringDesc* prefix, NimStringDesc* suffix);
-STRING_LITERAL(TMP4268, ".nimfix", 7);
-STRING_LITERAL(TMP4270, "\015\012", 2);
-STRING_LITERAL(TMP4271, "\012", 1);
+STRING_LITERAL(TMP4269, ".nimfix", 7);
+STRING_LITERAL(TMP4271, "\015\012", 2);
+STRING_LITERAL(TMP4272, "\012", 1);
 NIM_CONST TY77659 Letters_248142 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x87, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-STRING_LITERAL(TMP4288, "discard ", 8);
-STRING_LITERAL(TMP4290, "\"", 1);
+STRING_LITERAL(TMP4289, "discard ", 8);
+STRING_LITERAL(TMP4291, "\"", 1);
 TY248019* gsourcefiles_248036;
 TNimType NTI248008; /* TSourceFile */
 extern TNimType NTI13606; /* seq[string] */
@@ -458,7 +458,7 @@ TNimType NTI248019; /* seq[TSourceFile] */
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI246024; /* BaseLexer */
-N_NIMCALL(void, TMP4266)(void* p, NI op) {
+N_NIMCALL(void, TMP4267)(void* p, NI op) {
 	TY248019* a;
 	NI LOC1;
 	a = (TY248019*)p;
@@ -619,12 +619,12 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 	i = info.fileindex;
 	nimln(25, "prettybase.nim");
 	{
-		NI TMP4267;
+		NI TMP4268;
 		if (!((gsourcefiles_248036 ? gsourcefiles_248036->Sup.len : 0) <= ((NI) (i)))) goto LA3;
 		nimln(26, "prettybase.nim");
-		TMP4267 = addInt(i, ((NI32) 1));
-		if (TMP4267 < (-2147483647 -1) || TMP4267 > 2147483647) raiseOverflow();
-		gsourcefiles_248036 = (TY248019*) setLengthSeq(&(gsourcefiles_248036)->Sup, sizeof(Tsourcefile248008), ((NI)chckRange((NI32)(TMP4267), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+		TMP4268 = addInt(i, ((NI32) 1));
+		if (TMP4268 < (-2147483647 -1) || TMP4268 > 2147483647) raiseOverflow();
+		gsourcefiles_248036 = (TY248019*) setLengthSeq(&(gsourcefiles_248036)->Sup, sizeof(Tsourcefile248008), ((NI)chckRange((NI32)(TMP4268), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	}
 	LA3: ;
 	nimln(27, "prettybase.nim");
@@ -656,7 +656,7 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 		if ((NU)(i) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
 		memset((void*)(&LOC10), 0, sizeof(LOC10));
 		nossplitFile(path, (&LOC10));
-		gsourcefiles_248036->data[i].isnimfixfile = eqStrings(LOC10.Field2, ((NimStringDesc*) &TMP4268));
+		gsourcefiles_248036->data[i].isnimfixfile = eqStrings(LOC10.Field2, ((NimStringDesc*) &TMP4269));
 		{
 			NimStringDesc* line_248088;
 			FILE* f_248115;
@@ -700,7 +700,7 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 		{
 			nimln(40, "prettybase.nim");
 			while (1) {
-				NI TMP4272;
+				NI TMP4273;
 				nimln(41, "prettybase.nim");
 				switch (((NU8)(lex.buf[pos]))) {
 				case 13:
@@ -709,7 +709,7 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 					nimln(43, "prettybase.nim");
 					if ((NU)(i) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
 					LOC21 = 0;
-					LOC21 = gsourcefiles_248036->data[i].newline; gsourcefiles_248036->data[i].newline = copyStringRC1(((NimStringDesc*) &TMP4270));
+					LOC21 = gsourcefiles_248036->data[i].newline; gsourcefiles_248036->data[i].newline = copyStringRC1(((NimStringDesc*) &TMP4271));
 					if (LOC21) nimGCunrefNoCycle(LOC21);
 					nimln(44, "prettybase.nim");
 					goto LA18;
@@ -722,7 +722,7 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 					nimln(46, "prettybase.nim");
 					if ((NU)(i) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
 					LOC23 = 0;
-					LOC23 = gsourcefiles_248036->data[i].newline; gsourcefiles_248036->data[i].newline = copyStringRC1(((NimStringDesc*) &TMP4271));
+					LOC23 = gsourcefiles_248036->data[i].newline; gsourcefiles_248036->data[i].newline = copyStringRC1(((NimStringDesc*) &TMP4272));
 					if (LOC23) nimGCunrefNoCycle(LOC23);
 					nimln(47, "prettybase.nim");
 					goto LA18;
@@ -734,8 +734,8 @@ N_NIMCALL(void, loadfile_248041)(Tlineinfo162338 info) {
 				break;
 				}
 				nimln(49, "prettybase.nim");
-				TMP4272 = addInt(pos, ((NI) 1));
-				pos = (NI)(TMP4272);
+				TMP4273 = addInt(pos, ((NI) 1));
+				pos = (NI)(TMP4273);
 			}
 		} LA18: ;
 		nimln(50, "prettybase.nim");
@@ -753,21 +753,21 @@ N_NIMCALL(NI, identlen_248147)(NimStringDesc* line, NI start) {
 		nimln(56, "prettybase.nim");
 		while (1) {
 			NIM_BOOL LOC3;
-			NI TMP4273;
 			NI TMP4274;
 			NI TMP4275;
+			NI TMP4276;
 			LOC3 = 0;
-			TMP4273 = addInt(start, result);
-			LOC3 = ((NI)(TMP4273) < (line ? line->Sup.len : 0));
-			if (!(LOC3)) goto LA4;
 			TMP4274 = addInt(start, result);
-			if ((NU)((NI)(TMP4274)) > (NU)(line->Sup.len)) raiseIndexError();
-			LOC3 = (((NU8)(line->data[(NI)(TMP4274)])) >= ((NU8)(97)) && ((NU8)(line->data[(NI)(TMP4274)])) <= ((NU8)(122)) || ((NU8)(line->data[(NI)(TMP4274)])) >= ((NU8)(65)) && ((NU8)(line->data[(NI)(TMP4274)])) <= ((NU8)(90)) || ((NU8)(line->data[(NI)(TMP4274)])) >= ((NU8)(48)) && ((NU8)(line->data[(NI)(TMP4274)])) <= ((NU8)(57)) || ((NU8)(line->data[(NI)(TMP4274)])) >= ((NU8)(128)) && ((NU8)(line->data[(NI)(TMP4274)])) <= ((NU8)(255)) || ((NU8)(line->data[(NI)(TMP4274)])) == ((NU8)(95)));
+			LOC3 = ((NI)(TMP4274) < (line ? line->Sup.len : 0));
+			if (!(LOC3)) goto LA4;
+			TMP4275 = addInt(start, result);
+			if ((NU)((NI)(TMP4275)) > (NU)(line->Sup.len)) raiseIndexError();
+			LOC3 = (((NU8)(line->data[(NI)(TMP4275)])) >= ((NU8)(97)) && ((NU8)(line->data[(NI)(TMP4275)])) <= ((NU8)(122)) || ((NU8)(line->data[(NI)(TMP4275)])) >= ((NU8)(65)) && ((NU8)(line->data[(NI)(TMP4275)])) <= ((NU8)(90)) || ((NU8)(line->data[(NI)(TMP4275)])) >= ((NU8)(48)) && ((NU8)(line->data[(NI)(TMP4275)])) <= ((NU8)(57)) || ((NU8)(line->data[(NI)(TMP4275)])) >= ((NU8)(128)) && ((NU8)(line->data[(NI)(TMP4275)])) <= ((NU8)(255)) || ((NU8)(line->data[(NI)(TMP4275)])) == ((NU8)(95)));
 			LA4: ;
 			if (!LOC3) goto LA2;
 			nimln(57, "prettybase.nim");
-			TMP4275 = addInt(result, ((NI) 1));
-			result = (NI)(TMP4275);
+			TMP4276 = addInt(result, ((NI) 1));
+			result = (NI)(TMP4276);
 		} LA2: ;
 	}
 	popFrame();
@@ -882,21 +882,21 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 
 N_NIMCALL(void, replacedeprecated_248208)(Tlineinfo162338 info, Tident166021* oldsym, Tident166021* newsym) {
 	NimStringDesc* line;
-	NI TMP4276;
+	NI TMP4277;
 	NI first;
 	NI last;
 	NI LOC17;
-	NI TMP4280;
 	NI TMP4281;
+	NI TMP4282;
 	nimfr("replaceDeprecated", "prettybase.nim")
 {	nimln(64, "prettybase.nim");
 	loadfile_248041(info);
 	nimln(66, "prettybase.nim");
 	if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
-	TMP4276 = subInt(info.line, ((NI16) 1));
-	if (TMP4276 < -32768 || TMP4276 > 32767) raiseOverflow();
-	if ((NU)((NI16)(TMP4276)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
-	line = gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4276)];
+	TMP4277 = subInt(info.line, ((NI16) 1));
+	if (TMP4277 < -32768 || TMP4277 > 32767) raiseOverflow();
+	if ((NU)((NI16)(TMP4277)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
+	line = gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4277)];
 	nimln(67, "prettybase.nim");
 	first = ((((NI) (info.col)) <= (line ? line->Sup.len : 0)) ? ((NI) (info.col)) : (line ? line->Sup.len : 0));
 	nimln(68, "prettybase.nim");
@@ -909,18 +909,18 @@ N_NIMCALL(void, replacedeprecated_248208)(Tlineinfo162338 info, Tident166021* ol
 		nimln(70, "prettybase.nim");
 		while (1) {
 			NIM_BOOL LOC7;
-			NI TMP4277;
 			NI TMP4278;
+			NI TMP4279;
 			LOC7 = 0;
 			LOC7 = (((NI) 0) < first);
 			if (!(LOC7)) goto LA8;
-			TMP4277 = subInt(first, ((NI) 1));
-			if ((NU)((NI)(TMP4277)) > (NU)(line->Sup.len)) raiseIndexError();
-			LOC7 = (((NU8)(line->data[(NI)(TMP4277)])) >= ((NU8)(97)) && ((NU8)(line->data[(NI)(TMP4277)])) <= ((NU8)(122)) || ((NU8)(line->data[(NI)(TMP4277)])) >= ((NU8)(65)) && ((NU8)(line->data[(NI)(TMP4277)])) <= ((NU8)(90)) || ((NU8)(line->data[(NI)(TMP4277)])) >= ((NU8)(48)) && ((NU8)(line->data[(NI)(TMP4277)])) <= ((NU8)(57)) || ((NU8)(line->data[(NI)(TMP4277)])) >= ((NU8)(128)) && ((NU8)(line->data[(NI)(TMP4277)])) <= ((NU8)(255)) || ((NU8)(line->data[(NI)(TMP4277)])) == ((NU8)(95)));
+			TMP4278 = subInt(first, ((NI) 1));
+			if ((NU)((NI)(TMP4278)) > (NU)(line->Sup.len)) raiseIndexError();
+			LOC7 = (((NU8)(line->data[(NI)(TMP4278)])) >= ((NU8)(97)) && ((NU8)(line->data[(NI)(TMP4278)])) <= ((NU8)(122)) || ((NU8)(line->data[(NI)(TMP4278)])) >= ((NU8)(65)) && ((NU8)(line->data[(NI)(TMP4278)])) <= ((NU8)(90)) || ((NU8)(line->data[(NI)(TMP4278)])) >= ((NU8)(48)) && ((NU8)(line->data[(NI)(TMP4278)])) <= ((NU8)(57)) || ((NU8)(line->data[(NI)(TMP4278)])) >= ((NU8)(128)) && ((NU8)(line->data[(NI)(TMP4278)])) <= ((NU8)(255)) || ((NU8)(line->data[(NI)(TMP4278)])) == ((NU8)(95)));
 			LA8: ;
 			if (!LOC7) goto LA6;
-			TMP4278 = subInt(first, ((NI) 1));
-			first = (NI)(TMP4278);
+			TMP4279 = subInt(first, ((NI) 1));
+			first = (NI)(TMP4279);
 		} LA6: ;
 	}
 	nimln(71, "prettybase.nim");
@@ -931,19 +931,19 @@ N_NIMCALL(void, replacedeprecated_248208)(Tlineinfo162338 info, Tident166021* ol
 	LA11: ;
 	nimln(72, "prettybase.nim");
 	{
-		NI TMP4279;
+		NI TMP4280;
 		if ((NU)(first) > (NU)(line->Sup.len)) raiseIndexError();
 		if (!((NU8)(line->data[first]) == (NU8)(96))) goto LA15;
-		TMP4279 = addInt(first, ((NI) 1));
-		first = (NI)(TMP4279);
+		TMP4280 = addInt(first, ((NI) 1));
+		first = (NI)(TMP4280);
 	}
 	LA15: ;
 	nimln(74, "prettybase.nim");
 	LOC17 = 0;
 	LOC17 = identlen_248147(line, first);
-	TMP4280 = addInt(first, LOC17);
-	TMP4281 = subInt((NI)(TMP4280), ((NI) 1));
-	last = (NI)(TMP4281);
+	TMP4281 = addInt(first, LOC17);
+	TMP4282 = subInt((NI)(TMP4281), ((NI) 1));
+	last = (NI)(TMP4282);
 	nimln(75, "prettybase.nim");
 	{
 		Slice86255 LOC20;
@@ -951,11 +951,11 @@ N_NIMCALL(void, replacedeprecated_248208)(Tlineinfo162338 info, Tident166021* ol
 		NI LOC22;
 		NimStringDesc* x;
 		NimStringDesc* LOC25;
-		NI TMP4282;
-		NimStringDesc* LOC26;
 		NI TMP4283;
-		NimStringDesc* LOC27;
+		NimStringDesc* LOC26;
 		NI TMP4284;
+		NimStringDesc* LOC27;
+		NI TMP4285;
 		LOC20 = HEX2EHEX2E_105273(first, last);
 		LOC21 = 0;
 		LOC21 = HEX5BHEX5D_86248(line, LOC20);
@@ -964,12 +964,12 @@ N_NIMCALL(void, replacedeprecated_248208)(Tlineinfo162338 info, Tident166021* ol
 		if (!(LOC22 == ((NI) 0))) goto LA23;
 		nimln(76, "prettybase.nim");
 		LOC25 = 0;
-		TMP4282 = subInt(first, ((NI) 1));
+		TMP4283 = subInt(first, ((NI) 1));
 		LOC26 = 0;
-		LOC26 = copyStrLast(line, ((NI) 0), (NI)(TMP4282));
-		TMP4283 = addInt(last, ((NI) 1));
+		LOC26 = copyStrLast(line, ((NI) 0), (NI)(TMP4283));
+		TMP4284 = addInt(last, ((NI) 1));
 		LOC27 = 0;
-		LOC27 = copyStr(line, (NI)(TMP4283));
+		LOC27 = copyStr(line, (NI)(TMP4284));
 		LOC25 = rawNewString(LOC26->Sup.len + (*newsym).s->Sup.len + LOC27->Sup.len + 0);
 appendString(LOC25, LOC26);
 appendString(LOC25, (*newsym).s);
@@ -977,10 +977,10 @@ appendString(LOC25, LOC27);
 		x = LOC25;
 		nimln(77, "prettybase.nim");
 		if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
-		TMP4284 = subInt(info.line, ((NI16) 1));
-		if (TMP4284 < -32768 || TMP4284 > 32767) raiseOverflow();
-		if ((NU)((NI16)(TMP4284)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
-		asgnRefNoCycle((void**) (&gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4284)]), x);
+		TMP4285 = subInt(info.line, ((NI16) 1));
+		if (TMP4285 < -32768 || TMP4285 > 32767) raiseOverflow();
+		if ((NU)((NI16)(TMP4285)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
+		asgnRefNoCycle((void**) (&gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4285)]), x);
 		nimln(78, "prettybase.nim");
 		if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
 		gsourcefiles_248036->data[info.fileindex].dirty = NIM_TRUE;
@@ -999,57 +999,57 @@ N_NIMCALL(void, replacedeprecated_248273)(Tlineinfo162338 info, Tsym190843* olds
 
 N_NIMCALL(void, replacecomment_248286)(Tlineinfo162338 info) {
 	NimStringDesc* line;
-	NI TMP4285;
+	NI TMP4286;
 	NI first;
 	NimStringDesc* x;
 	NimStringDesc* LOC5;
-	NI TMP4287;
+	NI TMP4288;
 	NimStringDesc* LOC6;
-	NI TMP4289;
+	NI TMP4290;
 	NimStringDesc* LOC7;
 	NimStringDesc* LOC8;
-	NI TMP4291;
+	NI TMP4292;
 	nimfr("replaceComment", "prettybase.nim")
 	nimln(85, "prettybase.nim");
 	loadfile_248041(info);
 	nimln(87, "prettybase.nim");
 	if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
-	TMP4285 = subInt(info.line, ((NI16) 1));
-	if (TMP4285 < -32768 || TMP4285 > 32767) raiseOverflow();
-	if ((NU)((NI16)(TMP4285)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
-	line = gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4285)];
+	TMP4286 = subInt(info.line, ((NI16) 1));
+	if (TMP4286 < -32768 || TMP4286 > 32767) raiseOverflow();
+	if ((NU)((NI16)(TMP4286)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
+	line = gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4286)];
 	nimln(88, "prettybase.nim");
 	first = ((NI) (info.col));
 	nimln(89, "prettybase.nim");
 	{
-		NI TMP4286;
+		NI TMP4287;
 		if ((NU)(first) > (NU)(line->Sup.len)) raiseIndexError();
 		if (!!(((NU8)(line->data[first]) == (NU8)(35)))) goto LA3;
-		TMP4286 = addInt(first, ((NI) 1));
-		first = (NI)(TMP4286);
+		TMP4287 = addInt(first, ((NI) 1));
+		first = (NI)(TMP4287);
 	}
 	LA3: ;
 	nimln(91, "prettybase.nim");
 	LOC5 = 0;
-	TMP4287 = subInt(first, ((NI) 1));
+	TMP4288 = subInt(first, ((NI) 1));
 	LOC6 = 0;
-	LOC6 = copyStrLast(line, ((NI) 0), (NI)(TMP4287));
-	TMP4289 = addInt(first, ((NI) 1));
+	LOC6 = copyStrLast(line, ((NI) 0), (NI)(TMP4288));
+	TMP4290 = addInt(first, ((NI) 1));
 	LOC7 = 0;
-	LOC7 = copyStr(line, (NI)(TMP4289));
+	LOC7 = copyStr(line, (NI)(TMP4290));
 	LOC8 = 0;
-	LOC8 = nsuEscape(LOC7, ((NimStringDesc*) &TMP4290), ((NimStringDesc*) &TMP4290));
+	LOC8 = nsuEscape(LOC7, ((NimStringDesc*) &TMP4291), ((NimStringDesc*) &TMP4291));
 	LOC5 = rawNewString(LOC6->Sup.len + LOC8->Sup.len + 8);
 appendString(LOC5, LOC6);
-appendString(LOC5, ((NimStringDesc*) &TMP4288));
+appendString(LOC5, ((NimStringDesc*) &TMP4289));
 appendString(LOC5, LOC8);
 	x = LOC5;
 	nimln(92, "prettybase.nim");
 	if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
-	TMP4291 = subInt(info.line, ((NI16) 1));
-	if (TMP4291 < -32768 || TMP4291 > 32767) raiseOverflow();
-	if ((NU)((NI16)(TMP4291)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
-	asgnRefNoCycle((void**) (&gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4291)]), x);
+	TMP4292 = subInt(info.line, ((NI16) 1));
+	if (TMP4292 < -32768 || TMP4292 > 32767) raiseOverflow();
+	if ((NU)((NI16)(TMP4292)) >= (NU)(gsourcefiles_248036->data[info.fileindex].lines->Sup.len)) raiseIndexError();
+	asgnRefNoCycle((void**) (&gsourcefiles_248036->data[info.fileindex].lines->data[(NI16)(TMP4292)]), x);
 	nimln(93, "prettybase.nim");
 	if ((NU)(info.fileindex) >= (NU)(gsourcefiles_248036->Sup.len)) raiseIndexError();
 	gsourcefiles_248036->data[info.fileindex].dirty = NIM_TRUE;
@@ -1064,48 +1064,48 @@ NIM_EXTERNC N_NOINLINE(void, compiler_prettybaseInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_prettybaseDatInit)(void) {
-static TNimNode* TMP4265[6];
-static TNimNode TMP4221[7];
+static TNimNode* TMP4266[6];
+static TNimNode TMP4222[7];
 NTI248008.size = sizeof(Tsourcefile248008);
 NTI248008.kind = 18;
 NTI248008.base = 0;
 NTI248008.flags = 2;
-TMP4265[0] = &TMP4221[1];
-TMP4221[1].kind = 1;
-TMP4221[1].offset = offsetof(Tsourcefile248008, lines);
-TMP4221[1].typ = (&NTI13606);
-TMP4221[1].name = "lines";
-TMP4265[1] = &TMP4221[2];
-TMP4221[2].kind = 1;
-TMP4221[2].offset = offsetof(Tsourcefile248008, dirty);
-TMP4221[2].typ = (&NTI138);
-TMP4221[2].name = "dirty";
-TMP4265[2] = &TMP4221[3];
-TMP4221[3].kind = 1;
-TMP4221[3].offset = offsetof(Tsourcefile248008, isnimfixfile);
-TMP4221[3].typ = (&NTI138);
-TMP4221[3].name = "isNimfixFile";
-TMP4265[3] = &TMP4221[4];
-TMP4221[4].kind = 1;
-TMP4221[4].offset = offsetof(Tsourcefile248008, fullpath);
-TMP4221[4].typ = (&NTI149);
-TMP4221[4].name = "fullpath";
-TMP4265[4] = &TMP4221[5];
-TMP4221[5].kind = 1;
-TMP4221[5].offset = offsetof(Tsourcefile248008, newline);
-TMP4221[5].typ = (&NTI149);
-TMP4221[5].name = "newline";
-TMP4265[5] = &TMP4221[6];
-TMP4221[6].kind = 1;
-TMP4221[6].offset = offsetof(Tsourcefile248008, fileidx);
-TMP4221[6].typ = (&NTI114);
-TMP4221[6].name = "fileIdx";
-TMP4221[0].len = 6; TMP4221[0].kind = 2; TMP4221[0].sons = &TMP4265[0];
-NTI248008.node = &TMP4221[0];
+TMP4266[0] = &TMP4222[1];
+TMP4222[1].kind = 1;
+TMP4222[1].offset = offsetof(Tsourcefile248008, lines);
+TMP4222[1].typ = (&NTI13606);
+TMP4222[1].name = "lines";
+TMP4266[1] = &TMP4222[2];
+TMP4222[2].kind = 1;
+TMP4222[2].offset = offsetof(Tsourcefile248008, dirty);
+TMP4222[2].typ = (&NTI138);
+TMP4222[2].name = "dirty";
+TMP4266[2] = &TMP4222[3];
+TMP4222[3].kind = 1;
+TMP4222[3].offset = offsetof(Tsourcefile248008, isnimfixfile);
+TMP4222[3].typ = (&NTI138);
+TMP4222[3].name = "isNimfixFile";
+TMP4266[3] = &TMP4222[4];
+TMP4222[4].kind = 1;
+TMP4222[4].offset = offsetof(Tsourcefile248008, fullpath);
+TMP4222[4].typ = (&NTI149);
+TMP4222[4].name = "fullpath";
+TMP4266[4] = &TMP4222[5];
+TMP4222[5].kind = 1;
+TMP4222[5].offset = offsetof(Tsourcefile248008, newline);
+TMP4222[5].typ = (&NTI149);
+TMP4222[5].name = "newline";
+TMP4266[5] = &TMP4222[6];
+TMP4222[6].kind = 1;
+TMP4222[6].offset = offsetof(Tsourcefile248008, fileidx);
+TMP4222[6].typ = (&NTI114);
+TMP4222[6].name = "fileIdx";
+TMP4222[0].len = 6; TMP4222[0].kind = 2; TMP4222[0].sons = &TMP4266[0];
+NTI248008.node = &TMP4222[0];
 NTI248019.size = sizeof(TY248019*);
 NTI248019.kind = 24;
 NTI248019.base = (&NTI248008);
 NTI248019.flags = 2;
-NTI248019.marker = TMP4266;
+NTI248019.marker = TMP4267;
 }
 

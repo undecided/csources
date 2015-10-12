@@ -197,8 +197,8 @@ struct Keyvaluepairseq133010 {
 };
 N_NIMCALL(Xmlnodeobj329019*, newxmlnode_329042)(NU8 kind);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP6448)(void* p, NI op);
 N_NIMCALL(void, TMP6449)(void* p, NI op);
+N_NIMCALL(void, TMP6450)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(void, FieldDiscriminantCheck)(NI olddiscval, NI newdiscval, TNimNode** a, NI L);
 static N_INLINE(void, nimFrame)(TFrame* s);
@@ -268,31 +268,31 @@ N_NIMCALL(void, findall_331821)(Xmlnodeobj329019* n, NimStringDesc* tag, TY32902
 N_NIMCALL(TY329028*, findall_332266)(Xmlnodeobj329019* n, NimStringDesc* tag);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 TNimNode* NimDT_329019_k[6];
-STRING_LITERAL(TMP6450, "fTag", 4);
-STRING_LITERAL(TMP6451, "s", 1);
-STRING_LITERAL(TMP6452, "fText", 5);
-STRING_LITERAL(TMP6453, "contains({xnText, xnComment, xnCData, xnEntity}, n.k) ", 54);
-STRING_LITERAL(TMP6454, "", 0);
-STRING_LITERAL(TMP6455, "n.k == xnElement ", 17);
-STRING_LITERAL(TMP6458, "fAttr", 5);
-STRING_LITERAL(TMP6459, "&lt;", 4);
-STRING_LITERAL(TMP6460, "&gt;", 4);
-STRING_LITERAL(TMP6461, "&amp;", 5);
-STRING_LITERAL(TMP6462, "&quot;", 6);
-STRING_LITERAL(TMP6463, "&#x27;", 6);
-STRING_LITERAL(TMP6464, "&#x2F;", 6);
-STRING_LITERAL(TMP6466, "len(a) == L string modified while iterating over it", 51);
-STRING_LITERAL(TMP6467, "\012", 1);
-STRING_LITERAL(TMP6471, "=\"", 2);
-STRING_LITERAL(TMP6481, "</", 2);
-STRING_LITERAL(TMP6482, ">", 1);
-STRING_LITERAL(TMP6483, " />", 3);
-STRING_LITERAL(TMP6484, "<!-- ", 5);
-STRING_LITERAL(TMP6485, " -->", 4);
-STRING_LITERAL(TMP6486, "<![CDATA[", 9);
-STRING_LITERAL(TMP6487, "]]>", 3);
-STRING_LITERAL(TMP6490, "kind(n) == xnElement ", 21);
-STRING_LITERAL(TMP6493, "isNil(result) == false ", 23);
+STRING_LITERAL(TMP6451, "fTag", 4);
+STRING_LITERAL(TMP6452, "s", 1);
+STRING_LITERAL(TMP6453, "fText", 5);
+STRING_LITERAL(TMP6454, "contains({xnText, xnComment, xnCData, xnEntity}, n.k) ", 54);
+STRING_LITERAL(TMP6455, "", 0);
+STRING_LITERAL(TMP6456, "n.k == xnElement ", 17);
+STRING_LITERAL(TMP6459, "fAttr", 5);
+STRING_LITERAL(TMP6460, "&lt;", 4);
+STRING_LITERAL(TMP6461, "&gt;", 4);
+STRING_LITERAL(TMP6462, "&amp;", 5);
+STRING_LITERAL(TMP6463, "&quot;", 6);
+STRING_LITERAL(TMP6464, "&#x27;", 6);
+STRING_LITERAL(TMP6465, "&#x2F;", 6);
+STRING_LITERAL(TMP6467, "len(a) == L string modified while iterating over it", 51);
+STRING_LITERAL(TMP6468, "\012", 1);
+STRING_LITERAL(TMP6472, "=\"", 2);
+STRING_LITERAL(TMP6482, "</", 2);
+STRING_LITERAL(TMP6483, ">", 1);
+STRING_LITERAL(TMP6484, " />", 3);
+STRING_LITERAL(TMP6485, "<!-- ", 5);
+STRING_LITERAL(TMP6486, " -->", 4);
+STRING_LITERAL(TMP6487, "<![CDATA[", 9);
+STRING_LITERAL(TMP6488, "]]>", 3);
+STRING_LITERAL(TMP6491, "kind(n) == xnElement ", 21);
+STRING_LITERAL(TMP6494, "isNil(result) == false ", 23);
 TNimType NTI329019; /* XmlNodeObj */
 TNimType NTI329015; /* XmlNodeKind */
 extern TNimType NTI149; /* string */
@@ -303,7 +303,7 @@ TNimType NTI329013; /* XmlNode */
 extern TNimNode* NimDT_329019_k[6];
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
-N_NIMCALL(void, TMP6448)(void* p, NI op) {
+N_NIMCALL(void, TMP6449)(void* p, NI op) {
 	TY329028* a;
 	NI LOC1;
 	a = (TY329028*)p;
@@ -312,7 +312,7 @@ N_NIMCALL(void, TMP6448)(void* p, NI op) {
 	nimGCvisit((void*)a->data[LOC1], op);
 	}
 }
-N_NIMCALL(void, TMP6449)(void* p, NI op) {
+N_NIMCALL(void, TMP6450)(void* p, NI op) {
 	Xmlnodeobj329019* a;
 	a = (Xmlnodeobj329019*)p;
 	switch ((*a).k) {
@@ -416,12 +416,12 @@ N_NIMCALL(Xmlnodeobj329019*, newelement_329060)(NimStringDesc* tag) {
 	nimln(46, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 1));
 	nimln(47, "xmltree.nim");
-	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S2.ftag; (*result).kU.S2.ftag = copyStringRC1(tag);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(48, "xmltree.nim");
-	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 	if ((*result).kU.S2.s) nimGCunrefNoCycle((*result).kU.S2.s);
 	(*result).kU.S2.s = (TY329028*) newSeqRC1((&NTI329028), 0);
 	popFrame();
@@ -436,7 +436,7 @@ N_NIMCALL(Xmlnodeobj329019*, newtext_329088)(NimStringDesc* text) {
 	nimln(53, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 0));
 	nimln(54, "xmltree.nim");
-	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S1.ftext; (*result).kU.S1.ftext = copyStringRC1(text);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
@@ -452,7 +452,7 @@ N_NIMCALL(Xmlnodeobj329019*, newcomment_329099)(NimStringDesc* comment) {
 	nimln(58, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 4));
 	nimln(59, "xmltree.nim");
-	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S1.ftext; (*result).kU.S1.ftext = copyStringRC1(comment);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
@@ -468,7 +468,7 @@ N_NIMCALL(Xmlnodeobj329019*, newcdata_329110)(NimStringDesc* cdata) {
 	nimln(63, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 2));
 	nimln(64, "xmltree.nim");
-	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S1.ftext; (*result).kU.S1.ftext = copyStringRC1(cdata);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
@@ -484,7 +484,7 @@ N_NIMCALL(Xmlnodeobj329019*, newentity_329121)(NimStringDesc* entity) {
 	nimln(68, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 2));
 	nimln(69, "xmltree.nim");
-	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S1.ftext; (*result).kU.S1.ftext = copyStringRC1(entity);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
@@ -499,11 +499,11 @@ static N_INLINE(NimStringDesc*, text_329132)(Xmlnodeobj329019* n) {
 	nimln(74, "xmltree.nim");
 	{
 		if (!!(((29 &(1<<(((*n).k)&7)))!=0))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6453));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6454));
 	}
 	LA3: ;
 	nimln(75, "xmltree.nim");
-	if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	result = copyString((*n).kU.S1.ftext);
 	popFrame();
 	return result;
@@ -514,7 +514,7 @@ static N_INLINE(NimStringDesc*, rawtext_329208)(Xmlnodeobj329019* n) {
 	nimfr("rawText", "xmltree.nim")
 	result = 0;
 	nimln(80, "xmltree.nim");
-	if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+	if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 	result = (*n).kU.S1.ftext;
 	popFrame();
 	return result;
@@ -525,7 +525,7 @@ static N_INLINE(NimStringDesc*, rawtag_329219)(Xmlnodeobj329019* n) {
 	nimfr("rawTag", "xmltree.nim")
 	result = 0;
 	nimln(85, "xmltree.nim");
-	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 	result = (*n).kU.S2.ftag;
 	popFrame();
 	return result;
@@ -581,48 +581,48 @@ N_NIMCALL(NimStringDesc*, innertext_329230)(Xmlnodeobj329019* n) {
 	nimfr("innerText", "xmltree.nim")
 	result = 0;
 	nimln(91, "xmltree.nim");
-	result = copyString(((NimStringDesc*) &TMP6454));
+	result = copyString(((NimStringDesc*) &TMP6455));
 	nimln(92, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	{
 		NI i_329420;
 		NI HEX3Atmp_329436;
-		NI TMP6456;
+		NI TMP6457;
 		NI res_329439;
 		i_329420 = 0;
 		HEX3Atmp_329436 = 0;
 		nimln(93, "xmltree.nim");
-		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
-		TMP6456 = subInt(((*n).kU.S2.s ? (*n).kU.S2.s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_329436 = (NI)(TMP6456);
+		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+		TMP6457 = subInt(((*n).kU.S2.s ? (*n).kU.S2.s->Sup.len : 0), ((NI) 1));
+		HEX3Atmp_329436 = (NI)(TMP6457);
 		nimln(1598, "system.nim");
 		res_329439 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6457;
+				NI TMP6458;
 				if (!(res_329439 <= HEX3Atmp_329436)) goto LA7;
 				nimln(1600, "system.nim");
 				i_329420 = res_329439;
 				nimln(94, "xmltree.nim");
 				{
-					if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+					if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 					if ((NU)(i_329420) >= (NU)((*n).kU.S2.s->Sup.len)) raiseIndexError();
 					if (!((9 &(1<<(((*(*n).kU.S2.s->data[i_329420]).k)&7)))!=0)) goto LA10;
-					if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+					if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 					if ((NU)(i_329420) >= (NU)((*n).kU.S2.s->Sup.len)) raiseIndexError();
-					if (!(((29 &(1<<(((*(*n).kU.S2.s->data[i_329420]).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+					if (!(((29 &(1<<(((*(*n).kU.S2.s->data[i_329420]).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 					result = resizeString(result, (*(*n).kU.S2.s->data[i_329420]).kU.S1.ftext->Sup.len + 0);
 appendString(result, (*(*n).kU.S2.s->data[i_329420]).kU.S1.ftext);
 				}
 				LA10: ;
 				nimln(1619, "system.nim");
-				TMP6457 = addInt(res_329439, ((NI) 1));
-				res_329439 = (NI)(TMP6457);
+				TMP6458 = addInt(res_329439, ((NI) 1));
+				res_329439 = (NI)(TMP6458);
 			} LA7: ;
 		}
 	}
@@ -637,11 +637,11 @@ static N_INLINE(NimStringDesc*, tag_329458)(Xmlnodeobj329019* n) {
 	nimln(98, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(99, "xmltree.nim");
-	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 	result = copyString((*n).kU.S2.ftag);
 	popFrame();
 	return result;
@@ -685,7 +685,7 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 static N_INLINE(void, add_329608)(Xmlnodeobj329019* father, Xmlnodeobj329019* son) {
 	nimfr("add", "xmltree.nim")
 	nimln(103, "xmltree.nim");
-	if (!(((2 &(1<<(((*father).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+	if (!(((2 &(1<<(((*father).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 	(*father).kU.S2.s = (TY329028*) incrSeq(&((*father).kU.S2.s)->Sup, sizeof(Xmlnodeobj329019*));
 	asgnRefNoCycle((void**) (&(*father).kU.S2.s->data[(*father).kU.S2.s->Sup.len-1]), son);
 	popFrame();
@@ -698,7 +698,7 @@ static N_INLINE(NI, len_329629)(Xmlnodeobj329019* n) {
 	nimln(107, "xmltree.nim");
 	{
 		if (!((*n).k == ((NU8) 1))) goto LA3;
-		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 		result = ((*n).kU.S2.s ? (*n).kU.S2.s->Sup.len : 0);
 	}
 	LA3: ;
@@ -723,11 +723,11 @@ static N_INLINE(Xmlnodeobj329019*, HEX5BHEX5D_329667)(Xmlnodeobj329019* n, NI i)
 	nimln(115, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(116, "xmltree.nim");
-	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 	if ((NU)(i) >= (NU)((*n).kU.S2.s->Sup.len)) raiseIndexError();
 	result = (*n).kU.S2.s->data[i];
 	popFrame();
@@ -741,11 +741,11 @@ static N_INLINE(Xmlnodeobj329019**, mget_329808)(Xmlnodeobj329019** n, NI i) {
 	nimln(120, "xmltree.nim");
 	{
 		if (!!(((*(*n)).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(121, "xmltree.nim");
-	if (!(((2 &(1<<(((*(*n)).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+	if (!(((2 &(1<<(((*(*n)).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 	if ((NU)(i) >= (NU)((*(*n)).kU.S2.s->Sup.len)) raiseIndexError();
 	result = &(*(*n)).kU.S2.s->data[i];
 	popFrame();
@@ -759,11 +759,11 @@ static N_INLINE(Stringtableobj133012*, attrs_330436)(Xmlnodeobj329019* n) {
 	nimln(136, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(137, "xmltree.nim");
-	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 	result = (*n).kU.S2.fattr;
 	popFrame();
 	return result;
@@ -868,11 +868,11 @@ static N_INLINE(void, attrsHEX3D_330608)(Xmlnodeobj329019* n, Stringtableobj1330
 	nimln(141, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(142, "xmltree.nim");
-	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+	if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 	asgnRef((void**) (&(*n).kU.S2.fattr), attr);
 	popFrame();
 }
@@ -884,14 +884,14 @@ static N_INLINE(NI, attrslen_330808)(Xmlnodeobj329019* n) {
 	nimln(146, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA3: ;
 	nimln(147, "xmltree.nim");
 	{
-		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 		if (!!((*n).kU.S2.fattr == 0)) goto LA7;
-		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 		result = nstlen((*n).kU.S2.fattr);
 	}
 	LA7: ;
@@ -930,7 +930,7 @@ N_NIMCALL(void, addescaped_331039)(NimStringDesc** result, NimStringDesc* s) {
 		{
 			nimln(3104, "system.nim");
 			while (1) {
-				NI TMP6465;
+				NI TMP6466;
 				if (!(i_331048 < L_331050)) goto LA3;
 				nimln(3105, "system.nim");
 				if ((NU)(i_331048) > (NU)(s->Sup.len)) raiseIndexError();
@@ -941,42 +941,42 @@ N_NIMCALL(void, addescaped_331039)(NimStringDesc** result, NimStringDesc* s) {
 				{
 					nimln(163, "xmltree.nim");
 					(*result) = resizeString((*result), 4);
-appendString((*result), ((NimStringDesc*) &TMP6459));
+appendString((*result), ((NimStringDesc*) &TMP6460));
 				}
 				break;
 				case 62:
 				{
 					nimln(164, "xmltree.nim");
 					(*result) = resizeString((*result), 4);
-appendString((*result), ((NimStringDesc*) &TMP6460));
+appendString((*result), ((NimStringDesc*) &TMP6461));
 				}
 				break;
 				case 38:
 				{
 					nimln(165, "xmltree.nim");
 					(*result) = resizeString((*result), 5);
-appendString((*result), ((NimStringDesc*) &TMP6461));
+appendString((*result), ((NimStringDesc*) &TMP6462));
 				}
 				break;
 				case 34:
 				{
 					nimln(166, "xmltree.nim");
 					(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP6462));
+appendString((*result), ((NimStringDesc*) &TMP6463));
 				}
 				break;
 				case 39:
 				{
 					nimln(167, "xmltree.nim");
 					(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP6463));
+appendString((*result), ((NimStringDesc*) &TMP6464));
 				}
 				break;
 				case 47:
 				{
 					nimln(168, "xmltree.nim");
 					(*result) = resizeString((*result), 6);
-appendString((*result), ((NimStringDesc*) &TMP6464));
+appendString((*result), ((NimStringDesc*) &TMP6465));
 				}
 				break;
 				default:
@@ -987,12 +987,12 @@ appendString((*result), ((NimStringDesc*) &TMP6464));
 				break;
 				}
 				nimln(3106, "system.nim");
-				TMP6465 = addInt(i_331048, ((NI) 1));
-				i_331048 = (NI)(TMP6465);
+				TMP6466 = addInt(i_331048, ((NI) 1));
+				i_331048 = (NI)(TMP6466);
 				nimln(3107, "system.nim");
 				{
 					if (!!(((s ? s->Sup.len : 0) == L_331050))) goto LA13;
-					failedassertimpl_87017(((NimStringDesc*) &TMP6466));
+					failedassertimpl_87017(((NimStringDesc*) &TMP6467));
 				}
 				LA13: ;
 			} LA3: ;
@@ -1041,7 +1041,7 @@ N_NIMCALL(void, addindent_331077)(NimStringDesc** result, NI indent) {
 	nimfr("addIndent", "xmltree.nim")
 	nimln(189, "xmltree.nim");
 	(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP6467));
+appendString((*result), ((NimStringDesc*) &TMP6468));
 	{
 		NI i_331092;
 		NI res_331096;
@@ -1051,15 +1051,15 @@ appendString((*result), ((NimStringDesc*) &TMP6467));
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6468;
+				NI TMP6469;
 				if (!(res_331096 <= indent)) goto LA3;
 				nimln(1600, "system.nim");
 				i_331092 = res_331096;
 				nimln(190, "xmltree.nim");
 				(*result) = addChar((*result), 32);
 				nimln(1619, "system.nim");
-				TMP6468 = addInt(res_331096, ((NI) 1));
-				res_331096 = (NI)(TMP6468);
+				TMP6469 = addInt(res_331096, ((NI) 1));
+				res_331096 = (NI)(TMP6469);
 			} LA3: ;
 		}
 	}
@@ -1074,21 +1074,21 @@ N_NIMCALL(NIM_BOOL, nowhitespace_331115)(Xmlnodeobj329019* n) {
 		NI i_331130;
 		NI HEX3Atmp_331144;
 		NI LOC2;
-		NI TMP6469;
+		NI TMP6470;
 		NI res_331147;
 		i_331130 = 0;
 		HEX3Atmp_331144 = 0;
 		nimln(195, "xmltree.nim");
 		LOC2 = 0;
 		LOC2 = len_329629(n);
-		TMP6469 = subInt(LOC2, ((NI) 1));
-		HEX3Atmp_331144 = (NI)(TMP6469);
+		TMP6470 = subInt(LOC2, ((NI) 1));
+		HEX3Atmp_331144 = (NI)(TMP6470);
 		nimln(1598, "system.nim");
 		res_331147 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6470;
+				NI TMP6471;
 				if (!(res_331147 <= HEX3Atmp_331144)) goto LA4;
 				nimln(1600, "system.nim");
 				i_331130 = res_331147;
@@ -1106,8 +1106,8 @@ N_NIMCALL(NIM_BOOL, nowhitespace_331115)(Xmlnodeobj329019* n) {
 				}
 				LA9: ;
 				nimln(1619, "system.nim");
-				TMP6470 = addInt(res_331147, ((NI) 1));
-				res_331147 = (NI)(TMP6470);
+				TMP6471 = addInt(res_331147, ((NI) 1));
+				res_331147 = (NI)(TMP6471);
 			} LA4: ;
 		}
 	}
@@ -1131,12 +1131,12 @@ N_NIMCALL(void, add_331166)(NimStringDesc** result, Xmlnodeobj329019* n, NI inde
 		nimln(203, "xmltree.nim");
 		(*result) = addChar((*result), 60);
 		nimln(204, "xmltree.nim");
-		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+		if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 		(*result) = resizeString((*result), (*n).kU.S2.ftag->Sup.len + 0);
 appendString((*result), (*n).kU.S2.ftag);
 		nimln(205, "xmltree.nim");
 		{
-			if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+			if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 			if (!!((*n).kU.S2.fattr == 0)) goto LA8;
 			{
 				NimStringDesc* key_331196;
@@ -1146,7 +1146,7 @@ appendString((*result), (*n).kU.S2.ftag);
 				val_331197 = 0;
 				HEX3Atmp_331230 = 0;
 				nimln(206, "xmltree.nim");
-				if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+				if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 				HEX3Atmp_331230 = (*n).kU.S2.fattr;
 				{
 					NI h_331234;
@@ -1161,7 +1161,7 @@ appendString((*result), (*n).kU.S2.ftag);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
-							NI TMP6472;
+							NI TMP6473;
 							if (!(res_331238 <= HEX3Atmp_331236)) goto LA13;
 							nimln(1600, "system.nim");
 							h_331234 = res_331238;
@@ -1181,7 +1181,7 @@ appendString((*result), (*n).kU.S2.ftag);
 appendString((*result), key_331196);
 								nimln(209, "xmltree.nim");
 								(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP6471));
+appendString((*result), ((NimStringDesc*) &TMP6472));
 								nimln(210, "xmltree.nim");
 								addescaped_331039(result, val_331197);
 								nimln(211, "xmltree.nim");
@@ -1189,8 +1189,8 @@ appendString((*result), ((NimStringDesc*) &TMP6471));
 							}
 							LA16: ;
 							nimln(1619, "system.nim");
-							TMP6472 = addInt(res_331238, ((NI) 1));
-							res_331238 = (NI)(TMP6472);
+							TMP6473 = addInt(res_331238, ((NI) 1));
+							res_331238 = (NI)(TMP6473);
 						} LA13: ;
 					}
 				}
@@ -1221,34 +1221,34 @@ appendString((*result), ((NimStringDesc*) &TMP6471));
 						NI i_331211;
 						NI HEX3Atmp_331242;
 						NI LOC34;
-						NI TMP6473;
+						NI TMP6474;
 						NI res_331245;
 						i_331211 = 0;
 						HEX3Atmp_331242 = 0;
 						nimln(219, "xmltree.nim");
 						LOC34 = 0;
 						LOC34 = len_329629(n);
-						TMP6473 = subInt(LOC34, ((NI) 1));
-						HEX3Atmp_331242 = (NI)(TMP6473);
+						TMP6474 = subInt(LOC34, ((NI) 1));
+						HEX3Atmp_331242 = (NI)(TMP6474);
 						nimln(1598, "system.nim");
 						res_331245 = ((NI) 0);
 						{
 							nimln(1599, "system.nim");
 							while (1) {
 								Xmlnodeobj329019* LOC37;
-								NI TMP6474;
 								NI TMP6475;
+								NI TMP6476;
 								if (!(res_331245 <= HEX3Atmp_331242)) goto LA36;
 								nimln(1600, "system.nim");
 								i_331211 = res_331245;
 								nimln(219, "xmltree.nim");
 								LOC37 = 0;
 								LOC37 = HEX5BHEX5D_329667(n, i_331211);
-								TMP6474 = addInt(indent, indwidth);
-								add_331166(result, LOC37, (NI)(TMP6474), indwidth);
+								TMP6475 = addInt(indent, indwidth);
+								add_331166(result, LOC37, (NI)(TMP6475), indwidth);
 								nimln(1619, "system.nim");
-								TMP6475 = addInt(res_331245, ((NI) 1));
-								res_331245 = (NI)(TMP6475);
+								TMP6476 = addInt(res_331245, ((NI) 1));
+								res_331245 = (NI)(TMP6476);
 							} LA36: ;
 						}
 					}
@@ -1260,38 +1260,38 @@ appendString((*result), ((NimStringDesc*) &TMP6471));
 						NI i_331223;
 						NI HEX3Atmp_331250;
 						NI LOC40;
-						NI TMP6476;
+						NI TMP6477;
 						NI res_331253;
 						i_331223 = 0;
 						HEX3Atmp_331250 = 0;
 						nimln(221, "xmltree.nim");
 						LOC40 = 0;
 						LOC40 = len_329629(n);
-						TMP6476 = subInt(LOC40, ((NI) 1));
-						HEX3Atmp_331250 = (NI)(TMP6476);
+						TMP6477 = subInt(LOC40, ((NI) 1));
+						HEX3Atmp_331250 = (NI)(TMP6477);
 						nimln(1598, "system.nim");
 						res_331253 = ((NI) 0);
 						{
 							nimln(1599, "system.nim");
 							while (1) {
-								NI TMP6477;
-								Xmlnodeobj329019* LOC43;
 								NI TMP6478;
+								Xmlnodeobj329019* LOC43;
 								NI TMP6479;
+								NI TMP6480;
 								if (!(res_331253 <= HEX3Atmp_331250)) goto LA42;
 								nimln(1600, "system.nim");
 								i_331223 = res_331253;
 								nimln(222, "xmltree.nim");
-								TMP6477 = addInt(indent, indwidth);
-								addindent_331077(result, (NI)(TMP6477));
+								TMP6478 = addInt(indent, indwidth);
+								addindent_331077(result, (NI)(TMP6478));
 								nimln(223, "xmltree.nim");
 								LOC43 = 0;
 								LOC43 = HEX5BHEX5D_329667(n, i_331223);
-								TMP6478 = addInt(indent, indwidth);
-								add_331166(result, LOC43, (NI)(TMP6478), indwidth);
+								TMP6479 = addInt(indent, indwidth);
+								add_331166(result, LOC43, (NI)(TMP6479), indwidth);
 								nimln(1619, "system.nim");
-								TMP6479 = addInt(res_331253, ((NI) 1));
-								res_331253 = (NI)(TMP6479);
+								TMP6480 = addInt(res_331253, ((NI) 1));
+								res_331253 = (NI)(TMP6480);
 							} LA42: ;
 						}
 					}
@@ -1304,31 +1304,31 @@ appendString((*result), ((NimStringDesc*) &TMP6471));
 			LA26: ;
 			{
 				Xmlnodeobj329019* LOC45;
-				NI TMP6480;
+				NI TMP6481;
 				nimln(226, "xmltree.nim");
 				LOC45 = 0;
 				LOC45 = HEX5BHEX5D_329667(n, ((NI) 0));
-				TMP6480 = addInt(indent, indwidth);
-				add_331166(result, LOC45, (NI)(TMP6480), indwidth);
+				TMP6481 = addInt(indent, indwidth);
+				add_331166(result, LOC45, (NI)(TMP6481), indwidth);
 			}
 			LA23: ;
 			nimln(227, "xmltree.nim");
 			(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP6481));
+appendString((*result), ((NimStringDesc*) &TMP6482));
 			nimln(228, "xmltree.nim");
-			if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+			if (!(((2 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 			(*result) = resizeString((*result), (*n).kU.S2.ftag->Sup.len + 0);
 appendString((*result), (*n).kU.S2.ftag);
 			nimln(229, "xmltree.nim");
 			(*result) = resizeString((*result), 1);
-appendString((*result), ((NimStringDesc*) &TMP6482));
+appendString((*result), ((NimStringDesc*) &TMP6483));
 		}
 		goto LA18;
 		LA21: ;
 		{
 			nimln(231, "xmltree.nim");
 			(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP6483));
+appendString((*result), ((NimStringDesc*) &TMP6484));
 		}
 		LA18: ;
 	}
@@ -1336,7 +1336,7 @@ appendString((*result), ((NimStringDesc*) &TMP6483));
 	case ((NU8) 0):
 	{
 		nimln(233, "xmltree.nim");
-		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 		addescaped_331039(result, (*n).kU.S1.ftext);
 	}
 	break;
@@ -1344,27 +1344,27 @@ appendString((*result), ((NimStringDesc*) &TMP6483));
 	{
 		nimln(235, "xmltree.nim");
 		(*result) = resizeString((*result), 5);
-appendString((*result), ((NimStringDesc*) &TMP6484));
+appendString((*result), ((NimStringDesc*) &TMP6485));
 		nimln(236, "xmltree.nim");
-		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 		addescaped_331039(result, (*n).kU.S1.ftext);
 		nimln(237, "xmltree.nim");
 		(*result) = resizeString((*result), 4);
-appendString((*result), ((NimStringDesc*) &TMP6485));
+appendString((*result), ((NimStringDesc*) &TMP6486));
 	}
 	break;
 	case ((NU8) 2):
 	{
 		nimln(239, "xmltree.nim");
 		(*result) = resizeString((*result), 9);
-appendString((*result), ((NimStringDesc*) &TMP6486));
+appendString((*result), ((NimStringDesc*) &TMP6487));
 		nimln(240, "xmltree.nim");
-		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 		(*result) = resizeString((*result), (*n).kU.S1.ftext->Sup.len + 0);
 appendString((*result), (*n).kU.S1.ftext);
 		nimln(241, "xmltree.nim");
 		(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP6487));
+appendString((*result), ((NimStringDesc*) &TMP6488));
 	}
 	break;
 	case ((NU8) 3):
@@ -1372,7 +1372,7 @@ appendString((*result), ((NimStringDesc*) &TMP6487));
 		nimln(243, "xmltree.nim");
 		(*result) = addChar((*result), 38);
 		nimln(244, "xmltree.nim");
-		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
+		if (!(((29 &(1<<(((*n).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6453));
 		(*result) = resizeString((*result), (*n).kU.S1.ftext->Sup.len + 0);
 appendString((*result), (*n).kU.S1.ftext);
 		nimln(245, "xmltree.nim");
@@ -1389,7 +1389,7 @@ N_NIMCALL(NimStringDesc*, HEX24_331297)(Xmlnodeobj329019* n) {
 	nimfr("$", "xmltree.nim")
 	result = 0;
 	nimln(254, "xmltree.nim");
-	result = copyString(((NimStringDesc*) &TMP6454));
+	result = copyString(((NimStringDesc*) &TMP6455));
 	nimln(255, "xmltree.nim");
 	add_331166((&result), n, ((NI) 0), ((NI) 2));
 	popFrame();
@@ -1404,46 +1404,46 @@ N_NIMCALL(Xmlnodeobj329019*, newxmltree_331308)(NimStringDesc* tag, Xmlnodeobj32
 	nimln(260, "xmltree.nim");
 	result = newxmlnode_329042(((NU8) 1));
 	nimln(261, "xmltree.nim");
-	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6450));
+	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
 	LOC1 = 0;
 	LOC1 = (*result).kU.S2.ftag; (*result).kU.S2.ftag = copyStringRC1(tag);
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(262, "xmltree.nim");
-	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 	if ((*result).kU.S2.s) nimGCunrefNoCycle((*result).kU.S2.s);
 	(*result).kU.S2.s = (TY329028*) newSeqRC1((&NTI329028), ((NI)chckRange(childrenLen0, ((NI) 0), ((NI) 2147483647))));
 	{
 		NI i_331351;
 		NI HEX3Atmp_331355;
-		NI TMP6488;
+		NI TMP6489;
 		NI res_331358;
 		i_331351 = 0;
 		HEX3Atmp_331355 = 0;
 		nimln(263, "xmltree.nim");
-		TMP6488 = subInt(childrenLen0, ((NI) 1));
-		HEX3Atmp_331355 = (NI)(TMP6488);
+		TMP6489 = subInt(childrenLen0, ((NI) 1));
+		HEX3Atmp_331355 = (NI)(TMP6489);
 		nimln(1598, "system.nim");
 		res_331358 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP6489;
+				NI TMP6490;
 				if (!(res_331358 <= HEX3Atmp_331355)) goto LA4;
 				nimln(1600, "system.nim");
 				i_331351 = res_331358;
 				nimln(263, "xmltree.nim");
-				if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6451));
+				if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6452));
 				if ((NU)(i_331351) >= (NU)((*result).kU.S2.s->Sup.len)) raiseIndexError();
 				if ((NU)(i_331351) >= (NU)(childrenLen0)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*result).kU.S2.s->data[i_331351]), children[i_331351]);
 				nimln(1619, "system.nim");
-				TMP6489 = addInt(res_331358, ((NI) 1));
-				res_331358 = (NI)(TMP6489);
+				TMP6490 = addInt(res_331358, ((NI) 1));
+				res_331358 = (NI)(TMP6490);
 			} LA4: ;
 		}
 	}
 	nimln(264, "xmltree.nim");
-	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6458));
+	if (!(((2 &(1<<(((*result).k)&7)))!=0))) raiseFieldError(((NimStringDesc*) &TMP6459));
 	asgnRef((void**) (&(*result).kU.S2.fattr), attributes);
 	popFrame();
 	return result;
@@ -1495,7 +1495,7 @@ N_NIMCALL(Xmlnodeobj329019*, child_331468)(Xmlnodeobj329019* n, NimStringDesc* n
 		LOC3 = 0;
 		LOC3 = kind_329657(n);
 		if (!!((LOC3 == ((NU8) 1)))) goto LA4;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6490));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6491));
 	}
 	LA4: ;
 	{
@@ -1504,28 +1504,28 @@ N_NIMCALL(Xmlnodeobj329019*, child_331468)(Xmlnodeobj329019* n, NimStringDesc* n
 		nimln(125, "xmltree.nim");
 		{
 			if (!!(((*n).k == ((NU8) 1)))) goto LA9;
-			failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+			failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 		}
 		LA9: ;
 		{
 			NI i_331617;
 			NI HEX3Atmp_331619;
 			NI LOC12;
-			NI TMP6491;
+			NI TMP6492;
 			NI res_331621;
 			i_331617 = 0;
 			HEX3Atmp_331619 = 0;
 			nimln(126, "xmltree.nim");
 			LOC12 = 0;
 			LOC12 = len_329629(n);
-			TMP6491 = subInt(LOC12, ((NI) 1));
-			HEX3Atmp_331619 = (NI)(TMP6491);
+			TMP6492 = subInt(LOC12, ((NI) 1));
+			HEX3Atmp_331619 = (NI)(TMP6492);
 			nimln(1598, "system.nim");
 			res_331621 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP6492;
+					NI TMP6493;
 					if (!(res_331621 <= HEX3Atmp_331619)) goto LA14;
 					nimln(1600, "system.nim");
 					i_331617 = res_331621;
@@ -1551,8 +1551,8 @@ N_NIMCALL(Xmlnodeobj329019*, child_331468)(Xmlnodeobj329019* n, NimStringDesc* n
 					}
 					LA18: ;
 					nimln(1619, "system.nim");
-					TMP6492 = addInt(res_331621, ((NI) 1));
-					res_331621 = (NI)(TMP6492);
+					TMP6493 = addInt(res_331621, ((NI) 1));
+					res_331621 = (NI)(TMP6493);
 				} LA14: ;
 			}
 		}
@@ -1573,7 +1573,7 @@ N_NIMCALL(NimStringDesc*, attr_331642)(Xmlnodeobj329019* n, NimStringDesc* name)
 		LOC3 = 0;
 		LOC3 = kind_329657(n);
 		if (!!((LOC3 == ((NU8) 1)))) goto LA4;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6490));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6491));
 	}
 	LA4: ;
 	nimln(315, "xmltree.nim");
@@ -1582,7 +1582,7 @@ N_NIMCALL(NimStringDesc*, attr_331642)(Xmlnodeobj329019* n, NimStringDesc* name)
 		LOC8 = 0;
 		LOC8 = attrs_330436(n);
 		if (!(LOC8 == NIM_NIL)) goto LA9;
-		result = copyString(((NimStringDesc*) &TMP6454));
+		result = copyString(((NimStringDesc*) &TMP6455));
 		goto BeforeRet;
 	}
 	LA9: ;
@@ -1601,13 +1601,13 @@ N_NIMCALL(void, findall_331821)(Xmlnodeobj329019* n, NimStringDesc* tag, TY32902
 	nimln(333, "xmltree.nim");
 	{
 		if (!!(((*result) == 0 == NIM_FALSE))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6493));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6494));
 	}
 	LA3: ;
 	nimln(334, "xmltree.nim");
 	{
 		if (!!(((*n).k == ((NU8) 1)))) goto LA7;
-		failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+		failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 	}
 	LA7: ;
 	{
@@ -1616,28 +1616,28 @@ N_NIMCALL(void, findall_331821)(Xmlnodeobj329019* n, NimStringDesc* tag, TY32902
 		nimln(125, "xmltree.nim");
 		{
 			if (!!(((*n).k == ((NU8) 1)))) goto LA12;
-			failedassertimpl_87017(((NimStringDesc*) &TMP6455));
+			failedassertimpl_87017(((NimStringDesc*) &TMP6456));
 		}
 		LA12: ;
 		{
 			NI i_332238;
 			NI HEX3Atmp_332240;
 			NI LOC15;
-			NI TMP6494;
+			NI TMP6495;
 			NI res_332242;
 			i_332238 = 0;
 			HEX3Atmp_332240 = 0;
 			nimln(126, "xmltree.nim");
 			LOC15 = 0;
 			LOC15 = len_329629(n);
-			TMP6494 = subInt(LOC15, ((NI) 1));
-			HEX3Atmp_332240 = (NI)(TMP6494);
+			TMP6495 = subInt(LOC15, ((NI) 1));
+			HEX3Atmp_332240 = (NI)(TMP6495);
 			nimln(1598, "system.nim");
 			res_332242 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP6495;
+					NI TMP6496;
 					if (!(res_332242 <= HEX3Atmp_332240)) goto LA17;
 					nimln(1600, "system.nim");
 					i_332238 = res_332242;
@@ -1674,8 +1674,8 @@ N_NIMCALL(void, findall_331821)(Xmlnodeobj329019* n, NimStringDesc* tag, TY32902
 						LA23: ;
 					} LA18: ;
 					nimln(1619, "system.nim");
-					TMP6495 = addInt(res_332242, ((NI) 1));
-					res_332242 = (NI)(TMP6495);
+					TMP6496 = addInt(res_332242, ((NI) 1));
+					res_332242 = (NI)(TMP6496);
 				} LA17: ;
 			}
 		}
@@ -1700,81 +1700,81 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_xmltreeInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_xmltreeDatInit)(void) {
-static TNimNode* TMP6443[2];
-static TNimNode* TMP6444[5];
-NI TMP6446;
-static char* NIM_CONST TMP6445[5] = {
+static TNimNode* TMP6444[2];
+static TNimNode* TMP6445[5];
+NI TMP6447;
+static char* NIM_CONST TMP6446[5] = {
 "xnText", 
 "xnElement", 
 "xnCData", 
 "xnEntity", 
 "xnComment"};
-static TNimNode* TMP6447[3];
-static TNimNode TMP6441[14];
+static TNimNode* TMP6448[3];
+static TNimNode TMP6442[14];
 NTI329019.size = sizeof(Xmlnodeobj329019);
 NTI329019.kind = 18;
 NTI329019.base = 0;
 NTI329019.flags = 2;
-TMP6443[0] = &TMP6441[1];
+TMP6444[0] = &TMP6442[1];
 NTI329015.size = sizeof(NU8);
 NTI329015.kind = 14;
 NTI329015.base = 0;
 NTI329015.flags = 3;
-for (TMP6446 = 0; TMP6446 < 5; TMP6446++) {
-TMP6441[TMP6446+2].kind = 1;
-TMP6441[TMP6446+2].offset = TMP6446;
-TMP6441[TMP6446+2].name = TMP6445[TMP6446];
-TMP6444[TMP6446] = &TMP6441[TMP6446+2];
+for (TMP6447 = 0; TMP6447 < 5; TMP6447++) {
+TMP6442[TMP6447+2].kind = 1;
+TMP6442[TMP6447+2].offset = TMP6447;
+TMP6442[TMP6447+2].name = TMP6446[TMP6447];
+TMP6445[TMP6447] = &TMP6442[TMP6447+2];
 }
-TMP6441[7].len = 5; TMP6441[7].kind = 2; TMP6441[7].sons = &TMP6444[0];
-NTI329015.node = &TMP6441[7];
-TMP6441[1].kind = 3;
-TMP6441[1].offset = offsetof(Xmlnodeobj329019, k);
-TMP6441[1].typ = (&NTI329015);
-TMP6441[1].name = "k";
-TMP6441[1].sons = &NimDT_329019_k[0];
-TMP6441[1].len = 5;
-TMP6441[8].kind = 1;
-TMP6441[8].offset = offsetof(Xmlnodeobj329019, kU.S1.ftext);
-TMP6441[8].typ = (&NTI149);
-TMP6441[8].name = "fText";
-NimDT_329019_k[0] = &TMP6441[8];
-NimDT_329019_k[4] = &TMP6441[8];
-NimDT_329019_k[2] = &TMP6441[8];
-NimDT_329019_k[3] = &TMP6441[8];
-TMP6447[0] = &TMP6441[10];
-TMP6441[10].kind = 1;
-TMP6441[10].offset = offsetof(Xmlnodeobj329019, kU.S2.ftag);
-TMP6441[10].typ = (&NTI149);
-TMP6441[10].name = "fTag";
-TMP6447[1] = &TMP6441[11];
+TMP6442[7].len = 5; TMP6442[7].kind = 2; TMP6442[7].sons = &TMP6445[0];
+NTI329015.node = &TMP6442[7];
+TMP6442[1].kind = 3;
+TMP6442[1].offset = offsetof(Xmlnodeobj329019, k);
+TMP6442[1].typ = (&NTI329015);
+TMP6442[1].name = "k";
+TMP6442[1].sons = &NimDT_329019_k[0];
+TMP6442[1].len = 5;
+TMP6442[8].kind = 1;
+TMP6442[8].offset = offsetof(Xmlnodeobj329019, kU.S1.ftext);
+TMP6442[8].typ = (&NTI149);
+TMP6442[8].name = "fText";
+NimDT_329019_k[0] = &TMP6442[8];
+NimDT_329019_k[4] = &TMP6442[8];
+NimDT_329019_k[2] = &TMP6442[8];
+NimDT_329019_k[3] = &TMP6442[8];
+TMP6448[0] = &TMP6442[10];
+TMP6442[10].kind = 1;
+TMP6442[10].offset = offsetof(Xmlnodeobj329019, kU.S2.ftag);
+TMP6442[10].typ = (&NTI149);
+TMP6442[10].name = "fTag";
+TMP6448[1] = &TMP6442[11];
 NTI329028.size = sizeof(TY329028*);
 NTI329028.kind = 24;
 NTI329028.base = (&NTI329013);
 NTI329028.flags = 2;
-NTI329028.marker = TMP6448;
-TMP6441[11].kind = 1;
-TMP6441[11].offset = offsetof(Xmlnodeobj329019, kU.S2.s);
-TMP6441[11].typ = (&NTI329028);
-TMP6441[11].name = "s";
-TMP6447[2] = &TMP6441[12];
-TMP6441[12].kind = 1;
-TMP6441[12].offset = offsetof(Xmlnodeobj329019, kU.S2.fattr);
-TMP6441[12].typ = (&NTI133014);
-TMP6441[12].name = "fAttr";
-TMP6441[9].len = 3; TMP6441[9].kind = 2; TMP6441[9].sons = &TMP6447[0];
-NimDT_329019_k[1] = &TMP6441[9];
-TMP6443[1] = &TMP6441[13];
-TMP6441[13].kind = 1;
-TMP6441[13].offset = offsetof(Xmlnodeobj329019, fclientdata);
-TMP6441[13].typ = (&NTI108);
-TMP6441[13].name = "fClientData";
-TMP6441[0].len = 2; TMP6441[0].kind = 2; TMP6441[0].sons = &TMP6443[0];
-NTI329019.node = &TMP6441[0];
+NTI329028.marker = TMP6449;
+TMP6442[11].kind = 1;
+TMP6442[11].offset = offsetof(Xmlnodeobj329019, kU.S2.s);
+TMP6442[11].typ = (&NTI329028);
+TMP6442[11].name = "s";
+TMP6448[2] = &TMP6442[12];
+TMP6442[12].kind = 1;
+TMP6442[12].offset = offsetof(Xmlnodeobj329019, kU.S2.fattr);
+TMP6442[12].typ = (&NTI133014);
+TMP6442[12].name = "fAttr";
+TMP6442[9].len = 3; TMP6442[9].kind = 2; TMP6442[9].sons = &TMP6448[0];
+NimDT_329019_k[1] = &TMP6442[9];
+TMP6444[1] = &TMP6442[13];
+TMP6442[13].kind = 1;
+TMP6442[13].offset = offsetof(Xmlnodeobj329019, fclientdata);
+TMP6442[13].typ = (&NTI108);
+TMP6442[13].name = "fClientData";
+TMP6442[0].len = 2; TMP6442[0].kind = 2; TMP6442[0].sons = &TMP6444[0];
+NTI329019.node = &TMP6442[0];
 NTI329013.size = sizeof(Xmlnodeobj329019*);
 NTI329013.kind = 22;
 NTI329013.base = (&NTI329019);
 NTI329013.flags = 2;
-NTI329013.marker = TMP6449;
+NTI329013.marker = TMP6450;
 }
 

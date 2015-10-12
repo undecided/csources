@@ -543,7 +543,7 @@ static N_INLINE(void, popFrame)(void);
 N_NIMCALL(Transformation406013, getplugin_406094)(Tsym190843* fn);
 N_NIMCALL(void, registerplugin_406124)(NimStringDesc* package, NimStringDesc* module, NimStringDesc* fn, Transformation406013 t);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP8078)(void* p, NI op);
+N_NIMCALL(void, TMP8079)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(Tident166021*, getident_166463)(NimStringDesc* identifier);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
@@ -685,7 +685,7 @@ N_NIMCALL(Transformation406013, getplugin_406094)(Tsym190843* fn) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP8078)(void* p, NI op) {
+N_NIMCALL(void, TMP8079)(void* p, NI op) {
 	PluginHEX3Aobjecttype406019* a;
 	a = (PluginHEX3Aobjecttype406019*)p;
 	nimGCvisit((void*)(*a).fn, op);
@@ -864,45 +864,45 @@ NIM_EXTERNC N_NOINLINE(void, compiler_pluginsInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_pluginsDatInit)(void) {
-static TNimNode* TMP8077[5];
-static TNimNode TMP8075[6];
+static TNimNode* TMP8078[5];
+static TNimNode TMP8076[6];
 NTI406019.size = sizeof(PluginHEX3Aobjecttype406019);
 NTI406019.kind = 18;
 NTI406019.base = 0;
-TMP8077[0] = &TMP8075[1];
-TMP8075[1].kind = 1;
-TMP8075[1].offset = offsetof(PluginHEX3Aobjecttype406019, fn);
-TMP8075[1].typ = (&NTI166019);
-TMP8075[1].name = "fn";
-TMP8077[1] = &TMP8075[2];
-TMP8075[2].kind = 1;
-TMP8075[2].offset = offsetof(PluginHEX3Aobjecttype406019, module);
-TMP8075[2].typ = (&NTI166019);
-TMP8075[2].name = "module";
-TMP8077[2] = &TMP8075[3];
-TMP8075[3].kind = 1;
-TMP8075[3].offset = offsetof(PluginHEX3Aobjecttype406019, package);
-TMP8075[3].typ = (&NTI166019);
-TMP8075[3].name = "package";
-TMP8077[3] = &TMP8075[4];
+TMP8078[0] = &TMP8076[1];
+TMP8076[1].kind = 1;
+TMP8076[1].offset = offsetof(PluginHEX3Aobjecttype406019, fn);
+TMP8076[1].typ = (&NTI166019);
+TMP8076[1].name = "fn";
+TMP8078[1] = &TMP8076[2];
+TMP8076[2].kind = 1;
+TMP8076[2].offset = offsetof(PluginHEX3Aobjecttype406019, module);
+TMP8076[2].typ = (&NTI166019);
+TMP8076[2].name = "module";
+TMP8078[2] = &TMP8076[3];
+TMP8076[3].kind = 1;
+TMP8076[3].offset = offsetof(PluginHEX3Aobjecttype406019, package);
+TMP8076[3].typ = (&NTI166019);
+TMP8076[3].name = "package";
+TMP8078[3] = &TMP8076[4];
 NTI406013.size = sizeof(Transformation406013);
 NTI406013.kind = 25;
 NTI406013.base = 0;
 NTI406013.flags = 3;
-TMP8075[4].kind = 1;
-TMP8075[4].offset = offsetof(PluginHEX3Aobjecttype406019, t);
-TMP8075[4].typ = (&NTI406013);
-TMP8075[4].name = "t";
-TMP8077[4] = &TMP8075[5];
-TMP8075[5].kind = 1;
-TMP8075[5].offset = offsetof(PluginHEX3Aobjecttype406019, next);
-TMP8075[5].typ = (&NTI406015);
-TMP8075[5].name = "next";
-TMP8075[0].len = 5; TMP8075[0].kind = 2; TMP8075[0].sons = &TMP8077[0];
-NTI406019.node = &TMP8075[0];
+TMP8076[4].kind = 1;
+TMP8076[4].offset = offsetof(PluginHEX3Aobjecttype406019, t);
+TMP8076[4].typ = (&NTI406013);
+TMP8076[4].name = "t";
+TMP8078[4] = &TMP8076[5];
+TMP8076[5].kind = 1;
+TMP8076[5].offset = offsetof(PluginHEX3Aobjecttype406019, next);
+TMP8076[5].typ = (&NTI406015);
+TMP8076[5].name = "next";
+TMP8076[0].len = 5; TMP8076[0].kind = 2; TMP8076[0].sons = &TMP8078[0];
+NTI406019.node = &TMP8076[0];
 NTI406015.size = sizeof(PluginHEX3Aobjecttype406019*);
 NTI406015.kind = 22;
 NTI406015.base = (&NTI406019);
-NTI406015.marker = TMP8078;
+NTI406015.marker = TMP8079;
 }
 
