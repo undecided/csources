@@ -437,7 +437,7 @@ STRING_LITERAL(TMP1858, "Advanced commands:\012  compileToC, cc          compile
 "t Nim\'s verbosity level (1 is default)\012  --experimental         "
 "   enable experimental language features\012  -v, --version        "
 "     show detailed version information\012", 4774);
-STRING_LITERAL(TMP1859, "git hash: 8dedfdb236cc50a811ec3423de492368d4ed6329", 50);
+STRING_LITERAL(TMP1859, "git hash: 25abdc2d153e3c0b03200781a48a4f12207eb43b", 50);
 STRING_LITERAL(TMP1860, "active boot switches:", 21);
 STRING_LITERAL(TMP1861, "-", 1);
 STRING_LITERAL(TMP1862, "--", 2);
