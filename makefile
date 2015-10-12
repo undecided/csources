@@ -4,7 +4,7 @@
 
 CC = gcc
 LINKER = gcc
-COMP_FLAGS = -w -O3 -fno-strict-aliasing
+COMP_FLAGS = -w
 LINK_FLAGS = 
 binDir = bin
 
