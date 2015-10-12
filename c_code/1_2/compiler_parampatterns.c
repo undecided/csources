@@ -409,7 +409,7 @@ STRING_LITERAL(TMP4686, "lvalue", 6);
 STRING_LITERAL(TMP4687, "local", 5);
 STRING_LITERAL(TMP4688, "sideeffect", 10);
 STRING_LITERAL(TMP4689, "nosideeffect", 12);
-STRING_LITERAL(TMP4691, "parampatterns.nim", 17);
+STRING_LITERAL(TMP4691, "compiler/parampatterns.nim", 26);
 NIM_CONST TY149210 TMP4690 = {((NimStringDesc*) &TMP4691),
 ((NI) 100)}
 ;

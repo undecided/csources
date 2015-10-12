@@ -13,7 +13,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NimStringDesc*, findnodejs_527009)(void);
+N_NIMCALL(NimStringDesc*, findnodejs_526009)(void);
 N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
@@ -49,7 +49,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NimStringDesc*, findnodejs_527009)(void) {
+N_NIMCALL(NimStringDesc*, findnodejs_526009)(void) {
 	NimStringDesc* result;
 	nimfr("findNodeJs", "nodejs.nim")
 	result = 0;

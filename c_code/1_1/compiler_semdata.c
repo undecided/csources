@@ -659,7 +659,7 @@ static N_INLINE(NIM_BOOL, istoplevel_248269)(Tcontext247023* c);
 static N_INLINE(NIM_BOOL, experimentalmode_248279)(Tcontext247023* c);
 STRING_LITERAL(TMP4176, "popOwner", 8);
 STRING_LITERAL(TMP4181, "owner is nil", 12);
-STRING_LITERAL(TMP4197, "semdata.nim", 11);
+STRING_LITERAL(TMP4197, "compiler/semdata.nim", 20);
 NIM_CONST TY149210 TMP4196 = {((NimStringDesc*) &TMP4197),
 ((NI) 213)}
 ;

@@ -9,7 +9,7 @@
 #include <stdio.h>
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Ropeobj162009 Ropeobj162009;
+typedef struct Ropeobj161009 Ropeobj161009;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -26,7 +26,7 @@ typedef struct Tintset27817 Tintset27817;
 typedef struct Ttrunk27813 Ttrunk27813;
 typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
-typedef struct TY162599 TY162599;
+typedef struct TY161599 TY161599;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
 struct  TGenericSeq  {
@@ -40,7 +40,7 @@ NIM_CHAR data[SEQ_DECL_SIZE];
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning, void* ClEnv);
 void* ClEnv;
-} TY162023;
+} TY161023;
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -56,10 +56,10 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Ropeobj162009  {
+struct  Ropeobj161009  {
   TNimObject Sup;
-Ropeobj162009* left;
-Ropeobj162009* right;
+Ropeobj161009* left;
+Ropeobj161009* right;
 NI length;
 NimStringDesc* data;
 };
@@ -127,14 +127,14 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-typedef Ropeobj162009* TY162101[4096];
-typedef Ropeobj162009* TY162572[1];
+typedef Ropeobj161009* TY161101[4096];
+typedef Ropeobj161009* TY161572[1];
 typedef N_CLOSURE_PTR(void, TMP835) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
 typedef N_CLOSURE_PTR(void, TMP847) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
 typedef N_CLOSURE_PTR(void, TMP855) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
 typedef N_CLOSURE_PTR(void, TMP857) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
 typedef N_CLOSURE_PTR(void, TMP861) (NU8 err, NimStringDesc* msg, NIM_BOOL usewarning);
-typedef NIM_CHAR TY163814[1024];
+typedef NIM_CHAR TY162814[1024];
 typedef NI TY27820[16];
 struct  Tpagedesc46754  {
 Tpagedesc46754* next;
@@ -183,15 +183,15 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct TY162599 {
+struct TY161599 {
   TGenericSeq Sup;
-  Ropeobj162009* data[SEQ_DECL_SIZE];
+  Ropeobj161009* data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NI, len_162034)(Ropeobj162009* a);
+N_NIMCALL(NI, len_161034)(Ropeobj161009* a);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(Ropeobj162009*, newrope_162056)(NimStringDesc* data);
+N_NIMCALL(Ropeobj161009*, newrope_161056)(NimStringDesc* data);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
 N_NIMCALL(void, TMP823)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
@@ -200,83 +200,83 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p);
 static N_INLINE(Tcell46746*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(Ropeobj162009*, newmutablerope_162074)(NI capacity);
+N_NIMCALL(Ropeobj161009*, newmutablerope_161074)(NI capacity);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI cap);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src);
-static N_INLINE(void, freezemutablerope_162092)(Ropeobj162009* r);
-N_NIMCALL(void, resetropecache_162111)(void);
+static N_INLINE(void, freezemutablerope_161092)(Ropeobj161009* r);
+N_NIMCALL(void, resetropecache_161111)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-N_NIMCALL(NIM_BOOL, ropeinvariant_162246)(Ropeobj162009* r);
-N_NIMCALL(Ropeobj162009*, insertincache_162280)(NimStringDesc* s);
+N_NIMCALL(NIM_BOOL, ropeinvariant_161246)(Ropeobj161009* r);
+N_NIMCALL(Ropeobj161009*, insertincache_161280)(NimStringDesc* s);
 N_NIMCALL(NI, hash_131839)(NimStringDesc* x);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
-N_NIMCALL(Ropeobj162009*, rope_162320)(NimStringDesc* s);
+N_NIMCALL(Ropeobj161009*, rope_161320)(NimStringDesc* s);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
-N_NIMCALL(Ropeobj162009*, rope_162407)(NI64 i);
+N_NIMCALL(Ropeobj161009*, rope_161407)(NI64 i);
 N_NIMCALL(NimStringDesc*, nimInt64ToStr)(NI64 x);
-N_NIMCALL(Ropeobj162009*, rope_162426)(NF f);
+N_NIMCALL(Ropeobj161009*, rope_161426)(NF f);
 N_NIMCALL(NimStringDesc*, nimFloatToStr)(NF f);
-N_NIMCALL(Ropeobj162009*, HEX26_162436)(Ropeobj162009* a, Ropeobj162009* b);
-N_NIMCALL(Ropeobj162009*, HEX26_162471)(Ropeobj162009* a, NimStringDesc* b);
-N_NIMCALL(Ropeobj162009*, HEX26_162482)(NimStringDesc* a, Ropeobj162009* b);
-N_NIMCALL(Ropeobj162009*, HEX26_162493)(Ropeobj162009** a, NI aLen0);
+N_NIMCALL(Ropeobj161009*, HEX26_161436)(Ropeobj161009* a, Ropeobj161009* b);
+N_NIMCALL(Ropeobj161009*, HEX26_161471)(Ropeobj161009* a, NimStringDesc* b);
+N_NIMCALL(Ropeobj161009*, HEX26_161482)(NimStringDesc* a, Ropeobj161009* b);
+N_NIMCALL(Ropeobj161009*, HEX26_161493)(Ropeobj161009** a, NI aLen0);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(void, add_162534)(Ropeobj162009** a, Ropeobj162009* b);
+N_NIMCALL(void, add_161534)(Ropeobj161009** a, Ropeobj161009* b);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
-N_NIMCALL(void, add_162545)(Ropeobj162009** a, NimStringDesc* b);
-static N_INLINE(Ropeobj162009*, pop_162595)(TY162599** s);
+N_NIMCALL(void, add_161545)(Ropeobj161009** a, NimStringDesc* b);
+static N_INLINE(Ropeobj161009*, pop_161595)(TY161599** s);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NIMCALL(TGenericSeq*, setLengthSeq)(TGenericSeq* seq, NI elemsize, NI newlen);
-N_NIMCALL(void, writerope_163070)(FILE* f, Ropeobj162009* r);
+N_NIMCALL(void, writerope_162070)(FILE* f, Ropeobj161009* r);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_NIMCALL(TGenericSeq*, incrSeq)(TGenericSeq* seq, NI elemsize);
 N_NIMCALL(void, write_13457)(FILE* f, NimStringDesc* s);
-N_NIMCALL(void, writerope_163105)(Ropeobj162009* head, NimStringDesc* filename, NIM_BOOL usewarning);
+N_NIMCALL(void, writerope_162105)(Ropeobj161009* head, NimStringDesc* filename, NIM_BOOL usewarning);
 N_NIMCALL(NIM_BOOL, open_13203)(FILE** f, NimStringDesc* filename, NU8 mode, NI bufsize);
-N_NIMCALL(NimStringDesc*, HEX24_163131)(Ropeobj162009* r);
+N_NIMCALL(NimStringDesc*, HEX24_162131)(Ropeobj161009* r);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, mnewString)(NI len);
 N_NIMCALL(NimStringDesc*, setLengthStr)(NimStringDesc* s, NI newlen);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_NIMCALL(Ropeobj162009*, ropeconcat_163164)(Ropeobj162009** a, NI aLen0);
-N_NIMCALL(void, prepend_163205)(Ropeobj162009** a, Ropeobj162009* b);
-N_NIMCALL(void, prepend_163216)(Ropeobj162009** a, NimStringDesc* b);
-N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** args, NI argsLen0);
+N_NIMCALL(Ropeobj161009*, ropeconcat_162164)(Ropeobj161009** a, NI aLen0);
+N_NIMCALL(void, prepend_162205)(Ropeobj161009** a, Ropeobj161009* b);
+N_NIMCALL(void, prepend_162216)(Ropeobj161009** a, NimStringDesc* b);
+N_NIMCALL(Ropeobj161009*, HEX25_162235)(NimStringDesc* frmt, Ropeobj161009** args, NI argsLen0);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
 N_NIMCALL(NimStringDesc*, nimCharToStr)(NIM_CHAR x);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
-N_NIMCALL(void, addf_163635)(Ropeobj162009** c, NimStringDesc* frmt, Ropeobj162009** args, NI argsLen0);
-N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f);
+N_NIMCALL(void, addf_162635)(Ropeobj161009** c, NimStringDesc* frmt, Ropeobj161009** args, NI argsLen0);
+N_NIMCALL(NIM_BOOL, equalsfile_162809)(Ropeobj161009* r, FILE* f);
 N_NIMCALL(NI, readbuffer_13515)(FILE* f, void* buffer, NI len);
-N_NIMCALL(NIM_BOOL, equalsfile_163916)(Ropeobj162009* r, NimStringDesc* filename);
-N_NIMCALL(NIM_BOOL, writeropeifnotequal_163930)(Ropeobj162009* r, NimStringDesc* filename);
+N_NIMCALL(NIM_BOOL, equalsfile_162916)(Ropeobj161009* r, NimStringDesc* filename);
+N_NIMCALL(NIM_BOOL, writeropeifnotequal_162930)(Ropeobj161009* r, NimStringDesc* filename);
 STRING_LITERAL(TMP827, "ropeInvariant(result) ", 22);
 STRING_LITERAL(TMP833, "not (it == nil) ", 16);
 STRING_LITERAL(TMP834, "not (it.data == nil) ", 21);
 STRING_LITERAL(TMP838, "$", 1);
-TY162023 errorhandler_162028;
+TY161023 errorhandler_161028;
 extern TFrame* frameptr_17042;
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI162009; /* RopeObj */
+TNimType NTI161009; /* RopeObj */
 extern TNimType NTI108; /* int */
 extern TNimType NTI149; /* string */
-TNimType NTI162007; /* Rope */
+TNimType NTI161007; /* Rope */
 extern Tgcheap48616 gch_48644;
-TY162101 cache_162106;
-NI gcachetries_162268;
-NI gcachemisses_162272;
-NI gcacheinttries_162276;
-extern TNimType NTI162599; /* seq[Rope] */
-Ropeobj162009* rnl_163227;
-extern NimStringDesc* tnl_160626;
-Ropeobj162009* softrnl_163228;
+TY161101 cache_161106;
+NI gcachetries_161268;
+NI gcachemisses_161272;
+NI gcacheinttries_161276;
+extern TNimType NTI161599; /* seq[Rope] */
+Ropeobj161009* rnl_162227;
+extern NimStringDesc* tnl_159626;
+Ropeobj161009* softrnl_162228;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -305,7 +305,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI, len_162034)(Ropeobj162009* a) {
+N_NIMCALL(NI, len_161034)(Ropeobj161009* a) {
 	NI result;
 	nimfr("len", "ropes.nim")
 	result = 0;
@@ -325,8 +325,8 @@ N_NIMCALL(NI, len_162034)(Ropeobj162009* a) {
 	return result;
 }
 N_NIMCALL(void, TMP823)(void* p, NI op) {
-	Ropeobj162009* a;
-	a = (Ropeobj162009*)p;
+	Ropeobj161009* a;
+	a = (Ropeobj161009*)p;
 	nimGCvisit((void*)(*a).left, op);
 	nimGCvisit((void*)(*a).right, op);
 	nimGCvisit((void*)(*a).data, op);
@@ -367,13 +367,13 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(Ropeobj162009*, newrope_162056)(NimStringDesc* data) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, newrope_161056)(NimStringDesc* data) {
+	Ropeobj161009* result;
 	nimfr("newRope", "ropes.nim")
 	result = 0;
 	nimln(90, "ropes.nim");
-	result = (Ropeobj162009*) newObj((&NTI162007), sizeof(Ropeobj162009));
-	(*result).Sup.m_type = (&NTI162009);
+	result = (Ropeobj161009*) newObj((&NTI161007), sizeof(Ropeobj161009));
+	(*result).Sup.m_type = (&NTI161009);
 	nimln(91, "ropes.nim");
 	{
 		NimStringDesc* LOC5;
@@ -449,20 +449,20 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(Ropeobj162009*, newmutablerope_162074)(NI capacity) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, newmutablerope_161074)(NI capacity) {
+	Ropeobj161009* result;
 	nimfr("newMutableRope", "ropes.nim")
 	result = 0;
 	nimln(98, "ropes.nim");
-	result = (Ropeobj162009*) newObj((&NTI162007), sizeof(Ropeobj162009));
-	(*result).Sup.m_type = (&NTI162009);
+	result = (Ropeobj161009*) newObj((&NTI161007), sizeof(Ropeobj161009));
+	(*result).Sup.m_type = (&NTI161009);
 	nimln(99, "ropes.nim");
 	asgnRefNoCycle((void**) (&(*result).data), rawNewString(((NI)chckRange(capacity, ((NI) 0), ((NI) 2147483647)))));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(void, freezemutablerope_162092)(Ropeobj162009* r) {
+static N_INLINE(void, freezemutablerope_161092)(Ropeobj161009* r) {
 	nimfr("freezeMutableRope", "ropes.nim")
 	nimln(102, "ropes.nim");
 	(*r).length = ((*r).data ? (*r).data->Sup.len : 0);
@@ -489,33 +489,33 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, resetropecache_162111)(void) {
+N_NIMCALL(void, resetropecache_161111)(void) {
 	nimfr("resetRopeCache", "ropes.nim")
 	{
-		NI i_162223;
-		NI res_162228;
-		i_162223 = 0;
+		NI i_161223;
+		NI res_161228;
+		i_161223 = 0;
 		nimln(1598, "system.nim");
-		res_162228 = ((NI) 0);
+		res_161228 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP824;
-				if (!(res_162228 <= ((NI) 4095))) goto LA3;
+				if (!(res_161228 <= ((NI) 4095))) goto LA3;
 				nimln(1600, "system.nim");
-				i_162223 = ((NI)chckRange(res_162228, ((NI) 0), ((NI) 4095)));
+				i_161223 = ((NI)chckRange(res_161228, ((NI) 0), ((NI) 4095)));
 				nimln(109, "ropes.nim");
-				asgnRefNoCycle((void**) (&cache_162106[(i_162223)- 0]), NIM_NIL);
+				asgnRefNoCycle((void**) (&cache_161106[(i_161223)- 0]), NIM_NIL);
 				nimln(1619, "system.nim");
-				TMP824 = addInt(res_162228, ((NI) 1));
-				res_162228 = (NI)(TMP824);
+				TMP824 = addInt(res_161228, ((NI) 1));
+				res_161228 = (NI)(TMP824);
 			} LA3: ;
 		}
 	}
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, ropeinvariant_162246)(Ropeobj162009* r) {
+N_NIMCALL(NIM_BOOL, ropeinvariant_161246)(Ropeobj161009* r) {
 	NIM_BOOL result;
 	nimfr("ropeInvariant", "ropes.nim")
 	result = 0;
@@ -572,22 +572,22 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, insertincache_162280)(NimStringDesc* s) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, insertincache_161280)(NimStringDesc* s) {
+	Ropeobj161009* result;
 	NI TMP825;
 	NI h;
 	NI LOC1;
 	nimfr("insertInCache", "ropes.nim")
 	result = 0;
 	nimln(129, "ropes.nim");
-	TMP825 = addInt(gcachetries_162268, ((NI) 1));
-	gcachetries_162268 = (NI)(TMP825);
+	TMP825 = addInt(gcachetries_161268, ((NI) 1));
+	gcachetries_161268 = (NI)(TMP825);
 	nimln(130, "ropes.nim");
 	LOC1 = 0;
 	LOC1 = hash_131839(s);
 	h = (NI)(LOC1 & ((NI) 4095));
 	nimln(131, "ropes.nim");
-	result = cache_162106[(h)- 0];
+	result = cache_161106[(h)- 0];
 	nimln(132, "ropes.nim");
 	{
 		NIM_BOOL LOC4;
@@ -599,20 +599,20 @@ N_NIMCALL(Ropeobj162009*, insertincache_162280)(NimStringDesc* s) {
 		LA5: ;
 		if (!LOC4) goto LA6;
 		nimln(133, "ropes.nim");
-		TMP826 = addInt(gcachemisses_162272, ((NI) 1));
-		gcachemisses_162272 = (NI)(TMP826);
+		TMP826 = addInt(gcachemisses_161272, ((NI) 1));
+		gcachemisses_161272 = (NI)(TMP826);
 		nimln(134, "ropes.nim");
-		result = newrope_162056(s);
+		result = newrope_161056(s);
 		nimln(135, "ropes.nim");
-		asgnRefNoCycle((void**) (&cache_162106[(h)- 0]), result);
+		asgnRefNoCycle((void**) (&cache_161106[(h)- 0]), result);
 	}
 	LA6: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, rope_162320)(NimStringDesc* s) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, rope_161320)(NimStringDesc* s) {
+	Ropeobj161009* result;
 	nimfr("rope", "ropes.nim")
 	result = 0;
 	nimln(139, "ropes.nim");
@@ -625,14 +625,14 @@ N_NIMCALL(Ropeobj162009*, rope_162320)(NimStringDesc* s) {
 	LA3: ;
 	{
 		nimln(142, "ropes.nim");
-		result = insertincache_162280(s);
+		result = insertincache_161280(s);
 	}
 	LA1: ;
 	nimln(143, "ropes.nim");
 	{
 		NIM_BOOL LOC8;
 		LOC8 = 0;
-		LOC8 = ropeinvariant_162246(result);
+		LOC8 = ropeinvariant_161246(result);
 		if (!!(LOC8)) goto LA9;
 		failedassertimpl_87017(((NimStringDesc*) &TMP827));
 	}
@@ -641,38 +641,38 @@ N_NIMCALL(Ropeobj162009*, rope_162320)(NimStringDesc* s) {
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, rope_162407)(NI64 i) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, rope_161407)(NI64 i) {
+	Ropeobj161009* result;
 	NI TMP828;
 	NimStringDesc* LOC1;
 	nimfr("rope", "ropes.nim")
 	result = 0;
 	nimln(147, "ropes.nim");
-	TMP828 = addInt(gcacheinttries_162276, ((NI) 1));
-	gcacheinttries_162276 = (NI)(TMP828);
+	TMP828 = addInt(gcacheinttries_161276, ((NI) 1));
+	gcacheinttries_161276 = (NI)(TMP828);
 	nimln(148, "ropes.nim");
 	LOC1 = 0;
 	LOC1 = nimInt64ToStr(i);
-	result = rope_162320(LOC1);
+	result = rope_161320(LOC1);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, rope_162426)(NF f) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, rope_161426)(NF f) {
+	Ropeobj161009* result;
 	NimStringDesc* LOC1;
 	nimfr("rope", "ropes.nim")
 	result = 0;
 	nimln(152, "ropes.nim");
 	LOC1 = 0;
 	LOC1 = nimFloatToStr(f);
-	result = rope_162320(LOC1);
+	result = rope_161320(LOC1);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, HEX26_162436)(Ropeobj162009* a, Ropeobj162009* b) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, HEX26_161436)(Ropeobj161009* a, Ropeobj161009* b) {
+	Ropeobj161009* result;
 	nimfr("&", "ropes.nim")
 	result = 0;
 	nimln(155, "ropes.nim");
@@ -694,7 +694,7 @@ N_NIMCALL(Ropeobj162009*, HEX26_162436)(Ropeobj162009* a, Ropeobj162009* b) {
 	{
 		NI TMP829;
 		nimln(160, "ropes.nim");
-		result = newrope_162056(NIM_NIL);
+		result = newrope_161056(NIM_NIL);
 		nimln(161, "ropes.nim");
 		TMP829 = addInt((*a).length, (*b).length);
 		(*result).length = (NI)(TMP829);
@@ -708,59 +708,59 @@ N_NIMCALL(Ropeobj162009*, HEX26_162436)(Ropeobj162009* a, Ropeobj162009* b) {
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, HEX26_162471)(Ropeobj162009* a, NimStringDesc* b) {
-	Ropeobj162009* result;
-	Ropeobj162009* LOC1;
+N_NIMCALL(Ropeobj161009*, HEX26_161471)(Ropeobj161009* a, NimStringDesc* b) {
+	Ropeobj161009* result;
+	Ropeobj161009* LOC1;
 	nimfr("&", "ropes.nim")
 	result = 0;
 	nimln(167, "ropes.nim");
 	LOC1 = 0;
-	LOC1 = rope_162320(b);
-	result = HEX26_162436(a, LOC1);
+	LOC1 = rope_161320(b);
+	result = HEX26_161436(a, LOC1);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, HEX26_162482)(NimStringDesc* a, Ropeobj162009* b) {
-	Ropeobj162009* result;
-	Ropeobj162009* LOC1;
+N_NIMCALL(Ropeobj161009*, HEX26_161482)(NimStringDesc* a, Ropeobj161009* b) {
+	Ropeobj161009* result;
+	Ropeobj161009* LOC1;
 	nimfr("&", "ropes.nim")
 	result = 0;
 	nimln(171, "ropes.nim");
 	LOC1 = 0;
-	LOC1 = rope_162320(a);
-	result = HEX26_162436(LOC1, b);
+	LOC1 = rope_161320(a);
+	result = HEX26_161436(LOC1, b);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, HEX26_162493)(Ropeobj162009** a, NI aLen0) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, HEX26_161493)(Ropeobj161009** a, NI aLen0) {
+	Ropeobj161009* result;
 	nimfr("&", "ropes.nim")
 	result = 0;
 	{
-		NI i_162510;
-		NI HEX3Atmp_162512;
-		NI res_162515;
-		i_162510 = 0;
-		HEX3Atmp_162512 = 0;
+		NI i_161510;
+		NI HEX3Atmp_161512;
+		NI res_161515;
+		i_161510 = 0;
+		HEX3Atmp_161512 = 0;
 		nimln(175, "ropes.nim");
-		HEX3Atmp_162512 = (aLen0-1);
+		HEX3Atmp_161512 = (aLen0-1);
 		nimln(1598, "system.nim");
-		res_162515 = ((NI) 0);
+		res_161515 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP830;
-				if (!(res_162515 <= HEX3Atmp_162512)) goto LA3;
+				if (!(res_161515 <= HEX3Atmp_161512)) goto LA3;
 				nimln(1600, "system.nim");
-				i_162510 = res_162515;
+				i_161510 = res_161515;
 				nimln(175, "ropes.nim");
-				if ((NU)(i_162510) >= (NU)(aLen0)) raiseIndexError();
-				result = HEX26_162436(result, a[i_162510]);
+				if ((NU)(i_161510) >= (NU)(aLen0)) raiseIndexError();
+				result = HEX26_161436(result, a[i_161510]);
 				nimln(1614, "system.nim");
-				TMP830 = addInt(res_162515, ((NI) 1));
-				res_162515 = (NI)(TMP830);
+				TMP830 = addInt(res_161515, ((NI) 1));
+				res_161515 = (NI)(TMP830);
 			} LA3: ;
 		}
 	}
@@ -768,17 +768,17 @@ N_NIMCALL(Ropeobj162009*, HEX26_162493)(Ropeobj162009** a, NI aLen0) {
 	return result;
 }
 
-N_NIMCALL(void, add_162534)(Ropeobj162009** a, Ropeobj162009* b) {
+N_NIMCALL(void, add_161534)(Ropeobj161009** a, Ropeobj161009* b) {
 	nimfr("add", "ropes.nim")
 	nimln(179, "ropes.nim");
-	unsureAsgnRef((void**) (&(*a)), HEX26_162436((*a), b));
+	unsureAsgnRef((void**) (&(*a)), HEX26_161436((*a), b));
 	popFrame();
 }
 
-N_NIMCALL(void, add_162545)(Ropeobj162009** a, NimStringDesc* b) {
+N_NIMCALL(void, add_161545)(Ropeobj161009** a, NimStringDesc* b) {
 	nimfr("add", "ropes.nim")
 	nimln(183, "ropes.nim");
-	unsureAsgnRef((void**) (&(*a)), HEX26_162471((*a), b));
+	unsureAsgnRef((void**) (&(*a)), HEX26_161471((*a), b));
 	popFrame();
 }
 
@@ -802,8 +802,8 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(Ropeobj162009*, pop_162595)(TY162599** s) {
-	Ropeobj162009* result;
+static N_INLINE(Ropeobj161009*, pop_161595)(TY161599** s) {
+	Ropeobj161009* result;
 	NI L;
 	NI TMP831;
 	nimfr("pop", "system.nim")
@@ -815,45 +815,45 @@ static N_INLINE(Ropeobj162009*, pop_162595)(TY162599** s) {
 	if ((NU)(L) >= (NU)((*s)->Sup.len)) raiseIndexError();
 	result = (*s)->data[L];
 	nimln(1928, "system.nim");
-	(*s) = (TY162599*) setLengthSeq(&((*s))->Sup, sizeof(Ropeobj162009*), ((NI)chckRange(L, ((NI) 0), ((NI) 2147483647))));
+	(*s) = (TY161599*) setLengthSeq(&((*s))->Sup, sizeof(Ropeobj161009*), ((NI)chckRange(L, ((NI) 0), ((NI) 2147483647))));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, writerope_163070)(FILE* f, Ropeobj162009* r) {
+N_NIMCALL(void, writerope_162070)(FILE* f, Ropeobj161009* r) {
 	nimfr("writeRope", "ropes.nim")
 	{
-		NimStringDesc* s_163074;
-		s_163074 = 0;
+		NimStringDesc* s_162074;
+		s_162074 = 0;
 		nimln(187, "ropes.nim");
 		{
-			TY162599* stack_163081;
-			TY162572 LOC6;
+			TY161599* stack_162081;
+			TY161572 LOC6;
 			if (!!((r == NIM_NIL))) goto LA4;
 			nimln(188, "ropes.nim");
-			stack_163081 = (TY162599*) newSeq((&NTI162599), 1);
+			stack_162081 = (TY161599*) newSeq((&NTI161599), 1);
 			memset((void*)LOC6, 0, sizeof(LOC6));
 			LOC6[0] = r;
-			asgnRefNoCycle((void**) (&stack_163081->data[0]), LOC6[0]);
+			asgnRefNoCycle((void**) (&stack_162081->data[0]), LOC6[0]);
 			{
 				nimln(189, "ropes.nim");
 				while (1) {
-					Ropeobj162009* it_163083;
-					if (!(((NI) 0) < (stack_163081 ? stack_163081->Sup.len : 0))) goto LA8;
+					Ropeobj161009* it_162083;
+					if (!(((NI) 0) < (stack_162081 ? stack_162081->Sup.len : 0))) goto LA8;
 					nimln(190, "ropes.nim");
-					it_163083 = pop_162595((&stack_163081));
+					it_162083 = pop_161595((&stack_162081));
 					{
 						nimln(191, "ropes.nim");
 						while (1) {
-							if (!(*it_163083).data == 0) goto LA10;
+							if (!(*it_162083).data == 0) goto LA10;
 							nimln(192, "ropes.nim");
-							stack_163081 = (TY162599*) incrSeq(&(stack_163081)->Sup, sizeof(Ropeobj162009*));
-							asgnRefNoCycle((void**) (&stack_163081->data[stack_163081->Sup.len-1]), (*it_163083).right);
+							stack_162081 = (TY161599*) incrSeq(&(stack_162081)->Sup, sizeof(Ropeobj161009*));
+							asgnRefNoCycle((void**) (&stack_162081->data[stack_162081->Sup.len-1]), (*it_162083).right);
 							nimln(193, "ropes.nim");
-							it_163083 = (*it_163083).left;
+							it_162083 = (*it_162083).left;
 							nimln(194, "ropes.nim");
 							{
-								if (!!(!((it_163083 == NIM_NIL)))) goto LA13;
+								if (!!(!((it_162083 == NIM_NIL)))) goto LA13;
 								failedassertimpl_87017(((NimStringDesc*) &TMP833));
 							}
 							LA13: ;
@@ -861,14 +861,14 @@ N_NIMCALL(void, writerope_163070)(FILE* f, Ropeobj162009* r) {
 					}
 					nimln(195, "ropes.nim");
 					{
-						if (!!(!(((*it_163083).data == NIM_NIL)))) goto LA17;
+						if (!!(!(((*it_162083).data == NIM_NIL)))) goto LA17;
 						failedassertimpl_87017(((NimStringDesc*) &TMP834));
 					}
 					LA17: ;
 					nimln(196, "ropes.nim");
-					s_163074 = (*it_163083).data;
+					s_162074 = (*it_162083).data;
 					nimln(205, "ropes.nim");
-					write_13457(f, s_163074);
+					write_13457(f, s_162074);
 				} LA8: ;
 			}
 		}
@@ -877,7 +877,7 @@ N_NIMCALL(void, writerope_163070)(FILE* f, Ropeobj162009* r) {
 	popFrame();
 }
 
-N_NIMCALL(void, writerope_163105)(Ropeobj162009* head, NimStringDesc* filename, NIM_BOOL usewarning) {
+N_NIMCALL(void, writerope_162105)(Ropeobj161009* head, NimStringDesc* filename, NIM_BOOL usewarning) {
 	FILE* f;
 	nimfr("writeRope", "ropes.nim")
 	f = 0;
@@ -890,7 +890,7 @@ N_NIMCALL(void, writerope_163105)(Ropeobj162009* head, NimStringDesc* filename, 
 		nimln(210, "ropes.nim");
 		{
 			if (!!((head == NIM_NIL))) goto LA8;
-			writerope_163070(f, head);
+			writerope_162070(f, head);
 		}
 		LA8: ;
 		nimln(211, "ropes.nim");
@@ -900,7 +900,7 @@ N_NIMCALL(void, writerope_163105)(Ropeobj162009* head, NimStringDesc* filename, 
 	LA4: ;
 	{
 		nimln(213, "ropes.nim");
-		errorhandler_162028.ClEnv? errorhandler_162028.ClPrc(((NU8) 0), filename, usewarning, errorhandler_162028.ClEnv):((TMP835)(errorhandler_162028.ClPrc))(((NU8) 0), filename, usewarning);
+		errorhandler_161028.ClEnv? errorhandler_161028.ClPrc(((NU8) 0), filename, usewarning, errorhandler_161028.ClEnv):((TMP835)(errorhandler_161028.ClPrc))(((NU8) 0), filename, usewarning);
 	}
 	LA1: ;
 	popFrame();
@@ -911,49 +911,49 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(NimStringDesc*, HEX24_163131)(Ropeobj162009* r) {
+N_NIMCALL(NimStringDesc*, HEX24_162131)(Ropeobj161009* r) {
 	NimStringDesc* result;
 	NI LOC1;
 	nimfr("$", "ropes.nim")
 	result = 0;
 	nimln(217, "ropes.nim");
 	LOC1 = 0;
-	LOC1 = len_162034(r);
+	LOC1 = len_161034(r);
 	result = mnewString(((NI)chckRange(LOC1, ((NI) 0), ((NI) 2147483647))));
 	nimln(218, "ropes.nim");
 	result = setLengthStr(result, ((NI) 0));
 	{
-		NimStringDesc* s_163135;
-		s_163135 = 0;
+		NimStringDesc* s_162135;
+		s_162135 = 0;
 		nimln(187, "ropes.nim");
 		{
-			TY162599* stack_163140;
-			TY162572 LOC7;
+			TY161599* stack_162140;
+			TY161572 LOC7;
 			if (!!((r == NIM_NIL))) goto LA5;
 			nimln(188, "ropes.nim");
-			stack_163140 = (TY162599*) newSeq((&NTI162599), 1);
+			stack_162140 = (TY161599*) newSeq((&NTI161599), 1);
 			memset((void*)LOC7, 0, sizeof(LOC7));
 			LOC7[0] = r;
-			asgnRefNoCycle((void**) (&stack_163140->data[0]), LOC7[0]);
+			asgnRefNoCycle((void**) (&stack_162140->data[0]), LOC7[0]);
 			{
 				nimln(189, "ropes.nim");
 				while (1) {
-					Ropeobj162009* it_163142;
-					if (!(((NI) 0) < (stack_163140 ? stack_163140->Sup.len : 0))) goto LA9;
+					Ropeobj161009* it_162142;
+					if (!(((NI) 0) < (stack_162140 ? stack_162140->Sup.len : 0))) goto LA9;
 					nimln(190, "ropes.nim");
-					it_163142 = pop_162595((&stack_163140));
+					it_162142 = pop_161595((&stack_162140));
 					{
 						nimln(191, "ropes.nim");
 						while (1) {
-							if (!(*it_163142).data == 0) goto LA11;
+							if (!(*it_162142).data == 0) goto LA11;
 							nimln(192, "ropes.nim");
-							stack_163140 = (TY162599*) incrSeq(&(stack_163140)->Sup, sizeof(Ropeobj162009*));
-							asgnRefNoCycle((void**) (&stack_163140->data[stack_163140->Sup.len-1]), (*it_163142).right);
+							stack_162140 = (TY161599*) incrSeq(&(stack_162140)->Sup, sizeof(Ropeobj161009*));
+							asgnRefNoCycle((void**) (&stack_162140->data[stack_162140->Sup.len-1]), (*it_162142).right);
 							nimln(193, "ropes.nim");
-							it_163142 = (*it_163142).left;
+							it_162142 = (*it_162142).left;
 							nimln(194, "ropes.nim");
 							{
-								if (!!(!((it_163142 == NIM_NIL)))) goto LA14;
+								if (!!(!((it_162142 == NIM_NIL)))) goto LA14;
 								failedassertimpl_87017(((NimStringDesc*) &TMP833));
 							}
 							LA14: ;
@@ -961,15 +961,15 @@ N_NIMCALL(NimStringDesc*, HEX24_163131)(Ropeobj162009* r) {
 					}
 					nimln(195, "ropes.nim");
 					{
-						if (!!(!(((*it_163142).data == NIM_NIL)))) goto LA18;
+						if (!!(!(((*it_162142).data == NIM_NIL)))) goto LA18;
 						failedassertimpl_87017(((NimStringDesc*) &TMP834));
 					}
 					LA18: ;
 					nimln(196, "ropes.nim");
-					s_163135 = (*it_163142).data;
+					s_162135 = (*it_162142).data;
 					nimln(219, "ropes.nim");
-					result = resizeString(result, s_163135->Sup.len + 0);
-appendString(result, s_163135);
+					result = resizeString(result, s_162135->Sup.len + 0);
+appendString(result, s_162135);
 				} LA9: ;
 			}
 		}
@@ -979,33 +979,33 @@ appendString(result, s_163135);
 	return result;
 }
 
-N_NIMCALL(Ropeobj162009*, ropeconcat_163164)(Ropeobj162009** a, NI aLen0) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, ropeconcat_162164)(Ropeobj161009** a, NI aLen0) {
+	Ropeobj161009* result;
 	nimfr("ropeConcat", "ropes.nim")
 	result = 0;
 	{
-		NI i_163181;
-		NI HEX3Atmp_163183;
-		NI res_163186;
-		i_163181 = 0;
-		HEX3Atmp_163183 = 0;
+		NI i_162181;
+		NI HEX3Atmp_162183;
+		NI res_162186;
+		i_162181 = 0;
+		HEX3Atmp_162183 = 0;
 		nimln(223, "ropes.nim");
-		HEX3Atmp_163183 = (aLen0-1);
+		HEX3Atmp_162183 = (aLen0-1);
 		nimln(1598, "system.nim");
-		res_163186 = ((NI) 0);
+		res_162186 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP836;
-				if (!(res_163186 <= HEX3Atmp_163183)) goto LA3;
+				if (!(res_162186 <= HEX3Atmp_162183)) goto LA3;
 				nimln(1600, "system.nim");
-				i_163181 = res_163186;
+				i_162181 = res_162186;
 				nimln(223, "ropes.nim");
-				if ((NU)(i_163181) >= (NU)(aLen0)) raiseIndexError();
-				result = HEX26_162436(result, a[i_163181]);
+				if ((NU)(i_162181) >= (NU)(aLen0)) raiseIndexError();
+				result = HEX26_161436(result, a[i_162181]);
 				nimln(1614, "system.nim");
-				TMP836 = addInt(res_163186, ((NI) 1));
-				res_163186 = (NI)(TMP836);
+				TMP836 = addInt(res_162186, ((NI) 1));
+				res_162186 = (NI)(TMP836);
 			} LA3: ;
 		}
 	}
@@ -1013,22 +1013,22 @@ N_NIMCALL(Ropeobj162009*, ropeconcat_163164)(Ropeobj162009** a, NI aLen0) {
 	return result;
 }
 
-N_NIMCALL(void, prepend_163205)(Ropeobj162009** a, Ropeobj162009* b) {
+N_NIMCALL(void, prepend_162205)(Ropeobj161009** a, Ropeobj161009* b) {
 	nimfr("prepend", "ropes.nim")
 	nimln(225, "ropes.nim");
-	unsureAsgnRef((void**) (&(*a)), HEX26_162436(b, (*a)));
+	unsureAsgnRef((void**) (&(*a)), HEX26_161436(b, (*a)));
 	popFrame();
 }
 
-N_NIMCALL(void, prepend_163216)(Ropeobj162009** a, NimStringDesc* b) {
+N_NIMCALL(void, prepend_162216)(Ropeobj161009** a, NimStringDesc* b) {
 	nimfr("prepend", "ropes.nim")
 	nimln(226, "ropes.nim");
-	unsureAsgnRef((void**) (&(*a)), HEX26_162482(b, (*a)));
+	unsureAsgnRef((void**) (&(*a)), HEX26_161482(b, (*a)));
 	popFrame();
 }
 
-N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** args, NI argsLen0) {
-	Ropeobj162009* result;
+N_NIMCALL(Ropeobj161009*, HEX25_162235)(NimStringDesc* frmt, Ropeobj161009** args, NI argsLen0) {
+	Ropeobj161009* result;
 	NI i;
 	NI length;
 	NI num;
@@ -1062,7 +1062,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 				{
 					NI TMP839;
 					nimln(242, "ropes.nim");
-					add_162545(&result, ((NimStringDesc*) &TMP838));
+					add_161545(&result, ((NimStringDesc*) &TMP838));
 					nimln(243, "ropes.nim");
 					TMP839 = addInt(i, ((NI) 1));
 					i = (NI)(TMP839);
@@ -1077,7 +1077,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 					i = (NI)(TMP840);
 					nimln(246, "ropes.nim");
 					if ((NU)(num) >= (NU)(argsLen0)) raiseIndexError();
-					add_162534(&result, args[num]);
+					add_161534(&result, args[num]);
 					nimln(247, "ropes.nim");
 					TMP841 = addInt(num, ((NI) 1));
 					num = (NI)(TMP841);
@@ -1124,7 +1124,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 						nimln(256, "ropes.nim");
 						LOC20 = 0;
 						LOC20 = nimIntToStr(j);
-						errorhandler_162028.ClEnv? errorhandler_162028.ClPrc(((NU8) 1), LOC20, NIM_FALSE, errorhandler_162028.ClEnv):((TMP847)(errorhandler_162028.ClPrc))(((NU8) 1), LOC20, NIM_FALSE);
+						errorhandler_161028.ClEnv? errorhandler_161028.ClPrc(((NU8) 1), LOC20, NIM_FALSE, errorhandler_161028.ClEnv):((TMP847)(errorhandler_161028.ClPrc))(((NU8) 1), LOC20, NIM_FALSE);
 					}
 					goto LA16;
 					LA18: ;
@@ -1133,7 +1133,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 						nimln(258, "ropes.nim");
 						TMP848 = subInt(j, ((NI) 1));
 						if ((NU)((NI)(TMP848)) >= (NU)(argsLen0)) raiseIndexError();
-						add_162534(&result, args[(NI)(TMP848)]);
+						add_161534(&result, args[(NI)(TMP848)]);
 					}
 					LA16: ;
 				}
@@ -1185,7 +1185,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 						if ((NU)(i) > (NU)(frmt->Sup.len)) raiseIndexError();
 						LOC30 = 0;
 						LOC30 = nimCharToStr(frmt->data[i]);
-						errorhandler_162028.ClEnv? errorhandler_162028.ClPrc(((NU8) 1), LOC30, NIM_FALSE, errorhandler_162028.ClEnv):((TMP855)(errorhandler_162028.ClPrc))(((NU8) 1), LOC30, NIM_FALSE);
+						errorhandler_161028.ClEnv? errorhandler_161028.ClPrc(((NU8) 1), LOC30, NIM_FALSE, errorhandler_161028.ClEnv):((TMP855)(errorhandler_161028.ClPrc))(((NU8) 1), LOC30, NIM_FALSE);
 					}
 					LA25: ;
 					nimln(269, "ropes.nim");
@@ -1197,7 +1197,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 						nimln(270, "ropes.nim");
 						LOC35 = 0;
 						LOC35 = nimIntToStr(j);
-						errorhandler_162028.ClEnv? errorhandler_162028.ClPrc(((NU8) 1), LOC35, NIM_FALSE, errorhandler_162028.ClEnv):((TMP857)(errorhandler_162028.ClPrc))(((NU8) 1), LOC35, NIM_FALSE);
+						errorhandler_161028.ClEnv? errorhandler_161028.ClPrc(((NU8) 1), LOC35, NIM_FALSE, errorhandler_161028.ClEnv):((TMP857)(errorhandler_161028.ClPrc))(((NU8) 1), LOC35, NIM_FALSE);
 					}
 					goto LA31;
 					LA33: ;
@@ -1206,7 +1206,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 						nimln(272, "ropes.nim");
 						TMP858 = subInt(j, ((NI) 1));
 						if ((NU)((NI)(TMP858)) >= (NU)(argsLen0)) raiseIndexError();
-						add_162534(&result, args[(NI)(TMP858)]);
+						add_161534(&result, args[(NI)(TMP858)]);
 					}
 					LA31: ;
 				}
@@ -1215,7 +1215,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 				{
 					NI TMP859;
 					nimln(274, "ropes.nim");
-					add_162534(&result, softrnl_163228);
+					add_161534(&result, softrnl_162228);
 					nimln(275, "ropes.nim");
 					TMP859 = addInt(i, ((NI) 1));
 					i = (NI)(TMP859);
@@ -1225,7 +1225,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 				{
 					NI TMP860;
 					nimln(277, "ropes.nim");
-					add_162534(&result, rnl_163227);
+					add_161534(&result, rnl_162227);
 					nimln(278, "ropes.nim");
 					TMP860 = addInt(i, ((NI) 1));
 					i = (NI)(TMP860);
@@ -1238,7 +1238,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 					if ((NU)(i) > (NU)(frmt->Sup.len)) raiseIndexError();
 					LOC40 = 0;
 					LOC40 = nimCharToStr(frmt->data[i]);
-					errorhandler_162028.ClEnv? errorhandler_162028.ClPrc(((NU8) 1), LOC40, NIM_FALSE, errorhandler_162028.ClEnv):((TMP861)(errorhandler_162028.ClPrc))(((NU8) 1), LOC40, NIM_FALSE);
+					errorhandler_161028.ClEnv? errorhandler_161028.ClPrc(((NU8) 1), LOC40, NIM_FALSE, errorhandler_161028.ClEnv):((TMP861)(errorhandler_161028.ClPrc))(((NU8) 1), LOC40, NIM_FALSE);
 				}
 				break;
 				}
@@ -1278,7 +1278,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 				TMP864 = subInt(i, ((NI) 1));
 				LOC52 = 0;
 				LOC52 = copyStrLast(frmt, start, (NI)(TMP864));
-				add_162545(&result, LOC52);
+				add_161545(&result, LOC52);
 			}
 			LA50: ;
 		} LA2: ;
@@ -1287,7 +1287,7 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 	{
 		NIM_BOOL LOC55;
 		LOC55 = 0;
-		LOC55 = ropeinvariant_162246(result);
+		LOC55 = ropeinvariant_161246(result);
 		if (!!(LOC55)) goto LA56;
 		failedassertimpl_87017(((NimStringDesc*) &TMP827));
 	}
@@ -1296,19 +1296,19 @@ N_NIMCALL(Ropeobj162009*, HEX25_163235)(NimStringDesc* frmt, Ropeobj162009** arg
 	return result;
 }
 
-N_NIMCALL(void, addf_163635)(Ropeobj162009** c, NimStringDesc* frmt, Ropeobj162009** args, NI argsLen0) {
-	Ropeobj162009* LOC1;
+N_NIMCALL(void, addf_162635)(Ropeobj161009** c, NimStringDesc* frmt, Ropeobj161009** args, NI argsLen0) {
+	Ropeobj161009* LOC1;
 	nimfr("addf", "ropes.nim")
 	nimln(291, "ropes.nim");
 	LOC1 = 0;
-	LOC1 = HEX25_163235(frmt, args, argsLen0);
-	add_162534(c, LOC1);
+	LOC1 = HEX25_162235(frmt, args, argsLen0);
+	add_161534(c, LOC1);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f) {
+N_NIMCALL(NIM_BOOL, equalsfile_162809)(Ropeobj161009* r, FILE* f) {
 	NIM_BOOL result;
-	TY163814 buf;
+	TY162814 buf;
 	NI bpos;
 	NI blen;
 	NI LOC34;
@@ -1320,39 +1320,39 @@ N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f) {
 	nimln(312, "ropes.nim");
 	blen = ((NI) 1024);
 	{
-		NimStringDesc* s_163837;
-		s_163837 = 0;
+		NimStringDesc* s_162837;
+		s_162837 = 0;
 		nimln(187, "ropes.nim");
 		{
-			TY162599* stack_163886;
-			TY162572 LOC6;
+			TY161599* stack_162886;
+			TY161572 LOC6;
 			if (!!((r == NIM_NIL))) goto LA4;
 			nimln(188, "ropes.nim");
-			stack_163886 = (TY162599*) newSeq((&NTI162599), 1);
+			stack_162886 = (TY161599*) newSeq((&NTI161599), 1);
 			memset((void*)LOC6, 0, sizeof(LOC6));
 			LOC6[0] = r;
-			asgnRefNoCycle((void**) (&stack_163886->data[0]), LOC6[0]);
+			asgnRefNoCycle((void**) (&stack_162886->data[0]), LOC6[0]);
 			{
 				nimln(189, "ropes.nim");
 				while (1) {
-					Ropeobj162009* it_163888;
+					Ropeobj161009* it_162888;
 					NI spos;
 					NI slen;
-					if (!(((NI) 0) < (stack_163886 ? stack_163886->Sup.len : 0))) goto LA8;
+					if (!(((NI) 0) < (stack_162886 ? stack_162886->Sup.len : 0))) goto LA8;
 					nimln(190, "ropes.nim");
-					it_163888 = pop_162595((&stack_163886));
+					it_162888 = pop_161595((&stack_162886));
 					{
 						nimln(191, "ropes.nim");
 						while (1) {
-							if (!(*it_163888).data == 0) goto LA10;
+							if (!(*it_162888).data == 0) goto LA10;
 							nimln(192, "ropes.nim");
-							stack_163886 = (TY162599*) incrSeq(&(stack_163886)->Sup, sizeof(Ropeobj162009*));
-							asgnRefNoCycle((void**) (&stack_163886->data[stack_163886->Sup.len-1]), (*it_163888).right);
+							stack_162886 = (TY161599*) incrSeq(&(stack_162886)->Sup, sizeof(Ropeobj161009*));
+							asgnRefNoCycle((void**) (&stack_162886->data[stack_162886->Sup.len-1]), (*it_162888).right);
 							nimln(193, "ropes.nim");
-							it_163888 = (*it_163888).left;
+							it_162888 = (*it_162888).left;
 							nimln(194, "ropes.nim");
 							{
-								if (!!(!((it_163888 == NIM_NIL)))) goto LA13;
+								if (!!(!((it_162888 == NIM_NIL)))) goto LA13;
 								failedassertimpl_87017(((NimStringDesc*) &TMP833));
 							}
 							LA13: ;
@@ -1360,16 +1360,16 @@ N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f) {
 					}
 					nimln(195, "ropes.nim");
 					{
-						if (!!(!(((*it_163888).data == NIM_NIL)))) goto LA17;
+						if (!!(!(((*it_162888).data == NIM_NIL)))) goto LA17;
 						failedassertimpl_87017(((NimStringDesc*) &TMP834));
 					}
 					LA17: ;
 					nimln(196, "ropes.nim");
-					s_163837 = (*it_163888).data;
+					s_162837 = (*it_162888).data;
 					nimln(315, "ropes.nim");
 					spos = ((NI) 0);
 					nimln(316, "ropes.nim");
-					slen = (s_163837 ? s_163837->Sup.len : 0);
+					slen = (s_162837 ? s_162837->Sup.len : 0);
 					{
 						nimln(317, "ropes.nim");
 						while (1) {
@@ -1406,7 +1406,7 @@ N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f) {
 								NI TMP867;
 								NIM_BOOL LOC31;
 								if ((NU)(bpos) > (NU)(1023)) raiseIndexError();
-								TMP867 = addInt(((NI) (s_163837->data)), spos);
+								TMP867 = addInt(((NI) (s_162837->data)), spos);
 								LOC31 = 0;
 								LOC31 = equalMem(((void*) ((&buf[(bpos)- 0]))), ((void*) ((NI)(TMP867))), ((NI)chckRange(n, ((NI) 0), ((NI) 2147483647))));
 								if (!!(LOC31)) goto LA32;
@@ -1438,7 +1438,7 @@ N_NIMCALL(NIM_BOOL, equalsfile_163809)(Ropeobj162009* r, FILE* f) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, equalsfile_163916)(Ropeobj162009* r, NimStringDesc* filename) {
+N_NIMCALL(NIM_BOOL, equalsfile_162916)(Ropeobj161009* r, NimStringDesc* filename) {
 	NIM_BOOL result;
 	FILE* f;
 	nimfr("equalsFile", "ropes.nim")
@@ -1450,7 +1450,7 @@ N_NIMCALL(NIM_BOOL, equalsfile_163916)(Ropeobj162009* r, NimStringDesc* filename
 	{
 		if (!result) goto LA3;
 		nimln(341, "ropes.nim");
-		result = equalsfile_163809(r, f);
+		result = equalsfile_162809(r, f);
 		nimln(342, "ropes.nim");
 		fclose(f);
 	}
@@ -1459,7 +1459,7 @@ N_NIMCALL(NIM_BOOL, equalsfile_163916)(Ropeobj162009* r, NimStringDesc* filename
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, writeropeifnotequal_163930)(Ropeobj162009* r, NimStringDesc* filename) {
+N_NIMCALL(NIM_BOOL, writeropeifnotequal_162930)(Ropeobj161009* r, NimStringDesc* filename) {
 	NIM_BOOL result;
 	nimfr("writeRopeIfNotEqual", "ropes.nim")
 	result = 0;
@@ -1467,10 +1467,10 @@ N_NIMCALL(NIM_BOOL, writeropeifnotequal_163930)(Ropeobj162009* r, NimStringDesc*
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = equalsfile_163916(r, filename);
+		LOC3 = equalsfile_162916(r, filename);
 		if (!!(LOC3)) goto LA4;
 		nimln(347, "ropes.nim");
-		writerope_163105(r, filename, NIM_FALSE);
+		writerope_162105(r, filename, NIM_FALSE);
 		nimln(348, "ropes.nim");
 		result = NIM_TRUE;
 	}
@@ -1487,51 +1487,51 @@ N_NIMCALL(NIM_BOOL, writeropeifnotequal_163930)(Ropeobj162009* r, NimStringDesc*
 NIM_EXTERNC N_NOINLINE(void, compiler_ropesInit)(void) {
 	nimfr("ropes", "ropes.nim")
 	nimln(124, "ropes.nim");
-	gcachetries_162268 = ((NI) 0);
+	gcachetries_161268 = ((NI) 0);
 	nimln(125, "ropes.nim");
-	gcachemisses_162272 = ((NI) 0);
+	gcachemisses_161272 = ((NI) 0);
 	nimln(126, "ropes.nim");
-	gcacheinttries_162276 = ((NI) 0);
+	gcacheinttries_161276 = ((NI) 0);
 	nimln(229, "ropes.nim");
-	asgnRefNoCycle((void**) (&rnl_163227), newrope_162056(tnl_160626));
+	asgnRefNoCycle((void**) (&rnl_162227), newrope_161056(tnl_159626));
 	nimln(230, "ropes.nim");
-	asgnRefNoCycle((void**) (&softrnl_163228), newrope_162056(tnl_160626));
+	asgnRefNoCycle((void**) (&softrnl_162228), newrope_161056(tnl_159626));
 	popFrame();
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_ropesDatInit)(void) {
 static TNimNode* TMP822[4];
 static TNimNode TMP744[5];
-NTI162009.size = sizeof(Ropeobj162009);
-NTI162009.kind = 17;
-NTI162009.base = (&NTI3411);
-NTI162009.flags = 2;
+NTI161009.size = sizeof(Ropeobj161009);
+NTI161009.kind = 17;
+NTI161009.base = (&NTI3411);
+NTI161009.flags = 2;
 TMP822[0] = &TMP744[1];
 TMP744[1].kind = 1;
-TMP744[1].offset = offsetof(Ropeobj162009, left);
-TMP744[1].typ = (&NTI162007);
+TMP744[1].offset = offsetof(Ropeobj161009, left);
+TMP744[1].typ = (&NTI161007);
 TMP744[1].name = "left";
 TMP822[1] = &TMP744[2];
 TMP744[2].kind = 1;
-TMP744[2].offset = offsetof(Ropeobj162009, right);
-TMP744[2].typ = (&NTI162007);
+TMP744[2].offset = offsetof(Ropeobj161009, right);
+TMP744[2].typ = (&NTI161007);
 TMP744[2].name = "right";
 TMP822[2] = &TMP744[3];
 TMP744[3].kind = 1;
-TMP744[3].offset = offsetof(Ropeobj162009, length);
+TMP744[3].offset = offsetof(Ropeobj161009, length);
 TMP744[3].typ = (&NTI108);
 TMP744[3].name = "length";
 TMP822[3] = &TMP744[4];
 TMP744[4].kind = 1;
-TMP744[4].offset = offsetof(Ropeobj162009, data);
+TMP744[4].offset = offsetof(Ropeobj161009, data);
 TMP744[4].typ = (&NTI149);
 TMP744[4].name = "data";
 TMP744[0].len = 4; TMP744[0].kind = 2; TMP744[0].sons = &TMP822[0];
-NTI162009.node = &TMP744[0];
-NTI162007.size = sizeof(Ropeobj162009*);
-NTI162007.kind = 22;
-NTI162007.base = (&NTI162009);
-NTI162007.flags = 2;
-NTI162007.marker = TMP823;
+NTI161009.node = &TMP744[0];
+NTI161007.size = sizeof(Ropeobj161009*);
+NTI161007.kind = 22;
+NTI161007.base = (&NTI161009);
+NTI161007.flags = 2;
+NTI161007.marker = TMP823;
 }
 

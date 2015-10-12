@@ -5,12 +5,12 @@
 #include "nimbase.h"
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tident167021 Tident167021;
-typedef struct Tidobj167015 Tidobj167015;
+typedef struct Tident165021 Tident165021;
+typedef struct Tidobj165015 Tidobj165015;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef NU8 TY172333[33];
+typedef NU8 TY170333[33];
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -19,7 +19,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-typedef NimStringDesc* TY172335[257];
+typedef NimStringDesc* TY170335[257];
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -35,14 +35,14 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Tidobj167015  {
+struct  Tidobj165015  {
   TNimObject Sup;
 NI id;
 };
-struct  Tident167021  {
-  Tidobj167015 Sup;
+struct  Tident165021  {
+  Tidobj165015 Sup;
 NimStringDesc* s;
-Tident167021* next;
+Tident165021* next;
 NI h;
 };
 struct  TNimNode  {
@@ -53,7 +53,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(NI, findstr_172344)(NimStringDesc** a, NI aLen0, NimStringDesc* s);
+N_NIMCALL(NI, findstr_170344)(NimStringDesc** a, NI aLen0, NimStringDesc* s);
 N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
@@ -61,15 +61,15 @@ N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NU16, whichkeyword_172386)(Tident167021* id);
+N_NIMCALL(NU16, whichkeyword_170386)(Tident165021* id);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
-N_NIMCALL(NU16, whichkeyword_172396)(NimStringDesc* id);
-N_NIMCALL(Tident167021*, getident_167463)(NimStringDesc* identifier);
-N_NIMCALL(void, initspecials_172406)(void);
-N_NIMCALL(Tident167021*, getident_167473)(NimStringDesc* identifier, NI h);
-N_NIMCALL(NI, hashignorestyle_131887)(NimStringDesc* x);
-NIM_CONST TY172333 cppnimsharedkeywords_172332 = {
+N_NIMCALL(NU16, whichkeyword_170396)(NimStringDesc* id);
+N_NIMCALL(Tident165021*, getident_165463)(NimStringDesc* identifier);
+N_NIMCALL(void, initspecials_170406)(void);
+N_NIMCALL(Tident165021*, getident_165473)(NimStringDesc* identifier, NI h);
+N_NIMCALL(NI, hashignorestyle_130887)(NimStringDesc* x);
+NIM_CONST TY170333 cppnimsharedkeywords_170332 = {
 0x10, 0x33, 0xA8, 0x8A, 0x00, 0x00, 0x80, 0x9C,
 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -333,7 +333,7 @@ STRING_LITERAL(TMP1795, "inout", 5);
 STRING_LITERAL(TMP1796, "bycopy", 6);
 STRING_LITERAL(TMP1797, "byref", 5);
 STRING_LITERAL(TMP1798, "oneway", 6);
-NIM_CONST TY172335 specialwords_172334 = {((NimStringDesc*) &TMP1542),
+NIM_CONST TY170335 specialwords_170334 = {((NimStringDesc*) &TMP1542),
 ((NimStringDesc*) &TMP1543),
 ((NimStringDesc*) &TMP1544),
 ((NimStringDesc*) &TMP1545),
@@ -640,42 +640,42 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI, findstr_172344)(NimStringDesc** a, NI aLen0, NimStringDesc* s) {
+N_NIMCALL(NI, findstr_170344)(NimStringDesc** a, NI aLen0, NimStringDesc* s) {
 	NI result;
 	nimfr("findStr", "wordrecg.nim")
 {	result = 0;
 	{
-		NI i_172362;
-		NI HEX3Atmp_172364;
-		NI res_172367;
-		i_172362 = 0;
-		HEX3Atmp_172364 = 0;
+		NI i_170362;
+		NI HEX3Atmp_170364;
+		NI res_170367;
+		i_170362 = 0;
+		HEX3Atmp_170364 = 0;
 		nimln(173, "wordrecg.nim");
-		HEX3Atmp_172364 = (aLen0-1);
+		HEX3Atmp_170364 = (aLen0-1);
 		nimln(1598, "system.nim");
-		res_172367 = ((NI) 0);
+		res_170367 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP1799;
-				if (!(res_172367 <= HEX3Atmp_172364)) goto LA3;
+				if (!(res_170367 <= HEX3Atmp_170364)) goto LA3;
 				nimln(1600, "system.nim");
-				i_172362 = res_172367;
+				i_170362 = res_170367;
 				nimln(174, "wordrecg.nim");
 				{
 					NI LOC6;
-					if ((NU)(i_172362) >= (NU)(aLen0)) raiseIndexError();
+					if ((NU)(i_170362) >= (NU)(aLen0)) raiseIndexError();
 					LOC6 = 0;
-					LOC6 = nsuCmpIgnoreStyle(a[i_172362], s);
+					LOC6 = nsuCmpIgnoreStyle(a[i_170362], s);
 					if (!(LOC6 == ((NI) 0))) goto LA7;
 					nimln(175, "wordrecg.nim");
-					result = i_172362;
+					result = i_170362;
 					goto BeforeRet;
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP1799 = addInt(res_172367, ((NI) 1));
-				res_172367 = (NI)(TMP1799);
+				TMP1799 = addInt(res_170367, ((NI) 1));
+				res_170367 = (NI)(TMP1799);
 			} LA3: ;
 		}
 	}
@@ -710,7 +710,7 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NU16, whichkeyword_172386)(Tident167021* id) {
+N_NIMCALL(NU16, whichkeyword_170386)(Tident165021* id) {
 	NU16 result;
 	nimfr("whichKeyword", "wordrecg.nim")
 	result = 0;
@@ -730,45 +730,45 @@ N_NIMCALL(NU16, whichkeyword_172386)(Tident167021* id) {
 	return result;
 }
 
-N_NIMCALL(NU16, whichkeyword_172396)(NimStringDesc* id) {
+N_NIMCALL(NU16, whichkeyword_170396)(NimStringDesc* id) {
 	NU16 result;
-	Tident167021* LOC1;
+	Tident165021* LOC1;
 	nimfr("whichKeyword", "wordrecg.nim")
 	result = 0;
 	nimln(183, "wordrecg.nim");
 	LOC1 = 0;
-	LOC1 = getident_167463(id);
-	result = whichkeyword_172386(LOC1);
+	LOC1 = getident_165463(id);
+	result = whichkeyword_170386(LOC1);
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, initspecials_172406)(void) {
+N_NIMCALL(void, initspecials_170406)(void) {
 	nimfr("initSpecials", "wordrecg.nim")
 	{
-		NU16 s_172623;
-		NI res_172635;
-		s_172623 = 0;
+		NU16 s_170623;
+		NI res_170635;
+		s_170623 = 0;
 		nimln(1598, "system.nim");
-		res_172635 = ((NI) 1);
+		res_170635 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI LOC4;
-				Tident167021* LOC5;
+				Tident165021* LOC5;
 				NI TMP1800;
-				if (!(res_172635 <= ((NI) 256))) goto LA3;
+				if (!(res_170635 <= ((NI) 256))) goto LA3;
 				nimln(1600, "system.nim");
-				s_172623 = ((NU16)chckRange(res_172635, ((NU16) 0), ((NU16) 256)));
+				s_170623 = ((NU16)chckRange(res_170635, ((NU16) 0), ((NU16) 256)));
 				nimln(188, "wordrecg.nim");
 				LOC4 = 0;
-				LOC4 = hashignorestyle_131887(specialwords_172334[(s_172623)- 0]);
+				LOC4 = hashignorestyle_130887(specialwords_170334[(s_170623)- 0]);
 				LOC5 = 0;
-				LOC5 = getident_167473(specialwords_172334[(s_172623)- 0], LOC4);
-				(*LOC5).Sup.id = ((NI) (s_172623));
+				LOC5 = getident_165473(specialwords_170334[(s_170623)- 0], LOC4);
+				(*LOC5).Sup.id = ((NI) (s_170623));
 				nimln(1614, "system.nim");
-				TMP1800 = addInt(res_172635, ((NI) 1));
-				res_172635 = (NI)(TMP1800);
+				TMP1800 = addInt(res_170635, ((NI) 1));
+				res_170635 = (NI)(TMP1800);
 			} LA3: ;
 		}
 	}
@@ -777,7 +777,7 @@ N_NIMCALL(void, initspecials_172406)(void) {
 NIM_EXTERNC N_NOINLINE(void, compiler_wordrecgInit)(void) {
 	nimfr("wordrecg", "wordrecg.nim")
 	nimln(190, "wordrecg.nim");
-	initspecials_172406();
+	initspecials_170406();
 	popFrame();
 }
 

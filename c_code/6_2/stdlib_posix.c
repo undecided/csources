@@ -30,7 +30,7 @@ TNimNode** sons;
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-int Mappopulate_109338;
+int Mappopulate_109138;
 TNimType NTI107285; /* TPid */
 extern TFrame* frameptr_17042;
 
@@ -62,8 +62,8 @@ static N_INLINE(void, popFrame)(void) {
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_posixInit)(void) {
 	nimfr("posix", "posix.nim")
-	nimln(1578, "posix.nim");
-	Mappopulate_109338 = ((int) 0);
+	nimln(1572, "posix.nim");
+	Mappopulate_109138 = ((int) 0);
 	popFrame();
 }
 

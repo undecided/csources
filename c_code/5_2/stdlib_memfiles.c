@@ -17,7 +17,7 @@
 #include <unistd.h>
 
 #include <time.h>
-typedef struct Memfile232208 Memfile232208;
+typedef struct Memfile231208 Memfile231208;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
@@ -30,7 +30,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct  Memfile232208  {
+struct  Memfile231208  {
 void* mem;
 NI size;
 int handle;
@@ -55,21 +55,21 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(void*, mapmem_232219)(Memfile232208* m, NU8 mode, NI mappedsize, NI offset);
+N_NIMCALL(void*, mapmem_231219)(Memfile231208* m, NU8 mode, NI mappedsize, NI offset);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
 N_NIMCALL(void, raiseoserror_116809)(NI32 errorcode);
 N_NIMCALL(NI32, oslasterror_116833)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, unmapmem_232608)(Memfile232208* f, void* p, NI size);
-N_NIMCALL(Memfile232208, open_232807)(NimStringDesc* filename, NU8 mode, NI mappedsize, NI offset, NI newfilesize);
-N_NIMCALL(void, close_233249)(Memfile232208* f);
+N_NIMCALL(void, unmapmem_231608)(Memfile231208* f, void* p, NI size);
+N_NIMCALL(Memfile231208, open_231807)(NimStringDesc* filename, NU8 mode, NI mappedsize, NI offset, NI newfilesize);
+N_NIMCALL(void, close_232249)(Memfile231208* f);
 STRING_LITERAL(TMP3733, "0 < mappedSize ", 15);
 STRING_LITERAL(TMP3734, "newFileSize == -1 or not (mode == fmRead) ", 42);
-extern int Mappopulate_109338;
+extern int Mappopulate_109138;
 extern TFrame* frameptr_17042;
-TNimType NTI232208; /* MemFile */
+TNimType NTI231208; /* MemFile */
 extern TNimType NTI153; /* pointer */
 extern TNimType NTI108; /* int */
 extern TNimType NTI5811; /* cint */
@@ -101,7 +101,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void*, mapmem_232219)(Memfile232208* m, NU8 mode, NI mappedsize, NI offset) {
+N_NIMCALL(void*, mapmem_231219)(Memfile231208* m, NU8 mode, NI mappedsize, NI offset) {
 	void* result;
 	NIM_BOOL readonly;
 	int LOC5;
@@ -133,12 +133,12 @@ N_NIMCALL(void*, mapmem_232219)(Memfile232208* m, NU8 mode, NI mappedsize, NI of
 	nimln(58, "memfiles.nim");
 	{
 		if (!readonly) goto LA14;
-		LOC11 = (NI32)(MAP_PRIVATE | Mappopulate_109338);
+		LOC11 = (NI32)(MAP_PRIVATE | Mappopulate_109138);
 	}
 	goto LA12;
 	LA14: ;
 	{
-		LOC11 = (NI32)(MAP_SHARED | Mappopulate_109338);
+		LOC11 = (NI32)(MAP_SHARED | Mappopulate_109138);
 	}
 	LA12: ;
 	result = mmap(NIM_NIL, mappedsize, LOC5, LOC11, (*m).handle, ((off_t) (offset)));
@@ -156,7 +156,7 @@ N_NIMCALL(void*, mapmem_232219)(Memfile232208* m, NU8 mode, NI mappedsize, NI of
 	return result;
 }
 
-N_NIMCALL(void, unmapmem_232608)(Memfile232208* f, void* p, NI size) {
+N_NIMCALL(void, unmapmem_231608)(Memfile231208* f, void* p, NI size) {
 	nimfr("unmapMem", "memfiles.nim")
 	nimln(72, "memfiles.nim");
 	{
@@ -173,8 +173,8 @@ N_NIMCALL(void, unmapmem_232608)(Memfile232208* f, void* p, NI size) {
 	popFrame();
 }
 
-N_NIMCALL(Memfile232208, open_232807)(NimStringDesc* filename, NU8 mode, NI mappedsize, NI offset, NI newfilesize) {
-	Memfile232208 result;
+N_NIMCALL(Memfile231208, open_231807)(NimStringDesc* filename, NU8 mode, NI mappedsize, NI offset, NI newfilesize) {
+	Memfile231208 result;
 	NIM_BOOL readonly;
 	int flags;
 	int LOC59;
@@ -340,12 +340,12 @@ N_NIMCALL(Memfile232208, open_232807)(NimStringDesc* filename, NU8 mode, NI mapp
 	nimln(211, "memfiles.nim");
 	{
 		if (!readonly) goto LA68;
-		LOC65 = (NI32)(MAP_PRIVATE | Mappopulate_109338);
+		LOC65 = (NI32)(MAP_PRIVATE | Mappopulate_109138);
 	}
 	goto LA66;
 	LA68: ;
 	{
-		LOC65 = (NI32)(MAP_SHARED | Mappopulate_109338);
+		LOC65 = (NI32)(MAP_SHARED | Mappopulate_109138);
 	}
 	LA66: ;
 	result.mem = mmap(NIM_NIL, result.size, LOC59, LOC65, result.handle, ((off_t) (offset)));
@@ -376,7 +376,7 @@ N_NIMCALL(Memfile232208, open_232807)(NimStringDesc* filename, NU8 mode, NI mapp
 	return result;
 }
 
-N_NIMCALL(void, close_233249)(Memfile232208* f) {
+N_NIMCALL(void, close_232249)(Memfile231208* f) {
 	NIM_BOOL error;
 	NI32 lasterr;
 	nimfr("close", "memfiles.nim")
@@ -428,26 +428,26 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_memfilesInit)(void) {
 NIM_EXTERNC N_NOINLINE(void, stdlib_memfilesDatInit)(void) {
 static TNimNode* TMP3908[3];
 static TNimNode TMP3731[4];
-NTI232208.size = sizeof(Memfile232208);
-NTI232208.kind = 18;
-NTI232208.base = 0;
-NTI232208.flags = 3;
+NTI231208.size = sizeof(Memfile231208);
+NTI231208.kind = 18;
+NTI231208.base = 0;
+NTI231208.flags = 3;
 TMP3908[0] = &TMP3731[1];
 TMP3731[1].kind = 1;
-TMP3731[1].offset = offsetof(Memfile232208, mem);
+TMP3731[1].offset = offsetof(Memfile231208, mem);
 TMP3731[1].typ = (&NTI153);
 TMP3731[1].name = "mem";
 TMP3908[1] = &TMP3731[2];
 TMP3731[2].kind = 1;
-TMP3731[2].offset = offsetof(Memfile232208, size);
+TMP3731[2].offset = offsetof(Memfile231208, size);
 TMP3731[2].typ = (&NTI108);
 TMP3731[2].name = "size";
 TMP3908[2] = &TMP3731[3];
 TMP3731[3].kind = 1;
-TMP3731[3].offset = offsetof(Memfile232208, handle);
+TMP3731[3].offset = offsetof(Memfile231208, handle);
 TMP3731[3].typ = (&NTI5811);
 TMP3731[3].name = "handle";
 TMP3731[0].len = 3; TMP3731[0].kind = 2; TMP3731[0].sons = &TMP3908[0];
-NTI232208.node = &TMP3731[0];
+NTI231208.node = &TMP3731[0];
 }
 

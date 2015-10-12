@@ -9,10 +9,10 @@ typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef struct Jsonnodeobj291726 Jsonnodeobj291726;
-typedef struct TY291742 TY291742;
-typedef struct TY291741 TY291741;
-typedef struct TY291746 TY291746;
+typedef struct Jsonnodeobj290726 Jsonnodeobj290726;
+typedef struct TY290742 TY290742;
+typedef struct TY290741 TY290741;
+typedef struct TY290746 TY290746;
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -33,9 +33,9 @@ void* finalizer;
 TY3289 marker;
 TY3294 deepcopy;
 };
-struct TY291742 {
+struct TY290742 {
 NimStringDesc* Field0;
-Jsonnodeobj291726* Field1;
+Jsonnodeobj290726* Field1;
 };
 struct  TNimNode  {
 NU8 kind;
@@ -45,7 +45,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct  Jsonnodeobj291726  {
+struct  Jsonnodeobj290726  {
 NU8 kind;
 union{
 struct {NimStringDesc* str;
@@ -56,19 +56,19 @@ struct {NF fnum;
 } S3;
 struct {NIM_BOOL bval;
 } S4;
-struct {TY291741* fields;
+struct {TY290741* fields;
 } S6;
-struct {TY291746* elems;
+struct {TY290746* elems;
 } S7;
 } kindU;
 };
-struct TY291741 {
+struct TY290741 {
   TGenericSeq Sup;
-  TY291742 data[SEQ_DECL_SIZE];
+  TY290742 data[SEQ_DECL_SIZE];
 };
-struct TY291746 {
+struct TY290746 {
   TGenericSeq Sup;
-  Jsonnodeobj291726* data[SEQ_DECL_SIZE];
+  Jsonnodeobj290726* data[SEQ_DECL_SIZE];
 };
 static N_INLINE(NI, HEX21HEX26_131025)(NI h, NI val);
 static N_INLINE(void, nimFrame)(TFrame* s);
@@ -90,8 +90,8 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NI, hashignorecase_131978)(NimStringDesc* x);
 static N_INLINE(NI, hash_132079)(NF x);
-N_NIMCALL(NI, hash_292945)(Jsonnodeobj291726* n);
-N_NIMCALL(NI, hash_293058)(TY291742 x);
+N_NIMCALL(NI, hash_291945)(Jsonnodeobj290726* n);
+N_NIMCALL(NI, hash_292058)(TY290742 x);
 extern TFrame* frameptr_17042;
 TNimType NTI131021; /* THash */
 
@@ -461,7 +461,7 @@ static N_INLINE(NI, hash_132079)(NF x) {
 	return result;
 }
 
-N_NIMCALL(NI, hash_293058)(TY291742 x) {
+N_NIMCALL(NI, hash_292058)(TY290742 x) {
 	NI result;
 	NI LOC1;
 	NI LOC2;
@@ -472,7 +472,7 @@ N_NIMCALL(NI, hash_293058)(TY291742 x) {
 	LOC1 = hash_131839(x.Field0);
 	result = HEX21HEX26_131025(result, LOC1);
 	LOC2 = 0;
-	LOC2 = hash_292945(x.Field1);
+	LOC2 = hash_291945(x.Field1);
 	result = HEX21HEX26_131025(result, LOC2);
 	nimln(150, "hashes.nim");
 	result = HEX21HEX24_131054(result);
@@ -480,33 +480,33 @@ N_NIMCALL(NI, hash_293058)(TY291742 x) {
 	return result;
 }
 
-N_NIMCALL(NI, hash_293014)(TY291742* x, NI xLen0) {
+N_NIMCALL(NI, hash_292014)(TY290742* x, NI xLen0) {
 	NI result;
 	nimfr("hash", "hashes.nim")
 	result = 0;
 	{
-		TY291742 it_293056;
-		NI i_293076;
-		memset((void*)(&it_293056), 0, sizeof(it_293056));
+		TY290742 it_292056;
+		NI i_292076;
+		memset((void*)(&it_292056), 0, sizeof(it_292056));
 		nimln(1689, "system.nim");
-		i_293076 = ((NI) 0);
+		i_292076 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
 				NI LOC4;
 				NI TMP4936;
-				if (!(i_293076 < xLen0)) goto LA3;
+				if (!(i_292076 < xLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_293076) >= (NU)(xLen0)) raiseIndexError();
-				it_293056.Field0 = x[i_293076].Field0;
-				it_293056.Field1 = x[i_293076].Field1;
+				if ((NU)(i_292076) >= (NU)(xLen0)) raiseIndexError();
+				it_292056.Field0 = x[i_292076].Field0;
+				it_292056.Field1 = x[i_292076].Field1;
 				nimln(157, "hashes.nim");
 				LOC4 = 0;
-				LOC4 = hash_293058(it_293056);
+				LOC4 = hash_292058(it_292056);
 				result = HEX21HEX26_131025(result, LOC4);
 				nimln(1692, "system.nim");
-				TMP4936 = addInt(i_293076, ((NI) 1));
-				i_293076 = (NI)(TMP4936);
+				TMP4936 = addInt(i_292076, ((NI) 1));
+				i_292076 = (NI)(TMP4936);
 			} LA3: ;
 		}
 	}
@@ -516,32 +516,32 @@ N_NIMCALL(NI, hash_293014)(TY291742* x, NI xLen0) {
 	return result;
 }
 
-N_NIMCALL(NI, hash_292952)(Jsonnodeobj291726** x, NI xLen0) {
+N_NIMCALL(NI, hash_291952)(Jsonnodeobj290726** x, NI xLen0) {
 	NI result;
 	nimfr("hash", "hashes.nim")
 	result = 0;
 	{
-		Jsonnodeobj291726* it_292994;
-		NI i_292998;
-		it_292994 = 0;
+		Jsonnodeobj290726* it_291994;
+		NI i_291998;
+		it_291994 = 0;
 		nimln(1689, "system.nim");
-		i_292998 = ((NI) 0);
+		i_291998 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
 				NI LOC4;
 				NI TMP4937;
-				if (!(i_292998 < xLen0)) goto LA3;
+				if (!(i_291998 < xLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_292998) >= (NU)(xLen0)) raiseIndexError();
-				it_292994 = x[i_292998];
+				if ((NU)(i_291998) >= (NU)(xLen0)) raiseIndexError();
+				it_291994 = x[i_291998];
 				nimln(157, "hashes.nim");
 				LOC4 = 0;
-				LOC4 = hash_292945(it_292994);
+				LOC4 = hash_291945(it_291994);
 				result = HEX21HEX26_131025(result, LOC4);
 				nimln(1692, "system.nim");
-				TMP4937 = addInt(i_292998, ((NI) 1));
-				i_292998 = (NI)(TMP4937);
+				TMP4937 = addInt(i_291998, ((NI) 1));
+				i_291998 = (NI)(TMP4937);
 			} LA3: ;
 		}
 	}

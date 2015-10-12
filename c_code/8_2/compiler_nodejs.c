@@ -13,8 +13,8 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NimStringDesc*, findnodejs_527009)(void);
-N_NIMCALL(NimStringDesc*, findexe_127616)(NimStringDesc* exe);
+N_NIMCALL(NimStringDesc*, findnodejs_525009)(void);
+N_NIMCALL(NimStringDesc*, findexe_126616)(NimStringDesc* exe);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
@@ -49,17 +49,17 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NimStringDesc*, findnodejs_527009)(void) {
+N_NIMCALL(NimStringDesc*, findnodejs_525009)(void) {
 	NimStringDesc* result;
 	nimfr("findNodeJs", "nodejs.nim")
 	result = 0;
 	nimln(4, "nodejs.nim");
-	result = findexe_127616(((NimStringDesc*) &TMP10776));
+	result = findexe_126616(((NimStringDesc*) &TMP10776));
 	nimln(5, "nodejs.nim");
 	{
 		if (!((result) && (result)->Sup.len == 0)) goto LA3;
 		nimln(6, "nodejs.nim");
-		result = findexe_127616(((NimStringDesc*) &TMP10777));
+		result = findexe_126616(((NimStringDesc*) &TMP10777));
 	}
 	LA3: ;
 	popFrame();

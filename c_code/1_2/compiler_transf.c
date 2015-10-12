@@ -535,7 +535,7 @@ static NIM_CONST TY194031 TMP7181 = {
 STRING_LITERAL(TMP7182, "sym", 3);
 STRING_LITERAL(TMP7183, "wrong AST for borrowed symbol", 29);
 STRING_LITERAL(TMP7185, "transformVarSection", 19);
-STRING_LITERAL(TMP7187, "transf.nim", 10);
+STRING_LITERAL(TMP7187, "compiler/transf.nim", 19);
 NIM_CONST TY149210 TMP7186 = {((NimStringDesc*) &TMP7187),
 ((NI) 141)}
 ;

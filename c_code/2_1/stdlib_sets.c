@@ -13,24 +13,24 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-static N_INLINE(NIM_BOOL, isempty_153234)(NI hcode);
+static N_INLINE(NIM_BOOL, isempty_152234)(NI hcode);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NIM_BOOL, isfilled_153244)(NI hcode);
-static N_INLINE(NIM_BOOL, mustrehash_153303)(NI length, NI counter);
+static N_INLINE(NIM_BOOL, isfilled_152244)(NI hcode);
+static N_INLINE(NIM_BOOL, mustrehash_152303)(NI length, NI counter);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NI, rightsize_153407)(NI count);
-N_NIMCALL(NI, nextpoweroftwo_150531)(NI x);
+static N_INLINE(NI, rightsize_152407)(NI count);
+N_NIMCALL(NI, nextpoweroftwo_149531)(NI x);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
-static N_INLINE(NI, nexttry_153420)(NI h, NI maxhash);
+static N_INLINE(NI, nexttry_152420)(NI h, NI maxhash);
 STRING_LITERAL(TMP659, "counter < length ", 17);
 extern TFrame* frameptr_17042;
 
@@ -61,7 +61,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NIM_BOOL, isempty_153234)(NI hcode) {
+static N_INLINE(NIM_BOOL, isempty_152234)(NI hcode) {
 	NIM_BOOL result;
 	nimfr("isEmpty", "sets.nim")
 	result = 0;
@@ -71,7 +71,7 @@ static N_INLINE(NIM_BOOL, isempty_153234)(NI hcode) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, isfilled_153244)(NI hcode) {
+static N_INLINE(NIM_BOOL, isfilled_152244)(NI hcode) {
 	NIM_BOOL result;
 	nimfr("isFilled", "sets.nim")
 	result = 0;
@@ -101,7 +101,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NIM_BOOL, mustrehash_153303)(NI length, NI counter) {
+static N_INLINE(NIM_BOOL, mustrehash_152303)(NI length, NI counter) {
 	NIM_BOOL result;
 	NIM_BOOL LOC5;
 	NI TMP660;
@@ -198,7 +198,7 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, rightsize_153407)(NI count) {
+static N_INLINE(NI, rightsize_152407)(NI count) {
 	NI result;
 	NI TMP663;
 	NI TMP664;
@@ -209,12 +209,12 @@ static N_INLINE(NI, rightsize_153407)(NI count) {
 	TMP663 = mulInt(((NI) (count)), ((NI) 3));
 	TMP664 = divInt(((NI)chckRange((NI)(TMP663), ((NI) (-2147483647 -1)), ((NI) 2147483647))), ((NI) 2));
 	TMP665 = addInt(((NI)chckRange((NI)(TMP664), ((NI) (-2147483647 -1)), ((NI) 2147483647))), ((NI) 4));
-	result = nextpoweroftwo_150531(((NI)chckRange((NI)(TMP665), ((NI) (-2147483647 -1)), ((NI) 2147483647))));
+	result = nextpoweroftwo_149531(((NI)chckRange((NI)(TMP665), ((NI) (-2147483647 -1)), ((NI) 2147483647))));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI, nexttry_153420)(NI h, NI maxhash) {
+static N_INLINE(NI, nexttry_152420)(NI h, NI maxhash) {
 	NI result;
 	NI TMP666;
 	nimfr("nextTry", "sets.nim")

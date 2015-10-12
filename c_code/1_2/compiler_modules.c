@@ -661,7 +661,7 @@ N_NIMCALL(void, fatal_167123)(Tlineinfo165338 info, NU16 msg, NimStringDesc* arg
 N_NIMCALL(NimStringDesc*, nosaddFileExt)(NimStringDesc* filename, NimStringDesc* ext);
 N_NIMCALL(void, compileproject_525981)(NI32 projectfileidx);
 N_NIMCALL(Tsym193843*, makestdinmodule_525999)(void);
-STRING_LITERAL(TMP10671, "modules.nim", 11);
+STRING_LITERAL(TMP10671, "compiler/modules.nim", 20);
 NIM_CONST TY149210 TMP10670 = {((NimStringDesc*) &TMP10671),
 ((NI) 41)}
 ;

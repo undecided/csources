@@ -718,7 +718,7 @@ STRING_LITERAL(TMP3557, "int literal(", 12);
 STRING_LITERAL(TMP3561, "typedesc", 8);
 STRING_LITERAL(TMP3562, "typedesc[", 9);
 STRING_LITERAL(TMP3563, "]", 1);
-STRING_LITERAL(TMP3565, "types.nim", 9);
+STRING_LITERAL(TMP3565, "compiler/types.nim", 18);
 NIM_CONST TY149210 TMP3564 = {((NimStringDesc*) &TMP3565),
 ((NI) 445)}
 ;

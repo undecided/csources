@@ -129,7 +129,7 @@ Tgcstat48614 stat;
 };
 typedef NU8 TY77659[32];
 typedef NI Skiptable98721[256];
-typedef NimStringDesc* TY145201[1];
+typedef NimStringDesc* TY144201[1];
 typedef NIM_CHAR TY100670[6];
 typedef NIM_CHAR TY100673[2501];
 typedef NIM_CHAR TY100665[3];
@@ -1704,7 +1704,7 @@ N_NIMCALL(NimStringDesc*, nsuFormatOpenArray)(NimStringDesc* formatstr, NimStrin
 N_NIMCALL(NimStringDesc*, nsuFormatSingleElem)(NimStringDesc* formatstr, NimStringDesc* a) {
 	NimStringDesc* result;
 	NI TMP1273;
-	TY145201 LOC1;
+	TY144201 LOC1;
 	nimfr("%", "strutils.nim")
 	result = 0;
 	nimln(1388, "strutils.nim");

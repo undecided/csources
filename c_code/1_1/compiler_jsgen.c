@@ -726,7 +726,7 @@ STRING_LITERAL(TMP10109, "{kind: 3, offset: \"$1\", len: $3, typ: $2, name: $4, 
 STRING_LITERAL(TMP10110, "{kind: 1, offset: \"Field$1\", len: 0, typ: $2, name: \"Field$1\", "
 "sons: null}", 74);
 STRING_LITERAL(TMP10112, "genTypeInfo(", 12);
-STRING_LITERAL(TMP10114, "jsgen.nim", 9);
+STRING_LITERAL(TMP10114, "compiler/jsgen.nim", 18);
 NIM_CONST TY149210 TMP10113 = {((NimStringDesc*) &TMP10114),
 ((NI) 180)}
 ;

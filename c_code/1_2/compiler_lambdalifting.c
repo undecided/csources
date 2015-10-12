@@ -555,7 +555,7 @@ STRING_LITERAL(TMP7102, "sym", 3);
 STRING_LITERAL(TMP7103, ":result", 7);
 STRING_LITERAL(TMP7104, "param.kind == skParam ", 22);
 STRING_LITERAL(TMP7106, "contains(param.flags, sfFromGeneric) ", 37);
-STRING_LITERAL(TMP7108, "lambdalifting.nim", 17);
+STRING_LITERAL(TMP7108, "compiler/lambdalifting.nim", 26);
 NIM_CONST TY149210 TMP7107 = {((NimStringDesc*) &TMP7108),
 ((NI) 196)}
 ;

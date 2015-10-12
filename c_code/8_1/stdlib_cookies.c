@@ -5,14 +5,14 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef struct Stringtableobj134012 Stringtableobj134012;
+typedef struct Stringtableobj133012 Stringtableobj133012;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct Timeinfo103408 Timeinfo103408;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef struct Keyvaluepairseq134010 Keyvaluepairseq134010;
+typedef struct Keyvaluepairseq133010 Keyvaluepairseq133010;
 typedef struct TY103552 TY103552;
 struct  TGenericSeq  {
 NI len;
@@ -37,10 +37,10 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Stringtableobj134012  {
+struct  Stringtableobj133012  {
   TNimObject Sup;
 NI counter;
-Keyvaluepairseq134010* data;
+Keyvaluepairseq133010* data;
 NU8 mode;
 };
 struct  Timeinfo103408  {
@@ -69,28 +69,28 @@ struct TY103552 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 };
-struct Keyvaluepairseq134010 {
+struct Keyvaluepairseq133010 {
   TGenericSeq Sup;
   TY103552 data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(Stringtableobj134012*, parsecookies_335020)(NimStringDesc* s);
-N_NIMCALL(Stringtableobj134012*, nstnewStringTable)(NU8 mode);
+N_NIMCALL(Stringtableobj133012*, parsecookies_333020)(NimStringDesc* s);
+N_NIMCALL(Stringtableobj133012*, nstnewStringTable)(NU8 mode);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDesc* val);
+N_NIMCALL(void, nstPut)(Stringtableobj133012* t, NimStringDesc* key, NimStringDesc* val);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NimStringDesc*, setcookie_335107)(NimStringDesc* key, NimStringDesc* value, NimStringDesc* domain, NimStringDesc* path, NimStringDesc* expires, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly);
+N_NIMCALL(NimStringDesc*, setcookie_333107)(NimStringDesc* key, NimStringDesc* value, NimStringDesc* domain, NimStringDesc* path, NimStringDesc* expires, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
-N_NIMCALL(NimStringDesc*, setcookie_335124)(NimStringDesc* key, NimStringDesc* value, Timeinfo103408* expires, NimStringDesc* domain, NimStringDesc* path, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly);
+N_NIMCALL(NimStringDesc*, setcookie_333124)(NimStringDesc* key, NimStringDesc* value, Timeinfo103408* expires, NimStringDesc* domain, NimStringDesc* path, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly);
 N_NIMCALL(NimStringDesc*, format_105392)(Timeinfo103408* info, NimStringDesc* f);
 STRING_LITERAL(TMP6507, "", 0);
 STRING_LITERAL(TMP6508, "Set-Cookie: ", 12);
@@ -170,8 +170,8 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(Stringtableobj134012*, parsecookies_335020)(NimStringDesc* s) {
-	Stringtableobj134012* result;
+N_NIMCALL(Stringtableobj133012*, parsecookies_333020)(NimStringDesc* s) {
+	Stringtableobj133012* result;
 	NI i;
 	nimfr("parseCookies", "cookies.nim")
 	result = 0;
@@ -287,7 +287,7 @@ static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src) {
 	(*dest).Sup.len += (*src).Sup.len;
 }
 
-N_NIMCALL(NimStringDesc*, setcookie_335107)(NimStringDesc* key, NimStringDesc* value, NimStringDesc* domain, NimStringDesc* path, NimStringDesc* expires, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly) {
+N_NIMCALL(NimStringDesc*, setcookie_333107)(NimStringDesc* key, NimStringDesc* value, NimStringDesc* domain, NimStringDesc* path, NimStringDesc* expires, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly) {
 	NimStringDesc* result;
 	NimStringDesc* LOC5;
 	nimfr("setCookie", "cookies.nim")
@@ -363,7 +363,7 @@ appendString(result, ((NimStringDesc*) &TMP6514));
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, setcookie_335124)(NimStringDesc* key, NimStringDesc* value, Timeinfo103408* expires, NimStringDesc* domain, NimStringDesc* path, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly) {
+N_NIMCALL(NimStringDesc*, setcookie_333124)(NimStringDesc* key, NimStringDesc* value, Timeinfo103408* expires, NimStringDesc* domain, NimStringDesc* path, NIM_BOOL noname, NIM_BOOL secure, NIM_BOOL httponly) {
 	NimStringDesc* result;
 	NimStringDesc* LOC1;
 	nimfr("setCookie", "cookies.nim")
@@ -372,7 +372,7 @@ N_NIMCALL(NimStringDesc*, setcookie_335124)(NimStringDesc* key, NimStringDesc* v
 	nimln(53, "cookies.nim");
 	LOC1 = 0;
 	LOC1 = format_105392(expires, ((NimStringDesc*) &TMP6515));
-	result = setcookie_335107(key, value, domain, path, LOC1, noname, secure, httponly);
+	result = setcookie_333107(key, value, domain, path, LOC1, noname, secure, httponly);
 	goto BeforeRet;
 	}BeforeRet: ;
 	popFrame();

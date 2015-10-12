@@ -1468,7 +1468,7 @@ static NIM_CONST TY194031 TMP8077 = {
 0x00, 0x00, 0x00, 0x00}
 ;
 STRING_LITERAL(TMP8078, "sym", 3);
-STRING_LITERAL(TMP8080, "sem.nim", 7);
+STRING_LITERAL(TMP8080, "compiler/sem.nim", 16);
 NIM_CONST TY149210 TMP8079 = {((NimStringDesc*) &TMP8080),
 ((NI) 178)}
 ;
@@ -1485,7 +1485,7 @@ static NIM_CONST TY194031 TMP8116 = {
 STRING_LITERAL(TMP8117, "sons", 4);
 STRING_LITERAL(TMP8118, "contains({nkStmtList, nkCall}, x.kind) ", 39);
 STRING_LITERAL(TMP8120, "len(x) == 3 ", 12);
-STRING_LITERAL(TMP8122, "hlo.nim", 7);
+STRING_LITERAL(TMP8122, "compiler/hlo.nim", 16);
 NIM_CONST TY149210 TMP8121 = {((NimStringDesc*) &TMP8122),
 ((NI) 15)}
 ;
@@ -1494,7 +1494,7 @@ STRING_LITERAL(TMP8127, "instantiateGenericParamList; no generic params", 46);
 STRING_LITERAL(TMP8128, "instantiateGenericParamList; no symbol", 38);
 STRING_LITERAL(TMP8131, "procInstCache", 13);
 STRING_LITERAL(TMP8133, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP8143, "seminst.nim", 11);
+STRING_LITERAL(TMP8143, "compiler/seminst.nim", 20);
 NIM_CONST TY149210 TMP8142 = {((NimStringDesc*) &TMP8143),
 ((NI) 184)}
 ;
@@ -1512,7 +1512,7 @@ static NIM_CONST TY174333 TMP8149 = {
 ;
 STRING_LITERAL(TMP8159, ", ", 2);
 STRING_LITERAL(TMP8162, "\015\012", 2);
-STRING_LITERAL(TMP8166, "semcall.nim", 11);
+STRING_LITERAL(TMP8166, "compiler/semcall.nim", 20);
 NIM_CONST TY149210 TMP8165 = {((NimStringDesc*) &TMP8166),
 ((NI) 182)}
 ;
@@ -1542,7 +1542,7 @@ STRING_LITERAL(TMP8184, "n.kind == nkBracketExpr ", 24);
 STRING_LITERAL(TMP8188, "cannot instantiate: ", 20);
 STRING_LITERAL(TMP8189, "; got ", 6);
 STRING_LITERAL(TMP8191, " type(s) but expected ", 22);
-STRING_LITERAL(TMP8206, "semexprs.nim", 12);
+STRING_LITERAL(TMP8206, "compiler/semexprs.nim", 21);
 NIM_CONST TY149210 TMP8205 = {((NimStringDesc*) &TMP8206),
 ((NI) 117)}
 ;
@@ -1581,7 +1581,7 @@ static NIM_CONST TY193798 TMP8241 = {
 0x00}
 ;
 STRING_LITERAL(TMP8246, "analyseIfAddressTaken", 21);
-STRING_LITERAL(TMP8249, "semmagic.nim", 12);
+STRING_LITERAL(TMP8249, "compiler/semmagic.nim", 21);
 NIM_CONST TY149210 TMP8248 = {((NimStringDesc*) &TMP8249),
 ((NI) 66)}
 ;
@@ -1639,7 +1639,7 @@ static NIM_CONST TY193798 TMP8294 = {
 0x00}
 ;
 STRING_LITERAL(TMP8300, ":type", 5);
-STRING_LITERAL(TMP8316, "semtypes.nim", 12);
+STRING_LITERAL(TMP8316, "compiler/semtypes.nim", 21);
 NIM_CONST TY149210 TMP8315 = {((NimStringDesc*) &TMP8316),
 ((NI) 706)}
 ;
@@ -1702,7 +1702,7 @@ static NIM_CONST TY174333 TMP8479 = {
 ;
 STRING_LITERAL(TMP8480, "result", 6);
 STRING_LITERAL(TMP8482, "nimDestroyRange", 15);
-STRING_LITERAL(TMP8484, "semdestruct.nim", 15);
+STRING_LITERAL(TMP8484, "compiler/semdestruct.nim", 24);
 NIM_CONST TY149210 TMP8483 = {((NimStringDesc*) &TMP8484),
 ((NI) 115)}
 ;
@@ -1775,7 +1775,7 @@ static NIM_CONST TY174333 TMP8649 = {
 0x00}
 ;
 STRING_LITERAL(TMP8652, "shared", 6);
-STRING_LITERAL(TMP8657, "semstmts.nim", 12);
+STRING_LITERAL(TMP8657, "compiler/semstmts.nim", 21);
 NIM_CONST TY149210 TMP8656 = {((NimStringDesc*) &TMP8657),
 ((NI) 699)}
 ;

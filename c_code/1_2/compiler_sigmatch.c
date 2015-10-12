@@ -912,7 +912,7 @@ static NIM_CONST TY194031 TMP6799 = {
 0x00, 0x00, 0x00, 0x00}
 ;
 STRING_LITERAL(TMP6800, "sons", 4);
-STRING_LITERAL(TMP6804, "sigmatch.nim", 12);
+STRING_LITERAL(TMP6804, "compiler/sigmatch.nim", 21);
 NIM_CONST TY149210 TMP6803 = {((NimStringDesc*) &TMP6804),
 ((NI) 119)}
 ;

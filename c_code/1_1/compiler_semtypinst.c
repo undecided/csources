@@ -640,7 +640,7 @@ NIM_CONST NU32 tfinstclearedflags_268009 = 524288;
 STRING_LITERAL(TMP4620, "shared memory may not refer to GC\'ed thread local memory", 56);
 STRING_LITERAL(TMP4621, "acyclic", 7);
 STRING_LITERAL(TMP4622, "", 0);
-STRING_LITERAL(TMP4624, "semtypinst.nim", 14);
+STRING_LITERAL(TMP4624, "compiler/semtypinst.nim", 23);
 NIM_CONST TY149210 TMP4623 = {((NimStringDesc*) &TMP4624),
 ((NI) 52)}
 ;

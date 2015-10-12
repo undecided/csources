@@ -3,10 +3,10 @@
 /* The generated code is subject to the original license. */
 #define NIM_INTBITS 32
 #include "nimbase.h"
-typedef struct Tinfoos160049 Tinfoos160049;
+typedef struct Tinfoos159049 Tinfoos159049;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tinfocpu160479 Tinfocpu160479;
+typedef struct Tinfocpu159479 Tinfocpu159479;
 typedef struct Tcell46746 Tcell46746;
 typedef struct TNimType TNimType;
 typedef struct Tcellseq46762 Tcellseq46762;
@@ -32,7 +32,7 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct Tinfoos160049 {
+struct Tinfoos159049 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 NimStringDesc* Field2;
@@ -47,16 +47,16 @@ NimStringDesc* Field10;
 NimStringDesc* Field11;
 NU8 Field12;
 };
-typedef Tinfoos160049 TY160071[24];
-typedef NimStringDesc* TY160491[2];
-struct Tinfocpu160479 {
+typedef Tinfoos159049 TY159071[24];
+typedef NimStringDesc* TY159491[2];
+struct Tinfocpu159479 {
 NimStringDesc* Field0;
 NI Field1;
 NU8 Field2;
 NI Field3;
 NI Field4;
 };
-typedef Tinfocpu160479 TY160497[14];
+typedef Tinfocpu159479 TY159497[14];
 struct  Tcell46746  {
 NI refcount;
 TNimType* typ;
@@ -181,7 +181,7 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-N_NIMCALL(void, settarget_160634)(NU8 o, NU8 c);
+N_NIMCALL(void, settarget_159634)(NU8 o, NU8 c);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, divInt)(NI a, NI b);
@@ -195,12 +195,12 @@ N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
 static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
-N_NIMCALL(NU8, nametoos_160611)(NimStringDesc* name);
+N_NIMCALL(NU8, nametoos_159611)(NimStringDesc* name);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(NU8, nametocpu_160617)(NimStringDesc* name);
+N_NIMCALL(NU8, nametocpu_159617)(NimStringDesc* name);
 STRING_LITERAL(TMP748, "DOS", 3);
 STRING_LITERAL(TMP749, "..", 2);
 STRING_LITERAL(TMP750, "$1.dll", 6);
@@ -251,7 +251,7 @@ STRING_LITERAL(TMP794, ".vxe", 4);
 STRING_LITERAL(TMP795, "JS", 2);
 STRING_LITERAL(TMP796, "NimrodVM", 8);
 STRING_LITERAL(TMP797, "Standalone", 10);
-NIM_CONST TY160071 Os_160070 = {{((NimStringDesc*) &TMP748),
+NIM_CONST TY159071 Os_159070 = {{((NimStringDesc*) &TMP748),
 ((NimStringDesc*) &TMP749),
 ((NimStringDesc*) &TMP750),
 ((NimStringDesc*) &TMP751),
@@ -590,7 +590,7 @@ NIM_CONST TY160071 Os_160070 = {{((NimStringDesc*) &TMP748),
 ;
 STRING_LITERAL(TMP798, "littleEndian", 12);
 STRING_LITERAL(TMP799, "bigEndian", 9);
-NIM_CONST TY160491 Endiantostr_160490 = {((NimStringDesc*) &TMP798),
+NIM_CONST TY159491 Endiantostr_159490 = {((NimStringDesc*) &TMP798),
 ((NimStringDesc*) &TMP799)}
 ;
 STRING_LITERAL(TMP800, "i386", 4);
@@ -607,7 +607,7 @@ STRING_LITERAL(TMP810, "arm", 3);
 STRING_LITERAL(TMP811, "js", 2);
 STRING_LITERAL(TMP812, "nimrodvm", 8);
 STRING_LITERAL(TMP813, "avr", 3);
-NIM_CONST TY160497 Cpu_160496 = {{((NimStringDesc*) &TMP800),
+NIM_CONST TY159497 Cpu_159496 = {{((NimStringDesc*) &TMP800),
 ((NI) 32),
 ((NU8) 0),
 ((NI) 64),
@@ -695,14 +695,14 @@ NIM_CONST TY160497 Cpu_160496 = {{((NimStringDesc*) &TMP800),
 STRING_LITERAL(TMP814, "not (c == cpuNone) ", 19);
 STRING_LITERAL(TMP815, "not (o == osNone) ", 18);
 STRING_LITERAL(TMP821, "linux", 5);
-NU8 targetcpu_160600;
-NU8 hostcpu_160601;
-NU8 targetos_160602;
-NU8 hostos_160603;
-NI intsize_160623;
-NI floatsize_160624;
-NI ptrsize_160625;
-NimStringDesc* tnl_160626;
+NU8 targetcpu_159600;
+NU8 hostcpu_159601;
+NU8 targetos_159602;
+NU8 hostos_159603;
+NI intsize_159623;
+NI floatsize_159624;
+NI ptrsize_159625;
+NimStringDesc* tnl_159626;
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 
@@ -793,7 +793,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, settarget_160634)(NU8 o, NU8 c) {
+N_NIMCALL(void, settarget_159634)(NU8 o, NU8 c) {
 	NI TMP816;
 	NI TMP817;
 	NI TMP818;
@@ -812,25 +812,25 @@ N_NIMCALL(void, settarget_160634)(NU8 o, NU8 c) {
 	}
 	LA7: ;
 	nimln(205, "platform.nim");
-	targetcpu_160600 = c;
+	targetcpu_159600 = c;
 	nimln(206, "platform.nim");
-	targetos_160602 = o;
+	targetos_159602 = o;
 	nimln(207, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP816 = divInt(Cpu_160496[(c)- 1].Field1, ((NI) 8));
-	intsize_160623 = (NI)(TMP816);
+	TMP816 = divInt(Cpu_159496[(c)- 1].Field1, ((NI) 8));
+	intsize_159623 = (NI)(TMP816);
 	nimln(208, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP817 = divInt(Cpu_160496[(c)- 1].Field3, ((NI) 8));
-	floatsize_160624 = (NI)(TMP817);
+	TMP817 = divInt(Cpu_159496[(c)- 1].Field3, ((NI) 8));
+	floatsize_159624 = (NI)(TMP817);
 	nimln(209, "platform.nim");
 	if (c < 1 || c > 14) raiseIndexError();
-	TMP818 = divInt(Cpu_160496[(c)- 1].Field4, ((NI) 8));
-	ptrsize_160625 = (NI)(TMP818);
+	TMP818 = divInt(Cpu_159496[(c)- 1].Field4, ((NI) 8));
+	ptrsize_159625 = (NI)(TMP818);
 	nimln(210, "platform.nim");
 	if (o < 1 || o > 24) raiseIndexError();
 	LOC9 = 0;
-	LOC9 = tnl_160626; tnl_160626 = copyStringRC1(Os_160070[(o)- 1].Field5);
+	LOC9 = tnl_159626; tnl_159626 = copyStringRC1(Os_159070[(o)- 1].Field5);
 	if (LOC9) nimGCunrefNoCycle(LOC9);
 	popFrame();
 }
@@ -879,38 +879,38 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NU8, nametoos_160611)(NimStringDesc* name) {
+N_NIMCALL(NU8, nametoos_159611)(NimStringDesc* name) {
 	NU8 result;
 	nimfr("nameToOS", "platform.nim")
 {	result = 0;
 	{
-		NU8 i_161223;
-		NI res_161228;
-		i_161223 = 0;
+		NU8 i_160223;
+		NI res_160228;
+		i_160223 = 0;
 		nimln(1598, "system.nim");
-		res_161228 = ((NI) 1);
+		res_160228 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP819;
-				if (!(res_161228 <= ((NI) 24))) goto LA3;
+				if (!(res_160228 <= ((NI) 24))) goto LA3;
 				nimln(1600, "system.nim");
-				i_161223 = ((NU8)chckRange(res_161228, ((NU8) 0), ((NU8) 24)));
+				i_160223 = ((NU8)chckRange(res_160228, ((NU8) 0), ((NU8) 24)));
 				nimln(214, "platform.nim");
 				{
 					NI LOC6;
-					if (i_161223 < 1 || i_161223 > 24) raiseIndexError();
+					if (i_160223 < 1 || i_160223 > 24) raiseIndexError();
 					LOC6 = 0;
-					LOC6 = nsuCmpIgnoreStyle(name, Os_160070[(i_161223)- 1].Field0);
+					LOC6 = nsuCmpIgnoreStyle(name, Os_159070[(i_160223)- 1].Field0);
 					if (!(LOC6 == ((NI) 0))) goto LA7;
 					nimln(215, "platform.nim");
-					result = i_161223;
+					result = i_160223;
 					goto BeforeRet;
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP819 = addInt(res_161228, ((NI) 1));
-				res_161228 = (NI)(TMP819);
+				TMP819 = addInt(res_160228, ((NI) 1));
+				res_160228 = (NI)(TMP819);
 			} LA3: ;
 		}
 	}
@@ -921,38 +921,38 @@ N_NIMCALL(NU8, nametoos_160611)(NimStringDesc* name) {
 	return result;
 }
 
-N_NIMCALL(NU8, nametocpu_160617)(NimStringDesc* name) {
+N_NIMCALL(NU8, nametocpu_159617)(NimStringDesc* name) {
 	NU8 result;
 	nimfr("nameToCPU", "platform.nim")
 {	result = 0;
 	{
-		NU8 i_161423;
-		NI res_161428;
-		i_161423 = 0;
+		NU8 i_160423;
+		NI res_160428;
+		i_160423 = 0;
 		nimln(1598, "system.nim");
-		res_161428 = ((NI) 1);
+		res_160428 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP820;
-				if (!(res_161428 <= ((NI) 14))) goto LA3;
+				if (!(res_160428 <= ((NI) 14))) goto LA3;
 				nimln(1600, "system.nim");
-				i_161423 = ((NU8)chckRange(res_161428, ((NU8) 0), ((NU8) 14)));
+				i_160423 = ((NU8)chckRange(res_160428, ((NU8) 0), ((NU8) 14)));
 				nimln(220, "platform.nim");
 				{
 					NI LOC6;
-					if (i_161423 < 1 || i_161423 > 14) raiseIndexError();
+					if (i_160423 < 1 || i_160423 > 14) raiseIndexError();
 					LOC6 = 0;
-					LOC6 = nsuCmpIgnoreStyle(name, Cpu_160496[(i_161423)- 1].Field0);
+					LOC6 = nsuCmpIgnoreStyle(name, Cpu_159496[(i_160423)- 1].Field0);
 					if (!(LOC6 == ((NI) 0))) goto LA7;
 					nimln(221, "platform.nim");
-					result = i_161423;
+					result = i_160423;
 					goto BeforeRet;
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP820 = addInt(res_161428, ((NI) 1));
-				res_161428 = (NI)(TMP820);
+				TMP820 = addInt(res_160428, ((NI) 1));
+				res_160428 = (NI)(TMP820);
 			} LA3: ;
 		}
 	}
@@ -965,11 +965,11 @@ N_NIMCALL(NU8, nametocpu_160617)(NimStringDesc* name) {
 NIM_EXTERNC N_NOINLINE(void, compiler_platformInit)(void) {
 	nimfr("platform", "platform.nim")
 	nimln(224, "platform.nim");
-	hostcpu_160601 = nametocpu_160617(((NimStringDesc*) &TMP803));
+	hostcpu_159601 = nametocpu_159617(((NimStringDesc*) &TMP803));
 	nimln(225, "platform.nim");
-	hostos_160603 = nametoos_160611(((NimStringDesc*) &TMP821));
+	hostos_159603 = nametoos_159611(((NimStringDesc*) &TMP821));
 	nimln(227, "platform.nim");
-	settarget_160634(hostos_160603, hostcpu_160601);
+	settarget_159634(hostos_159603, hostcpu_159601);
 	popFrame();
 }
 

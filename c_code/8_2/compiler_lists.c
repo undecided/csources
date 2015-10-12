@@ -5,8 +5,8 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef struct Tlinkedlist130028 Tlinkedlist130028;
-typedef struct Tlistentry130022 Tlistentry130022;
+typedef struct Tlinkedlist129028 Tlinkedlist129028;
+typedef struct Tlistentry129022 Tlistentry129022;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -25,12 +25,12 @@ typedef struct Tavlnode28608 Tavlnode28608;
 typedef struct Tgcstat48614 Tgcstat48614;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tstrentry130024 Tstrentry130024;
+typedef struct Tstrentry129024 Tstrentry129024;
 typedef struct Tbasechunk27838 Tbasechunk27838;
 typedef struct Tfreecell27830 Tfreecell27830;
-struct  Tlinkedlist130028  {
-Tlistentry130022* head;
-Tlistentry130022* tail;
+struct  Tlinkedlist129028  {
+Tlistentry129022* head;
+Tlistentry129022* tail;
 NI counter;
 };
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
@@ -48,10 +48,10 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Tlistentry130022  {
+struct  Tlistentry129022  {
   TNimObject Sup;
-Tlistentry130022* prev;
-Tlistentry130022* next;
+Tlistentry129022* prev;
+Tlistentry129022* next;
 };
 struct  Tcell46747  {
 NI refcount;
@@ -125,11 +125,11 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-struct  Tstrentry130024  {
-  Tlistentry130022 Sup;
+struct  Tstrentry129024  {
+  Tlistentry129022 Sup;
 NimStringDesc* data;
 };
-typedef N_NIMCALL_PTR(NIM_BOOL, Tcompareproc130030) (Tlistentry130022* entry, void* closure);
+typedef N_NIMCALL_PTR(NIM_BOOL, Tcompareproc129030) (Tlistentry129022* entry, void* closure);
 typedef NI TY27820[8];
 struct  Tpagedesc46755  {
 Tpagedesc46755* next;
@@ -178,12 +178,12 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-N_NIMCALL(void, initlinkedlist_130043)(Tlinkedlist130028* list);
+N_NIMCALL(void, initlinkedlist_129043)(Tlinkedlist129028* list);
 N_NIMCALL(void, unsureAsgnRef)(void** dest, void* src);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, append_130053)(Tlinkedlist130028* list, Tlistentry130022* entry);
+N_NIMCALL(void, append_129053)(Tlinkedlist129028* list, Tlistentry129022* entry);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
@@ -196,39 +196,39 @@ static N_INLINE(void, decref_52204)(Tcell46747* c);
 static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
-N_NIMCALL(NIM_BOOL, contains_130219)(Tlinkedlist130028* list, NimStringDesc* data);
+N_NIMCALL(NIM_BOOL, contains_129219)(Tlinkedlist129028* list, NimStringDesc* data);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
 N_NIMCALL(void, TMP468)(void* p, NI op);
 N_NIMCALL(void, chckObj)(TNimType* obj, TNimType* subclass);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
-N_NIMCALL(Tstrentry130024*, newstrentry_130250)(NimStringDesc* data);
+N_NIMCALL(Tstrentry129024*, newstrentry_129250)(NimStringDesc* data);
 N_NIMCALL(void, TMP469)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
-N_NIMCALL(void, appendstr_130268)(Tlinkedlist130028* list, NimStringDesc* data);
-N_NIMCALL(NIM_BOOL, includestr_130279)(Tlinkedlist130028* list, NimStringDesc* data);
-N_NIMCALL(void, prepend_130291)(Tlinkedlist130028* list, Tlistentry130022* entry);
-N_NIMCALL(void, prependstr_130419)(Tlinkedlist130028* list, NimStringDesc* data);
-N_NIMCALL(void, insertbefore_130430)(Tlinkedlist130028* list, Tlistentry130022* pos, Tlistentry130022* entry);
-N_NIMCALL(void, remove_130639)(Tlinkedlist130028* list, Tlistentry130022* entry);
+N_NIMCALL(void, appendstr_129268)(Tlinkedlist129028* list, NimStringDesc* data);
+N_NIMCALL(NIM_BOOL, includestr_129279)(Tlinkedlist129028* list, NimStringDesc* data);
+N_NIMCALL(void, prepend_129291)(Tlinkedlist129028* list, Tlistentry129022* entry);
+N_NIMCALL(void, prependstr_129419)(Tlinkedlist129028* list, NimStringDesc* data);
+N_NIMCALL(void, insertbefore_129430)(Tlinkedlist129028* list, Tlistentry129022* pos, Tlistentry129022* entry);
+N_NIMCALL(void, remove_129639)(Tlinkedlist129028* list, Tlistentry129022* entry);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(void, bringtofront_130705)(Tlinkedlist130028* list, Tlistentry130022* entry);
-N_NIMCALL(void, excludepath_130807)(Tlinkedlist130028* list, NimStringDesc* data);
+N_NIMCALL(void, bringtofront_129705)(Tlinkedlist129028* list, Tlistentry129022* entry);
+N_NIMCALL(void, excludepath_129807)(Tlinkedlist129028* list, NimStringDesc* data);
 N_NIMCALL(NI, noscmpPaths)(NimStringDesc* patha, NimStringDesc* pathb);
-N_NIMCALL(Tlistentry130022*, find_130839)(Tlinkedlist130028* list, Tcompareproc130030 fn, void* closure);
+N_NIMCALL(Tlistentry129022*, find_129839)(Tlinkedlist129028* list, Tcompareproc129030 fn, void* closure);
 STRING_LITERAL(TMP466, "list.tail.next == nil ", 22);
 STRING_LITERAL(TMP471, "list.head.prev == nil ", 22);
 STRING_LITERAL(TMP472, "not (pos == nil) ", 17);
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI130022; /* TListEntry */
-TNimType NTI130020; /* PListEntry */
-TNimType NTI130024; /* TStrEntry */
+TNimType NTI129022; /* TListEntry */
+TNimType NTI129020; /* PListEntry */
+TNimType NTI129024; /* TStrEntry */
 extern TNimType NTI149; /* string */
-TNimType NTI130026; /* PStrEntry */
-TNimType NTI130028; /* TLinkedList */
+TNimType NTI129026; /* PStrEntry */
+TNimType NTI129028; /* TLinkedList */
 extern TNimType NTI108; /* int */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -258,7 +258,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void, initlinkedlist_130043)(Tlinkedlist130028* list) {
+N_NIMCALL(void, initlinkedlist_129043)(Tlinkedlist129028* list) {
 	nimfr("initLinkedList", "lists.nim")
 	nimln(29, "lists.nim");
 	(*list).counter = ((NI) 0);
@@ -400,7 +400,7 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, append_130053)(Tlinkedlist130028* list, Tlistentry130022* entry) {
+N_NIMCALL(void, append_129053)(Tlinkedlist129028* list, Tlistentry129022* entry) {
 	NI TMP465;
 	nimfr("append", "lists.nim")
 	nimln(34, "lists.nim");
@@ -434,8 +434,8 @@ N_NIMCALL(void, append_130053)(Tlinkedlist130028* list, Tlistentry130022* entry)
 	popFrame();
 }
 N_NIMCALL(void, TMP468)(void* p, NI op) {
-	Tlistentry130022* a;
-	a = (Tlistentry130022*)p;
+	Tlistentry129022* a;
+	a = (Tlistentry129022*)p;
 	nimGCvisit((void*)(*a).prev, op);
 	nimGCvisit((void*)(*a).next, op);
 }
@@ -476,9 +476,9 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, contains_130219)(Tlinkedlist130028* list, NimStringDesc* data) {
+N_NIMCALL(NIM_BOOL, contains_129219)(Tlinkedlist129028* list, NimStringDesc* data) {
 	NIM_BOOL result;
-	Tlistentry130022* it;
+	Tlistentry129022* it;
 	nimfr("contains", "lists.nim")
 {	result = 0;
 	nimln(44, "lists.nim");
@@ -489,8 +489,8 @@ N_NIMCALL(NIM_BOOL, contains_130219)(Tlinkedlist130028* list, NimStringDesc* dat
 			if (!!((it == NIM_NIL))) goto LA2;
 			nimln(46, "lists.nim");
 			{
-				if (it) chckObj((*it).Sup.m_type, (&NTI130024));
-				if (!eqStrings((*((Tstrentry130024*) (it))).data, data)) goto LA5;
+				if (it) chckObj((*it).Sup.m_type, (&NTI129024));
+				if (!eqStrings((*((Tstrentry129024*) (it))).data, data)) goto LA5;
 				nimln(47, "lists.nim");
 				result = NIM_TRUE;
 				goto BeforeRet;
@@ -505,8 +505,8 @@ N_NIMCALL(NIM_BOOL, contains_130219)(Tlinkedlist130028* list, NimStringDesc* dat
 	return result;
 }
 N_NIMCALL(void, TMP469)(void* p, NI op) {
-	Tstrentry130024* a;
-	a = (Tstrentry130024*)p;
+	Tstrentry129024* a;
+	a = (Tstrentry129024*)p;
 	nimGCvisit((void*)(*a).Sup.prev, op);
 	nimGCvisit((void*)(*a).Sup.next, op);
 	nimGCvisit((void*)(*a).data, op);
@@ -530,14 +530,14 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(Tstrentry130024*, newstrentry_130250)(NimStringDesc* data) {
-	Tstrentry130024* result;
+N_NIMCALL(Tstrentry129024*, newstrentry_129250)(NimStringDesc* data) {
+	Tstrentry129024* result;
 	NimStringDesc* LOC1;
 	nimfr("newStrEntry", "lists.nim")
 	result = 0;
 	nimln(51, "lists.nim");
-	result = (Tstrentry130024*) newObj((&NTI130026), sizeof(Tstrentry130024));
-	(*result).Sup.Sup.m_type = (&NTI130024);
+	result = (Tstrentry129024*) newObj((&NTI129026), sizeof(Tstrentry129024));
+	(*result).Sup.Sup.m_type = (&NTI129024);
 	nimln(52, "lists.nim");
 	LOC1 = 0;
 	LOC1 = (*result).data; (*result).data = copyStringRC1(data);
@@ -546,20 +546,20 @@ N_NIMCALL(Tstrentry130024*, newstrentry_130250)(NimStringDesc* data) {
 	return result;
 }
 
-N_NIMCALL(void, appendstr_130268)(Tlinkedlist130028* list, NimStringDesc* data) {
-	Tstrentry130024* LOC1;
-	Tlistentry130022* LOC2;
+N_NIMCALL(void, appendstr_129268)(Tlinkedlist129028* list, NimStringDesc* data) {
+	Tstrentry129024* LOC1;
+	Tlistentry129022* LOC2;
 	nimfr("appendStr", "lists.nim")
 	nimln(55, "lists.nim");
 	LOC1 = 0;
-	LOC1 = newstrentry_130250(data);
+	LOC1 = newstrentry_129250(data);
 	LOC2 = 0;
 	LOC2 = &LOC1->Sup;
-	append_130053(list, LOC2);
+	append_129053(list, LOC2);
 	popFrame();
 }
 
-N_NIMCALL(NIM_BOOL, includestr_130279)(Tlinkedlist130028* list, NimStringDesc* data) {
+N_NIMCALL(NIM_BOOL, includestr_129279)(Tlinkedlist129028* list, NimStringDesc* data) {
 	NIM_BOOL result;
 	nimfr("includeStr", "lists.nim")
 {	result = 0;
@@ -567,20 +567,20 @@ N_NIMCALL(NIM_BOOL, includestr_130279)(Tlinkedlist130028* list, NimStringDesc* d
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
-		LOC3 = contains_130219((&(*list)), data);
+		LOC3 = contains_129219((&(*list)), data);
 		if (!LOC3) goto LA4;
 		result = NIM_TRUE;
 		goto BeforeRet;
 	}
 	LA4: ;
 	nimln(59, "lists.nim");
-	appendstr_130268(list, data);
+	appendstr_129268(list, data);
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, prepend_130291)(Tlinkedlist130028* list, Tlistentry130022* entry) {
+N_NIMCALL(void, prepend_129291)(Tlinkedlist129028* list, Tlistentry129022* entry) {
 	NI TMP470;
 	nimfr("prepend", "lists.nim")
 	nimln(62, "lists.nim");
@@ -614,20 +614,20 @@ N_NIMCALL(void, prepend_130291)(Tlinkedlist130028* list, Tlistentry130022* entry
 	popFrame();
 }
 
-N_NIMCALL(void, prependstr_130419)(Tlinkedlist130028* list, NimStringDesc* data) {
-	Tstrentry130024* LOC1;
-	Tlistentry130022* LOC2;
+N_NIMCALL(void, prependstr_129419)(Tlinkedlist129028* list, NimStringDesc* data) {
+	Tstrentry129024* LOC1;
+	Tlistentry129022* LOC2;
 	nimfr("prependStr", "lists.nim")
 	nimln(72, "lists.nim");
 	LOC1 = 0;
-	LOC1 = newstrentry_130250(data);
+	LOC1 = newstrentry_129250(data);
 	LOC2 = 0;
 	LOC2 = &LOC1->Sup;
-	prepend_130291(list, LOC2);
+	prepend_129291(list, LOC2);
 	popFrame();
 }
 
-N_NIMCALL(void, insertbefore_130430)(Tlinkedlist130028* list, Tlistentry130022* pos, Tlistentry130022* entry) {
+N_NIMCALL(void, insertbefore_129430)(Tlinkedlist129028* list, Tlistentry129022* pos, Tlistentry129022* entry) {
 	nimfr("insertBefore", "lists.nim")
 	nimln(75, "lists.nim");
 	{
@@ -639,7 +639,7 @@ N_NIMCALL(void, insertbefore_130430)(Tlinkedlist130028* list, Tlistentry130022* 
 	{
 		if (!(pos == (*list).head)) goto LA7;
 		nimln(77, "lists.nim");
-		prepend_130291(list, entry);
+		prepend_129291(list, entry);
 	}
 	goto LA5;
 	LA7: ;
@@ -685,7 +685,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, remove_130639)(Tlinkedlist130028* list, Tlistentry130022* entry) {
+N_NIMCALL(void, remove_129639)(Tlinkedlist129028* list, Tlistentry129022* entry) {
 	NI TMP474;
 	nimfr("remove", "lists.nim")
 	nimln(86, "lists.nim");
@@ -720,36 +720,36 @@ N_NIMCALL(void, remove_130639)(Tlinkedlist130028* list, Tlistentry130022* entry)
 	popFrame();
 }
 
-N_NIMCALL(void, bringtofront_130705)(Tlinkedlist130028* list, Tlistentry130022* entry) {
+N_NIMCALL(void, bringtofront_129705)(Tlinkedlist129028* list, Tlistentry129022* entry) {
 	nimfr("bringToFront", "lists.nim")
 	nimln(96, "lists.nim");
-	remove_130639(list, entry);
+	remove_129639(list, entry);
 	nimln(97, "lists.nim");
-	prepend_130291(list, entry);
+	prepend_129291(list, entry);
 	popFrame();
 }
 
-N_NIMCALL(void, excludepath_130807)(Tlinkedlist130028* list, NimStringDesc* data) {
-	Tlistentry130022* it;
+N_NIMCALL(void, excludepath_129807)(Tlinkedlist129028* list, NimStringDesc* data) {
+	Tlistentry129022* it;
 	nimfr("excludePath", "lists.nim")
 	nimln(108, "lists.nim");
 	it = (*list).head;
 	{
 		nimln(109, "lists.nim");
 		while (1) {
-			Tlistentry130022* nxt;
+			Tlistentry129022* nxt;
 			if (!!((it == NIM_NIL))) goto LA2;
 			nimln(110, "lists.nim");
 			nxt = (*it).next;
 			nimln(111, "lists.nim");
 			{
 				NI LOC5;
-				if (it) chckObj((*it).Sup.m_type, (&NTI130024));
+				if (it) chckObj((*it).Sup.m_type, (&NTI129024));
 				LOC5 = 0;
-				LOC5 = noscmpPaths((*((Tstrentry130024*) (it))).data, data);
+				LOC5 = noscmpPaths((*((Tstrentry129024*) (it))).data, data);
 				if (!(LOC5 == ((NI) 0))) goto LA6;
 				nimln(112, "lists.nim");
-				remove_130639(list, it);
+				remove_129639(list, it);
 			}
 			LA6: ;
 			nimln(113, "lists.nim");
@@ -759,8 +759,8 @@ N_NIMCALL(void, excludepath_130807)(Tlinkedlist130028* list, NimStringDesc* data
 	popFrame();
 }
 
-N_NIMCALL(Tlistentry130022*, find_130839)(Tlinkedlist130028* list, Tcompareproc130030 fn, void* closure) {
-	Tlistentry130022* result;
+N_NIMCALL(Tlistentry129022*, find_129839)(Tlinkedlist129028* list, Tcompareproc129030 fn, void* closure) {
+	Tlistentry129022* result;
 	nimfr("find", "lists.nim")
 {	result = 0;
 	nimln(116, "lists.nim");
@@ -795,56 +795,56 @@ NIM_EXTERNC N_NOINLINE(void, compiler_listsDatInit)(void) {
 static TNimNode* TMP467[2];
 static TNimNode* TMP4201[3];
 static TNimNode TMP463[8];
-NTI130022.size = sizeof(Tlistentry130022);
-NTI130022.kind = 17;
-NTI130022.base = (&NTI3411);
+NTI129022.size = sizeof(Tlistentry129022);
+NTI129022.kind = 17;
+NTI129022.base = (&NTI3411);
 TMP467[0] = &TMP463[1];
-NTI130020.size = sizeof(Tlistentry130022*);
-NTI130020.kind = 22;
-NTI130020.base = (&NTI130022);
-NTI130020.marker = TMP468;
+NTI129020.size = sizeof(Tlistentry129022*);
+NTI129020.kind = 22;
+NTI129020.base = (&NTI129022);
+NTI129020.marker = TMP468;
 TMP463[1].kind = 1;
-TMP463[1].offset = offsetof(Tlistentry130022, prev);
-TMP463[1].typ = (&NTI130020);
+TMP463[1].offset = offsetof(Tlistentry129022, prev);
+TMP463[1].typ = (&NTI129020);
 TMP463[1].name = "prev";
 TMP467[1] = &TMP463[2];
 TMP463[2].kind = 1;
-TMP463[2].offset = offsetof(Tlistentry130022, next);
-TMP463[2].typ = (&NTI130020);
+TMP463[2].offset = offsetof(Tlistentry129022, next);
+TMP463[2].typ = (&NTI129020);
 TMP463[2].name = "next";
 TMP463[0].len = 2; TMP463[0].kind = 2; TMP463[0].sons = &TMP467[0];
-NTI130022.node = &TMP463[0];
-NTI130024.size = sizeof(Tstrentry130024);
-NTI130024.kind = 17;
-NTI130024.base = (&NTI130022);
+NTI129022.node = &TMP463[0];
+NTI129024.size = sizeof(Tstrentry129024);
+NTI129024.kind = 17;
+NTI129024.base = (&NTI129022);
 TMP463[3].kind = 1;
-TMP463[3].offset = offsetof(Tstrentry130024, data);
+TMP463[3].offset = offsetof(Tstrentry129024, data);
 TMP463[3].typ = (&NTI149);
 TMP463[3].name = "data";
-NTI130024.node = &TMP463[3];
-NTI130026.size = sizeof(Tstrentry130024*);
-NTI130026.kind = 22;
-NTI130026.base = (&NTI130024);
-NTI130026.marker = TMP469;
-NTI130028.size = sizeof(Tlinkedlist130028);
-NTI130028.kind = 18;
-NTI130028.base = 0;
+NTI129024.node = &TMP463[3];
+NTI129026.size = sizeof(Tstrentry129024*);
+NTI129026.kind = 22;
+NTI129026.base = (&NTI129024);
+NTI129026.marker = TMP469;
+NTI129028.size = sizeof(Tlinkedlist129028);
+NTI129028.kind = 18;
+NTI129028.base = 0;
 TMP4201[0] = &TMP463[5];
 TMP463[5].kind = 1;
-TMP463[5].offset = offsetof(Tlinkedlist130028, head);
-TMP463[5].typ = (&NTI130020);
+TMP463[5].offset = offsetof(Tlinkedlist129028, head);
+TMP463[5].typ = (&NTI129020);
 TMP463[5].name = "head";
 TMP4201[1] = &TMP463[6];
 TMP463[6].kind = 1;
-TMP463[6].offset = offsetof(Tlinkedlist130028, tail);
-TMP463[6].typ = (&NTI130020);
+TMP463[6].offset = offsetof(Tlinkedlist129028, tail);
+TMP463[6].typ = (&NTI129020);
 TMP463[6].name = "tail";
 TMP4201[2] = &TMP463[7];
 TMP463[7].kind = 1;
-TMP463[7].offset = offsetof(Tlinkedlist130028, counter);
+TMP463[7].offset = offsetof(Tlinkedlist129028, counter);
 TMP463[7].typ = (&NTI108);
 TMP463[7].name = "counter";
 TMP463[4].len = 3; TMP463[4].kind = 2; TMP463[4].sons = &TMP4201[0];
-NTI130028.node = &TMP463[4];
+NTI129028.node = &TMP463[4];
 }
 

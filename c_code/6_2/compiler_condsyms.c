@@ -8,10 +8,10 @@
 typedef struct Stringtableobj134012 Stringtableobj134012;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tinfocpu159479 Tinfocpu159479;
-typedef struct Tinfoos159049 Tinfoos159049;
-typedef struct Tident167021 Tident167021;
-typedef struct Tidobj167015 Tidobj167015;
+typedef struct Tinfocpu158479 Tinfocpu158479;
+typedef struct Tinfoos158049 Tinfoos158049;
+typedef struct Tident166021 Tident166021;
+typedef struct Tidobj166015 Tidobj166015;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -40,15 +40,15 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-struct Tinfocpu159479 {
+struct Tinfocpu158479 {
 NimStringDesc* Field0;
 NI Field1;
 NU8 Field2;
 NI Field3;
 NI Field4;
 };
-typedef Tinfocpu159479 TY159497[14];
-struct Tinfoos159049 {
+typedef Tinfocpu158479 TY158497[14];
+struct Tinfoos158049 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 NimStringDesc* Field2;
@@ -63,7 +63,7 @@ NimStringDesc* Field10;
 NimStringDesc* Field11;
 NU8 Field12;
 };
-typedef Tinfoos159049 TY159071[24];
+typedef Tinfoos158049 TY158071[24];
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -79,14 +79,14 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Tidobj167015  {
+struct  Tidobj166015  {
   TNimObject Sup;
 NI id;
 };
-struct  Tident167021  {
-  Tidobj167015 Sup;
+struct  Tident166021  {
+  Tidobj166015 Sup;
 NimStringDesc* s;
-Tident167021* next;
+Tident166021* next;
 NI h;
 };
 struct  Stringtableobj134012  {
@@ -215,13 +215,13 @@ struct Keyvaluepairseq134010 {
   TGenericSeq Sup;
   TY103553 data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(void, definesymbol_168013)(NimStringDesc* symbol);
+N_NIMCALL(void, definesymbol_167013)(NimStringDesc* symbol);
 N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDesc* val);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, undefsymbol_168022)(NimStringDesc* symbol);
-N_NIMCALL(NIM_BOOL, isdefined_168031)(NimStringDesc* symbol);
+N_NIMCALL(void, undefsymbol_167022)(NimStringDesc* symbol);
+N_NIMCALL(NIM_BOOL, isdefined_167031)(NimStringDesc* symbol);
 N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj134012* t, NimStringDesc* key);
 N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj134012* t, NimStringDesc* key);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b);
@@ -229,11 +229,11 @@ N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
 N_NOINLINE(void, raiseIndexError)(void);
 N_NIMCALL(NimStringDesc*, nsuNormalize)(NimStringDesc* s);
 N_NIMCALL(NI, hashString)(NimStringDesc* s);
-N_NIMCALL(NIM_BOOL, isdefined_168167)(Tident167021* symbol);
-N_NIMCALL(NI, countdefinedsymbols_168211)(void);
+N_NIMCALL(NIM_BOOL, isdefined_167167)(Tident166021* symbol);
+N_NIMCALL(NI, countdefinedsymbols_167211)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-N_NIMCALL(void, initdefines_168254)(void);
+N_NIMCALL(void, initdefines_167254)(void);
 N_NIMCALL(Stringtableobj134012*, nstnewStringTable)(NU8 mode);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
 static N_INLINE(void, incref_52622)(Tcell46747* c);
@@ -246,8 +246,8 @@ static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
 STRING_LITERAL(TMP1317, "true", 4);
 STRING_LITERAL(TMP1318, "false", 5);
-extern NIM_CONST TY159497 Cpu_159496;
-extern NIM_CONST TY159071 Os_159070;
+extern NIM_CONST TY158497 Cpu_158496;
+extern NIM_CONST TY158071 Os_158070;
 STRING_LITERAL(TMP1324, "x86", 3);
 STRING_LITERAL(TMP1325, "itanium", 7);
 STRING_LITERAL(TMP1326, "x8664", 5);
@@ -281,10 +281,10 @@ STRING_LITERAL(TMP1355, "nimparsebiggestfloatmagic", 25);
 STRING_LITERAL(TMP1356, "nimalias", 8);
 STRING_LITERAL(TMP1357, "nimlocks", 8);
 STRING_LITERAL(TMP1358, "nimnode", 7);
-Stringtableobj134012* gsymbols_168004;
+Stringtableobj134012* gsymbols_167004;
 extern TFrame* frameptr_17042;
-extern NU8 targetcpu_159600;
-extern NU8 targetos_159602;
+extern NU8 targetcpu_158600;
+extern NU8 targetos_158602;
 extern Tgcheap48616 gch_48644;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -314,17 +314,17 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(void, definesymbol_168013)(NimStringDesc* symbol) {
+N_NIMCALL(void, definesymbol_167013)(NimStringDesc* symbol) {
 	nimfr("defineSymbol", "condsyms.nim")
 	nimln(23, "condsyms.nim");
-	nstPut(gsymbols_168004, symbol, ((NimStringDesc*) &TMP1317));
+	nstPut(gsymbols_167004, symbol, ((NimStringDesc*) &TMP1317));
 	popFrame();
 }
 
-N_NIMCALL(void, undefsymbol_168022)(NimStringDesc* symbol) {
+N_NIMCALL(void, undefsymbol_167022)(NimStringDesc* symbol) {
 	nimfr("undefSymbol", "condsyms.nim")
 	nimln(26, "condsyms.nim");
-	nstPut(gsymbols_168004, symbol, ((NimStringDesc*) &TMP1318));
+	nstPut(gsymbols_167004, symbol, ((NimStringDesc*) &TMP1318));
 	popFrame();
 }
 
@@ -364,7 +364,7 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a, NimStringDesc* b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, isdefined_168031)(NimStringDesc* symbol) {
+N_NIMCALL(NIM_BOOL, isdefined_167031)(NimStringDesc* symbol) {
 	NIM_BOOL result;
 	nimfr("isDefined", "condsyms.nim")
 	result = 0;
@@ -373,11 +373,11 @@ N_NIMCALL(NIM_BOOL, isdefined_168031)(NimStringDesc* symbol) {
 		NIM_BOOL LOC3;
 		NimStringDesc* LOC6;
 		LOC3 = 0;
-		LOC3 = nsthasKey(gsymbols_168004, symbol);
+		LOC3 = nsthasKey(gsymbols_167004, symbol);
 		if (!LOC3) goto LA4;
 		nimln(30, "condsyms.nim");
 		LOC6 = 0;
-		LOC6 = nstGet(gsymbols_168004, symbol);
+		LOC6 = nstGet(gsymbols_167004, symbol);
 		result = !(eqStrings(LOC6, ((NimStringDesc*) &TMP1318)));
 	}
 	goto LA1;
@@ -385,9 +385,9 @@ N_NIMCALL(NIM_BOOL, isdefined_168031)(NimStringDesc* symbol) {
 	{
 		NI LOC8;
 		nimln(31, "condsyms.nim");
-		if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
+		if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
 		LOC8 = 0;
-		LOC8 = nsuCmpIgnoreStyle(symbol, Cpu_159496[(targetcpu_159600)- 1].Field0);
+		LOC8 = nsuCmpIgnoreStyle(symbol, Cpu_158496[(targetcpu_158600)- 1].Field0);
 		if (!(LOC8 == ((NI) 0))) goto LA9;
 		nimln(32, "condsyms.nim");
 		result = NIM_TRUE;
@@ -397,9 +397,9 @@ N_NIMCALL(NIM_BOOL, isdefined_168031)(NimStringDesc* symbol) {
 	{
 		NI LOC12;
 		nimln(33, "condsyms.nim");
-		if (targetos_159602 < 1 || targetos_159602 > 24) raiseIndexError();
+		if (targetos_158602 < 1 || targetos_158602 > 24) raiseIndexError();
 		LOC12 = 0;
-		LOC12 = nsuCmpIgnoreStyle(symbol, Os_159070[(targetos_159602)- 1].Field0);
+		LOC12 = nsuCmpIgnoreStyle(symbol, Os_158070[(targetos_158602)- 1].Field0);
 		if (!(LOC12 == ((NI) 0))) goto LA13;
 		nimln(34, "condsyms.nim");
 		result = NIM_TRUE;
@@ -464,110 +464,110 @@ break;
 		LA17: ;
 		{
 			nimln(37, "condsyms.nim");
-			result = (targetcpu_159600 == ((NU8) 1));
+			result = (targetcpu_158600 == ((NU8) 1));
 		}
 		goto LA35;
 		LA18: ;
 		{
 			nimln(38, "condsyms.nim");
-			result = (targetcpu_159600 == ((NU8) 8));
+			result = (targetcpu_158600 == ((NU8) 8));
 		}
 		goto LA35;
 		LA19: ;
 		{
 			nimln(39, "condsyms.nim");
-			result = (targetcpu_159600 == ((NU8) 9));
+			result = (targetcpu_158600 == ((NU8) 9));
 		}
 		goto LA35;
 		LA20: ;
 		{
 			nimln(41, "condsyms.nim");
-			result = ((3768304 &(1<<((targetos_159602)&31)))!=0);
+			result = ((3768304 &(1<<((targetos_158602)&31)))!=0);
 		}
 		goto LA35;
 		LA21: ;
 		{
 			nimln(46, "condsyms.nim");
-			result = ((3584 &(1<<((targetos_159602)&31)))!=0);
+			result = ((3584 &(1<<((targetos_158602)&31)))!=0);
 		}
 		goto LA35;
 		LA22: ;
 		{
 			nimln(48, "condsyms.nim");
-			if (targetos_159602 < 1 || targetos_159602 > 24) raiseIndexError();
-			result = ((Os_159070[(targetos_159602)- 1].Field12 &(1<<((((NU8) 3))&7)))!=0);
+			if (targetos_158602 < 1 || targetos_158602 > 24) raiseIndexError();
+			result = ((Os_158070[(targetos_158602)- 1].Field12 &(1<<((((NU8) 3))&7)))!=0);
 		}
 		goto LA35;
 		LA23: ;
 		{
 			nimln(49, "condsyms.nim");
-			result = (targetos_159602 == ((NU8) 1));
+			result = (targetos_158602 == ((NU8) 1));
 		}
 		goto LA35;
 		LA24: ;
 		{
 			nimln(50, "condsyms.nim");
-			result = (targetos_159602 == ((NU8) 2));
+			result = (targetos_158602 == ((NU8) 2));
 		}
 		goto LA35;
 		LA25: ;
 		{
 			nimln(51, "condsyms.nim");
-			result = ((786432 &(1<<((targetos_159602)&31)))!=0);
+			result = ((786432 &(1<<((targetos_158602)&31)))!=0);
 		}
 		goto LA35;
 		LA26: ;
 		{
 			nimln(52, "condsyms.nim");
-			result = (targetos_159602 == ((NU8) 7));
+			result = (targetos_158602 == ((NU8) 7));
 		}
 		goto LA35;
 		LA27: ;
 		{
 			nimln(53, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field2 == ((NU8) 0));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field2 == ((NU8) 0));
 		}
 		goto LA35;
 		LA28: ;
 		{
 			nimln(54, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field2 == ((NU8) 1));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field2 == ((NU8) 1));
 		}
 		goto LA35;
 		LA29: ;
 		{
 			nimln(55, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field4 == ((NI) 8));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field4 == ((NI) 8));
 		}
 		goto LA35;
 		LA30: ;
 		{
 			nimln(56, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field4 == ((NI) 16));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field4 == ((NI) 16));
 		}
 		goto LA35;
 		LA31: ;
 		{
 			nimln(57, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field4 == ((NI) 32));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field4 == ((NI) 32));
 		}
 		goto LA35;
 		LA32: ;
 		{
 			nimln(58, "condsyms.nim");
-			if (targetcpu_159600 < 1 || targetcpu_159600 > 14) raiseIndexError();
-			result = (Cpu_159496[(targetcpu_159600)- 1].Field4 == ((NI) 64));
+			if (targetcpu_158600 < 1 || targetcpu_158600 > 14) raiseIndexError();
+			result = (Cpu_158496[(targetcpu_158600)- 1].Field4 == ((NI) 64));
 		}
 		goto LA35;
 		LA33: ;
 		{
 			nimln(60, "condsyms.nim");
-			result = ((528000 &(1<<((targetos_159602)&31)))!=0);
+			result = ((528000 &(1<<((targetos_158602)&31)))!=0);
 		}
 		goto LA35;
 		LA34: ;
@@ -580,12 +580,12 @@ break;
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, isdefined_168167)(Tident167021* symbol) {
+N_NIMCALL(NIM_BOOL, isdefined_167167)(Tident166021* symbol) {
 	NIM_BOOL result;
 	nimfr("isDefined", "condsyms.nim")
 	result = 0;
 	nimln(63, "condsyms.nim");
-	result = isdefined_168031((*symbol).s);
+	result = isdefined_167031((*symbol).s);
 	popFrame();
 	return result;
 }
@@ -610,47 +610,47 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, countdefinedsymbols_168211)(void) {
+N_NIMCALL(NI, countdefinedsymbols_167211)(void) {
 	NI result;
 	nimfr("countDefinedSymbols", "condsyms.nim")
 	result = 0;
 	nimln(70, "condsyms.nim");
 	result = ((NI) 0);
 	{
-		NimStringDesc* key_168214;
-		NimStringDesc* val_168215;
-		key_168214 = 0;
-		val_168215 = 0;
+		NimStringDesc* key_167214;
+		NimStringDesc* val_167215;
+		key_167214 = 0;
+		val_167215 = 0;
 		{
-			NI h_168229;
-			NI HEX3Atmp_168231;
-			NI res_168233;
-			h_168229 = 0;
-			HEX3Atmp_168231 = 0;
+			NI h_167229;
+			NI HEX3Atmp_167231;
+			NI res_167233;
+			h_167229 = 0;
+			HEX3Atmp_167231 = 0;
 			nimln(43, "strtabs.nim");
-			HEX3Atmp_168231 = ((*gsymbols_168004).data ? ((*gsymbols_168004).data->Sup.len-1) : -1);
+			HEX3Atmp_167231 = ((*gsymbols_167004).data ? ((*gsymbols_167004).data->Sup.len-1) : -1);
 			nimln(1598, "system.nim");
-			res_168233 = ((NI) 0);
+			res_167233 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					NI TMP1344;
-					if (!(res_168233 <= HEX3Atmp_168231)) goto LA4;
+					if (!(res_167233 <= HEX3Atmp_167231)) goto LA4;
 					nimln(1600, "system.nim");
-					h_168229 = res_168233;
+					h_167229 = res_167233;
 					nimln(44, "strtabs.nim");
 					{
-						if ((NU)(h_168229) >= (NU)((*gsymbols_168004).data->Sup.len)) raiseIndexError();
-						if (!!((*gsymbols_168004).data->data[h_168229].Field0 == 0)) goto LA7;
+						if ((NU)(h_167229) >= (NU)((*gsymbols_167004).data->Sup.len)) raiseIndexError();
+						if (!!((*gsymbols_167004).data->data[h_167229].Field0 == 0)) goto LA7;
 						nimln(45, "strtabs.nim");
-						if ((NU)(h_168229) >= (NU)((*gsymbols_168004).data->Sup.len)) raiseIndexError();
-						key_168214 = (*gsymbols_168004).data->data[h_168229].Field0;
-						if ((NU)(h_168229) >= (NU)((*gsymbols_168004).data->Sup.len)) raiseIndexError();
-						val_168215 = (*gsymbols_168004).data->data[h_168229].Field1;
+						if ((NU)(h_167229) >= (NU)((*gsymbols_167004).data->Sup.len)) raiseIndexError();
+						key_167214 = (*gsymbols_167004).data->data[h_167229].Field0;
+						if ((NU)(h_167229) >= (NU)((*gsymbols_167004).data->Sup.len)) raiseIndexError();
+						val_167215 = (*gsymbols_167004).data->data[h_167229].Field1;
 						nimln(72, "condsyms.nim");
 						{
 							NI TMP1343;
-							if (!!(eqStrings(val_168215, ((NimStringDesc*) &TMP1318)))) goto LA11;
+							if (!!(eqStrings(val_167215, ((NimStringDesc*) &TMP1318)))) goto LA11;
 							TMP1343 = addInt(result, ((NI) 1));
 							result = (NI)(TMP1343);
 						}
@@ -658,8 +658,8 @@ N_NIMCALL(NI, countdefinedsymbols_168211)(void) {
 					}
 					LA7: ;
 					nimln(1619, "system.nim");
-					TMP1344 = addInt(res_168233, ((NI) 1));
-					res_168233 = (NI)(TMP1344);
+					TMP1344 = addInt(res_167233, ((NI) 1));
+					res_167233 = (NI)(TMP1344);
 				} LA4: ;
 			}
 		}
@@ -779,38 +779,38 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(void, initdefines_168254)(void) {
+N_NIMCALL(void, initdefines_167254)(void) {
 	nimfr("initDefines", "condsyms.nim")
 	nimln(75, "condsyms.nim");
-	asgnRef((void**) (&gsymbols_168004), nstnewStringTable(((NU8) 2)));
+	asgnRef((void**) (&gsymbols_167004), nstnewStringTable(((NU8) 2)));
 	nimln(76, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1345));
+	definesymbol_167013(((NimStringDesc*) &TMP1345));
 	nimln(78, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1346));
+	definesymbol_167013(((NimStringDesc*) &TMP1346));
 	nimln(79, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1347));
+	definesymbol_167013(((NimStringDesc*) &TMP1347));
 	nimln(80, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1348));
+	definesymbol_167013(((NimStringDesc*) &TMP1348));
 	nimln(81, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1349));
+	definesymbol_167013(((NimStringDesc*) &TMP1349));
 	nimln(82, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1350));
+	definesymbol_167013(((NimStringDesc*) &TMP1350));
 	nimln(83, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1351));
+	definesymbol_167013(((NimStringDesc*) &TMP1351));
 	nimln(84, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1352));
+	definesymbol_167013(((NimStringDesc*) &TMP1352));
 	nimln(85, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1353));
+	definesymbol_167013(((NimStringDesc*) &TMP1353));
 	nimln(86, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1354));
+	definesymbol_167013(((NimStringDesc*) &TMP1354));
 	nimln(87, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1355));
+	definesymbol_167013(((NimStringDesc*) &TMP1355));
 	nimln(88, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1356));
+	definesymbol_167013(((NimStringDesc*) &TMP1356));
 	nimln(89, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1357));
+	definesymbol_167013(((NimStringDesc*) &TMP1357));
 	nimln(90, "condsyms.nim");
-	definesymbol_168013(((NimStringDesc*) &TMP1358));
+	definesymbol_167013(((NimStringDesc*) &TMP1358));
 	popFrame();
 }
 NIM_EXTERNC N_NOINLINE(void, compiler_condsymsInit)(void) {

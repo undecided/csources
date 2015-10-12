@@ -5,7 +5,7 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef int TY142201[4];
+typedef int TY141201[4];
 #include <sys/param.h>
 #include <sys/sysctl.h>
 N_NIMCALL(NI, ncpicountProcessors)(void);
@@ -43,7 +43,7 @@ static N_INLINE(void, popFrame)(void) {
 
 N_NIMCALL(NI, ncpicountProcessors)(void) {
 	NI result;
-	TY142201 mib;
+	TY141201 mib;
 	NI numcpu;
 	size_t len;
 	int LOC1;

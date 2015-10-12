@@ -7,7 +7,7 @@ typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef NU8 TY285282[20];
+typedef NU8 TY284282[20];
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -36,45 +36,45 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(NimStringDesc*, HEX24_286507)(TY285282 x);
-N_NIMCALL(NimStringDesc*, collectiontostring_286515)(TY285282 x, NimStringDesc* b, NimStringDesc* e);
-N_NIMCALL(NI, cmpignorestyle_288418)(NCSTRING a, NCSTRING b);
+N_NIMCALL(NimStringDesc*, HEX24_285507)(TY284282 x);
+N_NIMCALL(NimStringDesc*, collectiontostring_285515)(TY284282 x, NimStringDesc* b, NimStringDesc* e);
+N_NIMCALL(NI, cmpignorestyle_287418)(NCSTRING a, NCSTRING b);
 static N_INLINE(NI, addInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NIM_CHAR, tolower_288423)(NIM_CHAR c);
+static N_INLINE(NIM_CHAR, tolower_287423)(NIM_CHAR c);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20201)(void);
 static N_INLINE(void, popFrame)(void);
 static N_INLINE(NI, subInt)(NI a, NI b);
-N_NIMCALL(NIM_BOOL, eqident_288551)(NimStringDesc* a, NimStringDesc* b);
-NIM_CONST TY285282 nnkliterals_285281 = {
+N_NIMCALL(NIM_BOOL, eqident_287551)(NimStringDesc* a, NimStringDesc* b);
+NIM_CONST TY284282 nnkliterals_284281 = {
 0xE0, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY285282 nnkcallkinds_285283 = {
+NIM_CONST TY284282 nnkcallkinds_284283 = {
 0x00, 0x00, 0x00, 0xFC, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY285282 Routinenodes_286482 = {
+NIM_CONST TY284282 Routinenodes_285482 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x00,
 0x00, 0x80, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY285282 Atomicnodes_286484 = {
+NIM_CONST TY284282 Atomicnodes_285484 = {
 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY285282 Callnodes_286486 = {
+NIM_CONST TY284282 Callnodes_285486 = {
 0x00, 0x00, 0x00, 0xFC, 0x01, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-TNimType NTI285012; /* NimNodeKind */
+TNimType NTI284012; /* NimNodeKind */
 extern TFrame* frameptr_17242;
 
 static N_INLINE(NI, addInt)(NI a, NI b) {
@@ -148,7 +148,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17242 = (*frameptr_17242).prev;
 }
 
-static N_INLINE(NIM_CHAR, tolower_288423)(NIM_CHAR c) {
+static N_INLINE(NIM_CHAR, tolower_287423)(NIM_CHAR c) {
 	NIM_CHAR result;
 	nimfr("toLower", "macros.nim")
 	result = 0;
@@ -190,7 +190,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, cmpignorestyle_288418)(NCSTRING a, NCSTRING b) {
+N_NIMCALL(NI, cmpignorestyle_287418)(NCSTRING a, NCSTRING b) {
 	NI result;
 	NI i;
 	NI j;
@@ -227,9 +227,9 @@ N_NIMCALL(NI, cmpignorestyle_288418)(NCSTRING a, NCSTRING b) {
 				} LA6: ;
 			}
 			nimln(798, "macros.nim");
-			aa = tolower_288423(a[i]);
+			aa = tolower_287423(a[i]);
 			nimln(799, "macros.nim");
-			bb = tolower_288423(b[j]);
+			bb = tolower_287423(b[j]);
 			nimln(800, "macros.nim");
 			TMP4813 = subInt(((NI) (((NU8)(aa)))), ((NI) (((NU8)(bb)))));
 			result = (NI)(TMP4813);
@@ -257,14 +257,14 @@ N_NIMCALL(NI, cmpignorestyle_288418)(NCSTRING a, NCSTRING b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, eqident_288551)(NimStringDesc* a, NimStringDesc* b) {
+N_NIMCALL(NIM_BOOL, eqident_287551)(NimStringDesc* a, NimStringDesc* b) {
 	NIM_BOOL result;
 	NI LOC1;
 	nimfr("eqIdent", "macros.nim")
 	result = 0;
 	nimln(805, "macros.nim");
 	LOC1 = 0;
-	LOC1 = cmpignorestyle_288418(a->data, b->data);
+	LOC1 = cmpignorestyle_287418(a->data, b->data);
 	result = (LOC1 == ((NI) 0));
 	popFrame();
 	return result;
@@ -434,10 +434,10 @@ static char* NIM_CONST TMP4807[155] = {
 "nnkPattern", 
 "nnkReturnToken"};
 static TNimNode TMP4804[156];
-NTI285012.size = sizeof(NU8);
-NTI285012.kind = 14;
-NTI285012.base = 0;
-NTI285012.flags = 3;
+NTI284012.size = sizeof(NU8);
+NTI284012.kind = 14;
+NTI284012.base = 0;
+NTI284012.flags = 3;
 for (TMP4808 = 0; TMP4808 < 155; TMP4808++) {
 TMP4804[TMP4808+0].kind = 1;
 TMP4804[TMP4808+0].offset = TMP4808;
@@ -445,6 +445,6 @@ TMP4804[TMP4808+0].name = TMP4807[TMP4808];
 TMP4806[TMP4808] = &TMP4804[TMP4808+0];
 }
 TMP4804[155].len = 155; TMP4804[155].kind = 2; TMP4804[155].sons = &TMP4806[0];
-NTI285012.node = &TMP4804[155];
+NTI284012.node = &TMP4804[155];
 }
 

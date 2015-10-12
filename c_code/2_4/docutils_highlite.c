@@ -5,7 +5,7 @@
 #include "nimbase.h"
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Tgeneraltokenizer307023 Tgeneraltokenizer307023;
+typedef struct Tgeneraltokenizer306023 Tgeneraltokenizer306023;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
@@ -17,9 +17,9 @@ struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
-typedef NimStringDesc* TY307076[7];
-typedef NimStringDesc* TY307082[33];
-typedef NimStringDesc* TY307088[70];
+typedef NimStringDesc* TY306076[7];
+typedef NimStringDesc* TY306082[33];
+typedef NimStringDesc* TY306088[70];
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -35,7 +35,7 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Tgeneraltokenizer307023  {
+struct  Tgeneraltokenizer306023  {
   TNimObject Sup;
 NU8 kind;
 NI start;
@@ -45,10 +45,10 @@ NI pos;
 NU8 state;
 };
 typedef NU8 TY77659[32];
-typedef NimStringDesc* TY309703[37];
-typedef NimStringDesc* TY309719[48];
-typedef NimStringDesc* TY309736[77];
-typedef NimStringDesc* TY309753[53];
+typedef NimStringDesc* TY308703[37];
+typedef NimStringDesc* TY308719[48];
+typedef NimStringDesc* TY308736[77];
+typedef NimStringDesc* TY308753[53];
 struct  TNimNode  {
 NU8 kind;
 NI offset;
@@ -57,7 +57,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-N_NIMCALL(NU8, getsourcelanguage_307093)(NimStringDesc* name);
+N_NIMCALL(NU8, getsourcelanguage_306093)(NimStringDesc* name);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
@@ -66,32 +66,32 @@ N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(void, initgeneraltokenizer_307246)(Tgeneraltokenizer307023* g, NCSTRING buf);
-N_NIMCALL(void, initgeneraltokenizer_307289)(Tgeneraltokenizer307023* g, NimStringDesc* buf);
-N_NIMCALL(void, deinitgeneraltokenizer_307300)(Tgeneraltokenizer307023* g);
-N_NIMCALL(NU8, nimgetkeyword_307310)(NimStringDesc* id);
-N_NIMCALL(NI, nimnumberpostfix_307420)(Tgeneraltokenizer307023* g, NI position);
-N_NIMCALL(NI, nimnumber_307540)(Tgeneraltokenizer307023* g, NI position);
-N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g);
+N_NIMCALL(void, initgeneraltokenizer_306246)(Tgeneraltokenizer306023* g, NCSTRING buf);
+N_NIMCALL(void, initgeneraltokenizer_306289)(Tgeneraltokenizer306023* g, NimStringDesc* buf);
+N_NIMCALL(void, deinitgeneraltokenizer_306300)(Tgeneraltokenizer306023* g);
+N_NIMCALL(NU8, nimgetkeyword_306310)(NimStringDesc* id);
+N_NIMCALL(NI, nimnumberpostfix_306420)(Tgeneraltokenizer306023* g, NI position);
+N_NIMCALL(NI, nimnumber_306540)(Tgeneraltokenizer306023* g, NI position);
+N_NIMCALL(void, nimnexttoken_306687)(Tgeneraltokenizer306023* g);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
-N_NIMCALL(NI, generalnumber_308505)(Tgeneraltokenizer307023* g, NI position);
-N_NIMCALL(NI, generalstrlit_308647)(Tgeneraltokenizer307023* g, NI position);
-N_NIMCALL(NI, iskeyword_308790)(NimStringDesc** x, NI xLen0, NimStringDesc* y);
+N_NIMCALL(NI, generalnumber_307505)(Tgeneraltokenizer306023* g, NI position);
+N_NIMCALL(NI, generalstrlit_307647)(Tgeneraltokenizer306023* g, NI position);
+N_NIMCALL(NI, iskeyword_307790)(NimStringDesc** x, NI xLen0, NimStringDesc* y);
 static N_INLINE(NI, divInt)(NI a, NI b);
 N_NOINLINE(void, raiseDivByZero)(void);
 N_NIMCALL(NI, cmp_4717)(NimStringDesc* x, NimStringDesc* y);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(NI, iskeywordignorecase_308820)(NimStringDesc** x, NI xLen0, NimStringDesc* y);
+N_NIMCALL(NI, iskeywordignorecase_307820)(NimStringDesc** x, NI xLen0, NimStringDesc* y);
 N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringDesc* a, NimStringDesc* b);
-N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc** keywords, NI keywordsLen0, NU8 flags);
-N_NIMCALL(void, cnexttoken_309698)(Tgeneraltokenizer307023* g);
-N_NIMCALL(void, cppnexttoken_309714)(Tgeneraltokenizer307023* g);
-N_NIMCALL(void, csharpnexttoken_309731)(Tgeneraltokenizer307023* g);
-N_NIMCALL(void, javanexttoken_309748)(Tgeneraltokenizer307023* g);
-N_NIMCALL(void, getnexttoken_309766)(Tgeneraltokenizer307023* g, NU8 lang);
+N_NIMCALL(void, clikenexttoken_307859)(Tgeneraltokenizer306023* g, NimStringDesc** keywords, NI keywordsLen0, NU8 flags);
+N_NIMCALL(void, cnexttoken_308698)(Tgeneraltokenizer306023* g);
+N_NIMCALL(void, cppnexttoken_308714)(Tgeneraltokenizer306023* g);
+N_NIMCALL(void, csharpnexttoken_308731)(Tgeneraltokenizer306023* g);
+N_NIMCALL(void, javanexttoken_308748)(Tgeneraltokenizer306023* g);
+N_NIMCALL(void, getnexttoken_308766)(Tgeneraltokenizer306023* g, NU8 lang);
 STRING_LITERAL(TMP5514, "none", 4);
 STRING_LITERAL(TMP5515, "Nim", 3);
 STRING_LITERAL(TMP5516, "Nimrod", 6);
@@ -99,7 +99,7 @@ STRING_LITERAL(TMP5517, "C++", 3);
 STRING_LITERAL(TMP5518, "C#", 2);
 STRING_LITERAL(TMP5519, "C", 1);
 STRING_LITERAL(TMP5520, "Java", 4);
-NIM_CONST TY307076 sourcelanguagetostr_307075 = {((NimStringDesc*) &TMP5514),
+NIM_CONST TY306076 sourcelanguagetostr_306075 = {((NimStringDesc*) &TMP5514),
 ((NimStringDesc*) &TMP5515),
 ((NimStringDesc*) &TMP5516),
 ((NimStringDesc*) &TMP5517),
@@ -140,7 +140,7 @@ STRING_LITERAL(TMP5550, "Hyperlink", 9);
 STRING_LITERAL(TMP5551, "Label", 5);
 STRING_LITERAL(TMP5552, "Reference", 9);
 STRING_LITERAL(TMP5553, "Other", 5);
-NIM_CONST TY307082 tokenclasstostr_307081 = {((NimStringDesc*) &TMP5521),
+NIM_CONST TY306082 tokenclasstostr_306081 = {((NimStringDesc*) &TMP5521),
 ((NimStringDesc*) &TMP5522),
 ((NimStringDesc*) &TMP5523),
 ((NimStringDesc*) &TMP5524),
@@ -244,7 +244,7 @@ STRING_LITERAL(TMP5620, "with", 4);
 STRING_LITERAL(TMP5621, "without", 7);
 STRING_LITERAL(TMP5622, "xor", 3);
 STRING_LITERAL(TMP5623, "yield", 5);
-NIM_CONST TY307088 nimkeywords_307087 = {((NimStringDesc*) &TMP5554),
+NIM_CONST TY306088 nimkeywords_306087 = {((NimStringDesc*) &TMP5554),
 ((NimStringDesc*) &TMP5555),
 ((NimStringDesc*) &TMP5556),
 ((NimStringDesc*) &TMP5557),
@@ -315,37 +315,37 @@ NIM_CONST TY307088 nimkeywords_307087 = {((NimStringDesc*) &TMP5554),
 ((NimStringDesc*) &TMP5622),
 ((NimStringDesc*) &TMP5623)}
 ;
-NIM_CONST TY77659 decchars_307546 = {
+NIM_CONST TY77659 decchars_306546 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 Opchars_307682 = {
+NIM_CONST TY77659 Opchars_306682 = {
 0x00, 0x00, 0x00, 0x00, 0x72, 0xEC, 0x00, 0xF4,
 0x01, 0x00, 0x00, 0x50, 0x00, 0x00, 0x00, 0x50,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
-NIM_CONST TY77659 hexchars_307691 = {
+NIM_CONST TY77659 hexchars_306691 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x7E, 0x00, 0x00, 0x80, 0x7E, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 octchars_307693 = {
+NIM_CONST TY77659 octchars_306693 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x00,
 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 binchars_307695 = {
+NIM_CONST TY77659 binchars_306695 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x00,
 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 Symchars_307697 = {
+NIM_CONST TY77659 Symchars_306697 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x07, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
@@ -359,43 +359,43 @@ static NIM_CONST TY77659 TMP5686 = {
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
 ;
 STRING_LITERAL(TMP5690, "false nimNextToken: produced an empty token", 43);
-NIM_CONST TY77659 decchars_308511 = {
+NIM_CONST TY77659 decchars_307511 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 decchars_308653 = {
+NIM_CONST TY77659 decchars_307653 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 hexchars_308655 = {
-0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
-0x7E, 0x00, 0x00, 0x00, 0x7E, 0x00, 0x00, 0x00,
-0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
-;
-NIM_CONST TY77659 hexchars_308866 = {
+NIM_CONST TY77659 hexchars_307655 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0x7E, 0x00, 0x00, 0x00, 0x7E, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 octchars_308868 = {
+NIM_CONST TY77659 hexchars_307866 = {
+0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
+0x7E, 0x00, 0x00, 0x00, 0x7E, 0x00, 0x00, 0x00,
+0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
+;
+NIM_CONST TY77659 octchars_307868 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 binchars_308870 = {
+NIM_CONST TY77659 binchars_307870 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
 ;
-NIM_CONST TY77659 symchars_308872 = {
+NIM_CONST TY77659 symchars_307872 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x87, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
@@ -427,7 +427,7 @@ STRING_LITERAL(TMP5779, "union", 5);
 STRING_LITERAL(TMP5780, "unsigned", 8);
 STRING_LITERAL(TMP5781, "void", 4);
 STRING_LITERAL(TMP5782, "volatile", 8);
-NIM_CONST TY309703 keywords_309702 = {((NimStringDesc*) &TMP5758),
+NIM_CONST TY308703 keywords_308702 = {((NimStringDesc*) &TMP5758),
 ((NimStringDesc*) &TMP5759),
 ((NimStringDesc*) &TMP5760),
 ((NimStringDesc*) &TMP5761),
@@ -465,7 +465,7 @@ NIM_CONST TY309703 keywords_309702 = {((NimStringDesc*) &TMP5758),
 ((NimStringDesc*) &TMP5782),
 ((NimStringDesc*) &TMP5619)}
 ;
-NIM_CONST TY309703 TMP5783 = {((NimStringDesc*) &TMP5758),
+NIM_CONST TY308703 TMP5783 = {((NimStringDesc*) &TMP5758),
 ((NimStringDesc*) &TMP5759),
 ((NimStringDesc*) &TMP5760),
 ((NimStringDesc*) &TMP5761),
@@ -515,7 +515,7 @@ STRING_LITERAL(TMP5792, "public", 6);
 STRING_LITERAL(TMP5793, "this", 4);
 STRING_LITERAL(TMP5794, "throw", 5);
 STRING_LITERAL(TMP5795, "virtual", 7);
-NIM_CONST TY309719 keywords_309718 = {((NimStringDesc*) &TMP5557),
+NIM_CONST TY308719 keywords_308718 = {((NimStringDesc*) &TMP5557),
 ((NimStringDesc*) &TMP5761),
 ((NimStringDesc*) &TMP5561),
 ((NimStringDesc*) &TMP5562),
@@ -564,7 +564,7 @@ NIM_CONST TY309719 keywords_309718 = {((NimStringDesc*) &TMP5557),
 ((NimStringDesc*) &TMP5782),
 ((NimStringDesc*) &TMP5619)}
 ;
-NIM_CONST TY309719 TMP5796 = {((NimStringDesc*) &TMP5557),
+NIM_CONST TY308719 TMP5796 = {((NimStringDesc*) &TMP5557),
 ((NimStringDesc*) &TMP5761),
 ((NimStringDesc*) &TMP5561),
 ((NimStringDesc*) &TMP5562),
@@ -644,7 +644,7 @@ STRING_LITERAL(TMP5824, "ulong", 5);
 STRING_LITERAL(TMP5825, "unchecked", 9);
 STRING_LITERAL(TMP5826, "unsafe", 6);
 STRING_LITERAL(TMP5827, "ushort", 6);
-NIM_CONST TY309736 keywords_309735 = {((NimStringDesc*) &TMP5797),
+NIM_CONST TY308736 keywords_308735 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5556),
 ((NimStringDesc*) &TMP5798),
 ((NimStringDesc*) &TMP5799),
@@ -722,7 +722,7 @@ NIM_CONST TY309736 keywords_309735 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5782),
 ((NimStringDesc*) &TMP5619)}
 ;
-NIM_CONST TY309736 TMP5828 = {((NimStringDesc*) &TMP5797),
+NIM_CONST TY308736 TMP5828 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5556),
 ((NimStringDesc*) &TMP5798),
 ((NimStringDesc*) &TMP5799),
@@ -813,7 +813,7 @@ STRING_LITERAL(TMP5838, "super", 5);
 STRING_LITERAL(TMP5839, "synchronized", 12);
 STRING_LITERAL(TMP5840, "throws", 6);
 STRING_LITERAL(TMP5841, "transient", 9);
-NIM_CONST TY309753 keywords_309752 = {((NimStringDesc*) &TMP5797),
+NIM_CONST TY308753 keywords_308752 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5829),
 ((NimStringDesc*) &TMP5830),
 ((NimStringDesc*) &TMP5561),
@@ -867,7 +867,7 @@ NIM_CONST TY309753 keywords_309752 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5782),
 ((NimStringDesc*) &TMP5619)}
 ;
-NIM_CONST TY309753 TMP5842 = {((NimStringDesc*) &TMP5797),
+NIM_CONST TY308753 TMP5842 = {((NimStringDesc*) &TMP5797),
 ((NimStringDesc*) &TMP5829),
 ((NimStringDesc*) &TMP5830),
 ((NimStringDesc*) &TMP5561),
@@ -924,8 +924,8 @@ NIM_CONST TY309753 TMP5842 = {((NimStringDesc*) &TMP5797),
 STRING_LITERAL(TMP5843, "false ", 6);
 extern TFrame* frameptr_17042;
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI307023; /* TGeneralTokenizer */
-TNimType NTI307021; /* TTokenClass */
+TNimType NTI306023; /* TGeneralTokenizer */
+TNimType NTI306021; /* TTokenClass */
 extern TNimType NTI108; /* int */
 extern TNimType NTI151; /* cstring */
 
@@ -1000,37 +1000,37 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NU8, getsourcelanguage_307093)(NimStringDesc* name) {
+N_NIMCALL(NU8, getsourcelanguage_306093)(NimStringDesc* name) {
 	NU8 result;
 	nimfr("getSourceLanguage", "highlite.nim")
 {	result = 0;
 	{
-		NU8 i_307223;
-		NI res_307228;
-		i_307223 = 0;
+		NU8 i_306223;
+		NI res_306228;
+		i_306223 = 0;
 		nimln(1598, "system.nim");
-		res_307228 = ((NI) 1);
+		res_306228 = ((NI) 1);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP5624;
-				if (!(res_307228 <= ((NI) 6))) goto LA3;
+				if (!(res_306228 <= ((NI) 6))) goto LA3;
 				nimln(1600, "system.nim");
-				i_307223 = ((NU8)chckRange(res_307228, ((NU8) 0), ((NU8) 6)));
+				i_306223 = ((NU8)chckRange(res_306228, ((NU8) 0), ((NU8) 6)));
 				nimln(63, "highlite.nim");
 				{
 					NI LOC6;
 					LOC6 = 0;
-					LOC6 = nsuCmpIgnoreStyle(name, sourcelanguagetostr_307075[(i_307223)- 0]);
+					LOC6 = nsuCmpIgnoreStyle(name, sourcelanguagetostr_306075[(i_306223)- 0]);
 					if (!(LOC6 == ((NI) 0))) goto LA7;
 					nimln(64, "highlite.nim");
-					result = i_307223;
+					result = i_306223;
 					goto BeforeRet;
 				}
 				LA7: ;
 				nimln(1614, "system.nim");
-				TMP5624 = addInt(res_307228, ((NI) 1));
-				res_307228 = (NI)(TMP5624);
+				TMP5624 = addInt(res_306228, ((NI) 1));
+				res_306228 = (NI)(TMP5624);
 			} LA3: ;
 		}
 	}
@@ -1041,7 +1041,7 @@ N_NIMCALL(NU8, getsourcelanguage_307093)(NimStringDesc* name) {
 	return result;
 }
 
-N_NIMCALL(void, initgeneraltokenizer_307246)(Tgeneraltokenizer307023* g, NCSTRING buf) {
+N_NIMCALL(void, initgeneraltokenizer_306246)(Tgeneraltokenizer306023* g, NCSTRING buf) {
 	NI pos;
 	nimfr("initGeneralTokenizer", "highlite.nim")
 	nimln(68, "highlite.nim");
@@ -1070,42 +1070,42 @@ N_NIMCALL(void, initgeneraltokenizer_307246)(Tgeneraltokenizer307023* g, NCSTRIN
 	popFrame();
 }
 
-N_NIMCALL(void, initgeneraltokenizer_307289)(Tgeneraltokenizer307023* g, NimStringDesc* buf) {
+N_NIMCALL(void, initgeneraltokenizer_306289)(Tgeneraltokenizer306023* g, NimStringDesc* buf) {
 	nimfr("initGeneralTokenizer", "highlite.nim")
 	nimln(78, "highlite.nim");
-	initgeneraltokenizer_307246(g, buf->data);
+	initgeneraltokenizer_306246(g, buf->data);
 	popFrame();
 }
 
-N_NIMCALL(void, deinitgeneraltokenizer_307300)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, deinitgeneraltokenizer_306300)(Tgeneraltokenizer306023* g) {
 	nimfr("deinitGeneralTokenizer", "highlite.nim")
 	popFrame();
 }
 
-N_NIMCALL(NU8, nimgetkeyword_307310)(NimStringDesc* id) {
+N_NIMCALL(NU8, nimgetkeyword_306310)(NimStringDesc* id) {
 	NU8 result;
 	nimfr("nimGetKeyword", "highlite.nim")
 {	result = 0;
 	{
-		NimStringDesc* k_307354;
-		NI i_307404;
-		k_307354 = 0;
+		NimStringDesc* k_306354;
+		NI i_306404;
+		k_306354 = 0;
 		nimln(1703, "system.nim");
-		i_307404 = ((NI) 0);
+		i_306404 = ((NI) 0);
 		nimln(1704, "system.nim");
 		{
-			if (!(((NI) (i_307404)) <= ((NI) 69))) goto LA4;
+			if (!(((NI) (i_306404)) <= ((NI) 69))) goto LA4;
 			{
 				nimln(1705, "system.nim");
 				while (1) {
 					NI TMP5626;
 					nimln(1706, "system.nim");
-					k_307354 = nimkeywords_307087[(i_307404)- 0];
+					k_306354 = nimkeywords_306087[(i_306404)- 0];
 					nimln(85, "highlite.nim");
 					{
 						NI LOC10;
 						LOC10 = 0;
-						LOC10 = nsuCmpIgnoreStyle(id, k_307354);
+						LOC10 = nsuCmpIgnoreStyle(id, k_306354);
 						if (!(LOC10 == ((NI) 0))) goto LA11;
 						result = ((NU8) 9);
 						goto BeforeRet;
@@ -1113,14 +1113,14 @@ N_NIMCALL(NU8, nimgetkeyword_307310)(NimStringDesc* id) {
 					LA11: ;
 					nimln(1707, "system.nim");
 					{
-						if (!(((NI) 69) <= ((NI) (i_307404)))) goto LA15;
+						if (!(((NI) 69) <= ((NI) (i_306404)))) goto LA15;
 						goto LA6;
 					}
 					LA15: ;
 					nimln(1708, "system.nim");
-					TMP5626 = addInt(i_307404, ((NI) 1));
+					TMP5626 = addInt(i_306404, ((NI) 1));
 					if (TMP5626 < 0 || TMP5626 > 69) raiseOverflow();
-					i_307404 = (NI)(TMP5626);
+					i_306404 = (NI)(TMP5626);
 				}
 			} LA6: ;
 		}
@@ -1133,7 +1133,7 @@ N_NIMCALL(NU8, nimgetkeyword_307310)(NimStringDesc* id) {
 	return result;
 }
 
-N_NIMCALL(NI, nimnumberpostfix_307420)(Tgeneraltokenizer307023* g, NI position) {
+N_NIMCALL(NI, nimnumberpostfix_306420)(Tgeneraltokenizer306023* g, NI position) {
 	NI result;
 	NI pos;
 	nimfr("nimNumberPostfix", "highlite.nim")
@@ -1214,7 +1214,7 @@ N_NIMCALL(NI, nimnumberpostfix_307420)(Tgeneraltokenizer307023* g, NI position) 
 	return result;
 }
 
-N_NIMCALL(NI, nimnumber_307540)(Tgeneraltokenizer307023* g, NI position) {
+N_NIMCALL(NI, nimnumber_306540)(Tgeneraltokenizer306023* g, NI position) {
 	NI result;
 	NI pos;
 	nimfr("nimNumber", "highlite.nim")
@@ -1281,7 +1281,7 @@ N_NIMCALL(NI, nimnumber_307540)(Tgeneraltokenizer307023* g, NI position) {
 	}
 	LA11: ;
 	nimln(127, "highlite.nim");
-	result = nimnumberpostfix_307420(g, pos);
+	result = nimnumberpostfix_306420(g, pos);
 	popFrame();
 	return result;
 }
@@ -1306,7 +1306,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, nimnexttoken_306687)(Tgeneraltokenizer306023* g) {
 	NI pos;
 	NI TMP5689;
 	nimfr("nimNextToken", "highlite.nim")
@@ -1610,7 +1610,7 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 			LA37: ;
 			{
 				nimln(203, "highlite.nim");
-				(*g).kind = nimgetkeyword_307310(id);
+				(*g).kind = nimgetkeyword_306310(id);
 			}
 			LA35: ;
 		}
@@ -1640,7 +1640,7 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 					} LA75: ;
 				}
 				nimln(210, "highlite.nim");
-				pos = nimnumberpostfix_307420(g, pos);
+				pos = nimnumberpostfix_306420(g, pos);
 			}
 			break;
 			case 120:
@@ -1660,7 +1660,7 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 					} LA78: ;
 				}
 				nimln(214, "highlite.nim");
-				pos = nimnumberpostfix_307420(g, pos);
+				pos = nimnumberpostfix_306420(g, pos);
 			}
 			break;
 			case 111:
@@ -1680,13 +1680,13 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 					} LA81: ;
 				}
 				nimln(218, "highlite.nim");
-				pos = nimnumberpostfix_307420(g, pos);
+				pos = nimnumberpostfix_306420(g, pos);
 			}
 			break;
 			default:
 			{
 				nimln(219, "highlite.nim");
-				pos = nimnumber_307540(g, pos);
+				pos = nimnumber_306540(g, pos);
 			}
 			break;
 			}
@@ -1695,7 +1695,7 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 		case 49 ... 57:
 		{
 			nimln(221, "highlite.nim");
-			pos = nimnumber_307540(g, pos);
+			pos = nimnumber_306540(g, pos);
 		}
 		break;
 		case 39:
@@ -1966,7 +1966,7 @@ N_NIMCALL(void, nimnexttoken_307687)(Tgeneraltokenizer307023* g) {
 	popFrame();
 }
 
-N_NIMCALL(NI, generalnumber_308505)(Tgeneraltokenizer307023* g, NI position) {
+N_NIMCALL(NI, generalnumber_307505)(Tgeneraltokenizer306023* g, NI position) {
 	NI result;
 	NI pos;
 	nimfr("generalNumber", "highlite.nim")
@@ -2038,7 +2038,7 @@ N_NIMCALL(NI, generalnumber_308505)(Tgeneraltokenizer307023* g, NI position) {
 	return result;
 }
 
-N_NIMCALL(NI, generalstrlit_308647)(Tgeneraltokenizer307023* g, NI position) {
+N_NIMCALL(NI, generalstrlit_307647)(Tgeneraltokenizer306023* g, NI position) {
 	NI result;
 	NI pos;
 	NIM_CHAR c;
@@ -2185,7 +2185,7 @@ static N_INLINE(NI, divInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI, iskeyword_308790)(NimStringDesc** x, NI xLen0, NimStringDesc* y) {
+N_NIMCALL(NI, iskeyword_307790)(NimStringDesc** x, NI xLen0, NimStringDesc* y) {
 	NI result;
 	NI a;
 	NI b;
@@ -2247,7 +2247,7 @@ N_NIMCALL(NI, iskeyword_308790)(NimStringDesc** x, NI xLen0, NimStringDesc* y) {
 	return result;
 }
 
-N_NIMCALL(NI, iskeywordignorecase_308820)(NimStringDesc** x, NI xLen0, NimStringDesc* y) {
+N_NIMCALL(NI, iskeywordignorecase_307820)(NimStringDesc** x, NI xLen0, NimStringDesc* y) {
 	NI result;
 	NI a;
 	NI b;
@@ -2309,7 +2309,7 @@ N_NIMCALL(NI, iskeywordignorecase_308820)(NimStringDesc** x, NI xLen0, NimString
 	return result;
 }
 
-N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc** keywords, NI keywordsLen0, NU8 flags) {
+N_NIMCALL(void, clikenexttoken_307859)(Tgeneraltokenizer306023* g, NimStringDesc** keywords, NI keywordsLen0, NU8 flags) {
 	NI pos;
 	NI TMP5756;
 	nimfr("clikeNextToken", "highlite.nim")
@@ -2623,7 +2623,7 @@ N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc
 			{
 				NI LOC76;
 				LOC76 = 0;
-				LOC76 = iskeyword_308790(keywords, keywordsLen0, id);
+				LOC76 = iskeyword_307790(keywords, keywordsLen0, id);
 				if (!(((NI) 0) <= LOC76)) goto LA77;
 				(*g).kind = ((NU8) 9);
 			}
@@ -2724,7 +2724,7 @@ N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc
 			default:
 			{
 				nimln(457, "highlite.nim");
-				pos = generalnumber_308505(g, pos);
+				pos = generalnumber_307505(g, pos);
 				nimln(458, "highlite.nim");
 				{
 					NI TMP5748;
@@ -2741,7 +2741,7 @@ N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc
 		case 49 ... 57:
 		{
 			nimln(460, "highlite.nim");
-			pos = generalnumber_308505(g, pos);
+			pos = generalnumber_307505(g, pos);
 			nimln(461, "highlite.nim");
 			{
 				NI TMP5749;
@@ -2755,7 +2755,7 @@ N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc
 		case 39:
 		{
 			nimln(463, "highlite.nim");
-			pos = generalstrlit_308647(g, pos);
+			pos = generalstrlit_307647(g, pos);
 			nimln(464, "highlite.nim");
 			(*g).kind = ((NU8) 12);
 		}
@@ -2893,35 +2893,35 @@ N_NIMCALL(void, clikenexttoken_308859)(Tgeneraltokenizer307023* g, NimStringDesc
 	popFrame();
 }
 
-N_NIMCALL(void, cnexttoken_309698)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, cnexttoken_308698)(Tgeneraltokenizer306023* g) {
 	nimfr("cNextToken", "highlite.nim")
 	nimln(504, "highlite.nim");
-	clikenexttoken_308859(g, TMP5783, 37, 1);
+	clikenexttoken_307859(g, TMP5783, 37, 1);
 	popFrame();
 }
 
-N_NIMCALL(void, cppnexttoken_309714)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, cppnexttoken_308714)(Tgeneraltokenizer306023* g) {
 	nimfr("cppNextToken", "highlite.nim")
 	nimln(515, "highlite.nim");
-	clikenexttoken_308859(g, TMP5796, 48, 1);
+	clikenexttoken_307859(g, TMP5796, 48, 1);
 	popFrame();
 }
 
-N_NIMCALL(void, csharpnexttoken_309731)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, csharpnexttoken_308731)(Tgeneraltokenizer306023* g) {
 	nimfr("csharpNextToken", "highlite.nim")
 	nimln(530, "highlite.nim");
-	clikenexttoken_308859(g, TMP5828, 77, 1);
+	clikenexttoken_307859(g, TMP5828, 77, 1);
 	popFrame();
 }
 
-N_NIMCALL(void, javanexttoken_309748)(Tgeneraltokenizer307023* g) {
+N_NIMCALL(void, javanexttoken_308748)(Tgeneraltokenizer306023* g) {
 	nimfr("javaNextToken", "highlite.nim")
 	nimln(542, "highlite.nim");
-	clikenexttoken_308859(g, TMP5842, 53, 0);
+	clikenexttoken_307859(g, TMP5842, 53, 0);
 	popFrame();
 }
 
-N_NIMCALL(void, getnexttoken_309766)(Tgeneraltokenizer307023* g, NU8 lang) {
+N_NIMCALL(void, getnexttoken_308766)(Tgeneraltokenizer306023* g, NU8 lang) {
 	nimfr("getNextToken", "highlite.nim")
 	nimln(545, "highlite.nim");
 	switch (lang) {
@@ -2939,31 +2939,31 @@ N_NIMCALL(void, getnexttoken_309766)(Tgeneraltokenizer307023* g, NU8 lang) {
 	case ((NU8) 2):
 	{
 		nimln(547, "highlite.nim");
-		nimnexttoken_307687(g);
+		nimnexttoken_306687(g);
 	}
 	break;
 	case ((NU8) 3):
 	{
 		nimln(548, "highlite.nim");
-		cppnexttoken_309714(g);
+		cppnexttoken_308714(g);
 	}
 	break;
 	case ((NU8) 4):
 	{
 		nimln(549, "highlite.nim");
-		csharpnexttoken_309731(g);
+		csharpnexttoken_308731(g);
 	}
 	break;
 	case ((NU8) 5):
 	{
 		nimln(550, "highlite.nim");
-		cnexttoken_309698(g);
+		cnexttoken_308698(g);
 	}
 	break;
 	case ((NU8) 6):
 	{
 		nimln(551, "highlite.nim");
-		javanexttoken_309748(g);
+		javanexttoken_308748(g);
 	}
 	break;
 	}
@@ -3013,15 +3013,15 @@ static char* NIM_CONST TMP6133[33] = {
 "gtReference", 
 "gtOther"};
 static TNimNode TMP5512[41];
-NTI307023.size = sizeof(Tgeneraltokenizer307023);
-NTI307023.kind = 17;
-NTI307023.base = (&NTI3411);
-NTI307023.flags = 1;
+NTI306023.size = sizeof(Tgeneraltokenizer306023);
+NTI306023.kind = 17;
+NTI306023.base = (&NTI3411);
+NTI306023.flags = 1;
 TMP6131[0] = &TMP5512[1];
-NTI307021.size = sizeof(NU8);
-NTI307021.kind = 14;
-NTI307021.base = 0;
-NTI307021.flags = 3;
+NTI306021.size = sizeof(NU8);
+NTI306021.kind = 14;
+NTI306021.base = 0;
+NTI306021.flags = 3;
 for (TMP6134 = 0; TMP6134 < 33; TMP6134++) {
 TMP5512[TMP6134+2].kind = 1;
 TMP5512[TMP6134+2].offset = TMP6134;
@@ -3029,37 +3029,37 @@ TMP5512[TMP6134+2].name = TMP6133[TMP6134];
 TMP6132[TMP6134] = &TMP5512[TMP6134+2];
 }
 TMP5512[35].len = 33; TMP5512[35].kind = 2; TMP5512[35].sons = &TMP6132[0];
-NTI307021.node = &TMP5512[35];
+NTI306021.node = &TMP5512[35];
 TMP5512[1].kind = 1;
-TMP5512[1].offset = offsetof(Tgeneraltokenizer307023, kind);
-TMP5512[1].typ = (&NTI307021);
+TMP5512[1].offset = offsetof(Tgeneraltokenizer306023, kind);
+TMP5512[1].typ = (&NTI306021);
 TMP5512[1].name = "kind";
 TMP6131[1] = &TMP5512[36];
 TMP5512[36].kind = 1;
-TMP5512[36].offset = offsetof(Tgeneraltokenizer307023, start);
+TMP5512[36].offset = offsetof(Tgeneraltokenizer306023, start);
 TMP5512[36].typ = (&NTI108);
 TMP5512[36].name = "start";
 TMP6131[2] = &TMP5512[37];
 TMP5512[37].kind = 1;
-TMP5512[37].offset = offsetof(Tgeneraltokenizer307023, length);
+TMP5512[37].offset = offsetof(Tgeneraltokenizer306023, length);
 TMP5512[37].typ = (&NTI108);
 TMP5512[37].name = "length";
 TMP6131[3] = &TMP5512[38];
 TMP5512[38].kind = 1;
-TMP5512[38].offset = offsetof(Tgeneraltokenizer307023, buf);
+TMP5512[38].offset = offsetof(Tgeneraltokenizer306023, buf);
 TMP5512[38].typ = (&NTI151);
 TMP5512[38].name = "buf";
 TMP6131[4] = &TMP5512[39];
 TMP5512[39].kind = 1;
-TMP5512[39].offset = offsetof(Tgeneraltokenizer307023, pos);
+TMP5512[39].offset = offsetof(Tgeneraltokenizer306023, pos);
 TMP5512[39].typ = (&NTI108);
 TMP5512[39].name = "pos";
 TMP6131[5] = &TMP5512[40];
 TMP5512[40].kind = 1;
-TMP5512[40].offset = offsetof(Tgeneraltokenizer307023, state);
-TMP5512[40].typ = (&NTI307021);
+TMP5512[40].offset = offsetof(Tgeneraltokenizer306023, state);
+TMP5512[40].typ = (&NTI306021);
 TMP5512[40].name = "state";
 TMP5512[0].len = 6; TMP5512[0].kind = 2; TMP5512[0].sons = &TMP6131[0];
-NTI307023.node = &TMP5512[0];
+NTI306023.node = &TMP5512[0];
 }
 

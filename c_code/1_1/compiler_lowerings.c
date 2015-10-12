@@ -431,7 +431,7 @@ STRING_LITERAL(TMP7056, "field.kind == skField ", 22);
 STRING_LITERAL(TMP7057, "not (t.kind == tyStmt) ", 23);
 STRING_LITERAL(TMP7058, "not (field == nil) ", 19);
 STRING_LITERAL(TMP7059, "t.kind == tyObject ", 19);
-STRING_LITERAL(TMP7061, "lowerings.nim", 13);
+STRING_LITERAL(TMP7061, "compiler/lowerings.nim", 22);
 NIM_CONST TY149210 TMP7060 = {((NimStringDesc*) &TMP7061),
 ((NI) 132)}
 ;

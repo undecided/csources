@@ -559,7 +559,7 @@ STRING_LITERAL(TMP6341, "<unknown>", 9);
 STRING_LITERAL(TMP6342, "\'$#\' is not GC-safe as it accesses \'$#\' which is a global using"
 " GC\'ed memory", 76);
 STRING_LITERAL(TMP6343, "\'$#\' is not GC-safe as it calls \'$#\'", 36);
-STRING_LITERAL(TMP6345, "sempass2.nim", 12);
+STRING_LITERAL(TMP6345, "compiler/sempass2.nim", 21);
 NIM_CONST TY149210 TMP6344 = {((NimStringDesc*) &TMP6345),
 ((NI) 226)}
 ;

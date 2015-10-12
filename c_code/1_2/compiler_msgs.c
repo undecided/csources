@@ -1114,7 +1114,7 @@ STRING_LITERAL(TMP1247, "  ", 2);
 STRING_LITERAL(TMP1248, "$1($2, $3) Warning: $4", 22);
 STRING_LITERAL(TMP1249, "$1($2, $3) Hint: $4", 19);
 STRING_LITERAL(TMP1250, "$1($2, $3) Error: $4", 20);
-STRING_LITERAL(TMP1261, "msgs.nim", 8);
+STRING_LITERAL(TMP1261, "compiler/msgs.nim", 17);
 NIM_CONST TY149210 TMP1260 = {((NimStringDesc*) &TMP1261),
 ((NI) 868)}
 ;

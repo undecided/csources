@@ -5,11 +5,11 @@
 #include "nimbase.h"
 
 #include <string.h>
-typedef struct Stringtableobj134012 Stringtableobj134012;
+typedef struct Stringtableobj133012 Stringtableobj133012;
 typedef struct TNimObject TNimObject;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef struct Keyvaluepairseq134010 Keyvaluepairseq134010;
+typedef struct Keyvaluepairseq133010 Keyvaluepairseq133010;
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TY103552 TY103552;
@@ -46,10 +46,10 @@ TY3294 deepcopy;
 struct  TNimObject  {
 TNimType* m_type;
 };
-struct  Stringtableobj134012  {
+struct  Stringtableobj133012  {
   TNimObject Sup;
 NI counter;
-Keyvaluepairseq134010* data;
+Keyvaluepairseq133010* data;
 NU8 mode;
 };
 struct  TGenericSeq  {
@@ -190,34 +190,34 @@ struct  Tfreecell27830  {
 Tfreecell27830* next;
 NI zerofield;
 };
-struct Keyvaluepairseq134010 {
+struct Keyvaluepairseq133010 {
   TGenericSeq Sup;
   TY103552 data[SEQ_DECL_SIZE];
 };
-N_NIMCALL(NI, nstlen)(Stringtableobj134012* t);
+N_NIMCALL(NI, nstlen)(Stringtableobj133012* t);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NI, myhash_134177)(Stringtableobj134012* t, NimStringDesc* key);
-N_NIMCALL(NI, hash_131839)(NimStringDesc* x);
-N_NIMCALL(NI, hashignorecase_131978)(NimStringDesc* x);
-N_NIMCALL(NI, hashignorestyle_131887)(NimStringDesc* x);
-N_NIMCALL(NIM_BOOL, mycmp_134188)(Stringtableobj134012* t, NimStringDesc* a, NimStringDesc* b);
+N_NIMCALL(NI, myhash_133177)(Stringtableobj133012* t, NimStringDesc* key);
+N_NIMCALL(NI, hash_130839)(NimStringDesc* x);
+N_NIMCALL(NI, hashignorecase_130978)(NimStringDesc* x);
+N_NIMCALL(NI, hashignorestyle_130887)(NimStringDesc* x);
+N_NIMCALL(NIM_BOOL, mycmp_133188)(Stringtableobj133012* t, NimStringDesc* a, NimStringDesc* b);
 N_NIMCALL(NI, cmp_4717)(NimStringDesc* x, NimStringDesc* y);
 N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringDesc* a, NimStringDesc* b);
 N_NIMCALL(NI, nsuCmpIgnoreStyle)(NimStringDesc* a, NimStringDesc* b);
-N_NIMCALL(NIM_BOOL, mustrehash_134200)(NI length, NI counter);
+N_NIMCALL(NIM_BOOL, mustrehash_133200)(NI length, NI counter);
 N_NIMCALL(void, failedassertimpl_87017)(NimStringDesc* msg);
 N_NIMCALL(NI, mulInt)(NI a, NI b);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(NI, nexttry_134407)(NI h, NI maxhash);
+static N_INLINE(NI, nexttry_133407)(NI h, NI maxhash);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key);
+N_NIMCALL(NI, rawget_133418)(Stringtableobj133012* t, NimStringDesc* key);
 N_NOINLINE(void, raiseIndexError)(void);
-N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj134012* t, NimStringDesc* key);
+N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj133012* t, NimStringDesc* key);
 N_NIMCALL(NimStringDesc*, copyString)(NimStringDesc* src);
-N_NIMCALL(NimStringDesc**, nstTake)(Stringtableobj134012* t, NimStringDesc* key);
+N_NIMCALL(NimStringDesc**, nstTake)(Stringtableobj133012* t, NimStringDesc* key);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 static N_INLINE(void, appendString)(NimStringDesc* dest, NimStringDesc* src);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
@@ -226,39 +226,39 @@ static N_INLINE(Tcell46747*, usrtocell_50246)(void* usr);
 static N_INLINE(void, rtladdzct_51804)(Tcell46747* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46763* s, Tcell46747* c);
 N_NIMCALL(void, raiseException)(Exception* e, NCSTRING ename);
-N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj134012* t, NimStringDesc* key);
-N_NIMCALL(void, rawinsert_134488)(Stringtableobj134012* t, Keyvaluepairseq134010** data, NimStringDesc* key, NimStringDesc* val);
+N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj133012* t, NimStringDesc* key);
+N_NIMCALL(void, rawinsert_133488)(Stringtableobj133012* t, Keyvaluepairseq133010** data, NimStringDesc* key, NimStringDesc* val);
 N_NIMCALL(NimStringDesc*, copyStringRC1)(NimStringDesc* src);
 static N_INLINE(void, nimGCunrefNoCycle)(void* p);
-N_NIMCALL(void, enlarge_134510)(Stringtableobj134012* t);
+N_NIMCALL(void, enlarge_133510)(Stringtableobj133012* t);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
 N_NIMCALL(void, TMP500)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
-N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDesc* val);
-N_NIMCALL(void, raiseformatexception_134610)(NimStringDesc* s);
-N_NIMCALL(NimStringDesc*, getvalue_134630)(Stringtableobj134012* t, NU8 flags, NimStringDesc* key);
-N_NIMCALL(NimStringDesc*, getenv_122644)(NimStringDesc* key);
+N_NIMCALL(void, nstPut)(Stringtableobj133012* t, NimStringDesc* key, NimStringDesc* val);
+N_NIMCALL(void, raiseformatexception_133610)(NimStringDesc* s);
+N_NIMCALL(NimStringDesc*, getvalue_133630)(Stringtableobj133012* t, NU8 flags, NimStringDesc* key);
+N_NIMCALL(NimStringDesc*, getenv_121644)(NimStringDesc* key);
 static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
-N_NIMCALL(Stringtableobj134012*, nstnewStringTable)(NU8 mode);
+N_NIMCALL(Stringtableobj133012*, nstnewStringTable)(NU8 mode);
 N_NIMCALL(void, TMP515)(void* p, NI op);
 N_NIMCALL(void*, newSeqRC1)(TNimType* typ, NI len);
-N_NIMCALL(void, clear_134702)(Stringtableobj134012* s, NU8 mode);
+N_NIMCALL(void, clear_133702)(Stringtableobj133012* s, NU8 mode);
 N_NIMCALL(TGenericSeq*, setLengthSeq)(TGenericSeq* seq, NI elemsize, NI newlen);
-N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithPairs)(NimStringDesc** keyvaluepairs, NI keyvaluepairsLen0, NU8 mode);
-N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithTableConstr)(TY103552* keyvaluepairs, NI keyvaluepairsLen0, NU8 mode);
-N_NIMCALL(NimStringDesc*, nstFormat)(NimStringDesc* f, Stringtableobj134012* t, NU8 flags);
+N_NIMCALL(Stringtableobj133012*, nstnewStringTableWithPairs)(NimStringDesc** keyvaluepairs, NI keyvaluepairsLen0, NU8 mode);
+N_NIMCALL(Stringtableobj133012*, nstnewStringTableWithTableConstr)(TY103552* keyvaluepairs, NI keyvaluepairsLen0, NU8 mode);
+N_NIMCALL(NimStringDesc*, nstFormat)(NimStringDesc* f, Stringtableobj133012* t, NU8 flags);
 N_NIMCALL(NimStringDesc*, addChar)(NimStringDesc* s, NIM_CHAR c);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI start_76643, NI last);
 N_NIMCALL(NimStringDesc*, copyStrLast)(NimStringDesc* s, NI first, NI last);
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest, NI addlen);
-N_NIMCALL(NimStringDesc*, nstDollar)(Stringtableobj134012* t);
+N_NIMCALL(NimStringDesc*, nstDollar)(Stringtableobj133012* t);
 STRING_LITERAL(TMP489, "counter < length ", 17);
 STRING_LITERAL(TMP495, "", 0);
 STRING_LITERAL(TMP497, "key does not exist: ", 20);
 STRING_LITERAL(TMP503, "format string: key not found: ", 30);
-NIM_CONST TY77659 Patternchars_134825 = {
+NIM_CONST TY77659 Patternchars_133825 = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03,
 0xFE, 0xFF, 0xFF, 0x87, 0xFE, 0xFF, 0xFF, 0x07,
 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
@@ -270,18 +270,18 @@ STRING_LITERAL(TMP534, ", ", 2);
 STRING_LITERAL(TMP535, ": ", 2);
 STRING_LITERAL(TMP537, "}", 1);
 extern TFrame* frameptr_17042;
-extern TNimType NTI134461; /* ref KeyError */
+extern TNimType NTI133461; /* ref KeyError */
 extern TNimType NTI3451; /* KeyError */
 extern Tgcheap48616 gch_48644;
 extern TNimType NTI103552; /* tuple[nonDST: string, DST: string] */
-TNimType NTI134010; /* KeyValuePairSeq */
+TNimType NTI133010; /* KeyValuePairSeq */
 extern TNimType NTI22801; /* ref ValueError */
 extern TNimType NTI3449; /* ValueError */
 extern TNimType NTI3411; /* RootObj */
-TNimType NTI134012; /* StringTableObj */
+TNimType NTI133012; /* StringTableObj */
 extern TNimType NTI108; /* int */
-TNimType NTI134006; /* StringTableMode */
-TNimType NTI134014; /* StringTableRef */
+TNimType NTI133006; /* StringTableMode */
+TNimType NTI133014; /* StringTableRef */
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
 	NI LOC1;
@@ -310,7 +310,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI, nstlen)(Stringtableobj134012* t) {
+N_NIMCALL(NI, nstlen)(Stringtableobj133012* t) {
 	NI result;
 	nimfr("len", "strtabs.nim")
 	result = 0;
@@ -320,7 +320,7 @@ N_NIMCALL(NI, nstlen)(Stringtableobj134012* t) {
 	return result;
 }
 
-N_NIMCALL(NI, myhash_134177)(Stringtableobj134012* t, NimStringDesc* key) {
+N_NIMCALL(NI, myhash_133177)(Stringtableobj133012* t, NimStringDesc* key) {
 	NI result;
 	nimfr("myhash", "strtabs.nim")
 	result = 0;
@@ -329,19 +329,19 @@ N_NIMCALL(NI, myhash_134177)(Stringtableobj134012* t, NimStringDesc* key) {
 	case ((NU8) 0):
 	{
 		nimln(79, "strtabs.nim");
-		result = hash_131839(key);
+		result = hash_130839(key);
 	}
 	break;
 	case ((NU8) 1):
 	{
 		nimln(80, "strtabs.nim");
-		result = hashignorecase_131978(key);
+		result = hashignorecase_130978(key);
 	}
 	break;
 	case ((NU8) 2):
 	{
 		nimln(81, "strtabs.nim");
-		result = hashignorestyle_131887(key);
+		result = hashignorestyle_130887(key);
 	}
 	break;
 	}
@@ -349,7 +349,7 @@ N_NIMCALL(NI, myhash_134177)(Stringtableobj134012* t, NimStringDesc* key) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, mycmp_134188)(Stringtableobj134012* t, NimStringDesc* a, NimStringDesc* b) {
+N_NIMCALL(NIM_BOOL, mycmp_133188)(Stringtableobj133012* t, NimStringDesc* a, NimStringDesc* b) {
 	NIM_BOOL result;
 	nimfr("myCmp", "strtabs.nim")
 	result = 0;
@@ -407,7 +407,7 @@ static N_INLINE(NI, subInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, mustrehash_134200)(NI length, NI counter) {
+N_NIMCALL(NIM_BOOL, mustrehash_133200)(NI length, NI counter) {
 	NIM_BOOL result;
 	NIM_BOOL LOC5;
 	NI TMP490;
@@ -455,7 +455,7 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-static N_INLINE(NI, nexttry_134407)(NI h, NI maxhash) {
+static N_INLINE(NI, nexttry_133407)(NI h, NI maxhash) {
 	NI result;
 	NI TMP493;
 	NI TMP494;
@@ -469,7 +469,7 @@ static N_INLINE(NI, nexttry_134407)(NI h, NI maxhash) {
 	return result;
 }
 
-N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key) {
+N_NIMCALL(NI, rawget_133418)(Stringtableobj133012* t, NimStringDesc* key) {
 	NI result;
 	NI h;
 	NI LOC1;
@@ -477,7 +477,7 @@ N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key) {
 {	result = 0;
 	nimln(97, "strtabs.nim");
 	LOC1 = 0;
-	LOC1 = myhash_134177(t, key);
+	LOC1 = myhash_133177(t, key);
 	h = (NI)(LOC1 & ((*t).data ? ((*t).data->Sup.len-1) : -1));
 	{
 		nimln(98, "strtabs.nim");
@@ -489,7 +489,7 @@ N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key) {
 				NIM_BOOL LOC6;
 				if ((NU)(h) >= (NU)((*t).data->Sup.len)) raiseIndexError();
 				LOC6 = 0;
-				LOC6 = mycmp_134188(t, (*t).data->data[h].Field0, key);
+				LOC6 = mycmp_133188(t, (*t).data->data[h].Field0, key);
 				if (!LOC6) goto LA7;
 				nimln(100, "strtabs.nim");
 				result = h;
@@ -497,7 +497,7 @@ N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key) {
 			}
 			LA7: ;
 			nimln(101, "strtabs.nim");
-			h = nexttry_134407(h, ((*t).data ? ((*t).data->Sup.len-1) : -1));
+			h = nexttry_133407(h, ((*t).data ? ((*t).data->Sup.len-1) : -1));
 		} LA3: ;
 	}
 	nimln(102, "strtabs.nim");
@@ -507,13 +507,13 @@ N_NIMCALL(NI, rawget_134418)(Stringtableobj134012* t, NimStringDesc* key) {
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj134012* t, NimStringDesc* key) {
+N_NIMCALL(NimStringDesc*, nstGet)(Stringtableobj133012* t, NimStringDesc* key) {
 	NimStringDesc* result;
 	NI index;
 	nimfr("[]", "strtabs.nim")
 	result = 0;
 	nimln(108, "strtabs.nim");
-	index = rawget_134418(t, key);
+	index = rawget_133418(t, key);
 	nimln(109, "strtabs.nim");
 	{
 		if (!(((NI) 0) <= index)) goto LA3;
@@ -588,13 +588,13 @@ static N_INLINE(void, asgnRefNoCycle)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(NimStringDesc**, nstTake)(Stringtableobj134012* t, NimStringDesc* key) {
+N_NIMCALL(NimStringDesc**, nstTake)(Stringtableobj133012* t, NimStringDesc* key) {
 	NimStringDesc** result;
 	NI index;
 	nimfr("mget", "strtabs.nim")
 	result = 0;
 	nimln(116, "strtabs.nim");
-	index = rawget_134418(t, key);
+	index = rawget_133418(t, key);
 	nimln(117, "strtabs.nim");
 	{
 		if (!(((NI) 0) <= index)) goto LA3;
@@ -604,34 +604,34 @@ N_NIMCALL(NimStringDesc**, nstTake)(Stringtableobj134012* t, NimStringDesc* key)
 	goto LA1;
 	LA3: ;
 	{
-		Keyerror3451* e_134460;
+		Keyerror3451* e_133460;
 		NimStringDesc* LOC6;
-		e_134460 = 0;
+		e_133460 = 0;
 		nimln(2265, "system.nim");
-		e_134460 = (Keyerror3451*) newObj((&NTI134461), sizeof(Keyerror3451));
-		(*e_134460).Sup.Sup.Sup.m_type = (&NTI3451);
+		e_133460 = (Keyerror3451*) newObj((&NTI133461), sizeof(Keyerror3451));
+		(*e_133460).Sup.Sup.Sup.m_type = (&NTI3451);
 		nimln(2266, "system.nim");
 		nimln(118, "strtabs.nim");
 		LOC6 = 0;
 		LOC6 = rawNewString(key->Sup.len + 20);
 appendString(LOC6, ((NimStringDesc*) &TMP497));
 appendString(LOC6, key);
-		asgnRefNoCycle((void**) (&(*e_134460).Sup.Sup.message), LOC6);
-		raiseException((Exception*)e_134460, "KeyError");
+		asgnRefNoCycle((void**) (&(*e_133460).Sup.Sup.message), LOC6);
+		raiseException((Exception*)e_133460, "KeyError");
 	}
 	LA1: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj134012* t, NimStringDesc* key) {
+N_NIMCALL(NIM_BOOL, nsthasKey)(Stringtableobj133012* t, NimStringDesc* key) {
 	NIM_BOOL result;
 	NI LOC1;
 	nimfr("hasKey", "strtabs.nim")
 	result = 0;
 	nimln(122, "strtabs.nim");
 	LOC1 = 0;
-	LOC1 = rawget_134418(t, key);
+	LOC1 = rawget_133418(t, key);
 	result = (((NI) 0) <= LOC1);
 	popFrame();
 	return result;
@@ -655,7 +655,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	popFrame();
 }
 
-N_NIMCALL(void, rawinsert_134488)(Stringtableobj134012* t, Keyvaluepairseq134010** data, NimStringDesc* key, NimStringDesc* val) {
+N_NIMCALL(void, rawinsert_133488)(Stringtableobj133012* t, Keyvaluepairseq133010** data, NimStringDesc* key, NimStringDesc* val) {
 	NI h;
 	NI LOC1;
 	NimStringDesc* LOC4;
@@ -663,7 +663,7 @@ N_NIMCALL(void, rawinsert_134488)(Stringtableobj134012* t, Keyvaluepairseq134010
 	nimfr("rawInsert", "strtabs.nim")
 	nimln(125, "strtabs.nim");
 	LOC1 = 0;
-	LOC1 = myhash_134177(t, key);
+	LOC1 = myhash_133177(t, key);
 	h = (NI)(LOC1 & ((*data) ? ((*data)->Sup.len-1) : -1));
 	{
 		nimln(126, "strtabs.nim");
@@ -671,7 +671,7 @@ N_NIMCALL(void, rawinsert_134488)(Stringtableobj134012* t, Keyvaluepairseq134010
 			if ((NU)(h) >= (NU)((*data)->Sup.len)) raiseIndexError();
 			if (!!((*data)->data[h].Field0 == 0)) goto LA3;
 			nimln(127, "strtabs.nim");
-			h = nexttry_134407(h, ((*data) ? ((*data)->Sup.len-1) : -1));
+			h = nexttry_133407(h, ((*data) ? ((*data)->Sup.len-1) : -1));
 		} LA3: ;
 	}
 	nimln(128, "strtabs.nim");
@@ -711,9 +711,9 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	return result;
 }
 N_NIMCALL(void, TMP500)(void* p, NI op) {
-	Keyvaluepairseq134010* a;
+	Keyvaluepairseq133010* a;
 	NI LOC1;
-	a = (Keyvaluepairseq134010*)p;
+	a = (Keyvaluepairseq133010*)p;
 	LOC1 = 0;
 	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
 	nimGCvisit((void*)a->data[LOC1].Field0, op);
@@ -721,44 +721,44 @@ N_NIMCALL(void, TMP500)(void* p, NI op) {
 	}
 }
 
-N_NIMCALL(void, enlarge_134510)(Stringtableobj134012* t) {
-	Keyvaluepairseq134010* n;
+N_NIMCALL(void, enlarge_133510)(Stringtableobj133012* t) {
+	Keyvaluepairseq133010* n;
 	NI TMP498;
-	Keyvaluepairseq134010* LOC8;
+	Keyvaluepairseq133010* LOC8;
 	nimfr("enlarge", "strtabs.nim")
 	n = 0;
 	nimln(133, "strtabs.nim");
 	TMP498 = mulInt(((*t).data ? (*t).data->Sup.len : 0), ((NI) 2));
-	n = (Keyvaluepairseq134010*) newSeq((&NTI134010), ((NI)chckRange((NI)(TMP498), ((NI) 0), ((NI) 2147483647))));
+	n = (Keyvaluepairseq133010*) newSeq((&NTI133010), ((NI)chckRange((NI)(TMP498), ((NI) 0), ((NI) 2147483647))));
 	{
-		NI i_134544;
-		NI HEX3Atmp_134558;
-		NI res_134561;
-		i_134544 = 0;
-		HEX3Atmp_134558 = 0;
+		NI i_133544;
+		NI HEX3Atmp_133558;
+		NI res_133561;
+		i_133544 = 0;
+		HEX3Atmp_133558 = 0;
 		nimln(134, "strtabs.nim");
-		HEX3Atmp_134558 = ((*t).data ? ((*t).data->Sup.len-1) : -1);
+		HEX3Atmp_133558 = ((*t).data ? ((*t).data->Sup.len-1) : -1);
 		nimln(1598, "system.nim");
-		res_134561 = ((NI) 0);
+		res_133561 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP501;
-				if (!(res_134561 <= HEX3Atmp_134558)) goto LA3;
+				if (!(res_133561 <= HEX3Atmp_133558)) goto LA3;
 				nimln(1600, "system.nim");
-				i_134544 = res_134561;
+				i_133544 = res_133561;
 				nimln(135, "strtabs.nim");
 				{
-					if ((NU)(i_134544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-					if (!!((*t).data->data[i_134544].Field0 == 0)) goto LA6;
-					if ((NU)(i_134544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-					if ((NU)(i_134544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-					rawinsert_134488(t, (&n), (*t).data->data[i_134544].Field0, (*t).data->data[i_134544].Field1);
+					if ((NU)(i_133544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+					if (!!((*t).data->data[i_133544].Field0 == 0)) goto LA6;
+					if ((NU)(i_133544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+					if ((NU)(i_133544) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+					rawinsert_133488(t, (&n), (*t).data->data[i_133544].Field0, (*t).data->data[i_133544].Field1);
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP501 = addInt(res_134561, ((NI) 1));
-				res_134561 = (NI)(TMP501);
+				TMP501 = addInt(res_133561, ((NI) 1));
+				res_133561 = (NI)(TMP501);
 			} LA3: ;
 		}
 	}
@@ -770,11 +770,11 @@ N_NIMCALL(void, enlarge_134510)(Stringtableobj134012* t) {
 	popFrame();
 }
 
-N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDesc* val) {
+N_NIMCALL(void, nstPut)(Stringtableobj133012* t, NimStringDesc* key, NimStringDesc* val) {
 	NI index;
 	nimfr("[]=", "strtabs.nim")
 	nimln(140, "strtabs.nim");
-	index = rawget_134418(t, key);
+	index = rawget_133418(t, key);
 	nimln(141, "strtabs.nim");
 	{
 		NimStringDesc* LOC5;
@@ -793,13 +793,13 @@ N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDe
 		{
 			NIM_BOOL LOC9;
 			LOC9 = 0;
-			LOC9 = mustrehash_134200(((*t).data ? (*t).data->Sup.len : 0), (*t).counter);
+			LOC9 = mustrehash_133200(((*t).data ? (*t).data->Sup.len : 0), (*t).counter);
 			if (!LOC9) goto LA10;
-			enlarge_134510(t);
+			enlarge_133510(t);
 		}
 		LA10: ;
 		nimln(145, "strtabs.nim");
-		rawinsert_134488(t, (&(*t).data), key, val);
+		rawinsert_133488(t, (&(*t).data), key, val);
 		nimln(146, "strtabs.nim");
 		TMP502 = addInt((*t).counter, ((NI) 1));
 		(*t).counter = (NI)(TMP502);
@@ -808,7 +808,7 @@ N_NIMCALL(void, nstPut)(Stringtableobj134012* t, NimStringDesc* key, NimStringDe
 	popFrame();
 }
 
-N_NIMCALL(void, raiseformatexception_134610)(NimStringDesc* s) {
+N_NIMCALL(void, raiseformatexception_133610)(NimStringDesc* s) {
 	Valueerror3449* e;
 	NimStringDesc* LOC1;
 	nimfr("raiseFormatException", "strtabs.nim")
@@ -833,7 +833,7 @@ static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c) {
 	(*dest).Sup.len += ((NI) 1);
 }
 
-N_NIMCALL(NimStringDesc*, getvalue_134630)(Stringtableobj134012* t, NU8 flags, NimStringDesc* key) {
+N_NIMCALL(NimStringDesc*, getvalue_133630)(Stringtableobj133012* t, NU8 flags, NimStringDesc* key) {
 	NimStringDesc* result;
 	nimfr("getValue", "strtabs.nim")
 {	result = 0;
@@ -850,7 +850,7 @@ N_NIMCALL(NimStringDesc*, getvalue_134630)(Stringtableobj134012* t, NU8 flags, N
 	nimln(157, "strtabs.nim");
 	{
 		if (!((flags &(1<<((((NU8) 0))&7)))!=0)) goto LA8;
-		result = getenv_122644(key);
+		result = getenv_121644(key);
 	}
 	goto LA6;
 	LA8: ;
@@ -877,7 +877,7 @@ appendString(LOC19, key);
 		{
 			nimln(161, "strtabs.nim");
 			if (!!(((flags &(1<<((((NU8) 1))&7)))!=0))) goto LA21;
-			raiseformatexception_134610(key);
+			raiseformatexception_133610(key);
 		}
 		goto LA15;
 		LA21: ;
@@ -889,42 +889,42 @@ appendString(LOC19, key);
 	return result;
 }
 N_NIMCALL(void, TMP515)(void* p, NI op) {
-	Stringtableobj134012* a;
-	a = (Stringtableobj134012*)p;
+	Stringtableobj133012* a;
+	a = (Stringtableobj133012*)p;
 	nimGCvisit((void*)(*a).data, op);
 }
 
-N_NIMCALL(Stringtableobj134012*, nstnewStringTable)(NU8 mode) {
-	Stringtableobj134012* result;
+N_NIMCALL(Stringtableobj133012*, nstnewStringTable)(NU8 mode) {
+	Stringtableobj133012* result;
 	nimfr("newStringTable", "strtabs.nim")
 	result = 0;
 	nimln(166, "strtabs.nim");
-	result = (Stringtableobj134012*) newObj((&NTI134014), sizeof(Stringtableobj134012));
-	(*result).Sup.m_type = (&NTI134012);
+	result = (Stringtableobj133012*) newObj((&NTI133014), sizeof(Stringtableobj133012));
+	(*result).Sup.m_type = (&NTI133012);
 	nimln(167, "strtabs.nim");
 	(*result).mode = mode;
 	nimln(168, "strtabs.nim");
 	(*result).counter = ((NI) 0);
 	nimln(169, "strtabs.nim");
 	if ((*result).data) nimGCunrefNoCycle((*result).data);
-	(*result).data = (Keyvaluepairseq134010*) newSeqRC1((&NTI134010), ((NI) 64));
+	(*result).data = (Keyvaluepairseq133010*) newSeqRC1((&NTI133010), ((NI) 64));
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(void, clear_134702)(Stringtableobj134012* s, NU8 mode) {
+N_NIMCALL(void, clear_133702)(Stringtableobj133012* s, NU8 mode) {
 	nimfr("clear", "strtabs.nim")
 	nimln(173, "strtabs.nim");
 	(*s).mode = mode;
 	nimln(174, "strtabs.nim");
 	(*s).counter = ((NI) 0);
 	nimln(175, "strtabs.nim");
-	(*s).data = (Keyvaluepairseq134010*) setLengthSeq(&((*s).data)->Sup, sizeof(TY103552), ((NI) 64));
+	(*s).data = (Keyvaluepairseq133010*) setLengthSeq(&((*s).data)->Sup, sizeof(TY103552), ((NI) 64));
 	popFrame();
 }
 
-N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithPairs)(NimStringDesc** keyvaluepairs, NI keyvaluepairsLen0, NU8 mode) {
-	Stringtableobj134012* result;
+N_NIMCALL(Stringtableobj133012*, nstnewStringTableWithPairs)(NimStringDesc** keyvaluepairs, NI keyvaluepairsLen0, NU8 mode) {
+	Stringtableobj133012* result;
 	NI i;
 	nimfr("newStringTable", "strtabs.nim")
 	result = 0;
@@ -952,35 +952,35 @@ N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithPairs)(NimStringDesc** key
 	return result;
 }
 
-N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithTableConstr)(TY103552* keyvaluepairs, NI keyvaluepairsLen0, NU8 mode) {
-	Stringtableobj134012* result;
+N_NIMCALL(Stringtableobj133012*, nstnewStringTableWithTableConstr)(TY103552* keyvaluepairs, NI keyvaluepairsLen0, NU8 mode) {
+	Stringtableobj133012* result;
 	nimfr("newStringTable", "strtabs.nim")
 	result = 0;
 	nimln(197, "strtabs.nim");
 	result = nstnewStringTable(mode);
 	{
-		NimStringDesc* key_134795;
-		NimStringDesc* val_134796;
-		NI i_134800;
-		key_134795 = 0;
-		val_134796 = 0;
+		NimStringDesc* key_133795;
+		NimStringDesc* val_133796;
+		NI i_133800;
+		key_133795 = 0;
+		val_133796 = 0;
 		nimln(1689, "system.nim");
-		i_134800 = ((NI) 0);
+		i_133800 = ((NI) 0);
 		{
 			nimln(1690, "system.nim");
 			while (1) {
 				NI TMP518;
-				if (!(i_134800 < keyvaluepairsLen0)) goto LA3;
+				if (!(i_133800 < keyvaluepairsLen0)) goto LA3;
 				nimln(1691, "system.nim");
-				if ((NU)(i_134800) >= (NU)(keyvaluepairsLen0)) raiseIndexError();
-				key_134795 = keyvaluepairs[i_134800].Field0;
-				if ((NU)(i_134800) >= (NU)(keyvaluepairsLen0)) raiseIndexError();
-				val_134796 = keyvaluepairs[i_134800].Field1;
+				if ((NU)(i_133800) >= (NU)(keyvaluepairsLen0)) raiseIndexError();
+				key_133795 = keyvaluepairs[i_133800].Field0;
+				if ((NU)(i_133800) >= (NU)(keyvaluepairsLen0)) raiseIndexError();
+				val_133796 = keyvaluepairs[i_133800].Field1;
 				nimln(198, "strtabs.nim");
-				nstPut(result, key_134795, val_134796);
+				nstPut(result, key_133795, val_133796);
 				nimln(1692, "system.nim");
-				TMP518 = addInt(i_134800, ((NI) 1));
-				i_134800 = (NI)(TMP518);
+				TMP518 = addInt(i_133800, ((NI) 1));
+				i_133800 = (NI)(TMP518);
 			} LA3: ;
 		}
 	}
@@ -988,7 +988,7 @@ N_NIMCALL(Stringtableobj134012*, nstnewStringTableWithTableConstr)(TY103552* key
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, nstFormat)(NimStringDesc* f, Stringtableobj134012* t, NU8 flags) {
+N_NIMCALL(NimStringDesc*, nstFormat)(NimStringDesc* f, Stringtableobj133012* t, NU8 flags) {
 	NimStringDesc* result;
 	NI i;
 	nimfr("%", "strtabs.nim")
@@ -1054,7 +1054,7 @@ N_NIMCALL(NimStringDesc*, nstFormat)(NimStringDesc* f, Stringtableobj134012* t, 
 					LOC13 = 0;
 					LOC13 = copyStrLast(f, (NI)(TMP523), (NI)(TMP524));
 					LOC14 = 0;
-					LOC14 = getvalue_134630(t, flags, LOC13);
+					LOC14 = getvalue_133630(t, flags, LOC13);
 					result = resizeString(result, LOC14->Sup.len + 0);
 appendString(result, LOC14);
 					nimln(217, "strtabs.nim");
@@ -1098,7 +1098,7 @@ appendString(result, LOC14);
 					LOC20 = 0;
 					LOC20 = copyStrLast(f, (NI)(TMP528), (NI)(TMP529));
 					LOC21 = 0;
-					LOC21 = getvalue_134630(t, flags, LOC20);
+					LOC21 = getvalue_133630(t, flags, LOC20);
 					result = resizeString(result, LOC21->Sup.len + 0);
 appendString(result, LOC21);
 					nimln(222, "strtabs.nim");
@@ -1136,7 +1136,7 @@ appendString(result, LOC21);
 	return result;
 }
 
-N_NIMCALL(NimStringDesc*, nstDollar)(Stringtableobj134012* t) {
+N_NIMCALL(NimStringDesc*, nstDollar)(Stringtableobj133012* t) {
 	NimStringDesc* result;
 	nimfr("$", "strtabs.nim")
 	result = 0;
@@ -1155,36 +1155,36 @@ N_NIMCALL(NimStringDesc*, nstDollar)(Stringtableobj134012* t) {
 		nimln(235, "strtabs.nim");
 		result = copyString(((NimStringDesc*) &TMP533));
 		{
-			NimStringDesc* key_134916;
-			NimStringDesc* val_134917;
-			key_134916 = 0;
-			val_134917 = 0;
+			NimStringDesc* key_133916;
+			NimStringDesc* val_133917;
+			key_133916 = 0;
+			val_133917 = 0;
 			{
-				NI h_134922;
-				NI HEX3Atmp_134924;
-				NI res_134926;
-				h_134922 = 0;
-				HEX3Atmp_134924 = 0;
+				NI h_133922;
+				NI HEX3Atmp_133924;
+				NI res_133926;
+				h_133922 = 0;
+				HEX3Atmp_133924 = 0;
 				nimln(43, "strtabs.nim");
-				HEX3Atmp_134924 = ((*t).data ? ((*t).data->Sup.len-1) : -1);
+				HEX3Atmp_133924 = ((*t).data ? ((*t).data->Sup.len-1) : -1);
 				nimln(1598, "system.nim");
-				res_134926 = ((NI) 0);
+				res_133926 = ((NI) 0);
 				{
 					nimln(1599, "system.nim");
 					while (1) {
 						NI TMP536;
-						if (!(res_134926 <= HEX3Atmp_134924)) goto LA10;
+						if (!(res_133926 <= HEX3Atmp_133924)) goto LA10;
 						nimln(1600, "system.nim");
-						h_134922 = res_134926;
+						h_133922 = res_133926;
 						nimln(44, "strtabs.nim");
 						{
-							if ((NU)(h_134922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-							if (!!((*t).data->data[h_134922].Field0 == 0)) goto LA13;
+							if ((NU)(h_133922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+							if (!!((*t).data->data[h_133922].Field0 == 0)) goto LA13;
 							nimln(45, "strtabs.nim");
-							if ((NU)(h_134922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-							key_134916 = (*t).data->data[h_134922].Field0;
-							if ((NU)(h_134922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
-							val_134917 = (*t).data->data[h_134922].Field1;
+							if ((NU)(h_133922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+							key_133916 = (*t).data->data[h_133922].Field0;
+							if ((NU)(h_133922) >= (NU)((*t).data->Sup.len)) raiseIndexError();
+							val_133917 = (*t).data->data[h_133922].Field1;
 							nimln(237, "strtabs.nim");
 							{
 								if (!(((NI) 1) < (result ? result->Sup.len : 0))) goto LA17;
@@ -1193,19 +1193,19 @@ appendString(result, ((NimStringDesc*) &TMP534));
 							}
 							LA17: ;
 							nimln(238, "strtabs.nim");
-							result = resizeString(result, key_134916->Sup.len + 0);
-appendString(result, key_134916);
+							result = resizeString(result, key_133916->Sup.len + 0);
+appendString(result, key_133916);
 							nimln(239, "strtabs.nim");
 							result = resizeString(result, 2);
 appendString(result, ((NimStringDesc*) &TMP535));
 							nimln(240, "strtabs.nim");
-							result = resizeString(result, val_134917->Sup.len + 0);
-appendString(result, val_134917);
+							result = resizeString(result, val_133917->Sup.len + 0);
+appendString(result, val_133917);
 						}
 						LA13: ;
 						nimln(1619, "system.nim");
-						TMP536 = addInt(res_134926, ((NI) 1));
-						res_134926 = (NI)(TMP536);
+						TMP536 = addInt(res_133926, ((NI) 1));
+						res_133926 = (NI)(TMP536);
 					} LA10: ;
 				}
 			}
@@ -1232,29 +1232,29 @@ static char* NIM_CONST TMP513[3] = {
 "modeCaseInsensitive", 
 "modeStyleInsensitive"};
 static TNimNode TMP475[8];
-NTI134010.size = sizeof(Keyvaluepairseq134010*);
-NTI134010.kind = 24;
-NTI134010.base = (&NTI103552);
-NTI134010.flags = 2;
-NTI134010.marker = TMP500;
-NTI134012.size = sizeof(Stringtableobj134012);
-NTI134012.kind = 17;
-NTI134012.base = (&NTI3411);
+NTI133010.size = sizeof(Keyvaluepairseq133010*);
+NTI133010.kind = 24;
+NTI133010.base = (&NTI103552);
+NTI133010.flags = 2;
+NTI133010.marker = TMP500;
+NTI133012.size = sizeof(Stringtableobj133012);
+NTI133012.kind = 17;
+NTI133012.base = (&NTI3411);
 TMP511[0] = &TMP475[1];
 TMP475[1].kind = 1;
-TMP475[1].offset = offsetof(Stringtableobj134012, counter);
+TMP475[1].offset = offsetof(Stringtableobj133012, counter);
 TMP475[1].typ = (&NTI108);
 TMP475[1].name = "counter";
 TMP511[1] = &TMP475[2];
 TMP475[2].kind = 1;
-TMP475[2].offset = offsetof(Stringtableobj134012, data);
-TMP475[2].typ = (&NTI134010);
+TMP475[2].offset = offsetof(Stringtableobj133012, data);
+TMP475[2].typ = (&NTI133010);
 TMP475[2].name = "data";
 TMP511[2] = &TMP475[3];
-NTI134006.size = sizeof(NU8);
-NTI134006.kind = 14;
-NTI134006.base = 0;
-NTI134006.flags = 3;
+NTI133006.size = sizeof(NU8);
+NTI133006.kind = 14;
+NTI133006.base = 0;
+NTI133006.flags = 3;
 for (TMP514 = 0; TMP514 < 3; TMP514++) {
 TMP475[TMP514+4].kind = 1;
 TMP475[TMP514+4].offset = TMP514;
@@ -1262,16 +1262,16 @@ TMP475[TMP514+4].name = TMP513[TMP514];
 TMP512[TMP514] = &TMP475[TMP514+4];
 }
 TMP475[7].len = 3; TMP475[7].kind = 2; TMP475[7].sons = &TMP512[0];
-NTI134006.node = &TMP475[7];
+NTI133006.node = &TMP475[7];
 TMP475[3].kind = 1;
-TMP475[3].offset = offsetof(Stringtableobj134012, mode);
-TMP475[3].typ = (&NTI134006);
+TMP475[3].offset = offsetof(Stringtableobj133012, mode);
+TMP475[3].typ = (&NTI133006);
 TMP475[3].name = "mode";
 TMP475[0].len = 3; TMP475[0].kind = 2; TMP475[0].sons = &TMP511[0];
-NTI134012.node = &TMP475[0];
-NTI134014.size = sizeof(Stringtableobj134012*);
-NTI134014.kind = 22;
-NTI134014.base = (&NTI134012);
-NTI134014.marker = TMP515;
+NTI133012.node = &TMP475[0];
+NTI133014.size = sizeof(Stringtableobj133012*);
+NTI133014.kind = 22;
+NTI133014.base = (&NTI133012);
+NTI133014.marker = TMP515;
 }
 

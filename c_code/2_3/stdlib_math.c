@@ -7,8 +7,8 @@
 #include <math.h>
 
 #include <stdlib.h>
-typedef struct Runningstat152047 Runningstat152047;
-struct  Runningstat152047  {
+typedef struct Runningstat151047 Runningstat151047;
+struct  Runningstat151047  {
 NI n;
 NF sum;
 NF min;
@@ -18,32 +18,32 @@ NF oldm;
 NF olds;
 NF news;
 };
-N_NIMCALL(NU8, classify_150426)(NF x);
-N_NIMCALL(NI, binom_150442)(NI n, NI k);
-N_NIMCALL(NI, fac_150482)(NI n);
-N_NIMCALL(NIM_BOOL, ispoweroftwo_150521)(NI x);
-N_NIMCALL(NI, nextpoweroftwo_150531)(NI x);
-N_NIMCALL(NI, countbits32_151025)(NI32 n);
-N_NIMCALL(NF, sum_151091)(NF* x, NI xLen0);
-N_NIMCALL(NF, mean_151085)(NF* x, NI xLen0);
-N_NIMCALL(NF, variance_151163)(NF* x, NI xLen0);
-N_NIMCALL(NF, log2_151247)(NF x);
-N_NIMCALL(NF, random_151218)(NF max);
-N_NIMCALL(void, randomize_151224)(void);
-N_NIMCALL(void, randomize_151229)(NI seed);
+N_NIMCALL(NU8, classify_149426)(NF x);
+N_NIMCALL(NI, binom_149442)(NI n, NI k);
+N_NIMCALL(NI, fac_149482)(NI n);
+N_NIMCALL(NIM_BOOL, ispoweroftwo_149521)(NI x);
+N_NIMCALL(NI, nextpoweroftwo_149531)(NI x);
+N_NIMCALL(NI, countbits32_150025)(NI32 n);
+N_NIMCALL(NF, sum_150091)(NF* x, NI xLen0);
+N_NIMCALL(NF, mean_150085)(NF* x, NI xLen0);
+N_NIMCALL(NF, variance_150163)(NF* x, NI xLen0);
+N_NIMCALL(NF, log2_150247)(NF x);
+N_NIMCALL(NF, random_150218)(NF max);
+N_NIMCALL(void, randomize_150224)(void);
+N_NIMCALL(void, randomize_150229)(NI seed);
 N_NIMCALL(NF, ntepochTime)(void);
-N_NIMCALL(NI, random_151212)(NI max);
-N_NIMCALL(NF, mod_152007)(NF x, NF y);
-N_NIMCALL(void, push_152064)(Runningstat152047* s, NF x);
-N_NIMCALL(void, push_152085)(Runningstat152047* s, NI x);
-N_NIMCALL(NF, variance_152096)(Runningstat152047* s);
-N_NIMCALL(NF, standarddeviation_152106)(Runningstat152047* s);
+N_NIMCALL(NI, random_150212)(NI max);
+N_NIMCALL(NF, mod_151007)(NF x, NF y);
+N_NIMCALL(void, push_151064)(Runningstat151047* s, NF x);
+N_NIMCALL(void, push_151085)(Runningstat151047* s, NI x);
+N_NIMCALL(NF, variance_151096)(Runningstat151047* s);
+N_NIMCALL(NF, standarddeviation_151106)(Runningstat151047* s);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
 extern TFrame* frameptr_17042;
 
-N_NIMCALL(NU8, classify_150426)(NF x) {
+N_NIMCALL(NU8, classify_149426)(NF x) {
 	NU8 result;
 {	result = 0;
 	{
@@ -90,7 +90,7 @@ N_NIMCALL(NU8, classify_150426)(NF x) {
 	return result;
 }
 
-N_NIMCALL(NI, binom_150442)(NI n, NI k) {
+N_NIMCALL(NI, binom_149442)(NI n, NI k) {
 	NI result;
 {	result = 0;
 	{
@@ -101,22 +101,22 @@ N_NIMCALL(NI, binom_150442)(NI n, NI k) {
 	LA3: ;
 	{
 		if (!(n < (NI)(((NI) 2) * k))) goto LA7;
-		result = binom_150442(n, (NI)(n - k));
+		result = binom_149442(n, (NI)(n - k));
 		goto BeforeRet;
 	}
 	LA7: ;
 	result = n;
 	{
-		NI i_150459;
-		NI res_150463;
-		i_150459 = 0;
-		res_150463 = ((NI) 2);
+		NI i_149459;
+		NI res_149463;
+		i_149459 = 0;
+		res_149463 = ((NI) 2);
 		{
 			while (1) {
-				if (!(res_150463 <= k)) goto LA11;
-				i_150459 = res_150463;
-				result = (NI)((NI)(result * (NI)((NI)(n + ((NI) 1)) - i_150459)) / i_150459);
-				res_150463 += ((NI) 1);
+				if (!(res_149463 <= k)) goto LA11;
+				i_149459 = res_149463;
+				result = (NI)((NI)(result * (NI)((NI)(n + ((NI) 1)) - i_149459)) / i_149459);
+				res_149463 += ((NI) 1);
 			} LA11: ;
 		}
 	}
@@ -124,28 +124,28 @@ N_NIMCALL(NI, binom_150442)(NI n, NI k) {
 	return result;
 }
 
-N_NIMCALL(NI, fac_150482)(NI n) {
+N_NIMCALL(NI, fac_149482)(NI n) {
 	NI result;
 	result = 0;
 	result = ((NI) 1);
 	{
-		NI i_150498;
-		NI res_150502;
-		i_150498 = 0;
-		res_150502 = ((NI) 2);
+		NI i_149498;
+		NI res_149502;
+		i_149498 = 0;
+		res_149502 = ((NI) 2);
 		{
 			while (1) {
-				if (!(res_150502 <= n)) goto LA3;
-				i_150498 = res_150502;
-				result = (NI)(result * i_150498);
-				res_150502 += ((NI) 1);
+				if (!(res_149502 <= n)) goto LA3;
+				i_149498 = res_149502;
+				result = (NI)(result * i_149498);
+				res_149502 += ((NI) 1);
 			} LA3: ;
 		}
 	}
 	return result;
 }
 
-N_NIMCALL(NIM_BOOL, ispoweroftwo_150521)(NI x) {
+N_NIMCALL(NIM_BOOL, ispoweroftwo_149521)(NI x) {
 	NIM_BOOL result;
 	NIM_BOOL LOC1;
 {	result = 0;
@@ -160,7 +160,7 @@ N_NIMCALL(NIM_BOOL, ispoweroftwo_150521)(NI x) {
 	return result;
 }
 
-N_NIMCALL(NI, nextpoweroftwo_150531)(NI x) {
+N_NIMCALL(NI, nextpoweroftwo_149531)(NI x) {
 	NI result;
 	result = 0;
 	result = (NI)(x - ((NI) 1));
@@ -174,7 +174,7 @@ N_NIMCALL(NI, nextpoweroftwo_150531)(NI x) {
 	return result;
 }
 
-N_NIMCALL(NI, countbits32_151025)(NI32 n) {
+N_NIMCALL(NI, countbits32_150025)(NI32 n) {
 	NI result;
 	NI32 v;
 	result = 0;
@@ -185,58 +185,58 @@ N_NIMCALL(NI, countbits32_151025)(NI32 n) {
 	return result;
 }
 
-N_NIMCALL(NF, sum_151091)(NF* x, NI xLen0) {
+N_NIMCALL(NF, sum_150091)(NF* x, NI xLen0) {
 	NF result;
 	result = 0;
 	{
-		NF i_151133;
-		NI i_151137;
-		i_151133 = 0;
-		i_151137 = ((NI) 0);
+		NF i_150133;
+		NI i_150137;
+		i_150133 = 0;
+		i_150137 = ((NI) 0);
 		{
 			while (1) {
-				if (!(i_151137 < xLen0)) goto LA3;
-				i_151133 = x[i_151137];
-				result = ((NF)(result) + (NF)(i_151133));
-				i_151137 += ((NI) 1);
+				if (!(i_150137 < xLen0)) goto LA3;
+				i_150133 = x[i_150137];
+				result = ((NF)(result) + (NF)(i_150133));
+				i_150137 += ((NI) 1);
 			} LA3: ;
 		}
 	}
 	return result;
 }
 
-N_NIMCALL(NF, mean_151085)(NF* x, NI xLen0) {
+N_NIMCALL(NF, mean_150085)(NF* x, NI xLen0) {
 	NF result;
 	NF LOC1;
 	result = 0;
 	LOC1 = 0;
-	LOC1 = sum_151091(x, xLen0);
+	LOC1 = sum_150091(x, xLen0);
 	result = ((NF)(LOC1) / (NF)(((double) (xLen0))));
 	return result;
 }
 
-N_NIMCALL(NF, variance_151163)(NF* x, NI xLen0) {
+N_NIMCALL(NF, variance_150163)(NF* x, NI xLen0) {
 	NF result;
 	NF m;
 	result = 0;
 	result = 0.0;
-	m = mean_151085(x, xLen0);
+	m = mean_150085(x, xLen0);
 	{
-		NI i_151180;
-		NI HEX3Atmp_151190;
-		NI res_151193;
-		i_151180 = 0;
-		HEX3Atmp_151190 = 0;
-		HEX3Atmp_151190 = (xLen0-1);
-		res_151193 = ((NI) 0);
+		NI i_150180;
+		NI HEX3Atmp_150190;
+		NI res_150193;
+		i_150180 = 0;
+		HEX3Atmp_150190 = 0;
+		HEX3Atmp_150190 = (xLen0-1);
+		res_150193 = ((NI) 0);
 		{
 			while (1) {
 				NF diff;
-				if (!(res_151193 <= HEX3Atmp_151190)) goto LA3;
-				i_151180 = res_151193;
-				diff = ((NF)(x[i_151180]) - (NF)(m));
+				if (!(res_150193 <= HEX3Atmp_150190)) goto LA3;
+				i_150180 = res_150193;
+				diff = ((NF)(x[i_150180]) - (NF)(m));
 				result = ((NF)(result) + (NF)(((NF)(diff) * (NF)(diff))));
-				res_151193 += ((NI) 1);
+				res_150193 += ((NI) 1);
 			} LA3: ;
 		}
 	}
@@ -244,7 +244,7 @@ N_NIMCALL(NF, variance_151163)(NF* x, NI xLen0) {
 	return result;
 }
 
-N_NIMCALL(NF, log2_151247)(NF x) {
+N_NIMCALL(NF, log2_150247)(NF x) {
 	NF result;
 	NF LOC1;
 	NF LOC2;
@@ -259,7 +259,7 @@ N_NIMCALL(NF, log2_151247)(NF x) {
 	return result;
 }
 
-N_NIMCALL(NF, random_151218)(NF max) {
+N_NIMCALL(NF, random_150218)(NF max) {
 	NF result;
 	NF LOC1;
 	result = 0;
@@ -269,18 +269,18 @@ N_NIMCALL(NF, random_151218)(NF max) {
 	return result;
 }
 
-N_NIMCALL(void, randomize_151229)(NI seed) {
+N_NIMCALL(void, randomize_150229)(NI seed) {
 	srand(((int) (seed)));
 	srand48(seed);
 }
 
-N_NIMCALL(void, randomize_151224)(void) {
+N_NIMCALL(void, randomize_150224)(void) {
 	union { NF source; NI dest; } LOC1;
 	LOC1.source = ntepochTime();
-	randomize_151229(LOC1.dest);
+	randomize_150229(LOC1.dest);
 }
 
-N_NIMCALL(NI, random_151212)(NI max) {
+N_NIMCALL(NI, random_150212)(NI max) {
 	NI result;
 	int LOC1;
 	result = 0;
@@ -290,7 +290,7 @@ N_NIMCALL(NI, random_151212)(NI max) {
 	return result;
 }
 
-N_NIMCALL(NF, mod_152007)(NF x, NF y) {
+N_NIMCALL(NF, mod_151007)(NF x, NF y) {
 	NF result;
 	result = 0;
 	{
@@ -309,7 +309,7 @@ N_NIMCALL(NF, mod_152007)(NF x, NF y) {
 	return result;
 }
 
-N_NIMCALL(void, push_152064)(Runningstat152047* s, NF x) {
+N_NIMCALL(void, push_151064)(Runningstat151047* s, NF x) {
 	(*s).n += ((NI) 1);
 	{
 		if (!((*s).n == ((NI) 1))) goto LA3;
@@ -341,11 +341,11 @@ N_NIMCALL(void, push_152064)(Runningstat152047* s, NF x) {
 	(*s).sum = ((NF)((*s).sum) + (NF)(x));
 }
 
-N_NIMCALL(void, push_152085)(Runningstat152047* s, NI x) {
-	push_152064(s, ((double) (x)));
+N_NIMCALL(void, push_151085)(Runningstat151047* s, NI x) {
+	push_151064(s, ((double) (x)));
 }
 
-N_NIMCALL(NF, variance_152096)(Runningstat152047* s) {
+N_NIMCALL(NF, variance_151096)(Runningstat151047* s) {
 	NF result;
 	result = 0;
 	{
@@ -356,12 +356,12 @@ N_NIMCALL(NF, variance_152096)(Runningstat152047* s) {
 	return result;
 }
 
-N_NIMCALL(NF, standarddeviation_152106)(Runningstat152047* s) {
+N_NIMCALL(NF, standarddeviation_151106)(Runningstat151047* s) {
 	NF result;
 	NF LOC1;
 	result = 0;
 	LOC1 = 0;
-	LOC1 = variance_152096(s);
+	LOC1 = variance_151096(s);
 	result = sqrt(LOC1);
 	return result;
 }

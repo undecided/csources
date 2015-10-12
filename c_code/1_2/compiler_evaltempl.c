@@ -402,7 +402,7 @@ static NIM_CONST TY194031 TMP7603 = {
 0x00, 0x00, 0x00, 0x00}
 ;
 STRING_LITERAL(TMP7604, "sons", 4);
-STRING_LITERAL(TMP7607, "evaltempl.nim", 13);
+STRING_LITERAL(TMP7607, "compiler/evaltempl.nim", 22);
 NIM_CONST TY149210 TMP7606 = {((NimStringDesc*) &TMP7607),
 ((NI) 39)}
 ;

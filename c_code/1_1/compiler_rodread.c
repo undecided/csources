@@ -696,7 +696,7 @@ STRING_LITERAL(TMP3907, "rrGetSym: no reader found: +", 28);
 STRING_LITERAL(TMP3908, "loadInitSection", 15);
 STRING_LITERAL(TMP3911, "importConverters", 16);
 STRING_LITERAL(TMP3913, "loadMethods", 11);
-STRING_LITERAL(TMP3916, "rodread.nim", 11);
+STRING_LITERAL(TMP3916, "compiler/rodread.nim", 20);
 NIM_CONST TY149210 TMP3915 = {((NimStringDesc*) &TMP3916),
 ((NI) 798)}
 ;

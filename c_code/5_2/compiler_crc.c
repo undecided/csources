@@ -9,7 +9,7 @@ typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
 typedef struct TNimType TNimType;
 typedef struct TNimNode TNimNode;
-typedef NI TY169071[256];
+typedef NI TY168071[256];
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -38,27 +38,27 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-static N_INLINE(NI32, updatecrc32_169024)(NI8 val, NI32 crc);
+static N_INLINE(NI32, updatecrc32_168024)(NI8 val, NI32 crc);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-static N_INLINE(NI32, updatecrc32_169031)(NIM_CHAR val, NI32 crc);
-N_NIMCALL(NI32, strcrc32_169045)(NimStringDesc* s);
+static N_INLINE(NI32, updatecrc32_168031)(NIM_CHAR val, NI32 crc);
+N_NIMCALL(NI32, strcrc32_168045)(NimStringDesc* s);
 static N_INLINE(NI, subInt)(NI a, NI b);
 N_NOINLINE(void, raiseOverflow)(void);
 N_NOINLINE(void, raiseIndexError)(void);
 static N_INLINE(NI, addInt)(NI a, NI b);
-N_NIMCALL(NI32, HEX3EHEX3C_169538)(NI32 c, NimStringDesc* s);
-N_NIMCALL(NI32, crcfrombuf_169038)(void* buf, NI length);
-N_NIMCALL(NI32, crcfromfile_169051)(NimStringDesc* filename);
+N_NIMCALL(NI32, HEX3EHEX3C_168538)(NI32 c, NimStringDesc* s);
+N_NIMCALL(NI32, crcfrombuf_168038)(void* buf, NI length);
+N_NIMCALL(NI32, crcfromfile_168051)(NimStringDesc* filename);
 N_NIMCALL(NIM_BOOL, open_13203)(FILE** f, NimStringDesc* filename, NU8 mode, NI bufsize);
 N_NOCONV(void*, alloc_6001)(NI size);
 N_NIMCALL(NI, readbuffer_13515)(FILE* f, void* buffer, NI len);
 N_NOCONV(void, dealloc_6048)(void* p);
-N_NIMCALL(NI32, updateadler32_169057)(NI32 adler, void* buf, NI length);
-NIM_CONST TY169071 crc32table_169070 = {((NI) 0),
+N_NIMCALL(NI32, updateadler32_168057)(NI32 adler, void* buf, NI length);
+NIM_CONST TY168071 crc32table_168070 = {((NI) 0),
 ((NI) 1996959894),
 ((NI) -301047508),
 ((NI) -1727442502),
@@ -316,7 +316,7 @@ NIM_CONST TY169071 crc32table_169070 = {((NI) 0),
 ((NI) 755167117)}
 ;
 extern TFrame* frameptr_17042;
-TNimType NTI169015; /* TCrc32 */
+TNimType NTI168015; /* TCrc32 */
 
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	NI result;
@@ -369,7 +369,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-static N_INLINE(NI32, updatecrc32_169024)(NI8 val, NI32 crc) {
+static N_INLINE(NI32, updatecrc32_168024)(NI8 val, NI32 crc) {
 	NI32 result;
 	nimfr("updateCrc32", "crc.nim")
 	result = 0;
@@ -377,17 +377,17 @@ static N_INLINE(NI32, updatecrc32_169024)(NI8 val, NI32 crc) {
 	nimln(79, "crc.nim");
 	nimln(78, "crc.nim");
 	nimln(79, "crc.nim");
-	result = (NI32)(((NI32)chckRange(crc32table_169070[((NI)((NI)(((NI) (crc)) ^ ((NI) ((NI)(((NI) (val)) & ((NI) 255))))) & ((NI) 255)))- 0], ((NI32) (-2147483647 -1)), ((NI32) 2147483647))) ^ (NI32)((NU32)(crc) >> (NU32)(((NI32) 8))));
+	result = (NI32)(((NI32)chckRange(crc32table_168070[((NI)((NI)(((NI) (crc)) ^ ((NI) ((NI)(((NI) (val)) & ((NI) 255))))) & ((NI) 255)))- 0], ((NI32) (-2147483647 -1)), ((NI32) 2147483647))) ^ (NI32)((NU32)(crc) >> (NU32)(((NI32) 8))));
 	popFrame();
 	return result;
 }
 
-static N_INLINE(NI32, updatecrc32_169031)(NIM_CHAR val, NI32 crc) {
+static N_INLINE(NI32, updatecrc32_168031)(NIM_CHAR val, NI32 crc) {
 	NI32 result;
 	nimfr("updateCrc32", "crc.nim")
 	result = 0;
 	nimln(82, "crc.nim");
-	result = updatecrc32_169024(((NI8)(NU8)(NU)(((NI) (((NU8)(val)))))), crc);
+	result = updatecrc32_168024(((NI8)(NU8)(NU)(((NI) (((NU8)(val)))))), crc);
 	popFrame();
 	return result;
 }
@@ -432,37 +432,37 @@ static N_INLINE(NI, addInt)(NI a, NI b) {
 	return result;
 }
 
-N_NIMCALL(NI32, strcrc32_169045)(NimStringDesc* s) {
+N_NIMCALL(NI32, strcrc32_168045)(NimStringDesc* s) {
 	NI32 result;
 	nimfr("strCrc32", "crc.nim")
 	result = 0;
 	nimln(85, "crc.nim");
 	result = ((NI32) -1);
 	{
-		NI i_169514;
-		NI HEX3Atmp_169516;
+		NI i_168514;
+		NI HEX3Atmp_168516;
 		NI TMP1365;
-		NI res_169519;
-		i_169514 = 0;
-		HEX3Atmp_169516 = 0;
+		NI res_168519;
+		i_168514 = 0;
+		HEX3Atmp_168516 = 0;
 		nimln(86, "crc.nim");
 		TMP1365 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_169516 = (NI)(TMP1365);
+		HEX3Atmp_168516 = (NI)(TMP1365);
 		nimln(1598, "system.nim");
-		res_169519 = ((NI) 0);
+		res_168519 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP1366;
-				if (!(res_169519 <= HEX3Atmp_169516)) goto LA3;
+				if (!(res_168519 <= HEX3Atmp_168516)) goto LA3;
 				nimln(1600, "system.nim");
-				i_169514 = res_169519;
+				i_168514 = res_168519;
 				nimln(86, "crc.nim");
-				if ((NU)(i_169514) > (NU)(s->Sup.len)) raiseIndexError();
-				result = updatecrc32_169031(s->data[i_169514], result);
+				if ((NU)(i_168514) > (NU)(s->Sup.len)) raiseIndexError();
+				result = updatecrc32_168031(s->data[i_168514], result);
 				nimln(1614, "system.nim");
-				TMP1366 = addInt(res_169519, ((NI) 1));
-				res_169519 = (NI)(TMP1366);
+				TMP1366 = addInt(res_168519, ((NI) 1));
+				res_168519 = (NI)(TMP1366);
 			} LA3: ;
 		}
 	}
@@ -470,37 +470,37 @@ N_NIMCALL(NI32, strcrc32_169045)(NimStringDesc* s) {
 	return result;
 }
 
-N_NIMCALL(NI32, HEX3EHEX3C_169538)(NI32 c, NimStringDesc* s) {
+N_NIMCALL(NI32, HEX3EHEX3C_168538)(NI32 c, NimStringDesc* s) {
 	NI32 result;
 	nimfr("><", "crc.nim")
 	result = 0;
 	nimln(89, "crc.nim");
 	result = c;
 	{
-		NI i_169553;
-		NI HEX3Atmp_169555;
+		NI i_168553;
+		NI HEX3Atmp_168555;
 		NI TMP1367;
-		NI res_169558;
-		i_169553 = 0;
-		HEX3Atmp_169555 = 0;
+		NI res_168558;
+		i_168553 = 0;
+		HEX3Atmp_168555 = 0;
 		nimln(90, "crc.nim");
 		TMP1367 = subInt((s ? s->Sup.len : 0), ((NI) 1));
-		HEX3Atmp_169555 = (NI)(TMP1367);
+		HEX3Atmp_168555 = (NI)(TMP1367);
 		nimln(1598, "system.nim");
-		res_169558 = ((NI) 0);
+		res_168558 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP1368;
-				if (!(res_169558 <= HEX3Atmp_169555)) goto LA3;
+				if (!(res_168558 <= HEX3Atmp_168555)) goto LA3;
 				nimln(1600, "system.nim");
-				i_169553 = res_169558;
+				i_168553 = res_168558;
 				nimln(90, "crc.nim");
-				if ((NU)(i_169553) > (NU)(s->Sup.len)) raiseIndexError();
-				result = updatecrc32_169031(s->data[i_169553], result);
+				if ((NU)(i_168553) > (NU)(s->Sup.len)) raiseIndexError();
+				result = updatecrc32_168031(s->data[i_168553], result);
 				nimln(1619, "system.nim");
-				TMP1368 = addInt(res_169558, ((NI) 1));
-				res_169558 = (NI)(TMP1368);
+				TMP1368 = addInt(res_168558, ((NI) 1));
+				res_168558 = (NI)(TMP1368);
 			} LA3: ;
 		}
 	}
@@ -508,7 +508,7 @@ N_NIMCALL(NI32, HEX3EHEX3C_169538)(NI32 c, NimStringDesc* s) {
 	return result;
 }
 
-N_NIMCALL(NI32, crcfrombuf_169038)(void* buf, NI length) {
+N_NIMCALL(NI32, crcfrombuf_168038)(void* buf, NI length) {
 	NI32 result;
 	NI8* p;
 	nimfr("crcFromBuf", "crc.nim")
@@ -518,30 +518,30 @@ N_NIMCALL(NI32, crcfrombuf_169038)(void* buf, NI length) {
 	nimln(98, "crc.nim");
 	result = ((NI32) -1);
 	{
-		NI i_169604;
-		NI HEX3Atmp_169607;
+		NI i_168604;
+		NI HEX3Atmp_168607;
 		NI TMP1369;
-		NI res_169610;
-		i_169604 = 0;
-		HEX3Atmp_169607 = 0;
+		NI res_168610;
+		i_168604 = 0;
+		HEX3Atmp_168607 = 0;
 		nimln(99, "crc.nim");
 		TMP1369 = subInt(length, ((NI) 1));
-		HEX3Atmp_169607 = (NI)(TMP1369);
+		HEX3Atmp_168607 = (NI)(TMP1369);
 		nimln(1598, "system.nim");
-		res_169610 = ((NI) 0);
+		res_168610 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
 				NI TMP1370;
-				if (!(res_169610 <= HEX3Atmp_169607)) goto LA3;
+				if (!(res_168610 <= HEX3Atmp_168607)) goto LA3;
 				nimln(1600, "system.nim");
-				i_169604 = res_169610;
+				i_168604 = res_168610;
 				nimln(99, "crc.nim");
-				if ((NU)(i_169604) > (NU)(10000000)) raiseIndexError();
-				result = updatecrc32_169024(p[(i_169604)- 0], result);
+				if ((NU)(i_168604) > (NU)(10000000)) raiseIndexError();
+				result = updatecrc32_168024(p[(i_168604)- 0], result);
 				nimln(1614, "system.nim");
-				TMP1370 = addInt(res_169610, ((NI) 1));
-				res_169610 = (NI)(TMP1370);
+				TMP1370 = addInt(res_168610, ((NI) 1));
+				res_168610 = (NI)(TMP1370);
 			} LA3: ;
 		}
 	}
@@ -549,7 +549,7 @@ N_NIMCALL(NI32, crcfrombuf_169038)(void* buf, NI length) {
 	return result;
 }
 
-N_NIMCALL(NI32, crcfromfile_169051)(NimStringDesc* filename) {
+N_NIMCALL(NI32, crcfromfile_168051)(NimStringDesc* filename) {
 	NI32 result;
 	FILE* bin;
 	void* buf;
@@ -580,30 +580,30 @@ N_NIMCALL(NI32, crcfromfile_169051)(NimStringDesc* filename) {
 			nimln(112, "crc.nim");
 			readbytes = readbuffer_13515(bin, buf, ((NI) 8000));
 			{
-				NI i_169652;
-				NI HEX3Atmp_169657;
+				NI i_168652;
+				NI HEX3Atmp_168657;
 				NI TMP1371;
-				NI res_169660;
-				i_169652 = 0;
-				HEX3Atmp_169657 = 0;
+				NI res_168660;
+				i_168652 = 0;
+				HEX3Atmp_168657 = 0;
 				nimln(113, "crc.nim");
 				TMP1371 = subInt(readbytes, ((NI) 1));
-				HEX3Atmp_169657 = (NI)(TMP1371);
+				HEX3Atmp_168657 = (NI)(TMP1371);
 				nimln(1598, "system.nim");
-				res_169660 = ((NI) 0);
+				res_168660 = ((NI) 0);
 				{
 					nimln(1599, "system.nim");
 					while (1) {
 						NI TMP1372;
-						if (!(res_169660 <= HEX3Atmp_169657)) goto LA10;
+						if (!(res_168660 <= HEX3Atmp_168657)) goto LA10;
 						nimln(1600, "system.nim");
-						i_169652 = res_169660;
+						i_168652 = res_168660;
 						nimln(113, "crc.nim");
-						if ((NU)(i_169652) > (NU)(10000000)) raiseIndexError();
-						result = updatecrc32_169024(p[(i_169652)- 0], result);
+						if ((NU)(i_168652) > (NU)(10000000)) raiseIndexError();
+						result = updatecrc32_168024(p[(i_168652)- 0], result);
 						nimln(1614, "system.nim");
-						TMP1372 = addInt(res_169660, ((NI) 1));
-						res_169660 = (NI)(TMP1372);
+						TMP1372 = addInt(res_168660, ((NI) 1));
+						res_168660 = (NI)(TMP1372);
 					} LA10: ;
 				}
 			}
@@ -624,7 +624,7 @@ N_NIMCALL(NI32, crcfromfile_169051)(NimStringDesc* filename) {
 	return result;
 }
 
-N_NIMCALL(NI32, updateadler32_169057)(NI32 adler, void* buf, NI length) {
+N_NIMCALL(NI32, updateadler32_168057)(NI32 adler, void* buf, NI length) {
 	NI32 result;
 	NI32 s1;
 	NI32 s2;
@@ -701,9 +701,9 @@ NIM_EXTERNC N_NOINLINE(void, compiler_crcInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_crcDatInit)(void) {
-NTI169015.size = sizeof(NI32);
-NTI169015.kind = 34;
-NTI169015.base = 0;
-NTI169015.flags = 3;
+NTI168015.size = sizeof(NI32);
+NTI168015.kind = 34;
+NTI168015.base = 0;
+NTI168015.flags = 3;
 }
 

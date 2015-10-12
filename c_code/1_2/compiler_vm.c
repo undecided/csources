@@ -885,7 +885,7 @@ STRING_LITERAL(TMP7801, ",", 1);
 STRING_LITERAL(TMP7802, ")", 1);
 STRING_LITERAL(TMP7803, "cannot set type", 15);
 STRING_LITERAL(TMP7813, "cannot evaluate cast", 20);
-STRING_LITERAL(TMP7815, "vm.nim", 6);
+STRING_LITERAL(TMP7815, "compiler/vm.nim", 15);
 NIM_CONST TY149210 TMP7814 = {((NimStringDesc*) &TMP7815),
 ((NI) 1309)}
 ;

@@ -1462,7 +1462,7 @@ STRING_LITERAL(TMP9307, "Field$1", 7);
 STRING_LITERAL(TMP9309, "memcpy((void*)$1, (NIM_CONST void*)$2, sizeof($3));$n", 53);
 STRING_LITERAL(TMP9310, "#genericShallowAssign((void*)$1, (void*)$2, $3);$n", 50);
 STRING_LITERAL(TMP9311, "#genericAssign((void*)$1, (void*)$2, $3);$n", 43);
-STRING_LITERAL(TMP9315, "ccgexprs.nim", 12);
+STRING_LITERAL(TMP9315, "compiler/ccgexprs.nim", 21);
 NIM_CONST TY149210 TMP9314 = {((NimStringDesc*) &TMP9315),
 ((NI) 338)}
 ;
@@ -1485,7 +1485,7 @@ STRING_LITERAL(TMP9332, "typ.kind == tyProc ", 19);
 STRING_LITERAL(TMP9333, "sonsLen(typ) == sonsLen(typ.n) ", 31);
 STRING_LITERAL(TMP9339, "$1.ClPrc($3$1.ClEnv)", 20);
 STRING_LITERAL(TMP9340, "$1.ClEnv? $1.ClPrc($3$1.ClEnv):(($4)($1.ClPrc))($2)", 51);
-STRING_LITERAL(TMP9342, "ccgcalls.nim", 12);
+STRING_LITERAL(TMP9342, "compiler/ccgcalls.nim", 21);
 NIM_CONST TY149210 TMP9341 = {((NimStringDesc*) &TMP9342),
 ((NI) 316)}
 ;
@@ -2024,7 +2024,7 @@ STRING_LITERAL(TMP9924, "#dbgRegisterBreakpoint($1, (NCSTRING)$2, (NCSTRING)$3);
 STRING_LITERAL(TMP9925, "#dbgRegisterWatchpoint($1, (NCSTRING)$2, $3);$n", 47);
 STRING_LITERAL(TMP9927, "sonsLen(t) == 3 ", 16);
 STRING_LITERAL(TMP9929, "#pragma omp parallel for $4$nfor ($1 = $2; $1 <= $3; ++$1)", 58);
-STRING_LITERAL(TMP9932, "ccgstmts.nim", 12);
+STRING_LITERAL(TMP9932, "compiler/ccgstmts.nim", 21);
 NIM_CONST TY149210 TMP9931 = {((NimStringDesc*) &TMP9932),
 ((NI) 145)}
 ;
@@ -2050,7 +2050,7 @@ STRING_LITERAL(TMP9957, "if (!($1 = #nimLoadLibrary($2))) #nimLoadLibraryError($
 STRING_LITERAL(TMP9958, "loadDynamicLib", 14);
 STRING_LITERAL(TMP9959, "Dl_$1", 5);
 STRING_LITERAL(TMP9963, "\011$1 = ($2) ($3$4));$n", 21);
-STRING_LITERAL(TMP9965, "cgen.nim", 8);
+STRING_LITERAL(TMP9965, "compiler/cgen.nim", 17);
 NIM_CONST TY149210 TMP9964 = {((NimStringDesc*) &TMP9965),
 ((NI) 563)}
 ;

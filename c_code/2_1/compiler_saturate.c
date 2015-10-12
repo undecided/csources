@@ -3,19 +3,19 @@
 /* The generated code is subject to the original license. */
 #define NIM_INTBITS 32
 #include "nimbase.h"
-N_NIMCALL(NI64, HEX7CHEX2BHEX7C_257019)(NI64 a, NI64 b);
+N_NIMCALL(NI64, HEX7CHEX2BHEX7C_256019)(NI64 a, NI64 b);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_NOINLINE(void, stackoverflow_20001)(void);
 static N_INLINE(void, popFrame)(void);
-N_NIMCALL(NI64, HEX7CHEX2DHEX7C_257030)(NI64 a, NI64 b);
-N_NIMCALL(NI64, HEX7CabsHEX7C_257041)(NI64 a);
+N_NIMCALL(NI64, HEX7CHEX2DHEX7C_256030)(NI64 a, NI64 b);
+N_NIMCALL(NI64, HEX7CabsHEX7C_256041)(NI64 a);
 N_NOINLINE(void, raiseOverflow)(void);
-N_NIMCALL(NI64, HEX7CdivHEX7C_257051)(NI64 a, NI64 b);
+N_NIMCALL(NI64, HEX7CdivHEX7C_256051)(NI64 a, NI64 b);
 static N_INLINE(NI64, divInt64)(NI64 a, NI64 b);
 N_NOINLINE(void, raiseDivByZero)(void);
-N_NIMCALL(NI64, HEX7CmodHEX7C_257062)(NI64 a, NI64 b);
+N_NIMCALL(NI64, HEX7CmodHEX7C_256062)(NI64 a, NI64 b);
 static N_INLINE(NI64, modInt64)(NI64 a, NI64 b);
-N_NIMCALL(NI64, HEX7CHEX2AHEX7C_257073)(NI64 a, NI64 b);
+N_NIMCALL(NI64, HEX7CHEX2AHEX7C_256073)(NI64 a, NI64 b);
 extern TFrame* frameptr_17042;
 
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -45,7 +45,7 @@ static N_INLINE(void, popFrame)(void) {
 	frameptr_17042 = (*frameptr_17042).prev;
 }
 
-N_NIMCALL(NI64, HEX7CHEX2BHEX7C_257019)(NI64 a, NI64 b) {
+N_NIMCALL(NI64, HEX7CHEX2BHEX7C_256019)(NI64 a, NI64 b) {
 	NI64 result;
 	nimfr("|+|", "saturate.nim")
 {	result = 0;
@@ -88,7 +88,7 @@ N_NIMCALL(NI64, HEX7CHEX2BHEX7C_257019)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, HEX7CHEX2DHEX7C_257030)(NI64 a, NI64 b) {
+N_NIMCALL(NI64, HEX7CHEX2DHEX7C_256030)(NI64 a, NI64 b) {
 	NI64 result;
 	nimfr("|-|", "saturate.nim")
 {	result = 0;
@@ -125,7 +125,7 @@ N_NIMCALL(NI64, HEX7CHEX2DHEX7C_257030)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, HEX7CabsHEX7C_257041)(NI64 a) {
+N_NIMCALL(NI64, HEX7CabsHEX7C_256041)(NI64 a) {
 	NI64 result;
 	nimfr("|abs|", "saturate.nim")
 	result = 0;
@@ -182,7 +182,7 @@ static N_INLINE(NI64, divInt64)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, HEX7CdivHEX7C_257051)(NI64 a, NI64 b) {
+N_NIMCALL(NI64, HEX7CdivHEX7C_256051)(NI64 a, NI64 b) {
 	NI64 result;
 	nimfr("|div|", "saturate.nim")
 	result = 0;
@@ -233,7 +233,7 @@ static N_INLINE(NI64, modInt64)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, HEX7CmodHEX7C_257062)(NI64 a, NI64 b) {
+N_NIMCALL(NI64, HEX7CmodHEX7C_256062)(NI64 a, NI64 b) {
 	NI64 result;
 	nimfr("|mod|", "saturate.nim")
 	result = 0;
@@ -256,7 +256,7 @@ N_NIMCALL(NI64, HEX7CmodHEX7C_257062)(NI64 a, NI64 b) {
 	return result;
 }
 
-N_NIMCALL(NI64, HEX7CHEX2AHEX7C_257073)(NI64 a, NI64 b) {
+N_NIMCALL(NI64, HEX7CHEX2AHEX7C_256073)(NI64 a, NI64 b) {
 	NI64 result;
 	NF resasfloat;
 	NF floatprod;

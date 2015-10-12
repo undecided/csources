@@ -554,7 +554,7 @@ static NIM_CONST TY194031 TMP4432 = {
 0x00, 0x00, 0x00, 0x00}
 ;
 STRING_LITERAL(TMP4433, "floatVal", 8);
-STRING_LITERAL(TMP4441, "semfold.nim", 11);
+STRING_LITERAL(TMP4441, "compiler/semfold.nim", 20);
 NIM_CONST TY149210 TMP4440 = {((NimStringDesc*) &TMP4441),
 ((NI) 252)}
 ;

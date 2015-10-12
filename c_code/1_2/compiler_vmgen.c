@@ -655,7 +655,7 @@ STRING_LITERAL(TMP7281, "", 0);
 STRING_LITERAL(TMP7282, "ord(opc) < 255 ", 15);
 STRING_LITERAL(TMP7284, "VM: immediate value does not fit into an int8", 45);
 STRING_LITERAL(TMP7286, "VM: immediate value does not fit into an int16", 46);
-STRING_LITERAL(TMP7289, "vmgen.nim", 9);
+STRING_LITERAL(TMP7289, "compiler/vmgen.nim", 18);
 NIM_CONST TY149210 TMP7288 = {((NimStringDesc*) &TMP7289),
 ((NI) 144)}
 ;

@@ -1977,38 +1977,38 @@ N_NIMCALL(void, execcmdex_149204)(NimStringDesc* command, NU8 options, TY149210*
 	Streamobj141027* outp;
 	NimStringDesc* line;
 	nimfr("execCmdEx", "osproc.nim")
-	nimln(959, "osproc.nim");
+	nimln(899, "osproc.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	p = nospstartProcess(command, ((NimStringDesc*) &TMP571), LOC1, 0, NIM_NIL, (options | 4));
-	nimln(960, "osproc.nim");
+	nimln(900, "osproc.nim");
 	outp = nospoutputStream(p);
-	nimln(961, "osproc.nim");
+	nimln(901, "osproc.nim");
 	unsureAsgnRef((void**) (&(*Result).Field0), copyString(TMP637.Field0));
 	(*Result).Field1 = TMP637.Field1;
-	nimln(962, "osproc.nim");
+	nimln(902, "osproc.nim");
 	line = rawNewString(((NI) 120));
 	{
-		nimln(963, "osproc.nim");
+		nimln(903, "osproc.nim");
 		while (1) {
-			nimln(964, "osproc.nim");
+			nimln(904, "osproc.nim");
 			{
 				NIM_BOOL LOC6;
 				LOC6 = 0;
 				LOC6 = readline_141509(outp, (&line));
 				if (!LOC6) goto LA7;
-				nimln(965, "osproc.nim");
+				nimln(905, "osproc.nim");
 				(*Result).Field0 = resizeString((*Result).Field0, line->Sup.len + 0);
 appendString((*Result).Field0, line);
-				nimln(966, "osproc.nim");
+				nimln(906, "osproc.nim");
 				(*Result).Field0 = resizeString((*Result).Field0, 2);
 appendString((*Result).Field0, ((NimStringDesc*) &TMP613));
 			}
 			goto LA4;
 			LA7: ;
 			{
-				nimln(968, "osproc.nim");
+				nimln(908, "osproc.nim");
 				(*Result).Field1 = peekexitcode_146725(p);
-				nimln(969, "osproc.nim");
+				nimln(909, "osproc.nim");
 				{
 					if (!!(((*Result).Field1 == ((NI) -1)))) goto LA12;
 					goto LA2;
@@ -2018,7 +2018,7 @@ appendString((*Result).Field0, ((NimStringDesc*) &TMP613));
 			LA4: ;
 		}
 	} LA2: ;
-	nimln(970, "osproc.nim");
+	nimln(910, "osproc.nim");
 	nospclose(p);
 	popFrame();
 }

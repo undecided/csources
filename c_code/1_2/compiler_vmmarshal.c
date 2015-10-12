@@ -511,7 +511,7 @@ static NIM_CONST TY194031 TMP7529 = {
 0x00, 0x00, 0x00, 0x00}
 ;
 STRING_LITERAL(TMP7530, "sym", 3);
-STRING_LITERAL(TMP7532, "vmmarshal.nim", 13);
+STRING_LITERAL(TMP7532, "compiler/vmmarshal.nim", 22);
 NIM_CONST TY149210 TMP7531 = {((NimStringDesc*) &TMP7532),
 ((NI) 39)}
 ;
