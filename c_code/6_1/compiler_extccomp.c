@@ -201,8 +201,8 @@ TY13606* prettycmds170640;
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NI idx, void* ClEnv);
 void* ClEnv;
-} TY143795;
-typedef NimStringDesc* TY143637[1];
+} TY143809;
+typedef NimStringDesc* TY143651[1];
 typedef NimStringDesc* TY163825[4];
 typedef Ropeobj160009* TY160572[1];
 typedef NI TY27820[16];
@@ -311,7 +311,7 @@ N_NIMCALL(void, addfiletolink_169954)(NimStringDesc* filename);
 N_NIMCALL(void, prependstr_130419)(Tlinkedlist130028* list, NimStringDesc* data);
 N_NIMCALL(NI, execwithecho_169964)(NimStringDesc* cmd, NimStringDesc* prettycmd);
 N_NIMCALL(void, msgwriteln_163536)(NimStringDesc* s);
-N_NIMCALL(NI, nospexecCmd)(NimStringDesc* command);
+N_NIMCALL(NI, echoexeccmd_143629)(NimStringDesc* command);
 N_NIMCALL(void, execexternalprogram_169985)(NimStringDesc* cmd, NimStringDesc* prettycmd);
 N_NIMCALL(void, generatescript_169995)(NimStringDesc* projectfile, Ropeobj160009* script);
 N_NIMCALL(void, nossplitFile)(NimStringDesc* path, TY119589* Result);
@@ -367,7 +367,7 @@ N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 N_CLOSURE(void, HEX3Aanonymous_170641)(NI idx, void* ClEnv);
 N_NIMCALL(NI, nospcountProcessors)(void);
 N_NIMCALL(void, rawmessage_163888)(NU16 msg, NimStringDesc** args, NI argsLen0);
-N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143793, NI n, TY143795 beforerunevent);
+N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143807, NI n, TY143809 beforerunevent);
 N_NIMCALL(NimStringDesc*, expandtilde_127610)(NimStringDesc* path);
 N_NIMCALL(NIM_BOOL, nosisAbsolute)(NimStringDesc* path);
 N_NIMCALL(Ropeobj160009*, genmappingfiles_170834)(Tlinkedlist130028 list);
@@ -376,12 +376,11 @@ N_NIMCALL(Ropeobj160009*, rope_160320)(NimStringDesc* s);
 N_NIMCALL(void, writemapping_170867)(Ropeobj160009* gsymbolmapping);
 N_NIMCALL(void, add_160534)(Ropeobj160009** a, Ropeobj160009* b);
 N_NIMCALL(NimStringDesc*, nsuEscape)(NimStringDesc* s, NimStringDesc* prefix, NimStringDesc* suffix);
-STRING_LITERAL(TMP1374, "gcc", 3);
-STRING_LITERAL(TMP1375, "o", 1);
-STRING_LITERAL(TMP1376, " -O3 -ffast-math ", 17);
-STRING_LITERAL(TMP1377, " -Os -ffast-math ", 17);
-STRING_LITERAL(TMP1378, "/data/data/com.spartacusrex.spartacuside/files/bin/gcc", 54);
-STRING_LITERAL(TMP1379, "/data/data/com.spartacusrex.spartacuside/files/bin/g++", 54);
+STRING_LITERAL(TMP1375, "gcc", 3);
+STRING_LITERAL(TMP1376, "o", 1);
+STRING_LITERAL(TMP1377, " -O3 -ffast-math ", 17);
+STRING_LITERAL(TMP1378, " -Os -ffast-math ", 17);
+STRING_LITERAL(TMP1379, "g++", 3);
 STRING_LITERAL(TMP1380, "-c $options $include -o $objfile $file", 38);
 STRING_LITERAL(TMP1381, " -mwindows", 10);
 STRING_LITERAL(TMP1382, " -shared", 8);
@@ -469,11 +468,11 @@ STRING_LITERAL(TMP1463, " -O1 ", 5);
 STRING_LITERAL(TMP1464, " -shared ", 9);
 STRING_LITERAL(TMP1465, "-o $exefile $buildgui $builddll $objfiles $options", 50);
 STRING_LITERAL(TMP1466, "icl", 3);
-NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
-((NimStringDesc*) &TMP1375),
+NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1375),
 ((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1377),
 ((NimStringDesc*) &TMP1378),
+((NimStringDesc*) &TMP1375),
 ((NimStringDesc*) &TMP1379),
 ((NimStringDesc*) &TMP1380),
 ((NimStringDesc*) &TMP1381),
@@ -492,9 +491,9 @@ NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
 183}
 ,
 {((NimStringDesc*) &TMP1393),
-((NimStringDesc*) &TMP1375),
 ((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1377),
+((NimStringDesc*) &TMP1378),
 ((NimStringDesc*) &TMP1394),
 ((NimStringDesc*) &TMP1395),
 ((NimStringDesc*) &TMP1380),
@@ -514,9 +513,9 @@ NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
 183}
 ,
 {((NimStringDesc*) &TMP1397),
-((NimStringDesc*) &TMP1375),
 ((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1377),
+((NimStringDesc*) &TMP1378),
 ((NimStringDesc*) &TMP1397),
 ((NimStringDesc*) &TMP1398),
 ((NimStringDesc*) &TMP1380),
@@ -646,7 +645,7 @@ NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
 76}
 ,
 {((NimStringDesc*) &TMP1449),
-((NimStringDesc*) &TMP1375),
+((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1384),
 ((NimStringDesc*) &TMP1384),
 ((NimStringDesc*) &TMP1449),
@@ -690,7 +689,7 @@ NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
 0}
 ,
 {((NimStringDesc*) &TMP1461),
-((NimStringDesc*) &TMP1375),
+((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1462),
 ((NimStringDesc*) &TMP1463),
 ((NimStringDesc*) &TMP1455),
@@ -712,9 +711,9 @@ NIM_CONST TY169435 Cc_169434 = {{((NimStringDesc*) &TMP1374),
 0}
 ,
 {((NimStringDesc*) &TMP1466),
-((NimStringDesc*) &TMP1375),
 ((NimStringDesc*) &TMP1376),
 ((NimStringDesc*) &TMP1377),
+((NimStringDesc*) &TMP1378),
 ((NimStringDesc*) &TMP1466),
 ((NimStringDesc*) &TMP1379),
 ((NimStringDesc*) &TMP1380),
@@ -766,7 +765,7 @@ STRING_LITERAL(TMP1503, "crc", 3);
 STRING_LITERAL(TMP1504, "0", 1);
 STRING_LITERAL(TMP1505, "\012", 1);
 STRING_LITERAL(TMP1507, "CC: ", 4);
-static NIM_CONST TY143795 TMP1511 = {NIM_NIL,NIM_NIL};
+static NIM_CONST TY143809 TMP1511 = {NIM_NIL,NIM_NIL};
 STRING_LITERAL(TMP1512, " execution of an external program failed; rerun with --parallel"
 "Build:1 to see the error message", 95);
 STRING_LITERAL(TMP1513, "libfile", 7);
@@ -1377,7 +1376,7 @@ N_NIMCALL(NI, execwithecho_169964)(NimStringDesc* cmd, NimStringDesc* prettycmd)
 	}
 	LA5: ;
 	nimln(446, "extccomp.nim");
-	result = nospexecCmd(cmd);
+	result = echoexeccmd_143629(cmd);
 	popFrame();
 	return result;
 }
@@ -2298,8 +2297,8 @@ N_NIMCALL(void, callccompiler_170574)(NimStringDesc* projectfile) {
 	NU8 c;
 	Ropeobj160009* script;
 	TY13606* cmds;
-	TY143795 prettycb;
-	TY143795 LOC5;
+	TY143809 prettycb;
+	TY143809 LOC5;
 	nimfr("callCCompiler", "extccomp.nim")
 {	HEX3Aenv_170829 = 0;
 	nimln(180, "system.nim");
@@ -2372,7 +2371,7 @@ N_NIMCALL(void, callccompiler_170574)(NimStringDesc* projectfile) {
 						res = execwithecho_169964(cmds->data[i_170676], ((NimStringDesc*) &TMP1384));
 						nimln(643, "extccomp.nim");
 						{
-							TY143637 LOC25;
+							TY143651 LOC25;
 							if (!!((res == ((NI) 0)))) goto LA23;
 							memset((void*)LOC25, 0, sizeof(LOC25));
 							rawmessage_163888(((NU16) 65), LOC25, 0);
@@ -2419,7 +2418,7 @@ N_NIMCALL(void, callccompiler_170574)(NimStringDesc* projectfile) {
 			if (!!((res == ((NI) 0)))) goto LA37;
 			nimln(654, "extccomp.nim");
 			{
-				TY143637 LOC43;
+				TY143651 LOC43;
 				if (!(gnumberofprocessors_153138 <= ((NI) 1))) goto LA41;
 				nimln(655, "extccomp.nim");
 				memset((void*)LOC43, 0, sizeof(LOC43));
@@ -2851,27 +2850,27 @@ NIM_EXTERNC N_NOINLINE(void, compiler_extccompInit)(void) {
 
 NIM_EXTERNC N_NOINLINE(void, compiler_extccompDatInit)(void) {
 static TNimNode* TMP1508[2];
-static TNimNode TMP1359[3];
+static TNimNode TMP1360[3];
 NTI170805.size = sizeof(TY170805);
 NTI170805.kind = 18;
 NTI170805.base = 0;
 NTI170805.flags = 2;
-TMP1508[0] = &TMP1359[1];
+TMP1508[0] = &TMP1360[1];
 NTI170807.size = sizeof(NI);
 NTI170807.kind = 20;
 NTI170807.base = (&NTI108);
 NTI170807.flags = 3;
-TMP1359[1].kind = 1;
-TMP1359[1].offset = offsetof(TY170805, HEX3Astate);
-TMP1359[1].typ = (&NTI170807);
-TMP1359[1].name = ":state";
-TMP1508[1] = &TMP1359[2];
-TMP1359[2].kind = 1;
-TMP1359[2].offset = offsetof(TY170805, prettycmds170640);
-TMP1359[2].typ = (&NTI13606);
-TMP1359[2].name = "prettyCmds170640";
-TMP1359[0].len = 2; TMP1359[0].kind = 2; TMP1359[0].sons = &TMP1508[0];
-NTI170805.node = &TMP1359[0];
+TMP1360[1].kind = 1;
+TMP1360[1].offset = offsetof(TY170805, HEX3Astate);
+TMP1360[1].typ = (&NTI170807);
+TMP1360[1].name = ":state";
+TMP1508[1] = &TMP1360[2];
+TMP1360[2].kind = 1;
+TMP1360[2].offset = offsetof(TY170805, prettycmds170640);
+TMP1360[2].typ = (&NTI13606);
+TMP1360[2].name = "prettyCmds170640";
+TMP1360[0].len = 2; TMP1360[0].kind = 2; TMP1360[0].sons = &TMP1508[0];
+NTI170805.node = &TMP1360[0];
 NTI170830.size = sizeof(TY170805*);
 NTI170830.kind = 22;
 NTI170830.base = (&NTI170805);

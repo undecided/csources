@@ -325,7 +325,7 @@ N_NIMCALL(void, processswitch_176725)(NU8 pass, Optparser174011* p);
 static N_INLINE(void, appendChar)(NimStringDesc* dest, NIM_CHAR c);
 N_NIMCALL(NIM_BOOL, processargument_176738)(NU8 pass, Optparser174011* p, NI* argscount);
 N_NIMCALL(NimStringDesc*, npocmdLineRest)(Optparser174011* p);
-STRING_LITERAL(TMP1855, "Nim Compiler Version $1 (2015-10-12) [$2: $3]\012Copyright (c) 200"
+STRING_LITERAL(TMP1855, "Nim Compiler Version $1 (2015-10-13) [$2: $3]\012Copyright (c) 200"
 "6-2015 by Andreas Rumpf\012", 87);
 STRING_LITERAL(TMP1856, "0.11.2", 6);
 extern NIM_CONST TY158071 Os_158070;

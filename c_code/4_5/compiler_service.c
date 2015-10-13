@@ -130,7 +130,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-typedef NimStringDesc* TY143637[1];
+typedef NimStringDesc* TY143651[1];
 typedef N_NIMCALL_PTR(void, TY521256) (void);
 struct  TY521426  {
 NI HEX3Astate;
@@ -445,7 +445,7 @@ N_NIMCALL(void, processcmdline_521209)(NU8 pass, NimStringDesc* cmd) {
 			NIM_BOOL LOC27;
 			NIM_BOOL LOC28;
 			NimStringDesc* LOC31;
-			TY143637 LOC34;
+			TY143651 LOC34;
 			LOC27 = 0;
 			LOC28 = 0;
 			LOC28 = !(((gglobaloptions_153128 &(1<<((((NU8) 13))&31)))!=0));

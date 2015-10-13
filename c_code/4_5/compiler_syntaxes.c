@@ -154,7 +154,7 @@ struct {Tnodeseq190807* sons;
 NimStringDesc* comment;
 };
 typedef NU8 TY191031[20];
-typedef NimStringDesc* TY143637[1];
+typedef NimStringDesc* TY143651[1];
 struct  Tllstream177204  {
   TNimObject Sup;
 NU8 kind;
@@ -871,8 +871,8 @@ N_NIMCALL(Tllstream177204*, applyfilter_218689)(Tparsers218035* p, Tnode190813* 
 		if (!!((f == ((NU8) 0)))) goto LA7;
 		nimln(142, "syntaxes.nim");
 		{
-			TY143637 LOC13;
-			TY143637 LOC14;
+			TY143651 LOC13;
+			TY143651 LOC14;
 			if (!(((NI) 2) <= gverbosity_153137)) goto LA11;
 			nimln(143, "syntaxes.nim");
 			memset((void*)LOC13, 0, sizeof(LOC13));

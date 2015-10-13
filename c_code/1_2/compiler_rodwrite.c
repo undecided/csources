@@ -481,7 +481,7 @@ static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(Trodwriter255005*, newrodwriter_255029)(NI32 crc, Tsym193843* module);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP4341)(void* p, NI op);
+N_NIMCALL(void, TMP4340)(void* p, NI op);
 N_NIMCALL(void*, newObj)(TNimType* typ, NI size);
 N_NIMCALL(void*, newSeqRC1)(TNimType* typ, NI len);
 N_NIMCALL(void, initiitable_201282)(Tiitable201274* x);
@@ -542,79 +542,79 @@ N_NIMCALL(NI32, getcrc_238322)(NI32 fileidx);
 N_NIMCALL(Tnode193813*, myclose_257265)(Tpasscontext244005* c, Tnode193813* n);
 N_NIMCALL(void, savemaxids_192472)(NimStringDesc* project);
 N_NIMCALL(NimStringDesc*, HEX2F_119492)(NimStringDesc* head, NimStringDesc* tail);
-STRING_LITERAL(TMP4334, "", 0);
-STRING_LITERAL(TMP4335, "false", 5);
-STRING_LITERAL(TMP4336, " ", 1);
-STRING_LITERAL(TMP4342, "\012", 1);
-STRING_LITERAL(TMP4343, "()", 2);
-static NIM_CONST TY194031 TMP4344 = {
+STRING_LITERAL(TMP4333, "", 0);
+STRING_LITERAL(TMP4334, "false", 5);
+STRING_LITERAL(TMP4335, " ", 1);
+STRING_LITERAL(TMP4341, "\012", 1);
+STRING_LITERAL(TMP4342, "()", 2);
+static NIM_CONST TY194031 TMP4343 = {
 0xE0, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4345, "intVal", 6);
-static NIM_CONST TY194031 TMP4346 = {
+STRING_LITERAL(TMP4344, "intVal", 6);
+static NIM_CONST TY194031 TMP4345 = {
 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4347, "floatVal", 8);
-static NIM_CONST TY194031 TMP4348 = {
+STRING_LITERAL(TMP4346, "floatVal", 8);
+static NIM_CONST TY194031 TMP4347 = {
 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4349, "strVal", 6);
-static NIM_CONST TY194031 TMP4350 = {
+STRING_LITERAL(TMP4348, "strVal", 6);
+static NIM_CONST TY194031 TMP4349 = {
 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4351, "ident", 5);
-static NIM_CONST TY194031 TMP4352 = {
+STRING_LITERAL(TMP4350, "ident", 5);
+static NIM_CONST TY194031 TMP4351 = {
 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4353, "sym", 3);
-static NIM_CONST TY194031 TMP4355 = {
+STRING_LITERAL(TMP4352, "sym", 3);
+static NIM_CONST TY194031 TMP4354 = {
 0xEC, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00}
 ;
-STRING_LITERAL(TMP4356, "sons", 4);
-STRING_LITERAL(TMP4359, "[]", 2);
-STRING_LITERAL(TMP4360, "encodeType: tyForward", 21);
-STRING_LITERAL(TMP4362, "^()", 3);
-STRING_LITERAL(TMP4364, "{}", 2);
-STRING_LITERAL(TMP4370, "symStack: module nil: ", 22);
-STRING_LITERAL(TMP4374, "could not serialize some forwarded symbols/types", 48);
-STRING_LITERAL(TMP4375, "rod", 3);
-STRING_LITERAL(TMP4376, "NIM:", 4);
-STRING_LITERAL(TMP4377, "1215", 4);
-STRING_LITERAL(TMP4378, "ID:", 3);
-STRING_LITERAL(TMP4379, "ORIGFILE:", 9);
-STRING_LITERAL(TMP4380, "CRC:", 4);
-STRING_LITERAL(TMP4381, "OPTIONS:", 8);
-STRING_LITERAL(TMP4382, "GOPTIONS:", 9);
-STRING_LITERAL(TMP4383, "CMD:", 4);
-STRING_LITERAL(TMP4384, "DEFINES:", 8);
-STRING_LITERAL(TMP4385, "FILES(\012", 7);
-STRING_LITERAL(TMP4387, ")\012", 2);
-STRING_LITERAL(TMP4388, "INCLUDES(\012", 10);
-STRING_LITERAL(TMP4389, "DEPS:", 5);
-STRING_LITERAL(TMP4390, "INTERF(\012", 8);
-STRING_LITERAL(TMP4391, "COMPILERPROCS(\012", 15);
-STRING_LITERAL(TMP4392, "INDEX(\012", 7);
-STRING_LITERAL(TMP4393, "IMPORTS(\012", 9);
-STRING_LITERAL(TMP4394, "CONVERTERS:", 11);
-STRING_LITERAL(TMP4395, "METHODS:", 8);
-STRING_LITERAL(TMP4396, "INIT(\012", 6);
-STRING_LITERAL(TMP4397, "DATA(\012", 6);
-STRING_LITERAL(TMP4398, "\000", 1);
-STRING_LITERAL(TMP4401, "rodwrite.process", 16);
-STRING_LITERAL(TMP4402, "rodwrite.process: body is nil", 29);
-STRING_LITERAL(TMP4411, "rodwrite: module ID not set", 27);
+STRING_LITERAL(TMP4355, "sons", 4);
+STRING_LITERAL(TMP4358, "[]", 2);
+STRING_LITERAL(TMP4359, "encodeType: tyForward", 21);
+STRING_LITERAL(TMP4361, "^()", 3);
+STRING_LITERAL(TMP4363, "{}", 2);
+STRING_LITERAL(TMP4369, "symStack: module nil: ", 22);
+STRING_LITERAL(TMP4373, "could not serialize some forwarded symbols/types", 48);
+STRING_LITERAL(TMP4374, "rod", 3);
+STRING_LITERAL(TMP4375, "NIM:", 4);
+STRING_LITERAL(TMP4376, "1215", 4);
+STRING_LITERAL(TMP4377, "ID:", 3);
+STRING_LITERAL(TMP4378, "ORIGFILE:", 9);
+STRING_LITERAL(TMP4379, "CRC:", 4);
+STRING_LITERAL(TMP4380, "OPTIONS:", 8);
+STRING_LITERAL(TMP4381, "GOPTIONS:", 9);
+STRING_LITERAL(TMP4382, "CMD:", 4);
+STRING_LITERAL(TMP4383, "DEFINES:", 8);
+STRING_LITERAL(TMP4384, "FILES(\012", 7);
+STRING_LITERAL(TMP4386, ")\012", 2);
+STRING_LITERAL(TMP4387, "INCLUDES(\012", 10);
+STRING_LITERAL(TMP4388, "DEPS:", 5);
+STRING_LITERAL(TMP4389, "INTERF(\012", 8);
+STRING_LITERAL(TMP4390, "COMPILERPROCS(\012", 15);
+STRING_LITERAL(TMP4391, "INDEX(\012", 7);
+STRING_LITERAL(TMP4392, "IMPORTS(\012", 9);
+STRING_LITERAL(TMP4393, "CONVERTERS:", 11);
+STRING_LITERAL(TMP4394, "METHODS:", 8);
+STRING_LITERAL(TMP4395, "INIT(\012", 6);
+STRING_LITERAL(TMP4396, "DATA(\012", 6);
+STRING_LITERAL(TMP4397, "\000", 1);
+STRING_LITERAL(TMP4400, "rodwrite.process", 16);
+STRING_LITERAL(TMP4401, "rodwrite.process: body is nil", 29);
+STRING_LITERAL(TMP4410, "rodwrite: module ID not set", 27);
 NIM_CONST Tpass244017 rodwritepass_257277 = {myopen_257250,
 NIM_NIL,
 process_256968,
@@ -733,7 +733,7 @@ N_NIMCALL(NimStringDesc*, getdefines_255070)(void) {
 	nimfr("getDefines", "rodwrite.nim")
 	result = 0;
 	nimln(49, "rodwrite.nim");
-	result = copyString(((NimStringDesc*) &TMP4334));
+	result = copyString(((NimStringDesc*) &TMP4333));
 	{
 		NimStringDesc* d_255073;
 		d_255073 = 0;
@@ -755,7 +755,7 @@ N_NIMCALL(NimStringDesc*, getdefines_255070)(void) {
 				{
 					nimln(1599, "system.nim");
 					while (1) {
-						NI TMP4337;
+						NI TMP4336;
 						if (!(res_255087 <= HEX3Atmp_255085)) goto LA5;
 						nimln(1600, "system.nim");
 						h_255083 = res_255087;
@@ -770,14 +770,14 @@ N_NIMCALL(NimStringDesc*, getdefines_255070)(void) {
 							val_255081 = (*gsymbols_170004).data->data[h_255083].Field1;
 							nimln(67, "condsyms.nim");
 							{
-								if (!!(eqStrings(val_255081, ((NimStringDesc*) &TMP4335)))) goto LA12;
+								if (!!(eqStrings(val_255081, ((NimStringDesc*) &TMP4334)))) goto LA12;
 								nimln(66, "condsyms.nim");
 								d_255073 = key_255079;
 								nimln(51, "rodwrite.nim");
 								{
 									if (!!(((result ? result->Sup.len : 0) == ((NI) 0)))) goto LA16;
 									result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP4336));
+appendString(result, ((NimStringDesc*) &TMP4335));
 								}
 								LA16: ;
 								nimln(52, "rodwrite.nim");
@@ -788,8 +788,8 @@ appendString(result, d_255073);
 						}
 						LA8: ;
 						nimln(1619, "system.nim");
-						TMP4337 = addInt(res_255087, ((NI) 1));
-						res_255087 = (NI)(TMP4337);
+						TMP4336 = addInt(res_255087, ((NI) 1));
+						res_255087 = (NI)(TMP4336);
 					} LA5: ;
 				}
 			}
@@ -860,7 +860,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 
 N_NIMCALL(NI, fileidx_255111)(Trodwriter255005* w, NimStringDesc* filename) {
 	NI result;
-	NI TMP4339;
+	NI TMP4338;
 	NimStringDesc* LOC8;
 	nimfr("fileIdx", "rodwrite.nim")
 {	result = 0;
@@ -877,7 +877,7 @@ N_NIMCALL(NI, fileidx_255111)(Trodwriter255005* w, NimStringDesc* filename) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4338;
+				NI TMP4337;
 				if (!(res_255151 <= HEX3Atmp_255148)) goto LA3;
 				nimln(1600, "system.nim");
 				i_255128 = res_255151;
@@ -891,16 +891,16 @@ N_NIMCALL(NI, fileidx_255111)(Trodwriter255005* w, NimStringDesc* filename) {
 				}
 				LA6: ;
 				nimln(1614, "system.nim");
-				TMP4338 = addInt(res_255151, ((NI) 1));
-				res_255151 = (NI)(TMP4338);
+				TMP4337 = addInt(res_255151, ((NI) 1));
+				res_255151 = (NI)(TMP4337);
 			} LA3: ;
 		}
 	}
 	nimln(58, "rodwrite.nim");
 	result = ((*w).files ? (*w).files->Sup.len : 0);
 	nimln(59, "rodwrite.nim");
-	TMP4339 = addInt(result, ((NI) 1));
-	(*w).files = (TY13606*) setLengthSeq(&((*w).files)->Sup, sizeof(NimStringDesc*), ((NI)chckRange((NI)(TMP4339), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	TMP4338 = addInt(result, ((NI) 1));
+	(*w).files = (TY13606*) setLengthSeq(&((*w).files)->Sup, sizeof(NimStringDesc*), ((NI)chckRange((NI)(TMP4338), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	nimln(60, "rodwrite.nim");
 	if ((NU)(result) >= (NU)((*w).files->Sup.len)) raiseIndexError();
 	LOC8 = 0;
@@ -910,7 +910,7 @@ N_NIMCALL(NI, fileidx_255111)(Trodwriter255005* w, NimStringDesc* filename) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP4341)(void* p, NI op) {
+N_NIMCALL(void, TMP4340)(void* p, NI op) {
 	Trodwriter255005* a;
 	a = (Trodwriter255005*)p;
 	nimGCvisit((void*)(*a).module, op);
@@ -995,11 +995,11 @@ N_NIMCALL(Trodwriter255005*, newrodwriter_255029)(NI32 crc, Tsym193843* module) 
 	initiitable_201282((&(*result).imports.tab));
 	nimln(71, "rodwrite.nim");
 	LOC1 = 0;
-	LOC1 = (*result).index.r; (*result).index.r = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC1 = (*result).index.r; (*result).index.r = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	nimln(72, "rodwrite.nim");
 	LOC2 = 0;
-	LOC2 = (*result).imports.r; (*result).imports.r = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC2 = (*result).imports.r; (*result).imports.r = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC2) nimGCunrefNoCycle(LOC2);
 	nimln(73, "rodwrite.nim");
 	(*result).crc = crc;
@@ -1014,29 +1014,29 @@ N_NIMCALL(Trodwriter255005*, newrodwriter_255029)(NI32 crc, Tsym193843* module) 
 	(*result).files = (TY13606*) newSeqRC1((&NTI13606), 0);
 	nimln(78, "rodwrite.nim");
 	LOC3 = 0;
-	LOC3 = (*result).incldeps; (*result).incldeps = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC3 = (*result).incldeps; (*result).incldeps = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC3) nimGCunrefNoCycle(LOC3);
 	nimln(79, "rodwrite.nim");
 	LOC4 = 0;
-	LOC4 = (*result).moddeps; (*result).moddeps = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC4 = (*result).moddeps; (*result).moddeps = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC4) nimGCunrefNoCycle(LOC4);
 	nimln(80, "rodwrite.nim");
 	asgnRefNoCycle((void**) (&(*result).interf), rawNewString(((NI) 2000)));
 	nimln(81, "rodwrite.nim");
 	LOC5 = 0;
-	LOC5 = (*result).compilerprocs; (*result).compilerprocs = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC5 = (*result).compilerprocs; (*result).compilerprocs = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC5) nimGCunrefNoCycle(LOC5);
 	nimln(82, "rodwrite.nim");
 	LOC6 = 0;
-	LOC6 = (*result).converters; (*result).converters = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC6 = (*result).converters; (*result).converters = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC6) nimGCunrefNoCycle(LOC6);
 	nimln(83, "rodwrite.nim");
 	LOC7 = 0;
-	LOC7 = (*result).methods; (*result).methods = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC7 = (*result).methods; (*result).methods = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC7) nimGCunrefNoCycle(LOC7);
 	nimln(84, "rodwrite.nim");
 	LOC8 = 0;
-	LOC8 = (*result).init; (*result).init = copyStringRC1(((NimStringDesc*) &TMP4334));
+	LOC8 = (*result).init; (*result).init = copyStringRC1(((NimStringDesc*) &TMP4333));
 	if (LOC8) nimGCunrefNoCycle(LOC8);
 	nimln(85, "rodwrite.nim");
 	asgnRefNoCycle((void**) (&(*result).origfile), tofilename_166263((*module).info.fileindex));
@@ -1078,14 +1078,14 @@ N_NIMCALL(void, addincldep_255043)(Trodwriter255005* w, NimStringDesc* dep) {
 	encodevint_200296(LOC2, (&(*w).incldeps));
 	nimln(98, "rodwrite.nim");
 	(*w).incldeps = resizeString((*w).incldeps, 1);
-appendString((*w).incldeps, ((NimStringDesc*) &TMP4336));
+appendString((*w).incldeps, ((NimStringDesc*) &TMP4335));
 	nimln(99, "rodwrite.nim");
 	LOC3 = 0;
 	LOC3 = crcfromfile_171051(resolved);
 	encodevint_200296(((NI) (LOC3)), (&(*w).incldeps));
 	nimln(100, "rodwrite.nim");
 	(*w).incldeps = resizeString((*w).incldeps, 1);
-appendString((*w).incldeps, ((NimStringDesc*) &TMP4342));
+appendString((*w).incldeps, ((NimStringDesc*) &TMP4341));
 	popFrame();
 }
 
@@ -1149,7 +1149,7 @@ N_NIMCALL(void, encodenode_255320)(Trodwriter255005* w, Tlineinfo165338 finfo, T
 		if (!(n == NIM_NIL)) goto LA3;
 		nimln(116, "rodwrite.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP4343));
+appendString((*result), ((NimStringDesc*) &TMP4342));
 		nimln(117, "rodwrite.nim");
 		goto BeforeRet;
 	}
@@ -1235,12 +1235,12 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 	{
 		nimln(150, "rodwrite.nim");
 		{
-			if (!(((TMP4344[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4345));
+			if (!(((TMP4343[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4344));
 			if (!!(((*n).kindU.S1.intval == IL64(0)))) goto LA28;
 			nimln(151, "rodwrite.nim");
 			(*result) = addChar((*result), 33);
 			nimln(152, "rodwrite.nim");
-			if (!(((TMP4344[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4345));
+			if (!(((TMP4343[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4344));
 			encodevbiggestint_200258((*n).kindU.S1.intval, result);
 		}
 		LA28: ;
@@ -1251,12 +1251,12 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 		nimln(154, "rodwrite.nim");
 		{
 			NimStringDesc* LOC35;
-			if (!(((TMP4346[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4347));
+			if (!(((TMP4345[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4346));
 			if (!!(((*n).kindU.S2.floatval == 0.0))) goto LA33;
 			nimln(155, "rodwrite.nim");
 			(*result) = addChar((*result), 33);
 			nimln(156, "rodwrite.nim");
-			if (!(((TMP4346[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4347));
+			if (!(((TMP4345[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4346));
 			LOC35 = 0;
 			LOC35 = nimFloatToStr((*n).kindU.S2.floatval);
 			encodestr_200042(LOC35, result);
@@ -1268,12 +1268,12 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 	{
 		nimln(158, "rodwrite.nim");
 		{
-			if (!(((TMP4348[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4349));
+			if (!(((TMP4347[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4348));
 			if (!!((((*n).kindU.S3.strval) && ((*n).kindU.S3.strval)->Sup.len == 0))) goto LA39;
 			nimln(159, "rodwrite.nim");
 			(*result) = addChar((*result), 33);
 			nimln(160, "rodwrite.nim");
-			if (!(((TMP4348[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4349));
+			if (!(((TMP4347[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4348));
 			encodestr_200042((*n).kindU.S3.strval, result);
 		}
 		LA39: ;
@@ -1284,7 +1284,7 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 		nimln(162, "rodwrite.nim");
 		(*result) = addChar((*result), 33);
 		nimln(163, "rodwrite.nim");
-		if (!(((TMP4350[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4351));
+		if (!(((TMP4349[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4350));
 		encodestr_200042((*(*n).kindU.S5.ident).s, result);
 	}
 	break;
@@ -1293,10 +1293,10 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 		nimln(165, "rodwrite.nim");
 		(*result) = addChar((*result), 33);
 		nimln(166, "rodwrite.nim");
-		if (!(((TMP4352[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4353));
+		if (!(((TMP4351[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4352));
 		encodevint_200296((*(*n).kindU.S4.sym).Sup.id, result);
 		nimln(167, "rodwrite.nim");
-		if (!(((TMP4352[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4353));
+		if (!(((TMP4351[(*n).kind/8] &(1<<((*n).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4352));
 		pushsym_255299(w, (*n).kindU.S4.sym);
 	}
 	break;
@@ -1306,31 +1306,31 @@ appendString((*result), ((NimStringDesc*) &TMP4343));
 			NI i_255409;
 			NI HEX3Atmp_255413;
 			NI LOC45;
-			NI TMP4354;
+			NI TMP4353;
 			NI res_255416;
 			i_255409 = 0;
 			HEX3Atmp_255413 = 0;
 			nimln(169, "rodwrite.nim");
 			LOC45 = 0;
 			LOC45 = sonslen_196403(n);
-			TMP4354 = subInt(LOC45, ((NI) 1));
-			HEX3Atmp_255413 = (NI)(TMP4354);
+			TMP4353 = subInt(LOC45, ((NI) 1));
+			HEX3Atmp_255413 = (NI)(TMP4353);
 			nimln(1598, "system.nim");
 			res_255416 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4357;
+					NI TMP4356;
 					if (!(res_255416 <= HEX3Atmp_255413)) goto LA47;
 					nimln(1600, "system.nim");
 					i_255409 = res_255416;
 					nimln(170, "rodwrite.nim");
-					if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+					if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 					if ((NU)(i_255409) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					encodenode_255320(w, (*n).info, (*n).kindU.S6.sons->data[i_255409], result);
 					nimln(1614, "system.nim");
-					TMP4357 = addInt(res_255416, ((NI) 1));
-					res_255416 = (NI)(TMP4357);
+					TMP4356 = addInt(res_255416, ((NI) 1));
+					res_255416 = (NI)(TMP4356);
 				} LA47: ;
 			}
 		}
@@ -1399,9 +1399,9 @@ N_NIMCALL(void, encodeloc_255435)(Trodwriter255005* w, Tloc193827* loc, NimStrin
 	LA19: ;
 	nimln(190, "rodwrite.nim");
 	{
-		NI TMP4358;
-		TMP4358 = addInt(oldlen, ((NI) 1));
-		if (!((NI)(TMP4358) == ((*result) ? (*result)->Sup.len : 0))) goto LA24;
+		NI TMP4357;
+		TMP4357 = addInt(oldlen, ((NI) 1));
+		if (!((NI)(TMP4357) == ((*result) ? (*result)->Sup.len : 0))) goto LA24;
 		nimln(192, "rodwrite.nim");
 		(*result) = setLengthStr((*result), ((NI)chckRange(oldlen, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	}
@@ -1422,7 +1422,7 @@ N_NIMCALL(void, encodetype_255522)(Trodwriter255005* w, Ttype193849* t, NimStrin
 		if (!(t == NIM_NIL)) goto LA3;
 		nimln(199, "rodwrite.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP4359));
+appendString((*result), ((NimStringDesc*) &TMP4358));
 		nimln(200, "rodwrite.nim");
 		goto BeforeRet;
 	}
@@ -1430,7 +1430,7 @@ appendString((*result), ((NimStringDesc*) &TMP4359));
 	nimln(202, "rodwrite.nim");
 	{
 		if (!((*t).kind == ((NU8) 30))) goto LA7;
-		internalerror_167218(((NimStringDesc*) &TMP4360));
+		internalerror_167218(((NimStringDesc*) &TMP4359));
 	}
 	LA7: ;
 	nimln(205, "rodwrite.nim");
@@ -1514,21 +1514,21 @@ appendString((*result), ((NimStringDesc*) &TMP4359));
 		NI i_255638;
 		NI HEX3Atmp_255653;
 		NI LOC39;
-		NI TMP4361;
+		NI TMP4360;
 		NI res_255656;
 		i_255638 = 0;
 		HEX3Atmp_255653 = 0;
 		nimln(232, "rodwrite.nim");
 		LOC39 = 0;
 		LOC39 = sonslen_196351(t);
-		TMP4361 = subInt(LOC39, ((NI) 1));
-		HEX3Atmp_255653 = (NI)(TMP4361);
+		TMP4360 = subInt(LOC39, ((NI) 1));
+		HEX3Atmp_255653 = (NI)(TMP4360);
 		nimln(1598, "system.nim");
 		res_255656 = ((NI) 0);
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4363;
+				NI TMP4362;
 				if (!(res_255656 <= HEX3Atmp_255653)) goto LA41;
 				nimln(1600, "system.nim");
 				i_255638 = res_255656;
@@ -1538,7 +1538,7 @@ appendString((*result), ((NimStringDesc*) &TMP4359));
 					if (!((*t).sons->data[i_255638] == NIM_NIL)) goto LA44;
 					nimln(234, "rodwrite.nim");
 					(*result) = resizeString((*result), 3);
-appendString((*result), ((NimStringDesc*) &TMP4362));
+appendString((*result), ((NimStringDesc*) &TMP4361));
 				}
 				goto LA42;
 				LA44: ;
@@ -1554,8 +1554,8 @@ appendString((*result), ((NimStringDesc*) &TMP4362));
 				}
 				LA42: ;
 				nimln(1614, "system.nim");
-				TMP4363 = addInt(res_255656, ((NI) 1));
-				res_255656 = (NI)(TMP4363);
+				TMP4362 = addInt(res_255656, ((NI) 1));
+				res_255656 = (NI)(TMP4362);
 			} LA41: ;
 		}
 	}
@@ -1592,7 +1592,7 @@ N_NIMCALL(void, encodesym_255696)(Trodwriter255005* w, Tsym193843* s, NimStringD
 		if (!(s == NIM_NIL)) goto LA3;
 		nimln(251, "rodwrite.nim");
 		(*result) = resizeString((*result), 2);
-appendString((*result), ((NimStringDesc*) &TMP4364));
+appendString((*result), ((NimStringDesc*) &TMP4363));
 		nimln(252, "rodwrite.nim");
 		goto BeforeRet;
 	}
@@ -1732,32 +1732,32 @@ N_NIMCALL(void, addtoindex_256009)(Tindex236028* w, NI key, NI val) {
 	nimfr("addToIndex", "rodwrite.nim")
 	nimln(312, "rodwrite.nim");
 	{
+		NI TMP4364;
 		NI TMP4365;
-		NI TMP4366;
-		TMP4365 = subInt(key, (*w).lastidxkey);
-		if (!((NI)(TMP4365) == ((NI) 1))) goto LA3;
+		TMP4364 = subInt(key, (*w).lastidxkey);
+		if (!((NI)(TMP4364) == ((NI) 1))) goto LA3;
 		nimln(314, "rodwrite.nim");
-		TMP4366 = subInt(val, (*w).lastidxval);
-		encodevint_200296((NI)(TMP4366), (&(*w).r));
+		TMP4365 = subInt(val, (*w).lastidxval);
+		encodevint_200296((NI)(TMP4365), (&(*w).r));
 	}
 	goto LA1;
 	LA3: ;
 	{
+		NI TMP4366;
 		NI TMP4367;
-		NI TMP4368;
 		nimln(316, "rodwrite.nim");
-		TMP4367 = subInt(key, (*w).lastidxkey);
-		encodevint_200296((NI)(TMP4367), (&(*w).r));
+		TMP4366 = subInt(key, (*w).lastidxkey);
+		encodevint_200296((NI)(TMP4366), (&(*w).r));
 		nimln(317, "rodwrite.nim");
 		(*w).r = addChar((*w).r, 32);
 		nimln(318, "rodwrite.nim");
-		TMP4368 = subInt(val, (*w).lastidxval);
-		encodevint_200296((NI)(TMP4368), (&(*w).r));
+		TMP4367 = subInt(val, (*w).lastidxval);
+		encodevint_200296((NI)(TMP4367), (&(*w).r));
 	}
 	LA1: ;
 	nimln(319, "rodwrite.nim");
 	(*w).r = resizeString((*w).r, 1);
-appendString((*w).r, ((NimStringDesc*) &TMP4342));
+appendString((*w).r, ((NimStringDesc*) &TMP4341));
 	nimln(320, "rodwrite.nim");
 	(*w).lastidxkey = key;
 	nimln(321, "rodwrite.nim");
@@ -1786,7 +1786,7 @@ static N_INLINE(NIM_BOOL, haspattern_198785)(Tsym193843* s) {
 	LOC1 = 0;
 	LOC1 = isroutine_198765(s);
 	if (!(LOC1)) goto LA2;
-	if (((TMP4355[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+	if (((TMP4354[(*(*s).ast).kind/8] &(1<<((*(*s).ast).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 	if ((NU)(((NI) 1)) >= (NU)((*(*s).ast).kindU.S6.sons->Sup.len)) raiseIndexError();
 	LOC1 = !(((*(*(*s).ast).kindU.S6.sons->data[((NI) 1)]).kind == ((NU8) 1)));
 	LA2: ;
@@ -1806,21 +1806,21 @@ N_NIMCALL(NI, symstack_256201)(Trodwriter255005* w) {
 		nimln(331, "rodwrite.nim");
 		while (1) {
 			Tsym193843* s;
-			NI TMP4371;
+			NI TMP4370;
 			if (!(i < ((*w).sstack ? (*w).sstack->Sup.len : 0))) goto LA2;
 			nimln(332, "rodwrite.nim");
 			if ((NU)(i) >= (NU)((*w).sstack->Sup.len)) raiseIndexError();
 			s = (*w).sstack->data[i];
 			nimln(333, "rodwrite.nim");
 			{
-				NI TMP4369;
+				NI TMP4368;
 				if (!(((*s).flags &(1<<((((NU8) 4))&31)))!=0)) goto LA5;
 				nimln(334, "rodwrite.nim");
 				if ((NU)(result) >= (NU)((*w).sstack->Sup.len)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*w).sstack->data[result]), s);
 				nimln(335, "rodwrite.nim");
-				TMP4369 = addInt(result, ((NI) 1));
-				result = (NI)(TMP4369);
+				TMP4368 = addInt(result, ((NI) 1));
+				result = (NI)(TMP4368);
 			}
 			goto LA3;
 			LA5: ;
@@ -1839,7 +1839,7 @@ N_NIMCALL(NI, symstack_256201)(Trodwriter255005* w) {
 					if (!(m == NIM_NIL)) goto LA13;
 					LOC15 = 0;
 					LOC15 = rawNewString((*(*s).name).s->Sup.len + 22);
-appendString(LOC15, ((NimStringDesc*) &TMP4370));
+appendString(LOC15, ((NimStringDesc*) &TMP4369));
 appendString(LOC15, (*(*s).name).s);
 					internalerror_167218(LOC15);
 				}
@@ -1862,7 +1862,7 @@ appendString(LOC15, (*(*s).name).s);
 					encodesym_255696(w, s, (&(*w).data));
 					nimln(345, "rodwrite.nim");
 					(*w).data = resizeString((*w).data, 1);
-appendString((*w).data, ((NimStringDesc*) &TMP4342));
+appendString((*w).data, ((NimStringDesc*) &TMP4341));
 					nimln(347, "rodwrite.nim");
 					{
 						NIM_BOOL LOC24;
@@ -1881,7 +1881,7 @@ appendString((*w).data, ((NimStringDesc*) &TMP4342));
 						encodevint_200296((*s).Sup.id, (&(*w).interf));
 						nimln(352, "rodwrite.nim");
 						(*w).interf = resizeString((*w).interf, 1);
-appendString((*w).interf, ((NimStringDesc*) &TMP4342));
+appendString((*w).interf, ((NimStringDesc*) &TMP4341));
 					}
 					LA26: ;
 					nimln(353, "rodwrite.nim");
@@ -1895,7 +1895,7 @@ appendString((*w).interf, ((NimStringDesc*) &TMP4342));
 						encodevint_200296((*s).Sup.id, (&(*w).compilerprocs));
 						nimln(357, "rodwrite.nim");
 						(*w).compilerprocs = resizeString((*w).compilerprocs, 1);
-appendString((*w).compilerprocs, ((NimStringDesc*) &TMP4342));
+appendString((*w).compilerprocs, ((NimStringDesc*) &TMP4341));
 					}
 					LA30: ;
 					nimln(358, "rodwrite.nim");
@@ -1956,8 +1956,8 @@ appendString((*w).compilerprocs, ((NimStringDesc*) &TMP4342));
 			LA9: ;
 			LA3: ;
 			nimln(373, "rodwrite.nim");
-			TMP4371 = addInt(i, ((NI) 1));
-			i = (NI)(TMP4371);
+			TMP4370 = addInt(i, ((NI) 1));
+			i = (NI)(TMP4370);
 		} LA2: ;
 	}
 	nimln(374, "rodwrite.nim");
@@ -1977,21 +1977,21 @@ N_NIMCALL(NI, typestack_256633)(Trodwriter255005* w) {
 		nimln(378, "rodwrite.nim");
 		while (1) {
 			Ttype193849* t;
-			NI TMP4373;
+			NI TMP4372;
 			if (!(i < ((*w).tstack ? (*w).tstack->Sup.len : 0))) goto LA2;
 			nimln(379, "rodwrite.nim");
 			if ((NU)(i) >= (NU)((*w).tstack->Sup.len)) raiseIndexError();
 			t = (*w).tstack->data[i];
 			nimln(380, "rodwrite.nim");
 			{
-				NI TMP4372;
+				NI TMP4371;
 				if (!((*t).kind == ((NU8) 30))) goto LA5;
 				nimln(381, "rodwrite.nim");
 				if ((NU)(result) >= (NU)((*w).tstack->Sup.len)) raiseIndexError();
 				asgnRefNoCycle((void**) (&(*w).tstack->data[result]), t);
 				nimln(382, "rodwrite.nim");
-				TMP4372 = addInt(result, ((NI) 1));
-				result = (NI)(TMP4372);
+				TMP4371 = addInt(result, ((NI) 1));
+				result = (NI)(TMP4371);
 			}
 			goto LA3;
 			LA5: ;
@@ -2010,14 +2010,14 @@ N_NIMCALL(NI, typestack_256633)(Trodwriter255005* w) {
 				encodetype_255522(w, t, (&(*w).data));
 				nimln(387, "rodwrite.nim");
 				(*w).data = resizeString((*w).data, 1);
-appendString((*w).data, ((NimStringDesc*) &TMP4342));
+appendString((*w).data, ((NimStringDesc*) &TMP4341));
 			}
 			goto LA3;
 			LA9: ;
 			LA3: ;
 			nimln(388, "rodwrite.nim");
-			TMP4373 = addInt(i, ((NI) 1));
-			i = (NI)(TMP4373);
+			TMP4372 = addInt(i, ((NI) 1));
+			i = (NI)(TMP4372);
 		} LA2: ;
 	}
 	nimln(389, "rodwrite.nim");
@@ -2077,7 +2077,7 @@ N_NIMCALL(void, processstacks_256700)(Trodwriter255005* w, NIM_BOOL finalpass) {
 		LA12: ;
 		if (!LOC11) goto LA15;
 		nimln(401, "rodwrite.nim");
-		internalerror_167218(((NimStringDesc*) &TMP4374));
+		internalerror_167218(((NimStringDesc*) &TMP4373));
 	}
 	LA15: ;
 	popFrame();
@@ -2125,13 +2125,13 @@ N_NIMCALL(void, addstmt_255057)(Trodwriter255005* w, Tnode193813* n) {
 	encodevint_200296(((*w).data ? (*w).data->Sup.len : 0), (&(*w).init));
 	nimln(415, "rodwrite.nim");
 	(*w).init = resizeString((*w).init, 1);
-appendString((*w).init, ((NimStringDesc*) &TMP4342));
+appendString((*w).init, ((NimStringDesc*) &TMP4341));
 	nimln(416, "rodwrite.nim");
 	LOC1 = unknownlineinfo_166024();
 	encodenode_255320(w, LOC1, n, (&(*w).data));
 	nimln(417, "rodwrite.nim");
 	(*w).data = resizeString((*w).data, 1);
-appendString((*w).data, ((NimStringDesc*) &TMP4342));
+appendString((*w).data, ((NimStringDesc*) &TMP4341));
 	nimln(418, "rodwrite.nim");
 	processstacks_256700(w, NIM_FALSE);
 	popFrame();
@@ -2163,7 +2163,7 @@ N_NIMCALL(void, writerod_255064)(Trodwriter255005* w) {
 		LOC4 = 0;
 		LOC4 = withpackagename_156922(LOC3);
 		LOC5 = 0;
-		LOC5 = noschangeFileExt(LOC4, ((NimStringDesc*) &TMP4375));
+		LOC5 = noschangeFileExt(LOC4, ((NimStringDesc*) &TMP4374));
 		LOC6 = 0;
 		LOC6 = completegeneratedfilepath_157001(LOC5, NIM_TRUE);
 		LOC7 = 0;
@@ -2174,67 +2174,67 @@ N_NIMCALL(void, writerod_255064)(Trodwriter255005* w) {
 	}
 	LA8: ;
 	nimln(429, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4376));
+	write_13457(f, ((NimStringDesc*) &TMP4375));
 	nimln(430, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4377));
+	write_13457(f, ((NimStringDesc*) &TMP4376));
 	nimln(431, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(432, "rodwrite.nim");
-	id = copyString(((NimStringDesc*) &TMP4378));
+	id = copyString(((NimStringDesc*) &TMP4377));
 	nimln(433, "rodwrite.nim");
 	encodevint_200296((*(*w).module).Sup.id, (&id));
 	nimln(434, "rodwrite.nim");
 	write_13457(f, id);
 	nimln(435, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(437, "rodwrite.nim");
-	orig = copyString(((NimStringDesc*) &TMP4379));
+	orig = copyString(((NimStringDesc*) &TMP4378));
 	nimln(438, "rodwrite.nim");
 	encodestr_200042((*w).origfile, (&orig));
 	nimln(439, "rodwrite.nim");
 	write_13457(f, orig);
 	nimln(440, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(442, "rodwrite.nim");
-	crc = copyString(((NimStringDesc*) &TMP4380));
+	crc = copyString(((NimStringDesc*) &TMP4379));
 	nimln(443, "rodwrite.nim");
 	encodevint_200296(((NI) ((*w).crc)), (&crc));
 	nimln(444, "rodwrite.nim");
 	write_13457(f, crc);
 	nimln(445, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(447, "rodwrite.nim");
-	options = copyString(((NimStringDesc*) &TMP4381));
+	options = copyString(((NimStringDesc*) &TMP4380));
 	nimln(448, "rodwrite.nim");
 	encodevint_200296(((NI) (((NI32) ((*w).options)))), (&options));
 	nimln(449, "rodwrite.nim");
 	write_13457(f, options);
 	nimln(450, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(452, "rodwrite.nim");
-	goptions = copyString(((NimStringDesc*) &TMP4382));
+	goptions = copyString(((NimStringDesc*) &TMP4381));
 	nimln(453, "rodwrite.nim");
 	encodevint_200296(((NI) (((NI32) (gglobaloptions_156128)))), (&goptions));
 	nimln(454, "rodwrite.nim");
 	write_13457(f, goptions);
 	nimln(455, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(457, "rodwrite.nim");
-	cmd = copyString(((NimStringDesc*) &TMP4383));
+	cmd = copyString(((NimStringDesc*) &TMP4382));
 	nimln(458, "rodwrite.nim");
 	encodevint_200296(((NI) (((NI32) (gcmd_156130)))), (&cmd));
 	nimln(459, "rodwrite.nim");
 	write_13457(f, cmd);
 	nimln(460, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(462, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4384));
+	write_13457(f, ((NimStringDesc*) &TMP4383));
 	nimln(463, "rodwrite.nim");
 	write_13457(f, (*w).defines);
 	nimln(464, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(466, "rodwrite.nim");
-	files = copyString(((NimStringDesc*) &TMP4385));
+	files = copyString(((NimStringDesc*) &TMP4384));
 	{
 		NI i_256873;
 		NI HEX3Atmp_256946;
@@ -2248,7 +2248,7 @@ N_NIMCALL(void, writerod_255064)(Trodwriter255005* w) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP4386;
+				NI TMP4385;
 				if (!(res_256949 <= HEX3Atmp_256946)) goto LA12;
 				nimln(1600, "system.nim");
 				i_256873 = res_256949;
@@ -2257,79 +2257,79 @@ N_NIMCALL(void, writerod_255064)(Trodwriter255005* w) {
 				encodestr_200042((*w).files->data[i_256873], (&files));
 				nimln(469, "rodwrite.nim");
 				files = resizeString(files, 1);
-appendString(files, ((NimStringDesc*) &TMP4342));
+appendString(files, ((NimStringDesc*) &TMP4341));
 				nimln(1614, "system.nim");
-				TMP4386 = addInt(res_256949, ((NI) 1));
-				res_256949 = (NI)(TMP4386);
+				TMP4385 = addInt(res_256949, ((NI) 1));
+				res_256949 = (NI)(TMP4385);
 			} LA12: ;
 		}
 	}
 	nimln(470, "rodwrite.nim");
 	write_13457(f, files);
 	nimln(471, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(473, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4388));
+	write_13457(f, ((NimStringDesc*) &TMP4387));
 	nimln(474, "rodwrite.nim");
 	write_13457(f, (*w).incldeps);
 	nimln(475, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(477, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4389));
+	write_13457(f, ((NimStringDesc*) &TMP4388));
 	nimln(478, "rodwrite.nim");
 	write_13457(f, (*w).moddeps);
 	nimln(479, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(481, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4390));
+	write_13457(f, ((NimStringDesc*) &TMP4389));
 	nimln(482, "rodwrite.nim");
 	write_13457(f, (*w).interf);
 	nimln(483, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(485, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4391));
+	write_13457(f, ((NimStringDesc*) &TMP4390));
 	nimln(486, "rodwrite.nim");
 	write_13457(f, (*w).compilerprocs);
 	nimln(487, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(489, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4392));
+	write_13457(f, ((NimStringDesc*) &TMP4391));
 	nimln(490, "rodwrite.nim");
 	write_13457(f, (*w).index.r);
 	nimln(491, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(493, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4393));
+	write_13457(f, ((NimStringDesc*) &TMP4392));
 	nimln(494, "rodwrite.nim");
 	write_13457(f, (*w).imports.r);
 	nimln(495, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(497, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4394));
+	write_13457(f, ((NimStringDesc*) &TMP4393));
 	nimln(498, "rodwrite.nim");
 	write_13457(f, (*w).converters);
 	nimln(499, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(501, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4395));
+	write_13457(f, ((NimStringDesc*) &TMP4394));
 	nimln(502, "rodwrite.nim");
 	write_13457(f, (*w).methods);
 	nimln(503, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4342));
+	write_13457(f, ((NimStringDesc*) &TMP4341));
 	nimln(505, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4396));
+	write_13457(f, ((NimStringDesc*) &TMP4395));
 	nimln(506, "rodwrite.nim");
 	write_13457(f, (*w).init);
 	nimln(507, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(509, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4397));
+	write_13457(f, ((NimStringDesc*) &TMP4396));
 	nimln(510, "rodwrite.nim");
 	write_13457(f, (*w).data);
 	nimln(511, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4387));
+	write_13457(f, ((NimStringDesc*) &TMP4386));
 	nimln(514, "rodwrite.nim");
-	write_13457(f, ((NimStringDesc*) &TMP4398));
+	write_13457(f, ((NimStringDesc*) &TMP4397));
 	nimln(515, "rodwrite.nim");
 	fclose(f);
 	}BeforeRet: ;
@@ -2360,33 +2360,33 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NI i_256998;
 			NI HEX3Atmp_257152;
 			NI LOC7;
-			NI TMP4399;
+			NI TMP4398;
 			NI res_257155;
 			i_256998 = 0;
 			HEX3Atmp_257152 = 0;
 			nimln(528, "rodwrite.nim");
 			LOC7 = 0;
 			LOC7 = sonslen_196403(n);
-			TMP4399 = subInt(LOC7, ((NI) 1));
-			HEX3Atmp_257152 = (NI)(TMP4399);
+			TMP4398 = subInt(LOC7, ((NI) 1));
+			HEX3Atmp_257152 = (NI)(TMP4398);
 			nimln(1598, "system.nim");
 			res_257155 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					Tnode193813* LOC10;
-					NI TMP4400;
+					NI TMP4399;
 					if (!(res_257155 <= HEX3Atmp_257152)) goto LA9;
 					nimln(1600, "system.nim");
 					i_256998 = res_257155;
 					nimln(528, "rodwrite.nim");
-					if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+					if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 					if ((NU)(i_256998) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC10 = 0;
 					LOC10 = process_256968(c, (*n).kindU.S6.sons->data[i_256998]);
 					nimln(1614, "system.nim");
-					TMP4400 = addInt(res_257155, ((NI) 1));
-					res_257155 = (NI)(TMP4400);
+					TMP4399 = addInt(res_257155, ((NI) 1));
+					res_257155 = (NI)(TMP4399);
 				} LA9: ;
 			}
 		}
@@ -2401,23 +2401,23 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 	{
 		Tsym193843* s;
 		nimln(533, "rodwrite.nim");
-		if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+		if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
-		if (!(((TMP4352[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4353));
+		if (!(((TMP4351[(*(*n).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*n).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4352));
 		s = (*(*n).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 		nimln(534, "rodwrite.nim");
 		{
 			if (!(s == NIM_NIL)) goto LA14;
-			internalerror_167199((*n).info, ((NimStringDesc*) &TMP4401));
+			internalerror_167199((*n).info, ((NimStringDesc*) &TMP4400));
 		}
 		LA14: ;
 		nimln(535, "rodwrite.nim");
 		{
-			if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+			if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 			if ((NU)(((NI) 6)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			if (!((*n).kindU.S6.sons->data[((NI) 6)] == NIM_NIL)) goto LA18;
 			nimln(536, "rodwrite.nim");
-			internalerror_167199((*n).info, ((NimStringDesc*) &TMP4402));
+			internalerror_167199((*n).info, ((NimStringDesc*) &TMP4401));
 		}
 		LA18: ;
 		nimln(537, "rodwrite.nim");
@@ -2426,7 +2426,7 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NIM_BOOL LOC23;
 			LOC22 = 0;
 			LOC23 = 0;
-			if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+			if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 			if ((NU)(((NI) 6)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 			LOC23 = !(((*(*n).kindU.S6.sons->data[((NI) 6)]).kind == ((NU8) 1)));
 			if (LOC23) goto LA24;
@@ -2452,28 +2452,28 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NI i_257071;
 			NI HEX3Atmp_257161;
 			NI LOC30;
-			NI TMP4403;
+			NI TMP4402;
 			NI res_257164;
 			i_257071 = 0;
 			HEX3Atmp_257161 = 0;
 			nimln(541, "rodwrite.nim");
 			LOC30 = 0;
 			LOC30 = sonslen_196403(n);
-			TMP4403 = subInt(LOC30, ((NI) 1));
-			HEX3Atmp_257161 = (NI)(TMP4403);
+			TMP4402 = subInt(LOC30, ((NI) 1));
+			HEX3Atmp_257161 = (NI)(TMP4402);
 			nimln(1598, "system.nim");
 			res_257164 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4404;
+					NI TMP4403;
 					if (!(res_257164 <= HEX3Atmp_257161)) goto LA32;
 					nimln(1600, "system.nim");
 					i_257071 = res_257164;
 					{
 						Tnode193813* a;
 						nimln(542, "rodwrite.nim");
-						if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+						if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 						if ((NU)(i_257071) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						a = (*n).kindU.S6.sons->data[i_257071];
 						nimln(543, "rodwrite.nim");
@@ -2483,14 +2483,14 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 						}
 						LA36: ;
 						nimln(544, "rodwrite.nim");
-						if (((TMP4355[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+						if (((TMP4354[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 						if ((NU)(((NI) 0)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
-						if (!(((TMP4352[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4353));
+						if (!(((TMP4351[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4352));
 						addinterfacesym_255050(w, (*(*a).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym);
 					} LA33: ;
 					nimln(1614, "system.nim");
-					TMP4404 = addInt(res_257164, ((NI) 1));
-					res_257164 = (NI)(TMP4404);
+					TMP4403 = addInt(res_257164, ((NI) 1));
+					res_257164 = (NI)(TMP4403);
 				} LA32: ;
 			}
 		}
@@ -2502,21 +2502,21 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NI i_257097;
 			NI HEX3Atmp_257170;
 			NI LOC40;
-			NI TMP4405;
+			NI TMP4404;
 			NI res_257173;
 			i_257097 = 0;
 			HEX3Atmp_257170 = 0;
 			nimln(546, "rodwrite.nim");
 			LOC40 = 0;
 			LOC40 = sonslen_196403(n);
-			TMP4405 = subInt(LOC40, ((NI) 1));
-			HEX3Atmp_257170 = (NI)(TMP4405);
+			TMP4404 = subInt(LOC40, ((NI) 1));
+			HEX3Atmp_257170 = (NI)(TMP4404);
 			nimln(1598, "system.nim");
 			res_257173 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP4406;
+					NI TMP4405;
 					if (!(res_257173 <= HEX3Atmp_257170)) goto LA42;
 					nimln(1600, "system.nim");
 					i_257097 = res_257173;
@@ -2524,7 +2524,7 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 						Tnode193813* a;
 						Tsym193843* s;
 						nimln(547, "rodwrite.nim");
-						if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+						if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 						if ((NU)(i_257097) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 						a = (*n).kindU.S6.sons->data[i_257097];
 						nimln(548, "rodwrite.nim");
@@ -2535,23 +2535,23 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 						LA46: ;
 						nimln(549, "rodwrite.nim");
 						{
-							if (((TMP4355[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+							if (((TMP4354[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 							if ((NU)(((NI) 0)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
 							if (!!(((*(*a).kindU.S6.sons->data[((NI) 0)]).kind == ((NU8) 3)))) goto LA50;
-							internalerror_167199((*a).info, ((NimStringDesc*) &TMP4401));
+							internalerror_167199((*a).info, ((NimStringDesc*) &TMP4400));
 						}
 						LA50: ;
 						nimln(550, "rodwrite.nim");
-						if (((TMP4355[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+						if (((TMP4354[(*a).kind/8] &(1<<((*a).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 						if ((NU)(((NI) 0)) >= (NU)((*a).kindU.S6.sons->Sup.len)) raiseIndexError();
-						if (!(((TMP4352[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4353));
+						if (!(((TMP4351[(*(*a).kindU.S6.sons->data[((NI) 0)]).kind/8] &(1<<((*(*a).kindU.S6.sons->data[((NI) 0)]).kind%8)))!=0))) raiseFieldError(((NimStringDesc*) &TMP4352));
 						s = (*(*a).kindU.S6.sons->data[((NI) 0)]).kindU.S4.sym;
 						nimln(551, "rodwrite.nim");
 						addinterfacesym_255050(w, s);
 					} LA43: ;
 					nimln(1614, "system.nim");
-					TMP4406 = addInt(res_257173, ((NI) 1));
-					res_257173 = (NI)(TMP4406);
+					TMP4405 = addInt(res_257173, ((NI) 1));
+					res_257173 = (NI)(TMP4405);
 				} LA42: ;
 			}
 		}
@@ -2563,34 +2563,34 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NI i_257134;
 			NI HEX3Atmp_257178;
 			NI LOC54;
-			NI TMP4407;
+			NI TMP4406;
 			NI res_257181;
 			i_257134 = 0;
 			HEX3Atmp_257178 = 0;
 			nimln(563, "rodwrite.nim");
 			LOC54 = 0;
 			LOC54 = sonslen_196403(n);
-			TMP4407 = subInt(LOC54, ((NI) 1));
-			HEX3Atmp_257178 = (NI)(TMP4407);
+			TMP4406 = subInt(LOC54, ((NI) 1));
+			HEX3Atmp_257178 = (NI)(TMP4406);
 			nimln(1598, "system.nim");
 			res_257181 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					NimStringDesc* LOC57;
-					NI TMP4408;
+					NI TMP4407;
 					if (!(res_257181 <= HEX3Atmp_257178)) goto LA56;
 					nimln(1600, "system.nim");
 					i_257134 = res_257181;
 					nimln(563, "rodwrite.nim");
-					if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+					if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 					if ((NU)(i_257134) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC57 = 0;
 					LOC57 = getmodulename_254018((*n).kindU.S6.sons->data[i_257134]);
 					addmoddep_255036(w, LOC57);
 					nimln(1614, "system.nim");
-					TMP4408 = addInt(res_257181, ((NI) 1));
-					res_257181 = (NI)(TMP4408);
+					TMP4407 = addInt(res_257181, ((NI) 1));
+					res_257181 = (NI)(TMP4407);
 				} LA56: ;
 			}
 		}
@@ -2602,7 +2602,7 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 	{
 		NimStringDesc* LOC59;
 		nimln(566, "rodwrite.nim");
-		if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+		if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 		if ((NU)(((NI) 0)) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 		LOC59 = 0;
 		LOC59 = getmodulename_254018((*n).kindU.S6.sons->data[((NI) 0)]);
@@ -2617,34 +2617,34 @@ N_NIMCALL(Tnode193813*, process_256968)(Tpasscontext244005* c, Tnode193813* n) {
 			NI i_257149;
 			NI HEX3Atmp_257186;
 			NI LOC62;
-			NI TMP4409;
+			NI TMP4408;
 			NI res_257189;
 			i_257149 = 0;
 			HEX3Atmp_257186 = 0;
 			nimln(569, "rodwrite.nim");
 			LOC62 = 0;
 			LOC62 = sonslen_196403(n);
-			TMP4409 = subInt(LOC62, ((NI) 1));
-			HEX3Atmp_257186 = (NI)(TMP4409);
+			TMP4408 = subInt(LOC62, ((NI) 1));
+			HEX3Atmp_257186 = (NI)(TMP4408);
 			nimln(1598, "system.nim");
 			res_257189 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					NimStringDesc* LOC65;
-					NI TMP4410;
+					NI TMP4409;
 					if (!(res_257189 <= HEX3Atmp_257186)) goto LA64;
 					nimln(1600, "system.nim");
 					i_257149 = res_257189;
 					nimln(569, "rodwrite.nim");
-					if (((TMP4355[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4356));
+					if (((TMP4354[(*n).kind/8] &(1<<((*n).kind%8)))!=0)) raiseFieldError(((NimStringDesc*) &TMP4355));
 					if ((NU)(i_257149) >= (NU)((*n).kindU.S6.sons->Sup.len)) raiseIndexError();
 					LOC65 = 0;
 					LOC65 = getmodulename_254018((*n).kindU.S6.sons->data[i_257149]);
 					addincldep_255043(w, LOC65);
 					nimln(1614, "system.nim");
-					TMP4410 = addInt(res_257189, ((NI) 1));
-					res_257189 = (NI)(TMP4410);
+					TMP4409 = addInt(res_257189, ((NI) 1));
+					res_257189 = (NI)(TMP4409);
 				} LA64: ;
 			}
 		}
@@ -2675,7 +2675,7 @@ N_NIMCALL(Tpasscontext244005*, myopen_257250)(Tsym193843* module) {
 	nimln(576, "rodwrite.nim");
 	{
 		if (!((*module).Sup.id < ((NI) 0))) goto LA3;
-		internalerror_167218(((NimStringDesc*) &TMP4411));
+		internalerror_167218(((NimStringDesc*) &TMP4410));
 	}
 	LA3: ;
 	nimln(577, "rodwrite.nim");
@@ -2716,106 +2716,106 @@ NIM_EXTERNC N_NOINLINE(void, compiler_rodwriteInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_rodwriteDatInit)(void) {
-static TNimNode* TMP4340[18];
-static TNimNode TMP4011[19];
+static TNimNode* TMP4339[18];
+static TNimNode TMP4010[19];
 NTI255005.size = sizeof(Trodwriter255005);
 NTI255005.kind = 17;
 NTI255005.base = (&NTI244005);
-TMP4340[0] = &TMP4011[1];
-TMP4011[1].kind = 1;
-TMP4011[1].offset = offsetof(Trodwriter255005, module);
-TMP4011[1].typ = (&NTI193811);
-TMP4011[1].name = "module";
-TMP4340[1] = &TMP4011[2];
-TMP4011[2].kind = 1;
-TMP4011[2].offset = offsetof(Trodwriter255005, crc);
-TMP4011[2].typ = (&NTI171015);
-TMP4011[2].name = "crc";
-TMP4340[2] = &TMP4011[3];
-TMP4011[3].kind = 1;
-TMP4011[3].offset = offsetof(Trodwriter255005, options);
-TMP4011[3].typ = (&NTI156121);
-TMP4011[3].name = "options";
-TMP4340[3] = &TMP4011[4];
-TMP4011[4].kind = 1;
-TMP4011[4].offset = offsetof(Trodwriter255005, defines);
-TMP4011[4].typ = (&NTI149);
-TMP4011[4].name = "defines";
-TMP4340[4] = &TMP4011[5];
-TMP4011[5].kind = 1;
-TMP4011[5].offset = offsetof(Trodwriter255005, incldeps);
-TMP4011[5].typ = (&NTI149);
-TMP4011[5].name = "inclDeps";
-TMP4340[5] = &TMP4011[6];
-TMP4011[6].kind = 1;
-TMP4011[6].offset = offsetof(Trodwriter255005, moddeps);
-TMP4011[6].typ = (&NTI149);
-TMP4011[6].name = "modDeps";
-TMP4340[6] = &TMP4011[7];
-TMP4011[7].kind = 1;
-TMP4011[7].offset = offsetof(Trodwriter255005, interf);
-TMP4011[7].typ = (&NTI149);
-TMP4011[7].name = "interf";
-TMP4340[7] = &TMP4011[8];
-TMP4011[8].kind = 1;
-TMP4011[8].offset = offsetof(Trodwriter255005, compilerprocs);
-TMP4011[8].typ = (&NTI149);
-TMP4011[8].name = "compilerProcs";
-TMP4340[8] = &TMP4011[9];
-TMP4011[9].kind = 1;
-TMP4011[9].offset = offsetof(Trodwriter255005, index);
-TMP4011[9].typ = (&NTI236028);
-TMP4011[9].name = "index";
-TMP4340[9] = &TMP4011[10];
-TMP4011[10].kind = 1;
-TMP4011[10].offset = offsetof(Trodwriter255005, imports);
-TMP4011[10].typ = (&NTI236028);
-TMP4011[10].name = "imports";
-TMP4340[10] = &TMP4011[11];
-TMP4011[11].kind = 1;
-TMP4011[11].offset = offsetof(Trodwriter255005, converters);
-TMP4011[11].typ = (&NTI149);
-TMP4011[11].name = "converters";
-TMP4340[11] = &TMP4011[12];
-TMP4011[12].kind = 1;
-TMP4011[12].offset = offsetof(Trodwriter255005, methods);
-TMP4011[12].typ = (&NTI149);
-TMP4011[12].name = "methods";
-TMP4340[12] = &TMP4011[13];
-TMP4011[13].kind = 1;
-TMP4011[13].offset = offsetof(Trodwriter255005, init);
-TMP4011[13].typ = (&NTI149);
-TMP4011[13].name = "init";
-TMP4340[13] = &TMP4011[14];
-TMP4011[14].kind = 1;
-TMP4011[14].offset = offsetof(Trodwriter255005, data);
-TMP4011[14].typ = (&NTI149);
-TMP4011[14].name = "data";
-TMP4340[14] = &TMP4011[15];
-TMP4011[15].kind = 1;
-TMP4011[15].offset = offsetof(Trodwriter255005, sstack);
-TMP4011[15].typ = (&NTI193815);
-TMP4011[15].name = "sstack";
-TMP4340[15] = &TMP4011[16];
-TMP4011[16].kind = 1;
-TMP4011[16].offset = offsetof(Trodwriter255005, tstack);
-TMP4011[16].typ = (&NTI193845);
-TMP4011[16].name = "tstack";
-TMP4340[16] = &TMP4011[17];
-TMP4011[17].kind = 1;
-TMP4011[17].offset = offsetof(Trodwriter255005, files);
-TMP4011[17].typ = (&NTI13606);
-TMP4011[17].name = "files";
-TMP4340[17] = &TMP4011[18];
-TMP4011[18].kind = 1;
-TMP4011[18].offset = offsetof(Trodwriter255005, origfile);
-TMP4011[18].typ = (&NTI149);
-TMP4011[18].name = "origFile";
-TMP4011[0].len = 18; TMP4011[0].kind = 2; TMP4011[0].sons = &TMP4340[0];
-NTI255005.node = &TMP4011[0];
+TMP4339[0] = &TMP4010[1];
+TMP4010[1].kind = 1;
+TMP4010[1].offset = offsetof(Trodwriter255005, module);
+TMP4010[1].typ = (&NTI193811);
+TMP4010[1].name = "module";
+TMP4339[1] = &TMP4010[2];
+TMP4010[2].kind = 1;
+TMP4010[2].offset = offsetof(Trodwriter255005, crc);
+TMP4010[2].typ = (&NTI171015);
+TMP4010[2].name = "crc";
+TMP4339[2] = &TMP4010[3];
+TMP4010[3].kind = 1;
+TMP4010[3].offset = offsetof(Trodwriter255005, options);
+TMP4010[3].typ = (&NTI156121);
+TMP4010[3].name = "options";
+TMP4339[3] = &TMP4010[4];
+TMP4010[4].kind = 1;
+TMP4010[4].offset = offsetof(Trodwriter255005, defines);
+TMP4010[4].typ = (&NTI149);
+TMP4010[4].name = "defines";
+TMP4339[4] = &TMP4010[5];
+TMP4010[5].kind = 1;
+TMP4010[5].offset = offsetof(Trodwriter255005, incldeps);
+TMP4010[5].typ = (&NTI149);
+TMP4010[5].name = "inclDeps";
+TMP4339[5] = &TMP4010[6];
+TMP4010[6].kind = 1;
+TMP4010[6].offset = offsetof(Trodwriter255005, moddeps);
+TMP4010[6].typ = (&NTI149);
+TMP4010[6].name = "modDeps";
+TMP4339[6] = &TMP4010[7];
+TMP4010[7].kind = 1;
+TMP4010[7].offset = offsetof(Trodwriter255005, interf);
+TMP4010[7].typ = (&NTI149);
+TMP4010[7].name = "interf";
+TMP4339[7] = &TMP4010[8];
+TMP4010[8].kind = 1;
+TMP4010[8].offset = offsetof(Trodwriter255005, compilerprocs);
+TMP4010[8].typ = (&NTI149);
+TMP4010[8].name = "compilerProcs";
+TMP4339[8] = &TMP4010[9];
+TMP4010[9].kind = 1;
+TMP4010[9].offset = offsetof(Trodwriter255005, index);
+TMP4010[9].typ = (&NTI236028);
+TMP4010[9].name = "index";
+TMP4339[9] = &TMP4010[10];
+TMP4010[10].kind = 1;
+TMP4010[10].offset = offsetof(Trodwriter255005, imports);
+TMP4010[10].typ = (&NTI236028);
+TMP4010[10].name = "imports";
+TMP4339[10] = &TMP4010[11];
+TMP4010[11].kind = 1;
+TMP4010[11].offset = offsetof(Trodwriter255005, converters);
+TMP4010[11].typ = (&NTI149);
+TMP4010[11].name = "converters";
+TMP4339[11] = &TMP4010[12];
+TMP4010[12].kind = 1;
+TMP4010[12].offset = offsetof(Trodwriter255005, methods);
+TMP4010[12].typ = (&NTI149);
+TMP4010[12].name = "methods";
+TMP4339[12] = &TMP4010[13];
+TMP4010[13].kind = 1;
+TMP4010[13].offset = offsetof(Trodwriter255005, init);
+TMP4010[13].typ = (&NTI149);
+TMP4010[13].name = "init";
+TMP4339[13] = &TMP4010[14];
+TMP4010[14].kind = 1;
+TMP4010[14].offset = offsetof(Trodwriter255005, data);
+TMP4010[14].typ = (&NTI149);
+TMP4010[14].name = "data";
+TMP4339[14] = &TMP4010[15];
+TMP4010[15].kind = 1;
+TMP4010[15].offset = offsetof(Trodwriter255005, sstack);
+TMP4010[15].typ = (&NTI193815);
+TMP4010[15].name = "sstack";
+TMP4339[15] = &TMP4010[16];
+TMP4010[16].kind = 1;
+TMP4010[16].offset = offsetof(Trodwriter255005, tstack);
+TMP4010[16].typ = (&NTI193845);
+TMP4010[16].name = "tstack";
+TMP4339[16] = &TMP4010[17];
+TMP4010[17].kind = 1;
+TMP4010[17].offset = offsetof(Trodwriter255005, files);
+TMP4010[17].typ = (&NTI13606);
+TMP4010[17].name = "files";
+TMP4339[17] = &TMP4010[18];
+TMP4010[18].kind = 1;
+TMP4010[18].offset = offsetof(Trodwriter255005, origfile);
+TMP4010[18].typ = (&NTI149);
+TMP4010[18].name = "origFile";
+TMP4010[0].len = 18; TMP4010[0].kind = 2; TMP4010[0].sons = &TMP4339[0];
+NTI255005.node = &TMP4010[0];
 NTI255007.size = sizeof(Trodwriter255005*);
 NTI255007.kind = 22;
 NTI255007.base = (&NTI255005);
-NTI255007.marker = TMP4341;
+NTI255007.marker = TMP4340;
 }
 

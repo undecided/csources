@@ -247,7 +247,7 @@ struct TY103552 {
 NimStringDesc* Field0;
 NimStringDesc* Field1;
 };
-typedef NimStringDesc* TY143637[1];
+typedef NimStringDesc* TY143651[1];
 struct  Tgeneraltokenizer305023  {
   TNimObject Sup;
 NU8 kind;
@@ -4661,8 +4661,8 @@ N_NIMCALL(void, rendercodeblock_318433)(Trstgenerator311016* d, Trstnode296011* 
 	TY103552 LOC13;
 	NimStringDesc* blockstart;
 	NimStringDesc* blockend;
-	TY143637 LOC14;
-	TY143637 LOC39;
+	TY143651 LOC14;
+	TY143651 LOC39;
 	nimfr("renderCodeBlock", "rstgen.nim")
 {	nimln(867, "rstgen.nim");
 	{

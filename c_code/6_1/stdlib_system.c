@@ -930,8 +930,8 @@ N_NIMCALL(void, genericDeepCopyOpenArray)(void* dest, void* src, NI len, TNimTyp
 N_NIMCALL(NI, HEX5E_89612)(NI x);
 N_NIMCALL(NI, xlen_89639)(NimStringDesc* x);
 N_NIMCALL(void, TMP496)(void* p, NI op);
-N_NIMCALL(void, TMP628)(void* p, NI op);
-N_NIMCALL(void, TMP828)(void* p, NI op);
+N_NIMCALL(void, TMP629)(void* p, NI op);
+N_NIMCALL(void, TMP829)(void* p, NI op);
 N_NIMCALL(void, TMP2639)(void* p, NI op);
 static N_INLINE(void*, seqtoptr_193881)(TY190944* x);
 static N_INLINE(void*, seqtoptr_229750)(Ttypeseq190845* x);
@@ -1045,10 +1045,10 @@ STRING_LITERAL(TMP97, " --> ", 5);
 STRING_LITERAL(TMP98, "\"", 1);
 STRING_LITERAL(TMP99, "\\10\"\012\"", 6);
 STRING_LITERAL(TMP100, "(invalid data!)", 15);
-STRING_LITERAL(TMP1282, "filename", 8);
-STRING_LITERAL(TMP1283, ": ", 2);
-STRING_LITERAL(TMP1284, "line", 4);
-STRING_LITERAL(TMP1285, ")", 1);
+STRING_LITERAL(TMP1283, "filename", 8);
+STRING_LITERAL(TMP1284, ": ", 2);
+STRING_LITERAL(TMP1285, "line", 4);
+STRING_LITERAL(TMP1286, ")", 1);
 NI nim_program_result;
 TY9021 globalraisehook_9025;
 TY9026 localraisehook_9030;
@@ -11455,14 +11455,14 @@ N_NIMCALL(NI, clamp_138582)(NI x, NI a, NI b) {
 	popFrame();
 	return result;
 }
-N_NIMCALL(void, TMP628)(void* p, NI op) {
+N_NIMCALL(void, TMP629)(void* p, NI op) {
 	Oserror3433* a;
 	a = (Oserror3433*)p;
 	nimGCvisit((void*)(*a).Sup.Sup.parent, op);
 	nimGCvisit((void*)(*a).Sup.Sup.message, op);
 	nimGCvisit((void*)(*a).Sup.Sup.trace, op);
 }
-N_NIMCALL(void, TMP828)(void* p, NI op) {
+N_NIMCALL(void, TMP829)(void* p, NI op) {
 	TY160599* a;
 	NI LOC1;
 	a = (TY160599*)p;
@@ -11491,10 +11491,10 @@ appendString(result, ((NimStringDesc*) &TMP84));
 	LA3: ;
 	nimln(2066, "system.nim");
 	result = resizeString(result, 8);
-appendString(result, ((NimStringDesc*) &TMP1282));
+appendString(result, ((NimStringDesc*) &TMP1283));
 	nimln(2067, "system.nim");
 	result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1283));
+appendString(result, ((NimStringDesc*) &TMP1284));
 	nimln(2068, "system.nim");
 	result = resizeString(result, x.Field0->Sup.len + 0);
 appendString(result, x.Field0);
@@ -11509,10 +11509,10 @@ appendString(result, ((NimStringDesc*) &TMP84));
 	LA7: ;
 	nimln(2066, "system.nim");
 	result = resizeString(result, 4);
-appendString(result, ((NimStringDesc*) &TMP1284));
+appendString(result, ((NimStringDesc*) &TMP1285));
 	nimln(2067, "system.nim");
 	result = resizeString(result, 2);
-appendString(result, ((NimStringDesc*) &TMP1283));
+appendString(result, ((NimStringDesc*) &TMP1284));
 	nimln(2068, "system.nim");
 	LOC9 = 0;
 	LOC9 = nimIntToStr(x.Field1);
@@ -11522,7 +11522,7 @@ appendString(result, LOC9);
 	firstelement = NIM_FALSE;
 	nimln(2070, "system.nim");
 	result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP1285));
+appendString(result, ((NimStringDesc*) &TMP1286));
 	popFrame();
 	return result;
 }
@@ -13471,12 +13471,12 @@ NTI3433.node = &TMP0[26];
 NTI116812.size = sizeof(Oserror3433*);
 NTI116812.kind = 22;
 NTI116812.base = (&NTI3433);
-NTI116812.marker = TMP628;
+NTI116812.marker = TMP629;
 NTI160599.size = sizeof(TY160599*);
 NTI160599.kind = 24;
 NTI160599.base = (&NTI160007);
 NTI160599.flags = 2;
-NTI160599.marker = TMP828;
+NTI160599.marker = TMP829;
 NTI112.size = sizeof(NI16);
 NTI112.kind = 33;
 NTI112.base = 0;

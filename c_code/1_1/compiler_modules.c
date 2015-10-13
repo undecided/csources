@@ -591,7 +591,7 @@ static N_INLINE(void, rtladdzct_51804)(Tcell46746* c);
 N_NOINLINE(void, addzct_50217)(Tcellseq46762* s, Tcell46746* c);
 N_NIMCALL(void*, newSeqRC1)(TNimType* typ, NI len);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP10671)(void* p, NI op);
+N_NIMCALL(void, TMP10670)(void* p, NI op);
 N_NIMCALL(Tsym193843*, getmodule_525077)(NI32 fileidx);
 N_NOINLINE(void, raiseIndexError)(void);
 N_NIMCALL(NIM_BOOL, crcchanged_525101)(NI32 fileidx);
@@ -661,18 +661,18 @@ N_NIMCALL(void, fatal_167123)(Tlineinfo165338 info, NU16 msg, NimStringDesc* arg
 N_NIMCALL(NimStringDesc*, nosaddFileExt)(NimStringDesc* filename, NimStringDesc* ext);
 N_NIMCALL(void, compileproject_525981)(NI32 projectfileidx);
 N_NIMCALL(Tsym193843*, makestdinmodule_525999)(void);
-STRING_LITERAL(TMP10673, "compiler/modules.nim", 20);
-NIM_CONST TY149210 TMP10672 = {((NimStringDesc*) &TMP10673),
+STRING_LITERAL(TMP10672, "compiler/modules.nim", 20);
+NIM_CONST TY149210 TMP10671 = {((NimStringDesc*) &TMP10672),
 ((NI) 41)}
 ;
-STRING_LITERAL(TMP10679, "len(a) == L seq modified while iterating over it", 48);
-STRING_LITERAL(TMP10680, "-", 1);
-STRING_LITERAL(TMP10683, "tab", 3);
-STRING_LITERAL(TMP10685, "handleSymbolFile should have set the module\'s ID", 48);
-STRING_LITERAL(TMP10689, "system.nim", 10);
-STRING_LITERAL(TMP10690, "", 0);
-STRING_LITERAL(TMP10691, "nim", 3);
-STRING_LITERAL(TMP10692, "stdin", 5);
+STRING_LITERAL(TMP10678, "len(a) == L seq modified while iterating over it", 48);
+STRING_LITERAL(TMP10679, "-", 1);
+STRING_LITERAL(TMP10682, "tab", 3);
+STRING_LITERAL(TMP10684, "handleSymbolFile should have set the module\'s ID", 48);
+STRING_LITERAL(TMP10688, "system.nim", 10);
+STRING_LITERAL(TMP10689, "", 0);
+STRING_LITERAL(TMP10690, "nim", 3);
+STRING_LITERAL(TMP10691, "stdin", 5);
 Tsymseq193815* gcompiledmodules_525053;
 extern TNimType NTI193815; /* TSymSeq */
 extern TFrame* frameptr_17042;
@@ -767,7 +767,7 @@ static N_INLINE(void, nimGCunrefNoCycle)(void* p) {
 	LA3: ;
 	popFrame();
 }
-N_NIMCALL(void, TMP10671)(void* p, NI op) {
+N_NIMCALL(void, TMP10670)(void* p, NI op) {
 	TY525054* a;
 	NI LOC1;
 	a = (TY525054*)p;
@@ -816,7 +816,7 @@ N_NIMCALL(NIM_BOOL, crcchanged_525101)(NI32 fileidx) {
 		if (!!(LOC3)) goto LA5;
 		nimln(854, "msgs.nim");
 		LOC7 = 0;
-		LOC7 = HEX24_167306(TMP10672);
+		LOC7 = HEX24_167306(TMP10671);
 		internalerror_167218(LOC7);
 	}
 	LA5: ;
@@ -967,10 +967,10 @@ N_NIMCALL(void, adddep_525148)(Tsym193843* x, NI32 dep) {
 	nimfr("addDep", "modules.nim")
 	nimln(807, "rodread.nim");
 	{
-		NI32 TMP10676;
+		NI32 TMP10675;
 		if (!((gmemcachedata_525071 ? gmemcachedata_525071->Sup.len : 0) <= ((NI) (dep)))) goto LA3;
-		TMP10676 = addInt(dep, ((NI32) 1));
-		gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10676), ((NI) 0), ((NI) 2147483647))));
+		TMP10675 = addInt(dep, ((NI32) 1));
+		gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10675), ((NI) 0), ((NI) 2147483647))));
 	}
 	LA3: ;
 	nimln(70, "modules.nim");
@@ -1152,7 +1152,7 @@ N_NIMCALL(void, resetallmodules_525350)(void) {
 		{
 			nimln(1599, "system.nim");
 			while (1) {
-				NI TMP10677;
+				NI TMP10676;
 				if (!(res_525380 <= HEX3Atmp_525377)) goto LA3;
 				nimln(1600, "system.nim");
 				i_525362 = res_525380;
@@ -1165,8 +1165,8 @@ N_NIMCALL(void, resetallmodules_525350)(void) {
 				}
 				LA6: ;
 				nimln(1619, "system.nim");
-				TMP10677 = addInt(res_525380, ((NI) 1));
-				res_525380 = (NI)(TMP10677);
+				TMP10676 = addInt(res_525380, ((NI) 1));
+				res_525380 = (NI)(TMP10676);
 			} LA3: ;
 		}
 	}
@@ -1234,7 +1234,7 @@ N_NIMCALL(NU8, checkdepmem_525399)(NI32 fileidx) {
 				nimln(3086, "system.nim");
 				while (1) {
 					NU8 d;
-					NI TMP10678;
+					NI TMP10677;
 					if (!(i_525628 < L_525630)) goto LA18;
 					nimln(3087, "system.nim");
 					if ((NU)(i_525628) >= (NU)(HEX3Atmp_525625->Sup.len)) raiseIndexError();
@@ -1252,12 +1252,12 @@ N_NIMCALL(NU8, checkdepmem_525399)(NI32 fileidx) {
 					}
 					LA21: ;
 					nimln(3088, "system.nim");
-					TMP10678 = addInt(i_525628, ((NI) 1));
-					i_525628 = (NI)(TMP10678);
+					TMP10677 = addInt(i_525628, ((NI) 1));
+					i_525628 = (NI)(TMP10677);
 					nimln(3089, "system.nim");
 					{
 						if (!!(((HEX3Atmp_525625 ? HEX3Atmp_525625->Sup.len : 0) == L_525630))) goto LA25;
-						failedassertimpl_88817(((NimStringDesc*) &TMP10679));
+						failedassertimpl_88817(((NimStringDesc*) &TMP10678));
 					}
 					LA25: ;
 				} LA18: ;
@@ -1342,7 +1342,7 @@ N_NIMCALL(Tsym193843*, newmodule_525646)(NI32 fileidx) {
 		NIM_BOOL LOC5;
 		NIM_BOOL LOC7;
 		LOC5 = 0;
-		LOC5 = !(eqStrings((*(*result).name).s, ((NimStringDesc*) &TMP10680)));
+		LOC5 = !(eqStrings((*(*result).name).s, ((NimStringDesc*) &TMP10679)));
 		if (!(LOC5)) goto LA6;
 		LOC7 = 0;
 		LOC7 = isnimidentifier_183257((*(*result).name).s);
@@ -1365,17 +1365,17 @@ N_NIMCALL(Tsym193843*, newmodule_525646)(NI32 fileidx) {
 	(*result).position = ((NI) (fileidx));
 	nimln(807, "rodread.nim");
 	{
-		NI32 TMP10681;
+		NI32 TMP10680;
 		if (!((gmemcachedata_525071 ? gmemcachedata_525071->Sup.len : 0) <= ((NI) (fileidx)))) goto LA14;
-		TMP10681 = addInt(fileidx, ((NI32) 1));
-		gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10681), ((NI) 0), ((NI) 2147483647))));
+		TMP10680 = addInt(fileidx, ((NI32) 1));
+		gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10680), ((NI) 0), ((NI) 2147483647))));
 	}
 	LA14: ;
 	{
-		NI32 TMP10682;
+		NI32 TMP10681;
 		if (!((gcompiledmodules_525053 ? gcompiledmodules_525053->Sup.len : 0) <= ((NI) (fileidx)))) goto LA18;
-		TMP10682 = addInt(fileidx, ((NI32) 1));
-		gcompiledmodules_525053 = (Tsymseq193815*) setLengthSeq(&(gcompiledmodules_525053)->Sup, sizeof(Tsym193843*), ((NI)chckRange((NI32)(TMP10682), ((NI) 0), ((NI) 2147483647))));
+		TMP10681 = addInt(fileidx, ((NI32) 1));
+		gcompiledmodules_525053 = (Tsymseq193815*) setLengthSeq(&(gcompiledmodules_525053)->Sup, sizeof(Tsym193843*), ((NI)chckRange((NI32)(TMP10681), ((NI) 0), ((NI) 2147483647))));
 	}
 	LA18: ;
 	nimln(129, "modules.nim");
@@ -1384,10 +1384,10 @@ N_NIMCALL(Tsym193843*, newmodule_525646)(NI32 fileidx) {
 	nimln(131, "modules.nim");
 	(*result).flags |= ((NI32)1)<<((((NU8) 0))%(sizeof(NI32)*8));
 	nimln(132, "modules.nim");
-	if (!(((64 &(1<<(((*result).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10683));
+	if (!(((64 &(1<<(((*result).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10682));
 	initstrtable_197007((&(*result).kindU.S3.tab));
 	nimln(133, "modules.nim");
-	if (!(((64 &(1<<(((*result).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10683));
+	if (!(((64 &(1<<(((*result).kind)&31)))!=0))) raiseFieldError(((NimStringDesc*) &TMP10682));
 	strtableadd_201103((&(*result).kindU.S3.tab), result);
 	popFrame();
 	return result;
@@ -1395,14 +1395,14 @@ N_NIMCALL(Tsym193843*, newmodule_525646)(NI32 fileidx) {
 
 static N_INLINE(NI, getid_192404)(void) {
 	NI result;
-	NI TMP10686;
+	NI TMP10685;
 	nimfr("getID", "idgen.nim")
 	result = 0;
 	nimln(30, "idgen.nim");
 	result = gfrontendid_192012;
 	nimln(31, "idgen.nim");
-	TMP10686 = addInt(gfrontendid_192012, ((NI) 1));
-	gfrontendid_192012 = (NI)(TMP10686);
+	TMP10685 = addInt(gfrontendid_192012, ((NI) 1));
+	gfrontendid_192012 = (NI)(TMP10685);
 	popFrame();
 	return result;
 }
@@ -1419,10 +1419,10 @@ N_NIMCALL(Tsym193843*, compilemodule_525726)(NI32 fileidx, NU32 flags) {
 		if (!(result == NIM_NIL)) goto LA3;
 		nimln(807, "rodread.nim");
 		{
-			NI32 TMP10684;
+			NI32 TMP10683;
 			if (!((gmemcachedata_525071 ? gmemcachedata_525071->Sup.len : 0) <= ((NI) (fileidx)))) goto LA7;
-			TMP10684 = addInt(fileidx, ((NI32) 1));
-			gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10684), ((NI) 0), ((NI) 2147483647))));
+			TMP10683 = addInt(fileidx, ((NI32) 1));
+			gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10683), ((NI) 0), ((NI) 2147483647))));
 		}
 		LA7: ;
 		nimln(139, "modules.nim");
@@ -1442,7 +1442,7 @@ N_NIMCALL(Tsym193843*, compilemodule_525726)(NI32 fileidx, NU32 flags) {
 			{
 				if (!((*result).Sup.id < ((NI) 0))) goto LA15;
 				nimln(147, "modules.nim");
-				internalerror_167218(((NimStringDesc*) &TMP10685));
+				internalerror_167218(((NimStringDesc*) &TMP10684));
 				nimln(148, "modules.nim");
 				goto BeforeRet;
 			}
@@ -1532,10 +1532,10 @@ N_NIMCALL(Tnode193813*, includemodule_525851)(Tsym193843* s, NI32 fileidx) {
 		if (!((gglobaloptions_156128 &(1<<((((NU8) 15))&31)))!=0)) goto LA3;
 		nimln(807, "rodread.nim");
 		{
-			NI32 TMP10687;
+			NI32 TMP10686;
 			if (!((gmemcachedata_525071 ? gmemcachedata_525071->Sup.len : 0) <= ((NI) (fileidx)))) goto LA7;
-			TMP10687 = addInt(fileidx, ((NI32) 1));
-			gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10687), ((NI) 0), ((NI) 2147483647))));
+			TMP10686 = addInt(fileidx, ((NI32) 1));
+			gmemcachedata_525071 = (TY525054*) setLengthSeq(&(gmemcachedata_525071)->Sup, sizeof(Tmoduleinmemory525017), ((NI)chckRange((NI32)(TMP10686), ((NI) 0), ((NI) 2147483647))));
 		}
 		LA7: ;
 		nimln(173, "modules.nim");
@@ -1578,13 +1578,13 @@ static N_INLINE(void, popCurrentException)(void) {
 
 N_NIMCALL(NIM_BOOL, HEX3DHEX3DHEX5E_525890)(NimStringDesc* a, NimStringDesc* b) {
 	NIM_BOOL volatile result;
-	TSafePoint TMP10688;
+	TSafePoint TMP10687;
 	nimfr("==^", "modules.nim")
 	result = 0;
 	nimln(177, "modules.nim");
-	pushSafePoint(&TMP10688);
-	TMP10688.status = setjmp(TMP10688.context);
-	if (TMP10688.status == 0) {
+	pushSafePoint(&TMP10687);
+	TMP10687.status = setjmp(TMP10687.context);
+	if (TMP10687.status == 0) {
 		nimln(178, "modules.nim");
 		result = nossameFile(a, b);
 		popSafePoint();
@@ -1593,13 +1593,13 @@ N_NIMCALL(NIM_BOOL, HEX3DHEX3DHEX5E_525890)(NimStringDesc* a, NimStringDesc* b) 
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		if (isObj(getCurrentException()->Sup.m_type, (&NTI3433))) {
-			TMP10688.status = 0;
+			TMP10687.status = 0;
 			nimln(180, "modules.nim");
 			result = NIM_FALSE;
 			popCurrentException();
 		}
 	}
-	if (TMP10688.status != 0) reraiseException();
+	if (TMP10687.status != 0) reraiseException();
 	popFrame();
 	return result;
 }
@@ -1613,7 +1613,7 @@ N_NIMCALL(void, compilesystemmodule_525901)(void) {
 		if (!(systemmodule_241019 == NIM_NIL)) goto LA3;
 		nimln(184, "modules.nim");
 		LOC5 = 0;
-		LOC5 = HEX2F_119492(libpath_156233, ((NimStringDesc*) &TMP10689));
+		LOC5 = HEX2F_119492(libpath_156233, ((NimStringDesc*) &TMP10688));
 		systemfileidx_165433 = fileinfoidx_165854(LOC5);
 		nimln(185, "modules.nim");
 		LOC6 = 0;
@@ -1630,12 +1630,12 @@ N_NIMCALL(void, wantmainmodule_525922)(void) {
 	{
 		if (!((gprojectfull_156236 ? gprojectfull_156236->Sup.len : 0) == ((NI) 0))) goto LA3;
 		nimln(189, "modules.nim");
-		fatal_167123(gcmdlineinfo_165922, ((NU16) 186), ((NimStringDesc*) &TMP10690));
+		fatal_167123(gcmdlineinfo_165922, ((NU16) 186), ((NimStringDesc*) &TMP10689));
 	}
 	LA3: ;
 	nimln(190, "modules.nim");
 	LOC5 = 0;
-	LOC5 = nosaddFileExt(gprojectfull_156236, ((NimStringDesc*) &TMP10691));
+	LOC5 = nosaddFileExt(gprojectfull_156236, ((NimStringDesc*) &TMP10690));
 	gprojectmainidx_156237 = fileinfoidx_165854(LOC5);
 	popFrame();
 }
@@ -1649,7 +1649,7 @@ N_NIMCALL(void, compileproject_525981)(NI32 projectfileidx) {
 	wantmainmodule_525922();
 	nimln(197, "modules.nim");
 	LOC1 = 0;
-	LOC1 = HEX2F_119492(libpath_156233, ((NimStringDesc*) &TMP10689));
+	LOC1 = HEX2F_119492(libpath_156233, ((NimStringDesc*) &TMP10688));
 	systemfileidx = fileinfoidx_165854(LOC1);
 	nimln(198, "modules.nim");
 	{
@@ -1694,7 +1694,7 @@ N_NIMCALL(Tsym193843*, makestdinmodule_525999)(void) {
 		if (!(stdinmodule_525994 == NIM_NIL)) goto LA3;
 		nimln(208, "modules.nim");
 		LOC5 = 0;
-		LOC5 = fileinfoidx_165854(((NimStringDesc*) &TMP10692));
+		LOC5 = fileinfoidx_165854(((NimStringDesc*) &TMP10691));
 		asgnRefNoCycle((void**) (&stdinmodule_525994), newmodule_525646(LOC5));
 		nimln(209, "modules.nim");
 		(*stdinmodule_525994).Sup.id = getid_192404();
@@ -1721,82 +1721,82 @@ NIM_EXTERNC N_NOINLINE(void, compiler_modulesInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, compiler_modulesDatInit)(void) {
+static TNimNode* TMP10663[5];
 static TNimNode* TMP10664[5];
-static TNimNode* TMP10665[5];
-NI TMP10667;
-static char* NIM_CONST TMP10666[5] = {
+NI TMP10666;
+static char* NIM_CONST TMP10665[5] = {
 "Maybe", 
 "No", 
 "Yes", 
 "Probing", 
 "Recompiled"};
-static TNimNode* TMP10668[4];
-NI TMP10670;
-static char* NIM_CONST TMP10669[4] = {
+static TNimNode* TMP10667[4];
+NI TMP10669;
+static char* NIM_CONST TMP10668[4] = {
 "crcNotTaken", 
 "crcCached", 
 "crcHasChanged", 
 "crcNotChanged"};
-static TNimNode TMP10662[17];
+static TNimNode TMP10661[17];
 NTI525017.size = sizeof(Tmoduleinmemory525017);
 NTI525017.kind = 18;
 NTI525017.base = 0;
 NTI525017.flags = 2;
-TMP10664[0] = &TMP10662[1];
-TMP10662[1].kind = 1;
-TMP10662[1].offset = offsetof(Tmoduleinmemory525017, compiledat);
-TMP10662[1].typ = (&NTI128);
-TMP10662[1].name = "compiledAt";
-TMP10664[1] = &TMP10662[2];
-TMP10662[2].kind = 1;
-TMP10662[2].offset = offsetof(Tmoduleinmemory525017, crc);
-TMP10662[2].typ = (&NTI171015);
-TMP10662[2].name = "crc";
-TMP10664[2] = &TMP10662[3];
-TMP10662[3].kind = 1;
-TMP10662[3].offset = offsetof(Tmoduleinmemory525017, deps);
-TMP10662[3].typ = (&NTI193933);
-TMP10662[3].name = "deps";
-TMP10664[3] = &TMP10662[4];
+TMP10663[0] = &TMP10661[1];
+TMP10661[1].kind = 1;
+TMP10661[1].offset = offsetof(Tmoduleinmemory525017, compiledat);
+TMP10661[1].typ = (&NTI128);
+TMP10661[1].name = "compiledAt";
+TMP10663[1] = &TMP10661[2];
+TMP10661[2].kind = 1;
+TMP10661[2].offset = offsetof(Tmoduleinmemory525017, crc);
+TMP10661[2].typ = (&NTI171015);
+TMP10661[2].name = "crc";
+TMP10663[2] = &TMP10661[3];
+TMP10661[3].kind = 1;
+TMP10661[3].offset = offsetof(Tmoduleinmemory525017, deps);
+TMP10661[3].typ = (&NTI193933);
+TMP10661[3].name = "deps";
+TMP10663[3] = &TMP10661[4];
 NTI525013.size = sizeof(NU8);
 NTI525013.kind = 14;
 NTI525013.base = 0;
 NTI525013.flags = 3;
-for (TMP10667 = 0; TMP10667 < 5; TMP10667++) {
-TMP10662[TMP10667+5].kind = 1;
-TMP10662[TMP10667+5].offset = TMP10667;
-TMP10662[TMP10667+5].name = TMP10666[TMP10667];
-TMP10665[TMP10667] = &TMP10662[TMP10667+5];
+for (TMP10666 = 0; TMP10666 < 5; TMP10666++) {
+TMP10661[TMP10666+5].kind = 1;
+TMP10661[TMP10666+5].offset = TMP10666;
+TMP10661[TMP10666+5].name = TMP10665[TMP10666];
+TMP10664[TMP10666] = &TMP10661[TMP10666+5];
 }
-TMP10662[10].len = 5; TMP10662[10].kind = 2; TMP10662[10].sons = &TMP10665[0];
-NTI525013.node = &TMP10662[10];
-TMP10662[4].kind = 1;
-TMP10662[4].offset = offsetof(Tmoduleinmemory525017, needsrecompile);
-TMP10662[4].typ = (&NTI525013);
-TMP10662[4].name = "needsRecompile";
-TMP10664[4] = &TMP10662[11];
+TMP10661[10].len = 5; TMP10661[10].kind = 2; TMP10661[10].sons = &TMP10664[0];
+NTI525013.node = &TMP10661[10];
+TMP10661[4].kind = 1;
+TMP10661[4].offset = offsetof(Tmoduleinmemory525017, needsrecompile);
+TMP10661[4].typ = (&NTI525013);
+TMP10661[4].name = "needsRecompile";
+TMP10663[4] = &TMP10661[11];
 NTI525015.size = sizeof(NU8);
 NTI525015.kind = 14;
 NTI525015.base = 0;
 NTI525015.flags = 3;
-for (TMP10670 = 0; TMP10670 < 4; TMP10670++) {
-TMP10662[TMP10670+12].kind = 1;
-TMP10662[TMP10670+12].offset = TMP10670;
-TMP10662[TMP10670+12].name = TMP10669[TMP10670];
-TMP10668[TMP10670] = &TMP10662[TMP10670+12];
+for (TMP10669 = 0; TMP10669 < 4; TMP10669++) {
+TMP10661[TMP10669+12].kind = 1;
+TMP10661[TMP10669+12].offset = TMP10669;
+TMP10661[TMP10669+12].name = TMP10668[TMP10669];
+TMP10667[TMP10669] = &TMP10661[TMP10669+12];
 }
-TMP10662[16].len = 4; TMP10662[16].kind = 2; TMP10662[16].sons = &TMP10668[0];
-NTI525015.node = &TMP10662[16];
-TMP10662[11].kind = 1;
-TMP10662[11].offset = offsetof(Tmoduleinmemory525017, crcstatus);
-TMP10662[11].typ = (&NTI525015);
-TMP10662[11].name = "crcStatus";
-TMP10662[0].len = 5; TMP10662[0].kind = 2; TMP10662[0].sons = &TMP10664[0];
-NTI525017.node = &TMP10662[0];
+TMP10661[16].len = 4; TMP10661[16].kind = 2; TMP10661[16].sons = &TMP10667[0];
+NTI525015.node = &TMP10661[16];
+TMP10661[11].kind = 1;
+TMP10661[11].offset = offsetof(Tmoduleinmemory525017, crcstatus);
+TMP10661[11].typ = (&NTI525015);
+TMP10661[11].name = "crcStatus";
+TMP10661[0].len = 5; TMP10661[0].kind = 2; TMP10661[0].sons = &TMP10663[0];
+NTI525017.node = &TMP10661[0];
 NTI525054.size = sizeof(TY525054*);
 NTI525054.kind = 24;
 NTI525054.base = (&NTI525017);
 NTI525054.flags = 2;
-NTI525054.marker = TMP10671;
+NTI525054.marker = TMP10670;
 }
 

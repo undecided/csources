@@ -560,9 +560,9 @@ N_NOINLINE(void, raiseIndexError)(void);
 N_NIMCALL(void, add_194164)(Tnode193813* father, Tnode193813* son);
 N_NIMCALL(Tsym193843*, nextiter_201132)(Ttabiter201119* ti, Tstrtable193817 tab);
 N_NIMCALL(void, registerplugin_409124)(NimStringDesc* package, NimStringDesc* module, NimStringDesc* fn, Transformation409013 t);
-STRING_LITERAL(TMP8074, "stdlib", 6);
-STRING_LITERAL(TMP8075, "system", 6);
-STRING_LITERAL(TMP8076, "locals", 6);
+STRING_LITERAL(TMP8073, "stdlib", 6);
+STRING_LITERAL(TMP8074, "system", 6);
+STRING_LITERAL(TMP8075, "locals", 6);
 extern TFrame* frameptr_17042;
 extern Tgcheap48616 gch_48644;
 
@@ -739,7 +739,7 @@ N_NIMCALL(Tnode193813*, semlocals_410020)(Tcontext247023* c, Tnode193813* n) {
 								Ttype193849* LOC15;
 								Tsym193843* field;
 								Tsym193843* LOC18;
-								NI TMP8073;
+								NI TMP8072;
 								Tnode193813* LOC19;
 								Tnode193813* a;
 								LOC13 = 0;
@@ -760,8 +760,8 @@ N_NIMCALL(Tnode193813*, semlocals_410020)(Tcontext247023* c, Tnode193813* n) {
 								nimln(32, "locals.nim");
 								(*field).position = counter;
 								nimln(33, "locals.nim");
-								TMP8073 = addInt(counter, ((NI) 1));
-								counter = (NI)(TMP8073);
+								TMP8072 = addInt(counter, ((NI) 1));
+								counter = (NI)(TMP8072);
 								nimln(35, "locals.nim");
 								LOC19 = 0;
 								LOC19 = newsymnode_195325(field);
@@ -799,7 +799,7 @@ N_NIMCALL(Tnode193813*, semlocals_410020)(Tcontext247023* c, Tnode193813* n) {
 NIM_EXTERNC N_NOINLINE(void, compiler_localsInit)(void) {
 	nimfr("locals", "locals.nim")
 	nimln(42, "locals.nim");
-	registerplugin_409124(((NimStringDesc*) &TMP8074), ((NimStringDesc*) &TMP8075), ((NimStringDesc*) &TMP8076), semlocals_410020);
+	registerplugin_409124(((NimStringDesc*) &TMP8073), ((NimStringDesc*) &TMP8074), ((NimStringDesc*) &TMP8075), semlocals_410020);
 	popFrame();
 }
 

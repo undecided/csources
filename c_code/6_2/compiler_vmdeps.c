@@ -95,7 +95,7 @@ jmp_buf context;
 NIM_BOOL hasRaiseAction;
 TY15609 raiseAction;
 };
-typedef NimStringDesc* TY143637[1];
+typedef NimStringDesc* TY143651[1];
 struct  TNimNode  {
 NU8 kind;
 NI offset;
@@ -794,7 +794,7 @@ N_NIMCALL(NimStringDesc*, opgorge_380027)(NimStringDesc* cmd, NimStringDesc* inp
 	TMP7483.status = _setjmp(TMP7483.context);
 	if (TMP7483.status == 0) {
 		Processobj143402* p;
-		TY143637 LOC2;
+		TY143651 LOC2;
 		nimln(23, "vmdeps.nim");
 		memset((void*)LOC2, 0, sizeof(LOC2));
 		p = nospstartProcess(cmd, ((NimStringDesc*) &TMP7480), LOC2, 0, NIM_NIL, 4);

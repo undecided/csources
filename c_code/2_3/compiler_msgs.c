@@ -3364,9 +3364,9 @@ NIM_EXTERNC N_NOINLINE(void, compiler_msgsInit)(void) {
 NIM_EXTERNC N_NOINLINE(void, compiler_msgsDatInit)(void) {
 static TNimNode* TMP1196[6];
 static TNimNode* TMP1224[3];
-static TNimNode* TMP4201[278];
-NI TMP4203;
-static char* NIM_CONST TMP4202[278] = {
+static TNimNode* TMP4200[278];
+NI TMP4202;
+static char* NIM_CONST TMP4201[278] = {
 "errUnknown", 
 "errIllFormedAstX", 
 "errInternal", 
@@ -3735,13 +3735,13 @@ NTI163005.size = sizeof(NU16);
 NTI163005.kind = 14;
 NTI163005.base = 0;
 NTI163005.flags = 3;
-for (TMP4203 = 0; TMP4203 < 278; TMP4203++) {
-TMP460[TMP4203+13].kind = 1;
-TMP460[TMP4203+13].offset = TMP4203;
-TMP460[TMP4203+13].name = TMP4202[TMP4203];
-TMP4201[TMP4203] = &TMP460[TMP4203+13];
+for (TMP4202 = 0; TMP4202 < 278; TMP4202++) {
+TMP460[TMP4202+13].kind = 1;
+TMP460[TMP4202+13].offset = TMP4202;
+TMP460[TMP4202+13].name = TMP4201[TMP4202];
+TMP4200[TMP4202] = &TMP460[TMP4202+13];
 }
-TMP460[291].len = 278; TMP460[291].kind = 2; TMP460[291].sons = &TMP4201[0];
+TMP460[291].len = 278; TMP460[291].kind = 2; TMP460[291].sons = &TMP4200[0];
 NTI163005.node = &TMP460[291];
 NTI163332.size = sizeof(NU16);
 NTI163332.kind = 20;

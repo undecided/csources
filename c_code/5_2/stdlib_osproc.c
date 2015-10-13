@@ -6,6 +6,8 @@
 
 #include <string.h>
 
+#include <stdio.h>
+
 #include <sys/types.h>
 
 #include <unistd.h>
@@ -15,8 +17,6 @@
 #include <errno.h>
 
 #include <fcntl.h>
-
-#include <stdio.h>
 
 #include <signal.h>
 
@@ -66,7 +66,7 @@ struct  NimStringDesc  {
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
 typedef NU8 TY77659[32];
-typedef NimStringDesc* TY143637[1];
+typedef NimStringDesc* TY143651[1];
 typedef N_NIMCALL_PTR(void, TY3289) (void* p, NI op);
 typedef N_NIMCALL_PTR(void*, TY3294) (void* p);
 struct  TNimType  {
@@ -96,7 +96,7 @@ int exitcode;
 typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NI idx, void* ClEnv);
 void* ClEnv;
-} TY143795;
+} TY143809;
 struct  TNimNode  {
 NU8 kind;
 NI offset;
@@ -105,7 +105,7 @@ NCSTRING name;
 NI len;
 TNimNode** sons;
 };
-typedef N_CLOSURE_PTR(void, TMP593) (NI idx);
+typedef N_CLOSURE_PTR(void, TMP594) (NI idx);
 struct  Tcell46747  {
 NI refcount;
 TNimType* typ;
@@ -162,8 +162,8 @@ NI recgclock;
 Tmemregion28610 region;
 Tgcstat48614 stat;
 };
-typedef N_CLOSURE_PTR(void, TMP600) (NI idx);
-typedef N_CLOSURE_PTR(void, TMP605) (NI idx);
+typedef N_CLOSURE_PTR(void, TMP601) (NI idx);
+typedef N_CLOSURE_PTR(void, TMP606) (NI idx);
 struct  Stringtableobj134012  {
   TNimObject Sup;
 NI counter;
@@ -312,19 +312,20 @@ N_NIMCALL(NIM_BOOL, allcharsinset_98459)(NimStringDesc* s, TY77659 theset);
 N_NIMCALL(NimStringDesc*, nsuReplaceStr)(NimStringDesc* s, NimStringDesc* sub, NimStringDesc* by);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space);
 N_NIMCALL(NimStringDesc*, nospquoteShell)(NimStringDesc* s);
-N_NIMCALL(Processobj143402*, startcmd_143646)(NimStringDesc* command, NU8 options);
+N_NIMCALL(NI, echoexeccmd_143629)(NimStringDesc* command);
+N_NIMCALL(Processobj143402*, startcmd_143660)(NimStringDesc* command, NU8 options);
 N_NIMCALL(NI, nospprocessID)(Processobj143402* p);
 N_NIMCALL(int, nospinputHandle)(Processobj143402* p);
 N_NIMCALL(int, nospoutputHandle)(Processobj143402* p);
 N_NIMCALL(int, nosperrorHandle)(Processobj143402* p);
 N_NIMCALL(NI, nospcountProcessors)(void);
 N_NIMCALL(NI, ncpicountProcessors)(void);
-N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143793, NI n, TY143795 beforerunevent);
+N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143807, NI n, TY143809 beforerunevent);
 static N_INLINE(NI, chckRange)(NI i, NI a, NI b);
 N_NOINLINE(void, raiseRangeError)(NI64 val);
 N_NIMCALL(void, nimGCvisit)(void* d, NI op);
-N_NIMCALL(void, TMP589)(void* p, NI op);
 N_NIMCALL(void, TMP590)(void* p, NI op);
+N_NIMCALL(void, TMP591)(void* p, NI op);
 N_NIMCALL(void*, newSeq)(TNimType* typ, NI len);
 static N_INLINE(NI, subInt)(NI a, NI b);
 static N_INLINE(void, asgnRef)(void** dest, void* src);
@@ -379,7 +380,7 @@ N_NIMCALL(NIM_BOOL, nosprunning)(Processobj143402* p);
 N_NIMCALL(void, nospterminate)(Processobj143402* p);
 N_NIMCALL(void, nospkill)(Processobj143402* p);
 N_NIMCALL(NI, nospwaitForExit)(Processobj143402* p, NI timeout);
-N_NIMCALL(NI, peekexitcode_143725)(Processobj143402* p);
+N_NIMCALL(NI, peekexitcode_143739)(Processobj143402* p);
 N_NIMCALL(void, createstream_145643)(Streamobj138027** stream, int* handle, NU8 filemode);
 N_NIMCALL(NIM_BOOL, open_13211)(FILE** f, int filehandle, NU8 mode);
 N_NIMCALL(Filestreamobj138692*, newfilestream_138759)(FILE* f);
@@ -418,17 +419,18 @@ static NIM_CONST TY77659 TMP569 = {
 ;
 STRING_LITERAL(TMP570, "\'", 1);
 STRING_LITERAL(TMP585, "\'\"\'\"\'", 5);
-STRING_LITERAL(TMP586, "0 < n ", 6);
-static NIM_CONST TY143795 TMP592 = {NIM_NIL,NIM_NIL};
-STRING_LITERAL(TMP607, "", 0);
-STRING_LITERAL(TMP608, "\012", 1);
-STRING_LITERAL(TMP611, "=", 1);
-STRING_LITERAL(TMP631, "/bin/sh", 7);
-STRING_LITERAL(TMP632, "-c", 2);
-STRING_LITERAL(TMP633, "len(args) == 0 `args` has to be empty when using poEvalCommand.", 63);
-STRING_LITERAL(TMP637, " ", 1);
-STRING_LITERAL(TMP644, "len(a) == L seq modified while iterating over it", 48);
-NIM_CONST TY146211 TMP651 = {((NimStringDesc*) &TMP607),
+STRING_LITERAL(TMP586, "echoExecCmd::", 13);
+STRING_LITERAL(TMP587, "0 < n ", 6);
+static NIM_CONST TY143809 TMP593 = {NIM_NIL,NIM_NIL};
+STRING_LITERAL(TMP608, "", 0);
+STRING_LITERAL(TMP609, "\012", 1);
+STRING_LITERAL(TMP612, "=", 1);
+STRING_LITERAL(TMP632, "/bin/sh", 7);
+STRING_LITERAL(TMP633, "-c", 2);
+STRING_LITERAL(TMP634, "len(args) == 0 `args` has to be empty when using poEvalCommand.", 63);
+STRING_LITERAL(TMP638, " ", 1);
+STRING_LITERAL(TMP645, "len(a) == L seq modified while iterating over it", 48);
+NIM_CONST TY146211 TMP652 = {((NimStringDesc*) &TMP608),
 ((NI) -1)}
 ;
 extern TFrame* frameptr_17042;
@@ -661,12 +663,26 @@ N_NIMCALL(NimStringDesc*, nospquoteShell)(NimStringDesc* s) {
 	return result;
 }
 
-N_NIMCALL(Processobj143402*, startcmd_143646)(NimStringDesc* command, NU8 options) {
+N_NIMCALL(NI, echoexeccmd_143629)(NimStringDesc* command) {
+	NI result;
+	nimfr("echoExecCmd", "osproc.nim")
+	result = 0;
+	nimln(127, "osproc.nim");
+	printf("%s\012", ((NimStringDesc*) &TMP586)? (((NimStringDesc*) &TMP586))->data:"nil");
+	nimln(128, "osproc.nim");
+	printf("%s\012", command? (command)->data:"nil");
+	nimln(129, "osproc.nim");
+	result = nospexecCmd(command);
+	popFrame();
+	return result;
+}
+
+N_NIMCALL(Processobj143402*, startcmd_143660)(NimStringDesc* command, NU8 options) {
 	Processobj143402* result;
-	TY143637 LOC1;
+	TY143651 LOC1;
 	nimfr("startCmd", "osproc.nim")
 	result = 0;
-	nimln(158, "osproc.nim");
+	nimln(163, "osproc.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	result = nospstartProcess(command, ((NimStringDesc*) &TMP561), LOC1, 0, NIM_NIL, (options | 4));
 	popFrame();
@@ -677,7 +693,7 @@ N_NIMCALL(NI, nospprocessID)(Processobj143402* p) {
 	NI result;
 	nimfr("processID", "osproc.nim")
 {	result = 0;
-	nimln(183, "osproc.nim");
+	nimln(188, "osproc.nim");
 	result = (*p).id;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -689,7 +705,7 @@ N_NIMCALL(int, nospinputHandle)(Processobj143402* p) {
 	int result;
 	nimfr("inputHandle", "osproc.nim")
 	result = 0;
-	nimln(219, "osproc.nim");
+	nimln(224, "osproc.nim");
 	result = (*p).inhandle;
 	popFrame();
 	return result;
@@ -699,7 +715,7 @@ N_NIMCALL(int, nospoutputHandle)(Processobj143402* p) {
 	int result;
 	nimfr("outputHandle", "osproc.nim")
 	result = 0;
-	nimln(227, "osproc.nim");
+	nimln(232, "osproc.nim");
 	result = (*p).outhandle;
 	popFrame();
 	return result;
@@ -709,7 +725,7 @@ N_NIMCALL(int, nosperrorHandle)(Processobj143402* p) {
 	int result;
 	nimfr("errorHandle", "osproc.nim")
 	result = 0;
-	nimln(235, "osproc.nim");
+	nimln(240, "osproc.nim");
 	result = (*p).errhandle;
 	popFrame();
 	return result;
@@ -719,7 +735,7 @@ N_NIMCALL(NI, nospcountProcessors)(void) {
 	NI result;
 	nimfr("countProcessors", "osproc.nim")
 	result = 0;
-	nimln(240, "osproc.nim");
+	nimln(245, "osproc.nim");
 	result = ncpicountProcessors();
 	popFrame();
 	return result;
@@ -748,14 +764,14 @@ static N_INLINE(NI, chckRange)(NI i, NI a, NI b) {
 	}BeforeRet: ;
 	return result;
 }
-N_NIMCALL(void, TMP589)(void* p, NI op) {
+N_NIMCALL(void, TMP590)(void* p, NI op) {
 	Processobj143402* a;
 	a = (Processobj143402*)p;
 	nimGCvisit((void*)(*a).instream, op);
 	nimGCvisit((void*)(*a).outstream, op);
 	nimGCvisit((void*)(*a).errstream, op);
 }
-N_NIMCALL(void, TMP590)(void* p, NI op) {
+N_NIMCALL(void, TMP591)(void* p, NI op) {
 	TY144201* a;
 	NI LOC1;
 	a = (TY144201*)p;
@@ -896,111 +912,111 @@ static N_INLINE(void, asgnRef)(void** dest, void* src) {
 	popFrame();
 }
 
-N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143793, NI n, TY143795 beforerunevent) {
+N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_143807, NI n, TY143809 beforerunevent) {
 	NI result;
 	NU8 options;
 	nimfr("execProcesses", "osproc.nim")
 	result = 0;
-	nimln(253, "osproc.nim");
-	options = (options_143793 & ~ 16);
-	nimln(255, "osproc.nim");
+	nimln(258, "osproc.nim");
+	options = (options_143807 & ~ 16);
+	nimln(260, "osproc.nim");
 	{
 		if (!!((((NI) 0) < n))) goto LA3;
-		failedassertimpl_87017(((NimStringDesc*) &TMP586));
+		failedassertimpl_87017(((NimStringDesc*) &TMP587));
 	}
 	LA3: ;
-	nimln(256, "osproc.nim");
+	nimln(261, "osproc.nim");
 	{
 		TY144201* q;
 		NI m;
 		NI i;
 		if (!(((NI) 1) < n)) goto LA7;
 		q = 0;
-		nimln(258, "osproc.nim");
+		nimln(263, "osproc.nim");
 		q = (TY144201*) newSeq((&NTI144201), ((NI)chckRange(n, ((NI) 0), ((NI) IL64(9223372036854775807)))));
-		nimln(259, "osproc.nim");
+		nimln(264, "osproc.nim");
 		m = ((n <= cmdsLen0) ? n : cmdsLen0);
 		{
 			NI i_144235;
 			NI HEX3Atmp_144528;
-			NI TMP591;
+			NI TMP592;
 			NI res_144531;
 			i_144235 = 0;
 			HEX3Atmp_144528 = 0;
-			nimln(260, "osproc.nim");
-			TMP591 = subInt(m, ((NI) 1));
-			HEX3Atmp_144528 = (NI)(TMP591);
+			nimln(265, "osproc.nim");
+			TMP592 = subInt(m, ((NI) 1));
+			HEX3Atmp_144528 = (NI)(TMP592);
 			nimln(1598, "system.nim");
 			res_144531 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					TY143637 LOC16;
-					NI TMP594;
+					TY143651 LOC16;
+					NI TMP595;
 					if (!(res_144531 <= HEX3Atmp_144528)) goto LA11;
 					nimln(1600, "system.nim");
 					i_144235 = res_144531;
-					nimln(261, "osproc.nim");
+					nimln(266, "osproc.nim");
 					{
-						if (!!((beforerunevent.ClPrc == TMP592.ClPrc && beforerunevent.ClEnv == TMP592.ClEnv))) goto LA14;
-						nimln(262, "osproc.nim");
-						beforerunevent.ClEnv? beforerunevent.ClPrc(i_144235, beforerunevent.ClEnv):((TMP593)(beforerunevent.ClPrc))(i_144235);
+						if (!!((beforerunevent.ClPrc == TMP593.ClPrc && beforerunevent.ClEnv == TMP593.ClEnv))) goto LA14;
+						nimln(267, "osproc.nim");
+						beforerunevent.ClEnv? beforerunevent.ClPrc(i_144235, beforerunevent.ClEnv):((TMP594)(beforerunevent.ClPrc))(i_144235);
 					}
 					LA14: ;
-					nimln(263, "osproc.nim");
+					nimln(268, "osproc.nim");
 					if ((NU)(i_144235) >= (NU)(q->Sup.len)) raiseIndexError();
 					if ((NU)(i_144235) >= (NU)(cmdsLen0)) raiseIndexError();
 					memset((void*)LOC16, 0, sizeof(LOC16));
 					asgnRef((void**) (&q->data[i_144235]), nospstartProcess(cmds[i_144235], ((NimStringDesc*) &TMP561), LOC16, 0, NIM_NIL, (options | 4)));
 					nimln(1619, "system.nim");
-					TMP594 = addInt(res_144531, ((NI) 1));
-					res_144531 = (NI)(TMP594);
+					TMP595 = addInt(res_144531, ((NI) 1));
+					res_144531 = (NI)(TMP595);
 				} LA11: ;
 			}
 		}
-		nimln(281, "osproc.nim");
+		nimln(286, "osproc.nim");
 		i = m;
 		{
-			nimln(282, "osproc.nim");
+			nimln(287, "osproc.nim");
 			while (1) {
 				if (!(i <= (cmdsLen0-1))) goto LA18;
-				nimln(283, "osproc.nim");
+				nimln(288, "osproc.nim");
 				nossleep(((NI) 50));
 				{
 					NI r_144413;
 					NI HEX3Atmp_144537;
-					NI TMP599;
+					NI TMP600;
 					NI res_144540;
 					r_144413 = 0;
 					HEX3Atmp_144537 = 0;
-					nimln(284, "osproc.nim");
-					TMP599 = subInt(n, ((NI) 1));
-					HEX3Atmp_144537 = (NI)(TMP599);
+					nimln(289, "osproc.nim");
+					TMP600 = subInt(n, ((NI) 1));
+					HEX3Atmp_144537 = (NI)(TMP600);
 					nimln(1598, "system.nim");
 					res_144540 = ((NI) 0);
 					{
 						nimln(1599, "system.nim");
 						while (1) {
-							NI TMP602;
+							NI TMP603;
 							if (!(res_144540 <= HEX3Atmp_144537)) goto LA21;
 							nimln(1600, "system.nim");
 							r_144413 = res_144540;
-							nimln(285, "osproc.nim");
+							nimln(290, "osproc.nim");
 							{
 								NIM_BOOL LOC24;
 								NI LOC27;
-								TY143637 LOC36;
-								NI TMP601;
+								TY143651 LOC36;
+								NI TMP602;
 								if ((NU)(r_144413) >= (NU)(q->Sup.len)) raiseIndexError();
 								LOC24 = 0;
 								LOC24 = nosprunning(q->data[r_144413]);
 								if (!!(LOC24)) goto LA25;
-								nimln(287, "osproc.nim");
+								nimln(292, "osproc.nim");
 								if ((NU)(r_144413) >= (NU)(q->Sup.len)) raiseIndexError();
 								LOC27 = 0;
 								LOC27 = nospwaitForExit(q->data[r_144413], ((NI) -1));
 								result = ((LOC27 >= result) ? LOC27 : result);
-								nimln(288, "osproc.nim");
+								nimln(293, "osproc.nim");
 								{
 									if ((NU)(r_144413) >= (NU)(q->Sup.len)) raiseIndexError();
 									if (!!((q->data[r_144413] == NIM_NIL))) goto LA30;
@@ -1008,22 +1024,22 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 									nospclose(q->data[r_144413]);
 								}
 								LA30: ;
-								nimln(289, "osproc.nim");
+								nimln(294, "osproc.nim");
 								{
-									if (!!((beforerunevent.ClPrc == TMP592.ClPrc && beforerunevent.ClEnv == TMP592.ClEnv))) goto LA34;
-									nimln(290, "osproc.nim");
-									beforerunevent.ClEnv? beforerunevent.ClPrc(i, beforerunevent.ClEnv):((TMP600)(beforerunevent.ClPrc))(i);
+									if (!!((beforerunevent.ClPrc == TMP593.ClPrc && beforerunevent.ClEnv == TMP593.ClEnv))) goto LA34;
+									nimln(295, "osproc.nim");
+									beforerunevent.ClEnv? beforerunevent.ClPrc(i, beforerunevent.ClEnv):((TMP601)(beforerunevent.ClPrc))(i);
 								}
 								LA34: ;
-								nimln(291, "osproc.nim");
+								nimln(296, "osproc.nim");
 								if ((NU)(r_144413) >= (NU)(q->Sup.len)) raiseIndexError();
 								if ((NU)(i) >= (NU)(cmdsLen0)) raiseIndexError();
 								memset((void*)LOC36, 0, sizeof(LOC36));
 								asgnRef((void**) (&q->data[r_144413]), nospstartProcess(cmds[i], ((NimStringDesc*) &TMP561), LOC36, 0, NIM_NIL, (options | 4)));
-								nimln(292, "osproc.nim");
-								TMP601 = addInt(i, ((NI) 1));
-								i = (NI)(TMP601);
-								nimln(293, "osproc.nim");
+								nimln(297, "osproc.nim");
+								TMP602 = addInt(i, ((NI) 1));
+								i = (NI)(TMP602);
+								nimln(298, "osproc.nim");
 								{
 									if (!((cmdsLen0-1) < i)) goto LA39;
 									goto LA19;
@@ -1032,8 +1048,8 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 							}
 							LA25: ;
 							nimln(1619, "system.nim");
-							TMP602 = addInt(res_144540, ((NI) 1));
-							res_144540 = (NI)(TMP602);
+							TMP603 = addInt(res_144540, ((NI) 1));
+							res_144540 = (NI)(TMP603);
 						} LA21: ;
 					}
 				} LA19: ;
@@ -1042,29 +1058,29 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 		{
 			NI j_144471;
 			NI HEX3Atmp_144545;
-			NI TMP603;
+			NI TMP604;
 			NI res_144548;
 			j_144471 = 0;
 			HEX3Atmp_144545 = 0;
-			nimln(294, "osproc.nim");
-			TMP603 = subInt(m, ((NI) 1));
-			HEX3Atmp_144545 = (NI)(TMP603);
+			nimln(299, "osproc.nim");
+			TMP604 = subInt(m, ((NI) 1));
+			HEX3Atmp_144545 = (NI)(TMP604);
 			nimln(1598, "system.nim");
 			res_144548 = ((NI) 0);
 			{
 				nimln(1599, "system.nim");
 				while (1) {
 					NI LOC44;
-					NI TMP604;
+					NI TMP605;
 					if (!(res_144548 <= HEX3Atmp_144545)) goto LA43;
 					nimln(1600, "system.nim");
 					j_144471 = res_144548;
-					nimln(295, "osproc.nim");
+					nimln(300, "osproc.nim");
 					if ((NU)(j_144471) >= (NU)(q->Sup.len)) raiseIndexError();
 					LOC44 = 0;
 					LOC44 = nospwaitForExit(q->data[j_144471], ((NI) -1));
 					result = ((LOC44 >= result) ? LOC44 : result);
-					nimln(296, "osproc.nim");
+					nimln(301, "osproc.nim");
 					{
 						if ((NU)(j_144471) >= (NU)(q->Sup.len)) raiseIndexError();
 						if (!!((q->data[j_144471] == NIM_NIL))) goto LA47;
@@ -1073,8 +1089,8 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 					}
 					LA47: ;
 					nimln(1619, "system.nim");
-					TMP604 = addInt(res_144548, ((NI) 1));
-					res_144548 = (NI)(TMP604);
+					TMP605 = addInt(res_144548, ((NI) 1));
+					res_144548 = (NI)(TMP605);
 				} LA43: ;
 			}
 		}
@@ -1088,7 +1104,7 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 			NI res_144556;
 			i_144498 = 0;
 			HEX3Atmp_144553 = 0;
-			nimln(298, "osproc.nim");
+			nimln(303, "osproc.nim");
 			HEX3Atmp_144553 = (cmdsLen0-1);
 			nimln(1598, "system.nim");
 			res_144556 = ((NI) 0);
@@ -1096,32 +1112,32 @@ N_NIMCALL(NI, nospexecProcesses)(NimStringDesc** cmds, NI cmdsLen0, NU8 options_
 				nimln(1599, "system.nim");
 				while (1) {
 					Processobj143402* p;
-					TY143637 LOC57;
+					TY143651 LOC57;
 					NI LOC58;
-					NI TMP606;
+					NI TMP607;
 					if (!(res_144556 <= HEX3Atmp_144553)) goto LA52;
 					nimln(1600, "system.nim");
 					i_144498 = res_144556;
-					nimln(299, "osproc.nim");
+					nimln(304, "osproc.nim");
 					{
-						if (!!((beforerunevent.ClPrc == TMP592.ClPrc && beforerunevent.ClEnv == TMP592.ClEnv))) goto LA55;
-						nimln(300, "osproc.nim");
-						beforerunevent.ClEnv? beforerunevent.ClPrc(i_144498, beforerunevent.ClEnv):((TMP605)(beforerunevent.ClPrc))(i_144498);
+						if (!!((beforerunevent.ClPrc == TMP593.ClPrc && beforerunevent.ClEnv == TMP593.ClEnv))) goto LA55;
+						nimln(305, "osproc.nim");
+						beforerunevent.ClEnv? beforerunevent.ClPrc(i_144498, beforerunevent.ClEnv):((TMP606)(beforerunevent.ClPrc))(i_144498);
 					}
 					LA55: ;
-					nimln(301, "osproc.nim");
+					nimln(306, "osproc.nim");
 					if ((NU)(i_144498) >= (NU)(cmdsLen0)) raiseIndexError();
 					memset((void*)LOC57, 0, sizeof(LOC57));
 					p = nospstartProcess(cmds[i_144498], ((NimStringDesc*) &TMP561), LOC57, 0, NIM_NIL, (options | 4));
-					nimln(302, "osproc.nim");
+					nimln(307, "osproc.nim");
 					LOC58 = 0;
 					LOC58 = nospwaitForExit(p, ((NI) -1));
 					result = ((LOC58 >= result) ? LOC58 : result);
-					nimln(303, "osproc.nim");
+					nimln(308, "osproc.nim");
 					nospclose(p);
 					nimln(1619, "system.nim");
-					TMP606 = addInt(res_144556, ((NI) 1));
-					res_144556 = (NI)(TMP606);
+					TMP607 = addInt(res_144556, ((NI) 1));
+					res_144556 = (NI)(TMP607);
 				} LA52: ;
 			}
 		}
@@ -1138,35 +1154,35 @@ N_NIMCALL(NimStringDesc*, nospexecProcess)(NimStringDesc* command, NimStringDesc
 	NimStringDesc* line;
 	nimfr("execProcess", "osproc.nim")
 	result = 0;
-	nimln(321, "osproc.nim");
+	nimln(326, "osproc.nim");
 	p = nospstartProcess(command, ((NimStringDesc*) &TMP561), args, argsLen0, env, options);
-	nimln(322, "osproc.nim");
+	nimln(327, "osproc.nim");
 	outp = nospoutputStream(p);
-	nimln(323, "osproc.nim");
-	result = copyString(((NimStringDesc*) &TMP607));
-	nimln(324, "osproc.nim");
+	nimln(328, "osproc.nim");
+	result = copyString(((NimStringDesc*) &TMP608));
+	nimln(329, "osproc.nim");
 	line = rawNewString(((NI) 120));
 	{
-		nimln(325, "osproc.nim");
+		nimln(330, "osproc.nim");
 		while (1) {
-			nimln(327, "osproc.nim");
+			nimln(332, "osproc.nim");
 			{
 				NIM_BOOL LOC5;
 				LOC5 = 0;
 				LOC5 = readline_138509(outp, (&line));
 				if (!LOC5) goto LA6;
-				nimln(328, "osproc.nim");
+				nimln(333, "osproc.nim");
 				result = resizeString(result, line->Sup.len + 0);
 appendString(result, line);
-				nimln(329, "osproc.nim");
+				nimln(334, "osproc.nim");
 				result = resizeString(result, 1);
-appendString(result, ((NimStringDesc*) &TMP608));
+appendString(result, ((NimStringDesc*) &TMP609));
 			}
 			goto LA3;
 			LA6: ;
 			{
 				NIM_BOOL LOC9;
-				nimln(330, "osproc.nim");
+				nimln(335, "osproc.nim");
 				LOC9 = 0;
 				LOC9 = nosprunning(p);
 				if (!!(LOC9)) goto LA10;
@@ -1177,7 +1193,7 @@ appendString(result, ((NimStringDesc*) &TMP608));
 			LA3: ;
 		}
 	} LA1: ;
-	nimln(331, "osproc.nim");
+	nimln(336, "osproc.nim");
 	nospclose(p);
 	popFrame();
 	return result;
@@ -1186,21 +1202,21 @@ appendString(result, ((NimStringDesc*) &TMP608));
 N_NIMCALL(NCSTRING*, envtocstringarray_144806)(Stringtableobj134012* t) {
 	NCSTRING* result;
 	NI LOC1;
-	NI TMP609;
 	NI TMP610;
+	NI TMP611;
 	void* LOC2;
 	NI i;
 	nimfr("envToCStringArray", "osproc.nim")
 	result = 0;
-	nimln(579, "osproc.nim");
+	nimln(584, "osproc.nim");
 	LOC1 = 0;
 	LOC1 = nstlen(t);
-	TMP609 = addInt(LOC1, ((NI) 1));
-	TMP610 = mulInt((NI)(TMP609), ((NI) 8));
+	TMP610 = addInt(LOC1, ((NI) 1));
+	TMP611 = mulInt((NI)(TMP610), ((NI) 8));
 	LOC2 = 0;
-	LOC2 = alloc0_6017(((NI)chckRange((NI)(TMP610), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	LOC2 = alloc0_6017(((NI)chckRange((NI)(TMP611), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	result = ((NCSTRING*) (LOC2));
-	nimln(580, "osproc.nim");
+	nimln(585, "osproc.nim");
 	i = ((NI) 0);
 	{
 		NimStringDesc* key_144812;
@@ -1220,7 +1236,7 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144806)(Stringtableobj134012* t) {
 			{
 				nimln(1599, "system.nim");
 				while (1) {
-					NI TMP615;
+					NI TMP616;
 					if (!(res_144836 <= HEX3Atmp_144834)) goto LA6;
 					nimln(1600, "system.nim");
 					h_144832 = res_144836;
@@ -1228,10 +1244,10 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144806)(Stringtableobj134012* t) {
 					{
 						NimStringDesc* x;
 						NimStringDesc* LOC11;
-						NI TMP612;
-						void* LOC12;
 						NI TMP613;
+						void* LOC12;
 						NI TMP614;
+						NI TMP615;
 						if ((NU)(h_144832) >= (NU)((*t).data->Sup.len)) raiseIndexError();
 						if (!!((*t).data->data[h_144832].Field0 == 0)) goto LA9;
 						nimln(45, "strtabs.nim");
@@ -1239,32 +1255,32 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144806)(Stringtableobj134012* t) {
 						key_144812 = (*t).data->data[h_144832].Field0;
 						if ((NU)(h_144832) >= (NU)((*t).data->Sup.len)) raiseIndexError();
 						val_144813 = (*t).data->data[h_144832].Field1;
-						nimln(582, "osproc.nim");
+						nimln(587, "osproc.nim");
 						LOC11 = 0;
 						LOC11 = rawNewString(key_144812->Sup.len + val_144813->Sup.len + 1);
 appendString(LOC11, key_144812);
-appendString(LOC11, ((NimStringDesc*) &TMP611));
+appendString(LOC11, ((NimStringDesc*) &TMP612));
 appendString(LOC11, val_144813);
 						x = LOC11;
-						nimln(583, "osproc.nim");
+						nimln(588, "osproc.nim");
 						if ((NU)(i) > (NU)(100000000)) raiseIndexError();
-						TMP612 = addInt((x ? x->Sup.len : 0), ((NI) 1));
+						TMP613 = addInt((x ? x->Sup.len : 0), ((NI) 1));
 						LOC12 = 0;
-						LOC12 = alloc_6001(((NI)chckRange((NI)(TMP612), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+						LOC12 = alloc_6001(((NI)chckRange((NI)(TMP613), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 						result[(i)- 0] = ((NCSTRING) (LOC12));
-						nimln(584, "osproc.nim");
+						nimln(589, "osproc.nim");
 						if ((NU)(i) > (NU)(100000000)) raiseIndexError();
 						if ((NU)(((NI) 0)) > (NU)(x->Sup.len)) raiseIndexError();
-						TMP613 = addInt((x ? x->Sup.len : 0), ((NI) 1));
-						memcpy(((void*) (result[(i)- 0])), ((void*) ((&x->data[((NI) 0)]))), ((NI)chckRange((NI)(TMP613), ((NI) 0), ((NI) IL64(9223372036854775807)))));
-						nimln(585, "osproc.nim");
-						TMP614 = addInt(i, ((NI) 1));
-						i = (NI)(TMP614);
+						TMP614 = addInt((x ? x->Sup.len : 0), ((NI) 1));
+						memcpy(((void*) (result[(i)- 0])), ((void*) ((&x->data[((NI) 0)]))), ((NI)chckRange((NI)(TMP614), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+						nimln(590, "osproc.nim");
+						TMP615 = addInt(i, ((NI) 1));
+						i = (NI)(TMP615);
 					}
 					LA9: ;
 					nimln(1619, "system.nim");
-					TMP615 = addInt(res_144836, ((NI) 1));
-					res_144836 = (NI)(TMP615);
+					TMP616 = addInt(res_144836, ((NI) 1));
+					res_144836 = (NI)(TMP616);
 				} LA6: ;
 			}
 		}
@@ -1276,13 +1292,13 @@ appendString(LOC11, val_144813);
 N_NIMCALL(NCSTRING*, envtocstringarray_144854)(void) {
 	NCSTRING* result;
 	NI counter;
-	NI TMP620;
 	NI TMP621;
+	NI TMP622;
 	void* LOC5;
 	NI i;
 	nimfr("envToCStringArray", "osproc.nim")
 	result = 0;
-	nimln(588, "osproc.nim");
+	nimln(593, "osproc.nim");
 	counter = ((NI) 0);
 	{
 		NimStringDesc* key_144858;
@@ -1305,10 +1321,10 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144854)(void) {
 				nimln(1599, "system.nim");
 				while (1) {
 					NI p_144896;
-					NI TMP616;
 					NI TMP617;
 					NI TMP618;
 					NI TMP619;
+					NI TMP620;
 					if (!(res_144892 <= HEX3Atmp_144890)) goto LA4;
 					nimln(1600, "system.nim");
 					i_144888 = res_144892;
@@ -1317,29 +1333,29 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144854)(void) {
 					p_144896 = nsuFindChar(environment_122009->data[i_144888], 61, ((NI) 0));
 					nimln(1212, "os.nim");
 					if ((NU)(i_144888) >= (NU)(environment_122009->Sup.len)) raiseIndexError();
-					TMP616 = subInt(p_144896, ((NI) 1));
-					key_144858 = copyStrLast(environment_122009->data[i_144888], ((NI) 0), (NI)(TMP616));
+					TMP617 = subInt(p_144896, ((NI) 1));
+					key_144858 = copyStrLast(environment_122009->data[i_144888], ((NI) 0), (NI)(TMP617));
 					nimln(1213, "os.nim");
 					if ((NU)(i_144888) >= (NU)(environment_122009->Sup.len)) raiseIndexError();
-					TMP617 = addInt(p_144896, ((NI) 1));
-					val_144859 = copyStr(environment_122009->data[i_144888], (NI)(TMP617));
-					nimln(589, "osproc.nim");
-					TMP618 = addInt(counter, ((NI) 1));
-					counter = (NI)(TMP618);
+					TMP618 = addInt(p_144896, ((NI) 1));
+					val_144859 = copyStr(environment_122009->data[i_144888], (NI)(TMP618));
+					nimln(594, "osproc.nim");
+					TMP619 = addInt(counter, ((NI) 1));
+					counter = (NI)(TMP619);
 					nimln(1619, "system.nim");
-					TMP619 = addInt(res_144892, ((NI) 1));
-					res_144892 = (NI)(TMP619);
+					TMP620 = addInt(res_144892, ((NI) 1));
+					res_144892 = (NI)(TMP620);
 				} LA4: ;
 			}
 		}
 	}
-	nimln(590, "osproc.nim");
-	TMP620 = addInt(counter, ((NI) 1));
-	TMP621 = mulInt((NI)(TMP620), ((NI) 8));
+	nimln(595, "osproc.nim");
+	TMP621 = addInt(counter, ((NI) 1));
+	TMP622 = mulInt((NI)(TMP621), ((NI) 8));
 	LOC5 = 0;
-	LOC5 = alloc0_6017(((NI)chckRange((NI)(TMP621), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+	LOC5 = alloc0_6017(((NI)chckRange((NI)(TMP622), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	result = ((NCSTRING*) (LOC5));
-	nimln(591, "osproc.nim");
+	nimln(596, "osproc.nim");
 	i = ((NI) 0);
 	{
 		NimStringDesc* key_144871;
@@ -1362,15 +1378,15 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144854)(void) {
 				nimln(1599, "system.nim");
 				while (1) {
 					NI p_144917;
-					NI TMP622;
 					NI TMP623;
+					NI TMP624;
 					NimStringDesc* x;
 					NimStringDesc* LOC10;
-					NI TMP624;
-					void* LOC11;
 					NI TMP625;
+					void* LOC11;
 					NI TMP626;
 					NI TMP627;
+					NI TMP628;
 					if (!(res_144913 <= HEX3Atmp_144911)) goto LA9;
 					nimln(1600, "system.nim");
 					i_144909 = res_144913;
@@ -1379,36 +1395,36 @@ N_NIMCALL(NCSTRING*, envtocstringarray_144854)(void) {
 					p_144917 = nsuFindChar(environment_122009->data[i_144909], 61, ((NI) 0));
 					nimln(1212, "os.nim");
 					if ((NU)(i_144909) >= (NU)(environment_122009->Sup.len)) raiseIndexError();
-					TMP622 = subInt(p_144917, ((NI) 1));
-					key_144871 = copyStrLast(environment_122009->data[i_144909], ((NI) 0), (NI)(TMP622));
+					TMP623 = subInt(p_144917, ((NI) 1));
+					key_144871 = copyStrLast(environment_122009->data[i_144909], ((NI) 0), (NI)(TMP623));
 					nimln(1213, "os.nim");
 					if ((NU)(i_144909) >= (NU)(environment_122009->Sup.len)) raiseIndexError();
-					TMP623 = addInt(p_144917, ((NI) 1));
-					val_144872 = copyStr(environment_122009->data[i_144909], (NI)(TMP623));
-					nimln(593, "osproc.nim");
+					TMP624 = addInt(p_144917, ((NI) 1));
+					val_144872 = copyStr(environment_122009->data[i_144909], (NI)(TMP624));
+					nimln(598, "osproc.nim");
 					LOC10 = 0;
 					LOC10 = rawNewString(key_144871->Sup.len + val_144872->Sup.len + 1);
 appendString(LOC10, key_144871);
-appendString(LOC10, ((NimStringDesc*) &TMP611));
+appendString(LOC10, ((NimStringDesc*) &TMP612));
 appendString(LOC10, val_144872);
 					x = LOC10;
-					nimln(594, "osproc.nim");
+					nimln(599, "osproc.nim");
 					if ((NU)(i) > (NU)(100000000)) raiseIndexError();
-					TMP624 = addInt((x ? x->Sup.len : 0), ((NI) 1));
+					TMP625 = addInt((x ? x->Sup.len : 0), ((NI) 1));
 					LOC11 = 0;
-					LOC11 = alloc_6001(((NI)chckRange((NI)(TMP624), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+					LOC11 = alloc_6001(((NI)chckRange((NI)(TMP625), ((NI) 0), ((NI) IL64(9223372036854775807)))));
 					result[(i)- 0] = ((NCSTRING) (LOC11));
-					nimln(595, "osproc.nim");
+					nimln(600, "osproc.nim");
 					if ((NU)(i) > (NU)(100000000)) raiseIndexError();
 					if ((NU)(((NI) 0)) > (NU)(x->Sup.len)) raiseIndexError();
-					TMP625 = addInt((x ? x->Sup.len : 0), ((NI) 1));
-					memcpy(((void*) (result[(i)- 0])), ((void*) ((&x->data[((NI) 0)]))), ((NI)chckRange((NI)(TMP625), ((NI) 0), ((NI) IL64(9223372036854775807)))));
-					nimln(596, "osproc.nim");
-					TMP626 = addInt(i, ((NI) 1));
-					i = (NI)(TMP626);
+					TMP626 = addInt((x ? x->Sup.len : 0), ((NI) 1));
+					memcpy(((void*) (result[(i)- 0])), ((void*) ((&x->data[((NI) 0)]))), ((NI)chckRange((NI)(TMP626), ((NI) 0), ((NI) IL64(9223372036854775807)))));
+					nimln(601, "osproc.nim");
+					TMP627 = addInt(i, ((NI) 1));
+					i = (NI)(TMP627);
 					nimln(1619, "system.nim");
-					TMP627 = addInt(res_144913, ((NI) 1));
-					res_144913 = (NI)(TMP627);
+					TMP628 = addInt(res_144913, ((NI) 1));
+					res_144913 = (NI)(TMP628);
 				} LA9: ;
 			}
 		}
@@ -1532,26 +1548,26 @@ static N_INLINE(void, setFrame)(TFrame* s) {
 
 N_NIMCALL(pid_t, startprocessauxfork_144962)(Tstartprocessdata144948* data) {
 	pid_t volatile result;
-	TSafePoint TMP630;
+	TSafePoint TMP631;
 	nimfr("startProcessAuxFork", "osproc.nim")
 {	result = 0;
-	nimln(696, "osproc.nim");
+	nimln(701, "osproc.nim");
 	{
 		int LOC3;
 		NI32 LOC6;
 		LOC3 = 0;
 		LOC3 = pipe((*data).perrorpipe);
 		if (!!((LOC3 == ((NI32) 0)))) goto LA4;
-		nimln(697, "osproc.nim");
+		nimln(702, "osproc.nim");
 		LOC6 = 0;
 		LOC6 = oslasterror_116833();
 		raiseoserror_116809(LOC6);
 	}
 	LA4: ;
-	nimln(699, "osproc.nim");
-	pushSafePoint(&TMP630);
-	TMP630.status = _setjmp(TMP630.context);
-	if (TMP630.status == 0) {
+	nimln(704, "osproc.nim");
+	pushSafePoint(&TMP631);
+	TMP631.status = _setjmp(TMP631.context);
+	if (TMP631.status == 0) {
 		pid_t volatile pid;
 		Tstartprocessdata144948 datacopy;
 		int LOC12;
@@ -1559,23 +1575,23 @@ N_NIMCALL(pid_t, startprocessauxfork_144962)(Tstartprocessdata144948* data) {
 		NI sizeread;
 		int LOC24;
 		pid = 0;
-		nimln(703, "osproc.nim");
+		nimln(708, "osproc.nim");
 		datacopy = (*data);
-		nimln(716, "osproc.nim");
+		nimln(721, "osproc.nim");
 		pid = fork();
-		nimln(717, "osproc.nim");
+		nimln(722, "osproc.nim");
 		{
 			if (!(pid == ((NI) 0))) goto LA10;
-			nimln(718, "osproc.nim");
+			nimln(723, "osproc.nim");
 			startprocessafterfork_144965((&datacopy));
-			nimln(719, "osproc.nim");
+			nimln(724, "osproc.nim");
 			_exit(((NI) 1));
 		}
 		LA10: ;
-		nimln(721, "osproc.nim");
+		nimln(726, "osproc.nim");
 		LOC12 = 0;
 		LOC12 = close((*data).perrorpipe[(((NI) 1))- 0]);
-		nimln(722, "osproc.nim");
+		nimln(727, "osproc.nim");
 		{
 			NI32 LOC17;
 			if (!(pid < ((NI) 0))) goto LA15;
@@ -1585,14 +1601,14 @@ N_NIMCALL(pid_t, startprocessauxfork_144962)(Tstartprocessdata144948* data) {
 		}
 		LA15: ;
 		error = 0;
-		nimln(725, "osproc.nim");
+		nimln(730, "osproc.nim");
 		sizeread = read((*data).perrorpipe[(((NI) 0))- 0], ((void*) ((&error))), ((NI) 4));
-		nimln(726, "osproc.nim");
+		nimln(731, "osproc.nim");
 		{
 			NCSTRING LOC22;
 			NimStringDesc* LOC23;
 			if (!(sizeread == ((NI) 4))) goto LA20;
-			nimln(727, "osproc.nim");
+			nimln(732, "osproc.nim");
 			LOC22 = 0;
 			LOC22 = strerror(error);
 			LOC23 = 0;
@@ -1600,10 +1616,10 @@ N_NIMCALL(pid_t, startprocessauxfork_144962)(Tstartprocessdata144948* data) {
 			nosraiseOSError(LOC23);
 		}
 		LA20: ;
-		nimln(729, "osproc.nim");
+		nimln(734, "osproc.nim");
 		result = pid;
 		popSafePoint();
-		nimln(700, "osproc.nim");
+		nimln(705, "osproc.nim");
 		LOC24 = 0;
 		LOC24 = close((*data).perrorpipe[(((NI) 0))- 0]);
 		goto BeforeRet;
@@ -1618,7 +1634,7 @@ N_NIMCALL(pid_t, startprocessauxfork_144962)(Tstartprocessdata144948* data) {
 		LOC27 = 0;
 		LOC27 = close((*data).perrorpipe[(((NI) 0))- 0]);
 	}
-	if (TMP630.status != 0) reraiseException();
+	if (TMP631.status != 0) reraiseException();
 	}BeforeRet: ;
 	popFrame();
 	return result;
@@ -1651,21 +1667,21 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 	TY13606* sysargsraw;
 	pid_t volatile pid;
 	NCSTRING* sysargs;
-	TSafePoint TMP635;
+	TSafePoint TMP636;
 	nimfr("startProcess", "osproc.nim")
 	result = 0;
 	memset((void*)pstdin, 0, sizeof(pstdin));
 	memset((void*)pstdout, 0, sizeof(pstdout));
 	memset((void*)pstderr, 0, sizeof(pstderr));
-	nimln(622, "osproc.nim");
+	nimln(627, "osproc.nim");
 	result = (Processobj143402*) newObj((&NTI143404), sizeof(Processobj143402));
 	(*result).Sup.m_type = (&NTI143402);
-	nimln(623, "osproc.nim");
+	nimln(628, "osproc.nim");
 	(*result).exitcode = ((int) -3);
-	nimln(624, "osproc.nim");
+	nimln(629, "osproc.nim");
 	{
 		if (!!(((options &(1<<((((NU8) 4))&7)))!=0))) goto LA3;
-		nimln(625, "osproc.nim");
+		nimln(630, "osproc.nim");
 		{
 			NIM_BOOL LOC7;
 			NIM_BOOL LOC8;
@@ -1685,13 +1701,13 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 			LA10: ;
 			LOC7 = LOC8;
 			if (LOC7) goto LA12;
-			nimln(626, "osproc.nim");
+			nimln(631, "osproc.nim");
 			LOC13 = 0;
 			LOC13 = pipe(pstderr);
 			LOC7 = !((LOC13 == ((NI32) 0)));
 			LA12: ;
 			if (!LOC7) goto LA14;
-			nimln(627, "osproc.nim");
+			nimln(632, "osproc.nim");
 			LOC16 = 0;
 			LOC16 = oslasterror_116833();
 			raiseoserror_116809(LOC16);
@@ -1701,20 +1717,20 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 	LA3: ;
 	syscommand = 0;
 	sysargsraw = 0;
-	nimln(631, "osproc.nim");
+	nimln(636, "osproc.nim");
 	{
 		TY145021 LOC21;
 		NimStringDesc* LOC22;
 		NimStringDesc* LOC23;
 		NimStringDesc* LOC24;
 		if (!((options &(1<<((((NU8) 2))&7)))!=0)) goto LA19;
-		nimln(632, "osproc.nim");
-		syscommand = copyString(((NimStringDesc*) &TMP631));
-		nimln(633, "osproc.nim");
+		nimln(637, "osproc.nim");
+		syscommand = copyString(((NimStringDesc*) &TMP632));
+		nimln(638, "osproc.nim");
 		sysargsraw = (TY13606*) newSeq((&NTI13606), 3);
 		memset((void*)LOC21, 0, sizeof(LOC21));
 		LOC21[0] = copyString(syscommand);
-		LOC21[1] = copyString(((NimStringDesc*) &TMP632));
+		LOC21[1] = copyString(((NimStringDesc*) &TMP633));
 		LOC21[2] = copyString(command);
 		LOC22 = 0;
 		LOC22 = sysargsraw->data[0]; sysargsraw->data[0] = copyStringRC1(LOC21[0]);
@@ -1725,10 +1741,10 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 		LOC24 = 0;
 		LOC24 = sysargsraw->data[2]; sysargsraw->data[2] = copyStringRC1(LOC21[2]);
 		if (LOC24) nimGCunrefNoCycle(LOC24);
-		nimln(634, "osproc.nim");
+		nimln(639, "osproc.nim");
 		{
 			if (!!((argsLen0 == ((NI) 0)))) goto LA27;
-			failedassertimpl_87017(((NimStringDesc*) &TMP633));
+			failedassertimpl_87017(((NimStringDesc*) &TMP634));
 		}
 		LA27: ;
 	}
@@ -1737,9 +1753,9 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 	{
 		TY145201 LOC30;
 		NimStringDesc* LOC31;
-		nimln(636, "osproc.nim");
+		nimln(641, "osproc.nim");
 		syscommand = copyString(command);
-		nimln(637, "osproc.nim");
+		nimln(642, "osproc.nim");
 		sysargsraw = (TY13606*) newSeq((&NTI13606), 1);
 		memset((void*)LOC30, 0, sizeof(LOC30));
 		LOC30[0] = copyString(command);
@@ -1756,103 +1772,103 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 				nimln(1690, "system.nim");
 				while (1) {
 					NimStringDesc* LOC35;
-					NI TMP634;
+					NI TMP635;
 					if (!(i_145357 < argsLen0)) goto LA34;
 					nimln(1691, "system.nim");
 					if ((NU)(i_145357) >= (NU)(argsLen0)) raiseIndexError();
 					arg_145222 = args[i_145357];
-					nimln(639, "osproc.nim");
+					nimln(644, "osproc.nim");
 					sysargsraw = (TY13606*) incrSeq(&(sysargsraw)->Sup, sizeof(NimStringDesc*));
 					LOC35 = 0;
 					LOC35 = sysargsraw->data[sysargsraw->Sup.len-1]; sysargsraw->data[sysargsraw->Sup.len-1] = copyStringRC1(arg_145222);
 					if (LOC35) nimGCunrefNoCycle(LOC35);
 					nimln(1692, "system.nim");
-					TMP634 = addInt(i_145357, ((NI) 1));
-					i_145357 = (NI)(TMP634);
+					TMP635 = addInt(i_145357, ((NI) 1));
+					i_145357 = (NI)(TMP635);
 				} LA34: ;
 			}
 		}
 	}
 	LA17: ;
 	pid = 0;
-	nimln(643, "osproc.nim");
+	nimln(648, "osproc.nim");
 	sysargs = alloccstringarray_14001(sysargsraw->data, sysargsraw->Sup.len);
-	nimln(644, "osproc.nim");
-	pushSafePoint(&TMP635);
-	TMP635.status = _setjmp(TMP635.context);
-	if (TMP635.status == 0) {
+	nimln(649, "osproc.nim");
+	pushSafePoint(&TMP636);
+	TMP636.status = _setjmp(TMP636.context);
+	if (TMP636.status == 0) {
 		NCSTRING* sysenv;
-		TSafePoint TMP636;
-		nimln(646, "osproc.nim");
+		TSafePoint TMP637;
+		nimln(651, "osproc.nim");
 		{
 			if (!(env == NIM_NIL)) goto LA39;
-			nimln(647, "osproc.nim");
+			nimln(652, "osproc.nim");
 			sysenv = envtocstringarray_144854();
 		}
 		goto LA37;
 		LA39: ;
 		{
-			nimln(649, "osproc.nim");
+			nimln(654, "osproc.nim");
 			sysenv = envtocstringarray_144806(env);
 		}
 		LA37: ;
-		nimln(651, "osproc.nim");
-		pushSafePoint(&TMP636);
-		TMP636.status = _setjmp(TMP636.context);
-		if (TMP636.status == 0) {
+		nimln(656, "osproc.nim");
+		pushSafePoint(&TMP637);
+		TMP637.status = _setjmp(TMP637.context);
+		if (TMP637.status == 0) {
 			Tstartprocessdata144948 data;
 			memset((void*)(&data), 0, sizeof(data));
-			nimln(654, "osproc.nim");
-			data.syscommand = syscommand->data;
-			nimln(655, "osproc.nim");
-			data.sysargs = sysargs;
-			nimln(656, "osproc.nim");
-			data.sysenv = sysenv;
-			nimln(657, "osproc.nim");
-			memcpy((void*)data.pstdin, (NIM_CONST void*)pstdin, sizeof(data.pstdin));
-			nimln(658, "osproc.nim");
-			memcpy((void*)data.pstdout, (NIM_CONST void*)pstdout, sizeof(data.pstdout));
 			nimln(659, "osproc.nim");
-			memcpy((void*)data.pstderr, (NIM_CONST void*)pstderr, sizeof(data.pstderr));
+			data.syscommand = syscommand->data;
 			nimln(660, "osproc.nim");
-			data.optionpoparentstreams = ((options &(1<<((((NU8) 4))&7)))!=0);
+			data.sysargs = sysargs;
 			nimln(661, "osproc.nim");
-			data.optionpousepath = ((options &(1<<((((NU8) 1))&7)))!=0);
+			data.sysenv = sysenv;
 			nimln(662, "osproc.nim");
-			data.optionpostderrtostdout = ((options &(1<<((((NU8) 3))&7)))!=0);
+			memcpy((void*)data.pstdin, (NIM_CONST void*)pstdin, sizeof(data.pstdin));
 			nimln(663, "osproc.nim");
-			data.workingdir = workingdir->data;
+			memcpy((void*)data.pstdout, (NIM_CONST void*)pstdout, sizeof(data.pstdout));
+			nimln(664, "osproc.nim");
+			memcpy((void*)data.pstderr, (NIM_CONST void*)pstderr, sizeof(data.pstderr));
+			nimln(665, "osproc.nim");
+			data.optionpoparentstreams = ((options &(1<<((((NU8) 4))&7)))!=0);
 			nimln(666, "osproc.nim");
+			data.optionpousepath = ((options &(1<<((((NU8) 1))&7)))!=0);
+			nimln(667, "osproc.nim");
+			data.optionpostderrtostdout = ((options &(1<<((((NU8) 3))&7)))!=0);
+			nimln(668, "osproc.nim");
+			data.workingdir = workingdir->data;
+			nimln(671, "osproc.nim");
 			pid = startprocessauxfork_144962((&data));
-			nimln(669, "osproc.nim");
+			nimln(674, "osproc.nim");
 			{
 				NimStringDesc* LOC47;
 				if (!((options &(1<<((((NU8) 0))&7)))!=0)) goto LA45;
-				nimln(670, "osproc.nim");
+				nimln(675, "osproc.nim");
 				LOC47 = 0;
-				LOC47 = nsuJoinSep(args, argsLen0, ((NimStringDesc*) &TMP637));
-				printf("%s%s%s\012", command? (command)->data:"nil", ((NimStringDesc*) &TMP637)? (((NimStringDesc*) &TMP637))->data:"nil", LOC47? (LOC47)->data:"nil");
+				LOC47 = nsuJoinSep(args, argsLen0, ((NimStringDesc*) &TMP638));
+				printf("%s%s%s\012", command? (command)->data:"nil", ((NimStringDesc*) &TMP638)? (((NimStringDesc*) &TMP638))->data:"nil", LOC47? (LOC47)->data:"nil");
 			}
 			LA45: ;
-			nimln(671, "osproc.nim");
+			nimln(676, "osproc.nim");
 			(*result).id = pid;
-			nimln(673, "osproc.nim");
+			nimln(678, "osproc.nim");
 			{
 				if (!((options &(1<<((((NU8) 4))&7)))!=0)) goto LA50;
-				nimln(675, "osproc.nim");
+				nimln(680, "osproc.nim");
 				(*result).inhandle = ((int) 0);
-				nimln(676, "osproc.nim");
+				nimln(681, "osproc.nim");
 				(*result).outhandle = ((int) 1);
-				nimln(677, "osproc.nim");
+				nimln(682, "osproc.nim");
 				{
 					if (!((options &(1<<((((NU8) 3))&7)))!=0)) goto LA54;
-					nimln(678, "osproc.nim");
+					nimln(683, "osproc.nim");
 					(*result).errhandle = (*result).outhandle;
 				}
 				goto LA52;
 				LA54: ;
 				{
-					nimln(680, "osproc.nim");
+					nimln(685, "osproc.nim");
 					(*result).errhandle = ((int) 2);
 				}
 				LA52: ;
@@ -1863,34 +1879,34 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 				int LOC64;
 				int LOC65;
 				int LOC66;
-				nimln(682, "osproc.nim");
+				nimln(687, "osproc.nim");
 				(*result).inhandle = pstdin[(((NI) 1))- 0];
-				nimln(683, "osproc.nim");
+				nimln(688, "osproc.nim");
 				(*result).outhandle = pstdout[(((NI) 0))- 0];
-				nimln(684, "osproc.nim");
+				nimln(689, "osproc.nim");
 				{
 					int LOC62;
 					if (!((options &(1<<((((NU8) 3))&7)))!=0)) goto LA60;
-					nimln(685, "osproc.nim");
+					nimln(690, "osproc.nim");
 					(*result).errhandle = (*result).outhandle;
-					nimln(686, "osproc.nim");
+					nimln(691, "osproc.nim");
 					LOC62 = 0;
 					LOC62 = close(pstderr[(((NI) 0))- 0]);
 				}
 				goto LA58;
 				LA60: ;
 				{
-					nimln(688, "osproc.nim");
+					nimln(693, "osproc.nim");
 					(*result).errhandle = pstderr[(((NI) 0))- 0];
 				}
 				LA58: ;
-				nimln(689, "osproc.nim");
+				nimln(694, "osproc.nim");
 				LOC64 = 0;
 				LOC64 = close(pstderr[(((NI) 1))- 0]);
-				nimln(690, "osproc.nim");
+				nimln(695, "osproc.nim");
 				LOC65 = 0;
 				LOC65 = close(pstdin[(((NI) 0))- 0]);
-				nimln(691, "osproc.nim");
+				nimln(696, "osproc.nim");
 				LOC66 = 0;
 				LOC66 = close(pstdout[(((NI) 1))- 0]);
 			}
@@ -1902,10 +1918,10 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 			setFrame((TFrame*)&FR);
 		}
 		{
-			nimln(651, "osproc.nim");
+			nimln(656, "osproc.nim");
 			dealloccstringarray_14250(sysenv);
 		}
-		if (TMP636.status != 0) reraiseException();
+		if (TMP637.status != 0) reraiseException();
 		popSafePoint();
 	}
 	else {
@@ -1913,10 +1929,10 @@ N_NIMCALL(Processobj143402*, nospstartProcess)(NimStringDesc* command, NimString
 		setFrame((TFrame*)&FR);
 	}
 	{
-		nimln(644, "osproc.nim");
+		nimln(649, "osproc.nim");
 		dealloccstringarray_14250(sysargs);
 	}
-	if (TMP635.status != 0) reraiseException();
+	if (TMP636.status != 0) reraiseException();
 	popFrame();
 	return result;
 }
@@ -1926,31 +1942,31 @@ N_NIMCALL(void, nospclose)(Processobj143402* p) {
 	int LOC14;
 	int LOC15;
 	nimfr("close", "osproc.nim")
-	nimln(777, "osproc.nim");
+	nimln(782, "osproc.nim");
 	{
 		if (!!(((*p).instream == NIM_NIL))) goto LA3;
 		close_138085((*p).instream);
 	}
 	LA3: ;
-	nimln(778, "osproc.nim");
+	nimln(783, "osproc.nim");
 	{
 		if (!!(((*p).outstream == NIM_NIL))) goto LA7;
 		close_138085((*p).outstream);
 	}
 	LA7: ;
-	nimln(779, "osproc.nim");
+	nimln(784, "osproc.nim");
 	{
 		if (!!(((*p).errstream == NIM_NIL))) goto LA11;
 		close_138085((*p).errstream);
 	}
 	LA11: ;
-	nimln(780, "osproc.nim");
+	nimln(785, "osproc.nim");
 	LOC13 = 0;
 	LOC13 = close((*p).inhandle);
-	nimln(781, "osproc.nim");
+	nimln(786, "osproc.nim");
 	LOC14 = 0;
 	LOC14 = close((*p).outhandle);
-	nimln(782, "osproc.nim");
+	nimln(787, "osproc.nim");
 	LOC15 = 0;
 	LOC15 = close((*p).errhandle);
 	popFrame();
@@ -1958,7 +1974,7 @@ N_NIMCALL(void, nospclose)(Processobj143402* p) {
 
 N_NIMCALL(void, nospsuspend)(Processobj143402* p) {
 	nimfr("suspend", "osproc.nim")
-	nimln(785, "osproc.nim");
+	nimln(790, "osproc.nim");
 	{
 		int LOC3;
 		NI32 LOC6;
@@ -1975,7 +1991,7 @@ N_NIMCALL(void, nospsuspend)(Processobj143402* p) {
 
 N_NIMCALL(void, nospresume)(Processobj143402* p) {
 	nimfr("resume", "osproc.nim")
-	nimln(788, "osproc.nim");
+	nimln(793, "osproc.nim");
 	{
 		int LOC3;
 		NI32 LOC6;
@@ -1997,28 +2013,28 @@ N_NIMCALL(NIM_BOOL, nosprunning)(Processobj143402* p) {
 	nimfr("running", "osproc.nim")
 {	result = 0;
 	ret = 0;
-	nimln(795, "osproc.nim");
+	nimln(800, "osproc.nim");
 	status = ((int) 1);
-	nimln(796, "osproc.nim");
+	nimln(801, "osproc.nim");
 	ret = waitpid((*p).id, (&status), WNOHANG);
-	nimln(797, "osproc.nim");
+	nimln(802, "osproc.nim");
 	{
 		NIM_BOOL LOC3;
 		LOC3 = 0;
 		LOC3 = WIFEXITED(status);
 		if (!LOC3) goto LA4;
-		nimln(798, "osproc.nim");
+		nimln(803, "osproc.nim");
 		(*p).exitcode = status;
 	}
 	LA4: ;
-	nimln(799, "osproc.nim");
+	nimln(804, "osproc.nim");
 	{
 		if (!(ret == ((NI) 0))) goto LA8;
 		result = NIM_TRUE;
 		goto BeforeRet;
 	}
 	LA8: ;
-	nimln(800, "osproc.nim");
+	nimln(805, "osproc.nim");
 	result = (ret == (*p).id);
 	}BeforeRet: ;
 	popFrame();
@@ -2027,14 +2043,14 @@ N_NIMCALL(NIM_BOOL, nosprunning)(Processobj143402* p) {
 
 N_NIMCALL(void, nospterminate)(Processobj143402* p) {
 	nimfr("terminate", "osproc.nim")
-	nimln(803, "osproc.nim");
+	nimln(808, "osproc.nim");
 	{
 		int LOC3;
 		NI32 LOC6;
 		LOC3 = 0;
 		LOC3 = kill((*p).id, SIGTERM);
 		if (!!((LOC3 == ((NI32) 0)))) goto LA4;
-		nimln(804, "osproc.nim");
+		nimln(809, "osproc.nim");
 		LOC6 = 0;
 		LOC6 = oslasterror_116833();
 		raiseoserror_116809(LOC6);
@@ -2045,14 +2061,14 @@ N_NIMCALL(void, nospterminate)(Processobj143402* p) {
 
 N_NIMCALL(void, nospkill)(Processobj143402* p) {
 	nimfr("kill", "osproc.nim")
-	nimln(807, "osproc.nim");
+	nimln(812, "osproc.nim");
 	{
 		int LOC3;
 		NI32 LOC6;
 		LOC3 = 0;
 		LOC3 = kill((*p).id, SIGKILL);
 		if (!!((LOC3 == ((NI32) 0)))) goto LA4;
-		nimln(808, "osproc.nim");
+		nimln(813, "osproc.nim");
 		LOC6 = 0;
 		LOC6 = oslasterror_116833();
 		raiseoserror_116809(LOC6);
@@ -2065,59 +2081,59 @@ N_NIMCALL(NI, nospwaitForExit)(Processobj143402* p, NI timeout) {
 	NI result;
 	nimfr("waitForExit", "osproc.nim")
 {	result = 0;
-	nimln(815, "osproc.nim");
+	nimln(820, "osproc.nim");
 	{
 		if (!!(((*p).exitcode == ((NI32) -3)))) goto LA3;
 		result = ((NI) ((*p).exitcode));
 		goto BeforeRet;
 	}
 	LA3: ;
-	nimln(816, "osproc.nim");
+	nimln(821, "osproc.nim");
 	{
 		pid_t LOC7;
 		NI32 LOC10;
 		LOC7 = 0;
 		LOC7 = waitpid((*p).id, (&(*p).exitcode), ((int) 0));
 		if (!(LOC7 < ((NI) 0))) goto LA8;
-		nimln(817, "osproc.nim");
+		nimln(822, "osproc.nim");
 		(*p).exitcode = ((int) -3);
-		nimln(818, "osproc.nim");
+		nimln(823, "osproc.nim");
 		LOC10 = 0;
 		LOC10 = oslasterror_116833();
 		raiseoserror_116809(LOC10);
 	}
 	LA8: ;
-	nimln(819, "osproc.nim");
+	nimln(824, "osproc.nim");
 	result = (NI)((NU64)(((NI) ((*p).exitcode))) >> (NU64)(((NI) 8)));
 	}BeforeRet: ;
 	popFrame();
 	return result;
 }
 
-N_NIMCALL(NI, peekexitcode_143725)(Processobj143402* p) {
+N_NIMCALL(NI, peekexitcode_143739)(Processobj143402* p) {
 	NI result;
 	pid_t ret;
 	NIM_BOOL b;
 	nimfr("peekExitCode", "osproc.nim")
 {	result = 0;
-	nimln(822, "osproc.nim");
+	nimln(827, "osproc.nim");
 	{
 		if (!!(((*p).exitcode == ((NI32) -3)))) goto LA3;
 		result = ((NI) ((*p).exitcode));
 		goto BeforeRet;
 	}
 	LA3: ;
-	nimln(823, "osproc.nim");
+	nimln(828, "osproc.nim");
 	ret = waitpid((*p).id, (&(*p).exitcode), WNOHANG);
-	nimln(824, "osproc.nim");
+	nimln(829, "osproc.nim");
 	b = (ret == (*p).id);
-	nimln(825, "osproc.nim");
+	nimln(830, "osproc.nim");
 	{
 		if (!b) goto LA7;
 		result = ((NI) -1);
 	}
 	LA7: ;
-	nimln(826, "osproc.nim");
+	nimln(831, "osproc.nim");
 	{
 		NIM_BOOL LOC11;
 		LOC11 = 0;
@@ -2128,7 +2144,7 @@ N_NIMCALL(NI, peekexitcode_143725)(Processobj143402* p) {
 	goto LA9;
 	LA12: ;
 	{
-		nimln(827, "osproc.nim");
+		nimln(832, "osproc.nim");
 		result = (NI)((NU64)(((NI) ((*p).exitcode))) >> (NU64)(((NI) 8)));
 	}
 	LA9: ;
@@ -2142,7 +2158,7 @@ N_NIMCALL(void, createstream_145643)(Streamobj138027** stream, int* handle, NU8 
 	Filestreamobj138692* LOC7;
 	nimfr("createStream", "osproc.nim")
 	f = 0;
-	nimln(832, "osproc.nim");
+	nimln(837, "osproc.nim");
 	{
 		NIM_BOOL LOC3;
 		NI32 LOC6;
@@ -2154,7 +2170,7 @@ N_NIMCALL(void, createstream_145643)(Streamobj138027** stream, int* handle, NU8 
 		raiseoserror_116809(LOC6);
 	}
 	LA4: ;
-	nimln(833, "osproc.nim");
+	nimln(838, "osproc.nim");
 	LOC7 = 0;
 	LOC7 = newfilestream_138759(f);
 	unsureAsgnRef((void**) (&(*stream)), &LOC7->Sup);
@@ -2165,14 +2181,14 @@ N_NIMCALL(Streamobj138027*, nospinputStream)(Processobj143402* p) {
 	Streamobj138027* result;
 	nimfr("inputStream", "osproc.nim")
 {	result = 0;
-	nimln(836, "osproc.nim");
+	nimln(841, "osproc.nim");
 	{
 		if (!((*p).instream == NIM_NIL)) goto LA3;
-		nimln(837, "osproc.nim");
+		nimln(842, "osproc.nim");
 		createstream_145643(&(*p).instream, (&(*p).inhandle), ((NU8) 1));
 	}
 	LA3: ;
-	nimln(838, "osproc.nim");
+	nimln(843, "osproc.nim");
 	result = (*p).instream;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -2184,14 +2200,14 @@ N_NIMCALL(Streamobj138027*, nospoutputStream)(Processobj143402* p) {
 	Streamobj138027* result;
 	nimfr("outputStream", "osproc.nim")
 {	result = 0;
-	nimln(841, "osproc.nim");
+	nimln(846, "osproc.nim");
 	{
 		if (!((*p).outstream == NIM_NIL)) goto LA3;
-		nimln(842, "osproc.nim");
+		nimln(847, "osproc.nim");
 		createstream_145643(&(*p).outstream, (&(*p).outhandle), ((NU8) 0));
 	}
 	LA3: ;
-	nimln(843, "osproc.nim");
+	nimln(848, "osproc.nim");
 	result = (*p).outstream;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -2203,14 +2219,14 @@ N_NIMCALL(Streamobj138027*, nosperrorStream)(Processobj143402* p) {
 	Streamobj138027* result;
 	nimfr("errorStream", "osproc.nim")
 {	result = 0;
-	nimln(846, "osproc.nim");
+	nimln(851, "osproc.nim");
 	{
 		if (!((*p).errstream == NIM_NIL)) goto LA3;
-		nimln(847, "osproc.nim");
+		nimln(852, "osproc.nim");
 		createstream_145643(&(*p).errstream, (&(*p).errhandle), ((NU8) 0));
 	}
 	LA3: ;
-	nimln(848, "osproc.nim");
+	nimln(853, "osproc.nim");
 	result = (*p).errstream;
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -2223,7 +2239,7 @@ N_NIMCALL(NI, nospexecCmd)(NimStringDesc* command) {
 	int LOC1;
 	nimfr("execCmd", "osproc.nim")
 	result = 0;
-	nimln(857, "osproc.nim");
+	nimln(862, "osproc.nim");
 	LOC1 = 0;
 	LOC1 = system(command->data);
 	result = ((NI) (LOC1));
@@ -2233,7 +2249,7 @@ N_NIMCALL(NI, nospexecCmd)(NimStringDesc* command) {
 
 N_NIMCALL(void, createfdset_145804)(fd_set* fd, TY144201* s, NI* m) {
 	nimfr("createFdSet", "osproc.nim")
-	nimln(860, "osproc.nim");
+	nimln(865, "osproc.nim");
 	FD_ZERO(fd);
 	{
 		Processobj143402* i_146011;
@@ -2247,22 +2263,22 @@ N_NIMCALL(void, createfdset_145804)(fd_set* fd, TY144201* s, NI* m) {
 		{
 			nimln(3086, "system.nim");
 			while (1) {
-				NI TMP643;
+				NI TMP644;
 				if (!(i_146029 < L_146031)) goto LA3;
 				nimln(3087, "system.nim");
 				if ((NU)(i_146029) >= (NU)(s->Sup.len)) raiseIndexError();
 				i_146011 = s->data[i_146029];
-				nimln(862, "osproc.nim");
+				nimln(867, "osproc.nim");
 				(*m) = (((*m) >= ((NI) ((*i_146011).outhandle))) ? (*m) : ((NI) ((*i_146011).outhandle)));
-				nimln(863, "osproc.nim");
+				nimln(868, "osproc.nim");
 				FD_SET((*i_146011).outhandle, fd);
 				nimln(3088, "system.nim");
-				TMP643 = addInt(i_146029, ((NI) 1));
-				i_146029 = (NI)(TMP643);
+				TMP644 = addInt(i_146029, ((NI) 1));
+				i_146029 = (NI)(TMP644);
 				nimln(3089, "system.nim");
 				{
 					if (!!(((s ? s->Sup.len : 0) == L_146031))) goto LA6;
-					failedassertimpl_87017(((NimStringDesc*) &TMP644));
+					failedassertimpl_87017(((NimStringDesc*) &TMP645));
 				}
 				LA6: ;
 			} LA3: ;
@@ -2275,44 +2291,44 @@ N_NIMCALL(void, pruneprocessset_146044)(TY144201** s, fd_set* fd) {
 	NI i;
 	NI L;
 	nimfr("pruneProcessSet", "osproc.nim")
-	nimln(866, "osproc.nim");
+	nimln(871, "osproc.nim");
 	i = ((NI) 0);
-	nimln(867, "osproc.nim");
+	nimln(872, "osproc.nim");
 	L = ((*s) ? (*s)->Sup.len : 0);
 	{
-		nimln(868, "osproc.nim");
+		nimln(873, "osproc.nim");
 		while (1) {
 			if (!(i < L)) goto LA2;
-			nimln(869, "osproc.nim");
+			nimln(874, "osproc.nim");
 			{
 				int LOC5;
-				NI TMP645;
 				NI TMP646;
+				NI TMP647;
 				if ((NU)(i) >= (NU)((*s)->Sup.len)) raiseIndexError();
 				LOC5 = 0;
 				LOC5 = FD_ISSET((*(*s)->data[i]).outhandle, fd);
 				if (!(LOC5 == ((NI32) 0))) goto LA6;
-				nimln(870, "osproc.nim");
+				nimln(875, "osproc.nim");
 				if ((NU)(i) >= (NU)((*s)->Sup.len)) raiseIndexError();
-				TMP645 = subInt(L, ((NI) 1));
-				if ((NU)((NI)(TMP645)) >= (NU)((*s)->Sup.len)) raiseIndexError();
-				asgnRef((void**) (&(*s)->data[i]), (*s)->data[(NI)(TMP645)]);
-				nimln(871, "osproc.nim");
 				TMP646 = subInt(L, ((NI) 1));
-				L = (NI)(TMP646);
+				if ((NU)((NI)(TMP646)) >= (NU)((*s)->Sup.len)) raiseIndexError();
+				asgnRef((void**) (&(*s)->data[i]), (*s)->data[(NI)(TMP646)]);
+				nimln(876, "osproc.nim");
+				TMP647 = subInt(L, ((NI) 1));
+				L = (NI)(TMP647);
 			}
 			goto LA3;
 			LA6: ;
 			{
-				NI TMP647;
-				nimln(873, "osproc.nim");
-				TMP647 = addInt(i, ((NI) 1));
-				i = (NI)(TMP647);
+				NI TMP648;
+				nimln(878, "osproc.nim");
+				TMP648 = addInt(i, ((NI) 1));
+				i = (NI)(TMP648);
 			}
 			LA3: ;
 		} LA2: ;
 	}
-	nimln(874, "osproc.nim");
+	nimln(879, "osproc.nim");
 	(*s) = (TY144201*) setLengthSeq(&((*s))->Sup, sizeof(Processobj143402*), ((NI)chckRange(L, ((NI) 0), ((NI) IL64(9223372036854775807)))));
 	popFrame();
 }
@@ -2320,46 +2336,46 @@ N_NIMCALL(void, pruneprocessset_146044)(TY144201** s, fd_set* fd) {
 N_NIMCALL(NI, select_144608)(TY144201** readfds, NI timeout) {
 	NI result;
 	struct timeval tv;
-	NI TMP648;
+	NI TMP649;
 	fd_set rd;
 	NI m;
 	nimfr("select", "osproc.nim")
 	result = 0;
 	memset((void*)(&tv), 0, sizeof(tv));
-	nimln(878, "osproc.nim");
-	tv.tv_sec = ((NI) 0);
-	nimln(879, "osproc.nim");
-	TMP648 = mulInt(timeout, ((NI) 1000));
-	tv.tv_usec = (NI)(TMP648);
-	memset((void*)(&rd), 0, sizeof(rd));
-	nimln(882, "osproc.nim");
-	m = ((NI) 0);
 	nimln(883, "osproc.nim");
+	tv.tv_sec = ((NI) 0);
+	nimln(884, "osproc.nim");
+	TMP649 = mulInt(timeout, ((NI) 1000));
+	tv.tv_usec = (NI)(TMP649);
+	memset((void*)(&rd), 0, sizeof(rd));
+	nimln(887, "osproc.nim");
+	m = ((NI) 0);
+	nimln(888, "osproc.nim");
 	createfdset_145804((&rd), (*readfds), (&m));
-	nimln(885, "osproc.nim");
+	nimln(890, "osproc.nim");
 	{
-		NI TMP649;
+		NI TMP650;
 		int LOC5;
 		if (!!((timeout == ((NI) -1)))) goto LA3;
-		nimln(886, "osproc.nim");
-		TMP649 = addInt(m, ((NI) 1));
+		nimln(891, "osproc.nim");
+		TMP650 = addInt(m, ((NI) 1));
 		LOC5 = 0;
-		LOC5 = select(((int)chckRange((NI)(TMP649), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, (&tv));
+		LOC5 = select(((int)chckRange((NI)(TMP650), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, (&tv));
 		result = ((NI) (LOC5));
 	}
 	goto LA1;
 	LA3: ;
 	{
-		NI TMP650;
+		NI TMP651;
 		int LOC7;
-		nimln(888, "osproc.nim");
-		TMP650 = addInt(m, ((NI) 1));
+		nimln(893, "osproc.nim");
+		TMP651 = addInt(m, ((NI) 1));
 		LOC7 = 0;
-		LOC7 = select(((int)chckRange((NI)(TMP650), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, NIM_NIL);
+		LOC7 = select(((int)chckRange((NI)(TMP651), ((int) (-2147483647 -1)), ((int) 2147483647))), (&rd), NIM_NIL, NIM_NIL, NIM_NIL);
 		result = ((NI) (LOC7));
 	}
 	LA1: ;
-	nimln(890, "osproc.nim");
+	nimln(895, "osproc.nim");
 	pruneprocessset_146044(readfds, (&rd));
 	popFrame();
 	return result;
@@ -2367,42 +2383,42 @@ N_NIMCALL(NI, select_144608)(TY144201** readfds, NI timeout) {
 
 N_NIMCALL(void, execcmdex_146205)(NimStringDesc* command, NU8 options, TY146211* Result) {
 	Processobj143402* p;
-	TY143637 LOC1;
+	TY143651 LOC1;
 	Streamobj138027* outp;
 	NimStringDesc* line;
 	nimfr("execCmdEx", "osproc.nim")
-	nimln(899, "osproc.nim");
+	nimln(904, "osproc.nim");
 	memset((void*)LOC1, 0, sizeof(LOC1));
 	p = nospstartProcess(command, ((NimStringDesc*) &TMP561), LOC1, 0, NIM_NIL, (options | 4));
-	nimln(900, "osproc.nim");
+	nimln(905, "osproc.nim");
 	outp = nospoutputStream(p);
-	nimln(901, "osproc.nim");
-	unsureAsgnRef((void**) (&(*Result).Field0), copyString(TMP651.Field0));
-	(*Result).Field1 = TMP651.Field1;
-	nimln(902, "osproc.nim");
+	nimln(906, "osproc.nim");
+	unsureAsgnRef((void**) (&(*Result).Field0), copyString(TMP652.Field0));
+	(*Result).Field1 = TMP652.Field1;
+	nimln(907, "osproc.nim");
 	line = rawNewString(((NI) 120));
 	{
-		nimln(903, "osproc.nim");
+		nimln(908, "osproc.nim");
 		while (1) {
-			nimln(904, "osproc.nim");
+			nimln(909, "osproc.nim");
 			{
 				NIM_BOOL LOC6;
 				LOC6 = 0;
 				LOC6 = readline_138509(outp, (&line));
 				if (!LOC6) goto LA7;
-				nimln(905, "osproc.nim");
+				nimln(910, "osproc.nim");
 				(*Result).Field0 = resizeString((*Result).Field0, line->Sup.len + 0);
 appendString((*Result).Field0, line);
-				nimln(906, "osproc.nim");
+				nimln(911, "osproc.nim");
 				(*Result).Field0 = resizeString((*Result).Field0, 1);
-appendString((*Result).Field0, ((NimStringDesc*) &TMP608));
+appendString((*Result).Field0, ((NimStringDesc*) &TMP609));
 			}
 			goto LA4;
 			LA7: ;
 			{
-				nimln(908, "osproc.nim");
-				(*Result).Field1 = peekexitcode_143725(p);
-				nimln(909, "osproc.nim");
+				nimln(913, "osproc.nim");
+				(*Result).Field1 = peekexitcode_143739(p);
+				nimln(914, "osproc.nim");
 				{
 					if (!!(((*Result).Field1 == ((NI) -1)))) goto LA12;
 					goto LA2;
@@ -2412,7 +2428,7 @@ appendString((*Result).Field0, ((NimStringDesc*) &TMP608));
 			LA4: ;
 		}
 	} LA2: ;
-	nimln(910, "osproc.nim");
+	nimln(915, "osproc.nim");
 	nospclose(p);
 	popFrame();
 }
@@ -2422,60 +2438,60 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_osprocInit)(void) {
 }
 
 NIM_EXTERNC N_NOINLINE(void, stdlib_osprocDatInit)(void) {
-static TNimNode* TMP587[8];
+static TNimNode* TMP588[8];
 static TNimNode TMP538[9];
 NTI143402.size = sizeof(Processobj143402);
 NTI143402.kind = 17;
 NTI143402.base = (&NTI3411);
-TMP587[0] = &TMP538[1];
+TMP588[0] = &TMP538[1];
 TMP538[1].kind = 1;
 TMP538[1].offset = offsetof(Processobj143402, inhandle);
 TMP538[1].typ = (&NTI13008);
 TMP538[1].name = "inHandle";
-TMP587[1] = &TMP538[2];
+TMP588[1] = &TMP538[2];
 TMP538[2].kind = 1;
 TMP538[2].offset = offsetof(Processobj143402, outhandle);
 TMP538[2].typ = (&NTI13008);
 TMP538[2].name = "outHandle";
-TMP587[2] = &TMP538[3];
+TMP588[2] = &TMP538[3];
 TMP538[3].kind = 1;
 TMP538[3].offset = offsetof(Processobj143402, errhandle);
 TMP538[3].typ = (&NTI13008);
 TMP538[3].name = "errHandle";
-TMP587[3] = &TMP538[4];
+TMP588[3] = &TMP538[4];
 TMP538[4].kind = 1;
 TMP538[4].offset = offsetof(Processobj143402, instream);
 TMP538[4].typ = (&NTI138025);
 TMP538[4].name = "inStream";
-TMP587[4] = &TMP538[5];
+TMP588[4] = &TMP538[5];
 TMP538[5].kind = 1;
 TMP538[5].offset = offsetof(Processobj143402, outstream);
 TMP538[5].typ = (&NTI138025);
 TMP538[5].name = "outStream";
-TMP587[5] = &TMP538[6];
+TMP588[5] = &TMP538[6];
 TMP538[6].kind = 1;
 TMP538[6].offset = offsetof(Processobj143402, errstream);
 TMP538[6].typ = (&NTI138025);
 TMP538[6].name = "errStream";
-TMP587[6] = &TMP538[7];
+TMP588[6] = &TMP538[7];
 TMP538[7].kind = 1;
 TMP538[7].offset = offsetof(Processobj143402, id);
 TMP538[7].typ = (&NTI107285);
 TMP538[7].name = "id";
-TMP587[7] = &TMP538[8];
+TMP588[7] = &TMP538[8];
 TMP538[8].kind = 1;
 TMP538[8].offset = offsetof(Processobj143402, exitcode);
 TMP538[8].typ = (&NTI5811);
 TMP538[8].name = "exitCode";
-TMP538[0].len = 8; TMP538[0].kind = 2; TMP538[0].sons = &TMP587[0];
+TMP538[0].len = 8; TMP538[0].kind = 2; TMP538[0].sons = &TMP588[0];
 NTI143402.node = &TMP538[0];
 NTI143404.size = sizeof(Processobj143402*);
 NTI143404.kind = 22;
 NTI143404.base = (&NTI143402);
-NTI143404.marker = TMP589;
+NTI143404.marker = TMP590;
 NTI144201.size = sizeof(TY144201*);
 NTI144201.kind = 24;
 NTI144201.base = (&NTI143404);
-NTI144201.marker = TMP590;
+NTI144201.marker = TMP591;
 }
 
